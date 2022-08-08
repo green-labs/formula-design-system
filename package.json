@@ -1,0 +1,11 @@
+{
+  "name": "greenlabs-design-system-token",
+  "version": "0.1.0",
+  "main": "./tokens/index.js",
+  "repository": "git@github.com:green-labs/poc-design-system-token.git",
+  "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
+  "private": true,
+  "dependencies": {
+    "style-dictionary": "^3.7.1"
+  }
+}

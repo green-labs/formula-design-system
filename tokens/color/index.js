@@ -1,3 +1,3 @@
 module.exports = {
-  sys: require('./sys')
+  sys: require("./sys"),
 }
