@@ -1,6 +1,6 @@
 {
-  "color": {
-    "ref": {
+  "ref": {
+    "color": {
       "white": { "value": "white" },
       "black": { "value": "black" },
       "gray": {

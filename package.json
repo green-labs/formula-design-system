@@ -6,6 +6,8 @@
   "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
   "private": true,
   "dependencies": {
+    "chroma-js": "^2.4.2",
+    "color-blend": "^4.0.0",
     "style-dictionary": "^3.7.1"
   }
 }

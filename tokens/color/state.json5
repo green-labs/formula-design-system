@@ -1,0 +1,114 @@
+{
+  sys: {
+    state: {
+      primary: {
+        hover: {
+          value: "{sys.color.primary.container}",
+          modify: [
+            {
+              type: "overlay",
+              overlayColor: "{ref.color.gray.90}",
+              amount: "{opacity.3}",
+            },
+          ],
+        },
+        pressed: {
+          value: "{sys.color.primary.container}",
+          modify: [
+            {
+              type: "overlay",
+              overlayColor: "{ref.color.gray.90}",
+              amount: "{opacity.3}",
+            },
+          ],
+        },
+      },
+      "primary-container-contents": {
+        hover: {
+          value: "{sys.color.primary.container}",
+          modify: [
+            {
+              type: "overlay",
+              overlayColor: "{ref.color.gray.90}",
+              amount: "{opacity.3}",
+            },
+          ],
+        },
+        pressed: {
+          value: "{sys.color.primary.container}",
+          modify: [
+            {
+              type: "overlay",
+              overlayColor: "{ref.color.gray.90}",
+              amount: "{opacity.3}",
+            },
+          ],
+        },
+      },
+      "secondary-container-contents": {
+        hover: {
+          value: "{sys.color.primary.container}",
+          modify: [
+            {
+              type: "overlay",
+              overlayColor: "{ref.color.gray.90}",
+              amount: "{opacity.3}",
+            },
+          ],
+        },
+        pressed: {
+          value: "{sys.color.primary.container}",
+          modify: [
+            {
+              type: "overlay",
+              overlayColor: "{ref.color.gray.90}",
+              amount: "{opacity.3}",
+            },
+          ],
+        },
+      },
+      "neutral-primary-contents": {
+        hover: {
+          value: "{sys.color.primary.container}",
+          modify: [
+            {
+              type: "overlay",
+              overlayColor: "{ref.color.gray.90}",
+              amount: "{opacity.3}",
+            },
+          ],
+        },
+        pressed: {
+          value: "{sys.color.primary.container}",
+          modify: [
+            {
+              type: "overlay",
+              overlayColor: "{ref.color.gray.90}",
+              amount: "{opacity.3}",
+            },
+          ],
+        },
+      },
+      disabled: {
+        value: "{sys.color.primary.container}",
+        modify: [
+          {
+            type: "overlay",
+            overlayColor: "{ref.color.gray.90}",
+            amount: "{opacity.3}",
+          },
+        ],
+      },
+      readonly: {
+        value: "{sys.color.primary.container}",
+        modify: [
+          {
+            type: "overlay",
+            overlayColor: "{ref.color.gray.90}",
+            amount: "{opacity.3}",
+          },
+        ],
+      },
+    },
+  },
+}

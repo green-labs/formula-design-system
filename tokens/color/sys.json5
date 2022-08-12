@@ -1,0 +1,39 @@
+{
+  sys: {
+    color: {
+      primary: {
+        contents: { value: "{ref.color.green.60}" },
+        container: { value: "{ref.color.green.60}" },
+        "container-contents": { value: "{ref.color.white}" },
+      },
+      secondary: {
+        // contents: { value: "{ref.color.${secondary}.90}" }, // N/A
+        container: { value: "{ref.color.green.10}" },
+        "container-contents": { value: "{ref.color.green.60}" },
+      },
+      "neutral-primary": {
+        contents: { value: "{ref.color.gray.90}" },
+        container: { value: "{ref.color.white}" },
+      },
+      "neutral-secondary": {
+        contents: { value: "{ref.color.gray.60}" },
+        container: { value: "{ref.color.gray.20}" },
+      },
+      "neutral-tertiary": {
+        contents: { value: "{ref.color.gray.40}" },
+        container: { value: "{ref.color.gray.10}" },
+      },
+      inverse: {
+        container: { value: "{ref.color.green.90}" },
+        "container-contents": { value: "{ref.color.white}" },
+      },
+      error: {
+        contents: { value: "{ref.color.gray.60}" },
+        container: { value: "{ref.color.gray.10}" },
+      },
+      divider: { value: "{ref.color.gray.20}" },
+      outline: { value: "{ref.color.gray.30}" },
+      background: { value: "{ref.color.white}" },
+    },
+  },
+}
