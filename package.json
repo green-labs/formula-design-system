@@ -1,13 +1,8 @@
 {
-  "name": "greenlabs-design-system-token",
-  "version": "0.1.0",
-  "main": "./tokens/index.js",
-  "repository": "git@github.com:green-labs/poc-design-system-token.git",
-  "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
+  "name": "formula-design-system",
   "private": true,
-  "dependencies": {
-    "chroma-js": "^2.4.2",
-    "color-blend": "^4.0.0",
-    "style-dictionary": "^3.7.1"
-  }
+  "workspaces": [
+    "packages/*"
+  ],
+  "packageManager": "yarn@3.2.2"
 }

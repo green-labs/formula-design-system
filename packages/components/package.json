@@ -1,0 +1,12 @@
+{
+  "name": "@greenlabs/formula-components",
+  "version": "0.1.0",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:green-labs/formula-design-system.git",
+    "directory": "packages/components"
+  },
+  "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
+  "private": true
+}

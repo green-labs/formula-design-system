@@ -1,0 +1,17 @@
+{
+  "name": "@greenlabs/formula-design-token",
+  "version": "0.1.0",
+  "main": "./tokens/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:green-labs/formula-design-system.git",
+    "directory": "packages/design-token"
+  },
+  "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
+  "private": true,
+  "dependencies": {
+    "chroma-js": "^2.4.2",
+    "color-blend": "^4.0.0",
+    "style-dictionary": "^3.7.1"
+  }
+}
