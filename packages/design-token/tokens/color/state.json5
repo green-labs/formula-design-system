@@ -1,113 +1,38 @@
 {
   sys: {
     state: {
-      primary: {
+      opacity: {
+        "hover-white": {
+          comment: "opacity of hover container when the contents color is white",
+          value: "{opacity.3}",
+        },
         hover: {
-          value: "{sys.color.primary.container}",
-          modify: [
-            {
-              type: "overlay",
-              overlayColor: "{ref.color.gray.90}",
-              amount: "{opacity.3}",
-            },
-          ],
+          value: "{opacity.2}",
+        },
+        "pressed-white": {
+          comment: "opacity of pressed container when the contents color is white",
+          value: "{opacity.5}",
         },
         pressed: {
-          value: "{sys.color.primary.container}",
-          modify: [
-            {
-              type: "overlay",
-              overlayColor: "{ref.color.gray.90}",
-              amount: "{opacity.3}",
-            },
-          ],
+          value: "{opacity.4}",
+        },
+        "disabled-container": {
+          value: "{opacity.7}",
+        },
+        "disabled-contents": {
+          value: "{opacity.6}",
+        },
+        "readonly-container": {
+          value: "{opacity.7}",
+        },
+        "readonly-contents": {
+          value: "{opacity.0}",
         },
       },
-      "primary-container-contents": {
-        hover: {
-          value: "{sys.color.primary.container}",
-          modify: [
-            {
-              type: "overlay",
-              overlayColor: "{ref.color.gray.90}",
-              amount: "{opacity.3}",
-            },
-          ],
+      color: {
+        "container-contents-white": {
+          value: "{ref.color.gray.90}",
         },
-        pressed: {
-          value: "{sys.color.primary.container}",
-          modify: [
-            {
-              type: "overlay",
-              overlayColor: "{ref.color.gray.90}",
-              amount: "{opacity.3}",
-            },
-          ],
-        },
-      },
-      "secondary-container-contents": {
-        hover: {
-          value: "{sys.color.primary.container}",
-          modify: [
-            {
-              type: "overlay",
-              overlayColor: "{ref.color.gray.90}",
-              amount: "{opacity.3}",
-            },
-          ],
-        },
-        pressed: {
-          value: "{sys.color.primary.container}",
-          modify: [
-            {
-              type: "overlay",
-              overlayColor: "{ref.color.gray.90}",
-              amount: "{opacity.3}",
-            },
-          ],
-        },
-      },
-      "neutral-primary-contents": {
-        hover: {
-          value: "{sys.color.primary.container}",
-          modify: [
-            {
-              type: "overlay",
-              overlayColor: "{ref.color.gray.90}",
-              amount: "{opacity.3}",
-            },
-          ],
-        },
-        pressed: {
-          value: "{sys.color.primary.container}",
-          modify: [
-            {
-              type: "overlay",
-              overlayColor: "{ref.color.gray.90}",
-              amount: "{opacity.3}",
-            },
-          ],
-        },
-      },
-      disabled: {
-        value: "{sys.color.primary.container}",
-        modify: [
-          {
-            type: "overlay",
-            overlayColor: "{ref.color.gray.90}",
-            amount: "{opacity.3}",
-          },
-        ],
-      },
-      readonly: {
-        value: "{sys.color.primary.container}",
-        modify: [
-          {
-            type: "overlay",
-            overlayColor: "{ref.color.gray.90}",
-            amount: "{opacity.3}",
-          },
-        ],
       },
     },
   },
