@@ -345,4 +345,4 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/node,yarn,react,osx,windows,linux,visualstudiocode,vim,emacs,nextjs
 
-/build
+build/
