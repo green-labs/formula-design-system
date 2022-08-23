@@ -1,0 +1,11 @@
+{
+  "name": "@greenlabs/icons",
+  "packageManager": "yarn@3.2.2",
+  "scripts": {
+    "svgr": "npx @svgr/cli --no-index --no-prettier svgs"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
