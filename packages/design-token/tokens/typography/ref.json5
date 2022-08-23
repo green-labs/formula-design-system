@@ -1,0 +1,39 @@
+{
+  ref: {
+    typeface: {
+      plain: { value: "Pretendard" },
+    },
+    // spec is using percentage, but percentage has inheritance problem
+    // so we will use unitless numbers here.
+    // https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#prefer_unitless_numbers_for_line-height_values
+    leading: {
+      normal: { value: "1.5" },
+      tight: { value: "1.4" },
+      tighter: { value: "1.3" },
+    },
+    weight: {
+      regular: { value: "400" },
+      medium: { value: "500" },
+      bold: { value: "700" },
+    },
+    tracking: {
+      none: { value: "0" },
+      tight: { value: "500" },
+      tighter: { value: "700" },
+    },
+    "font-size": {
+      base: { value: "1.063rem", comment: "17px" },
+      "50": { value: "0.813rem", comment: "13px" },
+      "75": { value: "0.9375rem", comment: "15px" },
+      "100": { value: "1.063rem", comment: "17px" },
+      "200": { value: "1.188rem", comment: "19px" },
+      "300": { value: "1.375rem", comment: "22px" },
+      "400": { value: "1.625rem", comment: "26px" },
+      // TODO: find a way to deal with different PC values
+      "headline-75": { value: "1.188rem", comment: "19px" },
+      "headline-100": { value: "1.375rem", comment: "22px" },
+      "headline-200": { value: "1.5rem", comment: "24px" },
+      "headline-300": { value: "2rem", comment: "32px" },
+    },
+  },
+}
