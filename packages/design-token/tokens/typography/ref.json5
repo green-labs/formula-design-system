@@ -18,8 +18,8 @@
     },
     tracking: {
       none: { value: "0" },
-      tight: { value: "500" },
-      tighter: { value: "700" },
+      tight: { value: "-0.02em" },
+      tighter: { value: "-0.04em" },
     },
     "font-size": {
       base: { value: "1.063rem", comment: "17px" },
