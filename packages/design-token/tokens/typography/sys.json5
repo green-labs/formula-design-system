@@ -1,0 +1,163 @@
+{
+  sys: {
+    font: {
+      headline: {
+        sm: {
+          regular: {
+            typeface: { value: "{ref.typeface.plain}" },
+            "font-size": { value: "{ref.font-size.headline-75}" },
+            leading: { value: "{ref.leading.tight}" },
+            tracking: { value: "{ref.tracking.tight}" },
+            weight: { value: "{ref.weight.regular}" },
+          },
+          bold: {
+            typeface: { value: "{ref.typeface.plain}" },
+            "font-size": { value: "{ref.font-size.headline-75}" },
+            leading: { value: "{ref.leading.tight}" },
+            tracking: { value: "{ref.tracking.tight}" },
+            weight: { value: "{ref.weight.bold}" },
+          },
+        },
+        md: {
+          bold: {
+            typeface: { value: "{ref.typeface.plain}" },
+            "font-size": { value: "{ref.font-size.headline-100}" },
+            leading: { value: "{ref.leading.tight}" },
+            tracking: { value: "{ref.tracking.tight}" },
+            weight: { value: "{ref.weight.bold}" },
+          },
+        },
+        lg: {
+          bold: {
+            typeface: { value: "{ref.typeface.plain}" },
+            "font-size": { value: "{ref.font-size.headline-200}" },
+            leading: { value: "{ref.leading.tight}" },
+            tracking: { value: "{ref.tracking.tight}" },
+            weight: { value: "{ref.weight.regular}" },
+          },
+        },
+        xl: {
+          bold: {
+            typeface: { value: "{ref.typeface.plain}" },
+            "font-size": { value: "{ref.font-size.headline-300}" },
+            leading: { value: "{ref.leading.tight}" },
+            tracking: { value: "{ref.tracking.tight}" },
+            weight: { value: "{ref.weight.regular}" },
+          },
+        },
+      },
+      body: {
+        xs: {
+          medium: {
+            typeface: { value: "{ref.typeface.plain}" },
+            "font-size": { value: "{ref.font-size.50}" },
+            leading: { value: "{ref.leading.normal}" },
+            tracking: { value: "{ref.tracking.tight}" },
+            weight: { value: "{ref.weight.medium}" },
+          },
+          bold: {
+            typeface: { value: "{ref.typeface.plain}" },
+            "font-size": { value: "{ref.font-size.50}" },
+            leading: { value: "{ref.leading.normal}" },
+            tracking: { value: "{ref.tracking.tight}" },
+            weight: { value: "{ref.weight.bold}" },
+          },
+        },
+        sm: {
+          regular: {
+            typeface: { value: "{ref.typeface.plain}" },
+            "font-size": { value: "{ref.font-size.75}" },
+            leading: { value: "{ref.leading.normal}" },
+            tracking: { value: "{ref.tracking.tight}" },
+            weight: { value: "{ref.weight.regular}" },
+          },
+          medium: {
+            typeface: { value: "{ref.typeface.plain}" },
+            "font-size": { value: "{ref.font-size.75}" },
+            leading: { value: "{ref.leading.normal}" },
+            tracking: { value: "{ref.tracking.tight}" },
+            weight: { value: "{ref.weight.medium}" },
+          },
+          bold: {
+            typeface: { value: "{ref.typeface.plain}" },
+            "font-size": { value: "{ref.font-size.75}" },
+            leading: { value: "{ref.leading.normal}" },
+            tracking: { value: "{ref.tracking.tight}" },
+            weight: { value: "{ref.weight.bold}" },
+          },
+        },
+        md: {
+          regular: {
+            typeface: { value: "{ref.typeface.plain}" },
+            "font-size": { value: "{ref.font-size.100}" },
+            leading: { value: "{ref.leading.normal}" },
+            tracking: { value: "{ref.tracking.tight}" },
+            weight: { value: "{ref.weight.regular}" },
+          },
+          medium: {
+            typeface: { value: "{ref.typeface.plain}" },
+            "font-size": { value: "{ref.font-size.100}" },
+            leading: { value: "{ref.leading.normal}" },
+            tracking: { value: "{ref.tracking.tight}" },
+            weight: { value: "{ref.weight.medium}" },
+          },
+          bold: {
+            typeface: { value: "{ref.typeface.plain}" },
+            "font-size": { value: "{ref.font-size.100}" },
+            leading: { value: "{ref.leading.normal}" },
+            tracking: { value: "{ref.tracking.tight}" },
+            weight: { value: "{ref.weight.bold}" },
+          },
+        },
+        lg: {
+          regular: {
+            typeface: { value: "{ref.typeface.plain}" },
+            "font-size": { value: "{ref.font-size.200}" },
+            leading: { value: "{ref.leading.normal}" },
+            tracking: { value: "{ref.tracking.tight}" },
+            weight: { value: "{ref.weight.regular}" },
+          },
+          medium: {
+            typeface: { value: "{ref.typeface.plain}" },
+            "font-size": { value: "{ref.font-size.200}" },
+            leading: { value: "{ref.leading.normal}" },
+            tracking: { value: "{ref.tracking.tight}" },
+            weight: { value: "{ref.weight.medium}" },
+          },
+          bold: {
+            typeface: { value: "{ref.typeface.plain}" },
+            "font-size": { value: "{ref.font-size.200}" },
+            leading: { value: "{ref.leading.normal}" },
+            tracking: { value: "{ref.tracking.tight}" },
+            weight: { value: "{ref.weight.bold}" },
+          },
+        },
+        xl: {
+          regular: {
+            typeface: { value: "{ref.typeface.plain}" },
+            "font-size": { value: "{ref.font-size.300}" },
+            leading: { value: "{ref.leading.normal}" },
+            tracking: { value: "{ref.tracking.tight}" },
+            weight: { value: "{ref.weight.regular}" },
+          },
+          bold: {
+            typeface: { value: "{ref.typeface.plain}" },
+            "font-size": { value: "{ref.font-size.300}" },
+            leading: { value: "{ref.leading.normal}" },
+            tracking: { value: "{ref.tracking.tight}" },
+            weight: { value: "{ref.weight.bold}" },
+          },
+        },
+      },
+      caption: {
+        xs: {
+          typeface: { value: "{ref.typeface.plain}" },
+          "font-size": { value: "{ref.font-size.50}" },
+          leading: { value: "{ref.leading.tight}" },
+          tracking: { value: "{ref.tracking.tight}" },
+          weight: { value: "{ref.weight.regular}" },
+        },
+      },
+    },
+  },
+}
