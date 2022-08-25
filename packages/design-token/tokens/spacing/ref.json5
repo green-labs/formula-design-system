@@ -1,0 +1,62 @@
+{
+  ref: {
+    spacing: {
+      "0": {
+        value: "0",
+        comment: "0",
+      },
+      "50": {
+        value: "0.125rem",
+        comment: "2px",
+      },
+      "75": {
+        value: "0.25rem",
+        comment: "4px",
+      },
+      "100": {
+        value: "0.5rem",
+        comment: "8px",
+      },
+      "200": {
+        value: "0.75rem",
+        comment: "12px",
+      },
+      "300": {
+        value: "1rem",
+        comment: "16px",
+      },
+      "400": {
+        value: "1.25rem",
+        comment: "20px",
+      },
+      "500": {
+        value: "1.5rem",
+        comment: "24px",
+      },
+      "600": {
+        value: "2rem",
+        comment: "32px",
+      },
+      "700": {
+        value: "2.5rem",
+        comment: "40px",
+      },
+      "800": {
+        value: "3rem",
+        comment: "48px",
+      },
+      "900": {
+        value: "4rem",
+        comment: "64px",
+      },
+      "1000": {
+        value: "5rem",
+        comment: "80px",
+      },
+      "1100": {
+        value: "10rem",
+        comment: "160px",
+      },
+    },
+  },
+}
