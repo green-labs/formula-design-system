@@ -1,0 +1,22 @@
+{
+  ref: {
+    viewport: {
+      sm: {
+        value: "22.5rem",
+        comment: "viewport - small (360px)",
+      },
+      md: {
+        value: "48rem",
+        comment: "viewport - medium (768px)",
+      },
+      lg: {
+        value: "80rem",
+        comment: "viewport - large (1280px)",
+      },
+      xl: {
+        value: "90rem",
+        comment: "viewport - xlarge (1440px)",
+      },
+    },
+  },
+}

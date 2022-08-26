@@ -1,0 +1,130 @@
+{
+  sys: {
+    layout: {
+      default: {
+        sm: {
+          breakpoint: {
+            value: "{ref.viewport.sm}",
+          },
+          columns: {
+            value: "4",
+          },
+          gutter: {
+            value: "{ref.spacing.300}",
+          },
+          margin: {
+            value: "{ref.spacing.300}",
+          },
+        },
+        md: {
+          breakpoint: {
+            value: "{ref.viewport.md}",
+          },
+          columns: {
+            value: "8",
+          },
+          gutter: {
+            value: "{ref.spacing.300}",
+          },
+          margin: {
+            value: "{ref.spacing.700}",
+          },
+        },
+        lg: {
+          breakpoint: {
+            value: "{ref.viewport.lg}",
+          },
+          columns: {
+            value: "12",
+          },
+          gutter: {
+            value: "{ref.spacing.700}",
+          },
+          margin: {
+            value: "{ref.spacing.700}",
+          },
+        },
+        xl: {
+          breakpoint: {
+            value: "{ref.viewport.xl}",
+          },
+          columns: {
+            value: "12",
+          },
+          gutter: {
+            value: "{ref.spacing.700}",
+          },
+          margin: {
+            value: "auto",
+            comment: "centered",
+          },
+          width: {
+            value: "80px",
+          },
+        },
+      },
+      tighter: {
+        sm: {
+          breakpoint: {
+            value: "{ref.viewport.sm}",
+          },
+          columns: {
+            value: "4",
+          },
+          gutter: {
+            value: "{ref.spacing.100}",
+          },
+          margin: {
+            value: "{ref.spacing.300}",
+          },
+        },
+        md: {
+          breakpoint: {
+            value: "{ref.viewport.md}",
+          },
+          columns: {
+            value: "8",
+          },
+          gutter: {
+            value: "{ref.spacing.300}",
+          },
+          margin: {
+            value: "{ref.spacing.700}",
+          },
+        },
+        lg: {
+          breakpoint: {
+            value: "{ref.viewport.lg}",
+          },
+          columns: {
+            value: "12",
+          },
+          gutter: {
+            value: "{ref.spacing.300}",
+          },
+          margin: {
+            value: "{ref.spacing.700}",
+          },
+        },
+        xl: {
+          breakpoint: {
+            value: "{ref.viewport.xl}",
+          },
+          columns: {
+            value: "12",
+          },
+          gutter: {
+            value: "{ref.spacing.300}",
+          },
+          margin: {
+            value: "auto",
+            comment: "centered",
+          },
+          width: {
+            value: "80px",
+          },
+        },
+      },
+    },
+  },
+}
