@@ -4,11 +4,13 @@ function template({ jsx }, { tpl }) {
   const rescriptComponentConverter = `let make = ${props} =>`;
 
   const rescriptComponentInterface = `
-      ${rescriptComponentDecorator}
-      ${rescriptComponentConverter}
-    `;
+  ${rescriptComponentDecorator}
+  ${rescriptComponentConverter}
+`;
 
-  return tpl`${rescriptComponentInterface} (${jsx})`;
+  return tpl`${rescriptComponentInterface} 
+  (${jsx})
+  `;
 }
 
 module.exports = template;
