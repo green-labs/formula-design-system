@@ -7,6 +7,8 @@ S /Users/ben/git/GreenLabs/formula-design-system/node_modules/@rescript/react/li
 B /Users/ben/git/GreenLabs/formula-design-system/node_modules/@rescript/react/lib/ocaml
 S /Users/ben/git/GreenLabs/formula-design-system/node_modules/rescript-webapi/lib/ocaml
 B /Users/ben/git/GreenLabs/formula-design-system/node_modules/rescript-webapi/lib/ocaml
+S src/bindings
+B lib/bs/src/bindings
 S src/Button
 B lib/bs/src/Button
 ####BSB GENERATED: NO EDIT}

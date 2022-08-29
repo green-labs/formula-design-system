@@ -1,1 +1,0 @@
-{ "dirs" : [ "src" , "src/Button" ] , "pkgs" : [ [ "rescript-webapi" , "/Users/ben/git/GreenLabs/formula-design-system/node_modules/rescript-webapi" ] , [ "@rescript/react" , "/Users/ben/git/GreenLabs/formula-design-system/node_modules/@rescript/react" ] ] , "generated" : [] }
