@@ -1687,10 +1687,11 @@ __metadata:
     "@storybook/react": ^6.5.10
     "@storybook/testing-library": ^0.0.13
     babel-loader: ^8.2.5
+    bs-storybook: ^1.1.0
     moduleserve: ^0.9.1
     react: ^18.2.0
     react-dom: ^18.2.0
-    rescript: 10
+    rescript: ^10.0.0
     rescript-storybook: ^2.0.1
     rescript-webapi: ^0.6.1
   languageName: unknown
@@ -4816,6 +4817,21 @@ __metadata:
   bin:
     browserslist: cli.js
   checksum: ff512a7bcca1c530e2854bbdfc7be2791d0fb524097a6340e56e1d5924164c7e4e0a9b070de04cdc4c149d15cb4d4275cb7c626ebbce954278a2823aaad2452a
+  languageName: node
+  linkType: hard
+
+"bs-storybook@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "bs-storybook@npm:1.1.0"
+  peerDependencies:
+    "@storybook/addon-actions": ^5.2.3
+    "@storybook/addon-knobs": ^5.3.14
+    "@storybook/addon-links": ^5.2.3
+    "@storybook/addon-options": ^5.3.14
+    "@storybook/addons": ^5.2.3
+    "@storybook/react": ^5.2.3
+    reason-react: ^0.9.1
+  checksum: 715ce5ed134fb5c09a1e3c4f5592ef1f18de0cef6ef08bbbe9b64e03595ba71529b34870a2ddc301938d9d4ce0fc0b3e33dbe5ad18d9dccf087c3146dcba99ea
   languageName: node
   linkType: hard
 
@@ -11401,7 +11417,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rescript@npm:10":
+"rescript@npm:^10.0.0":
   version: 10.0.0
   resolution: "rescript@npm:10.0.0"
   bin:
