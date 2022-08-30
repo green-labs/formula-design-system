@@ -1690,8 +1690,7 @@ __metadata:
     concurrently: ^7.3.0
     react: ^18.2.0
     react-dom: ^18.2.0
-    rescript: ^10.0.0
-    rescript-storybook: ^2.0.1
+    rescript: 10
     rescript-webapi: ^0.6.1
   languageName: unknown
   linkType: soft
@@ -11361,21 +11360,6 @@ __metadata:
   version: 2.1.1
   resolution: "require-directory@npm:2.1.1"
   checksum: fb47e70bf0001fdeabdc0429d431863e9475e7e43ea5f94ad86503d918423c1543361cc5166d713eaa7029dd7a3d34775af04764bebff99ef413111a5af18c80
-  languageName: node
-  linkType: hard
-
-"rescript-storybook@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "rescript-storybook@npm:2.0.1"
-  peerDependencies:
-    "@rescript/react": ^0.10.3
-    "@storybook/addon-actions": ^5.2.3
-    "@storybook/addon-knobs": ^5.3.14
-    "@storybook/addon-links": ^5.2.3
-    "@storybook/addon-options": ^5.3.14
-    "@storybook/addons": ^5.2.3
-    "@storybook/react": ^5.2.3
-  checksum: 10e2af5e9b06a7c492801937437962ea925ff853b7da3eab225716490b3bcb1a1848083e6a2b9d5d3f2891dfa5aeb3000aa9a1977a66c18fa6ab3d2bf0a95b1e
   languageName: node
   linkType: hard
 
