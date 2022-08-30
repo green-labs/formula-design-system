@@ -1,33 +1,31 @@
-type csfComponent<'parameter> = 'parameter => React.element
+type csfComponent<'argument> = 'argument => React.element
 
 type csfStory = unit => React.element
 
-type csfMeta<'parameter> = {
+type csfMeta<'argument> = {
   title: string,
-  component: csfComponent<'parameter>,
-  // ~excludeStories=Js.Re.fromString("\$\$default|.*Data$"),
+  component: csfComponent<'argument>,
   excludeStories: Js.Re.t,
 }
 
-type template<'parameter> = csfComponent<'parameter>
-
 @set
-external story: (csfComponent<'parameter>, csfMeta<'parameter>) => unit = "story"
+external story: (csfComponent<'argument>, csfMeta<'argument>) => unit = "story"
 
-let make: (~title: string, ~component: csfComponent<'parameter>) => csfMeta<'parameter> = (
+let make: (~title: string, ~component: csfComponent<'argument>) => csfMeta<'argument> = (
   ~title,
   ~component,
 ) => {
   title,
   component,
-  excludeStories: Js.Re.fromString("\$\$[dD]efault|default|Default"),
+  excludeStories: Js.Re.fromString("\$\$[dD]efault|default|Default|.*Story"),
 }
 
-let bsExports = ["$$default"]
+type template<'argument> = csfComponent<'argument>
+type templateStory<'argument> = {"args": 'argument}
+@set external setArgs: (templateStory<'argument>, 'argument) => unit = "args"
 
-let makeStory: (~args: 'parameter, ~component: csfComponent<'parameter>) => csfStory = (
-  ~args,
-  ~component,
-) => {
-  () => component(args)
-}
+external toTemplate: csfComponent<'argument> => template<'argument> = "%identity"
+
+external toStoryArgs: template<'argument> => templateStory<'argument> = "%identity"
+
+

@@ -5,36 +5,33 @@ import * as Button from "./Button.bs.js";
 
 var $$default = CSF.make("button", Button.make);
 
-var partial_arg = {
+Button.make.args = {
   size: "large",
-  label: "large"
+  label: "큰"
 };
 
-function large(param) {
-  return CSF.makeStory(partial_arg, Button.make, param);
-}
-
-var partial_arg$1 = {
+Button.make.args = {
   size: "medium",
-  label: "medium"
+  label: "중간"
 };
 
-function medium(param) {
-  return CSF.makeStory(partial_arg$1, Button.make, param);
-}
-
-var partial_arg$2 = {
+Button.make.args = {
   size: "small",
-  label: "small"
+  label: "중간"
 };
 
-function small(param) {
-  return CSF.makeStory(partial_arg$2, Button.make, param);
-}
+var buttonStory = Button.make;
+
+var large = Button.make;
+
+var medium = Button.make;
+
+var small = Button.make;
 
 export {
   $$default ,
   $$default as default,
+  buttonStory ,
   large ,
   medium ,
   small ,

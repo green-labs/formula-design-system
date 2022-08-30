@@ -1,6 +1,3 @@
-type size = [#small | #medium | #large]
-type props = {"size": size, "label": string}
-
 @react.component
 let make = (~size, ~label) => {
   let style = switch size {
