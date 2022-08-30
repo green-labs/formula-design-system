@@ -1687,11 +1687,11 @@ __metadata:
     "@storybook/react": ^6.5.10
     "@storybook/testing-library": ^0.0.13
     babel-loader: ^8.2.5
-    bs-storybook: ^1.1.0
     moduleserve: ^0.9.1
     react: ^18.2.0
     react-dom: ^18.2.0
-    rescript: ^9.1.4
+    rescript: 10
+    rescript-storybook: ^2.0.1
     rescript-webapi: ^0.6.1
   languageName: unknown
   linkType: soft
@@ -4816,21 +4816,6 @@ __metadata:
   bin:
     browserslist: cli.js
   checksum: ff512a7bcca1c530e2854bbdfc7be2791d0fb524097a6340e56e1d5924164c7e4e0a9b070de04cdc4c149d15cb4d4275cb7c626ebbce954278a2823aaad2452a
-  languageName: node
-  linkType: hard
-
-"bs-storybook@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "bs-storybook@npm:1.1.0"
-  peerDependencies:
-    "@storybook/addon-actions": ^5.2.3
-    "@storybook/addon-knobs": ^5.3.14
-    "@storybook/addon-links": ^5.2.3
-    "@storybook/addon-options": ^5.3.14
-    "@storybook/addons": ^5.2.3
-    "@storybook/react": ^5.2.3
-    reason-react: ^0.9.1
-  checksum: 715ce5ed134fb5c09a1e3c4f5592ef1f18de0cef6ef08bbbe9b64e03595ba71529b34870a2ddc301938d9d4ce0fc0b3e33dbe5ad18d9dccf087c3146dcba99ea
   languageName: node
   linkType: hard
 
@@ -11394,6 +11379,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rescript-storybook@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "rescript-storybook@npm:2.0.1"
+  peerDependencies:
+    "@rescript/react": ^0.10.3
+    "@storybook/addon-actions": ^5.2.3
+    "@storybook/addon-knobs": ^5.3.14
+    "@storybook/addon-links": ^5.2.3
+    "@storybook/addon-options": ^5.3.14
+    "@storybook/addons": ^5.2.3
+    "@storybook/react": ^5.2.3
+  checksum: 10e2af5e9b06a7c492801937437962ea925ff853b7da3eab225716490b3bcb1a1848083e6a2b9d5d3f2891dfa5aeb3000aa9a1977a66c18fa6ab3d2bf0a95b1e
+  languageName: node
+  linkType: hard
+
 "rescript-webapi@npm:^0.6.1":
   version: 0.6.1
   resolution: "rescript-webapi@npm:0.6.1"
@@ -11401,15 +11401,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rescript@npm:^9.1.4":
-  version: 9.1.4
-  resolution: "rescript@npm:9.1.4"
+"rescript@npm:10":
+  version: 10.0.0
+  resolution: "rescript@npm:10.0.0"
   bin:
     bsc: bsc
     bsrefmt: bsrefmt
     bstracing: lib/bstracing
     rescript: rescript
-  checksum: 3c503580f968b4d4409830093c57f85b5590f7372250345427b3a7c1f5ccb08009e1edd89b4a3dcbb3ee95ee4dcad9c337ece4d1f8fdaa10e22ed04b8a7495c0
+  checksum: b844c4c2c895e71202dc07ba0035f2c463e7b6e4175e5788e8723a67fb14acd78c42dfc2016a1c24ad3e9661a19d63f551ce9d74b6c160eaf6bb4feb72b027cb
   languageName: node
   linkType: hard
 
