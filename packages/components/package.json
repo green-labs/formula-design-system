@@ -29,12 +29,14 @@
     "@storybook/react": "^6.5.10",
     "@storybook/testing-library": "^0.0.13",
     "babel-loader": "^8.2.5",
+    "concurrently": "^7.3.0",
     "rescript": "^10.0.0"
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build": "rescript build -with-deps",
-    "start": "rescript -w"
+    "re:build": "rescript build -with-deps",
+    "re:watch": "rescript build -with-deps -w",
+    "start": "concurrently -g -n re,storybook \"yarn re:watch\" \"yarn storybook\""
   }
 }
