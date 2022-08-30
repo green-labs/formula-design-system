@@ -2,7 +2,7 @@
 
 import * as React from "react";
 
-function Button$Button(Props) {
+function Button(Props) {
   var size = Props.size;
   var label = Props.label;
   var style = size === "medium" ? ({
@@ -25,11 +25,9 @@ function Button$Button(Props) {
             }, label);
 }
 
-var Button = {
-  make: Button$Button
-};
+var make = Button;
 
 export {
-  Button ,
+  make ,
 }
 /* react Not a pure module */
