@@ -7,17 +7,17 @@ var $$default = CSF.make("button", Button.make);
 
 Button.make.args = {
   size: "large",
-  label: "큰"
+  label: "Large"
 };
 
 Button.make.args = {
   size: "medium",
-  label: "중간"
+  label: "Medium"
 };
 
 Button.make.args = {
   size: "small",
-  label: "중간"
+  label: "Small"
 };
 
 var buttonStory = Button.make;
