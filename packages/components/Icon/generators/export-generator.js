@@ -23,7 +23,7 @@ const datas = iconFiles.map((filename) => {
 });
 
 try {
-  fs.writeFileSync(path.join("./Icon.res"), datas.join(""));
+  fs.writeFileSync(path.join("../src/Icon/Icon.res"), datas.join(""));
 } catch (error) {
   console.log(error);
 }

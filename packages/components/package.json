@@ -54,6 +54,7 @@
     "build:types": "tsc -b",
     "build": "yarn clean && yarn build:js && yarn build:types",
     "clean": "rm -rf ./build",
-    "start": "concurrently -g -n re,storybook \"yarn re:watch\" \"yarn storybook\""
+    "start": "concurrently -g -n re,storybook \"yarn re:watch\" \"yarn storybook\"",
+    "svgr": "cd Icon && npx @svgr/cli --no-index --no-prettier svgs && node ./generators/export-generator.js"
   }
 }
