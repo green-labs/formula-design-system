@@ -5,10 +5,10 @@ module.exports = {
   filenameCase: "pascal",
   outDir: "generated",
   ext: "res",
-  template: require("./generators/svgr-cli.template"),
+  template: require("./templates/svgr-cli.template"),
   svgProps: {
-    width: "{size}",
-    height: "{size}",
+    width: "{toString(size)}",
+    height: "{toString(size)}",
     style: "{style}",
     className: "{className}",
     viewBox: "0 0 24 24",
