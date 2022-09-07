@@ -6,13 +6,11 @@ import * as Divider from "./Divider.bs.js";
 var $$default = CSF.make("divider", Divider.make);
 
 Divider.make.args = {
-  color: "#000",
-  thickness: /* Thin */0
+  size: /* Small */0
 };
 
 Divider.make.args = {
-  color: "#000",
-  thickness: /* Thick */1
+  size: /* Large */1
 };
 
 var dividerStory = Divider.make;

@@ -1,17 +1,14 @@
-type thickness =
-  | Thin
-  | Thick
-  | Custom(int)
+type size =
+  | Small
+  | Large
 
 @react.component
-let make = (~color, ~thickness) => {
-  let baseStyle = ReactDOMStyle.make(~width="100%", ~backgroundColor=color, ())
-  let variantStyle = switch thickness {
-  | Thin => ReactDOMStyle.make(~height="1px", ())
+let make = (~size) => {
+  let baseStyle = ReactDOMStyle.make(~width="100%", ~backgroundColor="#fff", ())
+  let variantStyle = switch size {
+  | Small => ReactDOMStyle.make(~height="1px", ())
 
-  | Thick => ReactDOMStyle.make(~height="10px", ())
-
-  | Custom(height) => ReactDOMStyle.make(~height=`${height->Belt.Int.toString}px`, ())
+  | Large => ReactDOMStyle.make(~height="10px", ())
   }
   <div style={ReactDOMStyle.combine(baseStyle, variantStyle)} />
 }

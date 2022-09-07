@@ -3,20 +3,15 @@
 import * as React from "react";
 
 function Divider(Props) {
-  var color = Props.color;
-  var thickness = Props.thickness;
+  var size = Props.size;
   var baseStyle = {
-    backgroundColor: color,
+    backgroundColor: "#fff",
     width: "100%"
   };
-  var variantStyle = typeof thickness === "number" ? (
-      thickness !== 0 ? ({
-            height: "10px"
-          }) : ({
-            height: "1px"
-          })
-    ) : ({
-        height: "" + String(thickness._0) + "px"
+  var variantStyle = size ? ({
+        height: "10px"
+      }) : ({
+        height: "1px"
       });
   return React.createElement("div", {
               style: Object.assign({}, baseStyle, variantStyle)
