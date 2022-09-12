@@ -28,7 +28,7 @@ const datas = iconFiles.map((filename) => {
 });
 
 try {
-  datas.unshift(utilToString);
+  datas.unshift(utilToString); // Todo: fix me
   fs.writeFileSync(path.join("../src/Icon/Icon.res"), datas.join(""));
 } catch (error) {
   console.log(error);

@@ -12,10 +12,10 @@ type iconSize = PC | XL | LG | SM | XS
   }
 )
 /**
-    @props size - PC(36px) | XL(24px) | LG(20px) | SM(16px) | XS(12px)
-    @props style - 
-    @props fill - 
-    @props classname - 
+    @props size - [PC(36px) | XL(24px) | LG(20px) | SM(16px) | XS(12px)] Default size is XL.
+    @props style - [ReactDOMStyle.t] 
+    @props fill - [Hex color code] A 6-symbol code made of up to three 2-symbol elements. Default color is #1F2024 (gray-90).
+    @props classname - [Class content attribute]
 */
 module ArrowDown = {
   @react.component
@@ -36,10 +36,10 @@ module ArrowDown = {
 }
 
 /**
-    @props size - PC(36px) | XL(24px) | LG(20px) | SM(16px) | XS(12px)
-    @props style - 
-    @props fill - 
-    @props classname - 
+    @props size - [PC(36px) | XL(24px) | LG(20px) | SM(16px) | XS(12px)] Default size is XL.
+    @props style - [ReactDOMStyle.t] 
+    @props fill - [Hex color code] A 6-symbol code made of up to three 2-symbol elements. Default color is #1F2024 (gray-90).
+    @props classname - [Class content attribute]
 */
 module ArrowLeft = {
   @react.component
@@ -60,10 +60,10 @@ module ArrowLeft = {
 }
 
 /**
-    @props size - PC(36px) | XL(24px) | LG(20px) | SM(16px) | XS(12px)
-    @props style - 
-    @props fill - 
-    @props classname - 
+    @props size - [PC(36px) | XL(24px) | LG(20px) | SM(16px) | XS(12px)] Default size is XL.
+    @props style - [ReactDOMStyle.t] 
+    @props fill - [Hex color code] A 6-symbol code made of up to three 2-symbol elements. Default color is #1F2024 (gray-90).
+    @props classname - [Class content attribute]
 */
 module ArrowRight = {
   @react.component
@@ -84,10 +84,10 @@ module ArrowRight = {
 }
 
 /**
-    @props size - PC(36px) | XL(24px) | LG(20px) | SM(16px) | XS(12px)
-    @props style - 
-    @props fill - 
-    @props classname - 
+    @props size - [PC(36px) | XL(24px) | LG(20px) | SM(16px) | XS(12px)] Default size is XL.
+    @props style - [ReactDOMStyle.t] 
+    @props fill - [Hex color code] A 6-symbol code made of up to three 2-symbol elements. Default color is #1F2024 (gray-90).
+    @props classname - [Class content attribute]
 */
 module ArrowUp = {
   @react.component
