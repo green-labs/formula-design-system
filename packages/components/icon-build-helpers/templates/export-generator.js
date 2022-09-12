@@ -1,18 +1,15 @@
 const fs = require("fs");
 const path = require("path");
 
+const docsPath = path.join(__dirname, "docs.res.txt");
+const docs = fs.readFileSync(docsPath, "utf-8");
+const makeResModuleWithTemplate = (moduleName, file) =>
+  docs + `module ${moduleName} = {${file}}\n\n`;
+
+const utilFuncPath = path.join(__dirname, "../Utils/toString.res");
+const utilFunc = fs.readFileSync(utilFuncPath, "utf-8");
+
 const generatedFilesPath = path.join(__dirname, "../generated");
-
-const utilToString = fs.readFileSync(
-  path.join(__dirname, "../Utils/toString.res"),
-  "utf-8"
-);
-const docs = fs.readFileSync(path.join(__dirname, "docs.res.txt"), "utf-8");
-
-const makeResModuleWithTemplate = (moduleName, file) => {
-  return docs + `module ${moduleName} = {${file}}\n\n`;
-};
-
 const iconFiles = fs
   .readdirSync(generatedFilesPath)
   .filter((file) => file.includes("res"));
@@ -28,8 +25,8 @@ const datas = iconFiles.map((filename) => {
 });
 
 try {
-  datas.unshift(utilToString); // Todo: fix me
-  fs.writeFileSync(path.join("../src/Icon/Icon.res"), datas.join(""));
+  const moduleFilePath = path.join(__dirname, "../../src/Icon/Icon.res");
+  fs.writeFileSync(moduleFilePath, utilFunc + datas.join(""));
 } catch (error) {
   console.log(error);
 }
