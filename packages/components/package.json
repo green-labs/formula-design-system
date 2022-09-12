@@ -55,6 +55,6 @@
     "build": "yarn clean && yarn build:js && yarn build:types",
     "clean": "rm -rf ./build",
     "start": "concurrently -g -n re,storybook \"yarn re:watch\" \"yarn storybook\"",
-    "svgr": "cd Icon && npx @svgr/cli --no-index --no-prettier svgs && node ./templates/export-generator.js && rescript format ../src/Icon/Icon.res "
+    "svgr": "cd icon-build-helpers && npx @svgr/cli --no-index --no-prettier svgs && node ./templates/export-generator.js && rescript format ../src/Icon/Icon.res "
   }
 }
