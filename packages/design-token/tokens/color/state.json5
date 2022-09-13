@@ -4,29 +4,29 @@
       opacity: {
         "hover-white": {
           comment: "opacity of hover container when the contents color is white",
-          value: "{opacity.3}",
+          value: "{ref.opacity.3}",
         },
         hover: {
-          value: "{opacity.2}",
+          value: "{ref.opacity.2}",
         },
         "pressed-white": {
           comment: "opacity of pressed container when the contents color is white",
-          value: "{opacity.5}",
+          value: "{ref.opacity.5}",
         },
         pressed: {
-          value: "{opacity.4}",
+          value: "{ref.opacity.4}",
         },
         "disabled-container": {
-          value: "{opacity.7}",
+          value: "{ref.opacity.7}",
         },
         "disabled-contents": {
-          value: "{opacity.6}",
+          value: "{ref.opacity.6}",
         },
         "readonly-container": {
-          value: "{opacity.7}",
+          value: "{ref.opacity.7}",
         },
         "readonly-contents": {
-          value: "{opacity.0}",
+          value: "{ref.opacity.0}",
         },
       },
       color: {
