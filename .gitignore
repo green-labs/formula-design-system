@@ -16,9 +16,6 @@ tramp
 .org-id-locations
 *_archive
 
-# flymake-mode
-*_flymake.*
-
 # eshell files
 /eshell/history
 /eshell/lastdir
@@ -28,13 +25,6 @@ tramp
 
 # reftex files
 *.rel
-
-# AUCTeX auto folder
-/auto/
-
-# cask packages
-.cask/
-dist/
 
 # Flycheck
 flycheck_*.el
@@ -65,10 +55,6 @@ flycheck_*.el
 
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
-
-### NextJS ###
-# Next build dir
-.next/
 
 ### Node ###
 # Logs
@@ -156,34 +142,14 @@ web_modules/
 .cache
 .parcel-cache
 
-# Next.js build output
-.next
-out
-
-# Nuxt.js build / generate output
-.nuxt
-dist
-
 # Gatsby files
 .cache/
 # Comment in the public line in if your project uses Gatsby and not Next.js
 # https://nextjs.org/blog/next-9-1#public-directory-support
 # public
 
-# vuepress build output
-.vuepress/dist
-
-# vuepress v2.x temp and cache directory
-.temp
-
 # Docusaurus cache and generated files
 .docusaurus
-
-# Serverless directories
-.serverless/
-
-# FuseBox cache
-.fusebox/
 
 # DynamoDB Local files
 .dynamodb/
@@ -203,15 +169,6 @@ dist
 **/!.yarn/versions
 **/.pnp.*
 
-### Node Patch ###
-# Serverless Webpack directories
-.webpack/
-
-# Optional stylelint cache
-
-# SvelteKit build / generate output
-.svelte-kit
-
 ### OSX ###
 # General
 .DS_Store
@@ -221,18 +178,8 @@ dist
 # Icon must end with two \r
 Icon
 
-
 # Thumbnails
 ._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
 
 # Directories potentially created on remote AFP share
 .AppleDB

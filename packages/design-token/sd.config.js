@@ -70,7 +70,7 @@ module.exports = {
     // },
     tailwind: {
       transforms: ["attribute/cti", "name/cti/kebab", "colorTransform", "color/hex", "size/rem", "color/css"],
-      buildPath: "build/js/",
+      buildPath: "dist/",
       files: [
         {
           destination: "tailwind-tokens.json",
@@ -80,7 +80,7 @@ module.exports = {
     },
     figma: {
       transforms: ["attribute/cti", "name/cti/kebab", "colorTransform", "color/hex", "size/rem", "color/css"],
-      buildPath: "build/js/",
+      buildPath: "dist/",
       files: [
         {
           destination: "figma-tokens.json",
