@@ -1,4 +1,4 @@
-const prefix = "f-"
+const prefix = ""
 
 /**
  * @param { import("style-dictionary/types/TransformedToken").TransformedToken[] arr }
