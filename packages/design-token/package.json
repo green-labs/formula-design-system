@@ -1,7 +1,7 @@
 {
   "name": "@greenlabs/formula-design-token",
   "version": "0.1.0",
-  "main": "./tokens/index.js",
+  "main": "./dist/tokens.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:green-labs/formula-design-system.git",

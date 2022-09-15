@@ -58,16 +58,16 @@ module.exports = {
     //     },
     //   ],
     // },
-    // "javascript/module": {
-    //   transforms: ["attribute/cti", "name/cti/kebab", "colorTransform", "color/hex"],
-    //   buildPath: "build/js/",
-    //   files: [
-    //     {
-    //       destination: "_tokens.js",
-    //       format: "javascript/module",
-    //     },
-    //   ],
-    // },
+    "javascript/module": {
+      transforms: ["attribute/cti", "name/cti/kebab", "colorTransform", "color/hex"],
+      buildPath: "dist/",
+      files: [
+        {
+          destination: "tokens.js",
+          format: "javascript/module",
+        },
+      ],
+    },
     tailwind: {
       transforms: ["attribute/cti", "name/cti/kebab", "colorTransform", "color/hex", "size/rem", "color/css"],
       buildPath: "dist/",
