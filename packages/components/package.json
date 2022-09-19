@@ -1,7 +1,6 @@
 {
   "name": "@greenlabs/formula-components",
   "version": "0.1.0",
-  "main": "./index.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:green-labs/formula-design-system.git",
@@ -9,16 +8,26 @@
   },
   "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
   "private": true,
+  "main": "build/cjs/index.js",
+  "module": "build/esm/index.js",
+  "types": "build/ts/latest/src/index.d.ts",
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "rescript-storybook": "^2.0.1",
-    "rescript-webapi": "^0.6.1"
+    "react-dom": "^18.2.0"
   },
+  "files": [
+    "./build/**/*"
+  ],
   "devDependencies": {
     "@babel/core": "^7.18.13",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
     "@mdx-js/react": "^1.6.22",
     "@rescript/react": "^0.10.3",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^14.1.0",
     "@storybook/addon-actions": "^6.5.10",
     "@storybook/addon-docs": "^6.5.10",
     "@storybook/addon-essentials": "^6.5.10",
@@ -30,14 +39,20 @@
     "@storybook/testing-library": "^0.0.13",
     "@types/react": "^18.0.20",
     "@vanilla-extract/css": "^1.9.0",
+    "@vanilla-extract/rollup-plugin": "^1.1.0",
     "@vanilla-extract/webpack-plugin": "^2.1.12",
     "babel-loader": "^8.2.5",
     "concurrently": "^7.3.0",
-    "rescript": "^10.0.0"
+    "rescript": "^10.0.0",
+    "rescript-webapi": "^0.6.1",
+    "rollup": "^2.79.0"
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "build:storybook": "build-storybook",
+    "build:js": "yarn clean && rollup -c",
+    "build:types": "tsc -b",
+    "clean": "rm -rf ./build",
     "re:build": "rescript build -with-deps",
     "re:watch": "rescript build -with-deps -w",
     "start": "concurrently -g -n re,storybook \"yarn re:watch\" \"yarn storybook\""
