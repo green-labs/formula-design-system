@@ -1,14 +1,16 @@
-function template({ jsx }, { tpl }) {
-  const props = `(~size=XL, ~style=ReactDOMStyle.make(), ~className="", ~fill="#1F2024")`; // Todo - get color from color token
-  const rescriptComponentDecorator = `@react.component`;
-  const rescriptComponentConverter = `let make = ${props} =>`;
+const template = (
+  { jsx, imports, interfaces, componentName, props, exports },
+  { tpl }
+) => {
+  return tpl`
+  ${imports}
+  ${interfaces}
 
-  const rescriptComponentInterface = `
-    ${rescriptComponentDecorator}
-    ${rescriptComponentConverter}
-  `;
-
-  return tpl`${rescriptComponentInterface} (${jsx})`;
-}
+  const ${componentName} =(${props}) => (
+    ${jsx}
+  )
+  ${exports}
+`;
+};
 
 module.exports = template;

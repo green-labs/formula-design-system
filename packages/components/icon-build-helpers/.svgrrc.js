@@ -1,22 +1,24 @@
 // https://react-svgr.com/docs/options/
 
 module.exports = {
-  expandProps: false,
+  template: require("./templates/svgr-cli.template"),
+  // descProp:true,
+  expandProps: true,
   dimensions: true,
-  jsxRuntime: "automatic",
+  jsxRuntime: "classic",
   filenameCase: "pascal",
   outDir: "generated",
-  ext: "res",
-  template: require("./templates/svgr-cli.template"),
+  ext: "tsx",
+  ref: true,
+  memo: true,
+  typescript: true,
   svgProps: {
-    width: "{toString(size)}",
-    height: "{toString(size)}",
-    style: "{style}",
-    className: "{className}",
-    viewBox: "0 0 24 24",
-    fill: "none",
+    width: "{props.size}",
+    height: "{props.size}",
+    style: "{props.style}",
+    className: "{props.className}",
   },
   replaceAttrValues: {
-    "#000": "{fill}",
+    "#000": "{props.fill}",
   },
 };
