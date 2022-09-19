@@ -4,11 +4,19 @@ const template = (
 ) => {
   return tpl`
   ${imports}
-  ${interfaces}
+  import type { IconComponentProps } from '../types';
 
-  const ${componentName} =(${props}) => (
+  const ${componentName} = ({
+    size=24, 
+    style,
+    className,
+    fill,
+    ...props
+  }: IconComponentProps & SVGProps<SVGSVGElement>,
+  ref: Ref<SVGSVGElement>) => (
     ${jsx}
   )
+  
   ${exports}
 `;
 };

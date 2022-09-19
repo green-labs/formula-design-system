@@ -13,12 +13,12 @@ module.exports = {
   memo: true,
   typescript: true,
   svgProps: {
-    width: "{props.size}",
-    height: "{props.size}",
-    style: "{props.style}",
-    className: "{props.className}",
+    width: "{size}",
+    height: "{size}",
+    style: "{style}",
+    className: "{className}",
   },
   replaceAttrValues: {
-    "#000": "{props.fill}",
+    "#000": "{fill}",
   },
 };
