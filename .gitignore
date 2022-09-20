@@ -277,3 +277,4 @@ $RECYCLE.BIN/
 .bsb.lock
 .merlin
 package-lock.json
+**/lib/bs
