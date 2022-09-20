@@ -9,8 +9,13 @@
   "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
   "private": true,
   "main": "src/Formula.mjs",
+  "files": [
+    "src/Formula.mjs",
+    "src/Formula.res",
+    "bsconfig.json"
+  ],
   "dependencies": {
-    "@greenlabs/formula-components": "^0.1.0",
+    "@greenlabs/formula-components": "^0.0.1",
     "@rescript/react": "^0.10.3",
     "rescript": "^10.0.0"
   },

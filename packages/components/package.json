@@ -10,13 +10,14 @@
   "private": true,
   "main": "build/cjs/index.js",
   "module": "build/esm/index.js",
-  "types": "build/ts/latest/src/index.d.ts",
+  "types": "build/ts/index.d.ts",
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "files": [
-    "./build/**/*"
+    "build/",
+    "!build/ts/**/*.tsbuildinfo"
   ],
   "devDependencies": {
     "@babel/core": "^7.18.13",
@@ -42,7 +43,8 @@
     "@vanilla-extract/webpack-plugin": "^2.1.12",
     "babel-loader": "^8.2.5",
     "concurrently": "^7.3.0",
-    "rollup": "^2.79.0"
+    "rollup": "^2.79.0",
+    "typescript": "^4.8.3"
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",

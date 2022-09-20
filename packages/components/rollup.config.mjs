@@ -11,6 +11,7 @@ const pkg = JSON.parse(readFileSync(new URL("./package.json", import.meta.url).p
 
 const extensions = [".js", ".jsx", ".ts", ".tsx"]
 
+/** @type {import('rollup').RollupOptions} */
 export default {
   plugins: [
     nodeResolve({ extensions }),

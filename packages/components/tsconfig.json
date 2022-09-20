@@ -1,21 +1,23 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "composite": true,
     "emitDeclarationOnly": true,
     "importsNotUsedAsValues": "error",
-    "outDir": "dist/ts/",
-    "rootDir": "./",
-    "strictFunctionTypes": false,
-    "target": "es5",
+    "outDir": "build/ts/",
+    "rootDir": "src/",
+    "target": "es2020",
     "module": "esnext",
-    "lib": ["dom", "esnext"],
+    "lib": ["dom", "dom.iterable", "es2020"],
     "jsx": "react-jsx",
     "moduleResolution": "node",
     "declaration": true,
-    "declarationDir": ".",
+    "declarationMap": true,
+    "noEmit": false,
+    "noEmitHelpers": true,
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true
   },
   "include": ["./src", ".storybook/**/*.ts", ".storybook/**/*.tsx"],
   "exclude": ["./src/components/**/*.stories.tsx"]

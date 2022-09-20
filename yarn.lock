@@ -1677,7 +1677,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@greenlabs/formula-components@workspace:^, @greenlabs/formula-components@workspace:packages/components":
+"@greenlabs/formula-components@^0.0.1, @greenlabs/formula-components@workspace:packages/components":
   version: 0.0.0-use.local
   resolution: "@greenlabs/formula-components@workspace:packages/components"
   dependencies:
@@ -1704,9 +1704,10 @@ __metadata:
     "@vanilla-extract/webpack-plugin": ^2.1.12
     babel-loader: ^8.2.5
     concurrently: ^7.3.0
-    react: ^18.2.0
-    react-dom: ^18.2.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
     rollup: ^2.79.0
+    typescript: ^4.8.3
   languageName: unknown
   linkType: soft
 
@@ -1715,7 +1716,6 @@ __metadata:
   resolution: "@greenlabs/formula-design-token@workspace:packages/design-token"
   dependencies:
     chroma-js: ^2.4.2
-    color-blend: ^4.0.0
     style-dictionary: ^3.7.1
   languageName: unknown
   linkType: soft
@@ -1724,7 +1724,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@greenlabs/rescript-formula-components@workspace:packages/components-rescript"
   dependencies:
-    "@greenlabs/formula-components": "workspace:^"
+    "@greenlabs/formula-components": ^0.0.1
     "@rescript/react": ^0.10.3
     rescript: ^10.0.0
   languageName: unknown
@@ -5560,13 +5560,6 @@ __metadata:
     map-visit: ^1.0.0
     object-visit: ^1.0.0
   checksum: 15d9658fe6eb23594728346adad5433b86bb7a04fd51bbab337755158722f9313a5376ef479de5b35fbc54140764d0d39de89c339f5d25b959ed221466981da9
-  languageName: node
-  linkType: hard
-
-"color-blend@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "color-blend@npm:4.0.0"
-  checksum: 1db3045b4dcb4f751b3ec8848d34d7b8bbcc455bfeca8a4dd3413efef17cef5b5ccc740c564717913b3faa19af4dd996e94dc07e61f6eb4438744aaa8857e1ff
   languageName: node
   linkType: hard
 
@@ -11295,7 +11288,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^18.2.0":
+"react-dom@npm:^18.0.0":
   version: 18.2.0
   resolution: "react-dom@npm:18.2.0"
   dependencies:
@@ -11362,7 +11355,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^18.2.0":
+"react@npm:^18.0.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
   dependencies:
@@ -13152,6 +13145,26 @@ __metadata:
   version: 0.0.6
   resolution: "typedarray@npm:0.0.6"
   checksum: 33b39f3d0e8463985eeaeeacc3cb2e28bc3dfaf2a5ed219628c0b629d5d7b810b0eb2165f9f607c34871d5daa92ba1dc69f49051cf7d578b4cbd26c340b9d1b1
+  languageName: node
+  linkType: hard
+
+"typescript@npm:^4.8.3":
+  version: 4.8.3
+  resolution: "typescript@npm:4.8.3"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 8286a5edcaf3d68e65c451aa1e7150ad1cf53ee0813c07ec35b7abdfdb10f355ecaa13c6a226a694ae7a67785fd7eeebf89f845da0b4f7e4a35561ddc459aba0
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^4.8.3#~builtin<compat/typescript>":
+  version: 4.8.3
+  resolution: "typescript@patch:typescript@npm%3A4.8.3#~builtin<compat/typescript>::version=4.8.3&hash=f456af"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 0404a09c625df01934ef774b45ce1ca57ccae41cd625fcdbb82056715320d9329e70d9d75c2c732ec6ef947444ca978c189a332b71fa21f5c1437d5a83e24906
   languageName: node
   linkType: hard
 
