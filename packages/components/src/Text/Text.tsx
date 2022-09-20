@@ -36,6 +36,6 @@ export const Text = ({
 }
 Text.displayName = "Text"
 
-Text.Body = (args: TextProps) => <Text {...args} variant="body" />
-Text.Headline = (args: TextProps) => <Text {...args} variant="headline" />
-Text.Caption = (args: TextProps) => <Text {...args} variant="caption" />
+export const Body = (args: TextProps) => <Text {...args} variant="body" />
+export const Headline = (args: TextProps) => <Text {...args} variant="headline" />
+export const Caption = (args: TextProps) => <Text {...args} variant="caption" />
