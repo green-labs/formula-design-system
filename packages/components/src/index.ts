@@ -1,2 +1,2 @@
 export { Button } from "./Button/Button.bs"
-export { Text } from "./Text/Text"
+export { Text, TextBody, TextHeadline, TextCaption } from "./Text/Text"
