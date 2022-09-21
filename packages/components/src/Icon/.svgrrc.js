@@ -16,6 +16,8 @@ module.exports = {
     width: "{size}",
     height: "{size}",
     style: "{style}",
+    fill: "{fill}",
+    viewBox: "0 0 48 48",
     className: "{className}",
   },
   replaceAttrValues: {

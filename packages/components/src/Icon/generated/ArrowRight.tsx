@@ -14,9 +14,10 @@ const SvgArrowRight = (
   <svg
     width={size}
     height={size}
-    fill="none"
+    fill={fill}
     xmlns="http://www.w3.org/2000/svg"
     style={style}
+    viewBox="0 0 48 48"
     className={className}
     ref={ref}
     {...props}
@@ -26,7 +27,7 @@ const SvgArrowRight = (
       fill={fill}
     />
   </svg>
-); // Todo - write doc for TS Component
+);
 
 const ForwardRef = forwardRef(SvgArrowRight);
 const Memo = memo(ForwardRef);
