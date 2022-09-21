@@ -1,8 +1,6 @@
-import * as React from "react"
-
 export function Button(Props) {
   var size = Props.size
-  var label = Props.label
+  var children = Props.children
   var style =
     size === "medium"
       ? {
@@ -21,7 +19,7 @@ export function Button(Props) {
           height: "50px",
           width: "200px",
         }
-  return <button style={style}> {label} </button>
+  return <button style={style}> {children} </button>
 }
 
 Button.displayName = "Button"
