@@ -162,11 +162,11 @@ web_modules/
 
 # yarn berry (not using zero install)
 **/.yarn/*
-**/!.yarn/patches
-**/!.yarn/releases
-**/!.yarn/plugins
-**/!.yarn/sdks
-**/!.yarn/versions
+!**/.yarn/patches
+!**/.yarn/releases
+!**/.yarn/plugins
+!**/.yarn/sdks
+!**/.yarn/versions
 **/.pnp.*
 
 ### OSX ###
