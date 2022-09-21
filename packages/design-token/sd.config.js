@@ -1,6 +1,5 @@
 const StyleDictionary = require("style-dictionary")
 const chroma = require("chroma-js")
-const { overlay } = require("./util")
 const tailwindFormat = require("./formats/tailwind")
 const figmaFormat = require("./formats/figma")
 
@@ -9,11 +8,7 @@ const colorTransform = (token) => {
   const { value, modify = [] } = token
   let color = chroma(value)
 
-  modify.forEach(({ type, overlayColor, amount }) => {
-    if (type === "overlay") {
-      color = overlay(color, chroma(overlayColor).alpha(amount))
-      return
-    }
+  modify.forEach(({ type, amount }) => {
     color = color[type](amount)
   })
 

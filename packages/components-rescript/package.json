@@ -1,13 +1,12 @@
 {
   "name": "@greenlabs/rescript-formula-components",
-  "version": "0.0.1",
+  "version": "0.0.1-alpha.0",
   "repository": {
     "type": "git",
     "url": "git@github.com:green-labs/formula-design-system.git",
     "directory": "packages/components-rescript"
   },
   "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
-  "private": true,
   "main": "src/Formula.mjs",
   "files": [
     "src/Formula.mjs",
@@ -20,6 +19,7 @@
     "rescript": "^10.0.0"
   },
   "scripts": {
+    "build": "yarn re:build",
     "re:build": "rescript build -with-deps",
     "re:watch": "rescript build -with-deps -w"
   }
