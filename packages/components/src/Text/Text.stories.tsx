@@ -1,59 +1,102 @@
-import { Text as TextComponent } from "./Text"
+import { Text } from "./Text"
 
 import type { ComponentMeta } from "@storybook/react"
 
-const Template = (args) => <TextComponent {...args} />
-export const General = Template.bind({})
-General.title = "asdf"
-General.args = {
+const Template = (args) => {
+  switch (args.component) {
+    case "Headline":
+      return (
+        <>
+          <Text.Headline {...args} />
+          <hr />
+          <div>
+            variants: <br />
+            headline-sm-bold | headline-sm-regular | headline-md-bold | headline-lg-bold | headline-xl-bold
+          </div>
+        </>
+      )
+    case "Body":
+      return (
+        <>
+          <Text.Body {...args} />
+          <hr />
+          <div>
+            variants: <br />
+            body-lg-medium | body-lg-regular | body-lg-bold | body-md-medium | body-md-regular | body-md-bold |
+            body-sm-medium | body-sm-regular | body-sm-bold | body-xl-regular | body-xl-bold
+          </div>
+        </>
+      )
+    case "Caption":
+      return (
+        <>
+          <Text.Caption {...args} />
+          <hr />
+          <div>
+            variants: <br />
+            caption-xs-regular
+          </div>
+        </>
+      )
+    default:
+      return <Text {...args} />
+  }
+}
+
+export const Generic = Template.bind({})
+Generic.title = "asdf"
+Generic.args = {
   variantKey: "body-lg-medium",
   children: "Sample Text 샘플 텍스트",
 }
-General.argTypes = {
-  variantKey: {
-    name: "variantKey",
-    control: "radio",
-    options: [
-      "body-lg-medium",
-      "body-lg-regular",
-      "body-lg-bold",
-      "body-md-medium",
-      "body-md-regular",
-      "body-md-bold",
-      "body-sm-medium",
-      "body-sm-regular",
-      "body-sm-bold",
-      "body-xl-regular",
-      "body-xl-bold",
-      "headline-sm-bold",
-      "headline-sm-regular",
-      "headline-md-bold",
-      "headline-lg-bold",
-      "headline-xl-bold",
-      "caption-xs-regular",
-    ],
+Generic.argTypes = {
+  props: {
+    table: {
+      disable: true,
+    },
+  },
+  className: {
+    table: {
+      disable: true,
+    },
   },
 }
 
 export const Body = Template.bind({})
 Body.args = {
+  component: "Body",
   variant: "body",
   size: "sm",
   weight: "medium",
   children: "Sample Text 샘플 텍스트",
 }
 Body.argTypes = {
-  size: {
-    name: "size",
-    control: "radio",
-    options: ["sm", "md", "lg", "xs"],
-  },
-  weight: {
-    name: "weight",
-    control: "radio",
-    options: ["medium", "regular", "bold"],
-  },
   variant: {
+    table: {
+      disable: true,
+    },
+  },
+  variantKey: {
+    table: {
+      disable: true,
+    },
+  },
+  component: {
+    table: {
+      disable: true,
+    },
+  },
+  props: {
+    table: {
+      disable: true,
+    },
+  },
+  className: {
+    table: {
+      disable: true,
+    },
+  },
+  wrapper: {
     table: {
       disable: true,
     },
@@ -62,14 +105,14 @@ Body.argTypes = {
 
 // TODO: disable control args
 export const Headline = Template.bind({})
-Headline.args = { ...Body.args, variant: "headline" }
+Headline.args = { ...Body.args, component: "Headline", variant: "headline" }
 Headline.argTypes = { ...Body.argTypes }
 
 export const Caption = Template.bind({})
-Caption.args = { ...Body.args, variant: "caption" }
+Caption.args = { ...Body.args, component: "Caption", variant: "caption" }
 Caption.argTypes = { ...Body.argTypes }
 
 export default {
   title: "Example/Text",
-  component: TextComponent,
-} as ComponentMeta<typeof TextComponent>
+  component: Text,
+} as ComponentMeta<typeof Text>

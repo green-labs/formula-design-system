@@ -6,7 +6,7 @@ export interface TextProps {
   variantKey?: keyof typeof variants
   variant: "body" | "headline" | "caption"
   size: "sm" | "md" | "lg"
-  weight: "medium" | "regular" | "bold"
+  weight: "regular" | "medium" | "bold"
   wrapper: React.ElementType
 }
 
@@ -14,10 +14,10 @@ export const Text = ({
   className = "",
   props = {},
   children,
-  variant,
   variantKey,
-  size,
-  weight,
+  variant = "body",
+  size = "md",
+  weight = "regular",
   wrapper = "div",
 }: React.PropsWithChildren<TextProps>) => {
   const Wrapper = wrapper
@@ -39,3 +39,7 @@ Text.displayName = "Text"
 export const TextBody = (args: TextProps) => <Text {...args} variant="body" />
 export const TextHeadline = (args: TextProps) => <Text {...args} variant="headline" />
 export const TextCaption = (args: TextProps) => <Text {...args} variant="caption" />
+
+Text.Body = TextBody
+Text.Headline = TextHeadline
+Text.Caption = TextCaption
