@@ -1,6 +1,6 @@
 {
   "name": "@greenlabs/rescript-formula-components",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1-alpha.1",
   "repository": {
     "type": "git",
     "url": "git@github.com:green-labs/formula-design-system.git",
@@ -14,7 +14,7 @@
     "bsconfig.json"
   ],
   "dependencies": {
-    "@greenlabs/formula-components": "^0.0.1",
+    "@greenlabs/formula-components": "^0.0.1-alpha.0",
     "@rescript/react": "^0.10.3",
     "rescript": "^10.0.0"
   },

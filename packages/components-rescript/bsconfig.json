@@ -1,5 +1,5 @@
 {
-  "name": "formula-components",
+  "name": "@greenlabs/rescript-formula-components",
   "reason": {
     "react-jsx": 3
   },
