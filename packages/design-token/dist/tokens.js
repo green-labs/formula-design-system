@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 15 Sep 2022 16:06:51 GMT
+ * Generated on Thu, 22 Sep 2022 06:20:13 GMT
  */
 
 module.exports = {
@@ -46,11 +46,11 @@ module.exports = {
       },
       "gray": {
         "5": {
-          "value": "#FAFBFC",
+          "value": "#0E1012",
           "filePath": "tokens/color/ref.json",
           "isSource": true,
           "original": {
-            "value": "#FAFBFC"
+            "value": "#0E1012"
           },
           "name": "ref-color-gray-5",
           "attributes": {
@@ -88,11 +88,11 @@ module.exports = {
           ]
         },
         "20": {
-          "value": "#EDEFF2",
+          "value": "#F0F2F5",
           "filePath": "tokens/color/ref.json",
           "isSource": true,
           "original": {
-            "value": "#EDEFF2"
+            "value": "#F0F2F5"
           },
           "name": "ref-color-gray-20",
           "attributes": {
@@ -172,11 +172,11 @@ module.exports = {
           ]
         },
         "60": {
-          "value": "#86898F",
+          "value": "#8B8D94",
           "filePath": "tokens/color/ref.json",
           "isSource": true,
           "original": {
-            "value": "#86898F"
+            "value": "#8B8D94"
           },
           "name": "ref-color-gray-60",
           "attributes": {
@@ -214,11 +214,11 @@ module.exports = {
           ]
         },
         "80": {
-          "value": "#414347",
+          "value": "#3A3B40",
           "filePath": "tokens/color/ref.json",
           "isSource": true,
           "original": {
-            "value": "#414347"
+            "value": "#3A3B40"
           },
           "name": "ref-color-gray-80",
           "attributes": {
@@ -4394,7 +4394,7 @@ module.exports = {
       },
       "neutral-secondary": {
         "contents": {
-          "value": "#86898F",
+          "value": "#8B8D94",
           "filePath": "tokens/color/sys.json5",
           "isSource": true,
           "original": {
@@ -4415,7 +4415,7 @@ module.exports = {
           ]
         },
         "container": {
-          "value": "#EDEFF2",
+          "value": "#F0F2F5",
           "filePath": "tokens/color/sys.json5",
           "isSource": true,
           "original": {
@@ -4569,7 +4569,7 @@ module.exports = {
         }
       },
       "divider": {
-        "value": "#EDEFF2",
+        "value": "#F0F2F5",
         "filePath": "tokens/color/sys.json5",
         "isSource": true,
         "original": {
