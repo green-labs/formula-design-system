@@ -1,6 +1,6 @@
 import type { ComponentMeta, ComponentStory } from "@storybook/react";
 import * as IconComponents from "./generated";
-import type { ArrowDownLineIcon } from ".";
+import type { ArrowDownLineBoldIcon } from ".";
 import { IconSize } from ".";
 
 /* ---------- 아이콘 스타일 래퍼 시작 ----------*/
@@ -42,7 +42,9 @@ const IconItem: React.FC<IconItemProps> = ({ name, children }) => {
 
 /* ---------- 아이콘 스타일 래퍼 끝 ----------*/
 
-export const IconGallery: ComponentStory<typeof ArrowDownLineIcon> = (args) => {
+export const IconGallery: ComponentStory<typeof ArrowDownLineBoldIcon> = (
+  args
+) => {
   return (
     <>
       {Object.entries(IconComponents).map(([name, Component]) => (
@@ -78,7 +80,7 @@ export default {
           marginTop: "20px",
           marginBottom: "20px",
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))",
+          gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
           overflow: "hidden",
           flexFlow: "wrap",
           gap: 30,
@@ -88,4 +90,4 @@ export default {
       </div>
     ),
   ],
-} as ComponentMeta<typeof ArrowDownLineIcon>;
+} as ComponentMeta<typeof ArrowDownLineBoldIcon>;

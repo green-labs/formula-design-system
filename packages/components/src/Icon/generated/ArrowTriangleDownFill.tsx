@@ -2,7 +2,7 @@ import { SVGProps, Ref, forwardRef, memo } from "react";
 import type { IconProps } from "../types";
 import { IconSize } from "../types";
 
-const SvgArrowTriangleDownFill = (
+const SvgArrowtriangledownFill = (
   {
     size = IconSize.XL,
     style,
@@ -30,6 +30,6 @@ const SvgArrowTriangleDownFill = (
   </svg>
 );
 
-const ForwardRef = forwardRef(SvgArrowTriangleDownFill);
+const ForwardRef = forwardRef(SvgArrowtriangledownFill);
 const Memo = memo(ForwardRef);
 export default Memo;
