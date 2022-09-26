@@ -2,9 +2,10 @@ const template = ({ jsx, componentName, exports }, { tpl }) => {
   return tpl`
   import { SVGProps, Ref, forwardRef, memo } from "react";
   import type { IconProps } from '../types';
+  import { IconSize } from "../types";
 
   const ${componentName} = ({
-    size=24, 
+    size = IconSize.XL, 
     style,
     className,
     fill,
