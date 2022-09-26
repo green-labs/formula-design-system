@@ -1,13 +1,13 @@
 import { variants } from "./styles.css"
 
 export interface TextProps {
-  props: {}
-  className: string
+  props?: {}
+  className?: string
   variantKey?: keyof typeof variants
-  variant: "body" | "headline" | "caption"
-  size: "sm" | "md" | "lg"
-  weight: "regular" | "medium" | "bold"
-  wrapper: React.ElementType
+  variant?: "body" | "headline" | "caption"
+  size?: "sm" | "md" | "lg"
+  weight?: "regular" | "medium" | "bold"
+  wrapper?: React.ElementType
 }
 
 export const Text = ({

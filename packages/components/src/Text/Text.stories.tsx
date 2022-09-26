@@ -113,6 +113,6 @@ Caption.args = { ...Body.args, component: "Caption", variant: "caption" }
 Caption.argTypes = { ...Body.argTypes }
 
 export default {
-  title: "Example/Text",
+  title: "Base/Text",
   component: Text,
 } as ComponentMeta<typeof Text>
