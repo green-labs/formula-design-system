@@ -9,6 +9,6 @@ export enum IconSize {
 export interface IconProps {
   className?: string;
   fill?: string;
-  size?: IconSize;
+  size?: IconSize | number;
   style?: React.CSSProperties;
 }
