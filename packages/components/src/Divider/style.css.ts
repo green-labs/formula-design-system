@@ -3,17 +3,25 @@ import json from '@greenlabs/formula-design-token'
 
 const { color } = json.sys
 
+const horizontalBase = style({
+  width: '100%'
+})
+
 export const variants = styleVariants({
-  'horizontal-small': {
-    backgroundColor: color.divider.value,
-    width: '100%',
-    height: '1px'
-  },
-  'horizontal-large': {
-    backgroundColor: color.divider.value,
-    width: '100%',
-    height: '10px'
-  },
+  'horizontal-small': [
+    horizontalBase,
+    {
+      backgroundColor: color.divider.value,
+      height: '1px'
+    }
+  ],
+  'horizontal-large': [
+    horizontalBase,
+    {
+      backgroundColor: color.divider.value,
+      height: '10px'
+    }
+  ],
   'vertical-small': {
     backgroundColor: color.divider.value,
     width: '1px',

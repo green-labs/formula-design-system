@@ -4,26 +4,24 @@ export interface DividerProps {
   props:{}
   className:string
   variantKey?: keyof typeof variants
-  direction: "horizontal"| "vertical",
-  size: "small"|"large",
+  variant:"small"|"large"|"verticalSmall"
 }
 
-export const Divider = ({props, size, direction, variantKey, className}:DividerProps)=>{
-  const _variantKey = variantKey??(`${direction}-${size}` as keyof typeof variants) 
-  const variantClass= variants[_variantKey]
+const variantMap = {
+  small:'horizontal-small',
+  large:'horizontal-large',
+  verticalSmall:'vertical-small'
+}
 
-  if (process.env.NODE_ENV !== "production" && !(_variantKey in variants)) {
-    console.error(`You have used non-exist variant key ${_variantKey}.`)
+export const Divider = ({props, variantKey,variant, className}:DividerProps)=>{
+  const variantClass=variantMap[variantKey||variant]
+
+  if (process.env.NODE_ENV !== "production" && !(variantClass&& variantClass in variants)) {
+    console.error(`You have used non-exist variant key ${variant}.`)
   }
 
   return (
-    <div className={`${variantClass} ${className}`} {...props}/>
+    <div className={variants[variantClass]} {...props}/>
   )
 }
 Divider.displayName = "Divider"
-
-export const DividerHorizontalSmall = (args:DividerProps)=><Divider {...args} direction="horizontal" size="small"/>
-
-export const DividerHorizontalLarge = (args:DividerProps)=><Divider {...args} direction="horizontal" size="large"/>
-
-export const DividerVerticalSmall = (args:DividerProps)=><Divider {...args} direction="vertical" size="small"/>
