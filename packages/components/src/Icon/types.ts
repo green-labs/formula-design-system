@@ -1,14 +1,9 @@
-export enum IconSize {
-  PC = 36,
-  XL = 24,
-  LG = 20,
-  SM = 16,
-  XS = 12,
-}
+export type size = "PC" | "XL" | "LG" | "SM" | "XS";
 
 export interface IconProps {
   className?: string;
   fill?: string;
-  size?: IconSize | number;
+  size?: size;
+  sizePx?: number;
   style?: React.CSSProperties;
 }

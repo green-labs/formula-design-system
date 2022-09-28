@@ -13,8 +13,8 @@ module.exports = {
   memo: true,
   typescript: true,
   svgProps: {
-    width: "{size}",
-    height: "{size}",
+    width: "{finalSize}",
+    height: "{finalSize}",
     style: "{style}",
     fill: "{fill}",
     viewBox: "0 0 48 48",
