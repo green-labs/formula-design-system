@@ -1,6 +1,6 @@
-import { SVGProps, Ref, forwardRef, memo } from "react";
-import { convertSizeToPx } from "../utils";
-import type { IconProps } from "../types";
+import { SVGProps, Ref, forwardRef, memo } from "react"
+import { convertSizeToPx } from "../utils"
+import type { IconProps } from "../types"
 
 const SvgShareandroidLineBold = (
   {
@@ -13,7 +13,7 @@ const SvgShareandroidLineBold = (
   }: IconProps & SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>
 ) => {
-  const finalSize = sizePx ? sizePx : convertSizeToPx(size);
+  const finalSize = sizePx ? sizePx : convertSizeToPx(size)
   return (
     <svg
       width={finalSize}
@@ -31,9 +31,9 @@ const SvgShareandroidLineBold = (
         fill={fill}
       />
     </svg>
-  );
-};
+  )
+}
 
-const ForwardRef = forwardRef(SvgShareandroidLineBold);
-const Memo = memo(ForwardRef);
-export default Memo;
+const ForwardRef = forwardRef(SvgShareandroidLineBold)
+const Memo = memo(ForwardRef)
+export default Memo

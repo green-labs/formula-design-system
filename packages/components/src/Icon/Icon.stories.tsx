@@ -1,12 +1,12 @@
-import type { ComponentMeta, ComponentStory } from "@storybook/react";
-import * as IconComponents from "./generated";
-import type { ArrowDownLineBoldIcon } from ".";
+import type { ComponentMeta, ComponentStory } from "@storybook/react"
+import * as IconComponents from "./generated"
+import type { ArrowDownLineBoldIcon } from "."
 
 /* ---------- 아이콘 스타일 래퍼 시작 ----------*/
 
 interface IconItemProps {
-  name: string;
-  children?: React.ReactNode;
+  name: string
+  children?: React.ReactNode
 }
 
 // Todo - support code copy(ts, res) handler
@@ -36,8 +36,8 @@ const IconItem: React.FC<IconItemProps> = ({ name, children }) => {
       </div>
       <div>{name}</div>
     </div>
-  );
-};
+  )
+}
 
 /* ---------- 아이콘 스타일 래퍼 끝 ----------*/
 
@@ -52,10 +52,10 @@ export const IconGallery: ComponentStory<typeof ArrowDownLineBoldIcon> = (
         </IconItem>
       ))}
     </>
-  );
-};
+  )
+}
 
-const Icons = IconGallery.bind({});
+const Icons = IconGallery.bind({})
 
 export default {
   title: "Example/Icon",
@@ -88,4 +88,4 @@ export default {
       </div>
     ),
   ],
-} as ComponentMeta<typeof ArrowDownLineBoldIcon>;
+} as ComponentMeta<typeof ArrowDownLineBoldIcon>
