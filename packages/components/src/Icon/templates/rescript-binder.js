@@ -1,4 +1,50 @@
-// 리스크립트를 위 바인딩 모듈을 제공해주는 node 환경이 제공되어야 함.
+const fs = require("fs")
+const path = require("path")
 
-// const utilFuncPath = path.join(__dirname, "../Utils/toString.res");
-// const utilFunc = fs.readFileSync(utilFuncPath, "utf-8");
+const docs = fs.readFileSync(path.join(__dirname, "docs.res.txt"), "utf-8")
+
+const checkTsxFile = (filename) => filename.includes(".tsx")
+
+const getIconName = (filename) => {
+  const [iconName, _filenameExtension] = filename.split(".")
+  return iconName
+}
+
+const generateIconModule = (iconName) => {
+  return `
+${docs}
+module ${iconName} = {
+    @module("@greenlabs/formula-components") @react.component
+    external make: (
+        ~style: ReactDOMStyle.t=?,
+        ~classname: string=?,
+        ~size: size=?,
+        ~sizePx: int=?,
+        ~fill: string=?,
+        ~ref: ReactDOM.Ref.t=?,
+    ) => React.element = "${iconName}"
+}
+`
+}
+
+const generatedFilesPath = path.join(__dirname, "../generated")
+const iconModules = fs
+  .readdirSync(generatedFilesPath)
+  .filter(checkTsxFile)
+  .map(getIconName)
+  .map(generateIconModule)
+
+iconModules.unshift(`
+@deriving(jsConverter)
+type size = [#PC | #XL | #LG | #SM | #XS]
+`)
+
+try {
+  const moduleFilePath = path.join(
+    __dirname,
+    "../../../../components-rescript/src/Icon.res"
+  )
+  fs.writeFileSync(moduleFilePath, iconModules.join("\n"))
+} catch (error) {
+  console.log(error)
+}
