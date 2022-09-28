@@ -1,7 +1,6 @@
 import type { ComponentMeta, ComponentStory } from "@storybook/react";
 import * as IconComponents from "./generated";
 import type { ArrowDownLineBoldIcon } from ".";
-import { IconSize } from ".";
 
 /* ---------- 아이콘 스타일 래퍼 시작 ----------*/
 
@@ -63,11 +62,10 @@ export default {
   component: Icons,
   argTypes: {
     size: {
-      defaultValue: IconSize.XL,
+      defaultValue: "XL",
       description: "아이콘의 사이즈입니다.",
       control: { type: "radio" },
-      options: Object.values(IconSize).filter((x) => !Number(x)),
-      mapping: IconSize,
+      options: ["PC", "XL", "LG", "SM", "XS"],
     },
     fill: {
       control: { type: "color" },
