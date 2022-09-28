@@ -1,21 +1,24 @@
 const template = ({ jsx, componentName, exports }, { tpl }) => {
   return tpl`
   import { SVGProps, Ref, forwardRef, memo } from "react";
-  import type { IconProps } from '../types';
-  import { IconSize } from "../types";
+  import { convertSizeToPx } from "../utils";
+  import type { IconProps } from "../types";
 
   const ${componentName} = ({
-    size = IconSize.XL, 
+    size = "XL", 
+    sizePx,
     style,
     className,
     fill,
     ...props
   }: IconProps & SVGProps<SVGSVGElement>,
-  ref: Ref<SVGSVGElement>) => (
-    ${jsx}
-  )
+  ref: Ref<SVGSVGElement>) => {
+    const finalSize = sizePx ? sizePx : convertSizeToPx(size);
+    return ${jsx}
+  }
+
+    ${exports}
   
-  ${exports}
 `;
 };
 
