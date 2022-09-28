@@ -1,6 +1,6 @@
-import { SVGProps, Ref, forwardRef, memo } from "react";
-import { convertSizeToPx } from "../utils";
-import type { IconProps } from "../types";
+import { SVGProps, Ref, forwardRef, memo } from "react"
+import { convertSizeToPx } from "../utils"
+import type { IconProps } from "../types"
 
 const SvgCameraFill = (
   {
@@ -13,7 +13,7 @@ const SvgCameraFill = (
   }: IconProps & SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>
 ) => {
-  const finalSize = sizePx ? sizePx : convertSizeToPx(size);
+  const finalSize = sizePx ? sizePx : convertSizeToPx(size)
   return (
     <svg
       width={finalSize}
@@ -32,9 +32,9 @@ const SvgCameraFill = (
       />
       <path d="M24.25 31.25a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z" fill={fill} />
     </svg>
-  );
-};
+  )
+}
 
-const ForwardRef = forwardRef(SvgCameraFill);
-const Memo = memo(ForwardRef);
-export default Memo;
+const ForwardRef = forwardRef(SvgCameraFill)
+const Memo = memo(ForwardRef)
+export default Memo

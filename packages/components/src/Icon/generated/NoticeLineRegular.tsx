@@ -1,6 +1,6 @@
-import { SVGProps, Ref, forwardRef, memo } from "react";
-import { convertSizeToPx } from "../utils";
-import type { IconProps } from "../types";
+import { SVGProps, Ref, forwardRef, memo } from "react"
+import { convertSizeToPx } from "../utils"
+import type { IconProps } from "../types"
 
 const SvgNoticeLineRegular = (
   {
@@ -13,7 +13,7 @@ const SvgNoticeLineRegular = (
   }: IconProps & SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>
 ) => {
-  const finalSize = sizePx ? sizePx : convertSizeToPx(size);
+  const finalSize = sizePx ? sizePx : convertSizeToPx(size)
   return (
     <svg
       width={finalSize}
@@ -37,9 +37,9 @@ const SvgNoticeLineRegular = (
         fill={fill}
       />
     </svg>
-  );
-};
+  )
+}
 
-const ForwardRef = forwardRef(SvgNoticeLineRegular);
-const Memo = memo(ForwardRef);
-export default Memo;
+const ForwardRef = forwardRef(SvgNoticeLineRegular)
+const Memo = memo(ForwardRef)
+export default Memo

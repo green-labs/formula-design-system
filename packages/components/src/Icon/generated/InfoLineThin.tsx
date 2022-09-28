@@ -1,6 +1,6 @@
-import { SVGProps, Ref, forwardRef, memo } from "react";
-import { convertSizeToPx } from "../utils";
-import type { IconProps } from "../types";
+import { SVGProps, Ref, forwardRef, memo } from "react"
+import { convertSizeToPx } from "../utils"
+import type { IconProps } from "../types"
 
 const SvgInfoLineThin = (
   {
@@ -13,7 +13,7 @@ const SvgInfoLineThin = (
   }: IconProps & SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>
 ) => {
-  const finalSize = sizePx ? sizePx : convertSizeToPx(size);
+  const finalSize = sizePx ? sizePx : convertSizeToPx(size)
   return (
     <svg
       width={finalSize}
@@ -35,9 +35,9 @@ const SvgInfoLineThin = (
         fill={fill}
       />
     </svg>
-  );
-};
+  )
+}
 
-const ForwardRef = forwardRef(SvgInfoLineThin);
-const Memo = memo(ForwardRef);
-export default Memo;
+const ForwardRef = forwardRef(SvgInfoLineThin)
+const Memo = memo(ForwardRef)
+export default Memo
