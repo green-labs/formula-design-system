@@ -1,3 +1,3 @@
-import convertSizeToPx from "./convertSizeToPx";
+import convertSizeToPx from "./convertSizeToPx"
 
-export { convertSizeToPx };
+export { convertSizeToPx }

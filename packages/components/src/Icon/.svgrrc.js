@@ -23,4 +23,4 @@ module.exports = {
   replaceAttrValues: {
     "#1F2024": "{fill}",
   },
-};
+}
