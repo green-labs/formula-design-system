@@ -1,33 +1,20 @@
 import { variants } from "./style.css"
 
-export interface DividerProps {
-  props: {}
-  className: string
-  variantKey?: keyof typeof variants
-  variant: "small" | "large" | "verticalSmall"
-}
-
-const variantMap = {
+const variantMap: { [key: string]: keyof typeof variants } = {
   small: "horizontal-small",
   large: "horizontal-large",
   verticalSmall: "vertical-small",
+} as const
+
+export interface DividerProps {
+  props: {}
+  className: string
+  variant: keyof typeof variantMap
 }
 
-export const Divider = ({
-  props,
-  variantKey,
-  variant,
-  className,
-}: DividerProps) => {
-  const variantClass = variantMap[variantKey || variant]
-
-  if (
-    process.env.NODE_ENV !== "production" &&
-    !(variantClass && variantClass in variants)
-  ) {
-    console.error(`You have used non-exist variant key ${variant}.`)
-  }
-
-  return <div className={variants[variantClass]} {...props} />
+export const Divider = ({ props, variant, className }: DividerProps) => {
+  const variantKey = variantMap[variant]
+  return <div className={`${variants[variantKey]} ${className}`} {...props} />
 }
+
 Divider.displayName = "Divider"
