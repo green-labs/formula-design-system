@@ -81,23 +81,5 @@ module Text = {
     ) => React.element = "TextCaption"
   }
 }
-module Icon = {
-  @deriving(jsConverter)
-  type size =
-    | @as(36) PC
-    | @as(24) XL
-    | @as(20) LG
-    | @as(16) SM
-    | @as(12) XS
 
-  module ArrowDownLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-      ~style: ReactDOMStyle.t=?,
-      ~classname: string=?,
-      ~size: size=?,
-      ~fill: string=?,
-      ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ArrowDownLineBold"
-  }
-}
+module Icon = Formula__Icon
