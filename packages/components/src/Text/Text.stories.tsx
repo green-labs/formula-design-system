@@ -11,7 +11,8 @@ const Template = (args) => {
           <hr />
           <div>
             variants: <br />
-            headline-sm-bold | headline-sm-regular | headline-md-bold | headline-lg-bold | headline-xl-bold
+            headline-sm-bold | headline-sm-regular | headline-md-bold |
+            headline-lg-bold | headline-xl-bold
           </div>
         </>
       )
@@ -22,8 +23,9 @@ const Template = (args) => {
           <hr />
           <div>
             variants: <br />
-            body-lg-medium | body-lg-regular | body-lg-bold | body-md-medium | body-md-regular | body-md-bold |
-            body-sm-medium | body-sm-regular | body-sm-bold | body-xl-regular | body-xl-bold
+            body-lg-medium | body-lg-regular | body-lg-bold | body-md-medium |
+            body-md-regular | body-md-bold | body-sm-medium | body-sm-regular |
+            body-sm-bold | body-xl-regular | body-xl-bold
           </div>
         </>
       )

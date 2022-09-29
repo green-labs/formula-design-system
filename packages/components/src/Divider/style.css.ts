@@ -1,30 +1,30 @@
-import { styleVariants, style } from '@vanilla-extract/css'
-import json from '@greenlabs/formula-design-token'
+import { styleVariants, style } from "@vanilla-extract/css"
+import json from "@greenlabs/formula-design-token"
 
 const { color } = json.sys
 
 const horizontalBase = style({
-  width: '100%'
+  width: "100%",
 })
 
 export const variants = styleVariants({
-  'horizontal-small': [
+  "horizontal-small": [
     horizontalBase,
     {
       backgroundColor: color.divider.value,
-      height: '1px'
-    }
+      height: "1px",
+    },
   ],
-  'horizontal-large': [
+  "horizontal-large": [
     horizontalBase,
     {
       backgroundColor: color.divider.value,
-      height: '10px'
-    }
+      height: "10px",
+    },
   ],
-  'vertical-small': {
+  "vertical-small": {
     backgroundColor: color.divider.value,
-    width: '1px',
-    height: '100%'
-  }
+    width: "1px",
+    height: "100%",
+  },
 })
