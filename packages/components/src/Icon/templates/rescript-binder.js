@@ -14,14 +14,7 @@ const generateIconModule = (iconName) => {
   return `${docs}
 module ${iconName} = {
   @module("@greenlabs/formula-components") @react.component
-  external make: (
-    ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
-    ~size: size=?,
-    ~sizePx: int=?,
-    ~fill: string=?,
-    ~ref: ReactDOM.Ref.t=?,
-  ) => React.element = "${iconName}"
+  external make: iconComponent = "${iconName}"
 }
 `
 }
@@ -35,6 +28,16 @@ const iconModules = fs
 
 const resTypes = `@deriving(jsConverter)
 type size = [#PC | #XL | #LG | #SM | #XS]
+
+type iconComponent = (
+  ~style: ReactDOMStyle.t=?,
+  ~classname: string=?,
+  ~size: size=?,
+  ~sizePx: int=?,
+  ~fill: string=?,
+  ~ref: ReactDOM.Ref.t=?,
+) => React.element
+
 `
 
 const resModules = resTypes + iconModules.join("\n")
