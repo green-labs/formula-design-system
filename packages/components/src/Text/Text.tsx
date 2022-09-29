@@ -21,7 +21,8 @@ export const Text = ({
   wrapper = "div",
 }: React.PropsWithChildren<TextProps>) => {
   const Wrapper = wrapper
-  const _variantKey = variantKey ?? (`${variant}-${size}-${weight}` as keyof typeof variants)
+  const _variantKey =
+    variantKey ?? (`${variant}-${size}-${weight}` as keyof typeof variants)
   const variantClass = variants[_variantKey]
 
   if (process.env.NODE_ENV !== "production" && !(_variantKey in variants)) {
@@ -37,8 +38,12 @@ export const Text = ({
 Text.displayName = "Text"
 
 export const TextBody = (args: TextProps) => <Text {...args} variant="body" />
-export const TextHeadline = (args: TextProps) => <Text {...args} variant="headline" />
-export const TextCaption = (args: TextProps) => <Text {...args} variant="caption" />
+export const TextHeadline = (args: TextProps) => (
+  <Text {...args} variant="headline" />
+)
+export const TextCaption = (args: TextProps) => (
+  <Text {...args} variant="caption" />
+)
 
 Text.Body = TextBody
 Text.Headline = TextHeadline
