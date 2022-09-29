@@ -1,8 +1,5 @@
-
 @deriving(jsConverter)
 type size = [#PC | #XL | #LG | #SM | #XS]
-
-
 /**
     @props classname - [string] Class content attribute.
     @props fill - [Hex color code] A 6-symbol code made of up to three 2-symbol elements. Default color is #1F2024 (gray-90).
@@ -11,17 +8,16 @@ type size = [#PC | #XL | #LG | #SM | #XS]
     @props style - [ReactDOMStyle.t] 
 */
 module ArrowDownLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ArrowDownLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ArrowDownLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -31,17 +27,16 @@ module ArrowDownLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module ArrowDownLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ArrowDownLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ArrowDownLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -51,17 +46,16 @@ module ArrowDownLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module ArrowDownLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ArrowDownLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ArrowDownLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -71,17 +65,16 @@ module ArrowDownLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module ArrowLeftLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ArrowLeftLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ArrowLeftLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -91,17 +84,16 @@ module ArrowLeftLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module ArrowLeftLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ArrowLeftLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ArrowLeftLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -111,17 +103,16 @@ module ArrowLeftLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module ArrowLeftLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ArrowLeftLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ArrowLeftLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -131,17 +122,16 @@ module ArrowLeftLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module ArrowRightLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ArrowRightLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ArrowRightLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -151,17 +141,16 @@ module ArrowRightLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module ArrowRightLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ArrowRightLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ArrowRightLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -171,17 +160,16 @@ module ArrowRightLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module ArrowRightLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ArrowRightLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ArrowRightLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -191,17 +179,16 @@ module ArrowRightLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module ArrowTriangleDownFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ArrowTriangleDownFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ArrowTriangleDownFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -211,17 +198,16 @@ module ArrowTriangleDownFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module ArrowTriangleDownLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ArrowTriangleDownLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ArrowTriangleDownLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -231,17 +217,16 @@ module ArrowTriangleDownLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module ArrowTriangleDownLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ArrowTriangleDownLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ArrowTriangleDownLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -251,17 +236,16 @@ module ArrowTriangleDownLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module ArrowTriangleDownLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ArrowTriangleDownLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ArrowTriangleDownLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -271,17 +255,16 @@ module ArrowTriangleDownLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module ArrowTriangleUpFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ArrowTriangleUpFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ArrowTriangleUpFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -291,17 +274,16 @@ module ArrowTriangleUpFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module ArrowTriangleUpLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ArrowTriangleUpLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ArrowTriangleUpLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -311,17 +293,16 @@ module ArrowTriangleUpLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module ArrowTriangleUpLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ArrowTriangleUpLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ArrowTriangleUpLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -331,17 +312,16 @@ module ArrowTriangleUpLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module ArrowTriangleUpLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ArrowTriangleUpLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ArrowTriangleUpLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -351,17 +331,16 @@ module ArrowTriangleUpLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module ArrowUpLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ArrowUpLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ArrowUpLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -371,17 +350,16 @@ module ArrowUpLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module ArrowUpLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ArrowUpLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ArrowUpLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -391,17 +369,16 @@ module ArrowUpLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module ArrowUpLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ArrowUpLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ArrowUpLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -411,17 +388,16 @@ module ArrowUpLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module BookMarkFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "BookMarkFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "BookMarkFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -431,17 +407,16 @@ module BookMarkFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module BookMarkLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "BookMarkLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "BookMarkLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -451,17 +426,16 @@ module BookMarkLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module BookMarkLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "BookMarkLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "BookMarkLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -471,17 +445,16 @@ module BookMarkLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module BookMarkLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "BookMarkLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "BookMarkLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -491,17 +464,16 @@ module BookMarkLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module CalendarFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CalendarFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CalendarFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -511,17 +483,16 @@ module CalendarFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module CalendarLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CalendarLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CalendarLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -531,17 +502,16 @@ module CalendarLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module CalendarLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CalendarLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CalendarLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -551,17 +521,16 @@ module CalendarLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module CalendarLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CalendarLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CalendarLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -571,17 +540,16 @@ module CalendarLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module CameraFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CameraFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CameraFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -591,17 +559,16 @@ module CameraFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module CameraLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CameraLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CameraLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -611,17 +578,16 @@ module CameraLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module CameraLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CameraLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CameraLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -631,17 +597,16 @@ module CameraLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module CameraLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CameraLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CameraLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -651,17 +616,16 @@ module CameraLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module CartFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CartFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CartFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -671,17 +635,16 @@ module CartFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module CartLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CartLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CartLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -691,17 +654,16 @@ module CartLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module CartLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CartLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CartLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -711,17 +673,16 @@ module CartLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module CartLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CartLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CartLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -731,17 +692,16 @@ module CartLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module CertificationFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CertificationFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CertificationFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -751,17 +711,16 @@ module CertificationFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module CertificationLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CertificationLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CertificationLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -771,17 +730,16 @@ module CertificationLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module CertificationLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CertificationLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CertificationLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -791,17 +749,16 @@ module CertificationLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module CertificationLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CertificationLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CertificationLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -811,17 +768,16 @@ module CertificationLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module ChatFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ChatFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ChatFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -831,17 +787,16 @@ module ChatFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module ChatLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ChatLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ChatLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -851,17 +806,16 @@ module ChatLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module ChatLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ChatLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ChatLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -871,17 +825,16 @@ module ChatLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module ChatLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ChatLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ChatLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -891,17 +844,16 @@ module ChatLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module CheckCircleFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CheckCircleFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CheckCircleFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -911,17 +863,16 @@ module CheckCircleFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module CheckCircleLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CheckCircleLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CheckCircleLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -931,17 +882,16 @@ module CheckCircleLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module CheckCircleLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CheckCircleLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CheckCircleLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -951,17 +901,16 @@ module CheckCircleLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module CheckCircleLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CheckCircleLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CheckCircleLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -971,17 +920,16 @@ module CheckCircleLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module CheckLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CheckLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CheckLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -991,17 +939,16 @@ module CheckLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module CheckLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CheckLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CheckLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1011,17 +958,16 @@ module CheckLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module CheckLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CheckLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CheckLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1031,17 +977,16 @@ module CheckLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module ChevronDownLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ChevronDownLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ChevronDownLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1051,17 +996,16 @@ module ChevronDownLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module ChevronDownLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ChevronDownLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ChevronDownLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1071,17 +1015,16 @@ module ChevronDownLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module ChevronDownLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ChevronDownLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ChevronDownLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1091,17 +1034,16 @@ module ChevronDownLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module ChevronLeftLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ChevronLeftLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ChevronLeftLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1111,17 +1053,16 @@ module ChevronLeftLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module ChevronLeftLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ChevronLeftLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ChevronLeftLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1131,17 +1072,16 @@ module ChevronLeftLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module ChevronLeftLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ChevronLeftLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ChevronLeftLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1151,17 +1091,16 @@ module ChevronLeftLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module ChevronRightLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ChevronRightLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ChevronRightLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1171,17 +1110,16 @@ module ChevronRightLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module ChevronRightLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ChevronRightLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ChevronRightLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1191,17 +1129,16 @@ module ChevronRightLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module ChevronRightLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ChevronRightLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ChevronRightLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1211,17 +1148,16 @@ module ChevronRightLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module ChevronUpLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ChevronUpLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ChevronUpLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1231,17 +1167,16 @@ module ChevronUpLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module ChevronUpLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ChevronUpLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ChevronUpLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1251,17 +1186,16 @@ module ChevronUpLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module ChevronUpLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ChevronUpLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ChevronUpLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1271,17 +1205,16 @@ module ChevronUpLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module ClockFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ClockFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ClockFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1291,17 +1224,16 @@ module ClockFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module ClockLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ClockLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ClockLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1311,17 +1243,16 @@ module ClockLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module ClockLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ClockLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ClockLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1331,17 +1262,16 @@ module ClockLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module ClockLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ClockLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ClockLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1351,17 +1281,16 @@ module ClockLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module CloseLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CloseLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CloseLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1371,17 +1300,16 @@ module CloseLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module CloseLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CloseLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CloseLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1391,17 +1319,16 @@ module CloseLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module CloseLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CloseLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CloseLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1411,17 +1338,16 @@ module CloseLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module CommentFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CommentFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CommentFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1431,17 +1357,16 @@ module CommentFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module CommentLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CommentLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CommentLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1451,17 +1376,16 @@ module CommentLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module CommentLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CommentLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CommentLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1471,17 +1395,16 @@ module CommentLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module CommentLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CommentLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CommentLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1491,17 +1414,16 @@ module CommentLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module CompassFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CompassFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CompassFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1511,17 +1433,16 @@ module CompassFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module CompassLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CompassLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CompassLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1531,17 +1452,16 @@ module CompassLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module CompassLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CompassLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CompassLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1551,17 +1471,16 @@ module CompassLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module CompassLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CompassLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CompassLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1571,17 +1490,16 @@ module CompassLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module CopyContentsFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CopyContentsFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CopyContentsFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1591,17 +1509,16 @@ module CopyContentsFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module CopyContentsLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CopyContentsLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CopyContentsLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1611,17 +1528,16 @@ module CopyContentsLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module CopyContentsLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CopyContentsLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CopyContentsLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1631,17 +1547,16 @@ module CopyContentsLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module CopyContentsLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "CopyContentsLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "CopyContentsLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1651,17 +1566,16 @@ module CopyContentsLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module DeleteFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "DeleteFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "DeleteFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1671,17 +1585,16 @@ module DeleteFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module DeleteLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "DeleteLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "DeleteLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1691,17 +1604,16 @@ module DeleteLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module DeleteLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "DeleteLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "DeleteLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1711,17 +1623,16 @@ module DeleteLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module DeleteLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "DeleteLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "DeleteLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1731,17 +1642,16 @@ module DeleteLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module DownloadFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "DownloadFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "DownloadFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1751,17 +1661,16 @@ module DownloadFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module DownloadLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "DownloadLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "DownloadLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1771,17 +1680,16 @@ module DownloadLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module DownloadLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "DownloadLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "DownloadLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1791,17 +1699,16 @@ module DownloadLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module DownloadLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "DownloadLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "DownloadLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1811,17 +1718,16 @@ module DownloadLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module EditCutFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "EditCutFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "EditCutFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1831,17 +1737,16 @@ module EditCutFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module EditCutLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "EditCutLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "EditCutLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1851,17 +1756,16 @@ module EditCutLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module EditCutLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "EditCutLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "EditCutLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1871,17 +1775,16 @@ module EditCutLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module EditCutLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "EditCutLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "EditCutLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1891,17 +1794,16 @@ module EditCutLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module EditFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "EditFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "EditFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1911,17 +1813,16 @@ module EditFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module EditLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "EditLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "EditLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1931,17 +1832,16 @@ module EditLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module EditLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "EditLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "EditLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1951,17 +1851,16 @@ module EditLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module EditLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "EditLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "EditLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1971,17 +1870,16 @@ module EditLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module EyeFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "EyeFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "EyeFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -1991,17 +1889,16 @@ module EyeFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module EyeLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "EyeLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "EyeLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2011,17 +1908,16 @@ module EyeLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module EyeLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "EyeLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "EyeLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2031,17 +1927,16 @@ module EyeLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module EyeLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "EyeLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "EyeLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2051,17 +1946,16 @@ module EyeLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module EyeSlashFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "EyeSlashFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "EyeSlashFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2071,17 +1965,16 @@ module EyeSlashFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module EyeSlashLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "EyeSlashLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "EyeSlashLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2091,17 +1984,16 @@ module EyeSlashLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module EyeSlashLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "EyeSlashLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "EyeSlashLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2111,17 +2003,16 @@ module EyeSlashLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module EyeSlashLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "EyeSlashLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "EyeSlashLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2131,17 +2022,16 @@ module EyeSlashLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module FarmFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "FarmFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "FarmFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2151,17 +2041,16 @@ module FarmFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module FarmLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "FarmLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "FarmLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2171,17 +2060,16 @@ module FarmLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module FarmLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "FarmLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "FarmLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2191,17 +2079,16 @@ module FarmLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module FarmLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "FarmLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "FarmLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2211,17 +2098,16 @@ module FarmLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module HeartFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "HeartFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "HeartFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2231,17 +2117,16 @@ module HeartFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module HeartLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "HeartLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "HeartLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2251,17 +2136,16 @@ module HeartLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module HeartLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "HeartLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "HeartLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2271,17 +2155,16 @@ module HeartLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module HeartLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "HeartLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "HeartLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2291,17 +2174,16 @@ module HeartLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module HelpFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "HelpFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "HelpFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2311,17 +2193,16 @@ module HelpFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module HelpLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "HelpLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "HelpLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2331,17 +2212,16 @@ module HelpLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module HelpLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "HelpLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "HelpLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2351,17 +2231,16 @@ module HelpLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module HelpLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "HelpLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "HelpLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2371,17 +2250,16 @@ module HelpLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module HomeFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "HomeFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "HomeFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2391,17 +2269,16 @@ module HomeFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module HomeLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "HomeLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "HomeLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2411,17 +2288,16 @@ module HomeLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module HomeLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "HomeLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "HomeLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2431,17 +2307,16 @@ module HomeLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module HomeLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "HomeLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "HomeLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2451,17 +2326,16 @@ module HomeLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module ImageFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ImageFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ImageFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2471,17 +2345,16 @@ module ImageFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module ImageLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ImageLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ImageLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2491,17 +2364,16 @@ module ImageLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module ImageLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ImageLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ImageLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2511,17 +2383,16 @@ module ImageLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module ImageLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ImageLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ImageLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2531,17 +2402,16 @@ module ImageLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module InfoFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "InfoFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "InfoFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2551,17 +2421,16 @@ module InfoFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module InfoLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "InfoLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "InfoLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2571,17 +2440,16 @@ module InfoLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module InfoLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "InfoLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "InfoLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2591,17 +2459,16 @@ module InfoLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module InfoLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "InfoLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "InfoLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2611,17 +2478,16 @@ module InfoLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module LinkClipLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "LinkClipLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "LinkClipLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2631,17 +2497,16 @@ module LinkClipLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module LinkClipLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "LinkClipLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "LinkClipLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2651,17 +2516,16 @@ module LinkClipLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module LinkClipLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "LinkClipLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "LinkClipLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2671,17 +2535,16 @@ module LinkClipLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module LinkCopyLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "LinkCopyLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "LinkCopyLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2691,17 +2554,16 @@ module LinkCopyLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module LinkCopyLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "LinkCopyLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "LinkCopyLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2711,17 +2573,16 @@ module LinkCopyLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module LinkCopyLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "LinkCopyLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "LinkCopyLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2731,17 +2592,16 @@ module LinkCopyLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module LocationFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "LocationFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "LocationFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2751,17 +2611,16 @@ module LocationFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module LocationFill1 = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "LocationFill1"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "LocationFill1"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2771,17 +2630,16 @@ module LocationFill1 = {
     @props style - [ReactDOMStyle.t] 
 */
 module LocationLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "LocationLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "LocationLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2791,17 +2649,16 @@ module LocationLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module LocationLineBold1 = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "LocationLineBold1"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "LocationLineBold1"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2811,17 +2668,16 @@ module LocationLineBold1 = {
     @props style - [ReactDOMStyle.t] 
 */
 module LocationLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "LocationLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "LocationLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2831,17 +2687,16 @@ module LocationLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module LocationLineRegular1 = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "LocationLineRegular1"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "LocationLineRegular1"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2851,17 +2706,16 @@ module LocationLineRegular1 = {
     @props style - [ReactDOMStyle.t] 
 */
 module LocationLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "LocationLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "LocationLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2871,17 +2725,16 @@ module LocationLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module LocationLineThin1 = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "LocationLineThin1"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "LocationLineThin1"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2891,17 +2744,16 @@ module LocationLineThin1 = {
     @props style - [ReactDOMStyle.t] 
 */
 module MenuFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "MenuFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "MenuFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2911,17 +2763,16 @@ module MenuFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module MenuLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "MenuLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "MenuLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2931,17 +2782,16 @@ module MenuLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module MenuLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "MenuLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "MenuLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2951,17 +2801,16 @@ module MenuLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module MenuLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "MenuLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "MenuLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2971,17 +2820,16 @@ module MenuLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module MicFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "MicFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "MicFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -2991,17 +2839,16 @@ module MicFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module MicLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "MicLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "MicLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3011,17 +2858,16 @@ module MicLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module MicLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "MicLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "MicLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3031,17 +2877,16 @@ module MicLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module MicLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "MicLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "MicLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3051,17 +2896,16 @@ module MicLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module MicSlashFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "MicSlashFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "MicSlashFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3071,17 +2915,16 @@ module MicSlashFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module MicSlashLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "MicSlashLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "MicSlashLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3091,17 +2934,16 @@ module MicSlashLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module MicSlashLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "MicSlashLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "MicSlashLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3111,17 +2953,16 @@ module MicSlashLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module MicSlashLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "MicSlashLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "MicSlashLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3131,17 +2972,16 @@ module MicSlashLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module MinusLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "MinusLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "MinusLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3151,17 +2991,16 @@ module MinusLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module MinusLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "MinusLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "MinusLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3171,17 +3010,16 @@ module MinusLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module MinusLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "MinusLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "MinusLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3191,17 +3029,16 @@ module MinusLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module MoneyBagFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "MoneyBagFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "MoneyBagFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3211,17 +3048,16 @@ module MoneyBagFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module MoneyBagLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "MoneyBagLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "MoneyBagLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3231,17 +3067,16 @@ module MoneyBagLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module MoneyBagLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "MoneyBagLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "MoneyBagLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3251,17 +3086,16 @@ module MoneyBagLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module MoneyBagLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "MoneyBagLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "MoneyBagLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3271,17 +3105,16 @@ module MoneyBagLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module NoticeFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "NoticeFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "NoticeFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3291,17 +3124,16 @@ module NoticeFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module NoticeLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "NoticeLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "NoticeLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3311,17 +3143,16 @@ module NoticeLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module NoticeLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "NoticeLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "NoticeLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3331,17 +3162,16 @@ module NoticeLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module NoticeLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "NoticeLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "NoticeLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3351,17 +3181,16 @@ module NoticeLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module NotificationFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "NotificationFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "NotificationFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3371,17 +3200,16 @@ module NotificationFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module NotificationLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "NotificationLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "NotificationLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3391,17 +3219,16 @@ module NotificationLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module NotificationLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "NotificationLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "NotificationLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3411,17 +3238,16 @@ module NotificationLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module NotificationLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "NotificationLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "NotificationLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3431,17 +3257,16 @@ module NotificationLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module NotificationSlashFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "NotificationSlashFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "NotificationSlashFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3451,17 +3276,16 @@ module NotificationSlashFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module NotificationSlashLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "NotificationSlashLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "NotificationSlashLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3471,17 +3295,16 @@ module NotificationSlashLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module NotificationSlashLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "NotificationSlashLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "NotificationSlashLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3491,17 +3314,16 @@ module NotificationSlashLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module NotificationSlashLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "NotificationSlashLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "NotificationSlashLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3511,17 +3333,16 @@ module NotificationSlashLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module PersonCircleFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PersonCircleFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PersonCircleFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3531,17 +3352,16 @@ module PersonCircleFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module PersonCircleLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PersonCircleLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PersonCircleLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3551,17 +3371,16 @@ module PersonCircleLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module PersonCircleLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PersonCircleLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PersonCircleLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3571,17 +3390,16 @@ module PersonCircleLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module PersonCircleLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PersonCircleLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PersonCircleLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3591,17 +3409,16 @@ module PersonCircleLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module PersonFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PersonFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PersonFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3611,17 +3428,16 @@ module PersonFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module PersonLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PersonLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PersonLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3631,17 +3447,16 @@ module PersonLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module PersonLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PersonLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PersonLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3651,17 +3466,16 @@ module PersonLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module PersonLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PersonLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PersonLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3671,17 +3485,16 @@ module PersonLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module PhoneFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PhoneFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PhoneFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3691,17 +3504,16 @@ module PhoneFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module PhoneLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PhoneLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PhoneLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3711,17 +3523,16 @@ module PhoneLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module PhoneLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PhoneLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PhoneLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3731,17 +3542,16 @@ module PhoneLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module PhoneLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PhoneLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PhoneLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3751,17 +3561,16 @@ module PhoneLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module PinFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PinFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PinFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3771,17 +3580,16 @@ module PinFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module PinLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PinLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PinLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3791,17 +3599,16 @@ module PinLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module PinLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PinLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PinLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3811,17 +3618,16 @@ module PinLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module PinLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PinLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PinLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3831,17 +3637,16 @@ module PinLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module PlayFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PlayFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PlayFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3851,17 +3656,16 @@ module PlayFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module PlayLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PlayLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PlayLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3871,17 +3675,16 @@ module PlayLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module PlayLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PlayLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PlayLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3891,17 +3694,16 @@ module PlayLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module PlayLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PlayLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PlayLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3911,17 +3713,16 @@ module PlayLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module PlusCircleFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PlusCircleFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PlusCircleFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3931,17 +3732,16 @@ module PlusCircleFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module PlusCircleLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PlusCircleLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PlusCircleLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3951,17 +3751,16 @@ module PlusCircleLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module PlusCircleLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PlusCircleLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PlusCircleLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3971,17 +3770,16 @@ module PlusCircleLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module PlusCircleLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PlusCircleLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PlusCircleLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -3991,17 +3789,16 @@ module PlusCircleLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module PlusLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PlusLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PlusLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4011,17 +3808,16 @@ module PlusLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module PlusLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PlusLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PlusLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4031,17 +3827,16 @@ module PlusLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module PlusLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PlusLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PlusLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4051,17 +3846,16 @@ module PlusLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module PostSquareFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PostSquareFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PostSquareFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4071,17 +3865,16 @@ module PostSquareFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module PostSquareLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PostSquareLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PostSquareLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4091,17 +3884,16 @@ module PostSquareLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module PostSquareLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PostSquareLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PostSquareLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4111,17 +3903,16 @@ module PostSquareLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module PostSquareLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "PostSquareLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "PostSquareLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4131,17 +3922,16 @@ module PostSquareLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module RefreshLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "RefreshLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "RefreshLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4151,17 +3941,16 @@ module RefreshLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module RefreshLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "RefreshLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "RefreshLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4171,17 +3960,16 @@ module RefreshLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module RefreshLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "RefreshLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "RefreshLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4191,17 +3979,16 @@ module RefreshLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module SearchFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "SearchFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "SearchFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4211,17 +3998,16 @@ module SearchFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module SearchLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "SearchLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "SearchLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4231,17 +4017,16 @@ module SearchLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module SearchLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "SearchLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "SearchLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4251,17 +4036,16 @@ module SearchLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module SearchLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "SearchLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "SearchLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4271,17 +4055,16 @@ module SearchLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module SeeMoreFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "SeeMoreFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "SeeMoreFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4291,17 +4074,16 @@ module SeeMoreFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module SeeMoreLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "SeeMoreLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "SeeMoreLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4311,17 +4093,16 @@ module SeeMoreLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module SeeMoreLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "SeeMoreLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "SeeMoreLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4331,17 +4112,16 @@ module SeeMoreLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module SeeMoreLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "SeeMoreLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "SeeMoreLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4351,17 +4131,16 @@ module SeeMoreLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module SendPlaneFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "SendPlaneFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "SendPlaneFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4371,17 +4150,16 @@ module SendPlaneFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module SendPlaneLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "SendPlaneLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "SendPlaneLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4391,17 +4169,16 @@ module SendPlaneLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module SendPlaneLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "SendPlaneLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "SendPlaneLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4411,17 +4188,16 @@ module SendPlaneLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module SendPlaneLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "SendPlaneLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "SendPlaneLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4431,17 +4207,16 @@ module SendPlaneLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module SettingFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "SettingFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "SettingFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4451,17 +4226,16 @@ module SettingFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module SettingLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "SettingLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "SettingLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4471,17 +4245,16 @@ module SettingLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module SettingLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "SettingLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "SettingLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4491,17 +4264,16 @@ module SettingLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module SettingLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "SettingLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "SettingLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4511,17 +4283,16 @@ module SettingLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module ShareAndroidFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ShareAndroidFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ShareAndroidFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4531,17 +4302,16 @@ module ShareAndroidFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module ShareAndroidLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ShareAndroidLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ShareAndroidLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4551,17 +4321,16 @@ module ShareAndroidLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module ShareAndroidLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ShareAndroidLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ShareAndroidLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4571,17 +4340,16 @@ module ShareAndroidLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module ShareAndroidLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ShareAndroidLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ShareAndroidLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4591,17 +4359,16 @@ module ShareAndroidLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module ShareArrowFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ShareArrowFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ShareArrowFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4611,17 +4378,16 @@ module ShareArrowFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module ShareArrowLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ShareArrowLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ShareArrowLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4631,17 +4397,16 @@ module ShareArrowLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module ShareArrowLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ShareArrowLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ShareArrowLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4651,17 +4416,16 @@ module ShareArrowLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module ShareArrowLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ShareArrowLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ShareArrowLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4671,17 +4435,16 @@ module ShareArrowLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module ShareIosFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ShareIosFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ShareIosFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4691,17 +4454,16 @@ module ShareIosFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module ShareIosLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ShareIosLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ShareIosLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4711,17 +4473,16 @@ module ShareIosLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module ShareIosLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ShareIosLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ShareIosLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4731,17 +4492,16 @@ module ShareIosLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module ShareIosLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ShareIosLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ShareIosLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4751,17 +4511,16 @@ module ShareIosLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module ThumbUpFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ThumbUpFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ThumbUpFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4771,17 +4530,16 @@ module ThumbUpFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module ThumbUpLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ThumbUpLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ThumbUpLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4791,17 +4549,16 @@ module ThumbUpLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module ThumbUpLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ThumbUpLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ThumbUpLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4811,17 +4568,16 @@ module ThumbUpLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module ThumbUpLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "ThumbUpLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ThumbUpLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4831,17 +4587,16 @@ module ThumbUpLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module TouchFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "TouchFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "TouchFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4851,17 +4606,16 @@ module TouchFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module TouchLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "TouchLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "TouchLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4871,17 +4625,16 @@ module TouchLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module TouchLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "TouchLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "TouchLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4891,17 +4644,16 @@ module TouchLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module TouchLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "TouchLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "TouchLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4911,17 +4663,16 @@ module TouchLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module TrashFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "TrashFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "TrashFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4931,17 +4682,16 @@ module TrashFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module TrashLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "TrashLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "TrashLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4951,17 +4701,16 @@ module TrashLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module TrashLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "TrashLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "TrashLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4971,17 +4720,16 @@ module TrashLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module TrashLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "TrashLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "TrashLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -4991,17 +4739,16 @@ module TrashLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module VideoFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "VideoFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "VideoFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -5011,17 +4758,16 @@ module VideoFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module VideoLineBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "VideoLineBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "VideoLineBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -5031,17 +4777,16 @@ module VideoLineBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module VideoLineRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "VideoLineRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "VideoLineRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -5051,17 +4796,16 @@ module VideoLineRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module VideoLineThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "VideoLineThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "VideoLineThin"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -5071,17 +4815,16 @@ module VideoLineThin = {
     @props style - [ReactDOMStyle.t] 
 */
 module WebBold = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "WebBold"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "WebBold"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -5091,17 +4834,16 @@ module WebBold = {
     @props style - [ReactDOMStyle.t] 
 */
 module WebFill = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "WebFill"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "WebFill"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -5111,17 +4853,16 @@ module WebFill = {
     @props style - [ReactDOMStyle.t] 
 */
 module WebRegular = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "WebRegular"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "WebRegular"
 }
-
 
 /**
     @props classname - [string] Class content attribute.
@@ -5131,13 +4872,13 @@ module WebRegular = {
     @props style - [ReactDOMStyle.t] 
 */
 module WebThin = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "WebThin"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "WebThin"
 }

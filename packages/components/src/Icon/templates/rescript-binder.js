@@ -11,18 +11,17 @@ const getIconName = (filename) => {
 }
 
 const generateIconModule = (iconName) => {
-  return `
-${docs}
+  return `${docs}
 module ${iconName} = {
-    @module("@greenlabs/formula-components") @react.component
-    external make: (
-        ~style: ReactDOMStyle.t=?,
-        ~classname: string=?,
-        ~size: size=?,
-        ~sizePx: int=?,
-        ~fill: string=?,
-        ~ref: ReactDOM.Ref.t=?,
-    ) => React.element = "${iconName}"
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~classname: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~fill: string=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "${iconName}"
 }
 `
 }
@@ -34,17 +33,18 @@ const iconModules = fs
   .map(getIconName)
   .map(generateIconModule)
 
-iconModules.unshift(`
-@deriving(jsConverter)
+const resTypes = `@deriving(jsConverter)
 type size = [#PC | #XL | #LG | #SM | #XS]
-`)
+`
+
+const resModules = resTypes + iconModules.join("\n")
 
 try {
   const moduleFilePath = path.join(
     __dirname,
     "../../../../components-rescript/src/Icon.res"
   )
-  fs.writeFileSync(moduleFilePath, iconModules.join("\n"))
+  fs.writeFileSync(moduleFilePath, resModules)
 } catch (error) {
   console.log(error)
 }
