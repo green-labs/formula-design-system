@@ -42,7 +42,7 @@ const resModules = resTypes + iconModules.join("\n")
 try {
   const moduleFilePath = path.join(
     __dirname,
-    "../../../../components-rescript/src/Icon.res"
+    "../../../../components-rescript/src/Formula__Icon.res"
   )
   fs.writeFileSync(moduleFilePath, resModules)
 } catch (error) {
