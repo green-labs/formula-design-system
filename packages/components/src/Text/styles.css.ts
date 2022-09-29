@@ -11,8 +11,9 @@ let keyMaps = [
   ['weight', 'fontWeight']
 ]
 
-let extract = (obj) => {
+let extract = (obj: any) => {
   return keyMaps.reduce((nextObj, [objKey, cssKey]) => {
+    // @ts-expect-error FIXME
     nextObj[cssKey] = obj[objKey].value
     return nextObj
   }, {})
