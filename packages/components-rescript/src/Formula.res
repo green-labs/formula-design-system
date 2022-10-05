@@ -81,3 +81,5 @@ module Text = {
     ) => React.element = "TextCaption"
   }
 }
+
+module Icon = Formula__Icon

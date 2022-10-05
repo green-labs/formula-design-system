@@ -7,7 +7,7 @@ const iconFiles = fs
   .filter((file) => file.includes(".tsx"))
 
 const getExportLineTemplate = (iconName) => {
-  return `export { default as ${iconName}Icon } from './generated/${iconName}'`
+  return `export { default as ${iconName}Icon } from "./generated/${iconName}"`
 }
 
 const entryText = iconFiles.map((filename) => {

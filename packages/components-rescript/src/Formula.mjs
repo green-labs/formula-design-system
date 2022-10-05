@@ -30,7 +30,10 @@ var $$Text = {
   Caption: Caption
 };
 
+var Icon;
+
 export {
   $$Text ,
+  Icon ,
 }
 /* No side effect */
