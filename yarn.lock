@@ -1702,6 +1702,7 @@ __metadata:
     "@types/react": ^18.0.20
     "@vanilla-extract/css": ^1.9.0
     "@vanilla-extract/rollup-plugin": ^1.1.0
+    "@vanilla-extract/sprinkles": ^1.5.0
     "@vanilla-extract/webpack-plugin": ^2.1.12
     babel-loader: ^8.2.5
     concurrently: ^7.3.0
@@ -3715,6 +3716,15 @@ __metadata:
   peerDependencies:
     rollup: ^2.0.0
   checksum: aaa488c397bf6b790900d6bec5a60065c78e5f3d2978beb4e1bf63f81ecc56d7b5eee6915e3e551c14f9307a51be8e34e84847215878c50a875dc15d9871a9ae
+  languageName: node
+  linkType: hard
+
+"@vanilla-extract/sprinkles@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "@vanilla-extract/sprinkles@npm:1.5.0"
+  peerDependencies:
+    "@vanilla-extract/css": ^1.0.0
+  checksum: 522b96afe856a72d76072ab41453edc35117772a6ac829c8a5ad09cddd69152e152b1cbda0b4344d50dbde59d0effa39301beb7acf319ef88f485966c89c80fd
   languageName: node
   linkType: hard
 

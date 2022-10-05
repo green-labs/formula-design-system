@@ -1,4 +1,5 @@
 import { variants } from "./styles.css"
+import { sprinkles } from "../sprinkles.css"
 
 export interface TextProps {
   props: {}
@@ -7,7 +8,8 @@ export interface TextProps {
   variant: "body" | "headline" | "caption"
   size: "sm" | "md" | "lg"
   weight: "regular" | "medium" | "bold"
-  wrapper: React.ElementType
+  align?: "center" | "inherit" | "justify" | "left" | "right" | "start" | "end"
+  container: React.ElementType
 }
 
 export const Text = ({
@@ -18,9 +20,10 @@ export const Text = ({
   variant = "body",
   size = "md",
   weight = "regular",
-  wrapper = "div",
+  align,
+  container = "div",
 }: React.PropsWithChildren<TextProps>) => {
-  const Wrapper = wrapper
+  const Container = container
   const _variantKey =
     variantKey ?? (`${variant}-${size}-${weight}` as keyof typeof variants)
   const variantClass = variants[_variantKey]
@@ -30,9 +33,14 @@ export const Text = ({
   }
 
   return (
-    <Wrapper className={`${variantClass} ${className}`} {...props}>
+    <Container
+      className={`${variantClass} ${sprinkles({
+        textAlign: align,
+      })} ${className}`}
+      {...props}
+    >
       {children}
-    </Wrapper>
+    </Container>
   )
 }
 Text.displayName = "Text"
