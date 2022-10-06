@@ -2,7 +2,7 @@ import { SVGProps, Ref, forwardRef, memo } from "react"
 import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
 
-const SvgCopycontentsLineBold = (
+const SvgCopyContentsLineBold = (
   {
     size = "XL",
     sizePx,
@@ -20,6 +20,7 @@ const SvgCopycontentsLineBold = (
       height={finalSize}
       fill={fill}
       xmlns="http://www.w3.org/2000/svg"
+      role="img"
       style={style}
       viewBox="0 0 48 48"
       className={className}
@@ -34,6 +35,6 @@ const SvgCopycontentsLineBold = (
   )
 }
 
-const ForwardRef = forwardRef(SvgCopycontentsLineBold)
+const ForwardRef = forwardRef(SvgCopyContentsLineBold)
 const Memo = memo(ForwardRef)
 export default Memo

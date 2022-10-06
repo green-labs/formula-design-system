@@ -20,6 +20,7 @@ const SvgCloseLineBold = (
       height={finalSize}
       fill={fill}
       xmlns="http://www.w3.org/2000/svg"
+      role="img"
       style={style}
       viewBox="0 0 48 48"
       className={className}

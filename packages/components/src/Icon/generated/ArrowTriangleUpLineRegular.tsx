@@ -2,7 +2,7 @@ import { SVGProps, Ref, forwardRef, memo } from "react"
 import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
 
-const SvgArrowtriangleUpLineRegular = (
+const SvgArrowTriangleUpLineRegular = (
   {
     size = "XL",
     sizePx,
@@ -20,6 +20,7 @@ const SvgArrowtriangleUpLineRegular = (
       height={finalSize}
       fill={fill}
       xmlns="http://www.w3.org/2000/svg"
+      role="img"
       style={style}
       viewBox="0 0 48 48"
       className={className}
@@ -34,6 +35,6 @@ const SvgArrowtriangleUpLineRegular = (
   )
 }
 
-const ForwardRef = forwardRef(SvgArrowtriangleUpLineRegular)
+const ForwardRef = forwardRef(SvgArrowTriangleUpLineRegular)
 const Memo = memo(ForwardRef)
 export default Memo
