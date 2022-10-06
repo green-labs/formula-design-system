@@ -9,7 +9,7 @@ module TestTextContainer = {
 let testText = () => {
   <>
     <Formula.Text container={TestTextContainer.make}> {`Test string`->React.string} </Formula.Text>
-    <Formula.Text.TextVariant variantKey={#bodyLgMedium}>
+    <Formula.Text.TextVariant variantKey={#"body-lg-medium"}>
       {`Test string`->React.string}
     </Formula.Text.TextVariant>
     <Formula.Text.Caption> {`Test string`->React.string} </Formula.Text.Caption>
