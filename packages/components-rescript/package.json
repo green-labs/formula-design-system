@@ -9,7 +9,6 @@
   "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
   "main": "src/Formula.mjs",
   "files": [
-    "src/Formula.mjs",
     "src/Formula.res",
     "bsconfig.json"
   ],
