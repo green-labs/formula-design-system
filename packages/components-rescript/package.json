@@ -9,8 +9,7 @@
   "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
   "main": "src/Formula.mjs",
   "files": [
-    "src/Formula.mjs",
-    "src/Formula.res",
+    "src/*.res",
     "bsconfig.json"
   ],
   "dependencies": {
@@ -19,8 +18,7 @@
     "rescript": "^10.0.0"
   },
   "scripts": {
-    "build": "yarn re:build",
-    "re:build": "rescript build -with-deps",
-    "re:watch": "rescript build -with-deps -w"
+    "build": "rescript build -with-deps",
+    "watch": "rescript build -with-deps -w"
   }
 }
