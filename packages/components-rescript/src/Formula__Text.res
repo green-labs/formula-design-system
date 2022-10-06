@@ -1,6 +1,10 @@
 type size = [#sm | #md | #lg]
 type weight = [#medium | #regular | #bold]
 type variant = [#body | #headline | #caption]
+
+// FIXME: find better way to make optionalize props.
+type textComponentProps<'a> = {"props": 'a, "className": string, "children": React.element}
+
 @deriving(jsConverter)
 type variantKey = [
   | @as("caption-xs-regular") #captionXsRegular
@@ -29,7 +33,8 @@ external make: (
   ~variant: variant=?,
   ~size: size=?,
   ~weight: weight=?,
-  @as("wrapper") ~wrapperEl: string=?,
+  @as("container") ~tag: string=?,
+  @as("container") ~container: React.componentLike<textComponentProps<{..}>, React.element>=?,
   ~children: React.element,
 ) => React.element = "Text"
 
@@ -39,7 +44,8 @@ module TextVariant = {
     ~props: {..}=?,
     ~className: string=?,
     ~variantKey: variantKey,
-    @as("wrapper") ~wrapperEl: string=?,
+    @as("container") ~tag: string=?,
+    @as("container") ~container: React.componentLike<textComponentProps<{..}>, React.element>=?,
     ~children: React.element,
   ) => React.element = "Text"
 }
@@ -51,7 +57,8 @@ module Body = {
     ~className: string=?,
     ~size: size=?,
     ~weight: weight=?,
-    @as("wrapper") ~wrapperEl: string=?,
+    @as("container") ~tag: string=?,
+    @as("container") ~container: React.componentLike<textComponentProps<{..}>, React.element>=?,
     ~children: React.element,
   ) => React.element = "TextBody"
 }
@@ -63,7 +70,8 @@ module Headline = {
     ~className: string=?,
     ~size: size=?,
     ~weight: weight=?,
-    @as("wrapper") ~wrapperEl: string=?,
+    @as("container") ~tag: string=?,
+    @as("container") ~container: React.componentLike<textComponentProps<{..}>, React.element>=?,
     ~children: React.element,
   ) => React.element = "TextHeadline"
 }
@@ -75,7 +83,8 @@ module Caption = {
     ~className: string=?,
     ~size: size=?,
     ~weight: weight=?,
-    @as("wrapper") ~wrapperEl: string=?,
+    @as("container") ~tag: string=?,
+    @as("container") ~container: React.componentLike<textComponentProps<{..}>, React.element>=?,
     ~children: React.element,
   ) => React.element = "TextCaption"
 }
