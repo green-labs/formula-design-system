@@ -35,26 +35,13 @@ module.exports = {
   },
 
   platforms: {
-    // scss: {
-    //   transforms: [
-    //     "attribute/cti",
-    //     "name/cti/kebab",
-    //     "time/seconds",
-    //     "content/icon",
-    //     "colorTransform",
-    //     "size/rem",
-    //     "color/css",
-    //   ],
-    //   buildPath: "build/scss/",
-    //   files: [
-    //     {
-    //       destination: "_variables.scss",
-    //       format: "scss/variables",
-    //     },
-    //   ],
-    // },
     "javascript/module": {
-      transforms: ["attribute/cti", "name/cti/kebab", "colorTransform", "color/hex"],
+      transforms: [
+        "attribute/cti",
+        "name/cti/kebab",
+        "colorTransform",
+        "color/hex",
+      ],
       buildPath: "dist/",
       files: [
         {
@@ -64,7 +51,14 @@ module.exports = {
       ],
     },
     tailwind: {
-      transforms: ["attribute/cti", "name/cti/kebab", "colorTransform", "color/hex", "size/rem", "color/css"],
+      transforms: [
+        "attribute/cti",
+        "name/cti/kebab",
+        "colorTransform",
+        "color/hex",
+        "size/rem",
+        "color/css",
+      ],
       buildPath: "dist/",
       files: [
         {
@@ -74,7 +68,14 @@ module.exports = {
       ],
     },
     figma: {
-      transforms: ["attribute/cti", "name/cti/kebab", "colorTransform", "color/hex", "size/rem", "color/css"],
+      transforms: [
+        "attribute/cti",
+        "name/cti/kebab",
+        "colorTransform",
+        "color/hex",
+        "size/rem",
+        "color/css",
+      ],
       buildPath: "dist/",
       files: [
         {

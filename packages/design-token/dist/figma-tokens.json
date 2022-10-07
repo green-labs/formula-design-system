@@ -6,7 +6,7 @@
       "white": { "value": "white", "type": "color" },
       "black": { "value": "black", "type": "color" },
       "gray": {
-        "5": { "value": "#0E1012", "type": "color" },
+        "5": { "value": "#FAFBFC", "type": "color" },
         "10": { "value": "#F7F8FA", "type": "color" },
         "20": { "value": "#F0F2F5", "type": "color" },
         "30": { "value": "#DCDFE3", "type": "color" },
