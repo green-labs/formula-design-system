@@ -1,5 +1,6 @@
 import { variants } from "./styles.css"
 import { sprinkles } from "../sprinkles.css"
+import type { Sprinkles } from "../sprinkles.css"
 
 export interface TextProps {
   props: {}
@@ -8,7 +9,8 @@ export interface TextProps {
   variant: "body" | "headline" | "caption"
   size: "sm" | "md" | "lg"
   weight: "regular" | "medium" | "bold"
-  align?: "center" | "inherit" | "justify" | "left" | "right" | "start" | "end"
+  align?: Sprinkles["textAlign"]
+  color?: Sprinkles["color"]
   container: React.ElementType
 }
 
