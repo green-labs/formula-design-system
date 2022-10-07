@@ -1,7 +1,9 @@
 const StyleDictionary = require("style-dictionary")
 const chroma = require("chroma-js")
+
 const tailwindFormat = require("./formats/tailwind")
 const figmaFormat = require("./formats/figma")
+const tsModuleFormat = require("./formats/tsModule")
 
 // from https://github.com/amzn/style-dictionary/blob/51cb6c8019e62806c005e85e7c01da377b00628b/examples/advanced/transitive-transforms/sd.config.js
 const colorTransform = (token) => {
@@ -20,6 +22,7 @@ module.exports = {
   format: {
     tailwind: tailwindFormat,
     figma: figmaFormat,
+    tsModule: tsModuleFormat,
   },
   transform: {
     colorTransform: {
@@ -35,7 +38,7 @@ module.exports = {
   },
 
   platforms: {
-    "javascript/module": {
+    tsModule: {
       transforms: [
         "attribute/cti",
         "name/cti/kebab",
@@ -45,8 +48,8 @@ module.exports = {
       buildPath: "dist/",
       files: [
         {
-          destination: "tokens.js",
-          format: "javascript/module",
+          destination: "tokens.ts",
+          format: "tsModule",
         },
       ],
     },

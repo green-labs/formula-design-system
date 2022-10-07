@@ -1,7 +1,7 @@
 import { styleVariants, style } from "@vanilla-extract/css"
-import json from "@greenlabs/formula-design-token"
+import { tokens } from "@greenlabs/formula-design-token"
 
-const { color } = json.sys
+const { color } = tokens.sys
 
 const horizontalBase = style({
   width: "100%",

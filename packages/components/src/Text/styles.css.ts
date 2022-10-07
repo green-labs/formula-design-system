@@ -1,7 +1,7 @@
 import { styleVariants } from "@vanilla-extract/css"
-import json from "@greenlabs/formula-design-token"
+import { tokens } from "@greenlabs/formula-design-token"
 
-const { font } = json.sys
+const { font } = tokens.sys
 
 let keyMaps = [
   ["typeface", "fontFamily"],
