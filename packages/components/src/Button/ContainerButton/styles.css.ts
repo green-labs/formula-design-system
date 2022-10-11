@@ -1,7 +1,7 @@
 import { style } from "@vanilla-extract/css"
-import json from "@greenlabs/formula-design-token"
+import { tokens } from "@greenlabs/formula-design-token"
 
-const { color } = json.sys
+const { color } = tokens.sys
 
 export const buttonContainerStyle = style({ boxSizing: "border-box" })
 
