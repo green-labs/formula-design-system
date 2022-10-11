@@ -55,7 +55,7 @@ module.exports = {
     const { dictionary } = args
     const map = JSON.stringify(createMap(dictionary))
 
-    return `export default ${map}`
+    return `export default ${map} as const`
   },
   colorMapResFormat(args) {
     const { dictionary } = args

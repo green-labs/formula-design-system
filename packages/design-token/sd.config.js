@@ -102,7 +102,7 @@ module.exports = {
       buildPath: "dist/",
       files: [
         {
-          destination: "colorMap.js",
+          destination: "colorMap.ts",
           format: "colorMap",
         },
         {
