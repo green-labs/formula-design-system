@@ -20,6 +20,6 @@
     "dist/tailwind-tokens.json"
   ],
   "scripts": {
-    "build": "style-dictionary build --config=./sd.config.js"
+    "build": "style-dictionary build --config=./sd.config.js && ./after-sd-transform.sh"
   }
 }

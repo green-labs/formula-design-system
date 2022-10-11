@@ -1677,7 +1677,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@greenlabs/formula-components@0.0.1-alpha.2, @greenlabs/formula-components@workspace:packages/components":
+"@greenlabs/formula-components@npm:0.0.1-alpha.2":
+  version: 0.0.1-alpha.2
+  resolution: "@greenlabs/formula-components@npm:0.0.1-alpha.2"
+  dependencies:
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  checksum: aa0a633aa0024869c58294e068c2cebd1e4e079f4f63cce566212b663a16084045d0bdaf554add08b357d0c9eef97ac0b3bbbf21e093a8a8d866e3437a39e67b
+  languageName: node
+  linkType: hard
+
+"@greenlabs/formula-components@workspace:packages/components":
   version: 0.0.0-use.local
   resolution: "@greenlabs/formula-components@workspace:packages/components"
   dependencies:

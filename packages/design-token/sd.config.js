@@ -4,6 +4,7 @@ const chroma = require("chroma-js")
 const tailwindFormat = require("./formats/tailwind")
 const figmaFormat = require("./formats/figma")
 const tsModuleFormat = require("./formats/tsModule")
+const { colorMapFormat, colorMapResFormat } = require("./formats/colorMap")
 
 // from https://github.com/amzn/style-dictionary/blob/51cb6c8019e62806c005e85e7c01da377b00628b/examples/advanced/transitive-transforms/sd.config.js
 const colorTransform = (token) => {
@@ -23,6 +24,8 @@ module.exports = {
     tailwind: tailwindFormat,
     figma: figmaFormat,
     tsModule: tsModuleFormat,
+    colorMap: colorMapFormat,
+    colorMapRes: colorMapResFormat,
   },
   transform: {
     colorTransform: {
@@ -84,6 +87,27 @@ module.exports = {
         {
           destination: "figma-tokens.json",
           format: "figma",
+        },
+      ],
+    },
+    colorMap: {
+      transforms: [
+        "attribute/cti",
+        "name/cti/snake",
+        "colorTransform",
+        "color/hex",
+        "size/rem",
+        "color/css",
+      ],
+      buildPath: "dist/",
+      files: [
+        {
+          destination: "colorMap.js",
+          format: "colorMap",
+        },
+        {
+          destination: "Formula__ColorMap.res",
+          format: "colorMapRes",
         },
       ],
     },
