@@ -2,7 +2,7 @@ import { SVGProps, Ref, forwardRef, memo } from "react"
 import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
 
-const SvgCheckcircleLineThin = (
+const SvgCheckCircleLineThin = (
   {
     size = "XL",
     sizePx,
@@ -20,6 +20,7 @@ const SvgCheckcircleLineThin = (
       height={finalSize}
       fill={fill}
       xmlns="http://www.w3.org/2000/svg"
+      role="img"
       style={style}
       viewBox="0 0 48 48"
       className={className}
@@ -38,6 +39,6 @@ const SvgCheckcircleLineThin = (
   )
 }
 
-const ForwardRef = forwardRef(SvgCheckcircleLineThin)
+const ForwardRef = forwardRef(SvgCheckCircleLineThin)
 const Memo = memo(ForwardRef)
 export default Memo

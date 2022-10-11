@@ -2,7 +2,7 @@ import { SVGProps, Ref, forwardRef, memo } from "react"
 import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
 
-const SvgLinkcopyLineThin = (
+const SvgLinkCopyLineThin = (
   {
     size = "XL",
     sizePx,
@@ -20,6 +20,7 @@ const SvgLinkcopyLineThin = (
       height={finalSize}
       fill={fill}
       xmlns="http://www.w3.org/2000/svg"
+      role="img"
       style={style}
       viewBox="0 0 48 48"
       className={className}
@@ -38,6 +39,6 @@ const SvgLinkcopyLineThin = (
   )
 }
 
-const ForwardRef = forwardRef(SvgLinkcopyLineThin)
+const ForwardRef = forwardRef(SvgLinkCopyLineThin)
 const Memo = memo(ForwardRef)
 export default Memo

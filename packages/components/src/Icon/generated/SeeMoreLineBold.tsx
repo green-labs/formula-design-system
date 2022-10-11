@@ -2,7 +2,7 @@ import { SVGProps, Ref, forwardRef, memo } from "react"
 import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
 
-const SvgSeemoreLineBold = (
+const SvgSeeMoreLineBold = (
   {
     size = "XL",
     sizePx,
@@ -20,6 +20,7 @@ const SvgSeemoreLineBold = (
       height={finalSize}
       fill={fill}
       xmlns="http://www.w3.org/2000/svg"
+      role="img"
       style={style}
       viewBox="0 0 48 48"
       className={className}
@@ -36,6 +37,6 @@ const SvgSeemoreLineBold = (
   )
 }
 
-const ForwardRef = forwardRef(SvgSeemoreLineBold)
+const ForwardRef = forwardRef(SvgSeeMoreLineBold)
 const Memo = memo(ForwardRef)
 export default Memo

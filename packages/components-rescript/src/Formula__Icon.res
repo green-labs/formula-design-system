@@ -2861,6 +2861,54 @@ module ShareIosLineThin = {
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
     @props style - [ReactDOMStyle.t] 
 */
+module ShoppingBasketFill = {
+  @module("@greenlabs/formula-components") @react.component
+  external make: iconComponent = "ShoppingBasketFill"
+}
+
+/**
+    @props classname - [string] Class content attribute.
+    @props fill - [Hex color code] A 6-symbol code made of up to three 2-symbol elements. Default color is #1F2024 (gray-90).
+    @props size - [#PC - (36px) | #XL - (24px) | #LG - (20px) | #SM - (16px) | #XS - (12px)] 기본 사이즈는 XL입니다.
+    @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
+    @props style - [ReactDOMStyle.t] 
+*/
+module ShoppingBasketLineBold = {
+  @module("@greenlabs/formula-components") @react.component
+  external make: iconComponent = "ShoppingBasketLineBold"
+}
+
+/**
+    @props classname - [string] Class content attribute.
+    @props fill - [Hex color code] A 6-symbol code made of up to three 2-symbol elements. Default color is #1F2024 (gray-90).
+    @props size - [#PC - (36px) | #XL - (24px) | #LG - (20px) | #SM - (16px) | #XS - (12px)] 기본 사이즈는 XL입니다.
+    @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
+    @props style - [ReactDOMStyle.t] 
+*/
+module ShoppingBasketLineRegular = {
+  @module("@greenlabs/formula-components") @react.component
+  external make: iconComponent = "ShoppingBasketLineRegular"
+}
+
+/**
+    @props classname - [string] Class content attribute.
+    @props fill - [Hex color code] A 6-symbol code made of up to three 2-symbol elements. Default color is #1F2024 (gray-90).
+    @props size - [#PC - (36px) | #XL - (24px) | #LG - (20px) | #SM - (16px) | #XS - (12px)] 기본 사이즈는 XL입니다.
+    @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
+    @props style - [ReactDOMStyle.t] 
+*/
+module ShoppingBasketLineThin = {
+  @module("@greenlabs/formula-components") @react.component
+  external make: iconComponent = "ShoppingBasketLineThin"
+}
+
+/**
+    @props classname - [string] Class content attribute.
+    @props fill - [Hex color code] A 6-symbol code made of up to three 2-symbol elements. Default color is #1F2024 (gray-90).
+    @props size - [#PC - (36px) | #XL - (24px) | #LG - (20px) | #SM - (16px) | #XS - (12px)] 기본 사이즈는 XL입니다.
+    @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
+    @props style - [ReactDOMStyle.t] 
+*/
 module ThumbUpFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: iconComponent = "ThumbUpFill"
