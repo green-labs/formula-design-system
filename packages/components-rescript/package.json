@@ -1,6 +1,6 @@
 {
   "name": "@greenlabs/rescript-formula-components",
-  "version": "0.0.1-alpha.2",
+  "version": "0.0.1-alpha.5",
   "repository": {
     "type": "git",
     "url": "git@github.com:green-labs/formula-design-system.git",
@@ -9,18 +9,22 @@
   "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
   "main": "src/Formula.mjs",
   "files": [
-    "src/Formula.mjs",
-    "src/Formula.res",
+    "src/*.res",
     "bsconfig.json"
   ],
-  "dependencies": {
-    "@greenlabs/formula-components": "^0.0.1-alpha.1",
+  "peerDependencies": {
     "@rescript/react": "^0.10.3",
     "rescript": "^10.0.0"
   },
+  "devDependencies": {
+    "@rescript/react": "^0.10.3",
+    "rescript": "^10.0.0"
+  },
+  "dependencies": {
+    "@greenlabs/formula-components": "0.0.1-alpha.2"
+  },
   "scripts": {
-    "build": "yarn re:build",
-    "re:build": "rescript build -with-deps",
-    "re:watch": "rescript build -with-deps -w"
+    "build": "rescript build -with-deps",
+    "watch": "rescript build -with-deps -w"
   }
 }

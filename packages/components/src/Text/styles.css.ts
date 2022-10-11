@@ -1,7 +1,7 @@
-import { styleVariants } from "@vanilla-extract/css"
-import json from "@greenlabs/formula-design-token"
+import { createVar, style, styleVariants } from "@vanilla-extract/css"
+import { tokens } from "@greenlabs/formula-design-token"
 
-const { font } = json.sys
+const { font } = tokens.sys
 
 let keyMaps = [
   ["typeface", "fontFamily"],
@@ -37,4 +37,9 @@ export const variants = styleVariants({
   "headline-md-bold": extract(font.headline.md.bold),
   "headline-lg-bold": extract(font.headline.lg.bold),
   "headline-xl-bold": extract(font.headline.xl.bold),
+})
+
+export const textColorVar = createVar()
+export const textStyle = style({
+  color: textColorVar,
 })
