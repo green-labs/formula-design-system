@@ -9,7 +9,7 @@ export interface TextProps {
   className: string
   variantKey?: keyof typeof variants
   variant: "body" | "headline" | "caption"
-  size: "sm" | "md" | "lg"
+  size: "xs" | "sm" | "md" | "lg" | "xl"
   weight: "regular" | "medium" | "bold"
   align?: Sprinkles["textAlign"]
   color?: keyof typeof colorMap

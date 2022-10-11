@@ -1,4 +1,4 @@
-type size = [#sm | #md | #lg]
+type size = [#xs | #sm | #md | #lg | #xl]
 type weight = [#medium | #regular | #bold]
 type variant = [#body | #headline | #caption]
 
