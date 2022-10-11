@@ -13,5 +13,7 @@ let testText = () => {
       {`Test string`->React.string}
     </Formula.Text.TextVariant>
     <Formula.Text.Caption> {`Test string`->React.string} </Formula.Text.Caption>
+    <Formula.Text color=#white> {`Test string`->React.string} </Formula.Text>
+    <Formula.Text color=#"gray-90"> {`Test string`->React.string} </Formula.Text>
   </>
 }
