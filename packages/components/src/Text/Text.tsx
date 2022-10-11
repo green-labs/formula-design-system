@@ -1,4 +1,6 @@
-import { variants } from "./styles.css"
+import { colorMap } from "@greenlabs/formula-design-token"
+import { assignInlineVars } from "@vanilla-extract/dynamic"
+import { variants, textColorVar, textStyle } from "./styles.css"
 import { sprinkles } from "../sprinkles.css"
 import type { Sprinkles } from "../sprinkles.css"
 
@@ -10,7 +12,7 @@ export interface TextProps {
   size: "sm" | "md" | "lg"
   weight: "regular" | "medium" | "bold"
   align?: Sprinkles["textAlign"]
-  color?: Sprinkles["color"]
+  color?: keyof typeof colorMap
   container: React.ElementType
 }
 
@@ -22,6 +24,7 @@ export const Text = ({
   variant = "body",
   size = "md",
   weight = "regular",
+  color,
   align,
   container = "div",
 }: React.PropsWithChildren<TextProps>) => {
@@ -29,6 +32,10 @@ export const Text = ({
   const _variantKey =
     variantKey ?? (`${variant}-${size}-${weight}` as keyof typeof variants)
   const variantClass = variants[_variantKey]
+  const colorProp =
+    color && colorMap[color]
+      ? assignInlineVars({ [textColorVar]: colorMap[color] })
+      : undefined
 
   if (process.env.NODE_ENV !== "production" && !(_variantKey in variants)) {
     console.error(`You have used non-exist variant key ${_variantKey}.`)
@@ -38,7 +45,8 @@ export const Text = ({
     <Container
       className={`${variantClass} ${sprinkles({
         textAlign: align,
-      })} ${className}`}
+      })} ${textStyle} ${className}`}
+      style={colorProp}
       {...props}
     >
       {children}

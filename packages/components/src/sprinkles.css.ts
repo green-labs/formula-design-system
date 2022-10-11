@@ -14,16 +14,6 @@ const simpleProps = defineProperties({
   },
 })
 
-const colorMaps = {}
-
-const colorProps = defineProperties({
-  properties: {
-    backgroundColor: colorMaps,
-    color: colorMaps,
-    borderColor: colorMaps,
-  },
-})
-
-export const sprinkles = createSprinkles(simpleProps, colorProps)
+export const sprinkles = createSprinkles(simpleProps)
 
 export type Sprinkles = Parameters<typeof sprinkles>[0]

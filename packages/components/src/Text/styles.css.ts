@@ -1,4 +1,4 @@
-import { styleVariants } from "@vanilla-extract/css"
+import { createVar, style, styleVariants } from "@vanilla-extract/css"
 import { tokens } from "@greenlabs/formula-design-token"
 
 const { font } = tokens.sys
@@ -37,4 +37,9 @@ export const variants = styleVariants({
   "headline-md-bold": extract(font.headline.md.bold),
   "headline-lg-bold": extract(font.headline.lg.bold),
   "headline-xl-bold": extract(font.headline.xl.bold),
+})
+
+export const textColorVar = createVar()
+export const textStyle = style({
+  color: textColorVar,
 })
