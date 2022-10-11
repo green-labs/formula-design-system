@@ -1,10 +1,12 @@
-import type { ReactElement } from "react"
+import React, { ReactElement } from "react"
 
 import {
   buttonSizeStyles,
-  buttonAlignmentStyles,
+  buttonTextStyle,
   buttonContainerStyle,
+  buttonCountContainerStyle,
 } from "./styles.css"
+import type { IconProps } from "../../Icon"
 
 // todo - support custom color
 type normal =
@@ -26,8 +28,8 @@ export interface ContainerButtonBaseProps
 }
 
 export interface ContainerButtonIconProps {
-  leftIcon?: ReactElement
-  rightIcon?: ReactElement
+  leftIcon?: ReactElement<IconProps>
+  rightIcon?: ReactElement<IconProps>
 }
 
 export interface ContainerButtonCountProps {
@@ -46,26 +48,37 @@ const Button = ({
   rightIcon,
   count,
 }: React.PropsWithChildren<ContainerButtonProps>) => {
-  const getButtonAlignmentStyles = (): keyof typeof buttonAlignmentStyles => {
-    if (!!leftIcon && !!!rightIcon) return "onlyLeftIcon"
-    if (!!!leftIcon && !!rightIcon) return "onlyRightIcon"
-    return "default"
+  const getIconSize = () => {
+    switch (size) {
+      case "xs":
+        return 16
+      case "sm":
+        return 20
+      case "md":
+        return 24
+      case "lg":
+        return 28
+      case "xl":
+        return 32
+    }
   }
 
-  const buttonAlignmentStyle = getButtonAlignmentStyles()
+  const iconSizePx = getIconSize()
 
+  /* Todo - 아이콘 컬러 설정 필요 */
   return (
     <button
-      className={`${buttonContainerStyle} ${buttonSizeStyles[size]} ${buttonAlignmentStyles[buttonAlignmentStyle]}`}
+      className={`${buttonContainerStyle} ${buttonSizeStyles[size]}`}
       {...props}
     >
-      {/* {leftIcon} */}
+      {!!leftIcon && React.cloneElement(leftIcon, { sizePx: iconSizePx })}
       <div>
-        {/* todo - support inline ellipsis */}
-        {text}
-        {/* <CountComponent /> */}
+        <span className={`${buttonTextStyle}`}>{text}</span>
+        {typeof count === "number" && (
+          <span className={`${buttonCountContainerStyle}`}>{count}</span>
+        )}
       </div>
-      {/* {rightIcon} */}
+      {!!rightIcon && React.cloneElement(rightIcon, { sizePx: iconSizePx })}
     </button>
   )
 }
