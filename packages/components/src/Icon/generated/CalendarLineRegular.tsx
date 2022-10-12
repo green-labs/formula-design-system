@@ -1,7 +1,6 @@
 import { SVGProps, Ref, forwardRef, memo } from "react"
 import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
-
 const SvgCalendarLineRegular = (
   {
     size = "XL",
@@ -38,7 +37,6 @@ const SvgCalendarLineRegular = (
     </svg>
   )
 }
-
 const ForwardRef = forwardRef(SvgCalendarLineRegular)
 const Memo = memo(ForwardRef)
 export default Memo

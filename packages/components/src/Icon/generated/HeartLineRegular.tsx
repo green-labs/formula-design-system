@@ -1,7 +1,6 @@
 import { SVGProps, Ref, forwardRef, memo } from "react"
 import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
-
 const SvgHeartLineRegular = (
   {
     size = "XL",
@@ -34,7 +33,6 @@ const SvgHeartLineRegular = (
     </svg>
   )
 }
-
 const ForwardRef = forwardRef(SvgHeartLineRegular)
 const Memo = memo(ForwardRef)
 export default Memo

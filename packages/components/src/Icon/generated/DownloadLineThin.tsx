@@ -1,7 +1,6 @@
 import { SVGProps, Ref, forwardRef, memo } from "react"
 import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
-
 const SvgDownloadLineThin = (
   {
     size = "XL",
@@ -38,7 +37,6 @@ const SvgDownloadLineThin = (
     </svg>
   )
 }
-
 const ForwardRef = forwardRef(SvgDownloadLineThin)
 const Memo = memo(ForwardRef)
 export default Memo

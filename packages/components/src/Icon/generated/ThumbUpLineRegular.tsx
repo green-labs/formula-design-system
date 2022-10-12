@@ -1,7 +1,6 @@
 import { SVGProps, Ref, forwardRef, memo } from "react"
 import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
-
 const SvgThumbUpLineRegular = (
   {
     size = "XL",
@@ -34,7 +33,6 @@ const SvgThumbUpLineRegular = (
     </svg>
   )
 }
-
 const ForwardRef = forwardRef(SvgThumbUpLineRegular)
 const Memo = memo(ForwardRef)
 export default Memo

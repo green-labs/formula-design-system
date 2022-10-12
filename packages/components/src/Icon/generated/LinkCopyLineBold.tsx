@@ -1,7 +1,6 @@
 import { SVGProps, Ref, forwardRef, memo } from "react"
 import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
-
 const SvgLinkCopyLineBold = (
   {
     size = "XL",
@@ -38,7 +37,6 @@ const SvgLinkCopyLineBold = (
     </svg>
   )
 }
-
 const ForwardRef = forwardRef(SvgLinkCopyLineBold)
 const Memo = memo(ForwardRef)
 export default Memo

@@ -1,7 +1,6 @@
 import { SVGProps, Ref, forwardRef, memo } from "react"
 import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
-
 const SvgMinusLineRegular = (
   {
     size = "XL",
@@ -34,7 +33,6 @@ const SvgMinusLineRegular = (
     </svg>
   )
 }
-
 const ForwardRef = forwardRef(SvgMinusLineRegular)
 const Memo = memo(ForwardRef)
 export default Memo

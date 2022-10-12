@@ -1,7 +1,6 @@
 import { SVGProps, Ref, forwardRef, memo } from "react"
 import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
-
 const SvgCameraLineThin = (
   {
     size = "XL",
@@ -38,7 +37,6 @@ const SvgCameraLineThin = (
     </svg>
   )
 }
-
 const ForwardRef = forwardRef(SvgCameraLineThin)
 const Memo = memo(ForwardRef)
 export default Memo

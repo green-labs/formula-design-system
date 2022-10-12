@@ -1,7 +1,6 @@
 import { SVGProps, Ref, forwardRef, memo } from "react"
 import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
-
 const SvgSearchLineBold = (
   {
     size = "XL",
@@ -34,7 +33,6 @@ const SvgSearchLineBold = (
     </svg>
   )
 }
-
 const ForwardRef = forwardRef(SvgSearchLineBold)
 const Memo = memo(ForwardRef)
 export default Memo

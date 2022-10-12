@@ -1,7 +1,6 @@
 import { SVGProps, Ref, forwardRef, memo } from "react"
 import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
-
 const SvgMicLineBold = (
   {
     size = "XL",
@@ -38,7 +37,6 @@ const SvgMicLineBold = (
     </svg>
   )
 }
-
 const ForwardRef = forwardRef(SvgMicLineBold)
 const Memo = memo(ForwardRef)
 export default Memo

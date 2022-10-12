@@ -1,7 +1,6 @@
 import { SVGProps, Ref, forwardRef, memo } from "react"
 import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
-
 const SvgShareArrowLineRegular = (
   {
     size = "XL",
@@ -34,7 +33,6 @@ const SvgShareArrowLineRegular = (
     </svg>
   )
 }
-
 const ForwardRef = forwardRef(SvgShareArrowLineRegular)
 const Memo = memo(ForwardRef)
 export default Memo

@@ -1,7 +1,6 @@
 import { SVGProps, Ref, forwardRef, memo } from "react"
 import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
-
 const SvgMenuLineBold = (
   {
     size = "XL",
@@ -34,7 +33,6 @@ const SvgMenuLineBold = (
     </svg>
   )
 }
-
 const ForwardRef = forwardRef(SvgMenuLineBold)
 const Memo = memo(ForwardRef)
 export default Memo
