@@ -36,21 +36,12 @@ const notificationBaseStyle = style({
   alignItems: "center",
   marginRight: 4,
   borderRadius: 10,
-  fontWeight: 500,
-  minWidth: 8,
 })
 
-const notificationSmallStyle = style({
-  padding: "1px 4px",
-  fontSize: 12,
-  fontWeight: 500,
-})
+const notificationSmallStyle = style({ padding: "1px 4px" })
 
-const notificationMediumStyle = style({
-  padding: "1.5px 6px",
-  fontSize: 14,
-  fontWeight: 500,
-})
+// 14px인데, 토큰레벨에 없는 폰트스타일로 보임 확인필요
+const notificationMediumStyle = style({ padding: "1.5px 6px" })
 
 export const buttonNotificationSizeStyle = styleVariants({
   xs: [notificationSmallStyle],
