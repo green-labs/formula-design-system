@@ -4,11 +4,13 @@ import {
   buttonSizeStyles,
   buttonTextStyle,
   buttonContainerStyle,
-  buttonCountContainerStyle,
+  buttonNotificationContainerStyle,
+  buttonColorStyles,
+  buttonTextContainer,
+  buttonNotificationSizeStyle,
 } from "./styles.css"
 import type { IconProps } from "../../Icon"
 
-// todo - support custom color
 type normal =
   | "primary"
   | "secondary-gray"
@@ -17,10 +19,12 @@ type normal =
   | "tertiary-color"
 type negative = "negative-primary" | "negative-secondary"
 
+export type buttonVariants = normal | negative
+
 export interface ContainerButtonBaseProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   size: "xs" | "sm" | "md" | "lg" | "xl"
-  variant: normal | negative
+  variant: buttonVariants
   disabled: boolean
   className: string
   text: string
@@ -40,13 +44,14 @@ export type ContainerButtonProps = ContainerButtonBaseProps &
   ContainerButtonIconProps &
   ContainerButtonCountProps
 
-const Button = ({
+const ContainerButton = ({
   text,
   size,
   props,
   leftIcon,
   rightIcon,
   count,
+  variant,
 }: React.PropsWithChildren<ContainerButtonProps>) => {
   const getIconSize = () => {
     switch (size) {
@@ -65,24 +70,27 @@ const Button = ({
 
   const iconSizePx = getIconSize()
 
-  /* Todo - 아이콘 컬러 설정 필요 */
   return (
     <button
-      className={`${buttonContainerStyle} ${buttonSizeStyles[size]}`}
+      className={`${buttonContainerStyle} ${buttonSizeStyles[size]} ${buttonColorStyles[variant]}`}
       {...props}
     >
       {!!leftIcon && React.cloneElement(leftIcon, { sizePx: iconSizePx })}
-      <div>
+      <span className={`${buttonTextContainer}`}>
         <span className={`${buttonTextStyle}`}>{text}</span>
         {typeof count === "number" && (
-          <span className={`${buttonCountContainerStyle}`}>{count}</span>
+          <span
+            className={`${buttonNotificationContainerStyle[variant]} ${buttonNotificationSizeStyle[size]}`}
+          >
+            {count}
+          </span>
         )}
-      </div>
+      </span>
       {!!rightIcon && React.cloneElement(rightIcon, { sizePx: iconSizePx })}
     </button>
   )
 }
 
-Button.displayName = "Button"
+ContainerButton.displayName = "ContainerButton"
 
-export default Button
+export default ContainerButton
