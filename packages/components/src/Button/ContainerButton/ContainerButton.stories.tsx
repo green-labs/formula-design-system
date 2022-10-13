@@ -17,14 +17,12 @@ export default {
       defaultValue: "Button Text",
       control: { type: "text" },
     },
-
     size: {
       defaultValue: "xl",
       description: "버튼의 사이즈입니다.",
       control: { type: "radio" },
       options: ["xs", "sm", "md", "lg", "xl"],
     },
-
     variant: {
       defaultValue: "primary",
       control: {
@@ -40,6 +38,10 @@ export default {
         ],
       },
     },
+    disabled: {
+      defaultValue: true,
+      control: "boolean",
+    },
     ShowCount: {
       defaultValue: false,
       control: "boolean",
@@ -50,7 +52,6 @@ export default {
       control: { type: "number" },
       if: { arg: "ShowCount" },
     },
-
     ShowLeftIcon: {
       defaultValue: false,
       control: "boolean",
@@ -60,7 +61,6 @@ export default {
       defaultValue: <ArrowLeftLineBoldIcon />,
       if: { arg: "ShowLeftIcon" },
     },
-
     ShowRightIcon: {
       defaultValue: false,
       control: "boolean",

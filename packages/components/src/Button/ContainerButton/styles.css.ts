@@ -6,14 +6,17 @@ const { color } = tokens.sys
 export const buttonContainerStyle = style({
   display: "flex",
   alignItems: "center",
-  boxSizing: "border-box", // todo - check css attribute
+  boxSizing: "border-box",
   paddingLeft: 12,
   paddingRight: 12,
   cursor: "pointer",
   border: "none",
   margin: 0,
   overflow: "visible",
-  background: "transparent",
+
+  ":disabled": {
+    cursor: "not-allowed",
+  },
 })
 
 export const buttonTextContainer = style({
@@ -29,81 +32,44 @@ export const buttonTextStyle = style({
   overflow: "hidden",
 })
 
-// todo - split notification
-const notificationBaseStyle = style({
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  marginRight: 4,
-  borderRadius: 10,
+export const buttonNotificationContainerStyle = style({ marginRight: 4 })
+
+export const buttonNotificationColorStyle = styleVariants({
+  primary: {
+    backgroundColor: color.secondary.container.value,
+    color: color.secondary["container-contents"].value,
+  },
+
+  "secondary-color": {
+    backgroundColor: color.primary.container.value,
+    color: color.primary["container-contents"].value,
+  },
+
+  "secondary-gray": {
+    backgroundColor: color["neutral-primary"].contents.value,
+    color: color["neutral-primary"].container.value,
+  },
+
+  "tertiary-color": {
+    backgroundColor: color.secondary["container-contents"].value,
+    color: color.secondary.container.value,
+  },
+
+  "tertiary-gray": {
+    backgroundColor: color["neutral-primary"].contents.value,
+    color: color["neutral-secondary"].container.value,
+  },
+
+  "negative-primary": {
+    backgroundColor: color.primary["container-contents"].value,
+    color: color.error.contents.value, // #FFF ?
+  },
+
+  "negative-secondary": {
+    backgroundColor: color.error.contents.value,
+    color: color.error.container.value,
+  },
 })
-
-const notificationSmallStyle = style({ padding: "1px 4px" })
-
-// 14px인데, 토큰레벨에 없는 폰트스타일로 보임 확인필요
-const notificationMediumStyle = style({ padding: "1.5px 6px" })
-
-export const buttonNotificationSizeStyle = styleVariants({
-  xs: [notificationSmallStyle],
-  sm: [notificationSmallStyle],
-  md: [notificationSmallStyle],
-  lg: [notificationMediumStyle],
-  xl: [notificationMediumStyle],
-})
-
-export const buttonNotificationContainerStyle = styleVariants({
-  primary: [
-    notificationBaseStyle,
-    {
-      backgroundColor: color.secondary.container.value,
-      color: color.secondary["container-contents"].value,
-    },
-  ],
-  "secondary-color": [
-    notificationBaseStyle,
-    {
-      backgroundColor: color.primary.container.value,
-      color: color.primary["container-contents"].value,
-    },
-  ],
-  "secondary-gray": [
-    notificationBaseStyle,
-    {
-      backgroundColor: color["neutral-primary"].contents.value,
-      color: color["neutral-primary"].container.value,
-    },
-  ],
-  "tertiary-color": [
-    notificationBaseStyle,
-    {
-      backgroundColor: color.secondary["container-contents"].value,
-      color: color.secondary.container.value,
-    },
-  ],
-  "tertiary-gray": [
-    notificationBaseStyle,
-    {
-      backgroundColor: color["neutral-primary"].contents.value,
-      color: color["neutral-secondary"].container.value,
-    },
-  ],
-  "negative-primary": [
-    notificationBaseStyle,
-    {
-      backgroundColor: color.primary["container-contents"].value,
-      color: color.error.contents.value, // #FFF ?
-    },
-  ],
-  "negative-secondary": [
-    notificationBaseStyle,
-    {
-      backgroundColor: color.error.contents.value,
-      color: color.error.container.value,
-    },
-  ],
-})
-
-// --- notification style end ---
 
 const buttonBorderType = style({ borderStyle: "solid", borderWidth: 1 })
 

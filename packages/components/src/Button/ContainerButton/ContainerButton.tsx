@@ -7,10 +7,11 @@ import {
   buttonNotificationContainerStyle,
   buttonColorStyles,
   buttonTextContainer,
-  buttonNotificationSizeStyle,
+  buttonNotificationColorStyle,
 } from "./styles.css"
 import type { IconProps } from "../../Icon"
 import { Text } from "../../Text/Text"
+import NotificationCountBadge from "../../NotificationBadge/NotificationCountBadge"
 
 type normal =
   | "primary"
@@ -26,10 +27,8 @@ export interface ContainerButtonBaseProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   size: "xs" | "sm" | "md" | "lg" | "xl"
   variant: buttonVariants
-  disabled: boolean
-  className: string
   text: string
-  props: {} // for rescript dom type
+  props: {} // hatch escapes for rescript
 }
 
 export interface ContainerButtonIconProps {
@@ -48,12 +47,25 @@ export type ContainerButtonProps = ContainerButtonBaseProps &
 const ContainerButton = ({
   text,
   size,
-  props,
   leftIcon,
   rightIcon,
   count,
   variant,
+  props,
+  ...restProps
 }: React.PropsWithChildren<ContainerButtonProps>) => {
+  const getNotificationCountBadgeSize = () => {
+    switch (size) {
+      case "xs":
+      case "sm":
+      case "md":
+        return "sm"
+      case "lg":
+      case "xl":
+        return "md"
+    }
+  }
+
   const getIconSize = () => {
     switch (size) {
       case "xs":
@@ -84,29 +96,15 @@ const ContainerButton = ({
     }
   }
 
-  const getCountVariantKey = () => {
-    switch (size) {
-      case "xs":
-        return "caption-xs-regular"
-      case "sm":
-        return "caption-xs-regular"
-      case "md":
-        return "caption-xs-regular"
-      case "lg":
-        return "body-sm-regular"
-      case "xl":
-        return "body-sm-regular"
-    }
-  }
-
   const iconSizePx = getIconSize()
   const textVariantKey = getTextVariantKey()
-  const countVariantKey = getCountVariantKey()
+  const notificationCountBadgeSize = getNotificationCountBadgeSize()
 
   return (
     <button
       className={`${buttonContainerStyle} ${buttonSizeStyles[size]} ${buttonColorStyles[variant]}`}
       {...props}
+      {...restProps}
     >
       {!!leftIcon && React.cloneElement(leftIcon, { sizePx: iconSizePx })}
       <span className={`${buttonTextContainer}`}>
@@ -118,12 +116,12 @@ const ContainerButton = ({
           {text}
         </Text>
         {typeof count === "number" && (
-          <Text
-            variantKey={countVariantKey}
-            className={`${buttonNotificationContainerStyle[variant]} ${buttonNotificationSizeStyle[size]}`}
-          >
-            {count}
-          </Text>
+          <NotificationCountBadge
+            size={notificationCountBadgeSize}
+            container="span"
+            text={count}
+            className={`${buttonNotificationContainerStyle} ${buttonNotificationColorStyle[variant]}`}
+          />
         )}
       </span>
       {!!rightIcon && React.cloneElement(rightIcon, { sizePx: iconSizePx })}
