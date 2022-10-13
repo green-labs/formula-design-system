@@ -22,7 +22,9 @@ module.exports = {
   source: [`tokens/**/*.@(json|json5)`, "tokens/index.js"],
   format: {
     tailwind: tailwindFormat,
-    figma: figmaFormat,
+    figmaEmitMeta: figmaFormat.emitMeta,
+    figmaEmitTokenSet: figmaFormat.emitTokenSet,
+    figmaEmitThemes: figmaFormat.emitThemes,
     tsModule: tsModuleFormat,
     colorMap: colorMapFormat,
     colorMapRes: colorMapResFormat,
@@ -82,11 +84,29 @@ module.exports = {
         "size/rem",
         "color/css",
       ],
-      buildPath: "dist/",
+      buildPath: "dist/figma-tokens/",
       files: [
         {
-          destination: "figma-tokens.json",
-          format: "figma",
+          destination: "ref.json",
+          format: "figmaEmitTokenSet",
+          options: {
+            tokenSet: "ref",
+          },
+        },
+        {
+          destination: "sys.json",
+          format: "figmaEmitTokenSet",
+          options: {
+            tokenSet: "sys",
+          },
+        },
+        {
+          destination: "$metadata.json",
+          format: "figmaEmitMeta",
+        },
+        {
+          destination: "$themes.json",
+          format: "figmaEmitThemes",
         },
       ],
     },

@@ -1,0 +1,24 @@
+{
+  "contents": {
+    "primary": { "value": "#0BB25F", "type": "color" },
+    "on-primary": { "value": "white", "type": "color" },
+    "on-secondary": { "value": "#0BB25F", "type": "color" },
+    "neutral-primary": { "value": "#1F2024", "type": "color" },
+    "neutral-secondary": { "value": "#8B8D94", "type": "color" },
+    "neutral-tertiary": { "value": "#C3C5C9", "type": "color" },
+    "on-inverse": { "value": "white", "type": "color" },
+    "error": { "value": "#CF1124", "type": "color" }
+  },
+  "container": {
+    "primary": { "value": "#0BB25F", "type": "color" },
+    "secondary": { "value": "#DFF7EA", "type": "color" },
+    "neutral-primary": { "value": "white", "type": "color" },
+    "neutral-secondary": { "value": "#F0F2F5", "type": "color" },
+    "neutral-tertiary": { "value": "#F7F8FA", "type": "color" },
+    "inverse": { "value": "#1F2024", "type": "color" },
+    "error": { "value": "#FAE8E9", "type": "color" },
+    "divider": { "value": "#F0F2F5", "type": "color" },
+    "outline": { "value": "#C3C5C9", "type": "color" },
+    "background": { "value": "white", "type": "color" }
+  }
+}
