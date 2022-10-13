@@ -15,9 +15,9 @@
   },
   "files": [
     "index.ts",
-    "dist/tokens.ts",
-    "dist/figma-tokens.json",
-    "dist/tailwind-tokens.json"
+    "dist/**/*.js",
+    "dist/**/*.ts",
+    "dist/**/*.json"
   ],
   "scripts": {
     "build": "style-dictionary build --config=./sd.config.js && ./after-sd-transform.sh"
