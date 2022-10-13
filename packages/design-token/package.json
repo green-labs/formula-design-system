@@ -1,24 +1,24 @@
 {
   "name": "@greenlabs/formula-design-token",
-  "version": "0.0.1-alpha.1",
-  "main": "./dist/tokens.js",
+  "version": "0.0.1-alpha.4",
   "repository": {
     "type": "git",
     "url": "git@github.com:green-labs/formula-design-system.git",
     "directory": "packages/design-token"
   },
-  "types": "dist/tokens.ts",
+  "main": "./index.ts",
+  "types": "./index.ts",
   "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
   "devDependencies": {
-    "chroma-js": "^2.4.2",
     "style-dictionary": "^3.7.1"
   },
   "files": [
-    "dist/tokens.js",
-    "dist/figma-tokens.json",
-    "dist/tailwind-tokens.json"
+    "index.ts",
+    "dist/**/*.js",
+    "dist/**/*.ts",
+    "dist/**/*.json"
   ],
   "scripts": {
-    "build": "style-dictionary build --config=./sd.config.js"
+    "build": "style-dictionary build --config=./sd.config.js && ./after-sd-transform.sh"
   }
 }

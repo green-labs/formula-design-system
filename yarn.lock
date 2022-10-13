@@ -1677,7 +1677,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@greenlabs/formula-components@^0.0.1-alpha.1, @greenlabs/formula-components@workspace:packages/components":
+"@greenlabs/formula-components@npm:0.0.1-alpha.2":
+  version: 0.0.1-alpha.2
+  resolution: "@greenlabs/formula-components@npm:0.0.1-alpha.2"
+  dependencies:
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  checksum: aa0a633aa0024869c58294e068c2cebd1e4e079f4f63cce566212b663a16084045d0bdaf554add08b357d0c9eef97ac0b3bbbf21e093a8a8d866e3437a39e67b
+  languageName: node
+  linkType: hard
+
+"@greenlabs/formula-components@workspace:packages/components":
   version: 0.0.0-use.local
   resolution: "@greenlabs/formula-components@workspace:packages/components"
   dependencies:
@@ -1701,7 +1711,9 @@ __metadata:
     "@storybook/testing-library": ^0.0.13
     "@types/react": ^18.0.20
     "@vanilla-extract/css": ^1.9.0
+    "@vanilla-extract/dynamic": ^2.0.2
     "@vanilla-extract/rollup-plugin": ^1.1.0
+    "@vanilla-extract/sprinkles": ^1.5.0
     "@vanilla-extract/webpack-plugin": ^2.1.12
     babel-loader: ^8.2.5
     concurrently: ^7.3.0
@@ -1725,7 +1737,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@greenlabs/rescript-formula-components@workspace:packages/components-rescript"
   dependencies:
-    "@greenlabs/formula-components": ^0.0.1-alpha.1
+    "@greenlabs/formula-components": 0.0.1-alpha.2
+    "@rescript/react": ^0.10.3
+    rescript: ^10.0.0
+  peerDependencies:
     "@rescript/react": ^0.10.3
     rescript: ^10.0.0
   languageName: unknown
@@ -3685,6 +3700,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vanilla-extract/dynamic@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "@vanilla-extract/dynamic@npm:2.0.2"
+  dependencies:
+    "@vanilla-extract/private": ^1.0.3
+  checksum: c6f22606bce094a5682c6d842be6d6965b9448f8973eaabdaa7a7438146458c22490c1c63345f08d2226f1c95ac20731835a5140c2c18646b2c1287b65607b84
+  languageName: node
+  linkType: hard
+
 "@vanilla-extract/integration@npm:^5.0.0":
   version: 5.0.1
   resolution: "@vanilla-extract/integration@npm:5.0.1"
@@ -3715,6 +3739,15 @@ __metadata:
   peerDependencies:
     rollup: ^2.0.0
   checksum: aaa488c397bf6b790900d6bec5a60065c78e5f3d2978beb4e1bf63f81ecc56d7b5eee6915e3e551c14f9307a51be8e34e84847215878c50a875dc15d9871a9ae
+  languageName: node
+  linkType: hard
+
+"@vanilla-extract/sprinkles@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "@vanilla-extract/sprinkles@npm:1.5.0"
+  peerDependencies:
+    "@vanilla-extract/css": ^1.0.0
+  checksum: 522b96afe856a72d76072ab41453edc35117772a6ac829c8a5ad09cddd69152e152b1cbda0b4344d50dbde59d0effa39301beb7acf319ef88f485966c89c80fd
   languageName: node
   linkType: hard
 

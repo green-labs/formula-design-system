@@ -7,6 +7,10 @@
 //     const subAccessor = el.attributes.subitem
 //     const category = el.attributes.category
 
+const { readFileSync } = require("fs")
+const { resolve } = require("path")
+const themeDataPath = resolve("formats/data/$themes.json")
+
 //     // ref의 경우 Style을 하나의 카테고리로 몰아넣기 위해, 한단계 더 'ref' 필드를 만든다.
 //     // 이런 분기처리를 위해 최상위가 변경되는 'root' 개념이 들어간다.
 //     let root
@@ -96,19 +100,23 @@ const groupByColor = (arr) => {
 /**
  * @param { import("style-dictionary/types/Format").FormatterArguments args }
  */
-module.exports = function (args) {
-  const { dictionary } = args
+const getTokens = (dictionary) => {
   // color tokens
   const colorTokens = dictionary.allTokens.filter(
     (e) => e.attributes.type === "color"
   )
+  return groupByColor(colorTokens)
+}
 
-  const ret = {
-    $themes: [],
-    $metadata: {
+module.exports = {
+  emitTokenSet({ dictionary, options: { tokenSet } }) {
+    return JSON.stringify(getTokens(dictionary)[tokenSet])
+  },
+  emitThemes() {
+    return readFileSync(themeDataPath).toString()
+  },
+  emitMeta: () =>
+    JSON.stringify({
       tokenSetOrder: ["sys", "ref"],
-    },
-    ...groupByColor(colorTokens),
-  }
-  return JSON.stringify(ret)
+    }),
 }

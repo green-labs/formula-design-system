@@ -1,8 +1,3 @@
-/**
- * Do not edit directly
- * Generated on Thu, 22 Sep 2022 06:20:13 GMT
- */
-
 export default {
   ref: {
     color: {
@@ -38,11 +33,11 @@ export default {
       },
       gray: {
         "5": {
-          value: "#0E1012",
+          value: "#FAFBFC",
           filePath: "tokens/color/ref.json",
           isSource: true,
           original: {
-            value: "#0E1012",
+            value: "#FAFBFC",
           },
           name: "ref-color-gray-5",
           attributes: {
@@ -3131,12 +3126,14 @@ export default {
     state: {
       opacity: {
         "hover-white": {
-          comment: "opacity of hover container when the contents color is white",
+          comment:
+            "opacity of hover container when the contents color is white",
           value: 0.12,
           filePath: "tokens/color/state.json5",
           isSource: true,
           original: {
-            comment: "opacity of hover container when the contents color is white",
+            comment:
+              "opacity of hover container when the contents color is white",
             value: "{ref.opacity.3}",
           },
           name: "sys-state-opacity-hover-white",
@@ -3165,12 +3162,14 @@ export default {
           path: ["sys", "state", "opacity", "hover"],
         },
         "pressed-white": {
-          comment: "opacity of pressed container when the contents color is white",
+          comment:
+            "opacity of pressed container when the contents color is white",
           value: 0.24,
           filePath: "tokens/color/state.json5",
           isSource: true,
           original: {
-            comment: "opacity of pressed container when the contents color is white",
+            comment:
+              "opacity of pressed container when the contents color is white",
             value: "{ref.opacity.5}",
           },
           name: "sys-state-opacity-pressed-white",

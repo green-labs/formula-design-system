@@ -859,9 +859,6 @@
     }
   ],
   "$metadata": {
-    "tokenSetOrder": [
-      "sys",
-      "ref"
-    ]
+    "tokenSetOrder": ["sys", "ref"]
   }
 }

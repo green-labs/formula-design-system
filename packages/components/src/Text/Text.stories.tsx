@@ -98,7 +98,7 @@ Body.argTypes = {
       disable: true,
     },
   },
-  wrapper: {
+  container: {
     table: {
       disable: true,
     },

@@ -1,70 +1,46 @@
 const StyleDictionary = require("style-dictionary")
-const chroma = require("chroma-js")
+
 const tailwindFormat = require("./formats/tailwind")
 const figmaFormat = require("./formats/figma")
-
-// from https://github.com/amzn/style-dictionary/blob/51cb6c8019e62806c005e85e7c01da377b00628b/examples/advanced/transitive-transforms/sd.config.js
-const colorTransform = (token) => {
-  const { value, modify = [] } = token
-  let color = chroma(value)
-
-  modify.forEach(({ type, amount }) => {
-    color = color[type](amount)
-  })
-
-  return color.hex()
-}
+const tsModuleFormat = require("./formats/tsModule")
+const { colorMapFormat, colorMapResFormat } = require("./formats/colorMap")
 
 module.exports = {
   source: [`tokens/**/*.@(json|json5)`, "tokens/index.js"],
   format: {
     tailwind: tailwindFormat,
-    figma: figmaFormat,
+    figmaEmitMeta: figmaFormat.emitMeta,
+    figmaEmitTokenSet: figmaFormat.emitTokenSet,
+    figmaEmitThemes: figmaFormat.emitThemes,
+    tsModule: tsModuleFormat,
+    colorMap: colorMapFormat,
+    colorMapRes: colorMapResFormat,
   },
   transform: {
-    colorTransform: {
-      type: `value`,
-      transitive: true,
-      matcher: (token) => token.attributes.category === "color" && token.modify,
-      transformer: colorTransform,
-    },
-
     "color/css": Object.assign({}, StyleDictionary.transform[`color/css`], {
       transitive: true,
     }),
   },
 
   platforms: {
-    // scss: {
-    //   transforms: [
-    //     "attribute/cti",
-    //     "name/cti/kebab",
-    //     "time/seconds",
-    //     "content/icon",
-    //     "colorTransform",
-    //     "size/rem",
-    //     "color/css",
-    //   ],
-    //   buildPath: "build/scss/",
-    //   files: [
-    //     {
-    //       destination: "_variables.scss",
-    //       format: "scss/variables",
-    //     },
-    //   ],
-    // },
-    "javascript/module": {
-      transforms: ["attribute/cti", "name/cti/kebab", "colorTransform", "color/hex"],
+    tsModule: {
+      transforms: ["attribute/cti", "name/cti/kebab", "color/hex"],
       buildPath: "dist/",
       files: [
         {
-          destination: "tokens.js",
-          format: "javascript/module",
+          destination: "tokens.ts",
+          format: "tsModule",
         },
       ],
     },
     tailwind: {
-      transforms: ["attribute/cti", "name/cti/kebab", "colorTransform", "color/hex", "size/rem", "color/css"],
+      transforms: [
+        "attribute/cti",
+        "name/cti/kebab",
+        "color/hex",
+        "size/rem",
+        "color/css",
+      ],
       buildPath: "dist/",
       files: [
         {
@@ -74,12 +50,56 @@ module.exports = {
       ],
     },
     figma: {
-      transforms: ["attribute/cti", "name/cti/kebab", "colorTransform", "color/hex", "size/rem", "color/css"],
+      transforms: [
+        "attribute/cti",
+        "name/cti/kebab",
+        "color/hex",
+        "size/rem",
+        "color/css",
+      ],
+      buildPath: "dist/figma-tokens/",
+      files: [
+        {
+          destination: "ref.json",
+          format: "figmaEmitTokenSet",
+          options: {
+            tokenSet: "ref",
+          },
+        },
+        {
+          destination: "sys.json",
+          format: "figmaEmitTokenSet",
+          options: {
+            tokenSet: "sys",
+          },
+        },
+        {
+          destination: "$metadata.json",
+          format: "figmaEmitMeta",
+        },
+        {
+          destination: "$themes.json",
+          format: "figmaEmitThemes",
+        },
+      ],
+    },
+    colorMap: {
+      transforms: [
+        "attribute/cti",
+        "name/cti/snake",
+        "color/hex",
+        "size/rem",
+        "color/css",
+      ],
       buildPath: "dist/",
       files: [
         {
-          destination: "figma-tokens.json",
-          format: "figma",
+          destination: "colorMap.ts",
+          format: "colorMap",
+        },
+        {
+          destination: "Formula__ColorMap.res",
+          format: "colorMapRes",
         },
       ],
     },
