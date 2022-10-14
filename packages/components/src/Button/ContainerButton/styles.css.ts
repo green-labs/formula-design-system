@@ -139,5 +139,5 @@ export const buttonSizeStyles = styleVariants({
   sm: { borderRadius: 8, height: 40, ...extract(font.body.sm.regular) },
   md: { borderRadius: 10, height: 48, ...extract(font.body.md.regular) },
   lg: { borderRadius: 10, height: 56, ...extract(font.body.lg.bold) },
-  xl: { borderRadius: 12, height: 56, ...extract(font.body.xl.bold) },
+  xl: { borderRadius: 12, height: 64, ...extract(font.body.xl.bold) },
 })

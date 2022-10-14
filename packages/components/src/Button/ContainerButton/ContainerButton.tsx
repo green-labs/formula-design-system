@@ -1,4 +1,5 @@
 import React, { ReactElement } from "react"
+import { colorMap } from "@greenlabs/formula-design-token"
 
 import {
   buttonSizeStyles,
@@ -22,12 +23,13 @@ type negative = "negative-primary" | "negative-secondary"
 
 export type buttonVariants = normal | negative
 
+type buttonSize = "xs" | "sm" | "md" | "lg" | "xl"
 export interface ContainerButtonBaseProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  size: "xs" | "sm" | "md" | "lg" | "xl"
+  size: buttonSize
   variant: buttonVariants
   text: string
-  props: {} // hatch escapes for rescript
+  props: {} // escape hatch for rescript
 }
 
 export interface ContainerButtonIconProps {
@@ -43,6 +45,33 @@ export type ContainerButtonProps = ContainerButtonBaseProps &
   ContainerButtonIconProps &
   ContainerButtonCountProps
 
+const getNotificationCountBadgeSize = (size: buttonSize) => {
+  switch (size) {
+    case "xs":
+    case "sm":
+    case "md":
+      return "sm"
+    case "lg":
+    case "xl":
+      return "md"
+  }
+}
+
+const getIconSize = (size: buttonSize) => {
+  switch (size) {
+    case "xs":
+      return 16
+    case "sm":
+      return 20
+    case "md":
+      return 24
+    case "lg":
+      return 28
+    case "xl":
+      return 32
+  }
+}
+
 const ContainerButton = ({
   text,
   size,
@@ -53,35 +82,8 @@ const ContainerButton = ({
   props,
   ...restProps
 }: React.PropsWithChildren<ContainerButtonProps>) => {
-  const getNotificationCountBadgeSize = () => {
-    switch (size) {
-      case "xs":
-      case "sm":
-      case "md":
-        return "sm"
-      case "lg":
-      case "xl":
-        return "md"
-    }
-  }
-
-  const getIconSize = () => {
-    switch (size) {
-      case "xs":
-        return 16
-      case "sm":
-        return 20
-      case "md":
-        return 24
-      case "lg":
-        return 28
-      case "xl":
-        return 32
-    }
-  }
-
-  const iconSizePx = getIconSize()
-  const notificationCountBadgeSize = getNotificationCountBadgeSize()
+  const iconSizePx = getIconSize(size)
+  const notificationCountBadgeSize = getNotificationCountBadgeSize(size)
 
   return (
     <button
