@@ -1,6 +1,6 @@
 {
   "name": "@greenlabs/rescript-formula-components",
-  "version": "0.0.1-alpha.7",
+  "version": "0.0.1-alpha.8",
   "repository": {
     "type": "git",
     "url": "git@github.com:green-labs/formula-design-system.git",
@@ -9,7 +9,7 @@
   "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
   "main": "src/Formula.mjs",
   "files": [
-    "src/*.res",
+    "src/**/*.res",
     "bsconfig.json"
   ],
   "peerDependencies": {
