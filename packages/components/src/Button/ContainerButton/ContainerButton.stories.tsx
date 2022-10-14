@@ -41,11 +41,12 @@ export default {
     disabled: {
       defaultValue: true,
       control: "boolean",
+      description: "버튼을 비활성화합니다.",
     },
     ShowCount: {
       defaultValue: false,
       control: "boolean",
-      description: "스토리북을 위한 옵션입니다.",
+      description: "(For Storybook) 카운트 뱃지를 활성화합니다.",
     },
     count: {
       defaultValue: 20,
@@ -55,7 +56,7 @@ export default {
     ShowLeftIcon: {
       defaultValue: false,
       control: "boolean",
-      description: "스토리북을 위한 옵션입니다.",
+      description: "(For Storybook) 좌측 아이콘을 활성화합니다.",
     },
     leftIcon: {
       defaultValue: <ArrowLeftLineBoldIcon />,
@@ -64,7 +65,7 @@ export default {
     ShowRightIcon: {
       defaultValue: false,
       control: "boolean",
-      description: "스토리북을 위한 옵션입니다.",
+      description: "(For Storybook) 우측 아이콘을 활성화합니다.",
     },
     rightIcon: {
       defaultValue: <ArrowRightLineBoldIcon />,

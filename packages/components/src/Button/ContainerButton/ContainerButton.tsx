@@ -10,7 +10,6 @@ import {
   buttonNotificationColorStyle,
 } from "./styles.css"
 import type { IconProps } from "../../Icon"
-import { Text } from "../../Text/Text"
 import NotificationCountBadge from "../../NotificationBadge/NotificationCountBadge"
 
 type normal =
@@ -81,23 +80,7 @@ const ContainerButton = ({
     }
   }
 
-  const getTextVariantKey = () => {
-    switch (size) {
-      case "xs":
-        return "body-sm-regular" // xs - font.body.sm.regular
-      case "sm":
-        return "body-sm-regular" // sm - font.body.sm.regular
-      case "md":
-        return "body-md-regular" // md - font.body.md.regular
-      case "lg":
-        return "body-lg-bold" // lg - font.body.lg.bold
-      case "xl":
-        return "body-xl-bold" // xl - font.body.xl.bold
-    }
-  }
-
   const iconSizePx = getIconSize()
-  const textVariantKey = getTextVariantKey()
   const notificationCountBadgeSize = getNotificationCountBadgeSize()
 
   return (
@@ -108,13 +91,7 @@ const ContainerButton = ({
     >
       {!!leftIcon && React.cloneElement(leftIcon, { sizePx: iconSizePx })}
       <span className={`${buttonTextContainer}`}>
-        <Text
-          container="span"
-          className={buttonTextStyle}
-          variantKey={textVariantKey}
-        >
-          {text}
-        </Text>
+        <span className={buttonTextStyle}>{text}</span>
         {typeof count === "number" && (
           <NotificationCountBadge
             size={notificationCountBadgeSize}

@@ -1,7 +1,22 @@
 import { tokens } from "@greenlabs/formula-design-token"
 import { style, styleVariants } from "@vanilla-extract/css"
+const { color, font } = tokens.sys
 
-const { color } = tokens.sys
+const extract = (obj: any) => {
+  const keyMaps = [
+    ["typeface", "fontFamily"],
+    ["font-size", "fontSize"],
+    ["tracking", "letterSpacing"],
+    ["weight", "fontWeight"],
+    ["leading", "lineHeight"],
+  ]
+
+  return keyMaps.reduce((nextObj, [objKey, cssKey]) => {
+    // @ts-expect-error FIXME
+    nextObj[cssKey] = obj[objKey].value
+    return nextObj
+  }, {})
+}
 
 export const buttonContainerStyle = style({
   display: "flex",
@@ -109,7 +124,7 @@ export const buttonColorStyles = styleVariants({
   },
   "negative-primary": {
     backgroundColor: color.error.contents.value,
-    color: color.primary["container-contents"].value, // #FFF ?
+    color: color.primary["container-contents"].value,
     fill: color.primary["container-contents"].value,
   },
   "negative-secondary": {
@@ -119,42 +134,10 @@ export const buttonColorStyles = styleVariants({
   },
 })
 
-// todo - font를 사이즈 스타일로 정의할지, 컴포넌트를 조합할지 (지금은 스타일 예정)
-// check - spacing token에 정의되어있지 않은 스타일을 그냥 사용해도 무방한가?
 export const buttonSizeStyles = styleVariants({
-  xs: {
-    fontSize: 15,
-    paddingTop: 4.5,
-    paddingBottom: 4.5,
-    borderRadius: 6,
-    height: 32,
-  },
-  sm: {
-    fontSize: 15,
-    paddingTop: 8.5,
-    paddingBottom: 8.5,
-    borderRadius: 8,
-    height: 40,
-  },
-  md: {
-    fontSize: 17,
-    paddingTop: 11,
-    paddingBottom: 11,
-    borderRadius: 10,
-    height: 48,
-  },
-  lg: {
-    fontSize: 19,
-    paddingTop: 13.5,
-    paddingBottom: 13.5,
-    borderRadius: 10,
-    height: 56,
-  },
-  xl: {
-    fontSize: 22,
-    paddingTop: 15.5,
-    paddingBottom: 15.5,
-    borderRadius: 12,
-    height: 56,
-  },
+  xs: { borderRadius: 6, height: 32, ...extract(font.body.sm.regular) },
+  sm: { borderRadius: 8, height: 40, ...extract(font.body.sm.regular) },
+  md: { borderRadius: 10, height: 48, ...extract(font.body.md.regular) },
+  lg: { borderRadius: 10, height: 56, ...extract(font.body.lg.bold) },
+  xl: { borderRadius: 12, height: 56, ...extract(font.body.xl.bold) },
 })
