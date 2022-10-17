@@ -1,6 +1,6 @@
 {
   "name": "@greenlabs/formula-components",
-  "version": "0.0.1-alpha.7",
+  "version": "0.0.1-alpha.8",
   "repository": {
     "type": "git",
     "url": "git@github.com:green-labs/formula-design-system.git",
@@ -58,6 +58,7 @@
     "build": "yarn clean && yarn build:js && yarn build:types",
     "clean": "rm -rf ./build",
     "start": "concurrently -g -n re,storybook \"yarn re:watch\" \"yarn storybook\"",
+    "prepublish": "yarn build",
     "build:ts-icons": "cd src/Icon && yarn dlx @svgr/cli svgs --no-index && node ./templates/export-generator.js",
     "build:res-icons": "cd src/Icon && node ./templates/rescript-binder.js",
     "svgr": "yarn build:ts-icons && yarn build:res-icons"
