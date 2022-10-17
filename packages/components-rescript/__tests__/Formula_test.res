@@ -27,12 +27,13 @@ let testText = () => {
 }
 
 let testIcon = () => {
+  open Formula
   <>
-    <Formula.Icon.CalendarLineBold />
-    <Formula.Icon.CalendarLineRegular fill=#"lightblue-90" />
-    <Formula.Icon.CalendarLineThin size=#PC />
-    <Formula.Icon.CalendarFill sizePx=32 /> // for custom size
-    <Formula.Icon.CalendarFill classname="test-class__name" />
-    <Formula.Icon.CalendarFill style={ReactDOMStyle.make(~fill="red", ())} />
+    <Icon.CalendarLineBold />
+    <Icon.CalendarLineRegular fill=#"lightblue-90" />
+    <Icon.CalendarLineThin size=#PC />
+    <Icon.CalendarFill sizePx=32 /> // for custom size
+    <Icon.CalendarFill classname="test-class__name" />
+    <Icon.CalendarFill style={ReactDOMStyle.make(~fill="red", ())} />
   </>
 }
