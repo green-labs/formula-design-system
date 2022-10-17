@@ -43,8 +43,8 @@ external make: (
   ~weight: weight,
   ~color: Formula__ColorMap.t=?,
   ~align: align=?,
-  @as("container") ~tag: string=?,
-  @as("container") ~container: React.componentLike<textComponentProps<{..}>, React.element>=?,
+  ~tag: string=?,
+  ~container: React.componentLike<textComponentProps<{..}>, React.element>=?,
   ~children: React.element,
 ) => React.element = "Text"
 
@@ -56,8 +56,8 @@ module TextVariant = {
     ~variantKey: variantKey,
     ~color: Formula__ColorMap.t=?,
     ~align: align=?,
-    @as("container") ~tag: string=?,
-    @as("container") ~container: React.componentLike<textComponentProps<{..}>, React.element>=?,
+    ~tag: string=?,
+    ~container: React.componentLike<textComponentProps<{..}>, React.element>=?,
     ~children: React.element,
   ) => React.element = "Text"
 }
@@ -71,8 +71,8 @@ module Body = {
     ~weight: weight,
     ~color: Formula__ColorMap.t=?,
     ~align: align=?,
-    @as("container") ~tag: string=?,
-    @as("container") ~container: React.componentLike<textComponentProps<{..}>, React.element>=?,
+    ~tag: string=?,
+    ~container: React.componentLike<textComponentProps<{..}>, React.element>=?,
     ~children: React.element,
   ) => React.element = "TextBody"
 }
@@ -86,8 +86,8 @@ module Headline = {
     ~weight: weight,
     ~color: Formula__ColorMap.t=?,
     ~align: align=?,
-    @as("container") ~tag: string=?,
-    @as("container") ~container: React.componentLike<textComponentProps<{..}>, React.element>=?,
+    ~tag: string=?,
+    ~container: React.componentLike<textComponentProps<{..}>, React.element>=?,
     ~children: React.element,
   ) => React.element = "TextHeadline"
 }
@@ -99,8 +99,8 @@ module Caption = {
     ~className: string=?,
     ~color: Formula__ColorMap.t=?,
     ~align: align=?,
-    @as("container") ~tag: string=?,
-    @as("container") ~container: React.componentLike<textComponentProps<{..}>, React.element>=?,
+    ~tag: string=?,
+    ~container: React.componentLike<textComponentProps<{..}>, React.element>=?,
     ~children: React.element,
   ) => React.element = "TextCaption"
 }
