@@ -6,14 +6,18 @@ import { nodeResolve } from "@rollup/plugin-node-resolve"
 import { babel } from "@rollup/plugin-babel"
 import commonjs from "@rollup/plugin-commonjs"
 import json from "@rollup/plugin-json"
+import { externals } from "rollup-plugin-node-externals"
 
-const pkg = JSON.parse(readFileSync(new URL("./package.json", import.meta.url).pathname))
+const pkg = JSON.parse(
+  readFileSync(new URL("./package.json", import.meta.url).pathname)
+)
 
 const extensions = [".js", ".jsx", ".ts", ".tsx"]
 
 /** @type {import('rollup').RollupOptions} */
 export default {
   plugins: [
+    externals({ deps: true, devDeps: true, packagePath: "./package.json" }),
     nodeResolve({ extensions }),
     commonjs(),
     babel({

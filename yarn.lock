@@ -1677,7 +1677,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@greenlabs/formula-components@0.0.1-alpha.4, @greenlabs/formula-components@workspace:packages/components":
+"@greenlabs/formula-components@0.0.1-alpha.7, @greenlabs/formula-components@workspace:packages/components":
   version: 0.0.0-use.local
   resolution: "@greenlabs/formula-components@workspace:packages/components"
   dependencies:
@@ -1710,6 +1710,7 @@ __metadata:
     react: ^18.0.0
     react-dom: ^18.0.0
     rollup: ^2.79.0
+    rollup-plugin-node-externals: ^5.0.1
     typescript: ^4.8.3
   languageName: unknown
   linkType: soft
@@ -1726,7 +1727,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@greenlabs/rescript-formula-components@workspace:packages/components-rescript"
   dependencies:
-    "@greenlabs/formula-components": 0.0.1-alpha.4
+    "@greenlabs/formula-components": 0.0.1-alpha.7
     "@rescript/react": ^0.10.3
     rescript: ^10.0.0
   peerDependencies:
@@ -12235,6 +12236,15 @@ __metadata:
     hash-base: ^3.0.0
     inherits: ^2.0.1
   checksum: 006accc40578ee2beae382757c4ce2908a826b27e2b079efdcd2959ee544ddf210b7b5d7d5e80467807604244e7388427330f5c6d4cd61e6edaddc5773ccc393
+  languageName: node
+  linkType: hard
+
+"rollup-plugin-node-externals@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "rollup-plugin-node-externals@npm:5.0.1"
+  peerDependencies:
+    rollup: ^2.60.0 || ^3.0.0
+  checksum: 7089bfc19b370293b0aee9063b541d06e66cc0855141eb33e2ece1d8db7f22a8d437b04fc8464854fef21f558aa6f8b54a0a29cb8984d139ebf5278d6d8b7019
   languageName: node
   linkType: hard
 
