@@ -3,7 +3,7 @@ export type size = "PC" | "XL" | "LG" | "SM" | "XS"
 
 export interface IconProps {
   className?: string
-  fill?: keyof typeof colorMap
+  color?: keyof typeof colorMap
   size?: size
   sizePx?: number
   style?: React.CSSProperties

@@ -19,7 +19,7 @@ module ${iconName} = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "${iconName}"
 }
@@ -42,7 +42,7 @@ const resModules = resTypes + iconModules.join("\n")
 try {
   const moduleFilePath = path.join(
     __dirname,
-    "../../../../components-rescript/src/Formula__Icon.res"
+    "../../../../components-rescript/src/generated/Formula__Icon.res"
   )
   fs.writeFileSync(moduleFilePath, resModules)
 } catch (error) {
