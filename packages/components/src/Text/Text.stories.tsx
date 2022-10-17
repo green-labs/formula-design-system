@@ -7,37 +7,65 @@ const Template = (args) => {
     case "Headline":
       return (
         <>
-          <Text.Headline {...args} />
+          <span>Text.Headline (headline-xl-bold) </span>{" "}
+          <Text.Headline size="xl" weight="bold" {...args} />
           <hr />
-          <div>
-            variants: <br />
-            headline-sm-bold | headline-sm-regular | headline-md-bold |
-            headline-lg-bold | headline-xl-bold
-          </div>
+          <span>Text.Headline (headline-lg-bold) </span>
+          <Text.Headline size="lg" weight="bold" {...args} />
+          <hr />
+          <span>Text.Headline (headline-md-bold) </span>
+          <Text.Headline size="md" weight="bold" {...args} />
+          <hr />
+          <span>Text.Headline (headline-sm-bold) </span>
+          <Text.Headline size="sm" weight="bold" {...args} />
+          <hr />
+          <span>Text.Headline (headline-sm-regular) </span>
+          <Text.Headline size="sm" weight="regular" {...args} />
         </>
       )
     case "Body":
       return (
         <>
-          <Text.Body {...args} />
+          <span>Text.Body (body-xl-regular) </span>{" "}
+          <Text.Body size="xl" weight="regular" {...args} />
           <hr />
-          <div>
-            variants: <br />
-            body-lg-medium | body-lg-regular | body-lg-bold | body-md-medium |
-            body-md-regular | body-md-bold | body-sm-medium | body-sm-regular |
-            body-sm-bold | body-xl-regular | body-xl-bold
-          </div>
+          <span>Text.Body (body-xl-bold) </span>{" "}
+          <Text.Body size="xl" weight="bold" {...args} />
+          <hr />
+          <span>Text.Body (body-lg-medium) </span>{" "}
+          <Text.Body size="lg" weight="medium" {...args} />
+          <hr />
+          <span>Text.Body (body-lg-regular) </span>{" "}
+          <Text.Body size="lg" weight="regular" {...args} />
+          <hr />
+          <span>Text.Body (body-lg-bold) </span>{" "}
+          <Text.Body size="lg" weight="bold" {...args} />
+          <hr />
+          <span>Text.Body (body-md-medium) </span>{" "}
+          <Text.Body size="md" weight="medium" {...args} />
+          <hr />
+          <span>Text.Body (body-md-regular) </span>{" "}
+          <Text.Body size="md" weight="regular" {...args} />
+          <hr />
+          <span>Text.Body (body-md-bold) </span>{" "}
+          <Text.Body size="md" weight="bold" {...args} />
+          <hr />
+          <span>Text.Body (body-sm-medium) </span>{" "}
+          <Text.Body size="sm" weight="medium" {...args} />
+          <hr />
+          <span>Text.Body (body-sm-regular) </span>{" "}
+          <Text.Body size="sm" weight="regular" {...args} />
+          <hr />
+          <span>Text.Body (body-sm-bold) </span>{" "}
+          <Text.Body size="sm" weight="bold" {...args} />
+          <hr />
         </>
       )
     case "Caption":
       return (
         <>
+          <span>Text.Caption (caption-xs-regular) </span>{" "}
           <Text.Caption {...args} />
-          <hr />
-          <div>
-            variants: <br />
-            caption-xs-regular
-          </div>
         </>
       )
     default:
@@ -67,9 +95,6 @@ Generic.argTypes = {
 export const Body = Template.bind({})
 Body.args = {
   component: "Body",
-  variant: "body",
-  size: "sm",
-  weight: "medium",
   children: "Sample Text 샘플 텍스트",
 }
 Body.argTypes = {
@@ -103,16 +128,58 @@ Body.argTypes = {
       disable: true,
     },
   },
+  size: {
+    table: {
+      disable: true,
+    },
+  },
+  weight: {
+    table: {
+      disable: true,
+    },
+  },
 }
 
 // TODO: disable control args
 export const Headline = Template.bind({})
-Headline.args = { ...Body.args, component: "Headline", variant: "headline" }
-Headline.argTypes = { ...Body.argTypes }
+Headline.args = {
+  component: "Headline",
+  variant: "headline",
+  children: "Sample Text 샘플 텍스트",
+}
+Headline.argTypes = {
+  ...Body.argTypes,
+  size: {
+    table: {
+      disable: true,
+    },
+  },
+  weight: {
+    table: {
+      disable: true,
+    },
+  },
+}
 
 export const Caption = Template.bind({})
-Caption.args = { ...Body.args, component: "Caption", variant: "caption" }
-Caption.argTypes = { ...Body.argTypes }
+Caption.args = {
+  component: "Caption",
+  variant: "caption",
+  children: "Sample Text 샘플 텍스트",
+}
+Caption.argTypes = {
+  ...Body.argTypes,
+  size: {
+    table: {
+      disable: true,
+    },
+  },
+  weight: {
+    table: {
+      disable: true,
+    },
+  },
+}
 
 export default {
   title: "Example/Text",

@@ -4,16 +4,19 @@ import { variants, textColorVar, textStyle } from "./styles.css"
 import { sprinkles } from "../sprinkles.css"
 import type { Sprinkles } from "../sprinkles.css"
 
-export interface TextProps {
+interface TextBaseProps {
   props: {}
   className: string
+  align?: Sprinkles["textAlign"]
+  color?: keyof typeof colorMap
+  container: React.ElementType
+}
+
+export interface TextProps extends TextBaseProps {
   variantKey?: keyof typeof variants
   variant: "body" | "headline" | "caption"
   size: "xs" | "sm" | "md" | "lg" | "xl"
   weight: "regular" | "medium" | "bold"
-  align?: Sprinkles["textAlign"]
-  color?: keyof typeof colorMap
-  container: React.ElementType
 }
 
 export const Text = ({
@@ -21,32 +24,36 @@ export const Text = ({
   props = {},
   children,
   variantKey,
-  variant = "body",
-  size = "md",
-  weight = "regular",
+  variant,
+  size,
+  weight,
   color,
   align,
-  container = "div",
+  container = "span",
 }: React.PropsWithChildren<TextProps>) => {
   const Container = container
-  const _variantKey =
-    variantKey ?? (`${variant}-${size}-${weight}` as keyof typeof variants)
-  const variantClass = variants[_variantKey]
-  const colorProp =
+  const variantKeyStr = variantKey ?? `${variant}-${size}-${weight}`
+
+  if (process.env.NODE_ENV !== "production" && !(variantKeyStr in variants)) {
+    console.error(`You have used non-exist variant key ${variantKeyStr}.`)
+  }
+
+  const variantClass = variants[variantKeyStr as keyof typeof variants] ?? ""
+  const colorCssVar =
     color && colorMap[color]
       ? assignInlineVars({ [textColorVar]: colorMap[color] })
       : undefined
 
-  if (process.env.NODE_ENV !== "production" && !(_variantKey in variants)) {
-    console.error(`You have used non-exist variant key ${_variantKey}.`)
-  }
-
   return (
     <Container
-      className={`${variantClass} ${sprinkles({
-        textAlign: align,
-      })} ${textStyle} ${className}`}
-      style={colorProp}
+      className={`${variantClass} ${
+        align
+          ? sprinkles({
+              textAlign: align,
+            })
+          : ""
+      } ${textStyle} ${className}`}
+      style={colorCssVar}
       {...props}
     >
       {children}
@@ -57,10 +64,11 @@ Text.displayName = "Text"
 
 export const TextBody = (args: TextProps) => <Text {...args} variant="body" />
 export const TextHeadline = (args: TextProps) => (
-  <Text {...args} variant="headline" />
+  <Text {...args} variant="headline" container="h3" />
 )
-export const TextCaption = (args: TextProps) => (
-  <Text {...args} variant="caption" />
+
+export const TextCaption = (args: TextBaseProps) => (
+  <Text {...args} variant="caption" size="xs" weight="regular" />
 )
 
 Text.Body = TextBody
