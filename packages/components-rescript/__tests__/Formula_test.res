@@ -30,7 +30,7 @@ let testIcon = () => {
   open Formula
   <>
     <Icon.CalendarLineBold />
-    <Icon.CalendarLineRegular fill=#"lightblue-90" />
+    <Icon.CalendarLineRegular color=#"lightblue-90" />
     <Icon.CalendarLineThin size=#PC />
     <Icon.CalendarFill sizePx=32 /> // for custom size
     <Icon.CalendarFill classname="test-class__name" />

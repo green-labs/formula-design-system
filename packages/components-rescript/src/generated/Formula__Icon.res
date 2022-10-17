@@ -14,7 +14,7 @@ module ArrowDownLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ArrowDownLineBold"
 }
@@ -33,7 +33,7 @@ module ArrowDownLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ArrowDownLineRegular"
 }
@@ -52,7 +52,7 @@ module ArrowDownLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ArrowDownLineThin"
 }
@@ -71,7 +71,7 @@ module ArrowLeftLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ArrowLeftLineBold"
 }
@@ -90,7 +90,7 @@ module ArrowLeftLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ArrowLeftLineRegular"
 }
@@ -109,7 +109,7 @@ module ArrowLeftLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ArrowLeftLineThin"
 }
@@ -128,7 +128,7 @@ module ArrowRightLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ArrowRightLineBold"
 }
@@ -147,7 +147,7 @@ module ArrowRightLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ArrowRightLineRegular"
 }
@@ -166,7 +166,7 @@ module ArrowRightLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ArrowRightLineThin"
 }
@@ -185,7 +185,7 @@ module ArrowTriangleDownFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ArrowTriangleDownFill"
 }
@@ -204,7 +204,7 @@ module ArrowTriangleDownLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ArrowTriangleDownLineBold"
 }
@@ -223,7 +223,7 @@ module ArrowTriangleDownLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ArrowTriangleDownLineRegular"
 }
@@ -242,7 +242,7 @@ module ArrowTriangleDownLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ArrowTriangleDownLineThin"
 }
@@ -261,7 +261,7 @@ module ArrowTriangleUpFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ArrowTriangleUpFill"
 }
@@ -280,7 +280,7 @@ module ArrowTriangleUpLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ArrowTriangleUpLineBold"
 }
@@ -299,7 +299,7 @@ module ArrowTriangleUpLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ArrowTriangleUpLineRegular"
 }
@@ -318,7 +318,7 @@ module ArrowTriangleUpLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ArrowTriangleUpLineThin"
 }
@@ -337,7 +337,7 @@ module ArrowUpLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ArrowUpLineBold"
 }
@@ -356,7 +356,7 @@ module ArrowUpLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ArrowUpLineRegular"
 }
@@ -375,7 +375,7 @@ module ArrowUpLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ArrowUpLineThin"
 }
@@ -394,7 +394,7 @@ module BookMarkFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "BookMarkFill"
 }
@@ -413,7 +413,7 @@ module BookMarkLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "BookMarkLineBold"
 }
@@ -432,7 +432,7 @@ module BookMarkLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "BookMarkLineRegular"
 }
@@ -451,7 +451,7 @@ module BookMarkLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "BookMarkLineThin"
 }
@@ -470,7 +470,7 @@ module CalendarFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CalendarFill"
 }
@@ -489,7 +489,7 @@ module CalendarLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CalendarLineBold"
 }
@@ -508,7 +508,7 @@ module CalendarLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CalendarLineRegular"
 }
@@ -527,7 +527,7 @@ module CalendarLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CalendarLineThin"
 }
@@ -546,7 +546,7 @@ module CameraFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CameraFill"
 }
@@ -565,7 +565,7 @@ module CameraLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CameraLineBold"
 }
@@ -584,7 +584,7 @@ module CameraLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CameraLineRegular"
 }
@@ -603,7 +603,7 @@ module CameraLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CameraLineThin"
 }
@@ -622,7 +622,7 @@ module CartFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CartFill"
 }
@@ -641,7 +641,7 @@ module CartLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CartLineBold"
 }
@@ -660,7 +660,7 @@ module CartLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CartLineRegular"
 }
@@ -679,7 +679,7 @@ module CartLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CartLineThin"
 }
@@ -698,7 +698,7 @@ module CertificationFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CertificationFill"
 }
@@ -717,7 +717,7 @@ module CertificationLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CertificationLineBold"
 }
@@ -736,7 +736,7 @@ module CertificationLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CertificationLineRegular"
 }
@@ -755,7 +755,7 @@ module CertificationLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CertificationLineThin"
 }
@@ -774,7 +774,7 @@ module ChatFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ChatFill"
 }
@@ -793,7 +793,7 @@ module ChatLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ChatLineBold"
 }
@@ -812,7 +812,7 @@ module ChatLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ChatLineRegular"
 }
@@ -831,7 +831,7 @@ module ChatLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ChatLineThin"
 }
@@ -850,7 +850,7 @@ module CheckCircleFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CheckCircleFill"
 }
@@ -869,7 +869,7 @@ module CheckCircleLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CheckCircleLineBold"
 }
@@ -888,7 +888,7 @@ module CheckCircleLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CheckCircleLineRegular"
 }
@@ -907,7 +907,7 @@ module CheckCircleLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CheckCircleLineThin"
 }
@@ -926,7 +926,7 @@ module CheckLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CheckLineBold"
 }
@@ -945,7 +945,7 @@ module CheckLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CheckLineRegular"
 }
@@ -964,7 +964,7 @@ module CheckLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CheckLineThin"
 }
@@ -983,7 +983,7 @@ module ChevronDownLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ChevronDownLineBold"
 }
@@ -1002,7 +1002,7 @@ module ChevronDownLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ChevronDownLineRegular"
 }
@@ -1021,7 +1021,7 @@ module ChevronDownLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ChevronDownLineThin"
 }
@@ -1040,7 +1040,7 @@ module ChevronLeftLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ChevronLeftLineBold"
 }
@@ -1059,7 +1059,7 @@ module ChevronLeftLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ChevronLeftLineRegular"
 }
@@ -1078,7 +1078,7 @@ module ChevronLeftLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ChevronLeftLineThin"
 }
@@ -1097,7 +1097,7 @@ module ChevronRightLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ChevronRightLineBold"
 }
@@ -1116,7 +1116,7 @@ module ChevronRightLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ChevronRightLineRegular"
 }
@@ -1135,7 +1135,7 @@ module ChevronRightLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ChevronRightLineThin"
 }
@@ -1154,7 +1154,7 @@ module ChevronUpLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ChevronUpLineBold"
 }
@@ -1173,7 +1173,7 @@ module ChevronUpLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ChevronUpLineRegular"
 }
@@ -1192,7 +1192,7 @@ module ChevronUpLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ChevronUpLineThin"
 }
@@ -1211,7 +1211,7 @@ module ClockFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ClockFill"
 }
@@ -1230,7 +1230,7 @@ module ClockLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ClockLineBold"
 }
@@ -1249,7 +1249,7 @@ module ClockLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ClockLineRegular"
 }
@@ -1268,7 +1268,7 @@ module ClockLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ClockLineThin"
 }
@@ -1287,7 +1287,7 @@ module CloseLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CloseLineBold"
 }
@@ -1306,7 +1306,7 @@ module CloseLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CloseLineRegular"
 }
@@ -1325,7 +1325,7 @@ module CloseLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CloseLineThin"
 }
@@ -1344,7 +1344,7 @@ module CommentFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CommentFill"
 }
@@ -1363,7 +1363,7 @@ module CommentLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CommentLineBold"
 }
@@ -1382,7 +1382,7 @@ module CommentLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CommentLineRegular"
 }
@@ -1401,7 +1401,7 @@ module CommentLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CommentLineThin"
 }
@@ -1420,7 +1420,7 @@ module CompassFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CompassFill"
 }
@@ -1439,7 +1439,7 @@ module CompassLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CompassLineBold"
 }
@@ -1458,7 +1458,7 @@ module CompassLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CompassLineRegular"
 }
@@ -1477,7 +1477,7 @@ module CompassLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CompassLineThin"
 }
@@ -1496,7 +1496,7 @@ module CopyContentsFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CopyContentsFill"
 }
@@ -1515,7 +1515,7 @@ module CopyContentsLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CopyContentsLineBold"
 }
@@ -1534,7 +1534,7 @@ module CopyContentsLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CopyContentsLineRegular"
 }
@@ -1553,7 +1553,7 @@ module CopyContentsLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "CopyContentsLineThin"
 }
@@ -1572,7 +1572,7 @@ module DeleteFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "DeleteFill"
 }
@@ -1591,7 +1591,7 @@ module DeleteLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "DeleteLineBold"
 }
@@ -1610,7 +1610,7 @@ module DeleteLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "DeleteLineRegular"
 }
@@ -1629,7 +1629,7 @@ module DeleteLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "DeleteLineThin"
 }
@@ -1648,7 +1648,7 @@ module DownloadFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "DownloadFill"
 }
@@ -1667,7 +1667,7 @@ module DownloadLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "DownloadLineBold"
 }
@@ -1686,7 +1686,7 @@ module DownloadLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "DownloadLineRegular"
 }
@@ -1705,7 +1705,7 @@ module DownloadLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "DownloadLineThin"
 }
@@ -1724,7 +1724,7 @@ module EditCutFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "EditCutFill"
 }
@@ -1743,7 +1743,7 @@ module EditCutLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "EditCutLineBold"
 }
@@ -1762,7 +1762,7 @@ module EditCutLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "EditCutLineRegular"
 }
@@ -1781,7 +1781,7 @@ module EditCutLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "EditCutLineThin"
 }
@@ -1800,7 +1800,7 @@ module EditFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "EditFill"
 }
@@ -1819,7 +1819,7 @@ module EditLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "EditLineBold"
 }
@@ -1838,7 +1838,7 @@ module EditLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "EditLineRegular"
 }
@@ -1857,7 +1857,7 @@ module EditLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "EditLineThin"
 }
@@ -1876,7 +1876,7 @@ module EyeFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "EyeFill"
 }
@@ -1895,7 +1895,7 @@ module EyeLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "EyeLineBold"
 }
@@ -1914,7 +1914,7 @@ module EyeLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "EyeLineRegular"
 }
@@ -1933,7 +1933,7 @@ module EyeLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "EyeLineThin"
 }
@@ -1952,7 +1952,7 @@ module EyeSlashFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "EyeSlashFill"
 }
@@ -1971,7 +1971,7 @@ module EyeSlashLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "EyeSlashLineBold"
 }
@@ -1990,7 +1990,7 @@ module EyeSlashLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "EyeSlashLineRegular"
 }
@@ -2009,7 +2009,7 @@ module EyeSlashLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "EyeSlashLineThin"
 }
@@ -2028,7 +2028,7 @@ module FarmFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "FarmFill"
 }
@@ -2047,7 +2047,7 @@ module FarmLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "FarmLineBold"
 }
@@ -2066,7 +2066,7 @@ module FarmLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "FarmLineRegular"
 }
@@ -2085,7 +2085,7 @@ module FarmLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "FarmLineThin"
 }
@@ -2104,7 +2104,7 @@ module HeartFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "HeartFill"
 }
@@ -2123,7 +2123,7 @@ module HeartLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "HeartLineBold"
 }
@@ -2142,7 +2142,7 @@ module HeartLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "HeartLineRegular"
 }
@@ -2161,7 +2161,7 @@ module HeartLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "HeartLineThin"
 }
@@ -2180,7 +2180,7 @@ module HelpFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "HelpFill"
 }
@@ -2199,7 +2199,7 @@ module HelpLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "HelpLineBold"
 }
@@ -2218,7 +2218,7 @@ module HelpLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "HelpLineRegular"
 }
@@ -2237,7 +2237,7 @@ module HelpLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "HelpLineThin"
 }
@@ -2256,7 +2256,7 @@ module HomeFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "HomeFill"
 }
@@ -2275,7 +2275,7 @@ module HomeLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "HomeLineBold"
 }
@@ -2294,7 +2294,7 @@ module HomeLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "HomeLineRegular"
 }
@@ -2313,7 +2313,7 @@ module HomeLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "HomeLineThin"
 }
@@ -2332,7 +2332,7 @@ module ImageFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ImageFill"
 }
@@ -2351,7 +2351,7 @@ module ImageLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ImageLineBold"
 }
@@ -2370,7 +2370,7 @@ module ImageLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ImageLineRegular"
 }
@@ -2389,7 +2389,7 @@ module ImageLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ImageLineThin"
 }
@@ -2408,7 +2408,7 @@ module InfoFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "InfoFill"
 }
@@ -2427,7 +2427,7 @@ module InfoLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "InfoLineBold"
 }
@@ -2446,7 +2446,7 @@ module InfoLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "InfoLineRegular"
 }
@@ -2465,7 +2465,7 @@ module InfoLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "InfoLineThin"
 }
@@ -2484,7 +2484,7 @@ module LinkClipLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "LinkClipLineBold"
 }
@@ -2503,7 +2503,7 @@ module LinkClipLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "LinkClipLineRegular"
 }
@@ -2522,7 +2522,7 @@ module LinkClipLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "LinkClipLineThin"
 }
@@ -2541,7 +2541,7 @@ module LinkCopyLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "LinkCopyLineBold"
 }
@@ -2560,7 +2560,7 @@ module LinkCopyLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "LinkCopyLineRegular"
 }
@@ -2579,7 +2579,7 @@ module LinkCopyLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "LinkCopyLineThin"
 }
@@ -2598,7 +2598,7 @@ module LocationFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "LocationFill"
 }
@@ -2617,7 +2617,7 @@ module LocationFill1 = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "LocationFill1"
 }
@@ -2636,7 +2636,7 @@ module LocationLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "LocationLineBold"
 }
@@ -2655,7 +2655,7 @@ module LocationLineBold1 = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "LocationLineBold1"
 }
@@ -2674,7 +2674,7 @@ module LocationLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "LocationLineRegular"
 }
@@ -2693,7 +2693,7 @@ module LocationLineRegular1 = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "LocationLineRegular1"
 }
@@ -2712,7 +2712,7 @@ module LocationLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "LocationLineThin"
 }
@@ -2731,7 +2731,7 @@ module LocationLineThin1 = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "LocationLineThin1"
 }
@@ -2750,7 +2750,7 @@ module MenuFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "MenuFill"
 }
@@ -2769,7 +2769,7 @@ module MenuLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "MenuLineBold"
 }
@@ -2788,7 +2788,7 @@ module MenuLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "MenuLineRegular"
 }
@@ -2807,7 +2807,7 @@ module MenuLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "MenuLineThin"
 }
@@ -2826,7 +2826,7 @@ module MicFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "MicFill"
 }
@@ -2845,7 +2845,7 @@ module MicLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "MicLineBold"
 }
@@ -2864,7 +2864,7 @@ module MicLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "MicLineRegular"
 }
@@ -2883,7 +2883,7 @@ module MicLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "MicLineThin"
 }
@@ -2902,7 +2902,7 @@ module MicSlashFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "MicSlashFill"
 }
@@ -2921,7 +2921,7 @@ module MicSlashLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "MicSlashLineBold"
 }
@@ -2940,7 +2940,7 @@ module MicSlashLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "MicSlashLineRegular"
 }
@@ -2959,7 +2959,7 @@ module MicSlashLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "MicSlashLineThin"
 }
@@ -2978,7 +2978,7 @@ module MinusLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "MinusLineBold"
 }
@@ -2997,7 +2997,7 @@ module MinusLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "MinusLineRegular"
 }
@@ -3016,7 +3016,7 @@ module MinusLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "MinusLineThin"
 }
@@ -3035,7 +3035,7 @@ module MoneyBagFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "MoneyBagFill"
 }
@@ -3054,7 +3054,7 @@ module MoneyBagLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "MoneyBagLineBold"
 }
@@ -3073,7 +3073,7 @@ module MoneyBagLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "MoneyBagLineRegular"
 }
@@ -3092,7 +3092,7 @@ module MoneyBagLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "MoneyBagLineThin"
 }
@@ -3111,7 +3111,7 @@ module NoticeFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "NoticeFill"
 }
@@ -3130,7 +3130,7 @@ module NoticeLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "NoticeLineBold"
 }
@@ -3149,7 +3149,7 @@ module NoticeLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "NoticeLineRegular"
 }
@@ -3168,7 +3168,7 @@ module NoticeLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "NoticeLineThin"
 }
@@ -3187,7 +3187,7 @@ module NotificationFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "NotificationFill"
 }
@@ -3206,7 +3206,7 @@ module NotificationLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "NotificationLineBold"
 }
@@ -3225,7 +3225,7 @@ module NotificationLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "NotificationLineRegular"
 }
@@ -3244,7 +3244,7 @@ module NotificationLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "NotificationLineThin"
 }
@@ -3263,7 +3263,7 @@ module NotificationSlashFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "NotificationSlashFill"
 }
@@ -3282,7 +3282,7 @@ module NotificationSlashLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "NotificationSlashLineBold"
 }
@@ -3301,7 +3301,7 @@ module NotificationSlashLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "NotificationSlashLineRegular"
 }
@@ -3320,7 +3320,7 @@ module NotificationSlashLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "NotificationSlashLineThin"
 }
@@ -3339,7 +3339,7 @@ module PersonCircleFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PersonCircleFill"
 }
@@ -3358,7 +3358,7 @@ module PersonCircleLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PersonCircleLineBold"
 }
@@ -3377,7 +3377,7 @@ module PersonCircleLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PersonCircleLineRegular"
 }
@@ -3396,7 +3396,7 @@ module PersonCircleLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PersonCircleLineThin"
 }
@@ -3415,7 +3415,7 @@ module PersonFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PersonFill"
 }
@@ -3434,7 +3434,7 @@ module PersonLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PersonLineBold"
 }
@@ -3453,7 +3453,7 @@ module PersonLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PersonLineRegular"
 }
@@ -3472,7 +3472,7 @@ module PersonLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PersonLineThin"
 }
@@ -3491,7 +3491,7 @@ module PhoneFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PhoneFill"
 }
@@ -3510,7 +3510,7 @@ module PhoneLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PhoneLineBold"
 }
@@ -3529,7 +3529,7 @@ module PhoneLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PhoneLineRegular"
 }
@@ -3548,7 +3548,7 @@ module PhoneLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PhoneLineThin"
 }
@@ -3567,7 +3567,7 @@ module PinFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PinFill"
 }
@@ -3586,7 +3586,7 @@ module PinLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PinLineBold"
 }
@@ -3605,7 +3605,7 @@ module PinLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PinLineRegular"
 }
@@ -3624,7 +3624,7 @@ module PinLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PinLineThin"
 }
@@ -3643,7 +3643,7 @@ module PlayFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PlayFill"
 }
@@ -3662,7 +3662,7 @@ module PlayLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PlayLineBold"
 }
@@ -3681,7 +3681,7 @@ module PlayLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PlayLineRegular"
 }
@@ -3700,7 +3700,7 @@ module PlayLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PlayLineThin"
 }
@@ -3719,7 +3719,7 @@ module PlusCircleFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PlusCircleFill"
 }
@@ -3738,7 +3738,7 @@ module PlusCircleLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PlusCircleLineBold"
 }
@@ -3757,7 +3757,7 @@ module PlusCircleLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PlusCircleLineRegular"
 }
@@ -3776,7 +3776,7 @@ module PlusCircleLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PlusCircleLineThin"
 }
@@ -3795,7 +3795,7 @@ module PlusLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PlusLineBold"
 }
@@ -3814,7 +3814,7 @@ module PlusLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PlusLineRegular"
 }
@@ -3833,7 +3833,7 @@ module PlusLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PlusLineThin"
 }
@@ -3852,7 +3852,7 @@ module PostSquareFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PostSquareFill"
 }
@@ -3871,7 +3871,7 @@ module PostSquareLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PostSquareLineBold"
 }
@@ -3890,7 +3890,7 @@ module PostSquareLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PostSquareLineRegular"
 }
@@ -3909,7 +3909,7 @@ module PostSquareLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "PostSquareLineThin"
 }
@@ -3928,7 +3928,7 @@ module RefreshLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "RefreshLineBold"
 }
@@ -3947,7 +3947,7 @@ module RefreshLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "RefreshLineRegular"
 }
@@ -3966,7 +3966,7 @@ module RefreshLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "RefreshLineThin"
 }
@@ -3985,7 +3985,7 @@ module SearchFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "SearchFill"
 }
@@ -4004,7 +4004,7 @@ module SearchLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "SearchLineBold"
 }
@@ -4023,7 +4023,7 @@ module SearchLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "SearchLineRegular"
 }
@@ -4042,7 +4042,7 @@ module SearchLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "SearchLineThin"
 }
@@ -4061,7 +4061,7 @@ module SeeMoreFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "SeeMoreFill"
 }
@@ -4080,7 +4080,7 @@ module SeeMoreLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "SeeMoreLineBold"
 }
@@ -4099,7 +4099,7 @@ module SeeMoreLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "SeeMoreLineRegular"
 }
@@ -4118,7 +4118,7 @@ module SeeMoreLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "SeeMoreLineThin"
 }
@@ -4137,7 +4137,7 @@ module SendPlaneFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "SendPlaneFill"
 }
@@ -4156,7 +4156,7 @@ module SendPlaneLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "SendPlaneLineBold"
 }
@@ -4175,7 +4175,7 @@ module SendPlaneLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "SendPlaneLineRegular"
 }
@@ -4194,7 +4194,7 @@ module SendPlaneLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "SendPlaneLineThin"
 }
@@ -4213,7 +4213,7 @@ module SettingFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "SettingFill"
 }
@@ -4232,7 +4232,7 @@ module SettingLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "SettingLineBold"
 }
@@ -4251,7 +4251,7 @@ module SettingLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "SettingLineRegular"
 }
@@ -4270,7 +4270,7 @@ module SettingLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "SettingLineThin"
 }
@@ -4289,7 +4289,7 @@ module ShareAndroidFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ShareAndroidFill"
 }
@@ -4308,7 +4308,7 @@ module ShareAndroidLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ShareAndroidLineBold"
 }
@@ -4327,7 +4327,7 @@ module ShareAndroidLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ShareAndroidLineRegular"
 }
@@ -4346,7 +4346,7 @@ module ShareAndroidLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ShareAndroidLineThin"
 }
@@ -4365,7 +4365,7 @@ module ShareArrowFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ShareArrowFill"
 }
@@ -4384,7 +4384,7 @@ module ShareArrowLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ShareArrowLineBold"
 }
@@ -4403,7 +4403,7 @@ module ShareArrowLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ShareArrowLineRegular"
 }
@@ -4422,7 +4422,7 @@ module ShareArrowLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ShareArrowLineThin"
 }
@@ -4441,7 +4441,7 @@ module ShareIosFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ShareIosFill"
 }
@@ -4460,7 +4460,7 @@ module ShareIosLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ShareIosLineBold"
 }
@@ -4479,7 +4479,7 @@ module ShareIosLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ShareIosLineRegular"
 }
@@ -4498,7 +4498,7 @@ module ShareIosLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ShareIosLineThin"
 }
@@ -4517,7 +4517,7 @@ module ShoppingBasketFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ShoppingBasketFill"
 }
@@ -4536,7 +4536,7 @@ module ShoppingBasketLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ShoppingBasketLineBold"
 }
@@ -4555,7 +4555,7 @@ module ShoppingBasketLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ShoppingBasketLineRegular"
 }
@@ -4574,7 +4574,7 @@ module ShoppingBasketLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ShoppingBasketLineThin"
 }
@@ -4593,7 +4593,7 @@ module ThumbUpFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ThumbUpFill"
 }
@@ -4612,7 +4612,7 @@ module ThumbUpLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ThumbUpLineBold"
 }
@@ -4631,7 +4631,7 @@ module ThumbUpLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ThumbUpLineRegular"
 }
@@ -4650,7 +4650,7 @@ module ThumbUpLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ThumbUpLineThin"
 }
@@ -4669,7 +4669,7 @@ module TouchFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "TouchFill"
 }
@@ -4688,7 +4688,7 @@ module TouchLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "TouchLineBold"
 }
@@ -4707,7 +4707,7 @@ module TouchLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "TouchLineRegular"
 }
@@ -4726,7 +4726,7 @@ module TouchLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "TouchLineThin"
 }
@@ -4745,7 +4745,7 @@ module TrashFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "TrashFill"
 }
@@ -4764,7 +4764,7 @@ module TrashLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "TrashLineBold"
 }
@@ -4783,7 +4783,7 @@ module TrashLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "TrashLineRegular"
 }
@@ -4802,7 +4802,7 @@ module TrashLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "TrashLineThin"
 }
@@ -4821,7 +4821,7 @@ module VideoFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "VideoFill"
 }
@@ -4840,7 +4840,7 @@ module VideoLineBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "VideoLineBold"
 }
@@ -4859,7 +4859,7 @@ module VideoLineRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "VideoLineRegular"
 }
@@ -4878,7 +4878,7 @@ module VideoLineThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "VideoLineThin"
 }
@@ -4897,7 +4897,7 @@ module WebBold = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "WebBold"
 }
@@ -4916,7 +4916,7 @@ module WebFill = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "WebFill"
 }
@@ -4935,7 +4935,7 @@ module WebRegular = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "WebRegular"
 }
@@ -4954,7 +4954,7 @@ module WebThin = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: Formula__ColorMap.t=?,
+    ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "WebThin"
 }
