@@ -25,3 +25,14 @@ let testText = () => {
     </Text>
   </>
 }
+
+let testIcon = () => {
+  <>
+    <Formula.Icon.CalendarLineBold />
+    <Formula.Icon.CalendarLineRegular fill=#"lightblue-90" />
+    <Formula.Icon.CalendarLineThin size=#PC />
+    <Formula.Icon.CalendarFill sizePx=32 /> // for custom size
+    <Formula.Icon.CalendarFill classname="test-class__name" />
+    <Formula.Icon.CalendarFill style={ReactDOMStyle.make(~fill="red", ())} />
+  </>
+}
