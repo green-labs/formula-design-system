@@ -1,4 +1,5 @@
 import { SVGProps, Ref, forwardRef, memo } from "react"
+import { colorMap } from "@greenlabs/formula-design-token"
 import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
 const SvgRefreshLineThin = (
@@ -7,12 +8,13 @@ const SvgRefreshLineThin = (
     sizePx,
     style,
     className,
-    fill,
+    color,
     ...props
   }: IconProps & SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>
 ) => {
   const finalSize = sizePx ? sizePx : convertSizeToPx(size)
+  const fill = color && colorMap[color]
   return (
     <svg
       width={finalSize}
