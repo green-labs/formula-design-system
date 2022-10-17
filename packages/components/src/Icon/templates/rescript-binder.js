@@ -19,7 +19,7 @@ module ${iconName} = {
     ~classname: string=?,
     ~size: size=?,
     ~sizePx: int=?,
-    ~fill: string=?,
+    ~fill: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "${iconName}"
 }
