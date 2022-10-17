@@ -58,7 +58,7 @@
     "build": "yarn clean && yarn build:js && yarn build:types",
     "clean": "rm -rf ./build",
     "start": "concurrently -g -n re,storybook \"yarn re:watch\" \"yarn storybook\"",
-    "build:ts-icons": "cd src/Icon && npx @svgr/cli svgs --no-index && node ./templates/export-generator.js",
+    "build:ts-icons": "cd src/Icon && yarn dlx @svgr/cli svgs --no-index && node ./templates/export-generator.js",
     "build:res-icons": "cd src/Icon && node ./templates/rescript-binder.js",
     "svgr": "yarn build:ts-icons && yarn build:res-icons"
   }
