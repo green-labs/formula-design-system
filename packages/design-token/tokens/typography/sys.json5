@@ -33,7 +33,7 @@
             "font-size": { value: "{ref.font-size.headline-200}" },
             leading: { value: "{ref.leading.tight}" },
             tracking: { value: "{ref.tracking.tight}" },
-            weight: { value: "{ref.weight.regular}" },
+            weight: { value: "{ref.weight.bold}" },
           },
         },
         xl: {
@@ -42,7 +42,7 @@
             "font-size": { value: "{ref.font-size.headline-300}" },
             leading: { value: "{ref.leading.tight}" },
             tracking: { value: "{ref.tracking.tight}" },
-            weight: { value: "{ref.weight.regular}" },
+            weight: { value: "{ref.weight.bold}" },
           },
         },
       },

@@ -19,6 +19,7 @@ let testText = () => {
     <Text.Headline size=#lg weight=#bold color=#white>
       {`Test string`->React.string}
     </Text.Headline>
+    <Text.Headline size=#lg weight=#bold tag="h6"> {`Test string`->React.string} </Text.Headline>
     <Text variant=#body size=#lg weight=#bold color=#white> {`Test string`->React.string} </Text>
     <Text variant=#body size=#lg weight=#bold color=#"gray-90">
       {`Test string`->React.string}

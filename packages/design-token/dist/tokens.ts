@@ -4524,11 +4524,11 @@ export default {
               path: ["sys", "font", "headline", "lg", "bold", "tracking"],
             },
             weight: {
-              value: "400",
+              value: "700",
               filePath: "tokens/typography/sys.json5",
               isSource: true,
               original: {
-                value: "{ref.weight.regular}",
+                value: "{ref.weight.bold}",
               },
               name: "sys-font-headline-lg-bold-weight",
               attributes: {
@@ -4613,11 +4613,11 @@ export default {
               path: ["sys", "font", "headline", "xl", "bold", "tracking"],
             },
             weight: {
-              value: "400",
+              value: "700",
               filePath: "tokens/typography/sys.json5",
               isSource: true,
               original: {
-                value: "{ref.weight.regular}",
+                value: "{ref.weight.bold}",
               },
               name: "sys-font-headline-xl-bold-weight",
               attributes: {

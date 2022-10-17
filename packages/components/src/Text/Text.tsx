@@ -9,7 +9,8 @@ interface TextBaseProps {
   className: string
   align?: Sprinkles["textAlign"]
   color?: keyof typeof colorMap
-  container: React.ElementType
+  container?: React.ComponentType
+  tag?: React.ElementType
 }
 
 export interface TextProps extends TextBaseProps {
@@ -29,9 +30,10 @@ export const Text = ({
   weight,
   color,
   align,
-  container = "span",
+  container,
+  tag = "span",
 }: React.PropsWithChildren<TextProps>) => {
-  const Container = container
+  const Container = container ?? tag
   const variantKeyStr = variantKey ?? `${variant}-${size}-${weight}`
 
   if (process.env.NODE_ENV !== "production" && !(variantKeyStr in variants)) {
@@ -63,8 +65,8 @@ export const Text = ({
 Text.displayName = "Text"
 
 export const TextBody = (args: TextProps) => <Text {...args} variant="body" />
-export const TextHeadline = (args: TextProps) => (
-  <Text {...args} variant="headline" container="h3" />
+export const TextHeadline = ({ tag = "h3", ...props }: TextProps) => (
+  <Text tag={tag} {...props} variant="headline" />
 )
 
 export const TextCaption = (args: TextBaseProps) => (
