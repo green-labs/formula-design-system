@@ -1,6 +1,6 @@
 {
   "name": "@greenlabs/formula-components",
-  "version": "0.0.1-alpha.10",
+  "version": "0.0.1-alpha.11",
   "repository": {
     "type": "git",
     "url": "git@github.com:green-labs/formula-design-system.git",
@@ -14,7 +14,8 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "@vanilla-extract/dynamic": "^2.0.2",
-    "@vanilla-extract/sprinkles": "^1.5.0"
+    "@vanilla-extract/sprinkles": "^1.5.0",
+    "@greenlabs/formula-design-token": "0.0.1-alpha.6"
   },
   "files": [
     "build/",
