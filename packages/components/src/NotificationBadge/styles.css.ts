@@ -1,5 +1,6 @@
 import { tokens } from "@greenlabs/formula-design-token"
 import { createVar, style, styleVariants } from "@vanilla-extract/css"
+import { buttonStateStyle } from "../Button/ContainerButton/styles.css"
 const { font } = tokens.sys
 
 const extract = (obj: any) => {
@@ -22,6 +23,16 @@ export const notificationBaseStyle = style({
   justifyContent: "center",
   alignItems: "center",
   borderRadius: 10,
+
+  // todo - split common transition css
+  transition: "background-color 0.2s, color 0.2s",
+
+  selectors: {
+    [`${buttonStateStyle}:disabled &`]: {
+      backgroundColor: "#1F20244D", // todo - get color from token
+      color: "white",
+    },
+  },
 })
 
 export const buttonNotificationSizeStyle = styleVariants({

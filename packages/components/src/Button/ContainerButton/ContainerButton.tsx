@@ -1,77 +1,24 @@
-import React, { ReactElement } from "react"
-import { colorMap } from "@greenlabs/formula-design-token"
-
-import {
-  buttonSizeStyles,
-  buttonTextStyle,
-  buttonContainerStyle,
-  buttonNotificationContainerStyle,
-  buttonColorStyles,
-  buttonTextContainer,
-  buttonNotificationColorStyle,
-} from "./styles.css"
-import type { IconProps } from "../../Icon"
+import React from "react"
+import { assignInlineVars } from "@vanilla-extract/dynamic"
 import NotificationCountBadge from "../../NotificationBadge/NotificationCountBadge"
+import {
+  getButtonStyle,
+  getIconSize,
+  getNotificationCountBadgeSize,
+} from "../utils"
+import type { ContainerButtonProps } from "../types"
+import {
+  buttonSizeVariants,
+  buttonStateStyle,
+  buttonContainerStyle,
+  buttonVariantStyle,
+  buttonNotificationContainerStyle,
+  buttonNotificationColorVariants,
+  buttonTextContainerStyle,
+  buttonTextStyle,
+} from "./styles.css"
 
-type normal =
-  | "primary"
-  | "secondary-gray"
-  | "secondary-color"
-  | "tertiary-gray"
-  | "tertiary-color"
-type negative = "negative-primary" | "negative-secondary"
-
-export type buttonVariants = normal | negative
-
-type buttonSize = "xs" | "sm" | "md" | "lg" | "xl"
-export interface ContainerButtonBaseProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  size: buttonSize
-  variant: buttonVariants
-  text: string
-  props: {} // escape hatch for rescript
-}
-
-export interface ContainerButtonIconProps {
-  leftIcon?: ReactElement<IconProps>
-  rightIcon?: ReactElement<IconProps>
-}
-
-export interface ContainerButtonCountProps {
-  count?: number
-}
-
-export type ContainerButtonProps = ContainerButtonBaseProps &
-  ContainerButtonIconProps &
-  ContainerButtonCountProps
-
-const getNotificationCountBadgeSize = (size: buttonSize) => {
-  switch (size) {
-    case "xs":
-    case "sm":
-    case "md":
-      return "sm"
-    case "lg":
-    case "xl":
-      return "md"
-  }
-}
-
-const getIconSize = (size: buttonSize) => {
-  switch (size) {
-    case "xs":
-      return 16
-    case "sm":
-      return 20
-    case "md":
-      return 24
-    case "lg":
-      return 28
-    case "xl":
-      return 32
-  }
-}
-
+// todo - support custom color(backgroundColor, textColor)
 const ContainerButton = ({
   text,
   size,
@@ -79,29 +26,34 @@ const ContainerButton = ({
   rightIcon,
   count,
   variant,
+  style,
   props,
+  children,
   ...restProps
 }: React.PropsWithChildren<ContainerButtonProps>) => {
   const iconSizePx = getIconSize(size)
   const notificationCountBadgeSize = getNotificationCountBadgeSize(size)
+  const dynamicStyle = assignInlineVars(getButtonStyle(variant))
 
   return (
     <button
-      className={`${buttonContainerStyle} ${buttonSizeStyles[size]} ${buttonColorStyles[variant]}`}
+      className={`${buttonContainerStyle} ${buttonSizeVariants[size]} ${buttonVariantStyle} ${buttonStateStyle}`}
+      style={{ ...dynamicStyle, ...style }}
       {...props}
       {...restProps}
     >
       {!!leftIcon && React.cloneElement(leftIcon, { sizePx: iconSizePx })}
-      <span className={`${buttonTextContainer}`}>
+      <span className={`${buttonTextContainerStyle}`}>
         <span className={buttonTextStyle}>{text}</span>
         {typeof count === "number" && (
           <NotificationCountBadge
             size={notificationCountBadgeSize}
             container="span"
             text={count}
-            className={`${buttonNotificationContainerStyle} ${buttonNotificationColorStyle[variant]}`}
+            className={`${buttonNotificationContainerStyle} ${buttonNotificationColorVariants[variant]}`}
           />
         )}
+        {children}
       </span>
       {!!rightIcon && React.cloneElement(rightIcon, { sizePx: iconSizePx })}
     </button>

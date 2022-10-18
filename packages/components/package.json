@@ -11,6 +11,8 @@
   "module": "build/esm/index.js",
   "types": "build/ts/index.d.ts",
   "dependencies": {
+    "chroma-js": "^2.4.2",
+    "color-blend": "^4.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "@vanilla-extract/dynamic": "^2.0.2",
@@ -39,6 +41,7 @@
     "@storybook/react": "^6.5.10",
     "@storybook/storybook-deployer": "^2.8.12",
     "@storybook/testing-library": "^0.0.13",
+    "@types/chroma-js": "^2.1.4",
     "@types/react": "^18.0.20",
     "@vanilla-extract/css": "^1.9.0",
     "@vanilla-extract/rollup-plugin": "^1.1.0",

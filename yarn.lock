@@ -1699,6 +1699,7 @@ __metadata:
     "@storybook/react": ^6.5.10
     "@storybook/storybook-deployer": ^2.8.12
     "@storybook/testing-library": ^0.0.13
+    "@types/chroma-js": ^2.1.4
     "@types/react": ^18.0.20
     "@vanilla-extract/css": ^1.9.0
     "@vanilla-extract/dynamic": ^2.0.2
@@ -1706,6 +1707,8 @@ __metadata:
     "@vanilla-extract/sprinkles": ^1.5.0
     "@vanilla-extract/webpack-plugin": ^2.1.12
     babel-loader: ^8.2.5
+    chroma-js: ^2.4.2
+    color-blend: ^4.0.0
     concurrently: ^7.3.0
     react: ^18.0.0
     react-dom: ^18.0.0
@@ -3343,6 +3346,13 @@ __metadata:
   version: 4.2.2
   resolution: "@types/aria-query@npm:4.2.2"
   checksum: 6f2ce11d91e2d665f3873258db19da752d91d85d3679eb5efcdf9c711d14492287e1e4eb52613b28e60375841a9e428594e745b68436c963d8bad4bf72188df3
+  languageName: node
+  linkType: hard
+
+"@types/chroma-js@npm:^2.1.4":
+  version: 2.1.4
+  resolution: "@types/chroma-js@npm:2.1.4"
+  checksum: 24f1a1dd1c7b21548299c320bfa01e6407acb70193e567af16c28f742571fe56bb1eea0aedc41281478a175c70772a4627d5a9bf5b9cd854a7b455c38a3a5645
   languageName: node
   linkType: hard
 
@@ -5663,6 +5673,13 @@ __metadata:
     map-visit: ^1.0.0
     object-visit: ^1.0.0
   checksum: 15d9658fe6eb23594728346adad5433b86bb7a04fd51bbab337755158722f9313a5376ef479de5b35fbc54140764d0d39de89c339f5d25b959ed221466981da9
+  languageName: node
+  linkType: hard
+
+"color-blend@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "color-blend@npm:4.0.0"
+  checksum: 1db3045b4dcb4f751b3ec8848d34d7b8bbcc455bfeca8a4dd3413efef17cef5b5ccc740c564717913b3faa19af4dd996e94dc07e61f6eb4438744aaa8857e1ff
   languageName: node
   linkType: hard
 
