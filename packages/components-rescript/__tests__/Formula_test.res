@@ -9,7 +9,12 @@ module TestTextContainer = {
 let testText = () => {
   open Formula
   <>
-    <Text variant=#body size=#lg weight=#bold container={TestTextContainer.make}>
+    <Text
+      variant=#body
+      size=#lg
+      weight=#bold
+      container={TestTextContainer.make}
+      props={{"id": "id-of-text"}}>
       {`Test string`->React.string}
     </Text>
     <Text.TextVariant variantKey={#"body-lg-medium"}>
@@ -36,5 +41,13 @@ let testIcon = () => {
     <Icon.CalendarFill sizePx=32 /> // for custom size
     <Icon.CalendarFill classname="test-class__name" />
     <Icon.CalendarFill style={ReactDOMStyle.make(~fill="red", ())} />
+  </>
+}
+
+let testDivider = () => {
+  open Formula
+  <>
+    <Divider />
+    <Divider className="some-className" variant=#large props={{"id": "id-of-divider"}} />
   </>
 }
