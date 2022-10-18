@@ -4,20 +4,26 @@ import { variants, textColorVar, textStyle } from "./styles.css"
 import { sprinkles } from "../sprinkles.css"
 import type { Sprinkles } from "../sprinkles.css"
 
-interface TextBaseProps {
-  props: {}
-  className: string
+interface TextBaseProps extends React.PropsWithChildren {
+  props?: {}
+  className?: string
   align?: Sprinkles["textAlign"]
   color?: keyof typeof colorMap
   container?: React.ComponentType
   tag?: React.ElementType
 }
 
+type variantKey = keyof typeof variants
 export interface TextProps extends TextBaseProps {
-  variantKey?: keyof typeof variants
+  variantKey?: variantKey
   variant: "body" | "headline" | "caption"
   size: "xs" | "sm" | "md" | "lg" | "xl"
   weight: "regular" | "medium" | "bold"
+}
+
+interface TextVariantProps extends TextBaseProps {
+  size?: "xs" | "sm" | "md" | "lg" | "xl"
+  weight?: "regular" | "medium" | "bold"
 }
 
 export const Text = ({
@@ -32,7 +38,7 @@ export const Text = ({
   align,
   container,
   tag = "span",
-}: React.PropsWithChildren<TextProps>) => {
+}: TextProps) => {
   const Container = container ?? tag
   const variantKeyStr = variantKey ?? `${variant}-${size}-${weight}`
 
@@ -64,9 +70,21 @@ export const Text = ({
 }
 Text.displayName = "Text"
 
-export const TextBody = (args: TextProps) => <Text {...args} variant="body" />
-export const TextHeadline = ({ tag = "h3", ...props }: TextProps) => (
-  <Text tag={tag} {...props} variant="headline" />
+export const TextBody = ({
+  weight = "regular",
+  size = "sm",
+  ...props
+}: TextVariantProps) => (
+  <Text weight={weight} size={size} {...props} variant="body" />
+)
+
+export const TextHeadline = ({
+  size = "sm",
+  weight = "bold",
+  tag = "h3",
+  ...props
+}: TextVariantProps) => (
+  <Text weight={weight} size={size} tag={tag} {...props} variant="headline" />
 )
 
 export const TextCaption = (args: TextBaseProps) => (

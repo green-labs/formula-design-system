@@ -67,8 +67,8 @@ module Body = {
   external make: (
     ~props: {..}=?,
     ~className: string=?,
-    ~size: size,
-    ~weight: weight,
+    ~size: size=?,
+    ~weight: weight=?,
     ~color: Formula__ColorMap.t=?,
     ~align: align=?,
     ~tag: string=?,
@@ -82,8 +82,8 @@ module Headline = {
   external make: (
     ~props: {..}=?,
     ~className: string=?,
-    ~size: size,
-    ~weight: weight,
+    ~size: size=?,
+    ~weight: weight=?,
     ~color: Formula__ColorMap.t=?,
     ~align: align=?,
     ~tag: string=?,

@@ -3,7 +3,7 @@ import { tokens } from "@greenlabs/formula-design-token"
 
 const { font } = tokens.sys
 
-let keyMaps = [
+const keyMaps = [
   ["typeface", "fontFamily"],
   ["font-size", "fontSize"],
   ["leading", "lineHeight"],
