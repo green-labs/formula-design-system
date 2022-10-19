@@ -8,13 +8,13 @@ import {
 } from "../utils"
 import {
   buttonSizeVariants,
-  buttonStateStyle,
+  buttonPseudoStyle,
   buttonContainerStyle,
-  buttonVariantStyle,
   buttonNotificationContainerStyle,
   buttonNotificationColorVariants,
   buttonTextContainerStyle,
   buttonTextStyle,
+  buttonVariantStyles,
 } from "./styles.css"
 import type { ContainerButtonProps } from "./types"
 
@@ -41,7 +41,7 @@ const ContainerButton = ({
 
   return (
     <button
-      className={`${buttonContainerStyle} ${buttonSizeVariants[size]} ${buttonVariantStyle} ${buttonStateStyle}`}
+      className={`${buttonContainerStyle} ${buttonPseudoStyle} ${buttonSizeVariants[size]} ${buttonVariantStyles[variant]}`}
       style={{ ...variantStyles, ...style }}
       {...props}
       {...restProps}

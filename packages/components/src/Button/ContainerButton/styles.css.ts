@@ -2,7 +2,7 @@ import { tokens } from "@greenlabs/formula-design-token"
 import { createVar, style, styleVariants } from "@vanilla-extract/css"
 const { color, font } = tokens.sys
 
-// 🛑 todo - extract 하는 방법을 공용화해야함.
+// 🛑 todo - extract하는 방법을 공용화해야함.
 const extract = (obj: any) => {
   const keyMaps = [
     ["typeface", "fontFamily"],
@@ -100,30 +100,58 @@ export const buttonSizeVariants = styleVariants({
   xl: { borderRadius: 12, height: 64, ...extract(font.body.xl.bold) },
 })
 
+const buttonBorderType = { borderStyle: "solid", borderWidth: 1 }
+
+export const buttonVariantColors = {
+  primary: {
+    backgroundColor: color.primary.container.value,
+    color: color.primary["container-contents"].value,
+    fill: color.secondary.container.value,
+  },
+  "secondary-color": {
+    backgroundColor: color["neutral-primary"].container.value,
+    borderColor: color.primary.container.value,
+    color: color.primary.contents.value,
+    fill: color.primary.container.value,
+    ...buttonBorderType,
+  },
+  "secondary-gray": {
+    backgroundColor: color["neutral-primary"].container.value,
+    borderColor: color.outline.value,
+    color: color["neutral-primary"].contents.value,
+    fill: color["neutral-primary"].contents.value,
+    ...buttonBorderType,
+  },
+  "tertiary-color": {
+    backgroundColor: color.secondary.container.value,
+    color: color.secondary["container-contents"].value,
+    fill: color.secondary["container-contents"].value,
+  },
+  "tertiary-gray": {
+    backgroundColor: color["neutral-secondary"].container.value,
+    color: color["neutral-primary"].contents.value,
+    fill: color["neutral-primary"].contents.value,
+  },
+  "negative-primary": {
+    backgroundColor: color.error.contents.value,
+    color: color.primary["container-contents"].value,
+    fill: color.primary["container-contents"].value,
+  },
+  "negative-secondary": {
+    backgroundColor: color.error.container.value,
+    color: color.error.contents.value,
+    fill: color.error.contents.value,
+  },
+} as const
+
+export const buttonVariantStyles = styleVariants(buttonVariantColors)
+
 export const dynamicStyles = {
-  backgroundColor: createVar(),
-  borderColor: createVar(),
-  borderStyle: createVar(),
-  fillColor: createVar(),
-  labelColor: createVar(),
-
-  // hover
   hoverBackgroundColor: createVar(),
-
-  // active
   activeBackgroundColor: createVar(),
 }
 
-export const buttonVariantStyle = style({
-  backgroundColor: dynamicStyles.backgroundColor,
-  color: dynamicStyles.labelColor,
-  fill: dynamicStyles.fillColor,
-  borderColor: dynamicStyles.borderColor,
-  borderStyle: dynamicStyles.borderStyle,
-  borderWidth: 1,
-})
-
-export const buttonStateStyle = style({
+export const buttonPseudoStyle = style({
   selectors: {
     "&:disabled": {
       backgroundColor: "#F0F2F599", // 🛑 todo - get color from token

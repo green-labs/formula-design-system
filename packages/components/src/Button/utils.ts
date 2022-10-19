@@ -1,7 +1,10 @@
 import chroma from "chroma-js"
 import { overlay } from "color-blend"
 import { colorMap, tokens } from "@greenlabs/formula-design-token"
-import { dynamicStyles } from "./ContainerButton/styles.css"
+import {
+  buttonVariantColors,
+  dynamicStyles,
+} from "./ContainerButton/styles.css"
 import type { buttonSize, buttonVariants } from "./buttonCommonTypes"
 
 const { color } = tokens.sys
@@ -79,83 +82,12 @@ const getLayeredColor = (
 }
 
 export const getButtonStyleFromVariant = (variant: buttonVariants) => {
-  const {
-    backgroundColor,
-    borderColor,
-    borderStyle,
-    labelColor,
-    fillColor,
-    hoverBackgroundColor,
-    activeBackgroundColor,
-  } = dynamicStyles
+  const { hoverBackgroundColor, activeBackgroundColor } = dynamicStyles
 
-  let backgroundColorCss
-  let borderColorCss
-  let borderStyleCss
-  let labelColorCss
-  let fillColorCss
-
-  // 🛑 todo - split bg/label color, border option, fill option
-  switch (variant) {
-    case "primary":
-      // 🛑 check - color를 토큰에서 가져오는 것과, colorMap에서 가져오는 방식의 차이?
-      // (없다면 colorMap을 쓰는게 더 간결해보임)
-      backgroundColorCss = color.primary.container.value
-      borderColorCss = color.primary.container.value
-      borderStyleCss = "none"
-      labelColorCss = color.primary["container-contents"].value
-      fillColorCss = color.primary["container-contents"].value
-      break
-    case "secondary-color":
-      backgroundColorCss = color["neutral-primary"].container.value
-      borderColorCss = color.primary.container.value
-      borderStyleCss = "solid"
-      labelColorCss = color.primary.contents.value
-      fillColorCss = color.primary.container.value
-      break
-    case "secondary-gray":
-      backgroundColorCss = color["neutral-primary"].container.value
-      borderColorCss = color.outline.value
-      borderStyleCss = "solid"
-      labelColorCss = color["neutral-primary"].contents.value
-      fillColorCss = color["neutral-primary"].contents.value
-      break
-    case "tertiary-color":
-      backgroundColorCss = color.secondary.container.value
-      borderColorCss = color.secondary.container.value
-      borderStyleCss = "none"
-      labelColorCss = color.secondary["container-contents"].value
-      fillColorCss = color.secondary["container-contents"].value
-      break
-    case "tertiary-gray":
-      backgroundColorCss = color["neutral-secondary"].container.value
-      borderColorCss = color["neutral-secondary"].container.value
-      borderStyleCss = "none"
-      labelColorCss = color["neutral-primary"].contents.value
-      fillColorCss = color["neutral-primary"].contents.value
-      break
-    case "negative-primary":
-      backgroundColorCss = color.error.contents.value
-      borderColorCss = color.error.contents.value
-      borderStyleCss = "none"
-      labelColorCss = color.primary["container-contents"].value
-      fillColorCss = color.primary["container-contents"].value
-      break
-    case "negative-secondary":
-      backgroundColorCss = color.error.container.value
-      borderColorCss = color.error.container.value
-      borderStyleCss = "none"
-      labelColorCss = color.error.contents.value
-      fillColorCss = color.error.contents.value
-      break
-  }
+  const backgroundColorCss = buttonVariantColors[variant].backgroundColor
+  const labelColorCss = buttonVariantColors[variant].color
 
   return {
-    [backgroundColor]: backgroundColorCss,
-    [borderColor]: borderColorCss,
-    [borderStyle]: borderStyleCss,
-    [labelColor]: labelColorCss,
-    [fillColor]: fillColorCss,
     [hoverBackgroundColor]: getLayeredColor(
       labelColorCss,
       backgroundColorCss,
