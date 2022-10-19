@@ -1,8 +1,8 @@
 import chroma from "chroma-js"
 import { overlay } from "color-blend"
 import { colorMap, tokens } from "@greenlabs/formula-design-token"
-import type { buttonSize, buttonVariants } from "./types"
 import { dynamicStyles } from "./ContainerButton/styles.css"
+import type { buttonSize, buttonVariants } from "./buttonCommonTypes"
 
 const { color } = tokens.sys
 const OPACITY_VALUES = { HOVER: 0.04, ACTIVE: 0.08 } as const
@@ -78,7 +78,7 @@ const getLayeredColor = (
   return get_RGBA_CSS(layeredColor)
 }
 
-export const getButtonStyle = (variant: buttonVariants) => {
+export const getButtonStyleFromVariant = (variant: buttonVariants) => {
   const {
     backgroundColor,
     borderColor,
@@ -95,13 +95,16 @@ export const getButtonStyle = (variant: buttonVariants) => {
   let labelColorCss
   let fillColorCss
 
+  // 🛑 todo - split bg/label color, border option, fill option
   switch (variant) {
     case "primary":
+      // 🛑 check - color를 토큰에서 가져오는 것과, colorMap에서 가져오는 방식의 차이?
+      // (없다면 colorMap을 쓰는게 더 간결해보임)
       backgroundColorCss = color.primary.container.value
       borderColorCss = color.primary.container.value
       borderStyleCss = "none"
       labelColorCss = color.primary["container-contents"].value
-      fillColorCss = color.secondary.container.value
+      fillColorCss = color.primary["container-contents"].value
       break
     case "secondary-color":
       backgroundColorCss = color["neutral-primary"].container.value

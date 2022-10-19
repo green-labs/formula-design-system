@@ -1,18 +1,6 @@
 import type { ReactElement } from "react"
-import type { IconProps } from "../Icon/types"
-
-export type normal =
-  | "primary"
-  | "secondary-gray"
-  | "secondary-color"
-  | "tertiary-gray"
-  | "tertiary-color"
-
-export type negative = "negative-primary" | "negative-secondary"
-
-export type buttonVariants = normal | negative
-
-export type buttonSize = "xs" | "sm" | "md" | "lg" | "xl"
+import type { IconProps } from "../../Icon/types"
+import type { buttonSize, buttonVariants } from "../buttonCommonTypes"
 
 export interface ContainerButtonBaseProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {

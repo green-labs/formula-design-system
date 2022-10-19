@@ -2,6 +2,7 @@ import { tokens } from "@greenlabs/formula-design-token"
 import { createVar, style, styleVariants } from "@vanilla-extract/css"
 const { color, font } = tokens.sys
 
+// 🛑 todo - extract 하는 방법을 공용화해야함.
 const extract = (obj: any) => {
   const keyMaps = [
     ["typeface", "fontFamily"],
@@ -12,6 +13,7 @@ const extract = (obj: any) => {
   ]
 
   return keyMaps.reduce((nextObj, [objKey, cssKey]) => {
+    // 🛑 todo - split common function
     // @ts-expect-error FIXME
     nextObj[cssKey] = obj[objKey].value
     return nextObj
@@ -29,7 +31,7 @@ export const buttonContainerStyle = style({
   margin: 0,
   overflow: "visible",
 
-  // todo - split common transition css
+  // 🛑 todo - split common transition css
   transition:
     "background-color 0.2s, color 0.2s, fill 0.2s, border-color 0.2s, border-style 0.2s",
 
@@ -124,7 +126,7 @@ export const buttonVariantStyle = style({
 export const buttonStateStyle = style({
   selectors: {
     "&:disabled": {
-      backgroundColor: "#F0F2F599", // todo - get color from token
+      backgroundColor: "#F0F2F599", // 🛑 todo - get color from token
       color: "#1F20244D",
       fill: "#1F20244D",
       borderColor: "#1F20244D",

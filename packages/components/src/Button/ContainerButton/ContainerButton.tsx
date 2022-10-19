@@ -2,11 +2,10 @@ import React from "react"
 import { assignInlineVars } from "@vanilla-extract/dynamic"
 import NotificationCountBadge from "../../NotificationBadge/NotificationCountBadge"
 import {
-  getButtonStyle,
   getIconSize,
+  getButtonStyleFromVariant,
   getNotificationCountBadgeSize,
 } from "../utils"
-import type { ContainerButtonProps } from "../types"
 import {
   buttonSizeVariants,
   buttonStateStyle,
@@ -17,8 +16,13 @@ import {
   buttonTextContainerStyle,
   buttonTextStyle,
 } from "./styles.css"
+import type { ContainerButtonProps } from "./types"
 
-// todo - support custom color(backgroundColor, textColor)
+// 🛑 todo - support custom color(backgroundColor, textColor)
+// 커스텀 인터페이스 프롭 object를 따로 구성해서 내부적으로 dynamic하게 조절해야함
+// style을 일방적으로 받게되면, disabled과 같은 class들은 inlineStyle에 의해 적용되지 않게 됨
+// colorProps={ backgroundColor : CSSProperty , color : ...,}
+
 const ContainerButton = ({
   text,
   size,
@@ -33,12 +37,12 @@ const ContainerButton = ({
 }: React.PropsWithChildren<ContainerButtonProps>) => {
   const iconSizePx = getIconSize(size)
   const notificationCountBadgeSize = getNotificationCountBadgeSize(size)
-  const dynamicStyle = assignInlineVars(getButtonStyle(variant))
+  const variantStyles = assignInlineVars(getButtonStyleFromVariant(variant))
 
   return (
     <button
       className={`${buttonContainerStyle} ${buttonSizeVariants[size]} ${buttonVariantStyle} ${buttonStateStyle}`}
-      style={{ ...dynamicStyle, ...style }}
+      style={{ ...variantStyles, ...style }}
       {...props}
       {...restProps}
     >
