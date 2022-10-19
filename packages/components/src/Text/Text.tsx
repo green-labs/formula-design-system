@@ -4,16 +4,26 @@ import { variants, textColorVar, textStyle } from "./styles.css"
 import { sprinkles } from "../sprinkles.css"
 import type { Sprinkles } from "../sprinkles.css"
 
-export interface TextProps {
-  props: {}
-  className: string
-  variantKey?: keyof typeof variants
+interface TextBaseProps extends React.PropsWithChildren {
+  props?: {}
+  className?: string
+  align?: Sprinkles["textAlign"]
+  color?: keyof typeof colorMap
+  container?: React.ComponentType
+  tag?: React.ElementType
+}
+
+type variantKey = keyof typeof variants
+export interface TextProps extends TextBaseProps {
+  variantKey?: variantKey
   variant: "body" | "headline" | "caption"
   size: "xs" | "sm" | "md" | "lg" | "xl"
   weight: "regular" | "medium" | "bold"
-  align?: Sprinkles["textAlign"]
-  color?: keyof typeof colorMap
-  container: React.ElementType
+}
+
+interface TextVariantProps extends TextBaseProps {
+  size?: "xs" | "sm" | "md" | "lg" | "xl"
+  weight?: "regular" | "medium" | "bold"
 }
 
 export const Text = ({
@@ -21,32 +31,37 @@ export const Text = ({
   props = {},
   children,
   variantKey,
-  variant = "body",
-  size = "md",
-  weight = "regular",
+  variant,
+  size,
+  weight,
   color,
   align,
-  container = "div",
-}: React.PropsWithChildren<TextProps>) => {
-  const Container = container
-  const _variantKey =
-    variantKey ?? (`${variant}-${size}-${weight}` as keyof typeof variants)
-  const variantClass = variants[_variantKey]
-  const colorProp =
+  container,
+  tag = "span",
+}: TextProps) => {
+  const Container = container ?? tag
+  const variantKeyStr = variantKey ?? `${variant}-${size}-${weight}`
+
+  if (process.env.NODE_ENV !== "production" && !(variantKeyStr in variants)) {
+    console.error(`You have used non-exist variant key ${variantKeyStr}.`)
+  }
+
+  const variantClass = variants[variantKeyStr as keyof typeof variants] ?? ""
+  const colorCssVar =
     color && colorMap[color]
       ? assignInlineVars({ [textColorVar]: colorMap[color] })
       : undefined
 
-  if (process.env.NODE_ENV !== "production" && !(_variantKey in variants)) {
-    console.error(`You have used non-exist variant key ${_variantKey}.`)
-  }
-
   return (
     <Container
-      className={`${variantClass} ${sprinkles({
-        textAlign: align,
-      })} ${textStyle} ${className}`}
-      style={colorProp}
+      className={`${variantClass} ${
+        align
+          ? sprinkles({
+              textAlign: align,
+            })
+          : ""
+      } ${textStyle} ${className}`}
+      style={colorCssVar}
       {...props}
     >
       {children}
@@ -55,12 +70,25 @@ export const Text = ({
 }
 Text.displayName = "Text"
 
-export const TextBody = (args: TextProps) => <Text {...args} variant="body" />
-export const TextHeadline = (args: TextProps) => (
-  <Text {...args} variant="headline" />
+export const TextBody = ({
+  weight = "regular",
+  size = "sm",
+  ...props
+}: TextVariantProps) => (
+  <Text weight={weight} size={size} {...props} variant="body" />
 )
-export const TextCaption = (args: TextProps) => (
-  <Text {...args} variant="caption" />
+
+export const TextHeadline = ({
+  size = "sm",
+  weight = "bold",
+  tag = "h3",
+  ...props
+}: TextVariantProps) => (
+  <Text weight={weight} size={size} tag={tag} {...props} variant="headline" />
+)
+
+export const TextCaption = (args: TextBaseProps) => (
+  <Text {...args} variant="caption" size="xs" weight="regular" />
 )
 
 Text.Body = TextBody

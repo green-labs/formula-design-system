@@ -3552,11 +3552,11 @@ export default {
         path: ["sys", "color", "divider"],
       },
       outline: {
-        value: "#C3C5C9",
+        value: "#DCDFE3",
         filePath: "tokens/color/sys.json5",
         isSource: true,
         original: {
-          value: "{ref.color.gray.40}",
+          value: "{ref.color.gray.30}",
         },
         name: "sys-color-outline",
         attributes: {
@@ -4524,11 +4524,11 @@ export default {
               path: ["sys", "font", "headline", "lg", "bold", "tracking"],
             },
             weight: {
-              value: "400",
+              value: "700",
               filePath: "tokens/typography/sys.json5",
               isSource: true,
               original: {
-                value: "{ref.weight.regular}",
+                value: "{ref.weight.bold}",
               },
               name: "sys-font-headline-lg-bold-weight",
               attributes: {
@@ -4613,11 +4613,11 @@ export default {
               path: ["sys", "font", "headline", "xl", "bold", "tracking"],
             },
             weight: {
-              value: "400",
+              value: "700",
               filePath: "tokens/typography/sys.json5",
               isSource: true,
               original: {
-                value: "{ref.weight.regular}",
+                value: "{ref.weight.bold}",
               },
               name: "sys-font-headline-xl-bold-weight",
               attributes: {

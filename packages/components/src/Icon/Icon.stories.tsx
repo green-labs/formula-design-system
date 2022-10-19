@@ -1,6 +1,6 @@
 import type { ComponentMeta, ComponentStory } from "@storybook/react"
+import { colorMap } from "@greenlabs/formula-design-token"
 import * as IconComponents from "./generated"
-import type { ArrowDownLineBoldIcon } from "."
 
 /* ---------- 아이콘 스타일 래퍼 시작 ----------*/
 
@@ -11,6 +11,7 @@ interface IconItemProps {
 
 // Todo - support code copy(ts, res) handler
 const IconItem: React.FC<IconItemProps> = ({ name, children }) => {
+  const IconItemStyle = {}
   return (
     <div
       style={{
@@ -41,9 +42,9 @@ const IconItem: React.FC<IconItemProps> = ({ name, children }) => {
 
 /* ---------- 아이콘 스타일 래퍼 끝 ----------*/
 
-export const IconGallery: ComponentStory<typeof ArrowDownLineBoldIcon> = (
-  args
-) => {
+export const IconGallery: ComponentStory<
+  typeof IconComponents["ArrowDownLineBoldIcon"]
+> = (args) => {
   return (
     <>
       {Object.entries(IconComponents).map(([name, Component]) => (
@@ -67,8 +68,9 @@ export default {
       control: { type: "radio" },
       options: ["PC", "XL", "LG", "SM", "XS"],
     },
-    fill: {
-      control: { type: "color" },
+    color: {
+      control: { type: "select" },
+      options: Object.keys(colorMap),
     },
   },
   decorators: [
@@ -88,4 +90,4 @@ export default {
       </div>
     ),
   ],
-} as ComponentMeta<typeof ArrowDownLineBoldIcon>
+} as ComponentMeta<typeof IconComponents["ArrowDownLineBoldIcon"]>

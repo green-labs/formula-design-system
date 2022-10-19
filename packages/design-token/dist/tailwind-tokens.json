@@ -19,12 +19,12 @@
     "headline-lg-bold-font-size": "1.5rem",
     "headline-lg-bold-leading": "1.4",
     "headline-lg-bold-tracking": "-0.02em",
-    "headline-lg-bold-weight": "400",
+    "headline-lg-bold-weight": "700",
     "headline-xl-bold-typeface": "Pretendard",
     "headline-xl-bold-font-size": "2rem",
     "headline-xl-bold-leading": "1.4",
     "headline-xl-bold-tracking": "-0.02em",
-    "headline-xl-bold-weight": "400",
+    "headline-xl-bold-weight": "700",
     "body-sm-regular-typeface": "Pretendard",
     "body-sm-regular-font-size": "0.9375rem",
     "body-sm-regular-leading": "1.5",
@@ -286,7 +286,7 @@
     "inverse": { "container": "#1F2024", "container-contents": "white" },
     "error": { "contents": "#CF1124", "container": "#FAE8E9" },
     "divider": "#F0F2F5",
-    "outline": "#C3C5C9",
+    "outline": "#DCDFE3",
     "background": "white"
   },
   "spacing": {

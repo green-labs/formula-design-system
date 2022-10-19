@@ -1,19 +1,20 @@
 import { SVGProps, Ref, forwardRef, memo } from "react"
+import { colorMap } from "@greenlabs/formula-design-token"
 import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
-
 const SvgNotificationLineBold = (
   {
     size = "XL",
     sizePx,
     style,
     className,
-    fill,
+    color,
     ...props
   }: IconProps & SVGProps<SVGSVGElement>,
   ref: Ref<SVGSVGElement>
 ) => {
   const finalSize = sizePx ? sizePx : convertSizeToPx(size)
+  const fill = color && colorMap[color]
   return (
     <svg
       width={finalSize}
@@ -34,7 +35,6 @@ const SvgNotificationLineBold = (
     </svg>
   )
 }
-
 const ForwardRef = forwardRef(SvgNotificationLineBold)
 const Memo = memo(ForwardRef)
 export default Memo
