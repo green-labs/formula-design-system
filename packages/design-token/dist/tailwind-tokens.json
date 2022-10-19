@@ -286,7 +286,7 @@
     "inverse": { "container": "#1F2024", "container-contents": "white" },
     "error": { "contents": "#CF1124", "container": "#FAE8E9" },
     "divider": "#F0F2F5",
-    "outline": "#C3C5C9",
+    "outline": "#DCDFE3",
     "background": "white"
   },
   "spacing": {

@@ -32,7 +32,7 @@
         container: { value: "{ref.color.red.10}" },
       },
       divider: { value: "{ref.color.gray.20}" },
-      outline: { value: "{ref.color.gray.40}" },
+      outline: { value: "{ref.color.gray.30}" },
       background: { value: "{ref.color.white}" },
     },
   },

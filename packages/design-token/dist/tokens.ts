@@ -3552,11 +3552,11 @@ export default {
         path: ["sys", "color", "divider"],
       },
       outline: {
-        value: "#C3C5C9",
+        value: "#DCDFE3",
         filePath: "tokens/color/sys.json5",
         isSource: true,
         original: {
-          value: "{ref.color.gray.40}",
+          value: "{ref.color.gray.30}",
         },
         name: "sys-color-outline",
         attributes: {

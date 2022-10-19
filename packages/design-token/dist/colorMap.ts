@@ -160,6 +160,6 @@ export default {
   "error-contents": "#CF1124",
   "error-container": "#FAE8E9",
   divider: "#F0F2F5",
-  outline: "#C3C5C9",
+  outline: "#DCDFE3",
   background: "white",
 } as const

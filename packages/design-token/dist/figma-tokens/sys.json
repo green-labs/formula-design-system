@@ -18,7 +18,7 @@
     "inverse": { "value": "#1F2024", "type": "color" },
     "error": { "value": "#FAE8E9", "type": "color" },
     "divider": { "value": "#F0F2F5", "type": "color" },
-    "outline": { "value": "#C3C5C9", "type": "color" },
+    "outline": { "value": "#DCDFE3", "type": "color" },
     "background": { "value": "white", "type": "color" }
   }
 }
