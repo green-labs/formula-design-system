@@ -1,7 +1,7 @@
 import React from "react"
 import type { ComponentMeta, ComponentStory } from "@storybook/react"
 import ContainerButton from "./ContainerButton"
-import { ArrowLeftLineBoldIcon, ArrowRightLineBoldIcon } from "../../Icon"
+import * as IconComponents from "../../Icon/generated"
 
 export const Button: ComponentStory<typeof ContainerButton> = (args) => {
   return <ContainerButton {...args} />
@@ -59,8 +59,13 @@ export default {
       description: "(For Storybook) 좌측 아이콘을 활성화합니다.",
     },
     leftIcon: {
-      defaultValue: <ArrowLeftLineBoldIcon />,
       if: { arg: "ShowLeftIcon" },
+      control: { type: "select" },
+      options: Object.keys(IconComponents),
+      mapping: Object.entries(IconComponents).reduce(
+        (p, [k, C]) => ({ ...p, [k]: <C /> }),
+        {}
+      ),
     },
     ShowRightIcon: {
       defaultValue: false,
@@ -68,8 +73,13 @@ export default {
       description: "(For Storybook) 우측 아이콘을 활성화합니다.",
     },
     rightIcon: {
-      defaultValue: <ArrowRightLineBoldIcon />,
       if: { arg: "ShowRightIcon" },
+      control: { type: "select" },
+      options: Object.keys(IconComponents),
+      mapping: Object.entries(IconComponents).reduce(
+        (p, [k, C]) => ({ ...p, [k]: <C /> }),
+        {}
+      ),
     },
   },
 } as ComponentMeta<typeof ContainerButton>
