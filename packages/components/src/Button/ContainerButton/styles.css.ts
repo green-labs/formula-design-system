@@ -105,7 +105,7 @@ export const dynamicStyles = {
   fillColor: createVar(),
   labelColor: createVar(),
 
-  // hoverd
+  // hover
   hoverBackgroundColor: createVar(),
 
   // active

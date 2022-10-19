@@ -1,5 +1,5 @@
 import chroma from "chroma-js"
-import { hue } from "color-blend"
+import { overlay } from "color-blend"
 import { colorMap, tokens } from "@greenlabs/formula-design-token"
 import type { buttonSize, buttonVariants } from "./types"
 import { dynamicStyles } from "./ContainerButton/styles.css"
@@ -70,8 +70,7 @@ const getLayeredColor = (
     ? get_RGBA_WithOpacity(colorMap["gray-90"], layerOpacity * 3)
     : get_RGBA_WithOpacity(backdrop, layerOpacity)
 
-  // 🛑 todo - background가 white인 경우엔 hue로 블렌드하면 안됨
-  const layeredColor = hue(
+  const layeredColor = overlay(
     change_RGBA_From_CSS(backdropColor),
     change_RGBA_From_CSS(source)
   )
