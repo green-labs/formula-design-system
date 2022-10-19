@@ -16,6 +16,8 @@ type textComponentProps<'a> = {"props": 'a, "className": string, "children": Rea
 
 type variantKey = [
   | #"caption-xs-regular"
+  | #"caption-xs-medium"
+  | #"caption-xs-bold"
   | #"body-lg-medium"
   | #"body-lg-regular"
   | #"body-lg-bold"
@@ -97,6 +99,7 @@ module Caption = {
   external make: (
     ~props: {..}=?,
     ~className: string=?,
+    ~weight: weight=?,
     ~color: Formula__ColorMap.t=?,
     ~align: align=?,
     ~tag: string=?,

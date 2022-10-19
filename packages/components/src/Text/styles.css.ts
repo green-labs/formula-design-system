@@ -21,6 +21,8 @@ let extract = (obj: any) => {
 
 export const variants = styleVariants({
   "caption-xs-regular": extract(font.caption.xs.regular),
+  "caption-xs-medium": extract(font.caption.xs.medium),
+  "caption-xs-bold": extract(font.caption.xs.bold),
   "body-lg-medium": extract(font.body.lg.medium),
   "body-lg-regular": extract(font.body.lg.regular),
   "body-lg-bold": extract(font.body.lg.bold),

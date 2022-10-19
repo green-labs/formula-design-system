@@ -87,8 +87,11 @@ export const TextHeadline = ({
   <Text weight={weight} size={size} tag={tag} {...props} variant="headline" />
 )
 
-export const TextCaption = (args: TextBaseProps) => (
-  <Text {...args} variant="caption" size="xs" weight="regular" />
+export const TextCaption = ({
+  weight = "regular",
+  ...props
+}: Omit<TextVariantProps, "size">) => (
+  <Text weight="regular" {...props} variant="caption" size="xs" />
 )
 
 Text.Body = TextBody
