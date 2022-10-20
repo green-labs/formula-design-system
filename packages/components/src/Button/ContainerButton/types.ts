@@ -7,7 +7,7 @@ export interface ContainerButtonBaseProps
   size: buttonSize
   variant: buttonVariants
   text: string
-  props: {} // escape hatch for rescript
+  props?: {} // escape hatch for rescript
 }
 
 export interface ContainerButtonIconProps {
