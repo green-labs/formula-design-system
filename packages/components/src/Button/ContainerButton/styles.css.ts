@@ -1,6 +1,6 @@
-import { tokens } from "@greenlabs/formula-design-token"
+import chroma from "chroma-js"
 import { createVar, style, styleVariants } from "@vanilla-extract/css"
-const { color, font } = tokens.sys
+import { tokens } from "@greenlabs/formula-design-token"
 
 // 🛑 todo - extract하는 방법을 공용화해야함.
 const extract = (obj: any) => {
@@ -57,90 +57,104 @@ export const buttonNotificationContainerStyle = style({ marginRight: 4 })
 
 export const buttonNotificationColorVariants = styleVariants({
   primary: {
-    backgroundColor: color.secondary.container.value,
-    color: color.secondary["container-contents"].value,
+    backgroundColor: tokens.sys.color.secondary.container.value,
+    color: tokens.sys.color.secondary["container-contents"].value,
   },
-
   "secondary-color": {
-    backgroundColor: color.primary.container.value,
-    color: color.primary["container-contents"].value,
+    backgroundColor: tokens.sys.color.primary.container.value,
+    color: tokens.sys.color.primary["container-contents"].value,
   },
-
   "secondary-gray": {
-    backgroundColor: color["neutral-primary"].contents.value,
-    color: color["neutral-primary"].container.value,
+    backgroundColor: tokens.sys.color["neutral-primary"].contents.value,
+    color: tokens.sys.color["neutral-primary"].container.value,
   },
-
   "tertiary-color": {
-    backgroundColor: color.secondary["container-contents"].value,
-    color: color.secondary.container.value,
+    backgroundColor: tokens.sys.color.secondary["container-contents"].value,
+    color: tokens.sys.color.secondary.container.value,
   },
-
   "tertiary-gray": {
-    backgroundColor: color["neutral-primary"].contents.value,
-    color: color["neutral-secondary"].container.value,
+    backgroundColor: tokens.sys.color["neutral-primary"].contents.value,
+    color: tokens.sys.color["neutral-secondary"].container.value,
   },
-
   "negative-primary": {
-    backgroundColor: color.primary["container-contents"].value,
-    color: color.error.contents.value, // #FFF ?
+    backgroundColor: tokens.sys.color.primary["container-contents"].value,
+    color: tokens.sys.color.error.contents.value,
   },
-
   "negative-secondary": {
-    backgroundColor: color.error.contents.value,
-    color: color.error.container.value,
+    backgroundColor: tokens.sys.color.error.contents.value,
+    color: tokens.sys.color.error.container.value,
   },
 })
 
 export const buttonSizeVariants = styleVariants({
-  xs: { borderRadius: 6, height: 32, ...extract(font.body.sm.regular) },
-  sm: { borderRadius: 8, height: 40, ...extract(font.body.sm.regular) },
-  md: { borderRadius: 10, height: 48, ...extract(font.body.md.regular) },
-  lg: { borderRadius: 10, height: 56, ...extract(font.body.lg.bold) },
-  xl: { borderRadius: 12, height: 64, ...extract(font.body.xl.bold) },
+  xs: {
+    borderRadius: 6,
+    height: 32,
+    ...extract(tokens.sys.font.body.sm.regular),
+  },
+  sm: {
+    borderRadius: 8,
+    height: 40,
+    ...extract(tokens.sys.font.body.sm.regular),
+  },
+  md: {
+    borderRadius: 10,
+    height: 48,
+    ...extract(tokens.sys.font.body.md.regular),
+  },
+  lg: {
+    borderRadius: 10,
+    height: 56,
+    ...extract(tokens.sys.font.body.lg.bold),
+  },
+  xl: {
+    borderRadius: 12,
+    height: 64,
+    ...extract(tokens.sys.font.body.xl.bold),
+  },
 })
 
 const buttonBorderType = { borderStyle: "solid", borderWidth: 1 }
 
 export const buttonVariantColors = {
   primary: {
-    backgroundColor: color.primary.container.value,
-    color: color.primary["container-contents"].value,
-    fill: color.secondary.container.value,
+    backgroundColor: tokens.sys.color.primary.container.value,
+    color: tokens.sys.color.primary["container-contents"].value,
+    fill: tokens.sys.color.secondary.container.value,
   },
   "secondary-color": {
-    backgroundColor: color["neutral-primary"].container.value,
-    borderColor: color.primary.container.value,
-    color: color.primary.contents.value,
-    fill: color.primary.container.value,
+    backgroundColor: tokens.sys.color["neutral-primary"].container.value,
+    borderColor: tokens.sys.color.primary.container.value,
+    color: tokens.sys.color.primary.contents.value,
+    fill: tokens.sys.color.primary.container.value,
     ...buttonBorderType,
   },
   "secondary-gray": {
-    backgroundColor: color["neutral-primary"].container.value,
-    borderColor: color.outline.value,
-    color: color["neutral-primary"].contents.value,
-    fill: color["neutral-primary"].contents.value,
+    backgroundColor: tokens.sys.color["neutral-primary"].container.value,
+    borderColor: tokens.sys.color.outline.value,
+    color: tokens.sys.color["neutral-primary"].contents.value,
+    fill: tokens.sys.color["neutral-primary"].contents.value,
     ...buttonBorderType,
   },
   "tertiary-color": {
-    backgroundColor: color.secondary.container.value,
-    color: color.secondary["container-contents"].value,
-    fill: color.secondary["container-contents"].value,
+    backgroundColor: tokens.sys.color.secondary.container.value,
+    color: tokens.sys.color.secondary["container-contents"].value,
+    fill: tokens.sys.color.secondary["container-contents"].value,
   },
   "tertiary-gray": {
-    backgroundColor: color["neutral-secondary"].container.value,
-    color: color["neutral-primary"].contents.value,
-    fill: color["neutral-primary"].contents.value,
+    backgroundColor: tokens.sys.color["neutral-secondary"].container.value,
+    color: tokens.sys.color["neutral-primary"].contents.value,
+    fill: tokens.sys.color["neutral-primary"].contents.value,
   },
   "negative-primary": {
-    backgroundColor: color.error.contents.value,
-    color: color.primary["container-contents"].value,
-    fill: color.primary["container-contents"].value,
+    backgroundColor: tokens.sys.color.error.contents.value,
+    color: tokens.sys.color.primary["container-contents"].value,
+    fill: tokens.sys.color.primary["container-contents"].value,
   },
   "negative-secondary": {
-    backgroundColor: color.error.container.value,
-    color: color.error.contents.value,
-    fill: color.error.contents.value,
+    backgroundColor: tokens.sys.color.error.container.value,
+    color: tokens.sys.color.error.contents.value,
+    fill: tokens.sys.color.error.contents.value,
   },
 } as const
 
@@ -154,10 +168,21 @@ export const dynamicStyles = {
 export const buttonPseudoStyle = style({
   selectors: {
     "&:disabled": {
-      backgroundColor: "#F0F2F599", // 🛑 todo - get color from token
-      color: "#1F20244D",
-      fill: "#1F20244D",
-      borderColor: "#1F20244D",
+      // 🛑 backgroundColor의 token color는 어디서 값을 불러와야하는지 확인 필요
+      backgroundColor: chroma(
+        tokens.sys.color["neutral-secondary"].container.value
+      )
+        .alpha(tokens.sys.state.opacity["disabled-container"].value)
+        .css(),
+      color: chroma(tokens.sys.color.inverse.container.value)
+        .alpha(tokens.sys.state.opacity["disabled-contents"].value)
+        .css(),
+      fill: chroma(tokens.sys.color.inverse.container.value)
+        .alpha(tokens.sys.state.opacity["disabled-contents"].value)
+        .css(),
+      borderColor: chroma(tokens.sys.color.inverse.container.value)
+        .alpha(tokens.sys.state.opacity["disabled-contents"].value)
+        .css(),
     },
     "&:hover:not([disabled])": {
       backgroundColor: dynamicStyles.hoverBackgroundColor,
