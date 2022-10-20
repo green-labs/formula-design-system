@@ -2342,10 +2342,46 @@ export default {
         },
       },
     },
+    shadow: {
+      "1": {
+        value:
+          "0px 2px 8px 3px rgba(0, 0, 0, 0.06), 0px 1px 2px 0px rgba(0, 0, 0, 0.03)",
+        filePath: "tokens/elevation/ref.json5",
+        isSource: true,
+        original: {
+          value:
+            "0px 2px 8px 3px rgba(0, 0, 0, 0.06), 0px 1px 2px 0px rgba(0, 0, 0, 0.03)",
+        },
+        name: "ref-shadow-1",
+        attributes: {
+          category: "ref",
+          type: "shadow",
+          item: "1",
+        },
+        path: ["ref", "shadow", "1"],
+      },
+      "2": {
+        value:
+          "0px 4px 16px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.02)",
+        filePath: "tokens/elevation/ref.json5",
+        isSource: true,
+        original: {
+          value:
+            "0px 4px 16px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.02)",
+        },
+        name: "ref-shadow-2",
+        attributes: {
+          category: "ref",
+          type: "shadow",
+          item: "2",
+        },
+        path: ["ref", "shadow", "2"],
+      },
+    },
     opacity: {
       "0": {
         value: 1,
-        filePath: "tokens/opacity/index.json5",
+        filePath: "tokens/elevation/ref.json5",
         isSource: true,
         original: {
           value: 1,
@@ -2360,7 +2396,7 @@ export default {
       },
       "1": {
         value: 0.06,
-        filePath: "tokens/opacity/index.json5",
+        filePath: "tokens/elevation/ref.json5",
         isSource: true,
         original: {
           value: 0.06,
@@ -2375,7 +2411,7 @@ export default {
       },
       "2": {
         value: 0.08,
-        filePath: "tokens/opacity/index.json5",
+        filePath: "tokens/elevation/ref.json5",
         isSource: true,
         original: {
           value: 0.08,
@@ -2390,7 +2426,7 @@ export default {
       },
       "3": {
         value: 0.12,
-        filePath: "tokens/opacity/index.json5",
+        filePath: "tokens/elevation/ref.json5",
         isSource: true,
         original: {
           value: 0.12,
@@ -2405,7 +2441,7 @@ export default {
       },
       "4": {
         value: 0.16,
-        filePath: "tokens/opacity/index.json5",
+        filePath: "tokens/elevation/ref.json5",
         isSource: true,
         original: {
           value: 0.16,
@@ -2420,7 +2456,7 @@ export default {
       },
       "5": {
         value: 0.24,
-        filePath: "tokens/opacity/index.json5",
+        filePath: "tokens/elevation/ref.json5",
         isSource: true,
         original: {
           value: 0.24,
@@ -2435,7 +2471,7 @@ export default {
       },
       "6": {
         value: 0.4,
-        filePath: "tokens/opacity/index.json5",
+        filePath: "tokens/elevation/ref.json5",
         isSource: true,
         original: {
           value: 0.4,
@@ -2450,7 +2486,7 @@ export default {
       },
       "7": {
         value: 0.6,
-        filePath: "tokens/opacity/index.json5",
+        filePath: "tokens/elevation/ref.json5",
         isSource: true,
         original: {
           value: 0.6,
