@@ -174,13 +174,13 @@ export const buttonPseudoStyle = style({
       )
         .alpha(tokens.sys.state.opacity["disabled-container"].value)
         .css(),
-      color: chroma(tokens.sys.color.inverse.container.value)
+      color: chroma(tokens.sys.color["neutral-primary"].contents.value)
         .alpha(tokens.sys.state.opacity["disabled-contents"].value)
         .css(),
-      fill: chroma(tokens.sys.color.inverse.container.value)
+      fill: chroma(tokens.sys.color["neutral-primary"].contents.value)
         .alpha(tokens.sys.state.opacity["disabled-contents"].value)
         .css(),
-      borderColor: chroma(tokens.sys.color.inverse.container.value)
+      borderColor: chroma(tokens.sys.color["neutral-primary"].contents.value)
         .alpha(tokens.sys.state.opacity["disabled-contents"].value)
         .css(),
     },

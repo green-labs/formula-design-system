@@ -29,7 +29,9 @@ export const notificationBaseStyle = style({
 
   selectors: {
     [`${buttonContainerStyle}:disabled &`]: {
-      backgroundColor: chroma(tokens.sys.color.inverse.container.value)
+      backgroundColor: chroma(
+        tokens.sys.color["neutral-primary"].contents.value
+      )
         .alpha(tokens.sys.state.opacity["disabled-contents"].value)
         .css(),
       color: tokens.sys.color.inverse["container-contents"].value,
