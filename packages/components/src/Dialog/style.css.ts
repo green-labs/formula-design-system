@@ -24,20 +24,22 @@ export const dialogBase = style({
 })
 
 export const titleTextBase = style({
-  "-webkit-line-clamp": "2",
-  "-webkit-box-orient": "vertical",
+  WebkitLineClamp: "2",
+  WebkitBoxOrient: "vertical",
   display: "-webkit-box",
   overflow: "hidden",
   margin: "24px 20px 8px 20px",
 })
 
 export const bodyTextBase = style({
-  ".with-title": {
-    color: tokens.sys.color["neutral-secondary"].contents.value,
+  selectors: {
+    "&.with-title": {
+      color: tokens.sys.color["neutral-secondary"].contents.value,
+    },
   },
   marginTop: "0px",
-  "-webkit-line-clamp": "4",
-  "-webkit-box-orient": "vertical",
+  WebkitLineClamp: "4",
+  WebkitBoxOrient: "vertical",
   maxWidth: "100%",
   display: "-webkit-box",
   overflow: "hidden",

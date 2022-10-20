@@ -11,6 +11,7 @@ import {
 import { Text } from "../Text/Text"
 import { variantChecker } from "../util"
 
+//////////////////////////////////////////////3
 //⚠️ TODO : REPLACE WITH REAL BUTTON COMPONENT
 const DummyButton = () => {
   return (
@@ -18,7 +19,7 @@ const DummyButton = () => {
       style={{
         width: "100%",
         display: "inline-flex",
-        justifyContents: "center",
+        justifyContent: "center",
         background: "blue",
       }}
     >
@@ -26,6 +27,7 @@ const DummyButton = () => {
     </div>
   )
 }
+//////////////////////////////////////////////
 
 type buttonSectionVariantKey = keyof typeof buttonSectionVariant
 interface ButtonSectionProps {
@@ -73,7 +75,7 @@ const TextDialog = ({
         <Text.Headline className={titleTextBase}>{title}</Text.Headline>
       ) : null}
       <Text.Body
-        className={`${bodyTextBase} ${title ? "" : "with-title"}`}
+        className={`${bodyTextBase} ${title ? "with-title" : ""}`}
         tag="span"
       >
         {text}
@@ -92,7 +94,7 @@ const ImageDialog = ({
   imageAspectRatio,
   imageSrc,
   buttonType,
-}) => {
+}: ImageDialogProps) => {
   variantChecker(imageAspectRatio, imageAspectRatioVariant)
   variantChecker(buttonType, buttonSectionVariant)
   const imageAspectRatioClass = imageAspectRatioVariant[imageAspectRatio]
