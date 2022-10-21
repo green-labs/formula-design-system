@@ -61,7 +61,7 @@ export const buttonSizeStyles = styleVariants({
     ...extract(tokens.sys.font.body.md.regular),
   },
   lg: {
-    borderRadius: 10,
+    borderRadius: 12,
     height: 56,
     minWidth: 56,
     ...extract(tokens.sys.font.body.lg.bold),
