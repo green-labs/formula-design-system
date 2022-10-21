@@ -1,7 +1,7 @@
 import chroma from "chroma-js"
 import { tokens } from "@greenlabs/formula-design-token"
 import { createVar, style, styleVariants } from "@vanilla-extract/css"
-import { buttonContainerStyle } from "../Button/ContainerButton/styles.css"
+import { buttonCommonStyle } from "../Button/commonStyle.css"
 
 const extract = (obj: any) => {
   const keyMaps = [
@@ -28,7 +28,7 @@ export const notificationBaseStyle = style({
   transition: "background-color 0.2s, color 0.2s",
 
   selectors: {
-    [`${buttonContainerStyle}:disabled &`]: {
+    [`${buttonCommonStyle}:disabled &`]: {
       backgroundColor: chroma(
         tokens.sys.color["neutral-primary"].contents.value
       )

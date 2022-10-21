@@ -6,17 +6,19 @@ import {
   getButtonStyleFromVariant,
   getNotificationCountBadgeSize,
 } from "../utils"
-import {
-  buttonSizeVariants,
-  buttonPseudoStyle,
-  buttonContainerStyle,
-  buttonNotificationContainerStyle,
-  buttonNotificationColorVariants,
-  buttonTextContainerStyle,
-  buttonTextStyle,
-  buttonVariantStyles,
-} from "./styles.css"
 import type { ContainerButtonProps } from "./types"
+import {
+  buttonCommonStyle,
+  buttonPseudoStyle,
+  buttonSizeStyles,
+  buttonContentStyle,
+  buttonVariantStyles,
+} from "../commonStyle.css"
+import {
+  buttonTextContainerStyle,
+  buttonNotificationColorVariants,
+  buttonNotificationContainerStyle,
+} from "./styles.css"
 
 // 🛑 todo - support custom color(backgroundColor, textColor)
 // 커스텀 인터페이스 프롭 object를 따로 구성해서 내부적으로 dynamic하게 조절해야함
@@ -29,6 +31,7 @@ const ContainerButton = ({
   leftIcon,
   rightIcon,
   count,
+  className,
   variant,
   style,
   props,
@@ -41,14 +44,20 @@ const ContainerButton = ({
 
   return (
     <button
-      className={`${buttonContainerStyle} ${buttonPseudoStyle} ${buttonSizeVariants[size]} ${buttonVariantStyles[variant]}`}
+      className={`
+        ${buttonCommonStyle}
+        ${buttonPseudoStyle}
+        ${buttonSizeStyles[size]}
+        ${buttonVariantStyles[variant]}
+        ${className ?? ""}
+      `}
       style={{ ...variantStyles, ...style }}
       {...props}
       {...restProps}
     >
       {!!leftIcon && React.cloneElement(leftIcon, { sizePx: iconSizePx })}
       <span className={`${buttonTextContainerStyle}`}>
-        <span className={buttonTextStyle}>{text}</span>
+        <span className={buttonContentStyle}>{text}</span>
         {typeof count === "number" && (
           <NotificationCountBadge
             size={notificationCountBadgeSize}

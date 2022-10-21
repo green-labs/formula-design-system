@@ -1,13 +1,9 @@
 import type { ReactElement } from "react"
 import type { IconProps } from "../../Icon/types"
-import type { buttonSize, buttonVariants } from "../buttonCommonTypes"
+import type { ButtonBaseProps } from "../buttonCommonTypes"
 
-export interface ContainerButtonBaseProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  size: buttonSize
-  variant: buttonVariants
+export interface ContainerButtonTextProps {
   text: string
-  props?: {} // escape hatch for rescript
 }
 
 export interface ContainerButtonIconProps {
@@ -19,6 +15,7 @@ export interface ContainerButtonCountProps {
   count?: number
 }
 
-export type ContainerButtonProps = ContainerButtonBaseProps &
+export type ContainerButtonProps = ButtonBaseProps &
+  ContainerButtonTextProps &
   ContainerButtonIconProps &
   ContainerButtonCountProps

@@ -1,9 +1,6 @@
-import {
-  buttonVariantColors,
-  dynamicStyles,
-} from "./ContainerButton/styles.css"
+import { buttonVariantColors, dynamicStyles } from "./commonStyle.css"
 import type { buttonSize, buttonVariants } from "./buttonCommonTypes"
-import { getBlendLayerColor, getLayeredColor } from "../stateLayers"
+import { getBlendLayerColor, getBlendedLayerColor } from "../stateLayers"
 
 export const getNotificationCountBadgeSize = (size: buttonSize) => {
   switch (size) {
@@ -39,11 +36,11 @@ export const getButtonStyleFromVariant = (variant: buttonVariants) => {
   const labelColorCss = buttonVariantColors[variant].color
 
   return {
-    [hoverBackgroundColor]: getLayeredColor(
+    [hoverBackgroundColor]: getBlendedLayerColor(
       backgroundColorCss,
       getBlendLayerColor(labelColorCss, "hover")
     ),
-    [activeBackgroundColor]: getLayeredColor(
+    [activeBackgroundColor]: getBlendedLayerColor(
       backgroundColorCss,
       getBlendLayerColor(labelColorCss, "pressed")
     ),

@@ -10,7 +10,7 @@ export const Button: ComponentStory<typeof ContainerButton> = (args) => {
 const Buttons = Button.bind({})
 
 export default {
-  title: "Example/Buttons",
+  title: "Example/Buttons/ContainerButton",
   component: Buttons,
   argTypes: {
     text: {
