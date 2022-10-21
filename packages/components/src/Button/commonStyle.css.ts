@@ -1,24 +1,7 @@
 import chroma from "chroma-js"
 import { createVar, style, styleVariants } from "@vanilla-extract/css"
 import { tokens } from "@greenlabs/formula-design-token"
-
-// 🛑 todo - extract하는 방법을 공용화해야함.
-const extract = (obj: any) => {
-  const keyMaps = [
-    ["typeface", "fontFamily"],
-    ["font-size", "fontSize"],
-    ["tracking", "letterSpacing"],
-    ["weight", "fontWeight"],
-    ["leading", "lineHeight"],
-  ]
-
-  return keyMaps.reduce((nextObj, [objKey, cssKey]) => {
-    // 🛑 todo - split common function
-    // @ts-expect-error FIXME
-    nextObj[cssKey] = obj[objKey].value
-    return nextObj
-  }, {})
-}
+import { extract } from "../util"
 
 export const buttonCommonStyle = style({
   display: "flex",
@@ -46,31 +29,61 @@ export const buttonSizeStyles = styleVariants({
     borderRadius: 6,
     height: 32,
     minWidth: 32,
-    ...extract(tokens.sys.font.body.sm.regular),
+    ...extract(tokens.sys.font.body.sm.regular, [
+      ["typeface", "fontFamily"],
+      ["font-size", "fontSize"],
+      ["tracking", "letterSpacing"],
+      ["weight", "fontWeight"],
+      ["leading", "lineHeight"],
+    ]),
   },
   sm: {
     borderRadius: 8,
     height: 40,
     minWidth: 40,
-    ...extract(tokens.sys.font.body.sm.regular),
+    ...extract(tokens.sys.font.body.sm.regular, [
+      ["typeface", "fontFamily"],
+      ["font-size", "fontSize"],
+      ["tracking", "letterSpacing"],
+      ["weight", "fontWeight"],
+      ["leading", "lineHeight"],
+    ]),
   },
   md: {
     borderRadius: 10,
     height: 48,
     minWidth: 48,
-    ...extract(tokens.sys.font.body.md.regular),
+    ...extract(tokens.sys.font.body.md.regular, [
+      ["typeface", "fontFamily"],
+      ["font-size", "fontSize"],
+      ["tracking", "letterSpacing"],
+      ["weight", "fontWeight"],
+      ["leading", "lineHeight"],
+    ]),
   },
   lg: {
     borderRadius: 12,
     height: 56,
     minWidth: 56,
-    ...extract(tokens.sys.font.body.lg.bold),
+    ...extract(tokens.sys.font.body.lg.bold, [
+      ["typeface", "fontFamily"],
+      ["font-size", "fontSize"],
+      ["tracking", "letterSpacing"],
+      ["weight", "fontWeight"],
+      ["leading", "lineHeight"],
+    ]),
   },
   xl: {
     borderRadius: 12,
     height: 64,
     minWidth: 64,
-    ...extract(tokens.sys.font.body.xl.bold),
+    ...extract(tokens.sys.font.body.xl.bold, [
+      ["typeface", "fontFamily"],
+      ["font-size", "fontSize"],
+      ["tracking", "letterSpacing"],
+      ["weight", "fontWeight"],
+      ["leading", "lineHeight"],
+    ]),
   },
 })
 
