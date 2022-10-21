@@ -7,14 +7,14 @@
           value: "{ref.opacity.3}",
         },
         hover: {
-          value: "{ref.opacity.2}",
+          value: "{ref.opacity.1}",
         },
         "pressed-white": {
           comment: "opacity of pressed container when the contents color is white",
           value: "{ref.opacity.5}",
         },
         pressed: {
-          value: "{ref.opacity.4}",
+          value: "{ref.opacity.2}",
         },
         "disabled-container": {
           value: "{ref.opacity.7}",

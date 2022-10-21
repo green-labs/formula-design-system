@@ -2395,11 +2395,11 @@ export default {
         path: ["ref", "opacity", "0"],
       },
       "1": {
-        value: 0.06,
+        value: 0.04,
         filePath: "tokens/elevation/ref.json5",
         isSource: true,
         original: {
-          value: 0.06,
+          value: 0.04,
         },
         name: "ref-opacity-1",
         attributes: {
@@ -3182,11 +3182,11 @@ export default {
           path: ["sys", "state", "opacity", "hover-white"],
         },
         hover: {
-          value: 0.08,
+          value: 0.04,
           filePath: "tokens/color/state.json5",
           isSource: true,
           original: {
-            value: "{ref.opacity.2}",
+            value: "{ref.opacity.1}",
           },
           name: "sys-state-opacity-hover",
           attributes: {
@@ -3218,11 +3218,11 @@ export default {
           path: ["sys", "state", "opacity", "pressed-white"],
         },
         pressed: {
-          value: 0.16,
+          value: 0.08,
           filePath: "tokens/color/state.json5",
           isSource: true,
           original: {
-            value: "{ref.opacity.4}",
+            value: "{ref.opacity.2}",
           },
           name: "sys-state-opacity-pressed",
           attributes: {
