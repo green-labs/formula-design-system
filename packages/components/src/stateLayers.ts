@@ -6,6 +6,10 @@ import type { RGBA } from "color-blend/dist/types"
 const whiteOverlayColor =
   tokens.sys.state.color["container-contents-white"].value
 
+const get_RGBA_Array = (color: string | number | chroma.Color) => {
+  return get_RGBA_Object(chroma(color).rgba())
+}
+
 const get_RGBA_Object = ([r, g, b, a]: chroma.ColorSpaces["rgba"]): RGBA => {
   return { r, g, b, a }
 }
@@ -26,13 +30,9 @@ const get_RGBA_WithOpacity = (
   return chroma(color).alpha(opacity).css()
 }
 
-const change_RGBA_From_CSS = (color: string | number | chroma.Color) => {
-  return get_RGBA_Object(chroma(color).rgba())
-}
-
 /**
  * 해당 컬러가 white(#FFF)인지 확인합니다.
- * @param {string} color - hex(digit - 3 or 6), rgb, rgba, colorname("white") 형태의 string입니다.
+ * @param {string | number | chroma.Color} color - hex(digit - 3 or 6), rgb, rgba, colorname("white") 형태의 string입니다.
  */
 const checkWhiteColor = (color: string | number | chroma.Color) => {
   const trimmedString =
@@ -40,8 +40,9 @@ const checkWhiteColor = (color: string | number | chroma.Color) => {
   const isWhite = chroma(trimmedString).name() === "white"
   return isWhite
 }
+
 /**
- * 대상에 적용할 레이어의 상태에 따라, stateLayer의 opacity를 혼합한 blendLayerColor를 반환합니다.
+ * 대상에 적용할 레이어의 상태에 따라, stateLayer의 opacity를 혼합한 blendedLayerColor를 반환합니다.
  * blendLayerColor가 opacity에 관계없이 white(#fff)인 경우, tokens.sys.state.color["container-contents-white"].value값을 적용합니다.
  * opacity는 token.sys.state.opacity값을 적용합니다.
  * @param {string | number | chroma.Color} blendLayerColor - blendLayerColor를 계산할 컬러입니다.
@@ -67,13 +68,13 @@ export const getBlendLayerColor = (
  * @param {string | number | chroma.Color} baseLayerColor - 베이스 레이어의 색상입니다.
  * @param {string | number | chroma.Color} blendLayerColor - 상위 레이어의 색상입니다.
  */
-export const getLayeredColor = (
+export const getBlendedLayerColor = (
   baseLayerColor: string | number | chroma.Color,
   blendLayerColor: string | number | chroma.Color
 ) => {
   const layeredColor = overlay(
-    change_RGBA_From_CSS(blendLayerColor),
-    change_RGBA_From_CSS(baseLayerColor)
+    get_RGBA_Array(blendLayerColor),
+    get_RGBA_Array(baseLayerColor)
   )
 
   return get_RGBA_CSS(layeredColor)
