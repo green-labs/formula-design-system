@@ -1,4 +1,5 @@
 import type { ReactNode, MouseEvent, PropsWithChildren } from "react"
+import { assignInlineVars } from "@vanilla-extract/dynamic"
 import { Text } from "../Text/Text"
 import {
   textFieldSizeVariants,
@@ -7,7 +8,9 @@ import {
   suffixIconStyle,
   titleStyle,
   hintStyle,
+  backgroundColor,
 } from "./styles.css"
+import { colorMap } from "@greenlabs/formula-design-token"
 // import { sprinkles } from "../sprinkles.css"
 // import type { Sprinkles } from "../sprinkles.css"
 
@@ -21,6 +24,7 @@ interface TextFieldProps extends PropsWithChildren {
   size: sizeVariantKey
   prefix?: ReactNode
   suffixText?: ReactNode
+  variant?: "outline" | "fill" | "line"
   suffixIcon?: ReactNode // suffix element to be shown
   titleText?: string // title text to be shown upper side
   hintText?: string // hint text to be shown below
@@ -38,6 +42,7 @@ export const TextField = ({
   suffixIcon,
   titleText,
   hintText,
+  variant = "outline",
   type = "text",
 }: // state,
 // onClear,
@@ -51,8 +56,17 @@ TextFieldProps) => {
 
   const variantClass = textFieldSizeVariants[size] ?? ""
 
+  let inlineVars
+  switch (variant) {
+    case "fill":
+      inlineVars = assignInlineVars({
+        [backgroundColor]: colorMap["neutral-secondary-container"],
+      })
+      break
+  }
+
   return (
-    <div>
+    <div style={inlineVars}>
       {titleText ? (
         // FIXME: need to be changed according to size change
         <Text.Body size="md" weight="bold" className={titleStyle}>

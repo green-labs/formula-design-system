@@ -9,7 +9,7 @@ import { tokens, colorMap } from "@greenlabs/formula-design-token"
 
 const inputHeight = createVar()
 const inputFontSize = createVar()
-const backgroundColor = createVar()
+export const backgroundColor = createVar()
 
 const containerStyle = style({
   borderWidth: "1px",
