@@ -1,11 +1,10 @@
 import React from "react"
 import { assignInlineVars } from "@vanilla-extract/dynamic"
 import { getIconSize, getButtonStyleFromVariant } from "../utils"
-
 import {
   buttonCommonStyle,
-  buttonSizeStyles,
   buttonPseudoStyle,
+  buttonSizeStyles,
   buttonVariantStyles,
 } from "../commonStyle.css"
 import type { IconButtonProps } from "./types"

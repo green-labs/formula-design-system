@@ -136,7 +136,6 @@ export const dynamicStyles = {
 export const buttonPseudoStyle = style({
   selectors: {
     "&:disabled": {
-      // 🛑 backgroundColor의 token color는 어디서 값을 불러와야하는지 확인 필요
       backgroundColor: chroma(
         tokens.sys.color["neutral-secondary"].container.value
       )
