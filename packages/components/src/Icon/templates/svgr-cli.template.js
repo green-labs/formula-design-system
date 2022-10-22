@@ -16,7 +16,7 @@ const template = ({ jsx, componentName, exports }, { tpl }) => {
   ref: Ref<SVGSVGElement>) => {
     const finalSize = sizePx ? sizePx : convertSizeToPx(size)
     const fill = color && colorMap[color]
-    return ${jsx}
+    return <div>{${jsx}}</div>
   }
 
     ${exports}

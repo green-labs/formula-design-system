@@ -16,23 +16,27 @@ const SvgArrowDownLineRegular = (
   const finalSize = sizePx ? sizePx : convertSizeToPx(size)
   const fill = color && colorMap[color]
   return (
-    <svg
-      width={finalSize}
-      height={finalSize}
-      fill={fill}
-      xmlns="http://www.w3.org/2000/svg"
-      role="img"
-      style={style}
-      viewBox="0 0 48 48"
-      className={className}
-      ref={ref}
-      {...props}
-    >
-      <path
-        d="M25.5 9.375a1.5 1.5 0 0 0-3 0v25.629l-10.94-10.94a1.5 1.5 0 0 0-2.12 2.122l13.5 13.5a1.5 1.5 0 0 0 2.12 0l13.5-13.5a1.5 1.5 0 0 0-2.12-2.122L25.5 35.004V9.375Z"
-        fill={fill}
-      />
-    </svg>
+    <div>
+      {
+        <svg
+          width={finalSize}
+          height={finalSize}
+          fill={fill}
+          xmlns="http://www.w3.org/2000/svg"
+          role="img"
+          style={style}
+          viewBox="0 0 48 48"
+          className={className}
+          ref={ref}
+          {...props}
+        >
+          <path
+            d="M25.5 9.375a1.5 1.5 0 0 0-3 0v25.629l-10.94-10.94a1.5 1.5 0 0 0-2.12 2.122l13.5 13.5a1.5 1.5 0 0 0 2.12 0l13.5-13.5a1.5 1.5 0 0 0-2.12-2.122L25.5 35.004V9.375Z"
+            fill={fill}
+          />
+        </svg>
+      }
+    </div>
   )
 }
 const ForwardRef = forwardRef(SvgArrowDownLineRegular)
