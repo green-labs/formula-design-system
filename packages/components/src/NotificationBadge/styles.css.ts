@@ -2,21 +2,7 @@ import chroma from "chroma-js"
 import { tokens } from "@greenlabs/formula-design-token"
 import { createVar, style, styleVariants } from "@vanilla-extract/css"
 import { buttonCommonStyle } from "../Button/commonStyle.css"
-
-const extract = (obj: any) => {
-  const keyMaps = [
-    ["typeface", "fontFamily"],
-    ["font-size", "fontSize"],
-    ["tracking", "letterSpacing"],
-    ["weight", "fontWeight"],
-  ]
-
-  return keyMaps.reduce((nextObj, [objKey, cssKey]) => {
-    // @ts-expect-error FIXME
-    nextObj[cssKey] = obj[objKey].value
-    return nextObj
-  }, {})
-}
+import { extract } from "../util"
 
 export const notificationBaseStyle = style({
   display: "flex",
@@ -42,13 +28,23 @@ export const notificationBaseStyle = style({
 export const buttonNotificationSizeStyle = styleVariants({
   sm: {
     padding: "1px 4px",
-    lineHeight: "14.32px", // lineHeight 속성이 배수로 정해져있어서, 실제 사용되는 폰트와 정확히 매핑되지않음.
-    ...extract(tokens.sys.font.caption.xs.regular),
+    lineHeight: "14.32px",
+    ...extract(tokens.sys.font.caption.xs.regular, [
+      ["typeface", "fontFamily"],
+      ["font-size", "fontSize"],
+      ["tracking", "letterSpacing"],
+      ["weight", "fontWeight"],
+    ]),
   },
   md: {
     padding: "1.5px 6px",
-    lineHeight: "16.71px", // lineHeight 속성이 배수로 정해져있어서, 실제 사용되는 폰트와 정확히 매핑되지않음.
-    ...extract(tokens.sys.font.body.sm.regular),
+    lineHeight: "16.71px",
+    ...extract(tokens.sys.font.body.sm.regular, [
+      ["typeface", "fontFamily"],
+      ["font-size", "fontSize"],
+      ["tracking", "letterSpacing"],
+      ["weight", "fontWeight"],
+    ]),
   },
 })
 
