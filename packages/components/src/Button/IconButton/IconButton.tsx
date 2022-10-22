@@ -2,39 +2,36 @@ import React from "react"
 import { assignInlineVars } from "@vanilla-extract/dynamic"
 import { getIconSize, getButtonStyleFromVariant } from "../utils"
 import {
-  buttonCommonStyle,
-  buttonPseudoStyle,
-  buttonSizeStyles,
-  buttonVariantStyles,
+  containerButtonStyle,
+  iconInContainerButtonStyle,
 } from "../commonStyle.css"
 import type { IconButtonProps } from "./types"
 
 const IconButton = ({
-  variant,
+  color,
   size,
   icon,
   props,
   className,
   style,
+  disabled,
   ...restProps
 }: React.PropsWithChildren<IconButtonProps>) => {
   const iconSizePx = getIconSize(size)
-  const variantStyles = assignInlineVars(getButtonStyleFromVariant(variant))
+  const variantStyles = assignInlineVars(getButtonStyleFromVariant(color))
 
   return (
     <button
-      className={`
-        ${buttonCommonStyle}
-        ${buttonPseudoStyle}
-        ${buttonSizeStyles[size]}
-        ${buttonVariantStyles[variant]}
-        ${className ?? ""}
-      `}
+      className={`${containerButtonStyle({ size, color })} ${className ?? ""}`}
       style={{ ...variantStyles, ...style }}
+      disabled={disabled}
       {...props}
       {...restProps}
     >
-      {React.createElement(icon, { sizePx: iconSizePx })}
+      {React.createElement(icon, {
+        sizePx: iconSizePx,
+        className: `${iconInContainerButtonStyle({ color, disabled })}`,
+      })}
     </button>
   )
 }

@@ -11,7 +11,6 @@ interface IconItemProps {
 
 // Todo - support code copy(ts, res) handler
 const IconItem: React.FC<IconItemProps> = ({ name, children }) => {
-  const IconItemStyle = {}
   return (
     <div
       style={{

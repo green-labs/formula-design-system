@@ -23,7 +23,7 @@ const get_RGBA_CSS = ({ r, g, b, a }: RGBA) => {
  * @param {string | number | chroma.Color} color - opacity를 적용할 대상의 색상을 표현하는 값 입니다.
  * @param {number} opacity - 적용할 opacity로, 0과 1 사이의 값 입니다.
  */
-const get_RGBA_WithOpacity = (
+export const get_RGBA_WithOpacity = (
   color: string | number | chroma.Color,
   opacity: number
 ) => {

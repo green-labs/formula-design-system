@@ -23,7 +23,7 @@ export default {
       control: { type: "radio" },
       options: ["xs", "sm", "md", "lg", "xl"],
     },
-    variant: {
+    color: {
       defaultValue: "primary",
       control: {
         type: "radio",

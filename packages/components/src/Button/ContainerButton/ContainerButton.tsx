@@ -8,16 +8,13 @@ import {
 } from "../utils"
 import type { ContainerButtonProps } from "./types"
 import {
-  buttonCommonStyle,
-  buttonPseudoStyle,
-  buttonSizeStyles,
+  containerButtonStyle,
   buttonContentStyle,
-  buttonVariantStyles,
+  iconInContainerButtonStyle,
 } from "../commonStyle.css"
 import {
   buttonTextContainerStyle,
-  buttonNotificationColorVariants,
-  buttonNotificationContainerStyle,
+  badgeInContainerButtonStyle,
 } from "./styles.css"
 
 // 🛑 todo - support custom color(backgroundColor, textColor)
@@ -32,43 +29,47 @@ const ContainerButton = ({
   rightIcon,
   count,
   className,
-  variant,
+  color,
   style,
   props,
   children,
+  disabled,
   ...restProps
 }: React.PropsWithChildren<ContainerButtonProps>) => {
   const iconSizePx = getIconSize(size)
   const notificationCountBadgeSize = getNotificationCountBadgeSize(size)
-  const variantStyles = assignInlineVars(getButtonStyleFromVariant(variant))
+  const variantStyles = assignInlineVars(getButtonStyleFromVariant(color))
 
   return (
     <button
-      className={`
-        ${buttonCommonStyle}
-        ${buttonPseudoStyle}
-        ${buttonSizeStyles[size]}
-        ${buttonVariantStyles[variant]}
-        ${className ?? ""}
-      `}
+      className={`${containerButtonStyle({ size, color })} ${className ?? ""}`}
       style={{ ...variantStyles, ...style }}
+      disabled={disabled}
       {...props}
       {...restProps}
     >
-      {!!leftIcon && React.createElement(leftIcon, { sizePx: iconSizePx })}
+      {!!leftIcon &&
+        React.createElement(leftIcon, {
+          sizePx: iconSizePx,
+          className: `${iconInContainerButtonStyle({ color, disabled })}`,
+        })}
       <span className={`${buttonTextContainerStyle}`}>
         <span className={buttonContentStyle}>{text}</span>
         {typeof count === "number" && (
           <NotificationCountBadge
-            size={notificationCountBadgeSize}
             container="span"
+            className={`${badgeInContainerButtonStyle({ color, disabled })}`}
+            size={notificationCountBadgeSize}
             text={count}
-            className={`${buttonNotificationContainerStyle} ${buttonNotificationColorVariants[variant]}`}
           />
         )}
         {children}
       </span>
-      {!!rightIcon && React.createElement(rightIcon, { sizePx: iconSizePx })}
+      {!!rightIcon &&
+        React.createElement(rightIcon, {
+          sizePx: iconSizePx,
+          className: `${iconInContainerButtonStyle({ color, disabled })}`,
+        })}
     </button>
   )
 }

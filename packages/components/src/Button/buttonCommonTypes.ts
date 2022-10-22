@@ -1,3 +1,4 @@
+// todo - type from recipe
 type normal =
   | "primary"
   | "secondary-gray"
@@ -12,6 +13,6 @@ export type buttonSize = "xs" | "sm" | "md" | "lg" | "xl"
 export interface ButtonBaseProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   size: buttonSize
-  variant: buttonVariants
+  color: buttonVariants
   props?: {} // escape hatch for rescript
 }

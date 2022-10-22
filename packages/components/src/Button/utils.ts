@@ -1,4 +1,4 @@
-import { buttonVariantColors, dynamicStyles } from "./commonStyle.css"
+import { buttonColors, dynamicStyles } from "./commonStyle.css"
 import type { buttonSize, buttonVariants } from "./buttonCommonTypes"
 import { getBlendLayerColor, getBlendedLayerColor } from "../stateLayers"
 
@@ -32,8 +32,8 @@ export const getIconSize = (size: buttonSize) => {
 export const getButtonStyleFromVariant = (variant: buttonVariants) => {
   const { hoverBackgroundColor, activeBackgroundColor } = dynamicStyles
 
-  const backgroundColorCss = buttonVariantColors[variant].backgroundColor
-  const labelColorCss = buttonVariantColors[variant].color
+  const backgroundColorCss = buttonColors[variant].backgroundColor
+  const labelColorCss = buttonColors[variant].color
 
   return {
     [hoverBackgroundColor]: getBlendedLayerColor(
