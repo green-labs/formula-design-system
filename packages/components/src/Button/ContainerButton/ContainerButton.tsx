@@ -55,7 +55,7 @@ const ContainerButton = ({
       {...props}
       {...restProps}
     >
-      {!!leftIcon && React.cloneElement(leftIcon, { sizePx: iconSizePx })}
+      {!!leftIcon && React.createElement(leftIcon, { sizePx: iconSizePx })}
       <span className={`${buttonTextContainerStyle}`}>
         <span className={buttonContentStyle}>{text}</span>
         {typeof count === "number" && (
@@ -68,7 +68,7 @@ const ContainerButton = ({
         )}
         {children}
       </span>
-      {!!rightIcon && React.cloneElement(rightIcon, { sizePx: iconSizePx })}
+      {!!rightIcon && React.createElement(rightIcon, { sizePx: iconSizePx })}
     </button>
   )
 }

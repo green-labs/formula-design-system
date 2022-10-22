@@ -1,4 +1,4 @@
-import type { ReactElement } from "react"
+import type { FunctionComponent } from "react"
 import type { IconProps } from "../../Icon/types"
 import type { ButtonBaseProps } from "../buttonCommonTypes"
 
@@ -7,8 +7,8 @@ export interface ContainerButtonTextProps {
 }
 
 export interface ContainerButtonIconProps {
-  leftIcon?: ReactElement<IconProps>
-  rightIcon?: ReactElement<IconProps>
+  leftIcon?: FunctionComponent<IconProps>
+  rightIcon?: FunctionComponent<IconProps>
 }
 
 export interface ContainerButtonCountProps {

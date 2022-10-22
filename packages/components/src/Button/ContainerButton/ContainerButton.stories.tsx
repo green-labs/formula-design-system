@@ -63,7 +63,7 @@ export default {
       control: { type: "select" },
       options: Object.keys(IconComponents),
       mapping: Object.entries(IconComponents).reduce(
-        (p, [k, C]) => ({ ...p, [k]: <C /> }),
+        (p, [key, component]) => ({ ...p, [key]: component }),
         {}
       ),
     },
@@ -77,7 +77,7 @@ export default {
       control: { type: "select" },
       options: Object.keys(IconComponents),
       mapping: Object.entries(IconComponents).reduce(
-        (p, [k, C]) => ({ ...p, [k]: <C /> }),
+        (p, [key, component]) => ({ ...p, [key]: component }),
         {}
       ),
     },

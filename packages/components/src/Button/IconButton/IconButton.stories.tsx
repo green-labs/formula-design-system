@@ -40,11 +40,11 @@ export default {
       description: "버튼을 비활성화합니다.",
     },
     icon: {
-      defaultValue: <IconComponents.ArrowDownLineBold />,
+      defaultValue: IconComponents.ArrowDownLineBold,
       control: { type: "select" },
       options: Object.keys(IconComponents),
       mapping: Object.entries(IconComponents).reduce(
-        (p, [k, C]) => ({ ...p, [k]: <C /> }),
+        (p, [key, component]) => ({ ...p, [key]: component }),
         {}
       ),
     },

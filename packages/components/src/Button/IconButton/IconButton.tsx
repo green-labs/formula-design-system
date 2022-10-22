@@ -34,7 +34,7 @@ const IconButton = ({
       {...props}
       {...restProps}
     >
-      {React.cloneElement(icon, { sizePx: iconSizePx })}
+      {React.createElement(icon, { sizePx: iconSizePx })}
     </button>
   )
 }
