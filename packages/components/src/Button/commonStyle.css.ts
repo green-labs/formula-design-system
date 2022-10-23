@@ -5,6 +5,14 @@ import { extract } from "../util"
 import { get_RGBA_WithOpacity } from "../stateLayers"
 import { getDefaultTransitionStyle } from "../transitionStyles.css"
 
+const { font, color, state } = tokens.sys
+
+export const flexCenterContainer = style({
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+})
+
 const fontSizeKeyMaps = [
   ["typeface", "fontFamily"],
   ["font-size", "fontSize"],
@@ -18,78 +26,70 @@ const buttonSizes = {
     borderRadius: 6,
     height: 32,
     minWidth: 32,
-    ...extract(tokens.sys.font.body.sm.regular, fontSizeKeyMaps),
+    ...extract(font.body.sm.regular, fontSizeKeyMaps),
   },
   sm: {
     borderRadius: 8,
     height: 40,
     minWidth: 40,
-    ...extract(tokens.sys.font.body.sm.regular, fontSizeKeyMaps),
+    ...extract(font.body.sm.regular, fontSizeKeyMaps),
   },
   md: {
     borderRadius: 10,
     height: 48,
     minWidth: 48,
-    ...extract(tokens.sys.font.body.md.regular, fontSizeKeyMaps),
+    ...extract(font.body.md.regular, fontSizeKeyMaps),
   },
   lg: {
     borderRadius: 12,
     height: 56,
     minWidth: 56,
-    ...extract(tokens.sys.font.body.lg.bold, fontSizeKeyMaps),
+    ...extract(font.body.lg.bold, fontSizeKeyMaps),
   },
   xl: {
     borderRadius: 12,
     height: 64,
     minWidth: 64,
-    ...extract(tokens.sys.font.body.xl.bold, fontSizeKeyMaps),
+    ...extract(font.body.xl.bold, fontSizeKeyMaps),
   },
 } as const
 
+// todo - compoundVariants의 사용시 장단점 비교 후 적용필요
 const buttonBorderLineStyle = { borderStyle: "solid", borderWidth: 1 }
 export const buttonColors = {
   primary: {
-    backgroundColor: tokens.sys.color.primary.container.value,
-    color: tokens.sys.color.primary["container-contents"].value,
+    backgroundColor: color.primary.container.value,
+    color: color.primary["container-contents"].value,
   },
   "secondary-color": {
-    backgroundColor: tokens.sys.color["neutral-primary"].container.value,
-    borderColor: tokens.sys.color.primary.container.value,
-    color: tokens.sys.color.primary.contents.value,
+    backgroundColor: color["neutral-primary"].container.value,
+    borderColor: color.primary.container.value,
+    color: color.primary.contents.value,
     ...buttonBorderLineStyle,
   },
   "secondary-gray": {
-    backgroundColor: tokens.sys.color["neutral-primary"].container.value,
-    borderColor: tokens.sys.color.outline.value,
-    color: tokens.sys.color["neutral-primary"].contents.value,
+    backgroundColor: color["neutral-primary"].container.value,
+    borderColor: color.outline.value,
+    color: color["neutral-primary"].contents.value,
     ...buttonBorderLineStyle,
   },
   "tertiary-color": {
-    backgroundColor: tokens.sys.color.secondary.container.value,
-    color: tokens.sys.color.secondary["container-contents"].value,
+    backgroundColor: color.secondary.container.value,
+    color: color.secondary["container-contents"].value,
   },
   "tertiary-gray": {
-    backgroundColor: tokens.sys.color["neutral-secondary"].container.value,
-    color: tokens.sys.color["neutral-primary"].contents.value,
+    backgroundColor: color["neutral-secondary"].container.value,
+    color: color["neutral-primary"].contents.value,
   },
   "negative-primary": {
-    backgroundColor: tokens.sys.color.error.contents.value,
-    color: tokens.sys.color.primary["container-contents"].value,
+    backgroundColor: color.error.contents.value,
+    color: color.primary["container-contents"].value,
   },
   "negative-secondary": {
-    backgroundColor: tokens.sys.color.error.container.value,
-    color: tokens.sys.color.error.contents.value,
+    backgroundColor: color.error.container.value,
+    color: color.error.contents.value,
   },
 } as const
-
-// ---------- Contents Styles ----------
-export const buttonContentStyle = style({
-  paddingLeft: 4,
-  paddingRight: 4,
-  textOverflow: "ellipsis",
-  whiteSpace: "nowrap",
-  overflow: "hidden",
-})
 
 // ---------- Dynamic Styles ----------
 export const dynamicStyles = {
@@ -104,33 +104,19 @@ export const iconInContainerButtonStyle = recipe({
   base: [getDefaultTransitionStyle(["fill"])],
   variants: {
     color: {
-      primary: {
-        fill: tokens.sys.color.secondary.container.value,
-      },
-      "secondary-color": {
-        fill: tokens.sys.color.primary.container.value,
-      },
-      "secondary-gray": {
-        fill: tokens.sys.color["neutral-primary"].contents.value,
-      },
-      "tertiary-color": {
-        fill: tokens.sys.color.secondary["container-contents"].value,
-      },
-      "tertiary-gray": {
-        fill: tokens.sys.color["neutral-primary"].contents.value,
-      },
-      "negative-primary": {
-        fill: tokens.sys.color.primary["container-contents"].value,
-      },
-      "negative-secondary": {
-        fill: tokens.sys.color.error.contents.value,
-      },
+      primary: { fill: color.secondary.container.value },
+      "secondary-color": { fill: color.primary.container.value },
+      "secondary-gray": { fill: color["neutral-primary"].contents.value },
+      "tertiary-color": { fill: color.secondary["container-contents"].value },
+      "tertiary-gray": { fill: color["neutral-primary"].contents.value },
+      "negative-primary": { fill: color.primary["container-contents"].value },
+      "negative-secondary": { fill: color.error.contents.value },
     },
     disabled: {
       true: {
         fill: get_RGBA_WithOpacity(
-          tokens.sys.color["neutral-primary"].contents.value,
-          tokens.sys.state.opacity["disabled-contents"].value
+          color["neutral-primary"].contents.value,
+          state.opacity["disabled-contents"].value
         ),
       },
     },
@@ -163,16 +149,16 @@ export const containerButtonStyle = recipe({
         "&:disabled": {
           cursor: "not-allowed",
           backgroundColor: get_RGBA_WithOpacity(
-            tokens.sys.color["neutral-secondary"].container.value,
-            tokens.sys.state.opacity["disabled-container"].value
+            color["neutral-secondary"].container.value,
+            state.opacity["disabled-container"].value
           ),
           color: get_RGBA_WithOpacity(
-            tokens.sys.color["neutral-primary"].contents.value,
-            tokens.sys.state.opacity["disabled-contents"].value
+            color["neutral-primary"].contents.value,
+            state.opacity["disabled-contents"].value
           ),
           borderColor: get_RGBA_WithOpacity(
-            tokens.sys.color["neutral-primary"].contents.value,
-            tokens.sys.state.opacity["disabled-contents"].value
+            color["neutral-primary"].contents.value,
+            state.opacity["disabled-contents"].value
           ),
         },
         "&:hover:not([disabled])": {

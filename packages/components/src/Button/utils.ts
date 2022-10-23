@@ -29,6 +29,7 @@ export const getIconSize = (size: buttonSize) => {
   }
 }
 
+// todo - split function 내부에서 CSSVarFunction에 의존하지않고, (variant, CSSVarFunction)을 각각 받아 처리하도록 한다.
 export const getButtonStyleFromVariant = (variant: buttonVariants) => {
   const { hoverBackgroundColor, activeBackgroundColor } = dynamicStyles
 

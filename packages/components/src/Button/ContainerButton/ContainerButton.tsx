@@ -9,10 +9,11 @@ import {
 import type { ContainerButtonProps } from "./types"
 import {
   containerButtonStyle,
-  buttonContentStyle,
+  flexCenterContainer,
   iconInContainerButtonStyle,
 } from "../commonStyle.css"
 import {
+  buttonTextStyle,
   buttonTextContainerStyle,
   badgeInContainerButtonStyle,
 } from "./styles.css"
@@ -48,13 +49,17 @@ const ContainerButton = ({
       {...props}
       {...restProps}
     >
-      {!!leftIcon &&
-        React.createElement(leftIcon, {
-          sizePx: iconSizePx,
-          className: `${iconInContainerButtonStyle({ color, disabled })}`,
-        })}
+      {!!leftIcon && (
+        <div className={`${flexCenterContainer}`}>
+          {React.createElement(leftIcon, {
+            sizePx: iconSizePx,
+            className: `${iconInContainerButtonStyle({ color, disabled })}`,
+          })}
+        </div>
+      )}
+
       <span className={`${buttonTextContainerStyle}`}>
-        <span className={buttonContentStyle}>{text}</span>
+        <span className={buttonTextStyle}>{text}</span>
         {typeof count === "number" && (
           <NotificationCountBadge
             container="span"
@@ -65,11 +70,14 @@ const ContainerButton = ({
         )}
         {children}
       </span>
-      {!!rightIcon &&
-        React.createElement(rightIcon, {
-          sizePx: iconSizePx,
-          className: `${iconInContainerButtonStyle({ color, disabled })}`,
-        })}
+      {!!rightIcon && (
+        <div className={`${flexCenterContainer}`}>
+          {React.createElement(rightIcon, {
+            sizePx: iconSizePx,
+            className: `${iconInContainerButtonStyle({ color, disabled })}`,
+          })}
+        </div>
+      )}
     </button>
   )
 }

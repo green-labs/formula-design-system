@@ -3,6 +3,7 @@ import { assignInlineVars } from "@vanilla-extract/dynamic"
 import { getIconSize, getButtonStyleFromVariant } from "../utils"
 import {
   containerButtonStyle,
+  flexCenterContainer,
   iconInContainerButtonStyle,
 } from "../commonStyle.css"
 import type { IconButtonProps } from "./types"
@@ -28,10 +29,12 @@ const IconButton = ({
       {...props}
       {...restProps}
     >
-      {React.createElement(icon, {
-        sizePx: iconSizePx,
-        className: `${iconInContainerButtonStyle({ color, disabled })}`,
-      })}
+      <div className={`${flexCenterContainer}`}>
+        {React.createElement(icon, {
+          sizePx: iconSizePx,
+          className: `${iconInContainerButtonStyle({ color, disabled })}`,
+        })}
+      </div>
     </button>
   )
 }

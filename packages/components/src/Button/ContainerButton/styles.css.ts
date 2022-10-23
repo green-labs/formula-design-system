@@ -4,7 +4,23 @@ import { recipe } from "@vanilla-extract/recipes"
 import { get_RGBA_WithOpacity } from "../../stateLayers"
 import { getDefaultTransitionStyle } from "../../transitionStyles.css"
 
-// NotificationCountBadge Recipe
+const { color, state } = tokens.sys
+
+export const buttonTextContainerStyle = style({
+  display: "flex",
+  alignItems: "center",
+  minWidth: 0,
+})
+
+export const buttonTextStyle = style({
+  paddingLeft: 4,
+  paddingRight: 4,
+  textOverflow: "ellipsis",
+  whiteSpace: "nowrap",
+  overflow: "hidden",
+})
+
+// NotificationCountBadge Component Recipe
 export const badgeInContainerButtonStyle = recipe({
   base: [
     getDefaultTransitionStyle(["background-color", "color"]),
@@ -13,47 +29,42 @@ export const badgeInContainerButtonStyle = recipe({
   variants: {
     color: {
       primary: {
-        backgroundColor: tokens.sys.color.secondary.container.value,
-        color: tokens.sys.color.secondary["container-contents"].value,
+        backgroundColor: color.secondary.container.value,
+        color: color.secondary["container-contents"].value,
       },
       "secondary-color": {
-        backgroundColor: tokens.sys.color.primary.container.value,
-        color: tokens.sys.color.primary["container-contents"].value,
+        backgroundColor: color.primary.container.value,
+        color: color.primary["container-contents"].value,
       },
       "secondary-gray": {
-        backgroundColor: tokens.sys.color["neutral-primary"].contents.value,
-        color: tokens.sys.color["neutral-primary"].container.value,
+        backgroundColor: color["neutral-primary"].contents.value,
+        color: color["neutral-primary"].container.value,
       },
       "tertiary-color": {
-        backgroundColor: tokens.sys.color.secondary["container-contents"].value,
-        color: tokens.sys.color.secondary.container.value,
+        backgroundColor: color.secondary["container-contents"].value,
+        color: color.secondary.container.value,
       },
       "tertiary-gray": {
-        backgroundColor: tokens.sys.color["neutral-primary"].contents.value,
-        color: tokens.sys.color["neutral-secondary"].container.value,
+        backgroundColor: color["neutral-primary"].contents.value,
+        color: color["neutral-secondary"].container.value,
       },
       "negative-primary": {
-        backgroundColor: tokens.sys.color.primary["container-contents"].value,
-        color: tokens.sys.color.error.contents.value,
+        backgroundColor: color.primary["container-contents"].value,
+        color: color.error.contents.value,
       },
       "negative-secondary": {
-        backgroundColor: tokens.sys.color.error.contents.value,
-        color: tokens.sys.color.error.container.value,
+        backgroundColor: color.error.contents.value,
+        color: color.error.container.value,
       },
     },
     disabled: {
       true: {
         backgroundColor: get_RGBA_WithOpacity(
-          tokens.sys.color["neutral-primary"].contents.value,
-          tokens.sys.state.opacity["disabled-contents"].value
+          color["neutral-primary"].contents.value,
+          state.opacity["disabled-contents"].value
         ),
-        color: tokens.sys.color.inverse["container-contents"].value,
+        color: color.inverse["container-contents"].value,
       },
     },
   },
-})
-
-export const buttonTextContainerStyle = style({
-  display: "flex",
-  alignItems: "center",
 })
