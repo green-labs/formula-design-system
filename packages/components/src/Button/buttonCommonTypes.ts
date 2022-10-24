@@ -1,21 +1,6 @@
 import type React from "react"
 import type { Property } from "csstype"
 
-type normal =
-  | "primary"
-  | "secondary-gray"
-  | "secondary-color"
-  | "tertiary-gray"
-  | "tertiary-color"
-
-type negative = "negative-primary" | "negative-secondary"
-
-type custom = "custom"
-
-export type buttonColor = normal | negative | custom
-
-export type buttonSize = "xs" | "sm" | "md" | "lg" | "xl"
-
 export interface ButtonCustomStyleProps {
   backgroundColor: string
   color: string
@@ -27,10 +12,33 @@ export interface ButtonCustomStyleProps {
   countColor?: string
 }
 
-export interface ButtonBaseProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  size: buttonSize
-  color: buttonColor
-  customStyle?: ButtonCustomStyleProps
-  props?: {} // escape hatch for rescript
-}
+type normal =
+  | "primary"
+  | "secondary-gray"
+  | "secondary-color"
+  | "tertiary-gray"
+  | "tertiary-color"
+
+type negative = "negative-primary" | "negative-secondary"
+
+export type buttonColorTypes = normal | negative
+
+type buttonCustomColorType = "custom"
+
+export type buttonColorProps =
+  | {
+      color: buttonColorTypes
+      customStyle: never
+    }
+  | {
+      color: buttonCustomColorType
+      customStyle: ButtonCustomStyleProps
+    }
+
+export type buttonSize = "xs" | "sm" | "md" | "lg" | "xl"
+
+export type ButtonBaseProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
+  buttonColorProps & {
+    size: buttonSize
+    props: {}
+  }

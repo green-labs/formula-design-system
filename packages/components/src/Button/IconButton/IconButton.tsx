@@ -1,6 +1,5 @@
 import React from "react"
-import { assignInlineVars } from "@vanilla-extract/dynamic"
-import { getDynamicStyle, getIconSize } from "../utils"
+import { getCustomStyle, getIconSize, getStateStyle } from "../utils"
 import {
   containerButtonStyle,
   flexCenterContainer,
@@ -20,7 +19,8 @@ const IconButton = ({
   ...restProps
 }: React.PropsWithChildren<IconButtonProps>) => {
   const iconSizePx = getIconSize(size)
-  const dynamicStyle = assignInlineVars(getDynamicStyle(color))
+  const dynamicStyle =
+    color === "custom" ? getCustomStyle(customStyle) : getStateStyle(color)
 
   return (
     <button
