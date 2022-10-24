@@ -18,68 +18,79 @@ import {
   badgeInContainerButtonStyle,
 } from "./styles.css"
 
-const ContainerButton = ({
-  text,
-  size,
-  leftIcon,
-  rightIcon,
-  count,
-  className,
-  color,
-  style,
-  props,
-  children,
-  disabled,
-  customStyle,
-  ...restProps
-}: React.PropsWithChildren<ContainerButtonProps>) => {
-  const iconSizePx = getIconSize(size)
-  const notificationCountBadgeSize = getNotificationCountBadgeSize(size)
-  const dynamicStyle =
-    color === "custom" ? getCustomStyle(customStyle) : getStateStyle(color)
+const ContainerButton = React.forwardRef<
+  HTMLButtonElement,
+  React.PropsWithChildren<ContainerButtonProps>
+>(
+  (
+    {
+      text,
+      size,
+      leftIcon,
+      rightIcon,
+      count,
+      className,
+      color,
+      style,
+      props,
+      children,
+      disabled,
+      customStyle,
+      ...restProps
+    },
+    ref
+  ) => {
+    const iconSizePx = getIconSize(size)
+    const notificationCountBadgeSize = getNotificationCountBadgeSize(size)
+    const dynamicStyle =
+      color === "custom" ? getCustomStyle(customStyle) : getStateStyle(color)
 
-  return (
-    <button
-      className={`${containerButtonStyle({ size, color })} ${className ?? ""}`}
-      style={{ ...dynamicStyle, ...style }}
-      disabled={disabled}
-      {...props}
-      {...restProps}
-    >
-      {!!leftIcon && (
-        <div className={`${flexCenterContainer}`}>
-          {React.createElement(leftIcon, {
-            sizePx: iconSizePx,
-            className: `${iconInContainerButtonStyle({ color, disabled })}`,
-          })}
-        </div>
-      )}
-
-      <span className={`${buttonTextContainerStyle}`}>
-        <span className={buttonTextStyle}>
-          {text}
-          {children}
-        </span>
-        {typeof count === "number" && (
-          <NotificationCountBadge
-            container="span"
-            className={`${badgeInContainerButtonStyle({ color, disabled })}`}
-            size={notificationCountBadgeSize}
-            text={count}
-          />
+    return (
+      <button
+        className={`${containerButtonStyle({ size, color })} ${
+          className ?? ""
+        }`}
+        style={{ ...dynamicStyle, ...style }}
+        disabled={disabled}
+        ref={ref}
+        {...props}
+        {...restProps}
+      >
+        {!!leftIcon && (
+          <div className={`${flexCenterContainer}`}>
+            {React.createElement(leftIcon, {
+              sizePx: iconSizePx,
+              className: `${iconInContainerButtonStyle({ color, disabled })}`,
+            })}
+          </div>
         )}
-      </span>
-      {!!rightIcon && (
-        <div className={`${flexCenterContainer}`}>
-          {React.createElement(rightIcon, {
-            sizePx: iconSizePx,
-            className: `${iconInContainerButtonStyle({ color, disabled })}`,
-          })}
-        </div>
-      )}
-    </button>
-  )
-}
+
+        <span className={`${buttonTextContainerStyle}`}>
+          <span className={buttonTextStyle}>
+            {text}
+            {children}
+          </span>
+          {typeof count === "number" && (
+            <NotificationCountBadge
+              container="span"
+              className={`${badgeInContainerButtonStyle({ color, disabled })}`}
+              size={notificationCountBadgeSize}
+              text={count}
+            />
+          )}
+        </span>
+        {!!rightIcon && (
+          <div className={`${flexCenterContainer}`}>
+            {React.createElement(rightIcon, {
+              sizePx: iconSizePx,
+              className: `${iconInContainerButtonStyle({ color, disabled })}`,
+            })}
+          </div>
+        )}
+      </button>
+    )
+  }
+)
 
 ContainerButton.displayName = "ContainerButton"
 
