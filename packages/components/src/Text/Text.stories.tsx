@@ -58,14 +58,19 @@ const Template = (args) => {
           <hr />
           <span>Text.Body (body-sm-bold) </span>{" "}
           <Text.Body size="sm" weight="bold" {...args} />
-          <hr />
         </>
       )
     case "Caption":
       return (
         <>
-          <span>Text.Caption (caption-xs-regular) </span>{" "}
-          <Text.Caption {...args} />
+          <span>Text.Body (caption-xs-regular) </span>{" "}
+          <Text.Caption weight="regular" {...args} />
+          <hr />
+          <span>Text.Body (caption-xs-medium) </span>{" "}
+          <Text.Caption weight="medium" {...args} />
+          <hr />
+          <span>Text.Body (caption-xs-bold) </span>{" "}
+          <Text.Caption weight="bold" {...args} />
         </>
       )
     default:

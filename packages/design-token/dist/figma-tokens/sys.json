@@ -74,5 +74,195 @@
       "value": "white",
       "type": "color"
     }
+  },
+  "headline/sm/regular": {
+    "value": {
+      "fontFamily": "Pretendard",
+      "lineHeight": "1.4",
+      "letterSpacing": "-0.02em",
+      "fontWeight": "400",
+      "fontSize": "1.188rem"
+    },
+    "type": "typography"
+  },
+  "headline/sm/bold": {
+    "value": {
+      "fontFamily": "Pretendard",
+      "lineHeight": "1.4",
+      "letterSpacing": "-0.02em",
+      "fontWeight": "700",
+      "fontSize": "1.188rem"
+    },
+    "type": "typography"
+  },
+  "headline/md/bold": {
+    "value": {
+      "fontFamily": "Pretendard",
+      "lineHeight": "1.4",
+      "letterSpacing": "-0.02em",
+      "fontWeight": "700",
+      "fontSize": "1.375rem"
+    },
+    "type": "typography"
+  },
+  "headline/lg/bold": {
+    "value": {
+      "fontFamily": "Pretendard",
+      "lineHeight": "1.4",
+      "letterSpacing": "-0.02em",
+      "fontWeight": "700",
+      "fontSize": "1.5rem"
+    },
+    "type": "typography"
+  },
+  "headline/xl/bold": {
+    "value": {
+      "fontFamily": "Pretendard",
+      "lineHeight": "1.4",
+      "letterSpacing": "-0.02em",
+      "fontWeight": "700",
+      "fontSize": "2rem"
+    },
+    "type": "typography"
+  },
+  "body/sm/regular": {
+    "value": {
+      "fontFamily": "Pretendard",
+      "lineHeight": "1.5",
+      "letterSpacing": "-0.02em",
+      "fontWeight": "400",
+      "fontSize": "0.9375rem"
+    },
+    "type": "typography"
+  },
+  "body/sm/medium": {
+    "value": {
+      "fontFamily": "Pretendard",
+      "lineHeight": "1.5",
+      "letterSpacing": "-0.02em",
+      "fontWeight": "500",
+      "fontSize": "0.9375rem"
+    },
+    "type": "typography"
+  },
+  "body/sm/bold": {
+    "value": {
+      "fontFamily": "Pretendard",
+      "lineHeight": "1.5",
+      "letterSpacing": "-0.02em",
+      "fontWeight": "700",
+      "fontSize": "0.9375rem"
+    },
+    "type": "typography"
+  },
+  "body/md/regular": {
+    "value": {
+      "fontFamily": "Pretendard",
+      "lineHeight": "1.5",
+      "letterSpacing": "-0.02em",
+      "fontWeight": "400",
+      "fontSize": "1.063rem"
+    },
+    "type": "typography"
+  },
+  "body/md/medium": {
+    "value": {
+      "fontFamily": "Pretendard",
+      "lineHeight": "1.5",
+      "letterSpacing": "-0.02em",
+      "fontWeight": "500",
+      "fontSize": "1.063rem"
+    },
+    "type": "typography"
+  },
+  "body/md/bold": {
+    "value": {
+      "fontFamily": "Pretendard",
+      "lineHeight": "1.5",
+      "letterSpacing": "-0.02em",
+      "fontWeight": "700",
+      "fontSize": "1.063rem"
+    },
+    "type": "typography"
+  },
+  "body/lg/regular": {
+    "value": {
+      "fontFamily": "Pretendard",
+      "lineHeight": "1.5",
+      "letterSpacing": "-0.02em",
+      "fontWeight": "400",
+      "fontSize": "1.188rem"
+    },
+    "type": "typography"
+  },
+  "body/lg/medium": {
+    "value": {
+      "fontFamily": "Pretendard",
+      "lineHeight": "1.5",
+      "letterSpacing": "-0.02em",
+      "fontWeight": "500",
+      "fontSize": "1.188rem"
+    },
+    "type": "typography"
+  },
+  "body/lg/bold": {
+    "value": {
+      "fontFamily": "Pretendard",
+      "lineHeight": "1.5",
+      "letterSpacing": "-0.02em",
+      "fontWeight": "700",
+      "fontSize": "1.188rem"
+    },
+    "type": "typography"
+  },
+  "body/xl/regular": {
+    "value": {
+      "fontFamily": "Pretendard",
+      "lineHeight": "1.5",
+      "letterSpacing": "-0.02em",
+      "fontWeight": "400",
+      "fontSize": "1.375rem"
+    },
+    "type": "typography"
+  },
+  "body/xl/bold": {
+    "value": {
+      "fontFamily": "Pretendard",
+      "lineHeight": "1.5",
+      "letterSpacing": "-0.02em",
+      "fontWeight": "700",
+      "fontSize": "1.375rem"
+    },
+    "type": "typography"
+  },
+  "caption/xs/regular": {
+    "value": {
+      "fontFamily": "Pretendard",
+      "lineHeight": "1.4",
+      "letterSpacing": "-0.02em",
+      "fontWeight": "400",
+      "fontSize": "0.813rem"
+    },
+    "type": "typography"
+  },
+  "caption/xs/medium": {
+    "value": {
+      "fontFamily": "Pretendard",
+      "lineHeight": "1.5",
+      "letterSpacing": "-0.02em",
+      "fontWeight": "500",
+      "fontSize": "0.813rem"
+    },
+    "type": "typography"
+  },
+  "caption/xs/bold": {
+    "value": {
+      "fontFamily": "Pretendard",
+      "lineHeight": "1.5",
+      "letterSpacing": "-0.02em",
+      "fontWeight": "700",
+      "fontSize": "0.813rem"
+    },
+    "type": "typography"
   }
 }

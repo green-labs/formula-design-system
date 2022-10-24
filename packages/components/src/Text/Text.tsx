@@ -4,49 +4,52 @@ import { variants, textColorVar, textStyle } from "./styles.css"
 import { sprinkles } from "../sprinkles.css"
 import type { Sprinkles } from "../sprinkles.css"
 
-interface TextBaseProps extends React.PropsWithChildren {
-  props?: {}
-  className?: string
-  align?: Sprinkles["textAlign"]
-  color?: keyof typeof colorMap
-  container?: React.ComponentType
-  tag?: React.ElementType
-}
+type variantKeyType = keyof typeof variants
 
-type variantKey = keyof typeof variants
-export interface TextProps extends TextBaseProps {
-  variantKey?: variantKey
+type TextBaseProps<T extends {} = {}> = T &
+  React.PropsWithChildren<{
+    props?: {}
+    className?: string
+    align?: Sprinkles["textAlign"]
+    color?: keyof typeof colorMap
+    container?: React.ComponentType
+    tag?: React.ElementType
+  }>
+
+export type TextProps = TextBaseProps<{
   variant: "body" | "headline" | "caption"
   size: "xs" | "sm" | "md" | "lg" | "xl"
   weight: "regular" | "medium" | "bold"
-}
+}>
 
-interface TextVariantProps extends TextBaseProps {
+type TextPartialProps = TextBaseProps<{
   size?: "xs" | "sm" | "md" | "lg" | "xl"
   weight?: "regular" | "medium" | "bold"
-}
+}>
 
-export const Text = ({
+type TextVariantProps = TextBaseProps<{
+  variantKey: variantKeyType
+}>
+const TextBase = ({
   className = "",
   props = {},
   children,
   variantKey,
-  variant,
-  size,
-  weight,
   color,
   align,
   container,
   tag = "span",
-}: TextProps) => {
+}: TextVariantProps) => {
   const Container = container ?? tag
-  const variantKeyStr = variantKey ?? `${variant}-${size}-${weight}`
 
-  if (process.env.NODE_ENV !== "production" && !(variantKeyStr in variants)) {
-    console.error(`You have used non-exist variant key ${variantKeyStr}.`)
+  if (
+    process.env.NODE_ENV !== "production" &&
+    !((variantKey as variantKeyType) in variants)
+  ) {
+    console.error(`You have used non-exist variant key ${variantKey}.`)
   }
 
-  const variantClass = variants[variantKeyStr as keyof typeof variants] ?? ""
+  const variantClass = variants[variantKey as variantKeyType] ?? ""
   const colorCssVar =
     color && colorMap[color]
       ? assignInlineVars({ [textColorVar]: colorMap[color] })
@@ -68,13 +71,29 @@ export const Text = ({
     </Container>
   )
 }
+
+/**
+ * variantKey를 직접 넘길 수 있는 형태의 Text 베이스 컴포넌트
+ */
+export const TextVariant = ({ variantKey, ...props }: TextVariantProps) => {
+  return <TextBase variantKey={variantKey} {...props} />
+}
+
+/**
+ * Body, Headline, Caption의 기초가 되는 컴포넌트
+ */
+export const Text = ({ variant, size, weight, ...props }: TextProps) => {
+  const variantKey = `${variant}-${size}-${weight}` as variantKeyType
+
+  return <TextVariant variantKey={variantKey} {...props} />
+}
 Text.displayName = "Text"
 
 export const TextBody = ({
   weight = "regular",
   size = "sm",
   ...props
-}: TextVariantProps) => (
+}: TextPartialProps) => (
   <Text weight={weight} size={size} {...props} variant="body" />
 )
 
@@ -83,12 +102,15 @@ export const TextHeadline = ({
   weight = "bold",
   tag = "h3",
   ...props
-}: TextVariantProps) => (
+}: TextPartialProps) => (
   <Text weight={weight} size={size} tag={tag} {...props} variant="headline" />
 )
 
-export const TextCaption = (args: TextBaseProps) => (
-  <Text {...args} variant="caption" size="xs" weight="regular" />
+export const TextCaption = ({
+  weight = "regular",
+  ...props
+}: Omit<TextPartialProps, "size">) => (
+  <Text weight={weight} {...props} variant="caption" size="xs" />
 )
 
 Text.Body = TextBody

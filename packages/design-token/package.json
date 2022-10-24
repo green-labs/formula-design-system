@@ -1,6 +1,6 @@
 {
   "name": "@greenlabs/formula-design-token",
-  "version": "0.0.1-alpha.6",
+  "version": "0.0.1-alpha.7",
   "repository": {
     "type": "git",
     "url": "git@github.com:green-labs/formula-design-system.git",
@@ -20,5 +20,8 @@
   ],
   "scripts": {
     "build": "style-dictionary build --config=./sd.config.js && ./after-sd-transform.sh"
+  },
+  "dependencies": {
+    "lodash.get": "^4.4.2"
   }
 }

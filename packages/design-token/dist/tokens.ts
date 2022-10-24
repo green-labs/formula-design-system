@@ -2342,10 +2342,46 @@ export default {
         },
       },
     },
+    shadow: {
+      "1": {
+        value:
+          "0px 2px 8px 3px rgba(0, 0, 0, 0.06), 0px 1px 2px 0px rgba(0, 0, 0, 0.03)",
+        filePath: "tokens/elevation/ref.json5",
+        isSource: true,
+        original: {
+          value:
+            "0px 2px 8px 3px rgba(0, 0, 0, 0.06), 0px 1px 2px 0px rgba(0, 0, 0, 0.03)",
+        },
+        name: "ref-shadow-1",
+        attributes: {
+          category: "ref",
+          type: "shadow",
+          item: "1",
+        },
+        path: ["ref", "shadow", "1"],
+      },
+      "2": {
+        value:
+          "0px 4px 16px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.02)",
+        filePath: "tokens/elevation/ref.json5",
+        isSource: true,
+        original: {
+          value:
+            "0px 4px 16px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.02)",
+        },
+        name: "ref-shadow-2",
+        attributes: {
+          category: "ref",
+          type: "shadow",
+          item: "2",
+        },
+        path: ["ref", "shadow", "2"],
+      },
+    },
     opacity: {
       "0": {
         value: 1,
-        filePath: "tokens/opacity/index.json5",
+        filePath: "tokens/elevation/ref.json5",
         isSource: true,
         original: {
           value: 1,
@@ -2359,11 +2395,11 @@ export default {
         path: ["ref", "opacity", "0"],
       },
       "1": {
-        value: 0.06,
-        filePath: "tokens/opacity/index.json5",
+        value: 0.04,
+        filePath: "tokens/elevation/ref.json5",
         isSource: true,
         original: {
-          value: 0.06,
+          value: 0.04,
         },
         name: "ref-opacity-1",
         attributes: {
@@ -2375,7 +2411,7 @@ export default {
       },
       "2": {
         value: 0.08,
-        filePath: "tokens/opacity/index.json5",
+        filePath: "tokens/elevation/ref.json5",
         isSource: true,
         original: {
           value: 0.08,
@@ -2390,7 +2426,7 @@ export default {
       },
       "3": {
         value: 0.12,
-        filePath: "tokens/opacity/index.json5",
+        filePath: "tokens/elevation/ref.json5",
         isSource: true,
         original: {
           value: 0.12,
@@ -2405,7 +2441,7 @@ export default {
       },
       "4": {
         value: 0.16,
-        filePath: "tokens/opacity/index.json5",
+        filePath: "tokens/elevation/ref.json5",
         isSource: true,
         original: {
           value: 0.16,
@@ -2420,7 +2456,7 @@ export default {
       },
       "5": {
         value: 0.24,
-        filePath: "tokens/opacity/index.json5",
+        filePath: "tokens/elevation/ref.json5",
         isSource: true,
         original: {
           value: 0.24,
@@ -2435,7 +2471,7 @@ export default {
       },
       "6": {
         value: 0.4,
-        filePath: "tokens/opacity/index.json5",
+        filePath: "tokens/elevation/ref.json5",
         isSource: true,
         original: {
           value: 0.4,
@@ -2450,7 +2486,7 @@ export default {
       },
       "7": {
         value: 0.6,
-        filePath: "tokens/opacity/index.json5",
+        filePath: "tokens/elevation/ref.json5",
         isSource: true,
         original: {
           value: 0.6,
@@ -3146,11 +3182,11 @@ export default {
           path: ["sys", "state", "opacity", "hover-white"],
         },
         hover: {
-          value: 0.08,
+          value: 0.04,
           filePath: "tokens/color/state.json5",
           isSource: true,
           original: {
-            value: "{ref.opacity.2}",
+            value: "{ref.opacity.1}",
           },
           name: "sys-state-opacity-hover",
           attributes: {
@@ -3182,11 +3218,11 @@ export default {
           path: ["sys", "state", "opacity", "pressed-white"],
         },
         pressed: {
-          value: 0.16,
+          value: 0.08,
           filePath: "tokens/color/state.json5",
           isSource: true,
           original: {
-            value: "{ref.opacity.4}",
+            value: "{ref.opacity.2}",
           },
           name: "sys-state-opacity-pressed",
           attributes: {

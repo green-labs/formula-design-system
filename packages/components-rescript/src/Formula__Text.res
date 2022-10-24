@@ -16,6 +16,8 @@ type textComponentProps<'a> = {"props": 'a, "className": string, "children": Rea
 
 type variantKey = [
   | #"caption-xs-regular"
+  | #"caption-xs-medium"
+  | #"caption-xs-bold"
   | #"body-lg-medium"
   | #"body-lg-regular"
   | #"body-lg-bold"
@@ -59,7 +61,7 @@ module TextVariant = {
     ~tag: string=?,
     ~container: React.componentLike<textComponentProps<{..}>, React.element>=?,
     ~children: React.element,
-  ) => React.element = "Text"
+  ) => React.element = "TextVariant"
 }
 
 module Body = {
@@ -97,6 +99,7 @@ module Caption = {
   external make: (
     ~props: {..}=?,
     ~className: string=?,
+    ~weight: weight=?,
     ~color: Formula__ColorMap.t=?,
     ~align: align=?,
     ~tag: string=?,
