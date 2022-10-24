@@ -1,4 +1,6 @@
-// todo - type from recipe
+import type React from "react"
+import type { Property } from "csstype"
+
 type normal =
   | "primary"
   | "secondary-gray"
@@ -8,11 +10,27 @@ type normal =
 
 type negative = "negative-primary" | "negative-secondary"
 
-export type buttonVariants = normal | negative
+type custom = "custom"
+
+export type buttonColor = normal | negative | custom
+
 export type buttonSize = "xs" | "sm" | "md" | "lg" | "xl"
+
+export interface ButtonCustomStyleProps {
+  backgroundColor: string
+  color: string
+  borderStyle?: Property.BorderStyle
+  borderColor?: string
+  borderWidth?: string
+  fill?: string
+  countBackgroundColor?: string
+  countColor?: string
+}
+
 export interface ButtonBaseProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   size: buttonSize
-  color: buttonVariants
+  color: buttonColor
+  customStyle?: ButtonCustomStyleProps
   props?: {} // escape hatch for rescript
 }

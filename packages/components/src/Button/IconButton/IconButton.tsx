@@ -1,6 +1,6 @@
 import React from "react"
 import { assignInlineVars } from "@vanilla-extract/dynamic"
-import { getIconSize, getButtonStyleFromVariant } from "../utils"
+import { getDynamicStyle, getIconSize } from "../utils"
 import {
   containerButtonStyle,
   flexCenterContainer,
@@ -16,15 +16,16 @@ const IconButton = ({
   className,
   style,
   disabled,
+  customStyle,
   ...restProps
 }: React.PropsWithChildren<IconButtonProps>) => {
   const iconSizePx = getIconSize(size)
-  const variantStyles = assignInlineVars(getButtonStyleFromVariant(color))
+  const dynamicStyle = assignInlineVars(getDynamicStyle(color))
 
   return (
     <button
       className={`${containerButtonStyle({ size, color })} ${className ?? ""}`}
-      style={{ ...variantStyles, ...style }}
+      style={{ ...dynamicStyle, ...style }}
       disabled={disabled}
       {...props}
       {...restProps}

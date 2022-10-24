@@ -13,6 +13,11 @@ export default {
   title: "Example/Buttons/ContainerButton",
   component: Buttons,
   argTypes: {
+    disabled: {
+      defaultValue: false,
+      control: "boolean",
+      description: "버튼을 비활성화합니다.",
+    },
     text: {
       defaultValue: "Button Text",
       control: { type: "text" },
@@ -28,6 +33,7 @@ export default {
       control: {
         type: "radio",
         options: [
+          "custom",
           "primary",
           "secondary-gray",
           "secondary-color",
@@ -38,10 +44,24 @@ export default {
         ],
       },
     },
-    disabled: {
-      defaultValue: true,
+    ShowCustomStyle: {
+      defaultValue: false,
       control: "boolean",
-      description: "버튼을 비활성화합니다.",
+      description: "(For Storybook) 커스텀 스타일 옵션을 활성화합니다.",
+    },
+    customStyle: {
+      if: { arg: "ShowCustomStyle" },
+      control: { type: "object" },
+      defaultValue: {
+        backgroundColor: "#34e7e4",
+        color: "white",
+        countBackgroundColor: "#1e272e",
+        countColor: "white",
+        borderStyle: "solid",
+        borderColor: "#1e272e",
+        borderWidth: "3px",
+        fill: "#ef5777",
+      },
     },
     ShowCount: {
       defaultValue: false,

@@ -1,6 +1,12 @@
-import { buttonColors, dynamicStyles } from "./commonStyle.css"
-import type { buttonSize, buttonVariants } from "./buttonCommonTypes"
+import type {
+  buttonSize,
+  buttonColor,
+  ButtonCustomStyleProps,
+} from "./buttonCommonTypes"
+import { buttonColors, customStyles, stateStyles } from "./commonStyle.css"
 import { getBlendLayerColor, getBlendedLayerColor } from "../stateLayers"
+import { assignInlineVars } from "@vanilla-extract/dynamic"
+import { isProduction } from "../util"
 
 export const getNotificationCountBadgeSize = (size: buttonSize) => {
   switch (size) {
@@ -29,21 +35,70 @@ export const getIconSize = (size: buttonSize) => {
   }
 }
 
-// todo - split function 내부에서 CSSVarFunction에 의존하지않고, (variant, CSSVarFunction)을 각각 받아 처리하도록 한다.
-export const getButtonStyleFromVariant = (variant: buttonVariants) => {
-  const { hoverBackgroundColor, activeBackgroundColor } = dynamicStyles
+export const getDynamicStyle = (
+  color: buttonColor,
+  customStyle?: ButtonCustomStyleProps
+) => {
+  const { hoverBackgroundColor, activeBackgroundColor } = stateStyles
 
-  const backgroundColorCss = buttonColors[variant].backgroundColor
-  const labelColorCss = buttonColors[variant].color
+  if (color === "custom" && !!customStyle) {
+    const {
+      customBackgroundColor,
+      customFontColor,
+      customFillColor,
+      customBorderColor,
+      customBorderWidth,
+      customBorderStyle,
+      customCountBackgroundColor,
+      customCountColor,
+    } = customStyles
 
-  return {
-    [hoverBackgroundColor]: getBlendedLayerColor(
+    const hoverLayerColor = getBlendedLayerColor(
+      customStyle.backgroundColor,
+      getBlendLayerColor(customStyle.color, "hover")
+    )
+
+    const activeLayerColor = getBlendedLayerColor(
+      customStyle.backgroundColor,
+      getBlendLayerColor(customStyle.color, "pressed")
+    )
+
+    return assignInlineVars({
+      [customBackgroundColor]: customStyle.backgroundColor,
+      [customFontColor]: customStyle.color,
+      [customFillColor]: customStyle.fill || "",
+      [customBorderColor]: customStyle.borderColor || "",
+      [customBorderWidth]: customStyle.borderWidth || "",
+      [customBorderStyle]: customStyle.borderStyle || "",
+      [customCountBackgroundColor]: customStyle.countBackgroundColor || "",
+      [customCountColor]: customStyle.countColor || "",
+      [hoverBackgroundColor]: hoverLayerColor,
+      [activeBackgroundColor]: activeLayerColor,
+    })
+  } else if (color === "custom" && !!!customStyle) {
+    if (!isProduction) {
+      console.error(
+        "color가 custom type인 경우에는 customStyle prop이 필요합니다."
+      )
+    }
+    return {}
+  } else {
+    const backgroundColorCss = buttonColors[color].backgroundColor
+    const labelColorCss = buttonColors[color].color
+
+    const hoverLayerColor = getBlendedLayerColor(
       backgroundColorCss,
       getBlendLayerColor(labelColorCss, "hover")
-    ),
-    [activeBackgroundColor]: getBlendedLayerColor(
+    )
+
+    const activeLayerColor = getBlendedLayerColor(
       backgroundColorCss,
       getBlendLayerColor(labelColorCss, "pressed")
-    ),
+    )
+
+    return assignInlineVars({
+      [hoverBackgroundColor]: hoverLayerColor,
+      [activeBackgroundColor]: activeLayerColor,
+    })
   }
 }

@@ -3,6 +3,7 @@ import { style } from "@vanilla-extract/css"
 import { recipe } from "@vanilla-extract/recipes"
 import { get_RGBA_WithOpacity } from "../../stateLayers"
 import { getDefaultTransitionStyle } from "../../transitionStyles.css"
+import { customStyles } from "../commonStyle.css"
 
 const { color, state } = tokens.sys
 
@@ -55,6 +56,10 @@ export const badgeInContainerButtonStyle = recipe({
       "negative-secondary": {
         backgroundColor: color.error.contents.value,
         color: color.error.container.value,
+      },
+      custom: {
+        backgroundColor: customStyles.customCountBackgroundColor,
+        color: customStyles.customCountColor,
       },
     },
     disabled: {
