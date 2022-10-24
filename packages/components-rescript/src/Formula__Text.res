@@ -61,7 +61,7 @@ module TextVariant = {
     ~tag: string=?,
     ~container: React.componentLike<textComponentProps<{..}>, React.element>=?,
     ~children: React.element,
-  ) => React.element = "Text"
+  ) => React.element = "TextVariant"
 }
 
 module Body = {
