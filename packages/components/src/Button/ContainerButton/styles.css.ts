@@ -56,6 +56,7 @@ export const badgeInContainerButtonStyle = recipe({
         backgroundColor: color.error.contents.value,
         color: color.error.container.value,
       },
+      custom: {},
     },
     disabled: {
       true: {

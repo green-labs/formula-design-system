@@ -4,7 +4,29 @@ import ContainerButton from "./ContainerButton"
 import * as IconComponents from "../../Icon/generated"
 
 export const Button: ComponentStory<typeof ContainerButton> = (args) => {
-  return <ContainerButton {...args} />
+  return (
+    <div style={{ display: "flex" }}>
+      <ContainerButton
+        {...args}
+        customStyle={{ backgroundColor: "#f0f052", color: "white" }}
+        style={{ border: "1px solid black" }}
+      >
+        <span style={{ display: "flex" }}>
+          <span>아니이렇게쓸거asdfasdfasdfasdfasdf면 그냥 칠드런asdf</span>
+
+          <span
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <IconComponents.ArrowDownLineThin />
+          </span>
+        </span>
+      </ContainerButton>
+    </div>
+  )
 }
 
 const Buttons = Button.bind({})
@@ -24,10 +46,11 @@ export default {
       options: ["xs", "sm", "md", "lg", "xl"],
     },
     color: {
-      defaultValue: "primary",
+      defaultValue: undefined,
       control: {
         type: "radio",
         options: [
+          "custom",
           "primary",
           "secondary-gray",
           "secondary-color",
@@ -39,7 +62,7 @@ export default {
       },
     },
     disabled: {
-      defaultValue: true,
+      defaultValue: false,
       control: "boolean",
       description: "버튼을 비활성화합니다.",
     },

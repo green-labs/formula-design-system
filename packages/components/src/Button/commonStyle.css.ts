@@ -54,8 +54,16 @@ const buttonSizes = {
   },
 } as const
 
-// todo - compoundVariants의 사용시 장단점 비교 후 적용필요
-const buttonBorderLineStyle = { borderStyle: "solid", borderWidth: 1 }
+// ---------- Dynamic Styles ----------
+export const dynamicStyles = {
+  customBackgroundColor: createVar(),
+  customFontColor: createVar(),
+  customFillColor: createVar(),
+  customBorderColor: createVar(),
+  hoverBackgroundColor: createVar(),
+  activeBackgroundColor: createVar(),
+}
+
 export const buttonColors = {
   primary: {
     backgroundColor: color.primary.container.value,
@@ -65,13 +73,15 @@ export const buttonColors = {
     backgroundColor: color["neutral-primary"].container.value,
     borderColor: color.primary.container.value,
     color: color.primary.contents.value,
-    ...buttonBorderLineStyle,
+    borderStyle: "solid",
+    borderWidth: 1,
   },
   "secondary-gray": {
     backgroundColor: color["neutral-primary"].container.value,
     borderColor: color.outline.value,
     color: color["neutral-primary"].contents.value,
-    ...buttonBorderLineStyle,
+    borderStyle: "solid",
+    borderWidth: 1,
   },
   "tertiary-color": {
     backgroundColor: color.secondary.container.value,
@@ -89,15 +99,11 @@ export const buttonColors = {
     backgroundColor: color.error.container.value,
     color: color.error.contents.value,
   },
+  custom: {
+    backgroundColor: dynamicStyles.customBackgroundColor,
+    color: dynamicStyles.customFontColor,
+  },
 } as const
-
-// ---------- Dynamic Styles ----------
-export const dynamicStyles = {
-  // customBackgroundColor: createVar(),
-  // customFontColor: createVar(),
-  hoverBackgroundColor: createVar(),
-  activeBackgroundColor: createVar(),
-}
 
 // Icon Recipe
 export const iconInContainerButtonStyle = recipe({
@@ -111,6 +117,7 @@ export const iconInContainerButtonStyle = recipe({
       "tertiary-gray": { fill: color["neutral-primary"].contents.value },
       "negative-primary": { fill: color.primary["container-contents"].value },
       "negative-secondary": { fill: color.error.contents.value },
+      custom: {},
     },
     disabled: {
       true: {

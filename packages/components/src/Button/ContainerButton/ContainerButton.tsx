@@ -1,14 +1,12 @@
 import React from "react"
 import { assignInlineVars } from "@vanilla-extract/dynamic"
 import NotificationCountBadge from "../../NotificationBadge/NotificationCountBadge"
-import {
-  getIconSize,
-  getButtonStyleFromVariant,
-  getNotificationCountBadgeSize,
-} from "../utils"
+import { getIconSize, getNotificationCountBadgeSize } from "../utils"
 import type { ContainerButtonProps } from "./types"
 import {
+  buttonColors,
   containerButtonStyle,
+  dynamicStyles,
   flexCenterContainer,
   iconInContainerButtonStyle,
 } from "../commonStyle.css"
@@ -17,6 +15,7 @@ import {
   buttonTextContainerStyle,
   badgeInContainerButtonStyle,
 } from "./styles.css"
+import { getBlendedLayerColor, getBlendLayerColor } from "../../stateLayers"
 
 // 🛑 todo - support custom color(backgroundColor, textColor)
 // 커스텀 인터페이스 프롭 object를 따로 구성해서 내부적으로 dynamic하게 조절해야함
@@ -35,16 +34,60 @@ const ContainerButton = ({
   props,
   children,
   disabled,
+  customStyle,
   ...restProps
 }: React.PropsWithChildren<ContainerButtonProps>) => {
+  const {
+    hoverBackgroundColor,
+    activeBackgroundColor,
+    customBackgroundColor,
+    customFontColor,
+  } = dynamicStyles
+
   const iconSizePx = getIconSize(size)
   const notificationCountBadgeSize = getNotificationCountBadgeSize(size)
-  const variantStyles = assignInlineVars(getButtonStyleFromVariant(color))
+  const hoverStyle =
+    color !== "custom"
+      ? assignInlineVars({
+          [hoverBackgroundColor]: getBlendedLayerColor(
+            buttonColors[color].backgroundColor,
+            getBlendLayerColor(buttonColors[color].color, "hover")
+          ),
+        })
+      : !!customStyle
+      ? assignInlineVars({
+          [customBackgroundColor]: customStyle.backgroundColor,
+          [customFontColor]: customStyle.color,
+          [hoverBackgroundColor]: getBlendedLayerColor(
+            customStyle.backgroundColor,
+            getBlendLayerColor(customStyle.color, "hover")
+          ),
+        })
+      : {}
+
+  const activeStyle =
+    color !== "custom"
+      ? assignInlineVars({
+          [activeBackgroundColor]: getBlendedLayerColor(
+            buttonColors[color].backgroundColor,
+            getBlendLayerColor(buttonColors[color].color, "pressed")
+          ),
+        })
+      : !!customStyle
+      ? assignInlineVars({
+          [customBackgroundColor]: customStyle.backgroundColor,
+          [customFontColor]: customStyle.color,
+          [activeBackgroundColor]: getBlendedLayerColor(
+            customStyle.backgroundColor,
+            getBlendLayerColor(customStyle.color, "pressed")
+          ),
+        })
+      : {}
 
   return (
     <button
       className={`${containerButtonStyle({ size, color })} ${className ?? ""}`}
-      style={{ ...variantStyles, ...style }}
+      style={{ ...hoverStyle, ...activeStyle, ...style }}
       disabled={disabled}
       {...props}
       {...restProps}
@@ -59,7 +102,10 @@ const ContainerButton = ({
       )}
 
       <span className={`${buttonTextContainerStyle}`}>
-        <span className={buttonTextStyle}>{text}</span>
+        <span className={buttonTextStyle}>
+          {text}
+          {children}
+        </span>
         {typeof count === "number" && (
           <NotificationCountBadge
             container="span"
@@ -68,7 +114,6 @@ const ContainerButton = ({
             text={count}
           />
         )}
-        {children}
       </span>
       {!!rightIcon && (
         <div className={`${flexCenterContainer}`}>
