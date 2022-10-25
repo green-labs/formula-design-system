@@ -28,7 +28,7 @@ type buttonCustomColorType = "custom"
 export type buttonColorProps =
   | {
       color: buttonColorTypes
-      customStyle: never
+      customStyle?: never
     }
   | {
       color: buttonCustomColorType
@@ -40,5 +40,5 @@ export type buttonSize = "xs" | "sm" | "md" | "lg" | "xl"
 export type ButtonBaseProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
   buttonColorProps & {
     size: buttonSize
-    props: {}
+    props?: {}
   }
