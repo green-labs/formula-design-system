@@ -75,193 +75,193 @@
       "type": "color"
     }
   },
-  "headline/sm/regular": {
+  "Headline/Sm Regular": {
     "value": {
       "fontFamily": "Pretendard",
-      "lineHeight": "1.4",
-      "letterSpacing": "-0.02em",
+      "lineHeight": "140%",
+      "letterSpacing": "-2%",
       "fontWeight": "400",
-      "fontSize": "1.188rem"
+      "fontSize": 19
     },
     "type": "typography"
   },
-  "headline/sm/bold": {
+  "Headline/Sm Bold": {
     "value": {
       "fontFamily": "Pretendard",
-      "lineHeight": "1.4",
-      "letterSpacing": "-0.02em",
+      "lineHeight": "140%",
+      "letterSpacing": "-2%",
       "fontWeight": "700",
-      "fontSize": "1.188rem"
+      "fontSize": 19
     },
     "type": "typography"
   },
-  "headline/md/bold": {
+  "Headline/Md Bold": {
     "value": {
       "fontFamily": "Pretendard",
-      "lineHeight": "1.4",
-      "letterSpacing": "-0.02em",
+      "lineHeight": "140%",
+      "letterSpacing": "-2%",
       "fontWeight": "700",
-      "fontSize": "1.375rem"
+      "fontSize": 22
     },
     "type": "typography"
   },
-  "headline/lg/bold": {
+  "Headline/Lg Bold": {
     "value": {
       "fontFamily": "Pretendard",
-      "lineHeight": "1.4",
-      "letterSpacing": "-0.02em",
+      "lineHeight": "140%",
+      "letterSpacing": "-2%",
       "fontWeight": "700",
-      "fontSize": "1.5rem"
+      "fontSize": 24
     },
     "type": "typography"
   },
-  "headline/xl/bold": {
+  "Headline/Xl Bold": {
     "value": {
       "fontFamily": "Pretendard",
-      "lineHeight": "1.4",
-      "letterSpacing": "-0.02em",
+      "lineHeight": "140%",
+      "letterSpacing": "-2%",
       "fontWeight": "700",
-      "fontSize": "2rem"
+      "fontSize": 32
     },
     "type": "typography"
   },
-  "body/sm/regular": {
+  "Body/Sm Regular": {
     "value": {
       "fontFamily": "Pretendard",
-      "lineHeight": "1.5",
-      "letterSpacing": "-0.02em",
+      "lineHeight": "150%",
+      "letterSpacing": "-2%",
       "fontWeight": "400",
-      "fontSize": "0.9375rem"
+      "fontSize": 15
     },
     "type": "typography"
   },
-  "body/sm/medium": {
+  "Body/Sm Medium": {
     "value": {
       "fontFamily": "Pretendard",
-      "lineHeight": "1.5",
-      "letterSpacing": "-0.02em",
+      "lineHeight": "150%",
+      "letterSpacing": "-2%",
       "fontWeight": "500",
-      "fontSize": "0.9375rem"
+      "fontSize": 15
     },
     "type": "typography"
   },
-  "body/sm/bold": {
+  "Body/Sm Bold": {
     "value": {
       "fontFamily": "Pretendard",
-      "lineHeight": "1.5",
-      "letterSpacing": "-0.02em",
+      "lineHeight": "150%",
+      "letterSpacing": "-2%",
       "fontWeight": "700",
-      "fontSize": "0.9375rem"
+      "fontSize": 15
     },
     "type": "typography"
   },
-  "body/md/regular": {
+  "Body/Md Regular": {
     "value": {
       "fontFamily": "Pretendard",
-      "lineHeight": "1.5",
-      "letterSpacing": "-0.02em",
+      "lineHeight": "150%",
+      "letterSpacing": "-2%",
       "fontWeight": "400",
-      "fontSize": "1.063rem"
+      "fontSize": 17
     },
     "type": "typography"
   },
-  "body/md/medium": {
+  "Body/Md Medium": {
     "value": {
       "fontFamily": "Pretendard",
-      "lineHeight": "1.5",
-      "letterSpacing": "-0.02em",
+      "lineHeight": "150%",
+      "letterSpacing": "-2%",
       "fontWeight": "500",
-      "fontSize": "1.063rem"
+      "fontSize": 17
     },
     "type": "typography"
   },
-  "body/md/bold": {
+  "Body/Md Bold": {
     "value": {
       "fontFamily": "Pretendard",
-      "lineHeight": "1.5",
-      "letterSpacing": "-0.02em",
+      "lineHeight": "150%",
+      "letterSpacing": "-2%",
       "fontWeight": "700",
-      "fontSize": "1.063rem"
+      "fontSize": 17
     },
     "type": "typography"
   },
-  "body/lg/regular": {
+  "Body/Lg Regular": {
     "value": {
       "fontFamily": "Pretendard",
-      "lineHeight": "1.5",
-      "letterSpacing": "-0.02em",
+      "lineHeight": "150%",
+      "letterSpacing": "-2%",
       "fontWeight": "400",
-      "fontSize": "1.188rem"
+      "fontSize": 19
     },
     "type": "typography"
   },
-  "body/lg/medium": {
+  "Body/Lg Medium": {
     "value": {
       "fontFamily": "Pretendard",
-      "lineHeight": "1.5",
-      "letterSpacing": "-0.02em",
+      "lineHeight": "150%",
+      "letterSpacing": "-2%",
       "fontWeight": "500",
-      "fontSize": "1.188rem"
+      "fontSize": 19
     },
     "type": "typography"
   },
-  "body/lg/bold": {
+  "Body/Lg Bold": {
     "value": {
       "fontFamily": "Pretendard",
-      "lineHeight": "1.5",
-      "letterSpacing": "-0.02em",
+      "lineHeight": "150%",
+      "letterSpacing": "-2%",
       "fontWeight": "700",
-      "fontSize": "1.188rem"
+      "fontSize": 19
     },
     "type": "typography"
   },
-  "body/xl/regular": {
+  "Body/Xl Regular": {
     "value": {
       "fontFamily": "Pretendard",
-      "lineHeight": "1.5",
-      "letterSpacing": "-0.02em",
+      "lineHeight": "150%",
+      "letterSpacing": "-2%",
       "fontWeight": "400",
-      "fontSize": "1.375rem"
+      "fontSize": 22
     },
     "type": "typography"
   },
-  "body/xl/bold": {
+  "Body/Xl Bold": {
     "value": {
       "fontFamily": "Pretendard",
-      "lineHeight": "1.5",
-      "letterSpacing": "-0.02em",
+      "lineHeight": "150%",
+      "letterSpacing": "-2%",
       "fontWeight": "700",
-      "fontSize": "1.375rem"
+      "fontSize": 22
     },
     "type": "typography"
   },
-  "caption/xs/regular": {
+  "Caption/Xs Regular": {
     "value": {
       "fontFamily": "Pretendard",
-      "lineHeight": "1.4",
-      "letterSpacing": "-0.02em",
+      "lineHeight": "140%",
+      "letterSpacing": "-2%",
       "fontWeight": "400",
-      "fontSize": "0.813rem"
+      "fontSize": 13
     },
     "type": "typography"
   },
-  "caption/xs/medium": {
+  "Caption/Xs Medium": {
     "value": {
       "fontFamily": "Pretendard",
-      "lineHeight": "1.5",
-      "letterSpacing": "-0.02em",
+      "lineHeight": "150%",
+      "letterSpacing": "-2%",
       "fontWeight": "500",
-      "fontSize": "0.813rem"
+      "fontSize": 13
     },
     "type": "typography"
   },
-  "caption/xs/bold": {
+  "Caption/Xs Bold": {
     "value": {
       "fontFamily": "Pretendard",
-      "lineHeight": "1.5",
-      "letterSpacing": "-0.02em",
+      "lineHeight": "150%",
+      "letterSpacing": "-2%",
       "fontWeight": "700",
-      "fontSize": "0.813rem"
+      "fontSize": 13
     },
     "type": "typography"
   }
