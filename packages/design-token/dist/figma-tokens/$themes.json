@@ -169,7 +169,26 @@
       "container.error": "S:6e8375f14904003485ab82e5f5c6ea8c3237b311,",
       "container.divider": "S:7b8ffad66744e41debe73424762f65a557a15ad2,",
       "container.outline": "S:53c8dad3e4c70f80659a576cd27c0a7697aafa5f,",
-      "container.background": "S:02f38935a245a273fc77eab0c990b3b1c8aa0c1f,"
+      "container.background": "S:02f38935a245a273fc77eab0c990b3b1c8aa0c1f,",
+      "Headline/Sm Regular": "S:b9f5569f6643c455e255c337d664ffa404e3019d,",
+      "Headline/Sm Bold": "S:4e777181ae1cd7597bb09b15ea57bbbaf8262674,",
+      "Headline/Md Bold": "S:23cf7e6cb40edd837c1fceb64bd82f08c9c33388,",
+      "Headline/Lg Bold": "S:aef8f6f2462e55e754e99bbf73b3869dfd86803b,",
+      "Headline/Xl Bold": "S:d238335378d7fe11794f90105268199e86b7ad7a,",
+      "Body/Sm Regular": "S:5a7684e227b598efcb20b6d8a7fd736eb426dd3d,",
+      "Body/Sm Medium": "S:aa960b0a76c74e3026da993ac338e7559a9ac477,",
+      "Body/Sm Bold": "S:d496223e34e9a8d9838953a2a668dd7b8aff0e89,",
+      "Body/Md Regular": "S:ba95f53ab98baba71388ee800518c8cf09cd43cf,",
+      "Body/Md Medium": "S:4ebecbdfb23c976165097f331bf37379d69d2f2e,",
+      "Body/Md Bold": "S:983313801666a2ed307a8611ff1733a4d3ac08ab,",
+      "Body/Lg Regular": "S:d0d0e76fd3fe5d9a4805202b79b1d16aff65e62c,",
+      "Body/Lg Medium": "S:24b6569ef5503852a25a1b83d3c6f47cf3776daf,",
+      "Body/Lg Bold": "S:384b3eca6237d36da752f7fc0ea2cf30a1084ecf,",
+      "Body/Xl Regular": "S:2aeed1a9d63a3fbaeb1365b31ca974a0bc38d056,",
+      "Body/Xl Bold": "S:44f6689b2fd1898a818adda6a458ed979ea76efd,",
+      "Caption/Xs Regular": "S:5b66ed17b925d6114413c8e535dfb9b914f10685,",
+      "Caption/Xs Medium": "S:cd36871956a1ae873c1ed21d6fb9cd76bc30fb5a,",
+      "Caption/Xs Bold": "S:fab07e04f6ce7d6713bd5d04280105b57bc784fe,"
     }
   }
 ]
