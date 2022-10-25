@@ -125,3 +125,25 @@ export const textFieldSizeVariants = styleVariants({
     },
   ],
 })
+
+const fillCommon = style({ borderWidth: 0 })
+const lineCommon = style({
+  borderRadius: 0,
+  borderWidth: 0,
+  borderBottomWidth: 1,
+})
+
+export const textFieldVariants = styleVariants({
+  "outline.large": [textFieldSizeVariants.large],
+  "outline.medium": [textFieldSizeVariants.medium],
+  "outline.small": [textFieldSizeVariants.small],
+  "outline.xsmall": [textFieldSizeVariants.xsmall],
+  "fill.large": [textFieldSizeVariants.large, fillCommon],
+  "fill.medium": [textFieldSizeVariants.medium, fillCommon],
+  "fill.small": [textFieldSizeVariants.small, fillCommon],
+  "fill.xsmall": [textFieldSizeVariants.xsmall, fillCommon],
+  "line.large": [textFieldSizeVariants.large, lineCommon],
+  "line.medium": [textFieldSizeVariants.medium, lineCommon],
+  "line.small": [textFieldSizeVariants.small, lineCommon],
+  "line.xsmall": [textFieldSizeVariants.xsmall, lineCommon],
+})

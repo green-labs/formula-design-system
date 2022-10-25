@@ -3,6 +3,7 @@ import { assignInlineVars } from "@vanilla-extract/dynamic"
 import { TextVariant } from "../Text/Text"
 import {
   textFieldSizeVariants,
+  textFieldVariants,
   inputStyle,
   prefixIconStyle,
   suffixIconStyle,
@@ -54,17 +55,16 @@ TextFieldProps) => {
     console.error(`You have used non-exist variant key ${size}.`)
   }
 
-  const variantClass = textFieldSizeVariants[size] ?? ""
+  const variantClass = textFieldVariants[`${variant}.${size}`] ?? ""
 
   let inlineVars
-  switch (variant) {
-    case "fill":
-      inlineVars = assignInlineVars({
-        [backgroundColor]: colorMap["neutral-secondary-container"],
-      })
-      break
+  if (variant === "fill") {
+    inlineVars = assignInlineVars({
+      [backgroundColor]: colorMap["neutral-secondary-container"],
+    })
   }
 
+  // TODO: refactor
   const titleVariantKey = size !== "xsmall" ? "body-md-bold" : "body-sm-bold"
   const hintVariantKey =
     size === "large" || size === "medium"
@@ -83,17 +83,7 @@ TextFieldProps) => {
         <input
           type={type}
           placeholder={placeholder}
-          className={`
-          ${inputStyle}
-          ${
-            /*
-            align
-              ? sprinkles({
-                  textAlign: align,
-                })
-              : ""
-              */ ""
-          }`}
+          className={inputStyle}
           {...props}
         />
         {/* TODO: put clear button here */}
