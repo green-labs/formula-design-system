@@ -1,6 +1,8 @@
 const { readFileSync } = require("fs")
 const { resolve } = require("path")
 const get = require("lodash.get")
+const capitalize = require("lodash.capitalize")
+const { convertTypographyNumberToFigma } = require("./figma-utils")
 
 const themeDataPath = resolve("formats/data/$themes.json")
 
@@ -119,8 +121,13 @@ const groupByTypography = (sysFontDict) => {
       converted[newKey] = attribute[oldKey].value
     }
 
-    const newPath = path.replace(new RegExp("\\.", "g"), "/")
+    converted.fontSize = convertTypographyNumberToFigma(converted.fontSize) | 0 // {x}rem -> 15
+    converted.lineHeight = `${parseFloat(converted.lineHeight) * 100}%` // 1.5 -> 150%
+    converted.letterSpacing = `${parseFloat(converted.letterSpacing) * 100}%` // -0.02em -> -2%
+
+    const newPath = path.split(".").map(capitalize).join(" ").replace(" ", "/") // Headline/Sm Regular
     ret[newPath] = { value: converted, type: "typography" }
+
     return ret
   }, {})
 }
