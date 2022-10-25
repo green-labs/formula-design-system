@@ -144,16 +144,31 @@ export const commonButtonStyle = recipe({
       "color",
     ]),
     {
-      display: "flex",
+      position: "relative",
+      display: "inline-flex",
       alignItems: "center",
       justifyContent: "center",
+      textAlign: "center",
+      verticalAlign: "middle",
       boxSizing: "border-box",
+      whiteSpace: "nowrap",
+      userSelect: "none",
+      WebkitUserSelect: "none",
+      MozUserSelect: "none",
+      msUserSelect: "none",
+      textDecoration: "none",
       paddingLeft: 12,
       paddingRight: 12,
       cursor: "pointer",
       border: "none",
       margin: 0,
       overflow: "visible",
+      outline: "none",
+
+      appearance: "none",
+      MozAppearance: "none",
+      WebkitAppearance: "none",
+      WebkitTapHighlightColor: "rgba(0,0,0,0)",
 
       selectors: {
         "&:disabled": {
@@ -181,5 +196,9 @@ export const commonButtonStyle = recipe({
     },
   ],
 
-  variants: { color: buttonColors, size: buttonSizes },
+  variants: {
+    color: buttonColors,
+    size: buttonSizes,
+    block: { true: { display: "flex", width: "100%" } },
+  },
 })

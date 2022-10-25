@@ -36,6 +36,7 @@ const ContainerButton = React.forwardRef<
       children,
       disabled,
       customStyle,
+      block,
       ...restProps
     },
     ref
@@ -47,7 +48,10 @@ const ContainerButton = React.forwardRef<
 
     return (
       <button
-        className={`${commonButtonStyle({ size, color })} ${className ?? ""}`}
+        className={`
+          ${commonButtonStyle({ size, color, block })}
+          ${className ?? ""}
+        `}
         style={{ ...dynamicStyle, ...style }}
         disabled={disabled}
         ref={ref}

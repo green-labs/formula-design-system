@@ -13,6 +13,10 @@ export default {
   title: "Example/Buttons/ContainerButton",
   component: Buttons,
   argTypes: {
+    block: {
+      defaultValue: "false",
+      control: "boolean",
+    },
     disabled: {
       defaultValue: false,
       control: "boolean",

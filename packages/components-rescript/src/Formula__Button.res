@@ -39,6 +39,7 @@ external make: (
   ~className: string=?,
   ~style: ReactDOMStyle.t=?,
   ~children: React.element=?,
+  ~block: bool=?,
   ~props: {..}=?,
 ) => React.element = "ContainerButton"
 
@@ -55,5 +56,6 @@ external make: (
   ~customStyle: buttonCustomStyleProps=?,
   ~className: string=?,
   ~style: ReactDOMStyle.t=?,
+  ~block: bool=?,
   ~props: {..}=?,
 ) => React.element = "IconButton"
