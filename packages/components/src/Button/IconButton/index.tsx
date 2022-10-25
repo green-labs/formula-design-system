@@ -1,11 +1,12 @@
 import React from "react"
 import { getCustomStyle, getIconSize, getStateStyle } from "../utils"
 import {
-  containerButtonStyle,
+  commonButtonStyle,
   flexCenterContainer,
   iconInContainerButtonStyle,
 } from "../commonStyle.css"
 import type { IconButtonProps } from "./types"
+import { sizeVariants } from "./styles.css"
 
 const IconButton = React.forwardRef<
   HTMLButtonElement,
@@ -31,9 +32,11 @@ const IconButton = React.forwardRef<
 
     return (
       <button
-        className={`${containerButtonStyle({ size, color })} ${
-          className ?? ""
-        }`}
+        className={`
+          ${commonButtonStyle({ size, color })}
+          ${sizeVariants[size]}
+          ${className ?? ""}
+        `}
         style={{ ...dynamicStyle, ...style }}
         disabled={disabled}
         ref={ref}

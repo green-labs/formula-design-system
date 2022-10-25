@@ -8,7 +8,7 @@ import {
   getNotificationCountBadgeSize,
 } from "../utils"
 import {
-  containerButtonStyle,
+  commonButtonStyle,
   flexCenterContainer,
   iconInContainerButtonStyle,
 } from "../commonStyle.css"
@@ -47,9 +47,7 @@ const ContainerButton = React.forwardRef<
 
     return (
       <button
-        className={`${containerButtonStyle({ size, color })} ${
-          className ?? ""
-        }`}
+        className={`${commonButtonStyle({ size, color })} ${className ?? ""}`}
         style={{ ...dynamicStyle, ...style }}
         disabled={disabled}
         ref={ref}

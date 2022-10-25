@@ -25,31 +25,26 @@ const buttonSizes = {
   xs: {
     borderRadius: 6,
     height: 32,
-    minWidth: 32,
     ...extract(font.body.sm.regular, fontSizeKeyMaps),
   },
   sm: {
     borderRadius: 8,
     height: 40,
-    minWidth: 40,
     ...extract(font.body.sm.regular, fontSizeKeyMaps),
   },
   md: {
     borderRadius: 10,
     height: 48,
-    minWidth: 48,
     ...extract(font.body.md.regular, fontSizeKeyMaps),
   },
   lg: {
     borderRadius: 12,
     height: 56,
-    minWidth: 56,
     ...extract(font.body.lg.bold, fontSizeKeyMaps),
   },
   xl: {
     borderRadius: 12,
     height: 64,
-    minWidth: 64,
     ...extract(font.body.xl.bold, fontSizeKeyMaps),
   },
 } as const
@@ -139,8 +134,7 @@ export const iconInContainerButtonStyle = recipe({
   },
 })
 
-// Container Button Recipe
-export const containerButtonStyle = recipe({
+export const commonButtonStyle = recipe({
   base: [
     getDefaultTransitionStyle([
       "border-width",
