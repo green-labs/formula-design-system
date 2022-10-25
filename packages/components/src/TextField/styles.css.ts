@@ -48,6 +48,7 @@ export const prefixIconStyle = style({
   width: "20px",
   height: "20px",
 })
+
 export const suffixIconStyle = style({
   display: "flex",
   alignItems: "center",
@@ -56,10 +57,13 @@ export const suffixIconStyle = style({
   justifyContent: "center",
   marginLeft: "4px",
 })
+
 export const titleStyle = style({
+  color: colorMap["gray-90"],
   paddingBottom: "8px",
   display: "block",
 })
+
 export const hintStyle = style({
   paddingTop: "4px",
   color: colorMap["neutral-secondary-contents"],

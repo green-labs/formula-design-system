@@ -1,6 +1,6 @@
 import type { ReactNode, MouseEvent, PropsWithChildren } from "react"
 import { assignInlineVars } from "@vanilla-extract/dynamic"
-import { Text } from "../Text/Text"
+import { TextVariant } from "../Text/Text"
 import {
   textFieldSizeVariants,
   inputStyle,
@@ -65,15 +65,20 @@ TextFieldProps) => {
       break
   }
 
+  const titleVariantKey = size !== "xsmall" ? "body-md-bold" : "body-sm-bold"
+  const hintVariantKey =
+    size === "large" || size === "medium"
+      ? "body-sm-regular"
+      : "caption-xs-regular"
+
   return (
-    <div style={inlineVars}>
+    <div style={inlineVars} className={className}>
       {titleText ? (
-        // FIXME: need to be changed according to size change
-        <Text.Body size="md" weight="bold" className={titleStyle}>
+        <TextVariant variantKey={titleVariantKey} className={titleStyle}>
           {titleText}
-        </Text.Body>
+        </TextVariant>
       ) : null}
-      <div className={`${variantClass} ${className}`}>
+      <div className={variantClass}>
         {prefix ? <div className={prefixIconStyle}>{prefix}</div> : null}
         <input
           type={type}
@@ -99,10 +104,9 @@ TextFieldProps) => {
         ) : null}
       </div>
       {hintText ? (
-        // FIXME: need to be changed according to size change
-        <Text.Caption weight="bold" className={hintStyle}>
+        <TextVariant variantKey={hintVariantKey} className={hintStyle}>
           {hintText}
-        </Text.Caption>
+        </TextVariant>
       ) : null}
     </div>
   )
