@@ -107,12 +107,15 @@ const groupByTypography = (sysFontDict) => {
     "font-size": "fontSize",
   }
 
-  return paths.reduce((ret, path) => {
-    const attribute = get(sysFontDict, path)
+  return paths.reduce((ret, pathStr) => {
+    const attribute = get(sysFontDict, pathStr)
+    const [categoryPath, sizePath, weightPath] = pathStr
+      .split(".")
+      .map(capitalize)
 
     if (!attribute) {
       throw new Error(
-        "groupByTypography(): unable to resolve attribute path - " + path
+        "groupByTypography(): unable to resolve attribute path - " + pathStr
       )
     }
     const converted = {}
@@ -125,8 +128,11 @@ const groupByTypography = (sysFontDict) => {
     converted.lineHeight = `${parseFloat(converted.lineHeight) * 100}%` // 1.5 -> 150%
     converted.letterSpacing = `${parseFloat(converted.letterSpacing) * 100}%` // -0.02em -> -2%
 
-    const newPath = path.split(".").map(capitalize).join(" ").replace(" ", "/") // Headline/Sm Regular
-    ret[newPath] = { value: converted, type: "typography" }
+    const newPath = `${categoryPath}/${sizePath} ${weightPath}` // Headline/Sm Regular
+    if (!ret[categoryPath]) {
+      ret[categoryPath] = {}
+    }
+    ret[categoryPath][newPath] = { value: converted, type: "typography" }
 
     return ret
   }, {})
