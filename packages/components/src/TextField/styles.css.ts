@@ -82,7 +82,6 @@ export const textFieldSizeVariants = styleVariants({
       paddingLeft: "16px",
       paddingRight: "8px",
       height: "56px",
-      borderRadius: "12px", // FIXME: ref.radius.xsmall
     },
   ],
   medium: [
@@ -95,7 +94,6 @@ export const textFieldSizeVariants = styleVariants({
       paddingLeft: "12px",
       paddingRight: "4px",
       height: "48px",
-      borderRadius: "10px", // FIXME: ref.radius.xsmall
     },
   ],
   small: [
@@ -108,7 +106,6 @@ export const textFieldSizeVariants = styleVariants({
       paddingLeft: "12px",
       paddingRight: "6px",
       height: "40px",
-      borderRadius: "8px", // FIXME: ref.radius.xsmall
     },
   ],
   xsmall: [
@@ -121,29 +118,43 @@ export const textFieldSizeVariants = styleVariants({
       paddingLeft: "8px",
       paddingRight: "2px",
       height: "32px",
-      borderRadius: "6px", // FIXME: ref.radius.xsmall
     },
   ],
 })
 
-const fillCommon = style({ borderWidth: 0 })
+const fillCommon = style({ borderWidth: 0, borderRadius: "8px" })
 const lineCommon = style({
   borderRadius: 0,
   borderWidth: 0,
   borderBottomWidth: 1,
+  ":focus-within": {
+    borderBottomWidth: 2,
+  },
 })
 
 export const textFieldVariants = styleVariants({
-  "outline.large": [textFieldSizeVariants.large],
-  "outline.medium": [textFieldSizeVariants.medium],
-  "outline.small": [textFieldSizeVariants.small],
-  "outline.xsmall": [textFieldSizeVariants.xsmall],
+  "outline.large": [
+    textFieldSizeVariants.large,
+    { borderRadius: "12px" /* FIXME: ref.radius.xsmall*/ },
+  ],
+  "outline.medium": [
+    textFieldSizeVariants.medium,
+    { borderRadius: "10px" /* FIXME: ref.radius.xsmall*/ },
+  ],
+  "outline.small": [
+    textFieldSizeVariants.small,
+    { borderRadius: "8px" /* FIXME: ref.radius.xsmall*/ },
+  ],
+  "outline.xsmall": [
+    textFieldSizeVariants.xsmall,
+    { borderRadius: "6px" /* FIXME: ref.radius.xsmall*/ },
+  ],
   "fill.large": [textFieldSizeVariants.large, fillCommon],
   "fill.medium": [textFieldSizeVariants.medium, fillCommon],
   "fill.small": [textFieldSizeVariants.small, fillCommon],
   "fill.xsmall": [textFieldSizeVariants.xsmall, fillCommon],
   "line.large": [textFieldSizeVariants.large, lineCommon],
   "line.medium": [textFieldSizeVariants.medium, lineCommon],
-  "line.small": [textFieldSizeVariants.small, lineCommon],
-  "line.xsmall": [textFieldSizeVariants.xsmall, lineCommon],
+  "line.small": [textFieldSizeVariants.medium, lineCommon],
+  "line.xsmall": [textFieldSizeVariants.medium, lineCommon],
 })

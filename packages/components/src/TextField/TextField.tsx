@@ -1,8 +1,9 @@
 import type { ReactNode, MouseEvent, PropsWithChildren } from "react"
 import { assignInlineVars } from "@vanilla-extract/dynamic"
 import { TextVariant } from "../Text/Text"
+import type { variantKeyType as textVariantKey } from "../Text/Text"
+import type { textFieldSizeVariants } from "./styles.css"
 import {
-  textFieldSizeVariants,
   textFieldVariants,
   inputStyle,
   prefixIconStyle,
@@ -12,10 +13,9 @@ import {
   backgroundColor,
 } from "./styles.css"
 import { colorMap } from "@greenlabs/formula-design-token"
-// import { sprinkles } from "../sprinkles.css"
-// import type { Sprinkles } from "../sprinkles.css"
 
 type sizeVariantKey = keyof typeof textFieldSizeVariants
+type variantKey = keyof typeof textFieldVariants
 
 interface TextFieldProps extends PropsWithChildren {
   props?: {}
@@ -48,14 +48,15 @@ export const TextField = ({
 }: // state,
 // onClear,
 TextFieldProps) => {
+  const variantKey = `${variant}.${size}` as variantKey
+
   if (
     process.env.NODE_ENV !== "production" &&
-    !(size in textFieldSizeVariants)
+    !(variantKey in textFieldVariants)
   ) {
     console.error(`You have used non-exist variant key ${size}.`)
   }
-
-  const variantClass = textFieldVariants[`${variant}.${size}`] ?? ""
+  const variantClass = textFieldVariants[variantKey] ?? ""
 
   let inlineVars
   if (variant === "fill") {
@@ -65,7 +66,11 @@ TextFieldProps) => {
   }
 
   // TODO: refactor
-  const titleVariantKey = size !== "xsmall" ? "body-md-bold" : "body-sm-bold"
+  let titleVariantKey =
+    size !== "xsmall" ? "body-md-bold" : ("body-sm-bold" as textVariantKey)
+  if (variant === "line") {
+    titleVariantKey = "body-sm-medium"
+  }
   const hintVariantKey =
     size === "large" || size === "medium"
       ? "body-sm-regular"
