@@ -22,7 +22,6 @@
     "build": "style-dictionary build --config=./sd.config.js && ./after-sd-transform.sh"
   },
   "dependencies": {
-    "lodash.capitalize": "^4.2.1",
     "lodash.get": "^4.4.2"
   }
 }

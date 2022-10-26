@@ -1,7 +1,6 @@
 const { readFileSync } = require("fs")
 const { resolve } = require("path")
 const get = require("lodash.get")
-const capitalize = require("lodash.capitalize")
 const { convertTypographyNumberToFigma } = require("./figma-utils")
 
 const themeDataPath = resolve("formats/data/$themes.json")
@@ -109,9 +108,7 @@ const groupByTypography = (sysFontDict) => {
 
   return paths.reduce((ret, pathStr) => {
     const attribute = get(sysFontDict, pathStr)
-    const [categoryPath, sizePath, weightPath] = pathStr
-      .split(".")
-      .map(capitalize)
+    const [categoryPath, sizePath, weightPath] = pathStr.split(".")
 
     if (!attribute) {
       throw new Error(
@@ -128,7 +125,7 @@ const groupByTypography = (sysFontDict) => {
     converted.lineHeight = `${parseFloat(converted.lineHeight) * 100}%` // 1.5 -> 150%
     converted.letterSpacing = `${parseFloat(converted.letterSpacing) * 100}%` // -0.02em -> -2%
 
-    const newPath = `${categoryPath}/${sizePath} ${weightPath}` // Headline/Sm Regular
+    const newPath = `${sizePath}.${weightPath}` // sm.regular
     if (!ret[categoryPath]) {
       ret[categoryPath] = {}
     }

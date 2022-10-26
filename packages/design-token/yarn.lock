@@ -9,7 +9,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@greenlabs/formula-design-token@workspace:."
   dependencies:
-    lodash.capitalize: ^4.2.1
     lodash.get: ^4.4.2
     style-dictionary: ^3.7.1
   languageName: unknown
@@ -242,13 +241,6 @@ __metadata:
     graceful-fs:
       optional: true
   checksum: 7af3b8e1ac8fe7f1eccc6263c6ca14e1966fcbc74b618d3c78a0a2075579487547b94f72b7a1114e844a1e15bb00d440e5d1720bfc4612d790a6f285d5ea8354
-  languageName: node
-  linkType: hard
-
-"lodash.capitalize@npm:^4.2.1":
-  version: 4.2.1
-  resolution: "lodash.capitalize@npm:4.2.1"
-  checksum: d9195f31d48c105206f1099946d8bbc8ab71435bc1c8708296992a31a992bb901baf120fdcadd773098ac96e62a79e6b023ee7d26a2deb0d6c6aada930e6ad0a
   languageName: node
   linkType: hard
 
