@@ -1,5 +1,5 @@
 import React from "react"
-import type { ContainerButtonProps } from "./types"
+import type { AnchorButtonProps } from "./types"
 import NotificationCountBadge from "../../NotificationBadge/NotificationCountBadge"
 import {
   getCustomStyle,
@@ -18,9 +18,9 @@ import {
   badgeInContainerButtonStyle,
 } from "./styles.css"
 
-const ContainerButton = React.forwardRef<
-  HTMLButtonElement,
-  React.PropsWithChildren<ContainerButtonProps>
+const AnchorButton = React.forwardRef<
+  HTMLAnchorElement,
+  React.PropsWithChildren<AnchorButtonProps>
 >(
   (
     {
@@ -34,7 +34,6 @@ const ContainerButton = React.forwardRef<
       style,
       props,
       children,
-      disabled,
       customStyle,
       block,
       ...restProps
@@ -47,12 +46,11 @@ const ContainerButton = React.forwardRef<
       color === "custom" ? getCustomStyle(customStyle) : getStateStyle(color)
 
     return (
-      <button
+      <a
         className={`${commonButtonStyle({ size, color, block })} ${
           className ?? ""
         }`}
         style={{ ...dynamicStyle, ...style }}
-        disabled={disabled}
         ref={ref}
         {...props}
         {...restProps}
@@ -61,7 +59,7 @@ const ContainerButton = React.forwardRef<
           <div className={`${flexCenterContainer}`}>
             {React.createElement(leftIcon, {
               sizePx: iconSizePx,
-              className: `${iconInContainerButtonStyle({ color, disabled })}`,
+              className: `${iconInContainerButtonStyle({ color })}`,
             })}
           </div>
         )}
@@ -74,7 +72,7 @@ const ContainerButton = React.forwardRef<
           {typeof count === "number" && (
             <NotificationCountBadge
               container="span"
-              className={`${badgeInContainerButtonStyle({ color, disabled })}`}
+              className={`${badgeInContainerButtonStyle({ color })}`}
               size={notificationCountBadgeSize}
               text={count}
             />
@@ -84,15 +82,15 @@ const ContainerButton = React.forwardRef<
           <div className={`${flexCenterContainer}`}>
             {React.createElement(rightIcon, {
               sizePx: iconSizePx,
-              className: `${iconInContainerButtonStyle({ color, disabled })}`,
+              className: `${iconInContainerButtonStyle({ color })}`,
             })}
           </div>
         )}
-      </button>
+      </a>
     )
   }
 )
 
-ContainerButton.displayName = "ContainerButton"
+AnchorButton.displayName = "AnchorButton"
 
-export default ContainerButton
+export default AnchorButton

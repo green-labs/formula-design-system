@@ -21,9 +21,11 @@ type normal =
 
 type negative = "negative-primary" | "negative-secondary"
 
+type buttonCustomColorType = "custom"
+
 export type buttonColorTypes = normal | negative
 
-type buttonCustomColorType = "custom"
+export type buttonSize = "xs" | "sm" | "md" | "lg" | "xl"
 
 export type buttonColorProps =
   | {
@@ -35,10 +37,7 @@ export type buttonColorProps =
       customStyle: ButtonCustomStyleProps
     }
 
-export type buttonSize = "xs" | "sm" | "md" | "lg" | "xl"
-
-export type ButtonBaseProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
-  buttonColorProps & {
-    size: buttonSize
-    props?: {}
-  }
+export type ButtonCommonProps = buttonColorProps & {
+  size: buttonSize
+  props?: {}
+}

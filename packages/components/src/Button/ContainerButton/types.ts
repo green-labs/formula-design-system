@@ -1,6 +1,6 @@
 import type { FunctionComponent } from "react"
 import type { IconProps } from "../../Icon/types"
-import type { ButtonBaseProps } from "../buttonCommonTypes"
+import type { ButtonCommonProps } from "../commonTypes"
 
 interface ContainerButtonTextProps {
   text: string
@@ -19,8 +19,10 @@ interface ContainerButtonBlockProps {
   block?: boolean
 }
 
-export type ContainerButtonProps = ButtonBaseProps &
-  ContainerButtonTextProps &
-  ContainerButtonIconProps &
-  ContainerButtonCountProps &
-  ContainerButtonBlockProps
+export type ContainerButtonProps =
+  React.ButtonHTMLAttributes<HTMLButtonElement> &
+    ButtonCommonProps &
+    ContainerButtonTextProps &
+    ContainerButtonIconProps &
+    ContainerButtonCountProps &
+    ContainerButtonBlockProps

@@ -4,7 +4,7 @@ import {
   commonButtonStyle,
   flexCenterContainer,
   iconInContainerButtonStyle,
-} from "../commonStyle.css"
+} from "../commonStyles.css"
 import type { IconButtonProps } from "./types"
 import { sizeVariants } from "./styles.css"
 
@@ -32,11 +32,9 @@ const IconButton = React.forwardRef<
 
     return (
       <button
-        className={`
-          ${commonButtonStyle({ size, color })}
-          ${sizeVariants[size]}
-          ${className ?? ""}
-        `}
+        className={`${commonButtonStyle({ size, color })} ${
+          sizeVariants[size]
+        } ${className ?? ""}`}
         style={{ ...dynamicStyle, ...style }}
         disabled={disabled}
         ref={ref}

@@ -62,14 +62,5 @@ export const badgeInContainerButtonStyle = recipe({
         color: customStyles.customCountColor,
       },
     },
-    disabled: {
-      true: {
-        backgroundColor: get_RGBA_WithOpacity(
-          color["neutral-primary"].contents.value,
-          state.opacity["disabled-contents"].value
-        ),
-        color: color.inverse["container-contents"].value,
-      },
-    },
   },
 })

@@ -59,3 +59,22 @@ external make: (
   ~block: bool=?,
   ~props: {..}=?,
 ) => React.element = "IconButton"
+
+@module("@greenlabs/formula-components") @react.component
+external make: (
+  // React Synthetic Events
+  @as("type") ~type_: string=?,
+  // Formula Button Props
+  ~color: color,
+  ~size: size,
+  ~text: string,
+  ~leftIcon: React.element=?,
+  ~rightIcon: React.element=?,
+  ~count: int=?,
+  ~customStyle: buttonCustomStyleProps=?,
+  ~className: string=?,
+  ~style: ReactDOMStyle.t=?,
+  ~children: React.element=?,
+  ~block: bool=?,
+  ~props: {..}=?,
+) => React.element = "AnchorButton"

@@ -2,8 +2,8 @@ import type {
   buttonColorTypes,
   ButtonCustomStyleProps,
   buttonSize,
-} from "./buttonCommonTypes"
-import { buttonColors, customStyles, stateStyles } from "./commonStyle.css"
+} from "./commonTypes"
+import { buttonColors, customStyles, stateStyles } from "./commonStyles.css"
 import { getBlendLayerColor, getBlendedLayerColor } from "../stateLayers"
 import { assignInlineVars } from "@vanilla-extract/dynamic"
 
