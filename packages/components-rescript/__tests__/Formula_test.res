@@ -51,3 +51,48 @@ let testDivider = () => {
     <Divider className="some-className" variant=#large props={{"id": "id-of-divider"}} />
   </>
 }
+
+let testButton = () => {
+  open Formula
+  <>
+    <Button.AnchorButton
+      leftIcon={Icon.WebRegular.make}
+      count={4100}
+      block={true} // 해당 컴포넌트의 스타일이 { width "100%" , display: "flex" }로 적용됩니다.
+      color=#primary
+      size=#xl
+      text="I'm Anchor Button"
+    />
+    <Button.ContainerButton
+      color=#"negative-secondary" size=#sm text="I'm ContainerButton" block={true}
+    />
+    <Button.ContainerButton
+      leftIcon={Icon.ArrowTriangleDownLineBold.make}
+      rightIcon={Icon.VideoLineBold.make}
+      color=#"negative-secondary"
+      count={40}
+      size=#sm
+      text="I'm ContainerButton and include icon and count"
+    />
+    <Button.ContainerButton
+      leftIcon={Icon.ArrowTriangleDownLineBold.make}
+      rightIcon={Icon.VideoLineBold.make}
+      // 버튼 속성이 #custom이지만, customStyle prop이 없는 경우 런타임 에러가 발생합니다.
+      color=#custom
+      customStyle={{
+        backgroundColor: "#34e7e4",
+        color: "white",
+        countBackgroundColor: "#1e272e",
+        countColor: "white",
+        borderStyle: "solid",
+        borderColor: "#1e272e",
+        borderWidth: "3px",
+        fill: "#ef5777",
+      }}
+      count={40}
+      size=#sm
+      text="I'm CustomButton"
+    />
+    <Button.IconButton icon={Icon.ArrowRightLineBold.make} color=#"negative-secondary" size=#sm />
+  </>
+}
