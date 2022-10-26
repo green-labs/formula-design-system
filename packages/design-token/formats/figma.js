@@ -125,7 +125,7 @@ const groupByTypography = (sysFontDict) => {
     converted.lineHeight = `${parseFloat(converted.lineHeight) * 100}%` // 1.5 -> 150%
     converted.letterSpacing = `${parseFloat(converted.letterSpacing) * 100}%` // -0.02em -> -2%
 
-    const newPath = `${sizePath}.${weightPath}` // sm.regular
+    const newPath = `${sizePath}-${weightPath}` // sm-regular
     if (!ret[categoryPath]) {
       ret[categoryPath] = {}
     }

@@ -22,7 +22,7 @@
     "background": { "value": "white", "type": "color" }
   },
   "headline": {
-    "sm.regular": {
+    "sm-regular": {
       "value": {
         "fontFamily": "Pretendard",
         "lineHeight": "140%",
@@ -32,7 +32,7 @@
       },
       "type": "typography"
     },
-    "sm.bold": {
+    "sm-bold": {
       "value": {
         "fontFamily": "Pretendard",
         "lineHeight": "140%",
@@ -42,7 +42,7 @@
       },
       "type": "typography"
     },
-    "md.bold": {
+    "md-bold": {
       "value": {
         "fontFamily": "Pretendard",
         "lineHeight": "140%",
@@ -52,7 +52,7 @@
       },
       "type": "typography"
     },
-    "lg.bold": {
+    "lg-bold": {
       "value": {
         "fontFamily": "Pretendard",
         "lineHeight": "140%",
@@ -62,7 +62,7 @@
       },
       "type": "typography"
     },
-    "xl.bold": {
+    "xl-bold": {
       "value": {
         "fontFamily": "Pretendard",
         "lineHeight": "140%",
@@ -74,7 +74,7 @@
     }
   },
   "body": {
-    "sm.regular": {
+    "sm-regular": {
       "value": {
         "fontFamily": "Pretendard",
         "lineHeight": "150%",
@@ -84,7 +84,7 @@
       },
       "type": "typography"
     },
-    "sm.medium": {
+    "sm-medium": {
       "value": {
         "fontFamily": "Pretendard",
         "lineHeight": "150%",
@@ -94,7 +94,7 @@
       },
       "type": "typography"
     },
-    "sm.bold": {
+    "sm-bold": {
       "value": {
         "fontFamily": "Pretendard",
         "lineHeight": "150%",
@@ -104,7 +104,7 @@
       },
       "type": "typography"
     },
-    "md.regular": {
+    "md-regular": {
       "value": {
         "fontFamily": "Pretendard",
         "lineHeight": "150%",
@@ -114,7 +114,7 @@
       },
       "type": "typography"
     },
-    "md.medium": {
+    "md-medium": {
       "value": {
         "fontFamily": "Pretendard",
         "lineHeight": "150%",
@@ -124,7 +124,7 @@
       },
       "type": "typography"
     },
-    "md.bold": {
+    "md-bold": {
       "value": {
         "fontFamily": "Pretendard",
         "lineHeight": "150%",
@@ -134,7 +134,7 @@
       },
       "type": "typography"
     },
-    "lg.regular": {
+    "lg-regular": {
       "value": {
         "fontFamily": "Pretendard",
         "lineHeight": "150%",
@@ -144,7 +144,7 @@
       },
       "type": "typography"
     },
-    "lg.medium": {
+    "lg-medium": {
       "value": {
         "fontFamily": "Pretendard",
         "lineHeight": "150%",
@@ -154,7 +154,7 @@
       },
       "type": "typography"
     },
-    "lg.bold": {
+    "lg-bold": {
       "value": {
         "fontFamily": "Pretendard",
         "lineHeight": "150%",
@@ -164,7 +164,7 @@
       },
       "type": "typography"
     },
-    "xl.regular": {
+    "xl-regular": {
       "value": {
         "fontFamily": "Pretendard",
         "lineHeight": "150%",
@@ -174,7 +174,7 @@
       },
       "type": "typography"
     },
-    "xl.bold": {
+    "xl-bold": {
       "value": {
         "fontFamily": "Pretendard",
         "lineHeight": "150%",
@@ -186,7 +186,7 @@
     }
   },
   "caption": {
-    "xs.regular": {
+    "xs-regular": {
       "value": {
         "fontFamily": "Pretendard",
         "lineHeight": "140%",
@@ -196,7 +196,7 @@
       },
       "type": "typography"
     },
-    "xs.medium": {
+    "xs-medium": {
       "value": {
         "fontFamily": "Pretendard",
         "lineHeight": "150%",
@@ -206,7 +206,7 @@
       },
       "type": "typography"
     },
-    "xs.bold": {
+    "xs-bold": {
       "value": {
         "fontFamily": "Pretendard",
         "lineHeight": "150%",
