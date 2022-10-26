@@ -169,26 +169,7 @@
       "container.error": "S:6e8375f14904003485ab82e5f5c6ea8c3237b311,",
       "container.divider": "S:7b8ffad66744e41debe73424762f65a557a15ad2,",
       "container.outline": "S:53c8dad3e4c70f80659a576cd27c0a7697aafa5f,",
-      "container.background": "S:02f38935a245a273fc77eab0c990b3b1c8aa0c1f,",
-      "headline.sm.regular": "S:ba268e1298d825bbe31ac10a039a1aaf65ade042,",
-      "headline.sm.bold": "S:dc1f8640566eea4f3f1a10ac873ba369d81fdbdb,",
-      "headline.md.bold": "S:7e1fbfeb038dc6ef0a45be3a25d7c5f0bb395018,",
-      "headline.lg.bold": "S:cd42de8913a7a97ed7d63c410f22d720806ebafd,",
-      "headline.xl.bold": "S:e4e1633a619b9d9e308acf384dab7a4e6ee854b8,",
-      "body.sm.regular": "S:9751c9ee9c9a8f9806974b7d8982f250e22b1119,",
-      "body.sm.medium": "S:dbce2d5adde566e1eb1f848545ed34b4ece97753,",
-      "body.sm.bold": "S:f6428b3fad271fe4c096d1df0b159176abb0a110,",
-      "body.md.regular": "S:f3b0b4a12e2fbf314c7d63b25f122b9fa28a9515,",
-      "body.md.medium": "S:ae61799d390a6036460b62026f8ad86a6e567104,",
-      "body.md.bold": "S:8d7910eaba09d392b091b55b58d58a4b226835f4,",
-      "body.lg.regular": "S:46b90c344de7ac0a05aff130e5fc43ab6ea92e91,",
-      "body.lg.medium": "S:12b41c759cb4d59aac3cff0a3e719188af10623e,",
-      "body.lg.bold": "S:855a66ab86b75b10b797c556733286da1766e1b2,",
-      "body.xl.regular": "S:ccea44680d3d9ca74f85ed78592a0b888266631a,",
-      "body.xl.bold": "S:8b4c8ec2eabc017d6496ee87a60ee325397ee94f,",
-      "caption.xs.regular": "S:0b294d33e4574f4c408f550379a481289bc4220d,",
-      "caption.xs.medium": "S:ceb4925de31f626539583cd67b38852350e58a67,",
-      "caption.xs.bold": "S:f12d2374b26fcb95b2fe6943a45160ac1d6b9bd2,"
+      "container.background": "S:02f38935a245a273fc77eab0c990b3b1c8aa0c1f,"
     }
   }
 ]
