@@ -1677,7 +1677,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@greenlabs/formula-components@0.0.1-alpha.5, @greenlabs/formula-components@workspace:packages/components":
+"@greenlabs/formula-components@0.0.1-alpha.14, @greenlabs/formula-components@workspace:packages/components":
   version: 0.0.0-use.local
   resolution: "@greenlabs/formula-components@workspace:packages/components"
   dependencies:
@@ -1699,13 +1699,17 @@ __metadata:
     "@storybook/react": ^6.5.10
     "@storybook/storybook-deployer": ^2.8.12
     "@storybook/testing-library": ^0.0.13
+    "@types/chroma-js": ^2.1.4
     "@types/react": ^18.0.20
     "@vanilla-extract/css": ^1.9.0
     "@vanilla-extract/dynamic": ^2.0.2
+    "@vanilla-extract/recipes": ^0.2.5
     "@vanilla-extract/rollup-plugin": ^1.1.0
     "@vanilla-extract/sprinkles": ^1.5.0
     "@vanilla-extract/webpack-plugin": ^2.1.12
     babel-loader: ^8.2.5
+    chroma-js: ^2.4.2
+    color-blend: ^4.0.0
     concurrently: ^7.3.0
     react: ^18.0.0
     react-dom: ^18.0.0
@@ -1727,7 +1731,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@greenlabs/rescript-formula-components@workspace:packages/components-rescript"
   dependencies:
-    "@greenlabs/formula-components": 0.0.1-alpha.5
+    "@greenlabs/formula-components": 0.0.1-alpha.14
     "@rescript/react": ^0.10.3
     rescript: ^10.0.0
   peerDependencies:
@@ -3346,6 +3350,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/chroma-js@npm:^2.1.4":
+  version: 2.1.4
+  resolution: "@types/chroma-js@npm:2.1.4"
+  checksum: 24f1a1dd1c7b21548299c320bfa01e6407acb70193e567af16c28f742571fe56bb1eea0aedc41281478a175c70772a4627d5a9bf5b9cd854a7b455c38a3a5645
+  languageName: node
+  linkType: hard
+
 "@types/eslint-scope@npm:^3.7.3":
   version: 3.7.4
   resolution: "@types/eslint-scope@npm:3.7.4"
@@ -3718,6 +3729,15 @@ __metadata:
   version: 1.0.3
   resolution: "@vanilla-extract/private@npm:1.0.3"
   checksum: 866a71ba6804edeb0735684e7723ba78f5cf0bb40d4fb538fe6bf7d73928099e341312337b2a510ac0ce96ff8a4b39eb7f7a5fad0c842532353dd20e7278f29b
+  languageName: node
+  linkType: hard
+
+"@vanilla-extract/recipes@npm:^0.2.5":
+  version: 0.2.5
+  resolution: "@vanilla-extract/recipes@npm:0.2.5"
+  peerDependencies:
+    "@vanilla-extract/css": ^1.0.0
+  checksum: 474ab445f4166bded294d5f77e02ba9b10ec6effe08364c03396e2802848d904a2a1dd9b20466405ebda93449c5a634c2fe99cd1d12888b0f84accf4d2d72666
   languageName: node
   linkType: hard
 
@@ -5501,6 +5521,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chroma-js@npm:^2.4.2":
+  version: 2.4.2
+  resolution: "chroma-js@npm:2.4.2"
+  checksum: cf9884c02d406286e4370599bcd1afbf089384407df46b3a69edfedcba7bb99e8f959a5cfdbfec750b305c441c06ca40cd1f70ba3a6c2ce739ac09a92520ddae
+  languageName: node
+  linkType: hard
+
 "chrome-trace-event@npm:^1.0.2":
   version: 1.0.3
   resolution: "chrome-trace-event@npm:1.0.3"
@@ -5663,6 +5690,13 @@ __metadata:
     map-visit: ^1.0.0
     object-visit: ^1.0.0
   checksum: 15d9658fe6eb23594728346adad5433b86bb7a04fd51bbab337755158722f9313a5376ef479de5b35fbc54140764d0d39de89c339f5d25b959ed221466981da9
+  languageName: node
+  linkType: hard
+
+"color-blend@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "color-blend@npm:4.0.0"
+  checksum: 1db3045b4dcb4f751b3ec8848d34d7b8bbcc455bfeca8a4dd3413efef17cef5b5ccc740c564717913b3faa19af4dd996e94dc07e61f6eb4438744aaa8857e1ff
   languageName: node
   linkType: hard
 

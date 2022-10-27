@@ -51,3 +51,21 @@ let testDivider = () => {
     <Divider className="some-className" variant=#large props={{"id": "id-of-divider"}} />
   </>
 }
+
+let testButton = () => {
+  open Formula
+  <>
+    <Button.Container color=#primary size=#sm text="I'm ContainerButton" />
+    <Button.Container color=#"secondary-gray" size=#sm block=true text="I'm full width button" />
+    <Button.Container
+      leftIcon={Icon.ArrowTriangleDownLineBold.make}
+      rightIcon={Icon.VideoLineBold.make}
+      color=#"negative-secondary"
+      count={40}
+      size=#sm
+      text="I'm ContainerButton and include icon and count"
+    />
+    <Button.Icon icon={Icon.ArrowRightLineBold.make} color=#"negative-secondary" size=#sm />
+    <Button.Anchor color=#primary size=#xl text="I'm Anchor button" />
+  </>
+}
