@@ -1,5 +1,5 @@
 import React from "react"
-import { getCustomStyle, getIconSize, getStateStyle } from "../utils"
+import { getIconSize, getStateStyle } from "../utils"
 import {
   commonButtonStyle,
   flexCenterContainer,
@@ -13,22 +13,11 @@ const IconButton = React.forwardRef<
   React.PropsWithChildren<IconButtonProps>
 >(
   (
-    {
-      color,
-      size,
-      icon,
-      props,
-      className,
-      style,
-      disabled,
-      customStyle,
-      ...restProps
-    },
+    { color, size, icon, props, className, style, disabled, ...restProps },
     ref
   ) => {
     const iconSizePx = getIconSize(size)
-    const dynamicStyle =
-      color === "custom" ? getCustomStyle(customStyle) : getStateStyle(color)
+    const dynamicStyle = getStateStyle(color)
 
     return (
       <button

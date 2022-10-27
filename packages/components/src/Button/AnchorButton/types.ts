@@ -2,20 +2,20 @@ import type { FunctionComponent } from "react"
 import type { IconProps } from "../../Icon/types"
 import type { ButtonCommonProps } from "../commonTypes"
 
-interface AnchorButtonTextProps {
+export interface AnchorButtonTextProps {
   text: string
 }
 
-interface AnchorButtonIconProps {
+export interface AnchorButtonIconProps {
   leftIcon?: FunctionComponent<IconProps>
   rightIcon?: FunctionComponent<IconProps>
 }
 
-interface AnchorButtonCountProps {
+export interface AnchorButtonCountProps {
   count?: number
 }
 
-interface AnchorButtonBlockProps {
+export interface AnchorButtonBlockProps {
   block?: boolean
 }
 

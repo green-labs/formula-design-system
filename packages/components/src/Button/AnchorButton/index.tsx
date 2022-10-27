@@ -2,7 +2,6 @@ import React from "react"
 import type { AnchorButtonProps } from "./types"
 import NotificationCountBadge from "../../NotificationBadge/NotificationCountBadge"
 import {
-  getCustomStyle,
   getStateStyle,
   getIconSize,
   getNotificationCountBadgeSize,
@@ -34,7 +33,6 @@ const AnchorButton = React.forwardRef<
       style,
       props,
       children,
-      customStyle,
       block,
       ...restProps
     },
@@ -42,8 +40,7 @@ const AnchorButton = React.forwardRef<
   ) => {
     const iconSizePx = getIconSize(size)
     const notificationCountBadgeSize = getNotificationCountBadgeSize(size)
-    const dynamicStyle =
-      color === "custom" ? getCustomStyle(customStyle) : getStateStyle(color)
+    const dynamicStyle = getStateStyle(color)
 
     return (
       <a

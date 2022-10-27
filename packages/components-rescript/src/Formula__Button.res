@@ -8,19 +8,7 @@ type color = [
   | #"tertiary-color"
   | #"negative-primary"
   | #"negative-secondary"
-  | #custom
 ]
-
-type buttonCustomStyleProps = {
-  backgroundColor: string,
-  color: string,
-  borderStyle?: string,
-  borderColor?: string,
-  borderWidth?: string,
-  fill?: string,
-  countBackgroundColor?: string,
-  countColor?: string,
-}
 
 type iconComponentProps = React.componentLike<
   {
@@ -34,7 +22,7 @@ type iconComponentProps = React.componentLike<
   React.element,
 >
 
-module ContainerButton = {
+module Container = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     // React Synthetic Events
@@ -48,7 +36,6 @@ module ContainerButton = {
     ~rightIcon: iconComponentProps=?,
     ~count: int=?,
     ~disabled: bool=?,
-    ~customStyle: buttonCustomStyleProps=?,
     ~className: string=?,
     ~style: ReactDOMStyle.t=?,
     ~children: React.element=?,
@@ -57,7 +44,7 @@ module ContainerButton = {
   ) => React.element = "ContainerButton"
 }
 
-module IconButton = {
+module Icon = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     // React Synthetic Events
@@ -68,7 +55,6 @@ module IconButton = {
     ~size: size,
     ~icon: iconComponentProps=?,
     ~disabled: bool=?,
-    ~customStyle: buttonCustomStyleProps=?,
     ~className: string=?,
     ~style: ReactDOMStyle.t=?,
     ~block: bool=?,
@@ -76,7 +62,7 @@ module IconButton = {
   ) => React.element = "IconButton"
 }
 
-module AnchorButton = {
+module Anchor = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~color: color,
@@ -85,7 +71,6 @@ module AnchorButton = {
     ~leftIcon: iconComponentProps=?,
     ~rightIcon: iconComponentProps=?,
     ~count: int=?,
-    ~customStyle: buttonCustomStyleProps=?,
     ~className: string=?,
     ~style: ReactDOMStyle.t=?,
     ~children: React.element=?,

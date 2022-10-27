@@ -2,7 +2,6 @@ import React from "react"
 import type { ContainerButtonProps } from "./types"
 import NotificationCountBadge from "../../NotificationBadge/NotificationCountBadge"
 import {
-  getCustomStyle,
   getStateStyle,
   getIconSize,
   getNotificationCountBadgeSize,
@@ -35,7 +34,6 @@ const ContainerButton = React.forwardRef<
       props,
       children,
       disabled,
-      customStyle,
       block,
       ...restProps
     },
@@ -43,8 +41,7 @@ const ContainerButton = React.forwardRef<
   ) => {
     const iconSizePx = getIconSize(size)
     const notificationCountBadgeSize = getNotificationCountBadgeSize(size)
-    const dynamicStyle =
-      color === "custom" ? getCustomStyle(customStyle) : getStateStyle(color)
+    const dynamicStyle = getStateStyle(color)
 
     return (
       <button

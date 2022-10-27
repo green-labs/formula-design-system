@@ -1,11 +1,9 @@
 import { tokens } from "@greenlabs/formula-design-token"
 import { style } from "@vanilla-extract/css"
 import { recipe } from "@vanilla-extract/recipes"
-import { get_RGBA_WithOpacity } from "../../stateLayers"
 import { getDefaultTransitionStyle } from "../../transitionStyles.css"
-import { customStyles } from "../commonStyles.css"
 
-const { color, state } = tokens.sys
+const { color } = tokens.sys
 
 export const buttonTextContainerStyle = style({
   display: "flex",
@@ -56,10 +54,6 @@ export const badgeInContainerButtonStyle = recipe({
       "negative-secondary": {
         backgroundColor: color.error.contents.value,
         color: color.error.container.value,
-      },
-      custom: {
-        backgroundColor: customStyles.customCountBackgroundColor,
-        color: customStyles.customCountColor,
       },
     },
   },

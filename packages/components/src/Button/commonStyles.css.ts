@@ -49,17 +49,6 @@ const buttonSizes = {
   },
 } as const
 
-export const customStyles = {
-  customBackgroundColor: createVar(),
-  customFontColor: createVar(),
-  customFillColor: createVar(),
-  customBorderColor: createVar(),
-  customBorderWidth: createVar(),
-  customBorderStyle: createVar(),
-  customCountBackgroundColor: createVar(),
-  customCountColor: createVar(),
-}
-
 export const stateStyles = {
   hoverBackgroundColor: createVar(),
   activeBackgroundColor: createVar(),
@@ -100,13 +89,6 @@ export const buttonColors = {
     backgroundColor: color.error.container.value,
     color: color.error.contents.value,
   },
-  custom: {
-    backgroundColor: customStyles.customBackgroundColor,
-    borderColor: customStyles.customBorderColor,
-    color: customStyles.customFontColor,
-    borderStyle: customStyles.customBorderStyle,
-    borderWidth: customStyles.customBorderWidth,
-  },
 } as const
 
 // Icon Recipe
@@ -121,7 +103,6 @@ export const iconInContainerButtonStyle = recipe({
       "tertiary-gray": { fill: color["neutral-primary"].contents.value },
       "negative-primary": { fill: color.primary["container-contents"].value },
       "negative-secondary": { fill: color.error.contents.value },
-      custom: { fill: customStyles.customFillColor },
     },
     disabled: {
       true: {

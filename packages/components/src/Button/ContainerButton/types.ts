@@ -2,20 +2,20 @@ import type { FunctionComponent } from "react"
 import type { IconProps } from "../../Icon/types"
 import type { ButtonCommonProps } from "../commonTypes"
 
-interface ContainerButtonTextProps {
+export interface ContainerButtonTextProps {
   text: string
 }
 
-interface ContainerButtonIconProps {
+export interface ContainerButtonIconProps {
   leftIcon?: FunctionComponent<IconProps>
   rightIcon?: FunctionComponent<IconProps>
 }
 
-interface ContainerButtonCountProps {
+export interface ContainerButtonCountProps {
   count?: number
 }
 
-interface ContainerButtonBlockProps {
+export interface ContainerButtonBlockProps {
   block?: boolean
 }
 

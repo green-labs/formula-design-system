@@ -1,9 +1,5 @@
-import type {
-  buttonColorTypes,
-  ButtonCustomStyleProps,
-  buttonSize,
-} from "./commonTypes"
-import { buttonColors, customStyles, stateStyles } from "./commonStyles.css"
+import type { buttonColorTypes, buttonSize } from "./commonTypes"
+import { buttonColors, stateStyles } from "./commonStyles.css"
 import { getBlendLayerColor, getBlendedLayerColor } from "../stateLayers"
 import { assignInlineVars } from "@vanilla-extract/dynamic"
 
@@ -34,42 +30,6 @@ export const getIconSize = (size: buttonSize) => {
   }
 }
 
-export const getCustomStyle = (customStyle: ButtonCustomStyleProps) => {
-  const { hoverBackgroundColor, activeBackgroundColor } = stateStyles
-  const {
-    customBackgroundColor,
-    customFontColor,
-    customFillColor,
-    customBorderColor,
-    customBorderWidth,
-    customBorderStyle,
-    customCountBackgroundColor,
-    customCountColor,
-  } = customStyles
-
-  const hoverLayerColor = getBlendedLayerColor(
-    customStyle.backgroundColor,
-    getBlendLayerColor(customStyle.color, "hover")
-  )
-
-  const activeLayerColor = getBlendedLayerColor(
-    customStyle.backgroundColor,
-    getBlendLayerColor(customStyle.color, "pressed")
-  )
-
-  return assignInlineVars({
-    [customBackgroundColor]: customStyle.backgroundColor,
-    [customFontColor]: customStyle.color,
-    [customFillColor]: customStyle.fill || "",
-    [customBorderColor]: customStyle.borderColor || "",
-    [customBorderWidth]: customStyle.borderWidth || "",
-    [customBorderStyle]: customStyle.borderStyle || "",
-    [customCountBackgroundColor]: customStyle.countBackgroundColor || "",
-    [customCountColor]: customStyle.countColor || "",
-    [hoverBackgroundColor]: hoverLayerColor,
-    [activeBackgroundColor]: activeLayerColor,
-  })
-}
 export const getStateStyle = (color: buttonColorTypes) => {
   const { hoverBackgroundColor, activeBackgroundColor } = stateStyles
 

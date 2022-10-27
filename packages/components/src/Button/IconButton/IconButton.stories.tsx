@@ -29,7 +29,6 @@ export default {
       control: {
         type: "radio",
         options: [
-          "custom",
           "primary",
           "secondary-gray",
           "secondary-color",
@@ -38,24 +37,6 @@ export default {
           "negative-primary",
           "negative-secondary",
         ],
-      },
-    },
-
-    ShowCustomStyle: {
-      defaultValue: false,
-      control: "boolean",
-      description: "(For Storybook) 커스텀 스타일 옵션을 활성화합니다.",
-    },
-    customStyle: {
-      if: { arg: "ShowCustomStyle" },
-      control: { type: "object" },
-      defaultValue: {
-        backgroundColor: "#34e7e4",
-        color: "white",
-        borderStyle: "solid",
-        borderColor: "#1e272e",
-        borderWidth: "3px",
-        fill: "#ef5777",
       },
     },
     icon: {
