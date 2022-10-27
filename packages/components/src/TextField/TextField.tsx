@@ -1,4 +1,5 @@
 import type { ReactNode, MouseEvent, PropsWithChildren } from "react"
+import { useRef } from "react"
 import { assignInlineVars } from "@vanilla-extract/dynamic"
 import { TextVariant } from "../Text/Text"
 import type { variantKeyType as textVariantKey } from "../Text/Text"
@@ -10,13 +11,15 @@ import {
   suffixIconStyle,
   titleStyle,
   hintStyle,
-  backgroundColor,
+  vars,
+  clearButtonStyle,
+  componentStyle,
 } from "./styles.css"
 import { colorMap } from "@greenlabs/formula-design-token"
+import { DeleteFill } from "../Icon"
 
 type sizeVariantKey = keyof typeof textFieldSizeVariants
 type variantKey = keyof typeof textFieldVariants
-
 interface TextFieldProps extends PropsWithChildren {
   props?: {}
   type?: "text" | "password"
@@ -25,13 +28,16 @@ interface TextFieldProps extends PropsWithChildren {
   size: sizeVariantKey
   prefix?: ReactNode
   suffixText?: ReactNode
-  variant?: "outline" | "fill" | "line"
+  variant?: "boxOutline" | "boxFill" | "line"
   suffixIcon?: ReactNode // suffix element to be shown
   titleText?: string // title text to be shown upper side
   hintText?: string // hint text to be shown below
-  state?: "readonly" | "error"
-  onClear?: (event: MouseEvent) => void
+  state?: "normal" | "readonly" | "error"
+  onChange?: React.ChangeEventHandler<HTMLInputElement>
+  onFocus?: React.FocusEventHandler<HTMLInputElement>
 }
+
+const COMPONENT_CLASS = "fmc-textfield"
 
 export const TextField = ({
   className = "",
@@ -43,11 +49,12 @@ export const TextField = ({
   suffixIcon,
   titleText,
   hintText,
-  variant = "outline",
+  variant = "boxOutline",
   type = "text",
-}: // state,
-// onClear,
-TextFieldProps) => {
+  state,
+  onChange,
+  onFocus,
+}: TextFieldProps) => {
   const variantKey = `${variant}.${size}` as variantKey
 
   if (
@@ -56,14 +63,21 @@ TextFieldProps) => {
   ) {
     console.error(`You have used non-exist variant key ${size}.`)
   }
-  const variantClass = textFieldVariants[variantKey] ?? ""
+  const containerClass = textFieldVariants[variantKey] ?? ""
+  const componentClass = componentStyle[variantKey] ?? ""
+  const inputRef = useRef<HTMLInputElement>(null)
 
-  let inlineVars
-  if (variant === "fill") {
-    inlineVars = assignInlineVars({
-      [backgroundColor]: colorMap["neutral-secondary-container"],
-    })
+  const inlineVarsObj: Record<string, string> = {}
+  if (state === "error") {
+    inlineVarsObj[vars.stateColor] = colorMap["error-contents"]
   }
+  if (variant === "boxFill") {
+    inlineVarsObj[vars.backgroundColor] =
+      colorMap["neutral-secondary-container"]
+  } else if (variant === "line") {
+    inlineVarsObj[vars.titleColor] = colorMap["neutral-secondary-contents"]
+  }
+  const inlineVars = assignInlineVars(inlineVarsObj)
 
   // TODO: refactor
   let titleVariantKey =
@@ -77,21 +91,37 @@ TextFieldProps) => {
       : "caption-xs-regular"
 
   return (
-    <div style={inlineVars} className={className}>
+    <div
+      style={inlineVars}
+      className={`${COMPONENT_CLASS} ${componentClass} ${className}`}
+    >
       {titleText ? (
         <TextVariant variantKey={titleVariantKey} className={titleStyle}>
           {titleText}
         </TextVariant>
       ) : null}
-      <div className={variantClass}>
+      <div className={containerClass}>
         {prefix ? <div className={prefixIconStyle}>{prefix}</div> : null}
         <input
+          ref={inputRef}
           type={type}
+          onChange={onChange}
+          onFocus={onFocus}
           placeholder={placeholder}
           className={inputStyle}
           {...props}
         />
-        {/* TODO: put clear button here */}
+        <div
+          className={clearButtonStyle}
+          onClick={(_) => {
+            const inputEl = inputRef.current
+            if (inputEl) {
+              inputEl.value = ""
+            }
+          }}
+        >
+          <DeleteFill size="SM" color="neutral-tertiary-contents" />
+        </div>
         {suffixText ? (
           <div className={suffixIconStyle}>{suffixText}</div>
         ) : suffixIcon ? (
