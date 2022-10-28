@@ -1,11 +1,14 @@
 import { style, styleVariants } from "@vanilla-extract/css"
+import { tokens } from "@greenlabs/formula-design-token"
+
+const { shadow } = tokens.ref
 
 export const dialogBase = style({
   boxSizing: "border-box",
   borderRadius: "16px",
   maxHeight: "calc(100vh - 140px)",
   position: "absolute",
-  boxShadow: "0px 4px 16px rgba(0, 0, 0, 0.1)",
+  boxShadow: shadow["1"].value,
   overflow: "hidden",
   left: "50%",
   top: "50%",
