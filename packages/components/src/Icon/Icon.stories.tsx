@@ -58,7 +58,7 @@ export const IconGallery: ComponentStory<
 const Icons = IconGallery.bind({})
 
 export default {
-  title: "Example/Icon",
+  title: "Formula/Icon",
   component: Icons,
   argTypes: {
     size: {

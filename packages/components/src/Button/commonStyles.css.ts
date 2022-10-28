@@ -1,7 +1,7 @@
 import { createVar, style } from "@vanilla-extract/css"
 import { recipe } from "@vanilla-extract/recipes"
 import { tokens } from "@greenlabs/formula-design-token"
-import { extract } from "../util"
+import { extract } from "../utils/util"
 import { get_RGBA_WithOpacity } from "../stateLayers"
 import { getDefaultTransitionStyle } from "../transitionStyles.css"
 

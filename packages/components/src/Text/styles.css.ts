@@ -1,6 +1,6 @@
 import { createVar, style, styleVariants } from "@vanilla-extract/css"
 import { tokens } from "@greenlabs/formula-design-token"
-import { extract } from "../util"
+import { extract } from "../utils/util"
 
 const { font } = tokens.sys
 

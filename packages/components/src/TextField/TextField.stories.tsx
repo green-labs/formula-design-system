@@ -1,5 +1,6 @@
 import { TextField } from "./TextField"
 import { SearchLineBold, EyeLineBold } from "../Icon"
+import { createDisabledArgs } from "../utils/storybook"
 
 import type { ComponentMeta } from "@storybook/react"
 
@@ -73,46 +74,21 @@ const Template = (args) => {
   )
 }
 
-export const Outline = Template.bind({})
-Outline.argTypes = {
-  props: {
-    table: {
-      disable: true,
-    },
-  },
-  className: {
-    table: {
-      disable: true,
-    },
-  },
-  prefix: {
-    table: {
-      disable: true,
-    },
-  },
-  suffixText: {
-    table: {
-      disable: true,
-    },
-  },
-  suffixIcon: {
-    table: {
-      disable: true,
-    },
-  },
-  titleText: {
-    table: {
-      disable: true,
-    },
-  },
-  hintText: {
-    table: {
-      disable: true,
-    },
-  },
+export const Overview = Template.bind({})
+Overview.argTypes = {
+  ...createDisabledArgs([
+    "props",
+    "size",
+    "className",
+    "prefix",
+    "suffixText",
+    "suffixIcon",
+    "titleText",
+    "hintText",
+  ]),
 }
 
 export default {
-  title: "Example/TextField",
+  title: "Formula/TextField",
   component: TextField,
 } as ComponentMeta<typeof TextField>

@@ -1,6 +1,7 @@
 import { Text } from "./Text"
 
 import type { ComponentMeta } from "@storybook/react"
+import { createDisabledArgs } from "../utils/storybook"
 
 const Template = (args) => {
   switch (args.component) {
@@ -103,46 +104,16 @@ Body.args = {
   children: "Sample Text 샘플 텍스트",
 }
 Body.argTypes = {
-  variant: {
-    table: {
-      disable: true,
-    },
-  },
-  variantKey: {
-    table: {
-      disable: true,
-    },
-  },
-  component: {
-    table: {
-      disable: true,
-    },
-  },
-  props: {
-    table: {
-      disable: true,
-    },
-  },
-  className: {
-    table: {
-      disable: true,
-    },
-  },
-  container: {
-    table: {
-      disable: true,
-    },
-  },
-  size: {
-    table: {
-      disable: true,
-    },
-  },
-  weight: {
-    table: {
-      disable: true,
-    },
-  },
+  ...createDisabledArgs([
+    "variant",
+    "variantKey",
+    "component",
+    "props",
+    "className",
+    "container",
+    "size",
+    "weight",
+  ]),
 }
 
 // TODO: disable control args
@@ -187,6 +158,6 @@ Caption.argTypes = {
 }
 
 export default {
-  title: "Example/Text",
+  title: "Formula/Text",
   component: Text,
 } as ComponentMeta<typeof Text>

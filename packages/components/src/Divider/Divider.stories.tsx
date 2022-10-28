@@ -24,6 +24,6 @@ VerticalSmall.args = {
 }
 
 export default {
-  title: "Example/Divider",
+  title: "Formula/Divider",
   component: Divider,
 } as ComponentMeta<typeof Divider>
