@@ -1,9 +1,9 @@
 import React from "react"
-import { ImageDialog, ImageDialogProps } from "./ImageDialog"
+import { ImageDialog } from "./ImageDialog"
 
-import type { ComponentMeta } from "@storybook/react"
+import type { ComponentMeta, ComponentStory } from "@storybook/react"
 
-const ImageDialogTemplate = (args: ImageDialogProps) => (
+const ImageDialogTemplate: ComponentStory<typeof ImageDialog> = (args) => (
   <div style={{ width: "100vw", height: "100vh" }}>
     <ImageDialog {...args} />
   </div>
@@ -102,4 +102,41 @@ HorizontalAspectRatioVerticalButton.args = {
 export default {
   title: "Formula/Dialog/ImageDialog",
   component: ImageDialog,
+  argTypes: {
+    imageAspectRatio: {
+      name: "imageAspectRatio",
+      control: { type: "select" },
+      options: ["square", "vertical", "horizontal"],
+      defaultValue: "square",
+    },
+    imageSrc: { name: "imageSrc", control: { type: "text" }, defaultValue: "" },
+    buttonType: {
+      name: "buttonType",
+      control: { type: "select" },
+      options: ["evenly", "weighted", "vertical"],
+      defaultValue: "evenly",
+    },
+    secondaryLabel: {
+      name: "secondaryLabel",
+      control: { type: "text" },
+      defaultValue: "취소",
+    },
+    onSecondary: {
+      name: "onSecondary",
+      control: { type: "object" },
+      table: { disable: true },
+      defaultValue: () => {},
+    },
+    primaryLabel: {
+      name: "primaryLabel",
+      control: { type: "text" },
+      defaultValue: "확인",
+    },
+    onPrimary: {
+      name: "onPrimary",
+      control: { type: "object" },
+      table: { disable: true },
+      defaultValue: () => {},
+    },
+  },
 } as ComponentMeta<typeof ImageDialog>

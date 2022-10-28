@@ -1,4 +1,4 @@
-import { createVar, style, styleVariants } from "@vanilla-extract/css"
+import { style } from "@vanilla-extract/css"
 import { tokens } from "@greenlabs/formula-design-token"
 
 export const titleTextBase = style({
