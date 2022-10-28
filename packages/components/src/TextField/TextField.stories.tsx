@@ -113,6 +113,6 @@ Outline.argTypes = {
 }
 
 export default {
-  title: "Example/TextField",
+  title: "Formula/TextField",
   component: TextField,
 } as ComponentMeta<typeof TextField>

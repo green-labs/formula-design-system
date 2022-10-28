@@ -187,6 +187,6 @@ Caption.argTypes = {
 }
 
 export default {
-  title: "Example/Text",
+  title: "Formula/Text",
   component: Text,
 } as ComponentMeta<typeof Text>

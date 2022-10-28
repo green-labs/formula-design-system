@@ -10,7 +10,7 @@ export const Button: ComponentStory<typeof IconButton> = (args) => {
 const Buttons = Button.bind({})
 
 export default {
-  title: "Example/Buttons/IconButton",
+  title: "Formula/Buttons/IconButton",
   component: Buttons,
   argTypes: {
     disabled: {
