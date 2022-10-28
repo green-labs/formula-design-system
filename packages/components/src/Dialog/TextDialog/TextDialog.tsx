@@ -11,16 +11,12 @@ import { variantChecker } from "../../utils/util"
 
 type sizeVariantKey = keyof typeof sizeVariant
 export interface TextDialogProps extends ButtonSectionProps {
-  props: {}
-  className?: string
   size: sizeVariantKey
   title?: string
   text: string
 }
 
 const TextDialog = ({
-  props,
-  className = "",
   size,
   title,
   text,
@@ -30,6 +26,7 @@ const TextDialog = ({
   onSecondary,
   secondaryLabel,
 }: TextDialogProps) => {
+  variantChecker(size, sizeVariant)
   variantChecker(buttonType, buttonSectionVariant)
   variantChecker(`${buttonType}-${size}`, buttonSectionAuxiliaryVariant)
 
@@ -38,7 +35,7 @@ const TextDialog = ({
   const buttonSectionClass = `${buttonSectionVariant[buttonType]} ${buttonSectionAuxiliaryVariant[buttonSectionAuxiliaryVariantKey]}`
 
   return (
-    <div className={`${sizeVariantClass} ${className}`}>
+    <div className={sizeVariantClass}>
       {title ? (
         <Text.Headline className={titleTextBase}>{title}</Text.Headline>
       ) : null}
