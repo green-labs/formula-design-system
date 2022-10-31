@@ -1,4 +1,4 @@
-import type { ReactNode, MouseEvent, PropsWithChildren } from "react"
+import type { ReactNode, PropsWithChildren } from "react"
 import { useRef } from "react"
 import { TextVariant } from "../Text/Text"
 import type { variantKeyType as textVariantKey } from "../Text/Text"
@@ -13,7 +13,6 @@ import {
   clearButtonStyle,
   componentStyle,
 } from "./styles.css"
-import { colorMap } from "@greenlabs/formula-design-token"
 import { DeleteFill } from "../Icon"
 import { COMPONENT_CLASS, stateClass } from "./common"
 

@@ -1,9 +1,10 @@
+import React from "react"
+import type { ComponentMeta, ComponentStory } from "@storybook/react"
 import { Text } from "./Text"
 
-import type { ComponentMeta } from "@storybook/react"
 import { createDisabledArgs } from "../utils/storybook"
 
-const Template = (args) => {
+const Template: ComponentStory<typeof Text> = (args) => {
   switch (args.component) {
     case "Headline":
       return (
