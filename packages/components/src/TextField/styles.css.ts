@@ -5,6 +5,7 @@ import {
   styleVariants,
 } from "@vanilla-extract/css"
 import { tokens, colorMap } from "@greenlabs/formula-design-token"
+import { stateClass } from "./common"
 // FIXME: usage of tokens object needs to be replaced with smaller object output
 
 export const vars = {
@@ -45,7 +46,6 @@ const containerStyle = style([
   {
     borderWidth: "1px",
     borderStyle: "solid",
-    backgroundColor: vars.backgroundColor,
     color: colorMap["neutral-primary-contents"],
     borderColor: fallbackVar(vars.stateColor, colorMap.outline),
     ":focus-within": {
@@ -54,29 +54,53 @@ const containerStyle = style([
   },
 ])
 
+const componentCommon = style({
+  selectors: {
+    [`.${stateClass({ disabled: true })}&`]: {
+      color: colorMap["gray-40"],
+    },
+    [`.${stateClass({ variantLine: true })}&`]: {
+      vars: {
+        [vars.titleColor]: colorMap["neutral-secondary-contents"],
+      },
+    },
+    [`.${stateClass({ error: true })}&`]: {
+      vars: {
+        [vars.stateColor]: colorMap["error-contents"],
+      },
+    },
+  },
+})
+
 export const componentStyle = styleVariants({
-  "boxOutline.large": {},
-  "boxOutline.medium": {},
-  "boxOutline.small": {},
-  "boxOutline.xsmall": {},
-  "boxFill.large": {},
-  "boxFill.medium": {},
-  "boxFill.small": {},
-  "boxFill.xsmall": {},
-  "line.large": {
-    vars: {
-      [vars.iconOffset]: "4px",
-      [vars.hintOffset]: "8px",
-      [vars.titleOffset]: "2px",
+  "boxOutline.large": [componentCommon],
+  "boxOutline.medium": [componentCommon],
+  "boxOutline.small": [componentCommon],
+  "boxOutline.xsmall": [componentCommon],
+  "boxFill.large": [componentCommon],
+  "boxFill.medium": [componentCommon],
+  "boxFill.small": [componentCommon],
+  "boxFill.xsmall": [componentCommon],
+  "line.large": [
+    componentCommon,
+    {
+      vars: {
+        [vars.iconOffset]: "4px",
+        [vars.hintOffset]: "8px",
+        [vars.titleOffset]: "2px",
+      },
     },
-  },
-  "line.medium": {
-    vars: {
-      [vars.iconOffset]: "8px",
-      [vars.hintOffset]: "8px",
-      [vars.titleOffset]: "2px",
+  ],
+  "line.medium": [
+    componentCommon,
+    {
+      vars: {
+        [vars.iconOffset]: "8px",
+        [vars.hintOffset]: "8px",
+        [vars.titleOffset]: "2px",
+      },
     },
-  },
+  ],
 })
 
 export const hintStyle = style({
@@ -137,16 +161,38 @@ export const textFieldSizeVariants = styleVariants({
   ],
 })
 
-const fillCommon = style({ borderWidth: 0, borderRadius: "8px" })
+const boxCommon = style({
+  backgroundColor: vars.backgroundColor,
+  selectors: {
+    [`.${stateClass({ disabled: true })} &`]: {
+      vars: {
+        [vars.backgroundColor]: colorMap["gray-10"],
+      },
+    },
+  },
+})
+
+const fillCommon = style([
+  boxCommon,
+  {
+    borderColor: fallbackVar(vars.stateColor, vars.backgroundColor),
+    borderRadius: "8px",
+    vars: {
+      [vars.backgroundColor]: colorMap["neutral-secondary-container"],
+    },
+  },
+])
+
 const lineCommon = style({
   borderRadius: 0,
   borderWidth: 0,
   paddingLeft: 0,
   paddingRight: 0,
+  // hack to hide els get lifted by border width
   paddingBottom: 1,
   borderBottomWidth: 1,
   ":focus-within": {
-    paddingBottom: 0, // hack to hide els get lifted by border width
+    paddingBottom: 0,
     borderBottomWidth: 2,
   },
 })
@@ -154,18 +200,22 @@ const lineCommon = style({
 export const textFieldVariants = styleVariants({
   "boxOutline.large": [
     textFieldSizeVariants.large,
+    boxCommon,
     { borderRadius: "12px" /* FIXME: ref.radius.xsmall*/ },
   ],
   "boxOutline.medium": [
     textFieldSizeVariants.medium,
+    boxCommon,
     { borderRadius: "10px" /* FIXME: ref.radius.xsmall*/ },
   ],
   "boxOutline.small": [
     textFieldSizeVariants.small,
+    boxCommon,
     { borderRadius: "8px" /* FIXME: ref.radius.xsmall*/ },
   ],
   "boxOutline.xsmall": [
     textFieldSizeVariants.xsmall,
+    boxCommon,
     { borderRadius: "6px" /* FIXME: ref.radius.xsmall*/ },
   ],
   "boxFill.large": [textFieldSizeVariants.large, fillCommon],
@@ -180,7 +230,7 @@ export const textFieldVariants = styleVariants({
   "line.medium": [
     textFieldSizeVariants.medium,
     lineCommon,
-    { height: 33 + 8 + 8 },
+    { height: 29 + 8 + 8 },
   ],
 })
 
@@ -207,9 +257,6 @@ export const inputStyle = style({
     outline: "none", // FIXME
   },
   selectors: {
-    [`${lineCommon} &::placeholder, ${lineCommon} &`]: {
-      // color: colorMap["neutral-primary-contents"],
-    },
     [`${textFieldVariants["line.large"]} &`]: {
       height: 33,
     },
@@ -224,6 +271,9 @@ export const inputStyle = style({
       {
         fontSize: body.lg.regular["font-size"].value,
       },
+    [`.${stateClass({ disabled: true })} &`]: {
+      color: colorMap["gray-40"],
+    },
   },
 })
 

@@ -1,6 +1,5 @@
 import type { ReactNode, MouseEvent, PropsWithChildren } from "react"
 import { useRef } from "react"
-import { assignInlineVars } from "@vanilla-extract/dynamic"
 import { TextVariant } from "../Text/Text"
 import type { variantKeyType as textVariantKey } from "../Text/Text"
 import type { textFieldSizeVariants } from "./styles.css"
@@ -11,12 +10,12 @@ import {
   suffixIconStyle,
   titleStyle,
   hintStyle,
-  vars,
   clearButtonStyle,
   componentStyle,
 } from "./styles.css"
 import { colorMap } from "@greenlabs/formula-design-token"
 import { DeleteFill } from "../Icon"
+import { COMPONENT_CLASS, stateClass } from "./common"
 
 type sizeVariantKey = keyof typeof textFieldSizeVariants
 type variantKey = keyof typeof textFieldVariants
@@ -32,12 +31,12 @@ interface TextFieldProps extends PropsWithChildren {
   suffixIcon?: ReactNode // suffix element to be shown
   titleText?: string // title text to be shown upper side
   hintText?: string // hint text to be shown below
-  state?: "normal" | "readonly" | "error"
+  state?: "normal" | "error" // visual states (focused, readonly or disabled is separated as prop/attr)
+  readOnly?: boolean
+  disabled?: boolean
   onChange?: React.ChangeEventHandler<HTMLInputElement>
   onFocus?: React.FocusEventHandler<HTMLInputElement>
 }
-
-const COMPONENT_CLASS = "fmc-textfield"
 
 export const TextField = ({
   className = "",
@@ -51,6 +50,8 @@ export const TextField = ({
   hintText,
   variant = "boxOutline",
   type = "text",
+  readOnly = false,
+  disabled = false,
   state,
   onChange,
   onFocus,
@@ -67,18 +68,6 @@ export const TextField = ({
   const componentClass = componentStyle[variantKey] ?? ""
   const inputRef = useRef<HTMLInputElement>(null)
 
-  const inlineVarsObj: Record<string, string> = {}
-  if (state === "error") {
-    inlineVarsObj[vars.stateColor] = colorMap["error-contents"]
-  }
-  if (variant === "boxFill") {
-    inlineVarsObj[vars.backgroundColor] =
-      colorMap["neutral-secondary-container"]
-  } else if (variant === "line") {
-    inlineVarsObj[vars.titleColor] = colorMap["neutral-secondary-contents"]
-  }
-  const inlineVars = assignInlineVars(inlineVarsObj)
-
   // TODO: refactor
   let titleVariantKey =
     size !== "xsmall" ? "body-md-bold" : ("body-sm-bold" as textVariantKey)
@@ -92,8 +81,14 @@ export const TextField = ({
 
   return (
     <div
-      style={inlineVars}
-      className={`${COMPONENT_CLASS} ${componentClass} ${className}`}
+      className={`${COMPONENT_CLASS} ${componentClass} ${className} ${stateClass(
+        {
+          disabled,
+          readOnly,
+          error: state === "error",
+          variantLine: variant === "line",
+        }
+      )}`}
     >
       {titleText ? (
         <TextVariant variantKey={titleVariantKey} className={titleStyle}>
@@ -109,6 +104,8 @@ export const TextField = ({
           onFocus={onFocus}
           placeholder={placeholder}
           className={inputStyle}
+          readOnly={readOnly}
+          disabled={disabled}
           {...props}
         />
         <div

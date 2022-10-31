@@ -12,9 +12,9 @@ const Template = (args) => {
           <h5>xsmall</h5>
           <form style={{ margin: "20px 0" }}>
             <TextField
-              prefix={<SearchLineBold color="gray-50" size="LG" />}
+              prefix={<SearchLineBold color="gray-50" size="lg" />}
               suffixIcon={
-                <EyeLineBold color="neutral-primary-contents" size="LG" />
+                <EyeLineBold color="neutral-primary-contents" size="lg" />
               }
               size="xsmall"
               placeholder="플레이스홀더 텍스트"
@@ -27,9 +27,9 @@ const Template = (args) => {
           <h5>small</h5>
           <form style={{ margin: "20px 0" }}>
             <TextField
-              prefix={<SearchLineBold color="gray-50" size="LG" />}
+              prefix={<SearchLineBold color="gray-50" size="lg" />}
               suffixIcon={
-                <EyeLineBold color="neutral-primary-contents" size="LG" />
+                <EyeLineBold color="neutral-primary-contents" size="lg" />
               }
               size="small"
               placeholder="플레이스홀더 텍스트"
@@ -44,9 +44,9 @@ const Template = (args) => {
       <h5>medium</h5>
       <form style={{ margin: "20px 0" }}>
         <TextField
-          prefix={<SearchLineBold color="gray-50" size="LG" />}
+          prefix={<SearchLineBold color="gray-50" size="lg" />}
           suffixIcon={
-            <EyeLineBold color="neutral-primary-contents" size="LG" />
+            <EyeLineBold color="neutral-primary-contents" size="lg" />
           }
           size="medium"
           placeholder="플레이스홀더 텍스트"
@@ -59,9 +59,9 @@ const Template = (args) => {
       <h5>large</h5>
       <form style={{ margin: "20px 0" }}>
         <TextField
-          prefix={<SearchLineBold color="gray-50" size="LG" />}
+          prefix={<SearchLineBold color="gray-50" size="lg" />}
           suffixIcon={
-            <EyeLineBold color="neutral-primary-contents" size="LG" />
+            <EyeLineBold color="neutral-primary-contents" size="lg" />
           }
           size="large"
           placeholder="플레이스홀더 텍스트"
@@ -85,6 +85,8 @@ Overview.argTypes = {
     "suffixIcon",
     "titleText",
     "hintText",
+    "onChange",
+    "onFocus",
   ]),
 }
 
