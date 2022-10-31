@@ -7,22 +7,14 @@ export const Component: ComponentStory<typeof AnchorButton> = (args) => {
   return <AnchorButton {...args} />
 }
 
-const Buttons = Component.bind({})
-
 export default {
   title: "Formula/Buttons/AnchorButton",
-  component: Buttons,
+  component: Component,
   args: {
     text: "Button label",
     color: "primary",
     size: "xl",
     block: false,
-    ShowCount: false,
-    count: 20,
-    ShowLeftIcon: false,
-    leftIcon: IconComponents.ArrowDownLineBold,
-    ShowRightIcon: false,
-    rightIcon: IconComponents.ShareArrowFill,
   },
   argTypes: {
     block: {
@@ -65,21 +57,11 @@ ${"`xl`"} - height: 64
         ],
       },
     },
-    ShowCount: {
-      control: "boolean",
-      description: "(For Storybook) 카운트 뱃지를 활성화합니다.",
-    },
     count: {
-      control: { type: "number" },
+      type: { name: "number", required: false },
       description: `버튼의 우측 영역에 들어가는 숫자입니다.`,
-      if: { arg: "ShowCount" },
-    },
-    ShowLeftIcon: {
-      control: "boolean",
-      description: "(For Storybook) 좌측 아이콘을 활성화합니다.",
     },
     leftIcon: {
-      if: { arg: "ShowLeftIcon" },
       description: `버튼의 좌측 영역에 들어가는 아이콘입니다.`,
       control: { type: "select" },
       options: Object.keys(IconComponents),
@@ -88,12 +70,7 @@ ${"`xl`"} - height: 64
         {}
       ),
     },
-    ShowRightIcon: {
-      control: "boolean",
-      description: "(For Storybook) 우측 아이콘을 활성화합니다.",
-    },
     rightIcon: {
-      if: { arg: "ShowRightIcon" },
       description: `버튼의 우측 영역에 들어가는 아이콘입니다.`,
       control: { type: "select" },
       options: Object.keys(IconComponents),

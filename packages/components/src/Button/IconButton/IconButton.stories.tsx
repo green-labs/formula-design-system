@@ -7,11 +7,9 @@ export const Component: ComponentStory<typeof IconButton> = (args) => {
   return <IconButton {...args} />
 }
 
-const Buttons = Component.bind({})
-
 export default {
   title: "Formula/Buttons/IconButton",
-  component: Buttons,
+  component: Component,
   args: {
     icon: IconComponents.ShareArrowFill,
     color: "primary",
