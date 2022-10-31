@@ -6,7 +6,7 @@ const template = ({ jsx, componentName, exports }, { tpl }) => {
   import type { IconProps } from "../types"
 
   const ${componentName} = ({
-    size = "XL", 
+    size = "xl", 
     sizePx,
     style,
     className,

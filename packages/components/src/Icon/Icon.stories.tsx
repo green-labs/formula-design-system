@@ -62,10 +62,10 @@ export default {
   component: Icons,
   argTypes: {
     size: {
-      defaultValue: "XL",
+      defaultValue: "xl",
       description: "아이콘의 사이즈입니다.",
       control: { type: "radio" },
-      options: ["PC", "XL", "LG", "SM", "XS"],
+      options: ["pc", "xl", "lg", "sm", "xs"],
     },
     color: {
       control: { type: "select" },

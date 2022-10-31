@@ -120,7 +120,7 @@ export const TextField = ({
             }
           }}
         >
-          <DeleteFill size="SM" color="neutral-tertiary-contents" />
+          <DeleteFill size="sm" color="neutral-tertiary-contents" />
         </div>
         {suffixText ? (
           <div className={suffixIconStyle}>{suffixText}</div>
