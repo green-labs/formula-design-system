@@ -34,7 +34,7 @@ const iconModules = fs
   .map(generateIconModule)
 
 const resTypes = `@deriving(jsConverter)
-type size = [#PC | #XL | #LG | #SM | #XS]
+type size = [#pc | #xl | #lg | #sm | #xs]
 `
 
 const resModules = resTypes + iconModules.join("\n")

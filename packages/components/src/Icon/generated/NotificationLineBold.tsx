@@ -4,7 +4,7 @@ import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
 const SvgNotificationLineBold = (
   {
-    size = "XL",
+    size = "xl",
     sizePx,
     style,
     className,
@@ -21,7 +21,6 @@ const SvgNotificationLineBold = (
       height={finalSize}
       fill={fill}
       xmlns="http://www.w3.org/2000/svg"
-      role="img"
       style={style}
       viewBox="0 0 48 48"
       className={className}
