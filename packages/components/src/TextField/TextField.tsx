@@ -17,7 +17,6 @@ import {
 import type { IconProps } from "../Icon"
 import { DeleteFill } from "../Icon"
 import { COMPONENT_CLASS, stateClass } from "./common"
-import { colorMap } from "@greenlabs/formula-design-token"
 
 type sizeVariantKey = keyof typeof textFieldSizeVariants
 type variantKey = keyof typeof textFieldVariants
@@ -26,10 +25,10 @@ interface TextFieldProps extends PropsWithChildren {
   type?: "text" | "password"
   className?: string
   placeholder?: string
-  size: sizeVariantKey
+  size?: sizeVariantKey
+  variant?: "boxOutline" | "boxFill" | "line"
   prefix?: ReactNode
   prefixIcon?: React.ComponentType<IconProps>
-  variant?: "boxOutline" | "boxFill" | "line"
   suffix?: ReactNode
   suffixIcon?: React.ComponentType<IconProps> // suffix element to be shown
   titleText?: string // title text to be shown upper side
@@ -45,7 +44,7 @@ export const TextField = ({
   className = "",
   props = {},
   placeholder,
-  size,
+  size = "medium",
   prefix,
   prefixIcon,
   suffix,
