@@ -108,6 +108,11 @@ export const hintStyle = style({
   color: fallbackVar(vars.stateColor, colorMap["neutral-secondary-contents"]),
   fontSize: caption.xs.regular["font-size"].value,
   display: "block",
+  selectors: {
+    ":focus-within ~ &": {
+      color: fallbackVar(vars.stateColor, colorMap["primary-container"]),
+    },
+  },
 })
 
 export const textFieldSizeVariants = styleVariants({
