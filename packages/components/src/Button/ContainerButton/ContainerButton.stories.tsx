@@ -9,6 +9,7 @@ export const Component: ComponentStory<typeof ContainerButton> = (args) => {
 
 export default {
   title: "Formula/Buttons/ContainerButton",
+  parameters: { viewCodeAddon: { component: "ContainerButton" } },
   component: Component,
   args: {
     text: "Button label",

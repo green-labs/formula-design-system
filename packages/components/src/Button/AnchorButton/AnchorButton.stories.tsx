@@ -9,6 +9,7 @@ export const Component: ComponentStory<typeof AnchorButton> = (args) => {
 
 export default {
   title: "Formula/Buttons/AnchorButton",
+  parameters: { viewCodeAddon: { component: "AnchorButton" } },
   component: Component,
   args: {
     text: "Button label",

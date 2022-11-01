@@ -10,6 +10,7 @@ export const Component: ComponentStory<typeof IconButton> = (args) => {
 export default {
   title: "Formula/Buttons/IconButton",
   component: Component,
+  parameters: { viewCodeAddon: { component: "IconButton" } },
   args: {
     icon: IconComponents.ShareArrowFill,
     color: "primary",

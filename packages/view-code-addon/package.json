@@ -1,0 +1,24 @@
+{
+  "name": "my-addon",
+  "version": "1.0.0",
+  "description": "A barebones Storybook addon",
+  "main": "dist/preset.js",
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "*.js"
+  ],
+  "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
+  "dependencies": {
+    "@babel/cli": "^7.19.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-syntax-highlighter": "^15.5.0"
+  },
+  "scripts": {
+    "build": "babel ./src --out-dir ./dist"
+  },
+  "devDependencies": {
+    "@types/react-syntax-highlighter": "^15.5.5"
+  }
+}
