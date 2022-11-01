@@ -1,6 +1,5 @@
-import type { ReactNode, MouseEvent, PropsWithChildren } from "react"
+import type { ReactNode, PropsWithChildren } from "react"
 import { useRef } from "react"
-import { assignInlineVars } from "@vanilla-extract/dynamic"
 import { TextVariant } from "../Text/Text"
 import type { variantKeyType as textVariantKey } from "../Text/Text"
 import type { textFieldSizeVariants } from "./styles.css"
@@ -8,15 +7,16 @@ import {
   textFieldVariants,
   inputStyle,
   prefixIconStyle,
+  suffixStyle,
   suffixIconStyle,
   titleStyle,
   hintStyle,
-  vars,
   clearButtonStyle,
   componentStyle,
 } from "./styles.css"
-import { colorMap } from "@greenlabs/formula-design-token"
+import type { IconProps } from "../Icon"
 import { DeleteFill } from "../Icon"
+import { COMPONENT_CLASS, stateClass } from "./common"
 
 type sizeVariantKey = keyof typeof textFieldSizeVariants
 type variantKey = keyof typeof textFieldVariants
@@ -25,32 +25,36 @@ interface TextFieldProps extends PropsWithChildren {
   type?: "text" | "password"
   className?: string
   placeholder?: string
-  size: sizeVariantKey
-  prefix?: ReactNode
-  suffixText?: ReactNode
+  size?: sizeVariantKey
   variant?: "boxOutline" | "boxFill" | "line"
-  suffixIcon?: ReactNode // suffix element to be shown
+  prefix?: ReactNode
+  prefixIcon?: React.ComponentType<IconProps>
+  suffix?: ReactNode
+  suffixIcon?: React.ComponentType<IconProps> // suffix element to be shown
   titleText?: string // title text to be shown upper side
   hintText?: string // hint text to be shown below
-  state?: "normal" | "readonly" | "error"
+  state?: "normal" | "error" // visual states (focused, readonly or disabled is separated as prop/attr)
+  readOnly?: boolean
+  disabled?: boolean
   onChange?: React.ChangeEventHandler<HTMLInputElement>
   onFocus?: React.FocusEventHandler<HTMLInputElement>
 }
-
-const COMPONENT_CLASS = "fmc-textfield"
 
 export const TextField = ({
   className = "",
   props = {},
   placeholder,
-  size,
+  size = "medium",
   prefix,
-  suffixText,
+  prefixIcon,
+  suffix,
   suffixIcon,
   titleText,
   hintText,
   variant = "boxOutline",
   type = "text",
+  readOnly = false,
+  disabled = false,
   state,
   onChange,
   onFocus,
@@ -67,18 +71,6 @@ export const TextField = ({
   const componentClass = componentStyle[variantKey] ?? ""
   const inputRef = useRef<HTMLInputElement>(null)
 
-  const inlineVarsObj: Record<string, string> = {}
-  if (state === "error") {
-    inlineVarsObj[vars.stateColor] = colorMap["error-contents"]
-  }
-  if (variant === "boxFill") {
-    inlineVarsObj[vars.backgroundColor] =
-      colorMap["neutral-secondary-container"]
-  } else if (variant === "line") {
-    inlineVarsObj[vars.titleColor] = colorMap["neutral-secondary-contents"]
-  }
-  const inlineVars = assignInlineVars(inlineVarsObj)
-
   // TODO: refactor
   let titleVariantKey =
     size !== "xsmall" ? "body-md-bold" : ("body-sm-bold" as textVariantKey)
@@ -90,10 +82,20 @@ export const TextField = ({
       ? "body-sm-regular"
       : "caption-xs-regular"
 
+  const PrefixIcon = prefixIcon
+  const SuffixIcon = suffixIcon
+  const inaccesibleIconColor = readOnly || disabled ? "gray-40" : undefined
+
   return (
     <div
-      style={inlineVars}
-      className={`${COMPONENT_CLASS} ${componentClass} ${className}`}
+      className={`${COMPONENT_CLASS} ${componentClass} ${className} ${stateClass(
+        {
+          disabled,
+          readOnly,
+          error: state === "error",
+          variantLine: variant === "line",
+        }
+      )}`}
     >
       {titleText ? (
         <TextVariant variantKey={titleVariantKey} className={titleStyle}>
@@ -101,7 +103,13 @@ export const TextField = ({
         </TextVariant>
       ) : null}
       <div className={containerClass}>
-        {prefix ? <div className={prefixIconStyle}>{prefix}</div> : null}
+        {prefix ? (
+          <div className={prefixIconStyle}>{prefix}</div>
+        ) : PrefixIcon ? (
+          <div className={prefixIconStyle}>
+            <PrefixIcon color={inaccesibleIconColor ?? "gray-50"} size="lg" />
+          </div>
+        ) : null}
         <input
           ref={inputRef}
           type={type}
@@ -109,6 +117,8 @@ export const TextField = ({
           onFocus={onFocus}
           placeholder={placeholder}
           className={inputStyle}
+          readOnly={readOnly}
+          disabled={disabled}
           {...props}
         />
         <div
@@ -122,10 +132,15 @@ export const TextField = ({
         >
           <DeleteFill size="sm" color="neutral-tertiary-contents" />
         </div>
-        {suffixText ? (
-          <div className={suffixIconStyle}>{suffixText}</div>
-        ) : suffixIcon ? (
-          <div className={suffixIconStyle}>{suffixIcon}</div>
+        {suffix ? (
+          <div className={suffixStyle}>{suffix}</div>
+        ) : SuffixIcon ? (
+          <div className={suffixIconStyle}>
+            <SuffixIcon
+              color={inaccesibleIconColor ?? "neutral-primary-contents"}
+              size="lg"
+            />
+          </div>
         ) : null}
       </div>
       {hintText ? (

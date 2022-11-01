@@ -3,3 +3,8 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
+
+hr {
+  border: 1px solid #F7F8FA;
+  border-bottom: 0;
+}

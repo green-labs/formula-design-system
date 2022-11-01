@@ -69,3 +69,27 @@ let testButton = () => {
     <Button.Anchor color=#primary size=#xl text="I'm Anchor button" />
   </>
 }
+
+let testTextField = () => {
+  open Formula
+  <>
+    <TextField />
+    <TextField _type=#password size=#large />
+    <TextField
+      prefix={"$"->React.string}
+      suffix={"인증하기"->React.string}
+      titleText={"타이틀"}
+      hintText={"힌트"}
+      placeholder={"플레이스홀더"}
+      readOnly={true}
+      disabled={true}
+      onChange={_ => {
+        ()
+      }}
+      onFocus={_ => {
+        ()
+      }}
+    />
+    <TextField prefixIcon={Icon.ArrowDownLineBold.make} suffixIcon={Icon.ArrowDownLineBold.make} />
+  </>
+}
