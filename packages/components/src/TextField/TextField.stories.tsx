@@ -12,10 +12,8 @@ const Template: ComponentStory<typeof TextField> = (args) => {
           <h5>xsmall</h5>
           <form style={{ margin: "20px 0" }}>
             <TextField
-              prefix={<SearchLineBold color="gray-50" size="lg" />}
-              suffixIcon={
-                <EyeLineBold color="neutral-primary-contents" size="lg" />
-              }
+              prefixIcon={SearchLineBold}
+              suffixIcon={EyeLineBold}
               {...args}
               size="xsmall"
             />
@@ -24,10 +22,8 @@ const Template: ComponentStory<typeof TextField> = (args) => {
           <h5>small</h5>
           <form style={{ margin: "20px 0" }}>
             <TextField
-              prefix={<SearchLineBold color="gray-50" size="lg" />}
-              suffixIcon={
-                <EyeLineBold color="neutral-primary-contents" size="lg" />
-              }
+              prefixIcon={SearchLineBold}
+              suffixIcon={EyeLineBold}
               {...args}
               size="small"
             />
@@ -38,10 +34,8 @@ const Template: ComponentStory<typeof TextField> = (args) => {
       <h5>medium</h5>
       <form style={{ margin: "20px 0" }}>
         <TextField
-          prefix={<SearchLineBold color="gray-50" size="lg" />}
-          suffixIcon={
-            <EyeLineBold color="neutral-primary-contents" size="lg" />
-          }
+          prefixIcon={SearchLineBold}
+          suffixIcon={EyeLineBold}
           {...args}
           size="medium"
         />
@@ -50,10 +44,8 @@ const Template: ComponentStory<typeof TextField> = (args) => {
       <h5>large</h5>
       <form style={{ margin: "20px 0" }}>
         <TextField
-          prefix={<SearchLineBold color="gray-50" size="lg" />}
-          suffixIcon={
-            <EyeLineBold color="neutral-primary-contents" size="lg" />
-          }
+          prefixIcon={SearchLineBold}
+          suffixIcon={EyeLineBold}
           {...args}
           size="large"
         />
@@ -91,12 +83,18 @@ const SingleTemplate: ComponentStory<typeof TextField> = (args) => {
   return (
     <form style={{ margin: "20px 0" }}>
       <TextField
-        prefix={<SearchLineBold color="gray-50" size="lg" />}
-        suffixIcon={<EyeLineBold color="neutral-primary-contents" size="lg" />}
+        prefixIcon={SearchLineBold}
+        suffixIcon={EyeLineBold}
         {...args}
       />
       <br />
       <TextField {...args} />
+      {args.variant === "line" ? (
+        <>
+          <br />
+          <TextField prefix={"$"} suffix={"기부하기"} {...args} />
+        </>
+      ) : null}
     </form>
   )
 }

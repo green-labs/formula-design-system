@@ -7,14 +7,17 @@ import {
   textFieldVariants,
   inputStyle,
   prefixIconStyle,
+  suffixStyle,
   suffixIconStyle,
   titleStyle,
   hintStyle,
   clearButtonStyle,
   componentStyle,
 } from "./styles.css"
+import type { IconProps } from "../Icon"
 import { DeleteFill } from "../Icon"
 import { COMPONENT_CLASS, stateClass } from "./common"
+import { colorMap } from "@greenlabs/formula-design-token"
 
 type sizeVariantKey = keyof typeof textFieldSizeVariants
 type variantKey = keyof typeof textFieldVariants
@@ -25,9 +28,10 @@ interface TextFieldProps extends PropsWithChildren {
   placeholder?: string
   size: sizeVariantKey
   prefix?: ReactNode
-  suffixText?: ReactNode
+  prefixIcon?: React.ComponentType<IconProps>
   variant?: "boxOutline" | "boxFill" | "line"
-  suffixIcon?: ReactNode // suffix element to be shown
+  suffix?: ReactNode
+  suffixIcon?: React.ComponentType<IconProps> // suffix element to be shown
   titleText?: string // title text to be shown upper side
   hintText?: string // hint text to be shown below
   state?: "normal" | "error" // visual states (focused, readonly or disabled is separated as prop/attr)
@@ -43,7 +47,8 @@ export const TextField = ({
   placeholder,
   size,
   prefix,
-  suffixText,
+  prefixIcon,
+  suffix,
   suffixIcon,
   titleText,
   hintText,
@@ -78,6 +83,10 @@ export const TextField = ({
       ? "body-sm-regular"
       : "caption-xs-regular"
 
+  const PrefixIcon = prefixIcon
+  const SuffixIcon = suffixIcon
+  const inaccesibleIconColor = readOnly || disabled ? "gray-40" : undefined
+
   return (
     <div
       className={`${COMPONENT_CLASS} ${componentClass} ${className} ${stateClass(
@@ -95,7 +104,13 @@ export const TextField = ({
         </TextVariant>
       ) : null}
       <div className={containerClass}>
-        {prefix ? <div className={prefixIconStyle}>{prefix}</div> : null}
+        {prefix ? (
+          <div className={prefixIconStyle}>{prefix}</div>
+        ) : PrefixIcon ? (
+          <div className={prefixIconStyle}>
+            <PrefixIcon color={inaccesibleIconColor ?? "gray-50"} size="lg" />
+          </div>
+        ) : null}
         <input
           ref={inputRef}
           type={type}
@@ -118,10 +133,15 @@ export const TextField = ({
         >
           <DeleteFill size="sm" color="neutral-tertiary-contents" />
         </div>
-        {suffixText ? (
-          <div className={suffixIconStyle}>{suffixText}</div>
-        ) : suffixIcon ? (
-          <div className={suffixIconStyle}>{suffixIcon}</div>
+        {suffix ? (
+          <div className={suffixStyle}>{suffix}</div>
+        ) : SuffixIcon ? (
+          <div className={suffixIconStyle}>
+            <SuffixIcon
+              color={inaccesibleIconColor ?? "neutral-primary-contents"}
+              size="lg"
+            />
+          </div>
         ) : null}
       </div>
       {hintText ? (

@@ -288,30 +288,55 @@ export const clearButtonStyle = style([
       [`${inputStyle}:not(:placeholder-shown) ~ &`]: {
         display: "flex",
       },
+      [`.${stateClass({ disabled: true })} &, .${stateClass({
+        readOnly: true,
+      })} &`]: {
+        visibility: "hidden",
+      },
     },
   },
 ])
 
 export const prefixIconStyle = style([
-  vCentered,
+  hvCentered,
   {
     marginRight: fallbackVar(vars.iconOffset, consts.iconOffset),
     width: "20px",
     height: "20px",
+    selectors: {
+      [`${textFieldVariants["line.large"]} &`]: {
+        fontSize: 22,
+      },
+      [`${textFieldVariants["line.medium"]} &`]: {
+        fontSize: 19,
+      },
+    },
   },
 ])
 
-export const suffixIconStyle = style([
+export const suffixStyle = style([
   hvCentered,
   {
-    width: "32px",
-    height: "32px",
     marginLeft: fallbackVar(vars.iconOffset, consts.iconOffset),
     cursor: "pointer",
     selectors: {
       [`${inputStyle}:not(:placeholder-shown) ~ &`]: {
         marginLeft: consts.iconOffset, // note: clear icon이 있을 시 4px로 줄여줘야 하는 이슈 떄문에 오버라이드
       },
+      [`${textFieldVariants["line.large"]} &`]: {
+        fontSize: 22,
+      },
+      [`${textFieldVariants["line.medium"]} &`]: {
+        fontSize: 19,
+      },
     },
+  },
+])
+
+export const suffixIconStyle = style([
+  suffixStyle,
+  {
+    width: "32px",
+    height: "32px",
   },
 ])
