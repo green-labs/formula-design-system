@@ -5882,11 +5882,11 @@ export default {
               path: ["sys", "font", "caption", "xs", "medium", "font-size"],
             },
             leading: {
-              value: "1.5",
+              value: "1.4",
               filePath: "tokens/typography/sys.json5",
               isSource: true,
               original: {
-                value: "{ref.leading.normal}",
+                value: "{ref.leading.tight}",
               },
               name: "sys-font-caption-xs-medium-leading",
               attributes: {
@@ -5969,11 +5969,11 @@ export default {
               path: ["sys", "font", "caption", "xs", "bold", "font-size"],
             },
             leading: {
-              value: "1.5",
+              value: "1.4",
               filePath: "tokens/typography/sys.json5",
               isSource: true,
               original: {
-                value: "{ref.leading.normal}",
+                value: "{ref.leading.tight}",
               },
               name: "sys-font-caption-xs-bold-leading",
               attributes: {
