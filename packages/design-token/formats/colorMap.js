@@ -64,14 +64,14 @@ module.exports = {
     const fragment = Object.keys(map)
       .map((key) => {
         if (key.includes("-")) {
-          return `#${JSON.stringify(key)}`
+          return `  | #${JSON.stringify(key)}`
         }
-        return `#${key}`
+        return `  | #${key}`
       })
-      .join(" |\n")
+      .join("\n")
 
     return `type t = [
 ${fragment}
-]`
+]\n`
   },
 }

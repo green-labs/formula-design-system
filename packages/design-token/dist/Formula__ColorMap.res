@@ -1,165 +1,165 @@
 type t = [
-#white |
-#black |
-#"gray-5" |
-#"gray-10" |
-#"gray-20" |
-#"gray-30" |
-#"gray-40" |
-#"gray-50" |
-#"gray-60" |
-#"gray-70" |
-#"gray-80" |
-#"gray-90" |
-#"gray-95" |
-#"gray-100" |
-#"gray-10A" |
-#"green-5" |
-#"green-10" |
-#"green-20" |
-#"green-30" |
-#"green-40" |
-#"green-50" |
-#"green-60" |
-#"green-70" |
-#"green-80" |
-#"green-90" |
-#"green-95" |
-#"green-100" |
-#"green-10A" |
-#"teal-5" |
-#"teal-10" |
-#"teal-20" |
-#"teal-30" |
-#"teal-40" |
-#"teal-50" |
-#"teal-60" |
-#"teal-70" |
-#"teal-80" |
-#"teal-90" |
-#"teal-95" |
-#"teal-100" |
-#"teal-10A" |
-#"lightblue-5" |
-#"lightblue-10" |
-#"lightblue-20" |
-#"lightblue-30" |
-#"lightblue-40" |
-#"lightblue-50" |
-#"lightblue-60" |
-#"lightblue-70" |
-#"lightblue-80" |
-#"lightblue-90" |
-#"lightblue-95" |
-#"lightblue-100" |
-#"lightblue-10A" |
-#"blue-5" |
-#"blue-10" |
-#"blue-20" |
-#"blue-30" |
-#"blue-40" |
-#"blue-50" |
-#"blue-60" |
-#"blue-70" |
-#"blue-80" |
-#"blue-90" |
-#"blue-95" |
-#"blue-100" |
-#"blue-10A" |
-#"indigo-5" |
-#"indigo-10" |
-#"indigo-20" |
-#"indigo-30" |
-#"indigo-40" |
-#"indigo-50" |
-#"indigo-60" |
-#"indigo-70" |
-#"indigo-80" |
-#"indigo-90" |
-#"indigo-95" |
-#"indigo-100" |
-#"indigo-10A" |
-#"purple-5" |
-#"purple-10" |
-#"purple-20" |
-#"purple-30" |
-#"purple-40" |
-#"purple-50" |
-#"purple-60" |
-#"purple-70" |
-#"purple-80" |
-#"purple-90" |
-#"purple-95" |
-#"purple-100" |
-#"purple-10A" |
-#"pink-5" |
-#"pink-10" |
-#"pink-20" |
-#"pink-30" |
-#"pink-40" |
-#"pink-50" |
-#"pink-60" |
-#"pink-70" |
-#"pink-80" |
-#"pink-90" |
-#"pink-95" |
-#"pink-100" |
-#"pink-10A" |
-#"red-5" |
-#"red-10" |
-#"red-20" |
-#"red-30" |
-#"red-40" |
-#"red-50" |
-#"red-60" |
-#"red-70" |
-#"red-80" |
-#"red-90" |
-#"red-95" |
-#"red-100" |
-#"red-10A" |
-#"orange-5" |
-#"orange-10" |
-#"orange-20" |
-#"orange-30" |
-#"orange-40" |
-#"orange-50" |
-#"orange-60" |
-#"orange-70" |
-#"orange-80" |
-#"orange-90" |
-#"orange-95" |
-#"orange-100" |
-#"orange-10A" |
-#"yellow-5" |
-#"yellow-10" |
-#"yellow-20" |
-#"yellow-30" |
-#"yellow-40" |
-#"yellow-50" |
-#"yellow-60" |
-#"yellow-70" |
-#"yellow-80" |
-#"yellow-90" |
-#"yellow-95" |
-#"yellow-100" |
-#"yellow-10A" |
-#"primary-contents" |
-#"primary-container" |
-#"primary-container-contents" |
-#"secondary-container" |
-#"secondary-container-contents" |
-#"neutral-primary-contents" |
-#"neutral-primary-container" |
-#"neutral-secondary-contents" |
-#"neutral-secondary-container" |
-#"neutral-tertiary-contents" |
-#"neutral-tertiary-container" |
-#"inverse-container" |
-#"inverse-container-contents" |
-#"error-contents" |
-#"error-container" |
-#divider |
-#outline |
-#background
+  | #white
+  | #black
+  | #"gray-5"
+  | #"gray-10"
+  | #"gray-20"
+  | #"gray-30"
+  | #"gray-40"
+  | #"gray-50"
+  | #"gray-60"
+  | #"gray-70"
+  | #"gray-80"
+  | #"gray-90"
+  | #"gray-95"
+  | #"gray-100"
+  | #"gray-10A"
+  | #"green-5"
+  | #"green-10"
+  | #"green-20"
+  | #"green-30"
+  | #"green-40"
+  | #"green-50"
+  | #"green-60"
+  | #"green-70"
+  | #"green-80"
+  | #"green-90"
+  | #"green-95"
+  | #"green-100"
+  | #"green-10A"
+  | #"teal-5"
+  | #"teal-10"
+  | #"teal-20"
+  | #"teal-30"
+  | #"teal-40"
+  | #"teal-50"
+  | #"teal-60"
+  | #"teal-70"
+  | #"teal-80"
+  | #"teal-90"
+  | #"teal-95"
+  | #"teal-100"
+  | #"teal-10A"
+  | #"lightblue-5"
+  | #"lightblue-10"
+  | #"lightblue-20"
+  | #"lightblue-30"
+  | #"lightblue-40"
+  | #"lightblue-50"
+  | #"lightblue-60"
+  | #"lightblue-70"
+  | #"lightblue-80"
+  | #"lightblue-90"
+  | #"lightblue-95"
+  | #"lightblue-100"
+  | #"lightblue-10A"
+  | #"blue-5"
+  | #"blue-10"
+  | #"blue-20"
+  | #"blue-30"
+  | #"blue-40"
+  | #"blue-50"
+  | #"blue-60"
+  | #"blue-70"
+  | #"blue-80"
+  | #"blue-90"
+  | #"blue-95"
+  | #"blue-100"
+  | #"blue-10A"
+  | #"indigo-5"
+  | #"indigo-10"
+  | #"indigo-20"
+  | #"indigo-30"
+  | #"indigo-40"
+  | #"indigo-50"
+  | #"indigo-60"
+  | #"indigo-70"
+  | #"indigo-80"
+  | #"indigo-90"
+  | #"indigo-95"
+  | #"indigo-100"
+  | #"indigo-10A"
+  | #"purple-5"
+  | #"purple-10"
+  | #"purple-20"
+  | #"purple-30"
+  | #"purple-40"
+  | #"purple-50"
+  | #"purple-60"
+  | #"purple-70"
+  | #"purple-80"
+  | #"purple-90"
+  | #"purple-95"
+  | #"purple-100"
+  | #"purple-10A"
+  | #"pink-5"
+  | #"pink-10"
+  | #"pink-20"
+  | #"pink-30"
+  | #"pink-40"
+  | #"pink-50"
+  | #"pink-60"
+  | #"pink-70"
+  | #"pink-80"
+  | #"pink-90"
+  | #"pink-95"
+  | #"pink-100"
+  | #"pink-10A"
+  | #"red-5"
+  | #"red-10"
+  | #"red-20"
+  | #"red-30"
+  | #"red-40"
+  | #"red-50"
+  | #"red-60"
+  | #"red-70"
+  | #"red-80"
+  | #"red-90"
+  | #"red-95"
+  | #"red-100"
+  | #"red-10A"
+  | #"orange-5"
+  | #"orange-10"
+  | #"orange-20"
+  | #"orange-30"
+  | #"orange-40"
+  | #"orange-50"
+  | #"orange-60"
+  | #"orange-70"
+  | #"orange-80"
+  | #"orange-90"
+  | #"orange-95"
+  | #"orange-100"
+  | #"orange-10A"
+  | #"yellow-5"
+  | #"yellow-10"
+  | #"yellow-20"
+  | #"yellow-30"
+  | #"yellow-40"
+  | #"yellow-50"
+  | #"yellow-60"
+  | #"yellow-70"
+  | #"yellow-80"
+  | #"yellow-90"
+  | #"yellow-95"
+  | #"yellow-100"
+  | #"yellow-10A"
+  | #"primary-contents"
+  | #"primary-container"
+  | #"primary-container-contents"
+  | #"secondary-container"
+  | #"secondary-container-contents"
+  | #"neutral-primary-contents"
+  | #"neutral-primary-container"
+  | #"neutral-secondary-contents"
+  | #"neutral-secondary-container"
+  | #"neutral-tertiary-contents"
+  | #"neutral-tertiary-container"
+  | #"inverse-container"
+  | #"inverse-container-contents"
+  | #"error-contents"
+  | #"error-container"
+  | #divider
+  | #outline
+  | #background
 ]
