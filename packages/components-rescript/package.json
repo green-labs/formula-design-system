@@ -24,7 +24,6 @@
     "@greenlabs/formula-components": "0.0.3"
   },
   "scripts": {
-    "prepublish": "yarn build",
     "build": "rescript build -with-deps",
     "watch": "rescript build -with-deps -w"
   }

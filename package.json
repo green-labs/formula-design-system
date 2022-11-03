@@ -12,6 +12,7 @@
     "prettier": "2.7.1"
   },
   "scripts": {
+    "version": "yarn changeset version && yarn install --mode update-lockfile",
     "postinstall": "husky install",
     "release": "changeset publish",
     "build": "yarn workspaces foreach -tv run build"
