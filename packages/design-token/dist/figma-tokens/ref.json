@@ -167,5 +167,85 @@
       "100": { "value": "#473300", "type": "color" },
       "10A": { "value": "rgba(254, 218, 41, 0.12)", "type": "color" }
     }
+  },
+  "boxShadow": {
+    "1": {
+      "value": [
+        {
+          "x": "0px",
+          "y": "1px",
+          "blur": "2px",
+          "spread": "0px",
+          "color": "rgba(0, 0, 0, 0.03)",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0px",
+          "y": "2px",
+          "blur": "8px",
+          "spread": "3px",
+          "color": "rgba(0, 0, 0, 0.06)",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow"
+    },
+    "2": {
+      "value": [
+        {
+          "x": "0px",
+          "y": "1px",
+          "blur": "2px",
+          "spread": "0px",
+          "color": "rgba(0, 0, 0, 0.02)",
+          "type": "dropShadow"
+        },
+        {
+          "x": "0px",
+          "y": "4px",
+          "blur": "16px",
+          "spread": "0px",
+          "color": "rgba(0, 0, 0, 0.1)",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow"
+    }
+  },
+  "borderRadius": {
+    "none": { "value": "0px", "type": "borderRadius" },
+    "xsmall": { "value": "4px", "type": "borderRadius" },
+    "small": { "value": "6px", "type": "borderRadius" },
+    "medium": { "value": "8px", "type": "borderRadius" },
+    "large": { "value": "12px", "type": "borderRadius" },
+    "xlarge": { "value": "16px", "type": "borderRadius" },
+    "xxlarge": { "value": "20px", "type": "borderRadius" },
+    "full": { "value": "100%", "type": "borderRadius" }
+  },
+  "opacity": {
+    "0": { "value": "1", "type": "opacity" },
+    "1": { "value": "0.04", "type": "opacity" },
+    "2": { "value": "0.08", "type": "opacity" },
+    "3": { "value": "0.12", "type": "opacity" },
+    "4": { "value": "0.16", "type": "opacity" },
+    "5": { "value": "0.24", "type": "opacity" },
+    "6": { "value": "0.4", "type": "opacity" },
+    "7": { "value": "0.6", "type": "opacity" }
+  },
+  "spacing": {
+    "0": { "value": "0", "type": "spacing" },
+    "50": { "value": 2, "type": "spacing" },
+    "75": { "value": 4, "type": "spacing" },
+    "100": { "value": 8, "type": "spacing" },
+    "200": { "value": 12, "type": "spacing" },
+    "300": { "value": 16, "type": "spacing" },
+    "400": { "value": 20, "type": "spacing" },
+    "500": { "value": 24, "type": "spacing" },
+    "600": { "value": 32, "type": "spacing" },
+    "700": { "value": 40, "type": "spacing" },
+    "800": { "value": 48, "type": "spacing" },
+    "900": { "value": 64, "type": "spacing" },
+    "1000": { "value": 80, "type": "spacing" },
+    "1100": { "value": 160, "type": "spacing" }
   }
 }
