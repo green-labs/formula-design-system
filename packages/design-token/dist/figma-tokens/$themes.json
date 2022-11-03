@@ -188,7 +188,9 @@
       "body.xl-bold": "S:0ebbb355da4c09736f67c9e64eae65502bf42efa,",
       "caption.xs-regular": "S:f81610a2f3d6493d326073f21bd31ae6de02b77a,",
       "caption.xs-medium": "S:2843bf74b4ce567c6424a3f569240c34552fae71,",
-      "caption.xs-bold": "S:6f72da4f008fab947a696a1f4b7653adb9d1fcc1,"
+      "caption.xs-bold": "S:6f72da4f008fab947a696a1f4b7653adb9d1fcc1,",
+      "boxShadow.1": "S:11522d30284f94d0ee5d59c632e178412d3aa640,",
+      "boxShadow.2": "S:8a54cb7e6d32feddfc7a75fbe1077f2f16f758e2,"
     }
   }
 ]
