@@ -1,0 +1,30 @@
+{
+  ref: {
+    radius: {
+      none: {
+        value: "0px",
+      },
+      xsmall: {
+        value: "4px",
+      },
+      small: {
+        value: "6px",
+      },
+      medium: {
+        value: "8px",
+      },
+      large: {
+        value: "12px",
+      },
+      xlarge: {
+        value: "16px",
+      },
+      xxlarge: {
+        value: "20px",
+      },
+      full: {
+        value: "100%",
+      },
+    },
+  },
+}

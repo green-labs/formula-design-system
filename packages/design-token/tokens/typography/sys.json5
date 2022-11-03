@@ -145,14 +145,14 @@
           medium: {
             typeface: { value: "{ref.typeface.plain}" },
             "font-size": { value: "{ref.font-size.50}" },
-            leading: { value: "{ref.leading.normal}" },
+            leading: { value: "{ref.leading.tight}" },
             tracking: { value: "{ref.tracking.tight}" },
             weight: { value: "{ref.weight.medium}" },
           },
           bold: {
             typeface: { value: "{ref.typeface.plain}" },
             "font-size": { value: "{ref.font-size.50}" },
-            leading: { value: "{ref.leading.normal}" },
+            leading: { value: "{ref.leading.tight}" },
             tracking: { value: "{ref.tracking.tight}" },
             weight: { value: "{ref.weight.bold}" },
           },

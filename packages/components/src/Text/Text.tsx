@@ -4,7 +4,7 @@ import { variants, textColorVar, textStyle } from "./styles.css"
 import { sprinkles } from "../sprinkles.css"
 import type { Sprinkles } from "../sprinkles.css"
 
-type variantKeyType = keyof typeof variants
+export type variantKeyType = keyof typeof variants
 
 type TextBaseProps<T extends {} = {}> = T &
   React.PropsWithChildren<{

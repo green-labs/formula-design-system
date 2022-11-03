@@ -2500,6 +2500,128 @@ export default {
         path: ["ref", "opacity", "7"],
       },
     },
+    radius: {
+      none: {
+        value: "0px",
+        filePath: "tokens/shape/ref.json5",
+        isSource: true,
+        original: {
+          value: "0px",
+        },
+        name: "ref-radius-none",
+        attributes: {
+          category: "ref",
+          type: "radius",
+          item: "none",
+        },
+        path: ["ref", "radius", "none"],
+      },
+      xsmall: {
+        value: "4px",
+        filePath: "tokens/shape/ref.json5",
+        isSource: true,
+        original: {
+          value: "4px",
+        },
+        name: "ref-radius-xsmall",
+        attributes: {
+          category: "ref",
+          type: "radius",
+          item: "xsmall",
+        },
+        path: ["ref", "radius", "xsmall"],
+      },
+      small: {
+        value: "6px",
+        filePath: "tokens/shape/ref.json5",
+        isSource: true,
+        original: {
+          value: "6px",
+        },
+        name: "ref-radius-small",
+        attributes: {
+          category: "ref",
+          type: "radius",
+          item: "small",
+        },
+        path: ["ref", "radius", "small"],
+      },
+      medium: {
+        value: "8px",
+        filePath: "tokens/shape/ref.json5",
+        isSource: true,
+        original: {
+          value: "8px",
+        },
+        name: "ref-radius-medium",
+        attributes: {
+          category: "ref",
+          type: "radius",
+          item: "medium",
+        },
+        path: ["ref", "radius", "medium"],
+      },
+      large: {
+        value: "12px",
+        filePath: "tokens/shape/ref.json5",
+        isSource: true,
+        original: {
+          value: "12px",
+        },
+        name: "ref-radius-large",
+        attributes: {
+          category: "ref",
+          type: "radius",
+          item: "large",
+        },
+        path: ["ref", "radius", "large"],
+      },
+      xlarge: {
+        value: "16px",
+        filePath: "tokens/shape/ref.json5",
+        isSource: true,
+        original: {
+          value: "16px",
+        },
+        name: "ref-radius-xlarge",
+        attributes: {
+          category: "ref",
+          type: "radius",
+          item: "xlarge",
+        },
+        path: ["ref", "radius", "xlarge"],
+      },
+      xxlarge: {
+        value: "20px",
+        filePath: "tokens/shape/ref.json5",
+        isSource: true,
+        original: {
+          value: "20px",
+        },
+        name: "ref-radius-xxlarge",
+        attributes: {
+          category: "ref",
+          type: "radius",
+          item: "xxlarge",
+        },
+        path: ["ref", "radius", "xxlarge"],
+      },
+      full: {
+        value: "100%",
+        filePath: "tokens/shape/ref.json5",
+        isSource: true,
+        original: {
+          value: "100%",
+        },
+        name: "ref-radius-full",
+        attributes: {
+          category: "ref",
+          type: "radius",
+          item: "full",
+        },
+        path: ["ref", "radius", "full"],
+      },
+    },
     spacing: {
       "0": {
         value: "0",
@@ -5760,11 +5882,11 @@ export default {
               path: ["sys", "font", "caption", "xs", "medium", "font-size"],
             },
             leading: {
-              value: "1.5",
+              value: "1.4",
               filePath: "tokens/typography/sys.json5",
               isSource: true,
               original: {
-                value: "{ref.leading.normal}",
+                value: "{ref.leading.tight}",
               },
               name: "sys-font-caption-xs-medium-leading",
               attributes: {
@@ -5847,11 +5969,11 @@ export default {
               path: ["sys", "font", "caption", "xs", "bold", "font-size"],
             },
             leading: {
-              value: "1.5",
+              value: "1.4",
               filePath: "tokens/typography/sys.json5",
               isSource: true,
               original: {
-                value: "{ref.leading.normal}",
+                value: "{ref.leading.tight}",
               },
               name: "sys-font-caption-xs-bold-leading",
               attributes: {

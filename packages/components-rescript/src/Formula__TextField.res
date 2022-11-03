@@ -1,0 +1,20 @@
+@module("@greenlabs/formula-components") @react.component
+external make: (
+  ~props: {..}=?,
+  ~className: string=?,
+  ~variant: [#boxOutline | #boxFill | #line]=?,
+  ~size: [#xsmall | #samll | #medium | #large]=?,
+  ~_type: [#text | #password]=?,
+  ~placeholder: string=?,
+  ~prefix: React.element=?,
+  ~prefixIcon: React.componentLike<{..}, React.element>=?,
+  ~suffix: React.element=?,
+  ~suffixIcon: React.componentLike<{..}, React.element>=?,
+  ~titleText: string=?,
+  ~hintText: string=?,
+  ~state: [#normal | #error]=?,
+  ~readOnly: bool=?,
+  ~disabled: bool=?,
+  ~onChange: ReactEvent.Form.t => unit=?,
+  ~onFocus: ReactEvent.Focus.t => unit=?,
+) => React.element = "TextField"

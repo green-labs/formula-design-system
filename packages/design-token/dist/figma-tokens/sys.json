@@ -253,7 +253,7 @@
     "xs-medium": {
       "value": {
         "fontFamily": "Pretendard",
-        "lineHeight": "150%",
+        "lineHeight": "140%",
         "letterSpacing": "-2%",
         "fontWeight": "500",
         "fontSize": 13
@@ -263,7 +263,7 @@
     "xs-bold": {
       "value": {
         "fontFamily": "Pretendard",
-        "lineHeight": "150%",
+        "lineHeight": "140%",
         "letterSpacing": "-2%",
         "fontWeight": "700",
         "fontSize": 13

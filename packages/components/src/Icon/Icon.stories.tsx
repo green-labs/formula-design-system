@@ -11,7 +11,6 @@ interface IconItemProps {
 
 // Todo - support code copy(ts, res) handler
 const IconItem: React.FC<IconItemProps> = ({ name, children }) => {
-  const IconItemStyle = {}
   return (
     <div
       style={{
@@ -59,14 +58,14 @@ export const IconGallery: ComponentStory<
 const Icons = IconGallery.bind({})
 
 export default {
-  title: "Example/Icon",
+  title: "Formula/Icon",
   component: Icons,
   argTypes: {
     size: {
-      defaultValue: "XL",
+      defaultValue: "xl",
       description: "아이콘의 사이즈입니다.",
       control: { type: "radio" },
-      options: ["PC", "XL", "LG", "SM", "XS"],
+      options: ["pc", "xl", "lg", "sm", "xs"],
     },
     color: {
       control: { type: "select" },
