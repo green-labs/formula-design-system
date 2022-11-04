@@ -6,6 +6,7 @@ import type { textFieldSizeVariants } from "./styles.css"
 import {
   textFieldVariants,
   inputStyle,
+  prefixStyle,
   prefixIconStyle,
   suffixStyle,
   suffixIconStyle,
@@ -104,7 +105,7 @@ export const TextField = ({
       ) : null}
       <div className={containerClass}>
         {prefix ? (
-          <div className={prefixIconStyle}>{prefix}</div>
+          <div className={prefixStyle}>{prefix}</div>
         ) : PrefixIcon ? (
           <div className={prefixIconStyle}>
             <PrefixIcon color={inaccesibleIconColor ?? "gray-50"} size="lg" />

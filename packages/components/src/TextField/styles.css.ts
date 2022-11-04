@@ -302,12 +302,10 @@ export const clearButtonStyle = style([
   },
 ])
 
-export const prefixIconStyle = style([
+export const prefixStyle = style([
   hvCentered,
   {
     marginRight: fallbackVar(vars.iconOffset, consts.iconOffset),
-    width: "20px",
-    height: "20px",
     selectors: {
       [`${textFieldVariants["line.large"]} &`]: {
         fontSize: 22,
@@ -316,6 +314,14 @@ export const prefixIconStyle = style([
         fontSize: 19,
       },
     },
+  },
+])
+
+export const prefixIconStyle = style([
+  prefixStyle,
+  {
+    width: "20px",
+    height: "20px",
   },
 ])
 
