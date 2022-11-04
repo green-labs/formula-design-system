@@ -3,6 +3,7 @@ import type { ComponentMeta, ComponentStory } from "@storybook/react"
 import { TextField } from "./TextField"
 import { SearchLineBold, EyeLineBold } from "../Icon"
 import { createDisabledArgs } from "../utils/storybook"
+import * as IconComponents from "../Icon/generated"
 
 const Template: ComponentStory<typeof TextField> = (args) => {
   return (
@@ -54,6 +55,11 @@ const Template: ComponentStory<typeof TextField> = (args) => {
   )
 }
 
+const textControl = {
+  defaultValue: "",
+  control: { type: "text" },
+}
+
 export const Overview = Template.bind({})
 Overview.args = {
   placeholder: "플레이스홀더 텍스트",
@@ -62,41 +68,49 @@ Overview.args = {
   type: "text",
   state: "normal",
   variant: "boxOutline",
+  readOnly: false,
+  disabled: false,
 }
+
 const commonDisabled = createDisabledArgs([
   "props",
   "className",
-  "prefix",
-  "suffixText",
+  "prefixIcon",
   "suffixIcon",
-  "titleText",
-  "hintText",
   "onChange",
   "onFocus",
 ])
+
 Overview.argTypes = {
   ...commonDisabled,
   ...createDisabledArgs(["size"]),
+  suffix: textControl,
+  prefix: textControl,
+  hintText: textControl,
+  titleText: textControl,
 }
 
 const SingleTemplate: ComponentStory<typeof TextField> = (args) => {
   return (
     <form style={{ margin: "20px 0" }}>
-      <TextField
-        prefixIcon={SearchLineBold}
-        suffixIcon={EyeLineBold}
-        {...args}
-      />
-      <br />
       <TextField {...args} />
-      {args.variant === "line" ? (
-        <>
-          <br />
-          <TextField prefix={"$"} suffix={"기부하기"} {...args} />
-        </>
-      ) : null}
     </form>
   )
+}
+
+const iconControlMapping = Object.entries(IconComponents).reduce(
+  (p, [key, component]) => {
+    p[key] = component
+    return p
+  },
+  {}
+)
+iconControlMapping["none"] = undefined
+const iconControl = {
+  defaultValue: "none",
+  control: { type: "select" },
+  options: ["none", ...Object.keys(IconComponents)],
+  mapping: iconControlMapping,
 }
 
 export const BoxOutline = SingleTemplate.bind({})
@@ -112,6 +126,12 @@ BoxOutline.args = {
 BoxOutline.argTypes = {
   ...commonDisabled,
   ...createDisabledArgs(["variant"]),
+  suffix: textControl,
+  prefix: textControl,
+  hintText: textControl,
+  titleText: textControl,
+  prefixIcon: iconControl,
+  suffixIcon: iconControl,
 }
 
 export const BoxFill = SingleTemplate.bind({})
