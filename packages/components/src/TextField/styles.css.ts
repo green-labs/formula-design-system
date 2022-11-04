@@ -13,7 +13,7 @@ export const vars = {
   inputFontSize: createVar(),
   backgroundColor: createVar(),
   titleColor: createVar(),
-  stateColor: createVar(),
+  stateColor: createVar(), // error color | undefined(normal)
   iconOffset: createVar(),
   hintOffset: createVar(),
   titleOffset: createVar(),
@@ -106,11 +106,17 @@ export const componentStyle = styleVariants({
 export const hintStyle = style({
   paddingTop: fallbackVar(vars.hintOffset, consts.hintOffset),
   color: fallbackVar(vars.stateColor, colorMap["neutral-secondary-contents"]),
-  fontSize: caption.xs.regular["font-size"].value,
+  fontSize: body.sm.regular["font-size"].value,
   display: "block",
   selectors: {
+    // apply caption.xs.regular to small, xsmall size variants
+    [`${componentStyle["boxFill.small"]} &, ${componentStyle["boxFill.xsmall"]} &, ${componentStyle["boxOutline.small"]} &, ${componentStyle["boxOutline.xsmall"]} &`]:
+      {
+        fontSize: caption.xs.regular["font-size"].value,
+      },
+    // when focused (or if have errornous state) apply different text color
     ":focus-within ~ &": {
-      color: fallbackVar(vars.stateColor, colorMap["primary-container"]),
+      color: fallbackVar(vars.stateColor, colorMap["green-70"]),
     },
   },
 })
