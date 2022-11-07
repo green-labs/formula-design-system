@@ -199,13 +199,7 @@ const lineCommon = style({
   borderWidth: 0,
   paddingLeft: 0,
   paddingRight: 0,
-  // hack to hide els get lifted by border width
-  paddingBottom: 1,
-  borderBottomWidth: 1,
-  ":focus-within": {
-    paddingBottom: 0,
-    borderBottomWidth: 2,
-  },
+  borderBottomWidth: 2,
 })
 
 export const textFieldVariants = styleVariants({
