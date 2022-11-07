@@ -252,7 +252,8 @@ export const inputStyle = style({
   height: vars.inputHeight,
   backgroundColor: vars.backgroundColor,
   fontSize: vars.inputFontSize,
-  flexGrow: 1,
+  flex: "1 1 auto",
+  width: "100%",
   caretColor: colorMap["primary-contents"],
   color: colorMap["neutral-primary-contents"],
   "::placeholder": {
