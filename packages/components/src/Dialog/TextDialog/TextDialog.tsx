@@ -41,6 +41,7 @@ const TextDialog = ({
       ) : null}
       <Text.Body
         className={`${bodyTextBase} ${title ? "with-title" : ""}`}
+        size={title ? "md" : "lg"}
         tag="span"
       >
         {text}
@@ -50,7 +51,7 @@ const TextDialog = ({
           text={secondaryLabel}
           block
           size="md"
-          color="secondary-gray"
+          color="tertiary-gray"
           onClick={onSecondary}
         />
         <ContainerButton

@@ -34,7 +34,7 @@ export const ImageDialog = ({
           text={secondaryLabel}
           block
           size="md"
-          color="secondary-gray"
+          color="tertiary-gray"
           onClick={onSecondary}
         />
         <ContainerButton
