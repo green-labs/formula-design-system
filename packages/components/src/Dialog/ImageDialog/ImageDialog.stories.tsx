@@ -105,14 +105,14 @@ export default {
   argTypes: {
     imageAspectRatio: {
       name: "imageAspectRatio",
-      control: { type: "select" },
+      control: { type: "radio" },
       options: ["square", "vertical", "horizontal"],
       defaultValue: "square",
     },
     imageSrc: { name: "imageSrc", control: { type: "text" }, defaultValue: "" },
     buttonType: {
       name: "buttonType",
-      control: { type: "select" },
+      control: { type: "radio" },
       options: ["evenly", "weighted", "vertical"],
       defaultValue: "evenly",
     },
