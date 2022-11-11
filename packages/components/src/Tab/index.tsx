@@ -1,4 +1,1 @@
-export * from "./TextTab"
-export * from "./AbstractTab"
-export * from "./TabList"
-export * from "./TabRoot"
+export * from "./TextTab/TextTab"
