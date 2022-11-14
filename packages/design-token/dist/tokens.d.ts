@@ -1,361 +1,361 @@
 export default tokens
 
-declare interface DesignToken {
-  value: string
+declare type DesignToken<T> = {
+  value: T
 }
 
 declare const tokens: {
   ref: {
     color: {
-      white: DesignToken
-      black: DesignToken
+      white: DesignToken<string>
+      black: DesignToken<string>
       gray: {
-        "5": DesignToken
-        "10": DesignToken
-        "20": DesignToken
-        "30": DesignToken
-        "40": DesignToken
-        "50": DesignToken
-        "60": DesignToken
-        "70": DesignToken
-        "80": DesignToken
-        "90": DesignToken
-        "95": DesignToken
-        "100": DesignToken
-        "10A": DesignToken
+        "5": DesignToken<string>
+        "10": DesignToken<string>
+        "20": DesignToken<string>
+        "30": DesignToken<string>
+        "40": DesignToken<string>
+        "50": DesignToken<string>
+        "60": DesignToken<string>
+        "70": DesignToken<string>
+        "80": DesignToken<string>
+        "90": DesignToken<string>
+        "95": DesignToken<string>
+        "100": DesignToken<string>
+        "10A": DesignToken<string>
       }
       green: {
-        "5": DesignToken
-        "10": DesignToken
-        "20": DesignToken
-        "30": DesignToken
-        "40": DesignToken
-        "50": DesignToken
-        "60": DesignToken
-        "70": DesignToken
-        "80": DesignToken
-        "90": DesignToken
-        "95": DesignToken
-        "100": DesignToken
-        "10A": DesignToken
+        "5": DesignToken<string>
+        "10": DesignToken<string>
+        "20": DesignToken<string>
+        "30": DesignToken<string>
+        "40": DesignToken<string>
+        "50": DesignToken<string>
+        "60": DesignToken<string>
+        "70": DesignToken<string>
+        "80": DesignToken<string>
+        "90": DesignToken<string>
+        "95": DesignToken<string>
+        "100": DesignToken<string>
+        "10A": DesignToken<string>
       }
       teal: {
-        "5": DesignToken
-        "10": DesignToken
-        "20": DesignToken
-        "30": DesignToken
-        "40": DesignToken
-        "50": DesignToken
-        "60": DesignToken
-        "70": DesignToken
-        "80": DesignToken
-        "90": DesignToken
-        "95": DesignToken
-        "100": DesignToken
-        "10A": DesignToken
+        "5": DesignToken<string>
+        "10": DesignToken<string>
+        "20": DesignToken<string>
+        "30": DesignToken<string>
+        "40": DesignToken<string>
+        "50": DesignToken<string>
+        "60": DesignToken<string>
+        "70": DesignToken<string>
+        "80": DesignToken<string>
+        "90": DesignToken<string>
+        "95": DesignToken<string>
+        "100": DesignToken<string>
+        "10A": DesignToken<string>
       }
       lightblue: {
-        "5": DesignToken
-        "10": DesignToken
-        "20": DesignToken
-        "30": DesignToken
-        "40": DesignToken
-        "50": DesignToken
-        "60": DesignToken
-        "70": DesignToken
-        "80": DesignToken
-        "90": DesignToken
-        "95": DesignToken
-        "100": DesignToken
-        "10A": DesignToken
+        "5": DesignToken<string>
+        "10": DesignToken<string>
+        "20": DesignToken<string>
+        "30": DesignToken<string>
+        "40": DesignToken<string>
+        "50": DesignToken<string>
+        "60": DesignToken<string>
+        "70": DesignToken<string>
+        "80": DesignToken<string>
+        "90": DesignToken<string>
+        "95": DesignToken<string>
+        "100": DesignToken<string>
+        "10A": DesignToken<string>
       }
       blue: {
-        "5": DesignToken
-        "10": DesignToken
-        "20": DesignToken
-        "30": DesignToken
-        "40": DesignToken
-        "50": DesignToken
-        "60": DesignToken
-        "70": DesignToken
-        "80": DesignToken
-        "90": DesignToken
-        "95": DesignToken
-        "100": DesignToken
-        "10A": DesignToken
+        "5": DesignToken<string>
+        "10": DesignToken<string>
+        "20": DesignToken<string>
+        "30": DesignToken<string>
+        "40": DesignToken<string>
+        "50": DesignToken<string>
+        "60": DesignToken<string>
+        "70": DesignToken<string>
+        "80": DesignToken<string>
+        "90": DesignToken<string>
+        "95": DesignToken<string>
+        "100": DesignToken<string>
+        "10A": DesignToken<string>
       }
       indigo: {
-        "5": DesignToken
-        "10": DesignToken
-        "20": DesignToken
-        "30": DesignToken
-        "40": DesignToken
-        "50": DesignToken
-        "60": DesignToken
-        "70": DesignToken
-        "80": DesignToken
-        "90": DesignToken
-        "95": DesignToken
-        "100": DesignToken
-        "10A": DesignToken
+        "5": DesignToken<string>
+        "10": DesignToken<string>
+        "20": DesignToken<string>
+        "30": DesignToken<string>
+        "40": DesignToken<string>
+        "50": DesignToken<string>
+        "60": DesignToken<string>
+        "70": DesignToken<string>
+        "80": DesignToken<string>
+        "90": DesignToken<string>
+        "95": DesignToken<string>
+        "100": DesignToken<string>
+        "10A": DesignToken<string>
       }
       purple: {
-        "5": DesignToken
-        "10": DesignToken
-        "20": DesignToken
-        "30": DesignToken
-        "40": DesignToken
-        "50": DesignToken
-        "60": DesignToken
-        "70": DesignToken
-        "80": DesignToken
-        "90": DesignToken
-        "95": DesignToken
-        "100": DesignToken
-        "10A": DesignToken
+        "5": DesignToken<string>
+        "10": DesignToken<string>
+        "20": DesignToken<string>
+        "30": DesignToken<string>
+        "40": DesignToken<string>
+        "50": DesignToken<string>
+        "60": DesignToken<string>
+        "70": DesignToken<string>
+        "80": DesignToken<string>
+        "90": DesignToken<string>
+        "95": DesignToken<string>
+        "100": DesignToken<string>
+        "10A": DesignToken<string>
       }
       pink: {
-        "5": DesignToken
-        "10": DesignToken
-        "20": DesignToken
-        "30": DesignToken
-        "40": DesignToken
-        "50": DesignToken
-        "60": DesignToken
-        "70": DesignToken
-        "80": DesignToken
-        "90": DesignToken
-        "95": DesignToken
-        "100": DesignToken
-        "10A": DesignToken
+        "5": DesignToken<string>
+        "10": DesignToken<string>
+        "20": DesignToken<string>
+        "30": DesignToken<string>
+        "40": DesignToken<string>
+        "50": DesignToken<string>
+        "60": DesignToken<string>
+        "70": DesignToken<string>
+        "80": DesignToken<string>
+        "90": DesignToken<string>
+        "95": DesignToken<string>
+        "100": DesignToken<string>
+        "10A": DesignToken<string>
       }
       red: {
-        "5": DesignToken
-        "10": DesignToken
-        "20": DesignToken
-        "30": DesignToken
-        "40": DesignToken
-        "50": DesignToken
-        "60": DesignToken
-        "70": DesignToken
-        "80": DesignToken
-        "90": DesignToken
-        "95": DesignToken
-        "100": DesignToken
-        "10A": DesignToken
+        "5": DesignToken<string>
+        "10": DesignToken<string>
+        "20": DesignToken<string>
+        "30": DesignToken<string>
+        "40": DesignToken<string>
+        "50": DesignToken<string>
+        "60": DesignToken<string>
+        "70": DesignToken<string>
+        "80": DesignToken<string>
+        "90": DesignToken<string>
+        "95": DesignToken<string>
+        "100": DesignToken<string>
+        "10A": DesignToken<string>
       }
       orange: {
-        "5": DesignToken
-        "10": DesignToken
-        "20": DesignToken
-        "30": DesignToken
-        "40": DesignToken
-        "50": DesignToken
-        "60": DesignToken
-        "70": DesignToken
-        "80": DesignToken
-        "90": DesignToken
-        "95": DesignToken
-        "100": DesignToken
-        "10A": DesignToken
+        "5": DesignToken<string>
+        "10": DesignToken<string>
+        "20": DesignToken<string>
+        "30": DesignToken<string>
+        "40": DesignToken<string>
+        "50": DesignToken<string>
+        "60": DesignToken<string>
+        "70": DesignToken<string>
+        "80": DesignToken<string>
+        "90": DesignToken<string>
+        "95": DesignToken<string>
+        "100": DesignToken<string>
+        "10A": DesignToken<string>
       }
       yellow: {
-        "5": DesignToken
-        "10": DesignToken
-        "20": DesignToken
-        "30": DesignToken
-        "40": DesignToken
-        "50": DesignToken
-        "60": DesignToken
-        "70": DesignToken
-        "80": DesignToken
-        "90": DesignToken
-        "95": DesignToken
-        "100": DesignToken
-        "10A": DesignToken
+        "5": DesignToken<string>
+        "10": DesignToken<string>
+        "20": DesignToken<string>
+        "30": DesignToken<string>
+        "40": DesignToken<string>
+        "50": DesignToken<string>
+        "60": DesignToken<string>
+        "70": DesignToken<string>
+        "80": DesignToken<string>
+        "90": DesignToken<string>
+        "95": DesignToken<string>
+        "100": DesignToken<string>
+        "10A": DesignToken<string>
       }
     }
     shadow: {
-      "1": DesignToken
-      "2": DesignToken
+      "1": DesignToken<string>
+      "2": DesignToken<string>
     }
     opacity: {
-      "0": DesignToken
-      "1": DesignToken
-      "2": DesignToken
-      "3": DesignToken
-      "4": DesignToken
-      "5": DesignToken
-      "6": DesignToken
-      "7": DesignToken
+      "0": DesignToken<number>
+      "1": DesignToken<number>
+      "2": DesignToken<number>
+      "3": DesignToken<number>
+      "4": DesignToken<number>
+      "5": DesignToken<number>
+      "6": DesignToken<number>
+      "7": DesignToken<number>
     }
     radius: {
-      none: DesignToken
-      xsmall: DesignToken
-      small: DesignToken
-      medium: DesignToken
-      large: DesignToken
-      xlarge: DesignToken
-      xxlarge: DesignToken
-      full: DesignToken
+      none: DesignToken<string>
+      xsmall: DesignToken<string>
+      small: DesignToken<string>
+      medium: DesignToken<string>
+      large: DesignToken<string>
+      xlarge: DesignToken<string>
+      xxlarge: DesignToken<string>
+      full: DesignToken<string>
     }
     spacing: {
-      "0": DesignToken
-      "50": DesignToken
-      "75": DesignToken
-      "100": DesignToken
-      "200": DesignToken
-      "300": DesignToken
-      "400": DesignToken
-      "500": DesignToken
-      "600": DesignToken
-      "700": DesignToken
-      "800": DesignToken
-      "900": DesignToken
-      "1000": DesignToken
-      "1100": DesignToken
+      "0": DesignToken<string>
+      "50": DesignToken<string>
+      "75": DesignToken<string>
+      "100": DesignToken<string>
+      "200": DesignToken<string>
+      "300": DesignToken<string>
+      "400": DesignToken<string>
+      "500": DesignToken<string>
+      "600": DesignToken<string>
+      "700": DesignToken<string>
+      "800": DesignToken<string>
+      "900": DesignToken<string>
+      "1000": DesignToken<string>
+      "1100": DesignToken<string>
     }
     typeface: {
-      plain: DesignToken
+      plain: DesignToken<string>
     }
     leading: {
-      normal: DesignToken
-      tight: DesignToken
-      tighter: DesignToken
+      normal: DesignToken<string>
+      tight: DesignToken<string>
+      tighter: DesignToken<string>
     }
     weight: {
-      regular: DesignToken
-      medium: DesignToken
-      bold: DesignToken
+      regular: DesignToken<string>
+      medium: DesignToken<string>
+      bold: DesignToken<string>
     }
     tracking: {
-      none: DesignToken
-      tight: DesignToken
-      tighter: DesignToken
+      none: DesignToken<string>
+      tight: DesignToken<string>
+      tighter: DesignToken<string>
     }
     "font-size": {
-      "50": DesignToken
-      "75": DesignToken
-      "100": DesignToken
-      "200": DesignToken
-      "300": DesignToken
-      "400": DesignToken
-      base: DesignToken
-      "headline-75": DesignToken
-      "headline-100": DesignToken
-      "headline-200": DesignToken
-      "headline-300": DesignToken
+      "50": DesignToken<string>
+      "75": DesignToken<string>
+      "100": DesignToken<string>
+      "200": DesignToken<string>
+      "300": DesignToken<string>
+      "400": DesignToken<string>
+      base: DesignToken<string>
+      "headline-75": DesignToken<string>
+      "headline-100": DesignToken<string>
+      "headline-200": DesignToken<string>
+      "headline-300": DesignToken<string>
     }
     viewport: {
-      sm: DesignToken
-      md: DesignToken
-      lg: DesignToken
-      xl: DesignToken
+      sm: DesignToken<string>
+      md: DesignToken<string>
+      lg: DesignToken<string>
+      xl: DesignToken<string>
     }
   }
   sys: {
     state: {
       opacity: {
-        "hover-white": DesignToken
-        hover: DesignToken
-        "pressed-white": DesignToken
-        pressed: DesignToken
-        "disabled-container": DesignToken
-        "disabled-contents": DesignToken
-        "readonly-container": DesignToken
-        "readonly-contents": DesignToken
+        "hover-white": DesignToken<number>
+        hover: DesignToken<number>
+        "pressed-white": DesignToken<number>
+        pressed: DesignToken<number>
+        "disabled-container": DesignToken<number>
+        "disabled-contents": DesignToken<number>
+        "readonly-container": DesignToken<number>
+        "readonly-contents": DesignToken<number>
       }
       color: {
-        "container-contents-white": DesignToken
+        "container-contents-white": DesignToken<string>
       }
     }
     color: {
       primary: {
-        contents: DesignToken
-        container: DesignToken
-        "container-contents": DesignToken
+        contents: DesignToken<string>
+        container: DesignToken<string>
+        "container-contents": DesignToken<string>
       }
       secondary: {
-        container: DesignToken
-        "container-contents": DesignToken
+        container: DesignToken<string>
+        "container-contents": DesignToken<string>
       }
       "neutral-primary": {
-        contents: DesignToken
-        container: DesignToken
+        contents: DesignToken<string>
+        container: DesignToken<string>
       }
       "neutral-secondary": {
-        contents: DesignToken
-        container: DesignToken
+        contents: DesignToken<string>
+        container: DesignToken<string>
       }
       "neutral-tertiary": {
-        contents: DesignToken
-        container: DesignToken
+        contents: DesignToken<string>
+        container: DesignToken<string>
       }
       inverse: {
-        container: DesignToken
-        "container-contents": DesignToken
+        container: DesignToken<string>
+        "container-contents": DesignToken<string>
       }
       error: {
-        contents: DesignToken
-        container: DesignToken
+        contents: DesignToken<string>
+        container: DesignToken<string>
       }
-      divider: DesignToken
-      outline: DesignToken
-      background: DesignToken
+      divider: DesignToken<string>
+      outline: DesignToken<string>
+      background: DesignToken<string>
     }
     layout: {
       default: {
         sm: {
-          breakpoint: DesignToken
-          columns: DesignToken
-          gutter: DesignToken
-          margin: DesignToken
+          breakpoint: DesignToken<string>
+          columns: DesignToken<string>
+          gutter: DesignToken<string>
+          margin: DesignToken<string>
         }
         md: {
-          breakpoint: DesignToken
-          columns: DesignToken
-          gutter: DesignToken
-          margin: DesignToken
+          breakpoint: DesignToken<string>
+          columns: DesignToken<string>
+          gutter: DesignToken<string>
+          margin: DesignToken<string>
         }
         lg: {
-          breakpoint: DesignToken
-          columns: DesignToken
-          gutter: DesignToken
-          margin: DesignToken
+          breakpoint: DesignToken<string>
+          columns: DesignToken<string>
+          gutter: DesignToken<string>
+          margin: DesignToken<string>
         }
         xl: {
-          breakpoint: DesignToken
-          columns: DesignToken
-          gutter: DesignToken
-          margin: DesignToken
-          width: DesignToken
+          breakpoint: DesignToken<string>
+          columns: DesignToken<string>
+          gutter: DesignToken<string>
+          margin: DesignToken<string>
+          width: DesignToken<string>
         }
       }
       tighter: {
         sm: {
-          breakpoint: DesignToken
-          columns: DesignToken
-          gutter: DesignToken
-          margin: DesignToken
+          breakpoint: DesignToken<string>
+          columns: DesignToken<string>
+          gutter: DesignToken<string>
+          margin: DesignToken<string>
         }
         md: {
-          breakpoint: DesignToken
-          columns: DesignToken
-          gutter: DesignToken
-          margin: DesignToken
+          breakpoint: DesignToken<string>
+          columns: DesignToken<string>
+          gutter: DesignToken<string>
+          margin: DesignToken<string>
         }
         lg: {
-          breakpoint: DesignToken
-          columns: DesignToken
-          gutter: DesignToken
-          margin: DesignToken
+          breakpoint: DesignToken<string>
+          columns: DesignToken<string>
+          gutter: DesignToken<string>
+          margin: DesignToken<string>
         }
         xl: {
-          breakpoint: DesignToken
-          columns: DesignToken
-          gutter: DesignToken
-          margin: DesignToken
-          width: DesignToken
+          breakpoint: DesignToken<string>
+          columns: DesignToken<string>
+          gutter: DesignToken<string>
+          margin: DesignToken<string>
+          width: DesignToken<string>
         }
       }
     }
@@ -363,157 +363,157 @@ declare const tokens: {
       headline: {
         sm: {
           regular: {
-            typeface: DesignToken
-            "font-size": DesignToken
-            leading: DesignToken
-            tracking: DesignToken
-            weight: DesignToken
+            typeface: DesignToken<string>
+            "font-size": DesignToken<string>
+            leading: DesignToken<string>
+            tracking: DesignToken<string>
+            weight: DesignToken<string>
           }
           bold: {
-            typeface: DesignToken
-            "font-size": DesignToken
-            leading: DesignToken
-            tracking: DesignToken
-            weight: DesignToken
+            typeface: DesignToken<string>
+            "font-size": DesignToken<string>
+            leading: DesignToken<string>
+            tracking: DesignToken<string>
+            weight: DesignToken<string>
           }
         }
         md: {
           bold: {
-            typeface: DesignToken
-            "font-size": DesignToken
-            leading: DesignToken
-            tracking: DesignToken
-            weight: DesignToken
+            typeface: DesignToken<string>
+            "font-size": DesignToken<string>
+            leading: DesignToken<string>
+            tracking: DesignToken<string>
+            weight: DesignToken<string>
           }
         }
         lg: {
           bold: {
-            typeface: DesignToken
-            "font-size": DesignToken
-            leading: DesignToken
-            tracking: DesignToken
-            weight: DesignToken
+            typeface: DesignToken<string>
+            "font-size": DesignToken<string>
+            leading: DesignToken<string>
+            tracking: DesignToken<string>
+            weight: DesignToken<string>
           }
         }
         xl: {
           bold: {
-            typeface: DesignToken
-            "font-size": DesignToken
-            leading: DesignToken
-            tracking: DesignToken
-            weight: DesignToken
+            typeface: DesignToken<string>
+            "font-size": DesignToken<string>
+            leading: DesignToken<string>
+            tracking: DesignToken<string>
+            weight: DesignToken<string>
           }
         }
       }
       body: {
         sm: {
           regular: {
-            typeface: DesignToken
-            "font-size": DesignToken
-            leading: DesignToken
-            tracking: DesignToken
-            weight: DesignToken
+            typeface: DesignToken<string>
+            "font-size": DesignToken<string>
+            leading: DesignToken<string>
+            tracking: DesignToken<string>
+            weight: DesignToken<string>
           }
           medium: {
-            typeface: DesignToken
-            "font-size": DesignToken
-            leading: DesignToken
-            tracking: DesignToken
-            weight: DesignToken
+            typeface: DesignToken<string>
+            "font-size": DesignToken<string>
+            leading: DesignToken<string>
+            tracking: DesignToken<string>
+            weight: DesignToken<string>
           }
           bold: {
-            typeface: DesignToken
-            "font-size": DesignToken
-            leading: DesignToken
-            tracking: DesignToken
-            weight: DesignToken
+            typeface: DesignToken<string>
+            "font-size": DesignToken<string>
+            leading: DesignToken<string>
+            tracking: DesignToken<string>
+            weight: DesignToken<string>
           }
         }
         md: {
           regular: {
-            typeface: DesignToken
-            "font-size": DesignToken
-            leading: DesignToken
-            tracking: DesignToken
-            weight: DesignToken
+            typeface: DesignToken<string>
+            "font-size": DesignToken<string>
+            leading: DesignToken<string>
+            tracking: DesignToken<string>
+            weight: DesignToken<string>
           }
           medium: {
-            typeface: DesignToken
-            "font-size": DesignToken
-            leading: DesignToken
-            tracking: DesignToken
-            weight: DesignToken
+            typeface: DesignToken<string>
+            "font-size": DesignToken<string>
+            leading: DesignToken<string>
+            tracking: DesignToken<string>
+            weight: DesignToken<string>
           }
           bold: {
-            typeface: DesignToken
-            "font-size": DesignToken
-            leading: DesignToken
-            tracking: DesignToken
-            weight: DesignToken
+            typeface: DesignToken<string>
+            "font-size": DesignToken<string>
+            leading: DesignToken<string>
+            tracking: DesignToken<string>
+            weight: DesignToken<string>
           }
         }
         lg: {
           regular: {
-            typeface: DesignToken
-            "font-size": DesignToken
-            leading: DesignToken
-            tracking: DesignToken
-            weight: DesignToken
+            typeface: DesignToken<string>
+            "font-size": DesignToken<string>
+            leading: DesignToken<string>
+            tracking: DesignToken<string>
+            weight: DesignToken<string>
           }
           medium: {
-            typeface: DesignToken
-            "font-size": DesignToken
-            leading: DesignToken
-            tracking: DesignToken
-            weight: DesignToken
+            typeface: DesignToken<string>
+            "font-size": DesignToken<string>
+            leading: DesignToken<string>
+            tracking: DesignToken<string>
+            weight: DesignToken<string>
           }
           bold: {
-            typeface: DesignToken
-            "font-size": DesignToken
-            leading: DesignToken
-            tracking: DesignToken
-            weight: DesignToken
+            typeface: DesignToken<string>
+            "font-size": DesignToken<string>
+            leading: DesignToken<string>
+            tracking: DesignToken<string>
+            weight: DesignToken<string>
           }
         }
         xl: {
           regular: {
-            typeface: DesignToken
-            "font-size": DesignToken
-            leading: DesignToken
-            tracking: DesignToken
-            weight: DesignToken
+            typeface: DesignToken<string>
+            "font-size": DesignToken<string>
+            leading: DesignToken<string>
+            tracking: DesignToken<string>
+            weight: DesignToken<string>
           }
           bold: {
-            typeface: DesignToken
-            "font-size": DesignToken
-            leading: DesignToken
-            tracking: DesignToken
-            weight: DesignToken
+            typeface: DesignToken<string>
+            "font-size": DesignToken<string>
+            leading: DesignToken<string>
+            tracking: DesignToken<string>
+            weight: DesignToken<string>
           }
         }
       }
       caption: {
         xs: {
           regular: {
-            typeface: DesignToken
-            "font-size": DesignToken
-            leading: DesignToken
-            tracking: DesignToken
-            weight: DesignToken
+            typeface: DesignToken<string>
+            "font-size": DesignToken<string>
+            leading: DesignToken<string>
+            tracking: DesignToken<string>
+            weight: DesignToken<string>
           }
           medium: {
-            typeface: DesignToken
-            "font-size": DesignToken
-            leading: DesignToken
-            tracking: DesignToken
-            weight: DesignToken
+            typeface: DesignToken<string>
+            "font-size": DesignToken<string>
+            leading: DesignToken<string>
+            tracking: DesignToken<string>
+            weight: DesignToken<string>
           }
           bold: {
-            typeface: DesignToken
-            "font-size": DesignToken
-            leading: DesignToken
-            tracking: DesignToken
-            weight: DesignToken
+            typeface: DesignToken<string>
+            "font-size": DesignToken<string>
+            leading: DesignToken<string>
+            tracking: DesignToken<string>
+            weight: DesignToken<string>
           }
         }
       }
