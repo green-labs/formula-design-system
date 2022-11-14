@@ -1,5 +1,13 @@
 # @greenlabs/formula-components
 
+## 0.0.5-next.0
+
+### Patch Changes
+
+- f6ac357: fix package: add missing files from formula-design-token
+- Updated dependencies [f6ac357]
+  - @greenlabs/formula-design-token@0.0.5-next.0
+
 ## 0.0.4
 
 ### Patch Changes
