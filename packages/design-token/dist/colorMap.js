@@ -162,4 +162,4 @@ export default {
   divider: "#F0F2F5",
   outline: "#DCDFE3",
   background: "white",
-} as const
+}

@@ -6,10 +6,11 @@
     "url": "git@github.com:green-labs/formula-design-system.git",
     "directory": "packages/design-token"
   },
-  "main": "./index.ts",
-  "types": "./index.ts",
+  "main": "./index.js",
+  "types": "./index.d.ts",
   "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
   "devDependencies": {
+    "json-to-ts": "^1.7.0",
     "style-dictionary": "^3.7.1"
   },
   "files": [

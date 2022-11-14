@@ -3,6 +3,8 @@
 //
 //   { "green_200" : "#033927", ... }
 
+const jsonToTS = require("json-to-ts")
+
 /**
  * @param { import("style-dictionary/types/TransformedToken").TransformedToken[] arr }
  */
@@ -51,14 +53,21 @@ const createMap = (dictionary) => {
  * @param { import("style-dictionary/types/Format").FormatterArguments args }
  */
 module.exports = {
-  colorMapFormat(args) {
-    const { dictionary } = args
+  colorMapFormat({ dictionary }) {
     const map = JSON.stringify(createMap(dictionary))
 
-    return `export default ${map} as const`
+    return `export default ${map}`
   },
-  colorMapResFormat(args) {
-    const { dictionary } = args
+  colorMapType({ dictionary }) {
+    const map = createMap(dictionary)
+
+    return (
+      "declare const root: RootObject\n" +
+      "export default root\n" +
+      jsonToTS(map).join("\n")
+    )
+  },
+  colorMapResFormat({ dictionary }) {
     const map = createMap(dictionary)
 
     const fragment = Object.keys(map)
