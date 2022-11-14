@@ -4,4 +4,4 @@
 "@greenlabs/formula-design-token": patch
 ---
 
-bump (build needed)
+fix design bugs from textfield QA (GDS-161 GDS-162 GDS-168)
