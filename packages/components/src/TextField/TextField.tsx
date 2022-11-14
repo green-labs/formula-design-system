@@ -8,7 +8,7 @@ import {
   inputStyle,
   prefixStyle,
   prefixIconStyle,
-  suffixStyle,
+  suffixTextStyle,
   suffixIconStyle,
   titleStyle,
   hintStyle,
@@ -141,7 +141,7 @@ export const TextField = ({
           />
         </div>
         {suffix ? (
-          <div className={suffixStyle}>{suffix}</div>
+          <div className={suffixTextStyle}>{suffix}</div>
         ) : SuffixIcon ? (
           <div className={suffixIconStyle}>
             <SuffixIcon

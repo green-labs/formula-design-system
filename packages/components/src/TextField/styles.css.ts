@@ -326,7 +326,7 @@ export const prefixIconStyle = style([
   },
 ])
 
-export const suffixStyle = style([
+const suffixStyle = style([
   hvCentered,
   {
     marginLeft: fallbackVar(vars.iconOffset, consts.iconOffset),
@@ -342,6 +342,13 @@ export const suffixStyle = style([
         fontSize: 19,
       },
     },
+  },
+])
+
+export const suffixTextStyle = style([
+  suffixStyle,
+  {
+    padding: "4px 8px",
   },
 ])
 

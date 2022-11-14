@@ -2,6 +2,7 @@ import React from "react"
 import type { ComponentMeta, ComponentStory } from "@storybook/react"
 import * as IconComponents from "../../Icon/generated"
 import ContainerButton from "."
+import "../../root.css"
 
 export const Button: ComponentStory<typeof ContainerButton> = (args) => {
   return <ContainerButton {...args} />

@@ -4,6 +4,7 @@ import { TextField } from "./TextField"
 import { SearchLineBold, EyeLineBold } from "../Icon"
 import { createDisabledArgs } from "../utils/storybook"
 import * as IconComponents from "../Icon/generated"
+import "../root.css"
 
 const Template: ComponentStory<typeof TextField> = (args) => {
   return (
