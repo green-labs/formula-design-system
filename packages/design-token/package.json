@@ -14,7 +14,8 @@
     "style-dictionary": "^3.7.1"
   },
   "files": [
-    "index.ts",
+    "index.js",
+    "index.d.ts",
     "dist/**/*.js",
     "dist/**/*.ts",
     "dist/**/*.json"
