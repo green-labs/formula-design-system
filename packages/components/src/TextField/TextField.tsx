@@ -86,6 +86,7 @@ export const TextField = ({
   const PrefixIcon = prefixIcon
   const SuffixIcon = suffixIcon
   const inaccesibleIconColor = readOnly || disabled ? "gray-40" : undefined
+  const iconSize = size === "large" || size === "medium" ? "xl" : "lg"
 
   return (
     <div
@@ -108,7 +109,10 @@ export const TextField = ({
           <div className={prefixStyle}>{prefix}</div>
         ) : PrefixIcon ? (
           <div className={prefixIconStyle}>
-            <PrefixIcon color={inaccesibleIconColor ?? "gray-50"} size="lg" />
+            <PrefixIcon
+              color={inaccesibleIconColor ?? "gray-50"}
+              size={iconSize}
+            />
           </div>
         ) : null}
         <input
@@ -131,7 +135,10 @@ export const TextField = ({
             }
           }}
         >
-          <DeleteFill size="sm" color="neutral-tertiary-contents" />
+          <DeleteFill
+            size={size === "xsmall" ? "sm" : "lg"}
+            color="neutral-tertiary-contents"
+          />
         </div>
         {suffix ? (
           <div className={suffixStyle}>{suffix}</div>
@@ -139,7 +146,7 @@ export const TextField = ({
           <div className={suffixIconStyle}>
             <SuffixIcon
               color={inaccesibleIconColor ?? "neutral-primary-contents"}
-              size="lg"
+              size={iconSize}
             />
           </div>
         ) : null}

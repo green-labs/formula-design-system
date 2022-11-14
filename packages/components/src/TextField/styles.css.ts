@@ -13,7 +13,7 @@ export const vars = {
   inputFontSize: createVar(),
   backgroundColor: createVar(),
   titleColor: createVar(),
-  stateColor: createVar(),
+  stateColor: createVar(), // error color | undefined(normal)
   iconOffset: createVar(),
   hintOffset: createVar(),
   titleOffset: createVar(),
@@ -106,11 +106,17 @@ export const componentStyle = styleVariants({
 export const hintStyle = style({
   paddingTop: fallbackVar(vars.hintOffset, consts.hintOffset),
   color: fallbackVar(vars.stateColor, colorMap["neutral-secondary-contents"]),
-  fontSize: caption.xs.regular["font-size"].value,
+  fontSize: body.sm.regular["font-size"].value,
   display: "block",
   selectors: {
+    // apply caption.xs.regular to small, xsmall size variants
+    [`${componentStyle["boxFill.small"]} &, ${componentStyle["boxFill.xsmall"]} &, ${componentStyle["boxOutline.small"]} &, ${componentStyle["boxOutline.xsmall"]} &`]:
+      {
+        fontSize: caption.xs.regular["font-size"].value,
+      },
+    // when focused (or if have errornous state) apply different text color
     ":focus-within ~ &": {
-      color: fallbackVar(vars.stateColor, colorMap["primary-container"]),
+      color: fallbackVar(vars.stateColor, colorMap["green-70"]),
     },
   },
 })
@@ -193,13 +199,7 @@ const lineCommon = style({
   borderWidth: 0,
   paddingLeft: 0,
   paddingRight: 0,
-  // hack to hide els get lifted by border width
-  paddingBottom: 1,
-  borderBottomWidth: 1,
-  ":focus-within": {
-    paddingBottom: 0,
-    borderBottomWidth: 2,
-  },
+  borderBottomWidth: 2,
 })
 
 export const textFieldVariants = styleVariants({
@@ -252,7 +252,8 @@ export const inputStyle = style({
   height: vars.inputHeight,
   backgroundColor: vars.backgroundColor,
   fontSize: vars.inputFontSize,
-  flexGrow: 1,
+  flex: "1 1 auto",
+  width: "100%",
   caretColor: colorMap["primary-contents"],
   color: colorMap["neutral-primary-contents"],
   "::placeholder": {
