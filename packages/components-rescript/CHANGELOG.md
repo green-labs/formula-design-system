@@ -1,5 +1,13 @@
 # @greenlabs/rescript-formula-components
 
+## 0.0.5-next.1
+
+### Patch Changes
+
+- c46a528: fix design bugs from textfield QA (GDS-161 GDS-162 GDS-168)
+- Updated dependencies [c46a528]
+  - @greenlabs/formula-components@0.0.5-next.1
+
 ## 0.0.5-next.0
 
 ### Patch Changes
