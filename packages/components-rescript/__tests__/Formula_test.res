@@ -17,9 +17,6 @@ let testText = () => {
       props={{"id": "id-of-text"}}>
       {`Test string`->React.string}
     </Text>
-    <Text.TextVariant variantKey={#"body-lg-medium"}>
-      {`Test string`->React.string}
-    </Text.TextVariant>
     <Text.Caption> {`Test string`->React.string} </Text.Caption>
     <Text.Headline size=#lg weight=#bold color=#white>
       {`Test string`->React.string}
