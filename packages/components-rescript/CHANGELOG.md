@@ -1,5 +1,11 @@
 # @greenlabs/rescript-formula-components
 
+## 0.0.5-next.2
+
+### Patch Changes
+
+- d74569e: remove TextVariant binding
+
 ## 0.0.5-next.1
 
 ### Patch Changes

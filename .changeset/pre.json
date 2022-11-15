@@ -6,5 +6,9 @@
     "@greenlabs/rescript-formula-components": "0.0.4",
     "@greenlabs/formula-design-token": "0.0.4"
   },
-  "changesets": ["rude-wasps-listen", "tall-bikes-build"]
+  "changesets": [
+    "clever-fireants-cough",
+    "rude-wasps-listen",
+    "tall-bikes-build"
+  ]
 }
