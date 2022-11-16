@@ -1,5 +1,14 @@
 # @greenlabs/formula-design-token
 
+## 0.0.5-next.3
+
+### Patch Changes
+
+- 0952a53: - add root css custom props (theme)
+  - stop generating colormap binding
+  - fix `classname` typo from icon binding
+  - add formula common module (included by default)
+
 ## 0.0.5-next.1
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
   "name": "@greenlabs/formula-components",
-  "version": "0.0.5-next.1",
+  "version": "0.0.5-next.3",
   "repository": {
     "type": "git",
     "url": "git@github.com:green-labs/formula-design-system.git",
@@ -11,7 +11,7 @@
   "module": "build/esm/index.js",
   "types": "build/ts/index.d.ts",
   "dependencies": {
-    "@greenlabs/formula-design-token": "0.0.5-next.1",
+    "@greenlabs/formula-design-token": "0.0.5-next.3",
     "@vanilla-extract/dynamic": "^2.0.2",
     "@vanilla-extract/recipes": "^0.2.5",
     "@vanilla-extract/sprinkles": "^1.5.0",
