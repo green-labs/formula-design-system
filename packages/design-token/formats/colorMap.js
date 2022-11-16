@@ -64,7 +64,10 @@ module.exports = {
     return (
       "declare const root: RootObject\n" +
       "export default root\n" +
-      jsonToTS(map).join("\n")
+      jsonToTS(map)
+        .join("\n")
+        // triage for TS4023 issue: https://github.com/microsoft/TypeScript/issues/5711
+        .replace("interface RootObject ", "type RootObject = ")
     )
   },
   colorMapResFormat({ dictionary }) {

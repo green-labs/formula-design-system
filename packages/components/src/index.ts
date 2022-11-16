@@ -1,4 +1,4 @@
-import "./root.css"
+export { theme } from "./root.css"
 
 export { Text, TextBody, TextHeadline, TextCaption } from "./Text/Text"
 export * from "./Icon"

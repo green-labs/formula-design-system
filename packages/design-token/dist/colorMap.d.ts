@@ -1,6 +1,6 @@
 declare const root: RootObject
 export default root
-interface RootObject {
+type RootObject = {
   white: string
   black: string
   "gray-5": string
