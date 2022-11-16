@@ -16,5 +16,5 @@ module Theme = {
   */
   @module("@greenlabs/formula-components")
   @scope("theme")
-  external themeColor: Formula__ColorMap.obj = "colors"
+  external themeColors: Formula__ColorMap.obj = "colors"
 }

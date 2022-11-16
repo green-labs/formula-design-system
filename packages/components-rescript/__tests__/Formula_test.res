@@ -92,5 +92,5 @@ let testTextField = () => {
 }
 
 let testCommon = () => {
-  <div style={ReactDOM.Style.make(~color=Formula.Theme.colors["blue-100"], ())} />
+  <div style={ReactDOM.Style.make(~color=Formula.Theme.themeColors["blue-100"], ())} />
 }
