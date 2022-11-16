@@ -16,7 +16,7 @@ module ${iconName} = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,

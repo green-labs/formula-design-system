@@ -36,7 +36,7 @@ let testIcon = () => {
     <Icon.CalendarLineRegular color=#"lightblue-90" />
     <Icon.CalendarLineThin size=#pc />
     <Icon.CalendarFill sizePx=32 /> // for custom size
-    <Icon.CalendarFill classname="test-class__name" />
+    <Icon.CalendarFill className="test-class__name" />
     <Icon.CalendarFill style={ReactDOMStyle.make(~fill="red", ())} />
   </>
 }
