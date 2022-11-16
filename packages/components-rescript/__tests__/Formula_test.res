@@ -90,3 +90,7 @@ let testTextField = () => {
     <TextField prefixIcon={Icon.ArrowDownLineBold.make} suffixIcon={Icon.ArrowDownLineBold.make} />
   </>
 }
+
+let testCommon = () => {
+  <div style={ReactDOM.Style.make(~color=Formula.Theme.colors["blue-100"], ())} />
+}

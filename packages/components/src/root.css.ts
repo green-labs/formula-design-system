@@ -7,7 +7,7 @@ import {
 import { Namespace } from "./constants"
 
 type colorKeys = keyof typeof colorMapDict
-const colors = Object.fromEntries(
+export const colors = Object.fromEntries(
   Object.keys(colorMapDict).map((k) => [k, `${Namespace}-color-${k}`])
 ) as Record<colorKeys, string>
 
