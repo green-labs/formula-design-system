@@ -21,7 +21,8 @@
     "rescript": "^10.0.0"
   },
   "dependencies": {
-    "@greenlabs/formula-components": "0.0.5-next.3"
+    "@greenlabs/formula-components": "0.0.5-next.3",
+    "@greenlabs/formula-design-token": "0.0.5-next.3"
   },
   "scripts": {
     "build": "rescript build -with-deps",
