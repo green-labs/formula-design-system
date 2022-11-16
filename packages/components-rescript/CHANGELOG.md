@@ -1,5 +1,11 @@
 # @greenlabs/rescript-formula-components
 
+## 0.0.5-next.4
+
+### Patch Changes
+
+- ee2be41: fix typo
+
 ## 0.0.5-next.3
 
 ### Patch Changes
