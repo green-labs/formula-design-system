@@ -111,10 +111,11 @@ module.exports = {
           destination: "colorMap.d.ts",
           format: "colorMapType",
         },
-        {
-          destination: "Formula__ColorMap.res",
-          format: "colorMapRes",
-        },
+        // There is little change of changing this key, so disable it for now
+        // {
+        //   destination: "Formula__ColorMap.res",
+        //   format: "colorMapRes",
+        // },
       ],
     },
   },
