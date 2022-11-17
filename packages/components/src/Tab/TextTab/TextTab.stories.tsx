@@ -1,5 +1,6 @@
 import React from "react"
-import type { ComponentMeta, ComponentStory } from "@storybook/react"
+import "../../root.css"
+import type { ComponentMeta } from "@storybook/react"
 import * as Tab from "./TextTab"
 import { createDisabledArgs } from "../../utils/storybook"
 import { NotificationFill } from "../../Icon"

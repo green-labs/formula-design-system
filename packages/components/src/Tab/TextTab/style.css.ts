@@ -1,4 +1,5 @@
 import { style, keyframes } from "@vanilla-extract/css"
+import { theme } from "../../root.css"
 
 export const classes = {
   tabListFull: "fmc--tablist-full",
@@ -20,8 +21,9 @@ export const listStyle = style({
   paddingRight: "16px",
 })
 
+const transitionDetail = "0.2s cubic-bezier(0.65, 0, 0.35, 1)"
 export const indicatorStyle = style({
-  transition: "left 0.2s cubic-bezier(0.65, 0, 0.35, 1)",
+  transition: `left ${transitionDetail}`,
   position: "absolute",
   bottom: "0",
   borderBottomWidth: "2px",
@@ -43,7 +45,6 @@ export const triggerStyle = style({
   justifyContent: "center",
   fontSize: "15px",
   lineHeight: 1,
-  color: "black",
   userSelect: "none",
   border: 0,
   transition: "background-color 0.3s cubic-bezier(0.65, 0, 0.35, 1)",
@@ -60,6 +61,33 @@ export const triggerContentWrapperStyle = style({
   justifyContent: "space-between",
   alignItems: "center",
   gap: "2px",
+})
+
+export const triggerTextStyle = style({
+  selectors: {
+    // FIXME: needed override, find a better way to override text
+    [`[data-state="active"] &`]: {
+      fontWeight: "bold",
+      color: theme.colors["neutral-primary-contents"],
+    },
+    [`[data-state="inactive"] &`]: {
+      fontWeight: "normal",
+      color: theme.colors["neutral-secondary-contents"],
+    },
+  },
+  transition: `color, font-weight ${transitionDetail}`,
+})
+
+export const triggerIconStyle = style({
+  selectors: {
+    [`[data-state="active"] &`]: {
+      fill: theme.colors["neutral-primary-contents"],
+    },
+    [`[data-state="inactive"] &`]: {
+      fill: theme.colors["neutral-secondary-contents"],
+    },
+  },
+  transition: `fill ${transitionDetail}`,
 })
 
 export const triggerBadgeRedDotStyle = style({

@@ -9,6 +9,8 @@ import {
   classes,
   triggerContentWrapperStyle,
   triggerBadgeRedDotStyle,
+  triggerTextStyle,
+  triggerIconStyle,
 } from "./style.css"
 import { Text } from "../../Text/Text"
 import { Badge } from "../../Badge/Badge"
@@ -107,9 +109,9 @@ export const Trigger = ({ icon: Icon, title, value, children, badge }) => {
   return (
     <RadixTrigger className={triggerStyle} value={value}>
       <div className={triggerContentWrapperStyle}>
-        {Icon && <Icon size="lg" />}
+        {Icon && <Icon className={triggerIconStyle} size="lg" />}
         {title ? (
-          <Text.Body size="md" weight="bold">
+          <Text.Body size="md" className={triggerTextStyle}>
             {title}
           </Text.Body>
         ) : (
