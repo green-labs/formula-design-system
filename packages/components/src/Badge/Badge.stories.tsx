@@ -1,4 +1,5 @@
 import React from "react"
+import { theme } from "../root.css"
 import type { ComponentMeta, ComponentStory } from "@storybook/react"
 import { Badge as BadgeComponent } from "./Badge"
 import { createDisabledArgs } from "../utils/storybook"
@@ -15,13 +16,20 @@ const Template: ComponentStory<typeof BadgeComponent> = (args) => {
       <hr />
       <BadgeComponent count="99" size="medium" />
       <hr />
-      <BadgeComponent icon={<CheckLineBold />} />
+      <BadgeComponent
+        icon={CheckLineBold}
+        backgroundColor={theme.colors["green-60"]}
+      />
+      <hr />
+      <BadgeComponent
+        icon={CheckLineBold}
+        backgroundColor="linear-gradient(141.34deg, #FF3998 18.89%, #F12136 82.66%)"
+      />
     </div>
   )
 }
 
 export const Badge = Template.bind({})
-// Badge.args = {}
 
 Badge.argTypes = {
   ...createDisabledArgs(["props", "className"]),

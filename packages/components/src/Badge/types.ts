@@ -1,10 +1,12 @@
-import type { ReactNode, PropsWithChildren } from "react"
+import type { ReactNode } from "react"
+import type { IconProps } from "../Icon"
 
 export type size = "small" | "medium"
 export interface BadgeProps {
   className?: string
   props?: {}
   size?: size
-  icon?: ReactNode
+  icon?: React.ComponentType<IconProps>
   count?: ReactNode
+  backgroundColor?: string
 }
