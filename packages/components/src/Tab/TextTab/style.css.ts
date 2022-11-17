@@ -1,11 +1,4 @@
-import {
-  createVar,
-  fallbackVar,
-  style,
-  styleVariants,
-  keyframes,
-} from "@vanilla-extract/css"
-import { tokens, colorMap } from "@greenlabs/formula-design-token"
+import { style, keyframes } from "@vanilla-extract/css"
 
 export const classes = {
   tabListFull: "fmc--tablist-full",
@@ -60,4 +53,15 @@ export const triggerStyle = style({
     },
     [`.${classes.tabListFull} > &`]: { flex: "1", display: "flex" },
   },
+})
+
+export const triggerContentWrapperStyle = style({
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  gap: "2px",
+})
+
+export const triggerBadgeRedDotStyle = style({
+  alignSelf: "flex-start",
 })

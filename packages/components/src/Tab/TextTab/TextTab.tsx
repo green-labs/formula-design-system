@@ -7,7 +7,12 @@ import {
   indicatorStyle,
   triggerStyle,
   classes,
+  triggerContentWrapperStyle,
+  triggerBadgeRedDotStyle,
 } from "./style.css"
+import { Text } from "../../Text/Text"
+import { Badge } from "../../Badge/Badge"
+import { theme } from "../../root.css"
 
 const extractIndicatorState = (tabEl) => {
   return {
@@ -60,10 +65,58 @@ export const List = ({
   )
 }
 
-export const Trigger = ({ value, children }) => {
+// Have a little bit different spec w/ other badge, pretty messy
+const TextTabBadge = ({ spec: badge }) => {
+  if (badge.type === "count" && badge.value !== undefined) {
+    return (
+      <Badge
+        size="small"
+        count={badge.value}
+        color={theme.colors["gray-80"]}
+        backgroundColor={theme.colors["neutral-secondary-container"]}
+      />
+    )
+  }
+  if (badge.type === "simple") {
+    return (
+      <div className={triggerBadgeRedDotStyle}>
+        <Badge size="small" />
+      </div>
+    )
+  }
+  // omg
+  if (badge.type === "countSimple" && badge.value !== undefined) {
+    return (
+      <>
+        <Badge
+          size="small"
+          count={badge.value}
+          color={theme.colors["gray-80"]}
+          backgroundColor={theme.colors["neutral-secondary-container"]}
+        />
+        <div className={triggerBadgeRedDotStyle}>
+          <Badge size="small" />
+        </div>
+      </>
+    )
+  }
+  return null
+}
+
+export const Trigger = ({ icon: Icon, title, value, children, badge }) => {
   return (
     <RadixTrigger className={triggerStyle} value={value}>
-      <span>{children || value}</span>
+      <div className={triggerContentWrapperStyle}>
+        {Icon && <Icon size="lg" />}
+        {title ? (
+          <Text.Body size="md" weight="bold">
+            {title}
+          </Text.Body>
+        ) : (
+          <span>{children || value}</span>
+        )}
+        {badge && <TextTabBadge spec={badge} />}
+      </div>
     </RadixTrigger>
   )
 }
