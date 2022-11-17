@@ -3,14 +3,15 @@ import { recipe } from "@vanilla-extract/recipes"
 import { colorMap } from "@greenlabs/formula-design-token"
 
 export const vars = {
+  color: createVar(),
   backgroundColor: createVar(),
 }
 
 const baseBadgeStyle = style([
   {
-    color: "white",
     background: vars.backgroundColor,
     vars: {
+      [vars.color]: "white",
       [vars.backgroundColor]: colorMap["red-60"],
     },
   },

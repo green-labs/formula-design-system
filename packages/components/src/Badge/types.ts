@@ -8,5 +8,6 @@ export interface BadgeProps {
   size?: size
   icon?: React.ComponentType<IconProps>
   count?: ReactNode
+  color?: string
   backgroundColor?: string
 }
