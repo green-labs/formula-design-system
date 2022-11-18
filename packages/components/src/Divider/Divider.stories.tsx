@@ -1,5 +1,5 @@
 import { Divider } from "./Divider"
-import "../root.css"
+import "../theme"
 
 import type { ComponentMeta } from "@storybook/react"
 

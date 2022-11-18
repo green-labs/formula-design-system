@@ -1,7 +1,7 @@
 import React from "react"
 import type { ComponentMeta, ComponentStory } from "@storybook/react"
 import { Text } from "./Text"
-import "../root.css"
+import "../theme"
 
 import { createDisabledArgs } from "../utils/storybook"
 

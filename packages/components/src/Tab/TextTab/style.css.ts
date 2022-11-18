@@ -1,5 +1,5 @@
 import { style, keyframes } from "@vanilla-extract/css"
-import { theme } from "../../root.css"
+import { theme } from "../../theme"
 
 export const classes = {
   tabListFull: "fmc--tablist-full",

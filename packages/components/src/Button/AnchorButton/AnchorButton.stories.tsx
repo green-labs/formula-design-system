@@ -2,7 +2,7 @@ import React from "react"
 import type { ComponentMeta, ComponentStory } from "@storybook/react"
 import * as IconComponents from "../../Icon/generated"
 import AnchorButton from "."
-import "../../root.css"
+import "../../theme"
 
 export const Button: ComponentStory<typeof AnchorButton> = (args) => {
   return <AnchorButton {...args} />

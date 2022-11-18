@@ -1,5 +1,5 @@
 import React from "react"
-import { theme } from "../root.css"
+import { theme } from "../theme"
 import type { ComponentMeta, ComponentStory } from "@storybook/react"
 import { Badge as BadgeComponent } from "./Badge"
 import { createDisabledArgs } from "../utils/storybook"

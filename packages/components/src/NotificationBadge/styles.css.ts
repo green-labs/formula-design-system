@@ -1,6 +1,5 @@
 import { tokens } from "@greenlabs/formula-design-token"
 import { createVar, style, styleVariants } from "@vanilla-extract/css"
-import "../root.css"
 
 export const notificationBaseStyle = style({
   display: "flex",

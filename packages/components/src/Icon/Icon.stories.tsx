@@ -1,7 +1,7 @@
 import type { ComponentMeta, ComponentStory } from "@storybook/react"
 import { colorMap } from "@greenlabs/formula-design-token"
 import * as IconComponents from "./generated"
-import "../root.css"
+import "../theme"
 
 /* ---------- 아이콘 스타일 래퍼 시작 ----------*/
 

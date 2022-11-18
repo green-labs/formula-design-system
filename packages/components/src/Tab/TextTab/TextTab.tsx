@@ -14,7 +14,7 @@ import {
 } from "./style.css"
 import { Text } from "../../Text/Text"
 import { Badge } from "../../Badge/Badge"
-import { theme } from "../../root.css"
+import { theme } from "../../theme"
 
 const extractIndicatorState = (tabEl) => {
   return {
