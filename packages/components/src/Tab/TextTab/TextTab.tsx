@@ -59,7 +59,10 @@ export const List = ({
         </TabsList>
         <div
           className={indicatorStyle}
-          style={{ width: `${state.width}px`, left: `${state.left}px` }}
+          style={{
+            width: `${state.width}px`,
+            transform: `translate(${state.left}px, 1px)`,
+          }}
         />
       </div>
       {contents}

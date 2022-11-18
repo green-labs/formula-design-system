@@ -12,6 +12,9 @@ export const rootStyle = style({
 
 export const listContainerStyle = style({
   position: "relative",
+  borderBottomWidth: "1px",
+  borderBottomStyle: "solid",
+  borderColor: theme.colors.divider,
 })
 
 export const listStyle = style({
@@ -23,7 +26,7 @@ export const listStyle = style({
 
 const transitionDetail = "0.2s cubic-bezier(0.65, 0, 0.35, 1)"
 export const indicatorStyle = style({
-  transition: `left ${transitionDetail}`,
+  transition: `transform ${transitionDetail}`,
   position: "absolute",
   bottom: "0",
   borderBottomWidth: "2px",
