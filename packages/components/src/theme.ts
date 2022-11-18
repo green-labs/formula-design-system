@@ -1,13 +1,14 @@
-import { colorMap as colorMapDict } from "@greenlabs/formula-design-token"
-import { createGlobalThemeContract, globalStyle } from "@vanilla-extract/css"
+import { colorMap } from "@greenlabs/formula-design-token"
+import {
+  createGlobalThemeContract,
+  createGlobalTheme,
+  globalStyle,
+} from "@vanilla-extract/css"
 import { Namespace } from "./constants"
 
-import { colorMap } from "@greenlabs/formula-design-token"
-import { createGlobalTheme } from "@vanilla-extract/css"
-
-type colorKeys = keyof typeof colorMapDict
+type colorKeys = keyof typeof colorMap
 export const colors = Object.fromEntries(
-  Object.keys(colorMapDict).map((k) => [k, `${Namespace}-color-${k}`])
+  Object.keys(colorMap).map((k) => [k, `${Namespace}-color-${k}`])
 ) as Record<colorKeys, string>
 
 export const theme = createGlobalThemeContract({
@@ -28,10 +29,8 @@ const baseThemeSpec = {
   },
 }
 
-export const initTheme = (
-  themeKey: "farmmorning-light" | "farmmorning-dark"
-) => {
-  if (themeKey === "farmmorning-light") {
+export const initTheme = (themeKey: "basic-light" | "basic-dark") => {
+  if (themeKey === "basic-light") {
     createGlobalTheme(":root", theme, {
       ...baseThemeSpec,
       colors: colorMap,
@@ -39,4 +38,4 @@ export const initTheme = (
   }
 }
 
-initTheme("farmmorning-light")
+initTheme("basic-light") // FIXME
