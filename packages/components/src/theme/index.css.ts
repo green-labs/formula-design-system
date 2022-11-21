@@ -1,14 +1,15 @@
-import { colorMap as colorMapDict } from "@greenlabs/formula-design-token"
+import { colorMap } from "@greenlabs/formula-design-token"
 import {
-  createGlobalTheme,
   createGlobalThemeContract,
+  createGlobalTheme,
   globalStyle,
 } from "@vanilla-extract/css"
-import { Namespace } from "./constants"
+import { Namespace } from "../constants"
+import { getThemeClass } from "./shared"
 
-type colorKeys = keyof typeof colorMapDict
+type colorKeys = keyof typeof colorMap
 export const colors = Object.fromEntries(
-  Object.keys(colorMapDict).map((k) => [k, `${Namespace}-color-${k}`])
+  Object.keys(colorMap).map((k) => [k, `${Namespace}-color-${k}`])
 ) as Record<colorKeys, string>
 
 export const theme = createGlobalThemeContract({
@@ -18,14 +19,26 @@ export const theme = createGlobalThemeContract({
   colors: colors,
 })
 
-createGlobalTheme(":root", theme, {
+const baseThemeSpec = {
   font: {
     // FIXME: use token variable
     body: `"Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif`,
   },
-  colors: colorMapDict,
-})
+}
 
 globalStyle("html, body", {
   fontFamily: theme.font.body,
 })
+
+export const themeImpls = {
+  basic: {
+    light: createGlobalTheme(
+      `:root.${getThemeClass("basic")}, :root .${getThemeClass("basic")}`,
+      theme,
+      {
+        ...baseThemeSpec,
+        colors: colorMap,
+      }
+    ),
+  },
+}

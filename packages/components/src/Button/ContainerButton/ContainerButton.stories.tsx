@@ -2,10 +2,15 @@ import React from "react"
 import type { ComponentMeta, ComponentStory } from "@storybook/react"
 import * as IconComponents from "../../Icon/generated"
 import ContainerButton from "."
-import "../../root.css"
+import "../../theme"
+import { ThemeScope } from "../../theme"
 
 export const Button: ComponentStory<typeof ContainerButton> = (args) => {
-  return <ContainerButton {...args} />
+  return (
+    <ThemeScope>
+      <ContainerButton {...args} />
+    </ThemeScope>
+  )
 }
 
 const Buttons = Button.bind({})
