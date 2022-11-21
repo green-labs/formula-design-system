@@ -34,7 +34,11 @@ export const ThemeScope = ({
     })
   }
   if (children) {
-    return <div className={getThemeClass(brand, themeName)} {...props} />
+    return (
+      <div className={getThemeClass(brand, themeName)} {...props}>
+        {children}
+      </div>
+    )
   }
   return null
 }
