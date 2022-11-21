@@ -1,6 +1,7 @@
 import React from "react"
-import "../../theme"
 import type { ComponentMeta } from "@storybook/react"
+
+import { ThemeScope } from "../../theme"
 import * as Tab from "./TextTab"
 import { createDisabledArgs } from "../../utils/storybook"
 import { NotificationFill } from "../../Icon"
@@ -24,9 +25,11 @@ const Template = (args) => {
   )
 
   return (
-    <div
-      style={{
-        width: "100%",
+    <ThemeScope
+      props={{
+        style: {
+          width: "100%",
+        },
       }}
     >
       <Tab.List
@@ -59,7 +62,7 @@ const Template = (args) => {
           {logo}
         </Tab.Trigger>
       </Tab.List>
-    </div>
+    </ThemeScope>
   )
 }
 

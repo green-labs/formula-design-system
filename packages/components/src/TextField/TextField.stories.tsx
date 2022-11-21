@@ -1,14 +1,15 @@
-import React from "react"
+import * as React from "react"
 import type { ComponentMeta, ComponentStory } from "@storybook/react"
+
 import { TextField } from "./TextField"
 import { SearchLineBold, EyeLineBold } from "../Icon"
 import { createDisabledArgs } from "../utils/storybook"
 import * as IconComponents from "../Icon/generated"
-import "../theme"
+import { ThemeScope } from "../theme"
 
 const Template: ComponentStory<typeof TextField> = (args) => {
   return (
-    <>
+    <ThemeScope>
       {args.variant !== "line" && (
         <>
           <h5>xsmall</h5>
@@ -52,7 +53,7 @@ const Template: ComponentStory<typeof TextField> = (args) => {
           size="large"
         />
       </form>
-    </>
+    </ThemeScope>
   )
 }
 

@@ -4,12 +4,13 @@ import { Text } from "./Text"
 import "../theme"
 
 import { createDisabledArgs } from "../utils/storybook"
+import { ThemeScope } from "../theme"
 
 const Template: ComponentStory<typeof Text> = (args) => {
   switch (args.component) {
     case "Headline":
       return (
-        <>
+        <ThemeScope>
           <span>Text.Headline (headline-xl-bold) </span>{" "}
           <Text.Headline size="xl" weight="bold" {...args} />
           <hr />
@@ -24,11 +25,11 @@ const Template: ComponentStory<typeof Text> = (args) => {
           <hr />
           <span>Text.Headline (headline-sm-regular) </span>
           <Text.Headline size="sm" weight="regular" {...args} />
-        </>
+        </ThemeScope>
       )
     case "Body":
       return (
-        <>
+        <ThemeScope>
           <span>Text.Body (body-xl-regular) </span>{" "}
           <Text.Body size="xl" weight="regular" {...args} />
           <hr />
@@ -61,11 +62,11 @@ const Template: ComponentStory<typeof Text> = (args) => {
           <hr />
           <span>Text.Body (body-sm-bold) </span>{" "}
           <Text.Body size="sm" weight="bold" {...args} />
-        </>
+        </ThemeScope>
       )
     case "Caption":
       return (
-        <>
+        <ThemeScope>
           <span>Text.Body (caption-xs-regular) </span>{" "}
           <Text.Caption weight="regular" {...args} />
           <hr />
@@ -74,10 +75,14 @@ const Template: ComponentStory<typeof Text> = (args) => {
           <hr />
           <span>Text.Body (caption-xs-bold) </span>{" "}
           <Text.Caption weight="bold" {...args} />
-        </>
+        </ThemeScope>
       )
     default:
-      return <Text {...args} />
+      return (
+        <ThemeScope>
+          <Text {...args} />
+        </ThemeScope>
+      )
   }
 }
 

@@ -1,13 +1,14 @@
-import React from "react"
-import { theme } from "../theme"
+import * as React from "react"
 import type { ComponentMeta, ComponentStory } from "@storybook/react"
+
+import { theme, ThemeScope } from "../theme"
 import { Badge as BadgeComponent } from "./Badge"
 import { createDisabledArgs } from "../utils/storybook"
 import CheckLineBold from "../Icon/generated/CheckLineBold"
 
 const Template: ComponentStory<typeof BadgeComponent> = (args) => {
   return (
-    <div>
+    <ThemeScope>
       <BadgeComponent size="small" />
       <hr />
       <BadgeComponent size="medium" />
@@ -25,7 +26,7 @@ const Template: ComponentStory<typeof BadgeComponent> = (args) => {
         icon={CheckLineBold}
         backgroundColor="linear-gradient(141.34deg, #FF3998 18.89%, #F12136 82.66%)"
       />
-    </div>
+    </ThemeScope>
   )
 }
 
