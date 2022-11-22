@@ -10,6 +10,7 @@ export const vars = {
 const baseBadgeStyle = style([
   {
     background: vars.backgroundColor,
+    color: vars.color,
     vars: {
       [vars.color]: "white",
       [vars.backgroundColor]: colorMap["red-60"],
