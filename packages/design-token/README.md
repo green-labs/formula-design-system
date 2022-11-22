@@ -1,4 +1,4 @@
-# Formula design token
+# `@greenlabs/formula-design-token`
 
 ### How to start
 
@@ -7,4 +7,4 @@
   yarn build
 ```
 
-check out dist/ folder for build output
+check out [`dist/`](https://github.com/green-labs/formula-design-system/tree/readme/packages/design-token/dist) (output is committed) folder for build output

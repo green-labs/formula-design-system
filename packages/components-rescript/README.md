@@ -1,4 +1,4 @@
-# Formula Components ReScript
+# `@greenlabs/formula-components-rescript`
 
 ### How to start
 
@@ -7,4 +7,4 @@
   yarn watch
 ```
 
-to start build test / development
+to start build test/development
