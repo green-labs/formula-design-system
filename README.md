@@ -1,4 +1,6 @@
-# Formula Design System
+# Formula Design System Monorepo
+
+### Packages
 
 - [Formula components `@greenlabs/formula-components`](https://github.com/green-labs/formula-design-system/tree/main/packages/components-rescript)
 - [ReScript binding of Formula components `@greenlabs/formula-components-rescript`](https://github.com/green-labs/formula-design-system/tree/main/packages/components)
