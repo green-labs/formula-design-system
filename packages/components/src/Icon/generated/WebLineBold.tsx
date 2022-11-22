@@ -2,7 +2,7 @@ import { Ref, forwardRef, memo } from "react"
 import { colorMap } from "@greenlabs/formula-design-token"
 import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
-const SvgWebBold = (
+const SvgWebLineBold = (
   { size = "xl", sizePx, color = "gray-90", ...props }: IconProps,
   ref: Ref<SVGSVGElement>
 ) => {
@@ -25,6 +25,6 @@ const SvgWebBold = (
     </svg>
   )
 }
-const ForwardRef = forwardRef(SvgWebBold)
+const ForwardRef = forwardRef(SvgWebLineBold)
 const Memo = memo(ForwardRef)
 export default Memo
