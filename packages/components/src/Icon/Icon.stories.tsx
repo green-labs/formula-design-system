@@ -46,9 +46,9 @@ const IconItem: React.FC<IconItemProps> = ({ name, children }) => {
 
 /* ---------- 아이콘 스타일 래퍼 끝 ----------*/
 
-export const IconGallery: ComponentStory<
-  typeof IconComponents["ArrowDownLineBoldIcon"]
-> = (args) => {
+export const IconGallery: ComponentStory<typeof IconComponents["AppleFill"]> = (
+  args
+) => {
   return (
     <ThemeScope>
       {Object.entries(IconComponents).map(([name, Component]) => (
@@ -94,4 +94,4 @@ export default {
       </div>
     ),
   ],
-} as ComponentMeta<typeof IconComponents["ArrowDownLineBoldIcon"]>
+} as ComponentMeta<typeof IconComponents["AppleFill"]>

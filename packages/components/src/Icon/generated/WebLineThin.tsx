@@ -2,7 +2,7 @@ import { Ref, forwardRef, memo } from "react"
 import { colorMap } from "@greenlabs/formula-design-token"
 import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
-const SvgWebThin = (
+const SvgWebLineThin = (
   { size = "xl", sizePx, color = "gray-90", ...props }: IconProps,
   ref: Ref<SVGSVGElement>
 ) => {
@@ -25,6 +25,6 @@ const SvgWebThin = (
     </svg>
   )
 }
-const ForwardRef = forwardRef(SvgWebThin)
+const ForwardRef = forwardRef(SvgWebLineThin)
 const Memo = memo(ForwardRef)
 export default Memo
