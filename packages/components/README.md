@@ -17,4 +17,4 @@ https://formula-design-system.pages.dev/
   yarn build
 ```
 
-and check {esm,cjs} output in `build/`
+and check {esm,cjs} output in `dist/`

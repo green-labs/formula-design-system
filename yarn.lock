@@ -1953,12 +1953,14 @@ __metadata:
     "@vanilla-extract/sprinkles": ^1.5.0
     "@vanilla-extract/webpack-plugin": ^2.1.12
     babel-loader: ^8.2.5
+    babel-plugin-transform-remove-imports: ^1.7.0
     chroma-js: ^2.4.2
     color-blend: ^4.0.0
     concurrently: ^7.3.0
     react: ^18.0.0
     react-dom: ^18.0.0
     rollup: ^2.79.0
+    rollup-plugin-css-bundle: ^1.0.4
     rollup-plugin-node-externals: ^5.0.1
     typescript: ^4.8.3
   languageName: unknown
@@ -5331,6 +5333,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"babel-plugin-transform-remove-imports@npm:^1.7.0":
+  version: 1.7.0
+  resolution: "babel-plugin-transform-remove-imports@npm:1.7.0"
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: d50f701edcd6832b21e73b0ed143747a50bb4982c5632c59ab8b8ed2b5163b60402a0beee70e0c5fec1fbf438c074517ff303425b5b9b7f1bee295953f638431
+  languageName: node
+  linkType: hard
+
 "bail@npm:^1.0.0":
   version: 1.0.5
   resolution: "bail@npm:1.0.5"
@@ -7657,6 +7668,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"estree-walker@npm:^0.6.1":
+  version: 0.6.1
+  resolution: "estree-walker@npm:0.6.1"
+  checksum: 9d6f82a4921f11eec18f8089fb3cce6e53bcf45a8e545c42a2674d02d055fb30f25f90495f8be60803df6c39680c80dcee7f944526867eb7aa1fc9254883b23d
+  languageName: node
+  linkType: hard
+
 "estree-walker@npm:^1.0.1":
   version: 1.0.1
   resolution: "estree-walker@npm:1.0.1"
@@ -8267,6 +8285,17 @@ __metadata:
     jsonfile: ^6.0.1
     universalify: ^2.0.0
   checksum: dc94ab37096f813cc3ca12f0f1b5ad6744dfed9ed21e953d72530d103cea193c2f81584a39e9dee1bea36de5ee66805678c0dddc048e8af1427ac19c00fffc50
+  languageName: node
+  linkType: hard
+
+"fs-extra@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "fs-extra@npm:5.0.0"
+  dependencies:
+    graceful-fs: ^4.1.2
+    jsonfile: ^4.0.0
+    universalify: ^0.1.0
+  checksum: b3dcaf1d545097013c4fa649951c85cad1b845316ab473cc3440254a45e9b0b17d8ca9355af477e982c7d126f1a30417bcf78b1f744593ce77a0f43165f2d5e5
   languageName: node
   linkType: hard
 
@@ -13196,12 +13225,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rollup-plugin-css-bundle@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "rollup-plugin-css-bundle@npm:1.0.4"
+  dependencies:
+    fs-extra: ^5.0.0
+    rollup-pluginutils: ^2.0.1
+  checksum: c1ae55cd1ae0d222231d737b04ab93959b21ea57cb722f29f28f2ab640c95625b3d490e31d58b24c25d2e64debdd93e7a89e6c6940609041ae2bc6ae1d5cf09a
+  languageName: node
+  linkType: hard
+
 "rollup-plugin-node-externals@npm:^5.0.1":
   version: 5.0.1
   resolution: "rollup-plugin-node-externals@npm:5.0.1"
   peerDependencies:
     rollup: ^2.60.0 || ^3.0.0
   checksum: 7089bfc19b370293b0aee9063b541d06e66cc0855141eb33e2ece1d8db7f22a8d437b04fc8464854fef21f558aa6f8b54a0a29cb8984d139ebf5278d6d8b7019
+  languageName: node
+  linkType: hard
+
+"rollup-pluginutils@npm:^2.0.1":
+  version: 2.8.2
+  resolution: "rollup-pluginutils@npm:2.8.2"
+  dependencies:
+    estree-walker: ^0.6.1
+  checksum: 339fdf866d8f4ff6e408fa274c0525412f7edb01dc46b5ccda51f575b7e0d20ad72965773376fb5db95a77a7fcfcab97bf841ec08dbadf5d6b08af02b7a2cf5e
   languageName: node
   linkType: hard
 
