@@ -1,5 +1,16 @@
 # @greenlabs/formula-components
 
+## 0.0.5-next.5
+
+### Patch Changes
+
+- 9f510fb: - remove css import from js files
+  - Add exports field
+  - concat all css into formula.css
+  - output folder is ./dist
+- Updated dependencies [9f510fb]
+  - @greenlabs/formula-design-token@0.0.5-next.5
+
 ## 0.0.5-next.3
 
 ### Patch Changes
