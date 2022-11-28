@@ -1953,6 +1953,7 @@ __metadata:
     "@vanilla-extract/sprinkles": ^1.5.0
     "@vanilla-extract/webpack-plugin": ^2.1.12
     babel-loader: ^8.2.5
+    babel-plugin-transform-remove-imports: ^1.7.0
     chroma-js: ^2.4.2
     color-blend: ^4.0.0
     concurrently: ^7.3.0
@@ -5328,6 +5329,15 @@ __metadata:
     lodash: ^4.17.15
     react-docgen: ^5.0.0
   checksum: 6126d358ac2cb27a9a7f145ab586b7a28cb19ef09ca37c4f08a853246a101328ffe6c87813e95b1b4ba05beb627285199f7d0ba16abfb61b35cc4febb6d5eabd
+  languageName: node
+  linkType: hard
+
+"babel-plugin-transform-remove-imports@npm:^1.7.0":
+  version: 1.7.0
+  resolution: "babel-plugin-transform-remove-imports@npm:1.7.0"
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: d50f701edcd6832b21e73b0ed143747a50bb4982c5632c59ab8b8ed2b5163b60402a0beee70e0c5fec1fbf438c074517ff303425b5b9b7f1bee295953f638431
   languageName: node
   linkType: hard
 
