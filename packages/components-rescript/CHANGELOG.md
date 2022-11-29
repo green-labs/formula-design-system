@@ -1,5 +1,14 @@
 # @greenlabs/rescript-formula-components
 
+## 0.0.5-next.6
+
+### Patch Changes
+
+- Updated dependencies [e38133e]
+- Updated dependencies [34a4950]
+  - @greenlabs/formula-components@0.0.5-next.6
+  - @greenlabs/formula-design-token@0.0.5-next.6
+
 ## 0.0.5-next.5
 
 ### Patch Changes
