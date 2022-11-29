@@ -94,9 +94,13 @@ Overview.argTypes = {
 
 const SingleTemplate: ComponentStory<typeof TextField> = (args) => {
   return (
-    <form style={{ margin: "20px 0" }}>
-      <TextField {...args} />
-    </form>
+    <ThemeScope
+      render={({ className }) => (
+        <form className={className} style={{ margin: "20px 0" }}>
+          <TextField {...args} />
+        </form>
+      )}
+    />
   )
 }
 
