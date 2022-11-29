@@ -1,6 +1,6 @@
 {
   "name": "@greenlabs/formula-components",
-  "version": "0.0.5-next.5",
+  "version": "0.0.5-next.6",
   "repository": {
     "type": "git",
     "url": "git@github.com:green-labs/formula-design-system.git",
@@ -24,7 +24,7 @@
     }
   },
   "dependencies": {
-    "@greenlabs/formula-design-token": "0.0.5-next.5",
+    "@greenlabs/formula-design-token": "0.0.5-next.6",
     "@radix-ui/react-tabs": "^1.0.1",
     "@vanilla-extract/dynamic": "^2.0.2",
     "@vanilla-extract/recipes": "^0.2.5",

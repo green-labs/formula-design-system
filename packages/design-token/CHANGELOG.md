@@ -1,5 +1,11 @@
 # @greenlabs/formula-design-token
 
+## 0.0.5-next.6
+
+### Patch Changes
+
+- 34a4950: update token colors
+
 ## 0.0.5-next.5
 
 ### Patch Changes

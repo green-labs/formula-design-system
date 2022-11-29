@@ -1,5 +1,16 @@
 # @greenlabs/formula-components
 
+## 0.0.5-next.6
+
+### Patch Changes
+
+- e38133e: feat: update focused outline textfield type border
+
+  - use css vars instead of colorMap value
+
+- Updated dependencies [34a4950]
+  - @greenlabs/formula-design-token@0.0.5-next.6
+
 ## 0.0.5-next.5
 
 ### Patch Changes
