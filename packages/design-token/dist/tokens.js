@@ -56,16 +56,16 @@ export default {
           value: "#DFF7EA",
         },
         20: {
-          value: "#DCFAE0",
+          value: "#CCF0DD",
         },
         30: {
-          value: "#A2F5B9",
+          value: "#A4E0C1",
         },
         40: {
-          value: "#77E59D",
+          value: "#74CF9D",
         },
         50: {
-          value: "#38C776",
+          value: "#5ABF86",
         },
         60: {
           value: "#0BB25F",
@@ -97,16 +97,16 @@ export default {
           value: "#DFF7F5",
         },
         20: {
-          value: "#D7FAF7",
+          value: "#C7EDE4",
         },
         30: {
-          value: "#B0F5EF",
+          value: "#A4E0D5",
         },
         40: {
-          value: "#7BE8E3",
+          value: "#79D1C4",
         },
         50: {
-          value: "#4CCFC2",
+          value: "#56C2B7",
         },
         60: {
           value: "#00B5AC",
@@ -138,16 +138,16 @@ export default {
           value: "#E3F6FF",
         },
         20: {
-          value: "#D4F2FF",
+          value: "#CAEAFA",
         },
         30: {
-          value: "#ABE6FF",
+          value: "#ADDCF7",
         },
         40: {
-          value: "#83D7FF",
+          value: "#87CDF6",
         },
         50: {
-          value: "#5AC6FA",
+          value: "#68C3F7",
         },
         60: {
           value: "#2DB6F8",
@@ -179,16 +179,16 @@ export default {
           value: "#E1ECFC",
         },
         20: {
-          value: "#D6E7FF",
+          value: "#D7E2F7",
         },
         30: {
-          value: "#B9CDFE",
+          value: "#B6CCF1",
         },
         40: {
-          value: "#91ABFA",
+          value: "#8AAEF2",
         },
         50: {
-          value: "#5B81F5",
+          value: "#618EE8",
         },
         60: {
           value: "#3B6DE3",
@@ -220,16 +220,16 @@ export default {
           value: "#EEEDFC",
         },
         20: {
-          value: "#E7E5FF",
+          value: "#DCDCF6",
         },
         30: {
-          value: "#D0CCFF",
+          value: "#C6CBF1",
         },
         40: {
-          value: "#A29EFC",
+          value: "#A2AAF2",
         },
         50: {
-          value: "#7B77E8",
+          value: "#7582E5",
         },
         60: {
           value: "#5C58E0",
@@ -261,16 +261,16 @@ export default {
           value: "#F5EBFA",
         },
         20: {
-          value: "#F6E5FE",
+          value: "#E8DEF6",
         },
         30: {
-          value: "#EBC8FA",
+          value: "#DDC7F2",
         },
         40: {
-          value: "#DCA0F8",
+          value: "#C79AE5",
         },
         50: {
-          value: "#BC79DB",
+          value: "#BA78DF",
         },
         60: {
           value: "#AE56D6",
@@ -302,16 +302,16 @@ export default {
           value: "#FCEBF6",
         },
         20: {
-          value: "#FFE0F7",
+          value: "#FADCF0",
         },
         30: {
-          value: "#FFC9E4",
+          value: "#F5C6E4",
         },
         40: {
-          value: "#FF9FCF",
+          value: "#F7A8D7",
         },
         50: {
-          value: "#F078B3",
+          value: "#F77EC0",
         },
         60: {
           value: "#F059A4",
@@ -340,19 +340,19 @@ export default {
           value: "#FCF4F4",
         },
         10: {
-          value: "#FAE8E9",
+          value: "#FDE7E9",
         },
         20: {
-          value: "#FFE8E8",
+          value: "#FFDBDE",
         },
         30: {
-          value: "#FFCFD1",
+          value: "#FFBAC1",
         },
         40: {
-          value: "#FF8F9A",
+          value: "#FF99A0",
         },
         50: {
-          value: "#E5606E",
+          value: "#F5626D",
         },
         60: {
           value: "#ED394B",
@@ -378,43 +378,43 @@ export default {
       },
       orange: {
         5: {
-          value: "#FCF8F4",
+          value: "#FCF7F5",
         },
         10: {
-          value: "#FCF0E6",
+          value: "#FEEEE7",
         },
         20: {
-          value: "#FCECDE",
+          value: "#FFE0D4",
         },
         30: {
-          value: "#FFDDBD",
+          value: "#FFCFBA",
         },
         40: {
-          value: "#FFA680",
+          value: "#FFA985",
         },
         50: {
-          value: "#FC915B",
+          value: "#FE8C5B",
         },
         60: {
-          value: "#FF7A38",
+          value: "#F96E3B",
         },
         70: {
-          value: "#E84A07",
+          value: "#E84507",
         },
         80: {
-          value: "#B83904",
+          value: "#B83704",
         },
         90: {
-          value: "#913000",
+          value: "#912B00",
         },
         95: {
-          value: "#611F00",
+          value: "#632208",
         },
         100: {
-          value: "#4A1B00",
+          value: "#4A1400",
         },
         "10A": {
-          value: "rgba(255, 122, 56, 0.12)",
+          value: "rgba(254, 238, 231, 0.12)",
         },
       },
       yellow: {
@@ -425,16 +425,16 @@ export default {
           value: "#FCFAE5",
         },
         20: {
-          value: "#FCF8D2",
+          value: "#FCF7CF",
         },
         30: {
           value: "#FEF39D",
         },
         40: {
-          value: "#FFE87A",
+          value: "#F7EA88",
         },
         50: {
-          value: "#FEE156",
+          value: "#FAE25E",
         },
         60: {
           value: "#FEDA29",
@@ -744,7 +744,7 @@ export default {
           value: "#CF1124",
         },
         container: {
-          value: "#FAE8E9",
+          value: "#FDE7E9",
         },
       },
       divider: {
