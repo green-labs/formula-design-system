@@ -1,16 +1,9 @@
-import { SVGProps, Ref, forwardRef, memo } from "react"
+import { Ref, forwardRef, memo } from "react"
 import { colorMap } from "@greenlabs/formula-design-token"
 import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
 const SvgMinusLineThin = (
-  {
-    size = "xl",
-    sizePx,
-    style,
-    className,
-    color,
-    ...props
-  }: IconProps & SVGProps<SVGSVGElement>,
+  { size = "xl", sizePx, color = "gray-90", ...props }: IconProps,
   ref: Ref<SVGSVGElement>
 ) => {
   const finalSize = sizePx ? sizePx : convertSizeToPx(size)
@@ -21,14 +14,12 @@ const SvgMinusLineThin = (
       height={finalSize}
       fill={fill}
       xmlns="http://www.w3.org/2000/svg"
-      style={style}
       viewBox="0 0 48 48"
-      className={className}
       ref={ref}
       {...props}
     >
       <path
-        d="M10.5 25.5h27c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5h-27c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5Z"
+        d="M38.3 22.5H9.7c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5h28.6c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5Z"
         fill={fill}
       />
     </svg>

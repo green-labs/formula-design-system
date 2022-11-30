@@ -1,8 +1,10 @@
-# greenlabs-design-system-token
+# `@greenlabs/formula-design-token`
 
-[style-dictionary](https://amzn.github.io/style-dictionary)를 이용해 디자인 시스템 토큰을 관리하는 패키지입니다.
+### How to start
 
-```bash
-yarn
-yarn style-dictionary build
+```shell
+  yarn install
+  yarn build
 ```
+
+check out [`dist/`](https://github.com/green-labs/formula-design-system/tree/main/packages/design-token/dist) (output is committed) folder for build output

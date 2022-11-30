@@ -1,16 +1,9 @@
-import { SVGProps, Ref, forwardRef, memo } from "react"
+import { Ref, forwardRef, memo } from "react"
 import { colorMap } from "@greenlabs/formula-design-token"
 import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
 const SvgEyeLineThin = (
-  {
-    size = "xl",
-    sizePx,
-    style,
-    className,
-    color,
-    ...props
-  }: IconProps & SVGProps<SVGSVGElement>,
+  { size = "xl", sizePx, color = "gray-90", ...props }: IconProps,
   ref: Ref<SVGSVGElement>
 ) => {
   const finalSize = sizePx ? sizePx : convertSizeToPx(size)
@@ -21,14 +14,12 @@ const SvgEyeLineThin = (
       height={finalSize}
       fill={fill}
       xmlns="http://www.w3.org/2000/svg"
-      style={style}
       viewBox="0 0 48 48"
-      className={className}
       ref={ref}
       {...props}
     >
       <path
-        d="M3.24 25.44c5.58 8.8 12.54 13.26 20.71 13.26 10.21 0 16.92-7.14 20.76-13.17.44-.53.44-1.15.44-1.53a2.931 2.931 0 0 0-.39-1.44C40.87 16.51 34.13 9.3 24.05 9.3c-7.73 0-14.48 4.3-20.64 13.15-.36.41-.56.97-.56 1.55 0 .58.21 1.09.33 1.34.02.04.04.07.06.1Zm2.1-1.56c5.69-8.19 11.81-12.18 18.71-12.18 8.96 0 15.08 6.55 18.65 12.08.03.08.05.17.05.22v.13s0 .01-.01.02c-3.51 5.54-9.62 12.14-18.79 12.14-7.27 0-13.55-4.06-18.65-12.08-.03-.07-.06-.16-.1-.17.05-.05.1-.11.14-.16Z"
+        d="M3.24 25.44c5.58 8.8 12.54 13.26 20.71 13.26 10.21 0 16.92-7.14 20.76-13.17.44-.53.44-1.15.44-1.53 0-.59-.2-1.09-.33-1.33-.02-.04-.04-.08-.06-.11C40.87 16.51 34.13 9.3 24.05 9.3c-7.73 0-14.48 4.3-20.64 13.15-.36.41-.56.97-.56 1.55 0 .58.21 1.09.33 1.34.02.04.04.07.06.1Zm2.1-1.56c5.69-8.19 11.81-12.18 18.71-12.18 8.96 0 15.08 6.55 18.65 12.08.03.08.05.17.05.22v.13s0 .01-.01.02c-3.51 5.54-9.62 12.14-18.79 12.14-7.27 0-13.55-4.06-18.65-12.08-.03-.07-.06-.16-.1-.17.05-.05.1-.11.14-.16Z"
         fill={fill}
       />
       <path

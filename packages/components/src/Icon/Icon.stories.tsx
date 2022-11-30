@@ -1,6 +1,9 @@
+import * as React from "react"
 import type { ComponentMeta, ComponentStory } from "@storybook/react"
 import { colorMap } from "@greenlabs/formula-design-token"
 import * as IconComponents from "./generated"
+import "../theme"
+import { ThemeScope } from "../theme"
 
 /* ---------- 아이콘 스타일 래퍼 시작 ----------*/
 
@@ -12,12 +15,14 @@ interface IconItemProps {
 // Todo - support code copy(ts, res) handler
 const IconItem: React.FC<IconItemProps> = ({ name, children }) => {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        flexDirection: "column",
+    <ThemeScope
+      props={{
+        style: {
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+        },
       }}
     >
       <div
@@ -35,23 +40,23 @@ const IconItem: React.FC<IconItemProps> = ({ name, children }) => {
         {children}
       </div>
       <div>{name}</div>
-    </div>
+    </ThemeScope>
   )
 }
 
 /* ---------- 아이콘 스타일 래퍼 끝 ----------*/
 
-export const IconGallery: ComponentStory<
-  typeof IconComponents["ArrowDownLineBoldIcon"]
-> = (args) => {
+export const IconGallery: ComponentStory<typeof IconComponents["AppleFill"]> = (
+  args
+) => {
   return (
-    <>
+    <ThemeScope>
       {Object.entries(IconComponents).map(([name, Component]) => (
         <IconItem name={name}>
           <Component {...args} />
         </IconItem>
       ))}
-    </>
+    </ThemeScope>
   )
 }
 
@@ -89,4 +94,4 @@ export default {
       </div>
     ),
   ],
-} as ComponentMeta<typeof IconComponents["ArrowDownLineBoldIcon"]>
+} as ComponentMeta<typeof IconComponents["AppleFill"]>

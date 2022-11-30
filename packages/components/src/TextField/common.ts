@@ -1,4 +1,6 @@
-export const COMPONENT_CLASS = "fmc-textfield"
+import { Namespace } from "../constants"
+
+export const COMPONENT_CLASS = `${Namespace}-textfield`
 
 type stateMap = {
   disabled?: boolean

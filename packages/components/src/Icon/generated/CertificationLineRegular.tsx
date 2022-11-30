@@ -1,16 +1,9 @@
-import { SVGProps, Ref, forwardRef, memo } from "react"
+import { Ref, forwardRef, memo } from "react"
 import { colorMap } from "@greenlabs/formula-design-token"
 import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
 const SvgCertificationLineRegular = (
-  {
-    size = "xl",
-    sizePx,
-    style,
-    className,
-    color,
-    ...props
-  }: IconProps & SVGProps<SVGSVGElement>,
+  { size = "xl", sizePx, color = "gray-90", ...props }: IconProps,
   ref: Ref<SVGSVGElement>
 ) => {
   const finalSize = sizePx ? sizePx : convertSizeToPx(size)
@@ -21,14 +14,12 @@ const SvgCertificationLineRegular = (
       height={finalSize}
       fill={fill}
       xmlns="http://www.w3.org/2000/svg"
-      style={style}
       viewBox="0 0 48 48"
-      className={className}
       ref={ref}
       {...props}
     >
       <path
-        d="M21.695 30.479c-.4 0-.78-.16-1.06-.44l-5-5a1.49 1.49 0 0 1 0-2.12 1.49 1.49 0 0 1 2.12 0l3.92 3.92 8.54-8.9c.57-.6 1.52-.62 2.12-.04.6.57.62 1.52.04 2.12l-9.6 10c-.28.29-.66.46-1.07.46h-.01Z"
+        d="m20.635 30.039-5-5a1.49 1.49 0 0 1 0-2.12 1.49 1.49 0 0 1 2.12 0l3.92 3.92 8.54-8.9c.57-.6 1.52-.62 2.12-.04.6.57.62 1.52.04 2.12l-9.6 10c-.564.584-1.556.604-2.14.02Z"
         fill={fill}
       />
       <path

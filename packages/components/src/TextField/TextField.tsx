@@ -6,8 +6,9 @@ import type { textFieldSizeVariants } from "./styles.css"
 import {
   textFieldVariants,
   inputStyle,
+  prefixStyle,
   prefixIconStyle,
-  suffixStyle,
+  suffixTextStyle,
   suffixIconStyle,
   titleStyle,
   hintStyle,
@@ -85,6 +86,7 @@ export const TextField = ({
   const PrefixIcon = prefixIcon
   const SuffixIcon = suffixIcon
   const inaccesibleIconColor = readOnly || disabled ? "gray-40" : undefined
+  const iconSize = size === "large" || size === "medium" ? "xl" : "lg"
 
   return (
     <div
@@ -104,10 +106,13 @@ export const TextField = ({
       ) : null}
       <div className={containerClass}>
         {prefix ? (
-          <div className={prefixIconStyle}>{prefix}</div>
+          <div className={prefixStyle}>{prefix}</div>
         ) : PrefixIcon ? (
           <div className={prefixIconStyle}>
-            <PrefixIcon color={inaccesibleIconColor ?? "gray-50"} size="lg" />
+            <PrefixIcon
+              color={inaccesibleIconColor ?? "gray-50"}
+              size={iconSize}
+            />
           </div>
         ) : null}
         <input
@@ -130,15 +135,18 @@ export const TextField = ({
             }
           }}
         >
-          <DeleteFill size="sm" color="neutral-tertiary-contents" />
+          <DeleteFill
+            size={size === "xsmall" ? "sm" : "lg"}
+            color="neutral-tertiary-contents"
+          />
         </div>
         {suffix ? (
-          <div className={suffixStyle}>{suffix}</div>
+          <div className={suffixTextStyle}>{suffix}</div>
         ) : SuffixIcon ? (
           <div className={suffixIconStyle}>
             <SuffixIcon
               color={inaccesibleIconColor ?? "neutral-primary-contents"}
-              size="lg"
+              size={iconSize}
             />
           </div>
         ) : null}

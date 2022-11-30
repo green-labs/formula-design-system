@@ -15,10 +15,8 @@ module.exports = {
   svgProps: {
     width: "{finalSize}",
     height: "{finalSize}",
-    style: "{style}",
     fill: "{fill}",
     viewBox: "0 0 48 48",
-    className: "{className}",
   },
   replaceAttrValues: {
     "#1F2024": "{fill}",

@@ -2,8 +2,12 @@ const StyleDictionary = require("style-dictionary")
 
 const tailwindFormat = require("./formats/tailwind")
 const figmaFormat = require("./formats/figma")
-const tsModuleFormat = require("./formats/tsModule")
-const { colorMapFormat, colorMapResFormat } = require("./formats/colorMap")
+const { getTrimmedToken, getTokenTypeDef } = require("./formats/tokenTrimmed")
+const {
+  colorMapFormat,
+  colorMapType,
+  colorMapResFormat,
+} = require("./formats/colorMap")
 
 module.exports = {
   source: [`tokens/**/*.@(json|json5)`, "tokens/index.js"],
@@ -12,8 +16,10 @@ module.exports = {
     figmaEmitMeta: figmaFormat.emitMeta,
     figmaEmitTokenSet: figmaFormat.emitTokenSet,
     figmaEmitThemes: figmaFormat.emitThemes,
-    tsModule: tsModuleFormat,
+    tokenTrimmed: getTrimmedToken,
+    tokenTrimmedType: getTokenTypeDef,
     colorMap: colorMapFormat,
+    colorMapType: colorMapType,
     colorMapRes: colorMapResFormat,
   },
   transform: {
@@ -28,8 +34,12 @@ module.exports = {
       buildPath: "dist/",
       files: [
         {
-          destination: "tokens.ts",
-          format: "tsModule",
+          destination: "tokens.js",
+          format: "tokenTrimmed",
+        },
+        {
+          destination: "tokens.d.ts",
+          format: "tokenTrimmedType",
         },
       ],
     },
@@ -94,13 +104,18 @@ module.exports = {
       buildPath: "dist/",
       files: [
         {
-          destination: "colorMap.ts",
+          destination: "colorMap.js",
           format: "colorMap",
         },
         {
-          destination: "Formula__ColorMap.res",
-          format: "colorMapRes",
+          destination: "colorMap.d.ts",
+          format: "colorMapType",
         },
+        // There is little change of changing this key, so disable it for now
+        // {
+        //   destination: "Formula__ColorMap.res",
+        //   format: "colorMapRes",
+        // },
       ],
     },
   },

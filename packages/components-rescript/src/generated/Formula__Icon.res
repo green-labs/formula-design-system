@@ -1,7 +1,7 @@
 @deriving(jsConverter)
 type size = [#pc | #xl | #lg | #sm | #xs]
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -11,7 +11,7 @@ module ArrowDownLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -20,7 +20,7 @@ module ArrowDownLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -30,7 +30,7 @@ module ArrowDownLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -39,7 +39,7 @@ module ArrowDownLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -49,7 +49,7 @@ module ArrowDownLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -58,7 +58,7 @@ module ArrowDownLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -68,7 +68,7 @@ module ArrowLeftLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -77,7 +77,7 @@ module ArrowLeftLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -87,7 +87,7 @@ module ArrowLeftLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -96,7 +96,7 @@ module ArrowLeftLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -106,7 +106,7 @@ module ArrowLeftLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -115,7 +115,7 @@ module ArrowLeftLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -125,7 +125,7 @@ module ArrowRightLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -134,7 +134,7 @@ module ArrowRightLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -144,7 +144,7 @@ module ArrowRightLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -153,7 +153,7 @@ module ArrowRightLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -163,7 +163,7 @@ module ArrowRightLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -172,7 +172,7 @@ module ArrowRightLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -182,7 +182,7 @@ module ArrowTriangleDownFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -191,7 +191,7 @@ module ArrowTriangleDownFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -201,7 +201,7 @@ module ArrowTriangleDownLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -210,7 +210,7 @@ module ArrowTriangleDownLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -220,7 +220,7 @@ module ArrowTriangleDownLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -229,7 +229,7 @@ module ArrowTriangleDownLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -239,7 +239,7 @@ module ArrowTriangleDownLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -248,7 +248,7 @@ module ArrowTriangleDownLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -258,7 +258,7 @@ module ArrowTriangleUpFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -267,7 +267,7 @@ module ArrowTriangleUpFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -277,7 +277,7 @@ module ArrowTriangleUpLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -286,7 +286,7 @@ module ArrowTriangleUpLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -296,7 +296,7 @@ module ArrowTriangleUpLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -305,7 +305,7 @@ module ArrowTriangleUpLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -315,7 +315,7 @@ module ArrowTriangleUpLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -324,7 +324,7 @@ module ArrowTriangleUpLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -334,7 +334,7 @@ module ArrowUpLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -343,7 +343,7 @@ module ArrowUpLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -353,7 +353,7 @@ module ArrowUpLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -362,7 +362,7 @@ module ArrowUpLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -372,7 +372,7 @@ module ArrowUpLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -381,7 +381,7 @@ module ArrowUpLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -391,7 +391,7 @@ module BookMarkFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -400,7 +400,7 @@ module BookMarkFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -410,7 +410,7 @@ module BookMarkLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -419,7 +419,7 @@ module BookMarkLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -429,7 +429,7 @@ module BookMarkLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -438,7 +438,7 @@ module BookMarkLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -448,7 +448,7 @@ module BookMarkLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -457,7 +457,7 @@ module BookMarkLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -467,7 +467,7 @@ module CalendarFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -476,7 +476,7 @@ module CalendarFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -486,7 +486,7 @@ module CalendarLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -495,7 +495,7 @@ module CalendarLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -505,7 +505,7 @@ module CalendarLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -514,7 +514,7 @@ module CalendarLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -524,7 +524,7 @@ module CalendarLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -533,7 +533,7 @@ module CalendarLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -543,7 +543,7 @@ module CameraFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -552,7 +552,7 @@ module CameraFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -562,7 +562,7 @@ module CameraLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -571,7 +571,7 @@ module CameraLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -581,7 +581,7 @@ module CameraLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -590,7 +590,7 @@ module CameraLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -600,7 +600,7 @@ module CameraLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -609,7 +609,7 @@ module CameraLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -619,7 +619,7 @@ module CartFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -628,7 +628,7 @@ module CartFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -638,7 +638,7 @@ module CartLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -647,7 +647,7 @@ module CartLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -657,7 +657,7 @@ module CartLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -666,7 +666,7 @@ module CartLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -676,7 +676,7 @@ module CartLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -685,7 +685,7 @@ module CartLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -695,7 +695,7 @@ module CertificationFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -704,7 +704,7 @@ module CertificationFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -714,7 +714,7 @@ module CertificationLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -723,7 +723,7 @@ module CertificationLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -733,7 +733,7 @@ module CertificationLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -742,7 +742,7 @@ module CertificationLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -752,7 +752,7 @@ module CertificationLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -761,7 +761,7 @@ module CertificationLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -771,7 +771,7 @@ module ChatFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -780,7 +780,7 @@ module ChatFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -790,7 +790,7 @@ module ChatLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -799,7 +799,7 @@ module ChatLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -809,7 +809,7 @@ module ChatLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -818,7 +818,7 @@ module ChatLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -828,7 +828,7 @@ module ChatLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -837,7 +837,7 @@ module ChatLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -847,7 +847,7 @@ module CheckCircleFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -856,7 +856,7 @@ module CheckCircleFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -866,7 +866,7 @@ module CheckCircleLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -875,7 +875,7 @@ module CheckCircleLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -885,7 +885,7 @@ module CheckCircleLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -894,7 +894,7 @@ module CheckCircleLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -904,7 +904,7 @@ module CheckCircleLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -913,7 +913,7 @@ module CheckCircleLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -923,7 +923,7 @@ module CheckLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -932,7 +932,7 @@ module CheckLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -942,7 +942,7 @@ module CheckLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -951,7 +951,7 @@ module CheckLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -961,7 +961,7 @@ module CheckLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -970,7 +970,7 @@ module CheckLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -980,7 +980,7 @@ module ChevronDownLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -989,7 +989,7 @@ module ChevronDownLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -999,7 +999,7 @@ module ChevronDownLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1008,7 +1008,7 @@ module ChevronDownLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1018,7 +1018,7 @@ module ChevronDownLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1027,7 +1027,7 @@ module ChevronDownLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1037,7 +1037,7 @@ module ChevronLeftLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1046,7 +1046,7 @@ module ChevronLeftLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1056,7 +1056,7 @@ module ChevronLeftLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1065,7 +1065,7 @@ module ChevronLeftLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1075,7 +1075,7 @@ module ChevronLeftLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1084,7 +1084,7 @@ module ChevronLeftLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1094,7 +1094,7 @@ module ChevronRightLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1103,7 +1103,7 @@ module ChevronRightLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1113,7 +1113,7 @@ module ChevronRightLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1122,7 +1122,7 @@ module ChevronRightLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1132,7 +1132,7 @@ module ChevronRightLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1141,7 +1141,7 @@ module ChevronRightLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1151,7 +1151,7 @@ module ChevronUpLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1160,7 +1160,7 @@ module ChevronUpLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1170,7 +1170,7 @@ module ChevronUpLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1179,7 +1179,7 @@ module ChevronUpLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1189,7 +1189,7 @@ module ChevronUpLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1198,7 +1198,7 @@ module ChevronUpLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1208,7 +1208,7 @@ module ClockFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1217,7 +1217,7 @@ module ClockFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1227,7 +1227,7 @@ module ClockLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1236,7 +1236,7 @@ module ClockLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1246,7 +1246,7 @@ module ClockLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1255,7 +1255,7 @@ module ClockLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1265,7 +1265,7 @@ module ClockLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1274,7 +1274,7 @@ module ClockLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1284,7 +1284,7 @@ module CloseLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1293,7 +1293,7 @@ module CloseLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1303,7 +1303,7 @@ module CloseLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1312,7 +1312,7 @@ module CloseLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1322,7 +1322,7 @@ module CloseLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1331,7 +1331,7 @@ module CloseLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1341,7 +1341,7 @@ module CommentFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1350,7 +1350,7 @@ module CommentFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1360,7 +1360,7 @@ module CommentLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1369,7 +1369,7 @@ module CommentLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1379,7 +1379,7 @@ module CommentLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1388,7 +1388,7 @@ module CommentLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1398,7 +1398,7 @@ module CommentLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1407,7 +1407,7 @@ module CommentLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1417,7 +1417,7 @@ module CompassFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1426,7 +1426,7 @@ module CompassFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1436,7 +1436,7 @@ module CompassLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1445,7 +1445,7 @@ module CompassLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1455,7 +1455,7 @@ module CompassLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1464,7 +1464,7 @@ module CompassLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1474,7 +1474,7 @@ module CompassLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1483,7 +1483,7 @@ module CompassLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1493,7 +1493,7 @@ module CopyContentsFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1502,7 +1502,7 @@ module CopyContentsFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1512,7 +1512,7 @@ module CopyContentsLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1521,7 +1521,7 @@ module CopyContentsLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1531,7 +1531,7 @@ module CopyContentsLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1540,7 +1540,7 @@ module CopyContentsLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1550,7 +1550,7 @@ module CopyContentsLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1559,7 +1559,7 @@ module CopyContentsLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1569,7 +1569,7 @@ module DeleteFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1578,7 +1578,7 @@ module DeleteFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1588,7 +1588,7 @@ module DeleteLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1597,7 +1597,7 @@ module DeleteLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1607,7 +1607,7 @@ module DeleteLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1616,7 +1616,7 @@ module DeleteLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1626,7 +1626,7 @@ module DeleteLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1635,7 +1635,7 @@ module DeleteLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1645,7 +1645,7 @@ module DownloadFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1654,7 +1654,7 @@ module DownloadFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1664,7 +1664,7 @@ module DownloadLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1673,7 +1673,7 @@ module DownloadLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1683,7 +1683,7 @@ module DownloadLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1692,7 +1692,7 @@ module DownloadLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1702,7 +1702,7 @@ module DownloadLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1711,7 +1711,7 @@ module DownloadLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1721,7 +1721,7 @@ module EditCutFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1730,7 +1730,7 @@ module EditCutFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1740,7 +1740,7 @@ module EditCutLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1749,7 +1749,7 @@ module EditCutLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1759,7 +1759,7 @@ module EditCutLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1768,7 +1768,7 @@ module EditCutLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1778,7 +1778,7 @@ module EditCutLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1787,7 +1787,7 @@ module EditCutLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1797,7 +1797,7 @@ module EditFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1806,7 +1806,7 @@ module EditFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1816,7 +1816,7 @@ module EditLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1825,7 +1825,7 @@ module EditLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1835,7 +1835,7 @@ module EditLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1844,7 +1844,7 @@ module EditLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1854,7 +1854,7 @@ module EditLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1863,7 +1863,7 @@ module EditLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1873,7 +1873,7 @@ module EyeFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1882,7 +1882,7 @@ module EyeFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1892,7 +1892,7 @@ module EyeLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1901,7 +1901,7 @@ module EyeLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1911,7 +1911,7 @@ module EyeLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1920,7 +1920,7 @@ module EyeLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1930,7 +1930,7 @@ module EyeLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1939,7 +1939,7 @@ module EyeLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1949,7 +1949,7 @@ module EyeSlashFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1958,7 +1958,7 @@ module EyeSlashFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1968,7 +1968,7 @@ module EyeSlashLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1977,7 +1977,7 @@ module EyeSlashLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -1987,7 +1987,7 @@ module EyeSlashLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -1996,7 +1996,7 @@ module EyeSlashLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2006,7 +2006,7 @@ module EyeSlashLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2015,7 +2015,7 @@ module EyeSlashLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2025,7 +2025,7 @@ module FarmFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2034,7 +2034,7 @@ module FarmFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2044,7 +2044,7 @@ module FarmLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2053,7 +2053,7 @@ module FarmLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2063,7 +2063,7 @@ module FarmLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2072,7 +2072,7 @@ module FarmLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2082,7 +2082,7 @@ module FarmLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2091,7 +2091,7 @@ module FarmLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2101,7 +2101,7 @@ module HeartFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2110,7 +2110,7 @@ module HeartFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2120,7 +2120,7 @@ module HeartLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2129,7 +2129,7 @@ module HeartLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2139,7 +2139,7 @@ module HeartLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2148,7 +2148,7 @@ module HeartLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2158,7 +2158,7 @@ module HeartLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2167,7 +2167,7 @@ module HeartLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2177,7 +2177,7 @@ module HelpFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2186,7 +2186,7 @@ module HelpFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2196,7 +2196,7 @@ module HelpLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2205,7 +2205,7 @@ module HelpLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2215,7 +2215,7 @@ module HelpLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2224,7 +2224,7 @@ module HelpLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2234,7 +2234,7 @@ module HelpLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2243,7 +2243,7 @@ module HelpLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2253,7 +2253,7 @@ module HomeFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2262,7 +2262,7 @@ module HomeFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2272,7 +2272,7 @@ module HomeLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2281,7 +2281,7 @@ module HomeLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2291,7 +2291,7 @@ module HomeLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2300,7 +2300,7 @@ module HomeLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2310,7 +2310,7 @@ module HomeLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2319,7 +2319,7 @@ module HomeLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2329,7 +2329,7 @@ module ImageFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2338,7 +2338,7 @@ module ImageFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2348,7 +2348,7 @@ module ImageLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2357,7 +2357,7 @@ module ImageLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2367,7 +2367,7 @@ module ImageLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2376,7 +2376,7 @@ module ImageLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2386,7 +2386,7 @@ module ImageLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2395,7 +2395,7 @@ module ImageLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2405,7 +2405,7 @@ module InfoFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2414,7 +2414,7 @@ module InfoFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2424,7 +2424,7 @@ module InfoLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2433,7 +2433,7 @@ module InfoLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2443,7 +2443,7 @@ module InfoLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2452,7 +2452,7 @@ module InfoLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2462,7 +2462,7 @@ module InfoLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2471,7 +2471,7 @@ module InfoLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2481,7 +2481,7 @@ module LinkClipLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2490,7 +2490,7 @@ module LinkClipLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2500,7 +2500,7 @@ module LinkClipLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2509,7 +2509,7 @@ module LinkClipLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2519,7 +2519,7 @@ module LinkClipLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2528,7 +2528,7 @@ module LinkClipLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2538,7 +2538,7 @@ module LinkCopyLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2547,7 +2547,7 @@ module LinkCopyLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2557,7 +2557,7 @@ module LinkCopyLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2566,7 +2566,7 @@ module LinkCopyLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2576,7 +2576,7 @@ module LinkCopyLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2585,7 +2585,7 @@ module LinkCopyLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2595,7 +2595,7 @@ module LocationFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2604,7 +2604,7 @@ module LocationFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2614,7 +2614,7 @@ module LocationFill1 = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2623,7 +2623,7 @@ module LocationFill1 = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2633,7 +2633,7 @@ module LocationLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2642,7 +2642,7 @@ module LocationLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2652,7 +2652,7 @@ module LocationLineBold1 = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2661,7 +2661,7 @@ module LocationLineBold1 = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2671,7 +2671,7 @@ module LocationLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2680,7 +2680,7 @@ module LocationLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2690,7 +2690,7 @@ module LocationLineRegular1 = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2699,7 +2699,7 @@ module LocationLineRegular1 = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2709,7 +2709,7 @@ module LocationLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2718,7 +2718,7 @@ module LocationLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2728,7 +2728,7 @@ module LocationLineThin1 = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2737,7 +2737,7 @@ module LocationLineThin1 = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2747,7 +2747,7 @@ module MenuFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2756,7 +2756,7 @@ module MenuFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2766,7 +2766,7 @@ module MenuLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2775,7 +2775,7 @@ module MenuLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2785,7 +2785,7 @@ module MenuLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2794,7 +2794,7 @@ module MenuLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2804,7 +2804,7 @@ module MenuLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2813,7 +2813,7 @@ module MenuLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2823,7 +2823,7 @@ module MicFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2832,7 +2832,7 @@ module MicFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2842,7 +2842,7 @@ module MicLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2851,7 +2851,7 @@ module MicLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2861,7 +2861,7 @@ module MicLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2870,7 +2870,7 @@ module MicLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2880,7 +2880,7 @@ module MicLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2889,7 +2889,7 @@ module MicLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2899,7 +2899,7 @@ module MicSlashFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2908,7 +2908,7 @@ module MicSlashFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2918,7 +2918,7 @@ module MicSlashLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2927,7 +2927,7 @@ module MicSlashLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2937,7 +2937,7 @@ module MicSlashLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2946,7 +2946,7 @@ module MicSlashLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2956,7 +2956,7 @@ module MicSlashLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2965,7 +2965,7 @@ module MicSlashLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2975,7 +2975,7 @@ module MinusLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -2984,7 +2984,7 @@ module MinusLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -2994,7 +2994,7 @@ module MinusLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3003,7 +3003,7 @@ module MinusLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3013,7 +3013,7 @@ module MinusLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3022,7 +3022,7 @@ module MinusLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3032,7 +3032,7 @@ module MoneyBagFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3041,7 +3041,7 @@ module MoneyBagFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3051,7 +3051,7 @@ module MoneyBagLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3060,7 +3060,7 @@ module MoneyBagLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3070,7 +3070,7 @@ module MoneyBagLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3079,7 +3079,7 @@ module MoneyBagLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3089,7 +3089,7 @@ module MoneyBagLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3098,7 +3098,7 @@ module MoneyBagLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3108,7 +3108,7 @@ module NoticeFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3117,7 +3117,7 @@ module NoticeFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3127,7 +3127,7 @@ module NoticeLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3136,7 +3136,7 @@ module NoticeLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3146,7 +3146,7 @@ module NoticeLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3155,7 +3155,7 @@ module NoticeLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3165,7 +3165,7 @@ module NoticeLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3174,7 +3174,7 @@ module NoticeLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3184,7 +3184,7 @@ module NotificationFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3193,7 +3193,7 @@ module NotificationFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3203,7 +3203,7 @@ module NotificationLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3212,7 +3212,7 @@ module NotificationLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3222,7 +3222,7 @@ module NotificationLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3231,7 +3231,7 @@ module NotificationLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3241,7 +3241,7 @@ module NotificationLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3250,7 +3250,7 @@ module NotificationLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3260,7 +3260,7 @@ module NotificationSlashFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3269,7 +3269,7 @@ module NotificationSlashFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3279,7 +3279,7 @@ module NotificationSlashLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3288,7 +3288,7 @@ module NotificationSlashLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3298,7 +3298,7 @@ module NotificationSlashLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3307,7 +3307,7 @@ module NotificationSlashLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3317,7 +3317,7 @@ module NotificationSlashLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3326,7 +3326,7 @@ module NotificationSlashLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3336,7 +3336,7 @@ module PersonCircleFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3345,7 +3345,7 @@ module PersonCircleFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3355,7 +3355,7 @@ module PersonCircleLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3364,7 +3364,7 @@ module PersonCircleLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3374,7 +3374,7 @@ module PersonCircleLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3383,7 +3383,7 @@ module PersonCircleLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3393,7 +3393,7 @@ module PersonCircleLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3402,7 +3402,7 @@ module PersonCircleLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3412,7 +3412,7 @@ module PersonFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3421,7 +3421,7 @@ module PersonFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3431,7 +3431,7 @@ module PersonLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3440,7 +3440,7 @@ module PersonLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3450,7 +3450,7 @@ module PersonLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3459,7 +3459,7 @@ module PersonLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3469,7 +3469,7 @@ module PersonLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3478,7 +3478,7 @@ module PersonLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3488,7 +3488,7 @@ module PhoneFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3497,7 +3497,7 @@ module PhoneFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3507,7 +3507,7 @@ module PhoneLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3516,7 +3516,7 @@ module PhoneLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3526,7 +3526,7 @@ module PhoneLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3535,7 +3535,7 @@ module PhoneLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3545,7 +3545,7 @@ module PhoneLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3554,7 +3554,7 @@ module PhoneLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3564,7 +3564,7 @@ module PinFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3573,7 +3573,7 @@ module PinFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3583,7 +3583,7 @@ module PinLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3592,7 +3592,7 @@ module PinLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3602,7 +3602,7 @@ module PinLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3611,7 +3611,7 @@ module PinLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3621,7 +3621,7 @@ module PinLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3630,7 +3630,7 @@ module PinLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3640,7 +3640,7 @@ module PlayFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3649,7 +3649,7 @@ module PlayFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3659,7 +3659,7 @@ module PlayLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3668,7 +3668,7 @@ module PlayLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3678,7 +3678,7 @@ module PlayLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3687,7 +3687,7 @@ module PlayLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3697,7 +3697,7 @@ module PlayLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3706,7 +3706,7 @@ module PlayLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3716,7 +3716,7 @@ module PlusCircleFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3725,7 +3725,7 @@ module PlusCircleFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3735,7 +3735,7 @@ module PlusCircleLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3744,7 +3744,7 @@ module PlusCircleLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3754,7 +3754,7 @@ module PlusCircleLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3763,7 +3763,7 @@ module PlusCircleLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3773,7 +3773,7 @@ module PlusCircleLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3782,7 +3782,7 @@ module PlusCircleLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3792,7 +3792,7 @@ module PlusLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3801,7 +3801,7 @@ module PlusLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3811,7 +3811,7 @@ module PlusLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3820,7 +3820,7 @@ module PlusLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3830,7 +3830,7 @@ module PlusLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3839,7 +3839,7 @@ module PlusLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3849,7 +3849,7 @@ module PostSquareFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3858,7 +3858,7 @@ module PostSquareFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3868,7 +3868,7 @@ module PostSquareLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3877,7 +3877,7 @@ module PostSquareLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3887,7 +3887,7 @@ module PostSquareLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3896,7 +3896,7 @@ module PostSquareLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3906,7 +3906,7 @@ module PostSquareLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3915,7 +3915,7 @@ module PostSquareLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3925,7 +3925,7 @@ module RefreshLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3934,7 +3934,7 @@ module RefreshLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3944,7 +3944,7 @@ module RefreshLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3953,7 +3953,7 @@ module RefreshLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3963,7 +3963,7 @@ module RefreshLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3972,7 +3972,7 @@ module RefreshLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -3982,7 +3982,7 @@ module SearchFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -3991,7 +3991,7 @@ module SearchFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4001,7 +4001,7 @@ module SearchLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4010,7 +4010,7 @@ module SearchLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4020,7 +4020,7 @@ module SearchLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4029,7 +4029,7 @@ module SearchLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4039,7 +4039,7 @@ module SearchLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4048,7 +4048,7 @@ module SearchLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4058,7 +4058,7 @@ module SeeMoreFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4067,7 +4067,7 @@ module SeeMoreFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4077,7 +4077,7 @@ module SeeMoreLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4086,7 +4086,7 @@ module SeeMoreLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4096,7 +4096,7 @@ module SeeMoreLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4105,7 +4105,7 @@ module SeeMoreLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4115,7 +4115,7 @@ module SeeMoreLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4124,7 +4124,7 @@ module SeeMoreLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4134,7 +4134,7 @@ module SendPlaneFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4143,7 +4143,7 @@ module SendPlaneFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4153,7 +4153,7 @@ module SendPlaneLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4162,7 +4162,7 @@ module SendPlaneLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4172,7 +4172,7 @@ module SendPlaneLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4181,7 +4181,7 @@ module SendPlaneLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4191,7 +4191,7 @@ module SendPlaneLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4200,7 +4200,7 @@ module SendPlaneLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4210,7 +4210,7 @@ module SettingFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4219,7 +4219,7 @@ module SettingFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4229,7 +4229,7 @@ module SettingLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4238,7 +4238,7 @@ module SettingLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4248,7 +4248,7 @@ module SettingLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4257,7 +4257,7 @@ module SettingLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4267,7 +4267,7 @@ module SettingLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4276,7 +4276,7 @@ module SettingLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4286,7 +4286,7 @@ module ShareAndroidFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4295,7 +4295,7 @@ module ShareAndroidFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4305,7 +4305,7 @@ module ShareAndroidLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4314,7 +4314,7 @@ module ShareAndroidLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4324,7 +4324,7 @@ module ShareAndroidLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4333,7 +4333,7 @@ module ShareAndroidLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4343,7 +4343,7 @@ module ShareAndroidLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4352,7 +4352,7 @@ module ShareAndroidLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4362,7 +4362,7 @@ module ShareArrowFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4371,7 +4371,7 @@ module ShareArrowFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4381,7 +4381,7 @@ module ShareArrowLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4390,7 +4390,7 @@ module ShareArrowLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4400,7 +4400,7 @@ module ShareArrowLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4409,7 +4409,7 @@ module ShareArrowLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4419,7 +4419,7 @@ module ShareArrowLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4428,7 +4428,7 @@ module ShareArrowLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4438,7 +4438,7 @@ module ShareIosFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4447,7 +4447,7 @@ module ShareIosFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4457,7 +4457,7 @@ module ShareIosLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4466,7 +4466,7 @@ module ShareIosLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4476,7 +4476,7 @@ module ShareIosLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4485,7 +4485,7 @@ module ShareIosLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4495,7 +4495,7 @@ module ShareIosLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4504,7 +4504,7 @@ module ShareIosLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4514,7 +4514,7 @@ module ShoppingBasketFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4523,7 +4523,7 @@ module ShoppingBasketFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4533,7 +4533,7 @@ module ShoppingBasketLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4542,7 +4542,7 @@ module ShoppingBasketLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4552,7 +4552,7 @@ module ShoppingBasketLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4561,7 +4561,7 @@ module ShoppingBasketLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4571,7 +4571,7 @@ module ShoppingBasketLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4580,7 +4580,7 @@ module ShoppingBasketLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4590,7 +4590,7 @@ module ThumbUpFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4599,7 +4599,7 @@ module ThumbUpFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4609,7 +4609,7 @@ module ThumbUpLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4618,7 +4618,7 @@ module ThumbUpLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4628,7 +4628,7 @@ module ThumbUpLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4637,7 +4637,7 @@ module ThumbUpLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4647,7 +4647,7 @@ module ThumbUpLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4656,7 +4656,7 @@ module ThumbUpLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4666,7 +4666,7 @@ module TouchFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4675,7 +4675,7 @@ module TouchFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4685,7 +4685,7 @@ module TouchLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4694,7 +4694,7 @@ module TouchLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4704,7 +4704,7 @@ module TouchLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4713,7 +4713,7 @@ module TouchLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4723,7 +4723,7 @@ module TouchLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4732,7 +4732,7 @@ module TouchLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4742,7 +4742,7 @@ module TrashFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4751,7 +4751,7 @@ module TrashFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4761,7 +4761,7 @@ module TrashLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4770,7 +4770,7 @@ module TrashLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4780,7 +4780,7 @@ module TrashLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4789,7 +4789,7 @@ module TrashLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4799,7 +4799,7 @@ module TrashLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4808,7 +4808,7 @@ module TrashLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4818,7 +4818,7 @@ module VideoFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4827,7 +4827,7 @@ module VideoFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4837,7 +4837,7 @@ module VideoLineBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4846,7 +4846,7 @@ module VideoLineBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4856,7 +4856,7 @@ module VideoLineRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4865,7 +4865,7 @@ module VideoLineRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4875,7 +4875,7 @@ module VideoLineThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4884,7 +4884,7 @@ module VideoLineThin = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4894,7 +4894,7 @@ module WebBold = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4903,7 +4903,7 @@ module WebBold = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4913,7 +4913,7 @@ module WebFill = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4922,7 +4922,7 @@ module WebFill = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4932,7 +4932,7 @@ module WebRegular = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,
@@ -4941,7 +4941,7 @@ module WebRegular = {
 }
 
 /**
-    @props classname - [string] Class content attribute.
+    @props className - [string] Class content attribute.
     @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
     @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
@@ -4951,7 +4951,7 @@ module WebThin = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     ~style: ReactDOMStyle.t=?,
-    ~classname: string=?,
+    ~className: string=?,
     ~size: size=?,
     ~sizePx: int=?,
     ~color: Formula__ColorMap.t=?,

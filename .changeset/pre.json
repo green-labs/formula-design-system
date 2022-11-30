@@ -1,0 +1,20 @@
+{
+  "mode": "pre",
+  "tag": "next",
+  "initialVersions": {
+    "@greenlabs/formula-components": "0.0.4",
+    "@greenlabs/rescript-formula-components": "0.0.4",
+    "@greenlabs/formula-design-token": "0.0.4"
+  },
+  "changesets": [
+    "clean-seas-drive",
+    "clever-fireants-cough",
+    "forty-cougars-dream",
+    "itchy-impalas-help",
+    "nasty-buckets-joke",
+    "rude-wasps-listen",
+    "sixty-rabbits-know",
+    "tall-bikes-build",
+    "twenty-sheep-exist"
+  ]
+}

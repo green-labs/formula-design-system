@@ -34,46 +34,16 @@
     }
   },
   "container": {
-    "primary": {
-      "value": "#0BB25F",
-      "type": "color"
-    },
-    "secondary": {
-      "value": "#DFF7EA",
-      "type": "color"
-    },
-    "neutral-primary": {
-      "value": "white",
-      "type": "color"
-    },
-    "neutral-secondary": {
-      "value": "#F0F2F5",
-      "type": "color"
-    },
-    "neutral-tertiary": {
-      "value": "#F7F8FA",
-      "type": "color"
-    },
-    "inverse": {
-      "value": "#1F2024",
-      "type": "color"
-    },
-    "error": {
-      "value": "#FAE8E9",
-      "type": "color"
-    },
-    "divider": {
-      "value": "#F0F2F5",
-      "type": "color"
-    },
-    "outline": {
-      "value": "#DCDFE3",
-      "type": "color"
-    },
-    "background": {
-      "value": "white",
-      "type": "color"
-    }
+    "primary": { "value": "#0BB25F", "type": "color" },
+    "secondary": { "value": "#DFF7EA", "type": "color" },
+    "neutral-primary": { "value": "white", "type": "color" },
+    "neutral-secondary": { "value": "#F0F2F5", "type": "color" },
+    "neutral-tertiary": { "value": "#F7F8FA", "type": "color" },
+    "inverse": { "value": "#1F2024", "type": "color" },
+    "error": { "value": "#FDE7E9", "type": "color" },
+    "divider": { "value": "#F0F2F5", "type": "color" },
+    "outline": { "value": "#DCDFE3", "type": "color" },
+    "background": { "value": "white", "type": "color" }
   },
   "headline": {
     "sm-regular": {

@@ -1,16 +1,9 @@
-import { SVGProps, Ref, forwardRef, memo } from "react"
+import { Ref, forwardRef, memo } from "react"
 import { colorMap } from "@greenlabs/formula-design-token"
 import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
 const SvgPlayFill = (
-  {
-    size = "xl",
-    sizePx,
-    style,
-    className,
-    color,
-    ...props
-  }: IconProps & SVGProps<SVGSVGElement>,
+  { size = "xl", sizePx, color = "gray-90", ...props }: IconProps,
   ref: Ref<SVGSVGElement>
 ) => {
   const finalSize = sizePx ? sizePx : convertSizeToPx(size)
@@ -21,14 +14,12 @@ const SvgPlayFill = (
       height={finalSize}
       fill={fill}
       xmlns="http://www.w3.org/2000/svg"
-      style={style}
       viewBox="0 0 48 48"
-      className={className}
       ref={ref}
       {...props}
     >
       <path
-        d="M14.469 41.25a3.317 3.317 0 0 1-1.64-.438c-1.126-.637-1.825-1.875-1.825-3.218V10.406c0-1.347.7-2.58 1.824-3.218a3.293 3.293 0 0 1 3.354.042L39.418 21.14a3.375 3.375 0 0 1 0 5.719L16.178 40.77a3.328 3.328 0 0 1-1.71.48Z"
+        d="m38.438 21.195-23.12-13.85c-1.01-.7-2.26-.78-3.34-.22-1.18.62-1.91 1.87-1.91 3.25v27.2c0 1.36.71 2.6 1.86 3.24.51.29 1.07.43 1.62.43.59 0 1.17-.16 1.69-.48l23.24-13.92c.98-.62 1.56-1.76 1.52-2.97-.04-1.17-.64-2.18-1.55-2.68h-.01Z"
         fill={fill}
       />
     </svg>

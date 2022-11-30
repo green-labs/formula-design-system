@@ -1,16 +1,9 @@
-import { SVGProps, Ref, forwardRef, memo } from "react"
+import { Ref, forwardRef, memo } from "react"
 import { colorMap } from "@greenlabs/formula-design-token"
 import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
 const SvgCalendarLineRegular = (
-  {
-    size = "xl",
-    sizePx,
-    style,
-    className,
-    color,
-    ...props
-  }: IconProps & SVGProps<SVGSVGElement>,
+  { size = "xl", sizePx, color = "gray-90", ...props }: IconProps,
   ref: Ref<SVGSVGElement>
 ) => {
   const finalSize = sizePx ? sizePx : convertSizeToPx(size)
@@ -21,18 +14,16 @@ const SvgCalendarLineRegular = (
       height={finalSize}
       fill={fill}
       xmlns="http://www.w3.org/2000/svg"
-      style={style}
       viewBox="0 0 48 48"
-      className={className}
       ref={ref}
       {...props}
     >
       <path
-        d="M38.625 6h-2.62V4.5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5V6h-19V4.5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5V6h-1.62c-3.24 0-5.88 2.69-5.88 6v27c0 3.31 2.64 6 5.88 6h29.23c3.25 0 5.88-2.69 5.88-6V12c0-3.31-2.64-6-5.88-6h.01ZM9.385 9h29.23c1.59 0 2.88 1.35 2.88 3v1.5H6.505V12c0-1.65 1.29-3 2.88-3Zm0 33c-1.59 0-2.88-1.35-2.88-3V16.5h35V39c0 1.65-1.29 3-2.88 3H9.385Z"
+        d="m30.72 21.14-8.54 8.9-3.92-3.92a1.49 1.49 0 0 0-2.12 0c-.58.59-.59 1.54 0 2.12l5 5c.28.28.66.44 1.06.44h.02c.4 0 .79-.17 1.07-.46l9.6-10c.57-.6.55-1.55-.04-2.12a1.5 1.5 0 0 0-2.12.04h-.01Z"
         fill={fill}
       />
       <path
-        d="m31.025 20.96-8.54 8.9-3.92-3.92a1.49 1.49 0 0 0-2.12 0 1.49 1.49 0 0 0 0 2.12l5 5c.28.28.66.44 1.06.44h.02c.4 0 .79-.17 1.07-.46l9.6-10c.57-.6.55-1.55-.04-2.12a1.5 1.5 0 0 0-2.12.04h-.01Z"
+        d="M36.46 6.15V4.5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5V6H15.2V4.5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v1.55a8.59 8.59 0 0 0-7.7 8.54v21.82c0 4.74 3.85 8.59 8.59 8.59h21.82c4.74 0 8.59-3.85 8.59-8.59V14.59c0-4.21-3.04-7.71-7.04-8.44ZM13.09 9h21.82a5.6 5.6 0 0 1 5.59 5.59v.5h-33v-.5A5.6 5.6 0 0 1 13.09 9Zm21.82 33H13.09a5.6 5.6 0 0 1-5.59-5.59V18.09h33v18.32A5.6 5.6 0 0 1 34.91 42Z"
         fill={fill}
       />
     </svg>

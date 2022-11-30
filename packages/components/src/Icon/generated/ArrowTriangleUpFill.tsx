@@ -1,16 +1,9 @@
-import { SVGProps, Ref, forwardRef, memo } from "react"
+import { Ref, forwardRef, memo } from "react"
 import { colorMap } from "@greenlabs/formula-design-token"
 import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
 const SvgArrowTriangleUpFill = (
-  {
-    size = "xl",
-    sizePx,
-    style,
-    className,
-    color,
-    ...props
-  }: IconProps & SVGProps<SVGSVGElement>,
+  { size = "xl", sizePx, color = "gray-90", ...props }: IconProps,
   ref: Ref<SVGSVGElement>
 ) => {
   const finalSize = sizePx ? sizePx : convertSizeToPx(size)
@@ -21,14 +14,12 @@ const SvgArrowTriangleUpFill = (
       height={finalSize}
       fill={fill}
       xmlns="http://www.w3.org/2000/svg"
-      style={style}
       viewBox="0 0 48 48"
-      className={className}
       ref={ref}
       {...props}
     >
       <path
-        d="M39.557 29.182 26.452 13.89a2.25 2.25 0 0 0-3.416 0L9.932 29.181c-1.251 1.46-.214 3.714 1.708 3.714h26.212c1.922 0 2.959-2.254 1.705-3.714Z"
+        d="m38.859 29.17-13.13-15.34-.07-.08c-.12-.12-.35-.36-.7-.51-.42-.24-.81-.24-.97-.24-.23 0-.42.05-.57.1h-.35l-.33.32c-.11.06-.27.17-.42.32L9.179 29.1c-.55.6-.7 1.48-.37 2.27.36.87 1.18 1.43 2.09 1.43h26.19c.9 0 1.69-.48 2.06-1.26.37-.78.26-1.69-.29-2.38v.01Z"
         fill={fill}
       />
     </svg>

@@ -6,6 +6,7 @@ import {
 } from "@vanilla-extract/css"
 import { tokens, colorMap } from "@greenlabs/formula-design-token"
 import { stateClass } from "./common"
+import { theme } from "../theme"
 // FIXME: usage of tokens object needs to be replaced with smaller object output
 
 export const vars = {
@@ -13,7 +14,7 @@ export const vars = {
   inputFontSize: createVar(),
   backgroundColor: createVar(),
   titleColor: createVar(),
-  stateColor: createVar(),
+  stateColor: createVar(), // error color | undefined(normal)
   iconOffset: createVar(),
   hintOffset: createVar(),
   titleOffset: createVar(),
@@ -46,10 +47,13 @@ const containerStyle = style([
   {
     borderWidth: "1px",
     borderStyle: "solid",
-    color: colorMap["neutral-primary-contents"],
-    borderColor: fallbackVar(vars.stateColor, colorMap.outline),
+    color: theme.colors["neutral-primary-contents"],
+    borderColor: fallbackVar(vars.stateColor, theme.colors.outline),
     ":focus-within": {
-      borderColor: fallbackVar(vars.stateColor, colorMap["primary-container"]),
+      borderColor: fallbackVar(
+        vars.stateColor,
+        theme.colors["primary-container"]
+      ),
     },
   },
 ])
@@ -57,16 +61,16 @@ const containerStyle = style([
 const componentCommon = style({
   selectors: {
     [`.${stateClass({ disabled: true })}&`]: {
-      color: colorMap["gray-40"],
+      color: theme.colors["gray-40"],
     },
     [`.${stateClass({ variantLine: true })}&`]: {
       vars: {
-        [vars.titleColor]: colorMap["neutral-secondary-contents"],
+        [vars.titleColor]: theme.colors["neutral-secondary-contents"],
       },
     },
     [`.${stateClass({ error: true })}&`]: {
       vars: {
-        [vars.stateColor]: colorMap["error-contents"],
+        [vars.stateColor]: theme.colors["error-contents"],
       },
     },
   },
@@ -105,12 +109,21 @@ export const componentStyle = styleVariants({
 
 export const hintStyle = style({
   paddingTop: fallbackVar(vars.hintOffset, consts.hintOffset),
-  color: fallbackVar(vars.stateColor, colorMap["neutral-secondary-contents"]),
-  fontSize: caption.xs.regular["font-size"].value,
+  color: fallbackVar(
+    vars.stateColor,
+    theme.colors["neutral-secondary-contents"]
+  ),
+  fontSize: body.sm.regular["font-size"].value,
   display: "block",
   selectors: {
+    // apply caption.xs.regular to small, xsmall size variants
+    [`${componentStyle["boxFill.small"]} &, ${componentStyle["boxFill.xsmall"]} &, ${componentStyle["boxOutline.small"]} &, ${componentStyle["boxOutline.xsmall"]} &`]:
+      {
+        fontSize: caption.xs.regular["font-size"].value,
+      },
+    // when focused (or if have errornous state) apply different text color
     ":focus-within ~ &": {
-      color: fallbackVar(vars.stateColor, colorMap["primary-container"]),
+      color: fallbackVar(vars.stateColor, theme.colors["green-70"]),
     },
   },
 })
@@ -171,9 +184,12 @@ const boxCommon = style({
   selectors: {
     [`.${stateClass({ disabled: true })} &`]: {
       vars: {
-        [vars.backgroundColor]: colorMap["gray-10"],
+        [vars.backgroundColor]: theme.colors["gray-10"],
       },
     },
+  },
+  ":focus-within": {
+    borderColor: fallbackVar(vars.stateColor, theme.colors["gray-90"]),
   },
 })
 
@@ -183,7 +199,7 @@ const fillCommon = style([
     borderColor: fallbackVar(vars.stateColor, vars.backgroundColor),
     borderRadius: "8px",
     vars: {
-      [vars.backgroundColor]: colorMap["neutral-secondary-container"],
+      [vars.backgroundColor]: theme.colors["neutral-secondary-container"],
     },
   },
 ])
@@ -193,13 +209,7 @@ const lineCommon = style({
   borderWidth: 0,
   paddingLeft: 0,
   paddingRight: 0,
-  // hack to hide els get lifted by border width
-  paddingBottom: 1,
-  borderBottomWidth: 1,
-  ":focus-within": {
-    paddingBottom: 0,
-    borderBottomWidth: 2,
-  },
+  borderBottomWidth: 2,
 })
 
 export const textFieldVariants = styleVariants({
@@ -240,7 +250,7 @@ export const textFieldVariants = styleVariants({
 })
 
 export const titleStyle = style({
-  color: fallbackVar(vars.titleColor, colorMap["gray-90"]),
+  color: fallbackVar(vars.titleColor, theme.colors["gray-90"]),
   paddingBottom: fallbackVar(vars.titleOffset, consts.titleOffset),
   display: "block",
 })
@@ -252,11 +262,12 @@ export const inputStyle = style({
   height: vars.inputHeight,
   backgroundColor: vars.backgroundColor,
   fontSize: vars.inputFontSize,
-  flexGrow: 1,
-  caretColor: colorMap["primary-contents"],
-  color: colorMap["neutral-primary-contents"],
+  flex: "1 1 auto",
+  width: "100%",
+  caretColor: theme.colors["primary-contents"],
+  color: theme.colors["neutral-primary-contents"],
   "::placeholder": {
-    color: colorMap["gray-40"],
+    color: theme.colors["gray-40"],
   },
   ":focus": {
     outline: "none", // FIXME
@@ -277,7 +288,7 @@ export const inputStyle = style({
         fontSize: body.lg.regular["font-size"].value,
       },
     [`.${stateClass({ disabled: true })} &`]: {
-      color: colorMap["gray-40"],
+      color: theme.colors["gray-40"],
     },
   },
 })
@@ -302,12 +313,10 @@ export const clearButtonStyle = style([
   },
 ])
 
-export const prefixIconStyle = style([
+export const prefixStyle = style([
   hvCentered,
   {
     marginRight: fallbackVar(vars.iconOffset, consts.iconOffset),
-    width: "20px",
-    height: "20px",
     selectors: {
       [`${textFieldVariants["line.large"]} &`]: {
         fontSize: 22,
@@ -319,7 +328,15 @@ export const prefixIconStyle = style([
   },
 ])
 
-export const suffixStyle = style([
+export const prefixIconStyle = style([
+  prefixStyle,
+  {
+    width: "20px",
+    height: "20px",
+  },
+])
+
+const suffixStyle = style([
   hvCentered,
   {
     marginLeft: fallbackVar(vars.iconOffset, consts.iconOffset),
@@ -335,6 +352,13 @@ export const suffixStyle = style([
         fontSize: 19,
       },
     },
+  },
+])
+
+export const suffixTextStyle = style([
+  suffixStyle,
+  {
+    padding: "4px 8px",
   },
 ])
 

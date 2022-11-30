@@ -12,7 +12,7 @@ type color = [
 
 type iconComponentProps = React.componentLike<
   {
-    "classname": option<string>,
+    "className": option<string>,
     "color": option<Formula__ColorMap.t>,
     "ref": option<ReactDOM.Ref.t>,
     "size": option<Formula__Icon.size>,

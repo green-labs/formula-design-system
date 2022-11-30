@@ -3,7 +3,7 @@ import * as path from "path"
 
 import { vanillaExtractPlugin } from "@vanilla-extract/rollup-plugin"
 import { nodeResolve } from "@rollup/plugin-node-resolve"
-import { babel } from "@rollup/plugin-babel"
+import { babel, getBabelOutputPlugin } from "@rollup/plugin-babel"
 import commonjs from "@rollup/plugin-commonjs"
 import json from "@rollup/plugin-json"
 import { externals } from "rollup-plugin-node-externals"
@@ -31,6 +31,16 @@ export default {
       compact: true,
     }),
     vanillaExtractPlugin(),
+    getBabelOutputPlugin({
+      plugins: [
+        [
+          "babel-plugin-transform-remove-imports",
+          {
+            test: "\\.css$",
+          },
+        ],
+      ],
+    }),
   ],
   input: "./src/index.ts",
   output: [

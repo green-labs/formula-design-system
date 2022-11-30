@@ -1,8 +1,14 @@
+import * as React from "react"
 import { Divider } from "./Divider"
 
 import type { ComponentMeta } from "@storybook/react"
+import { ThemeScope } from "../theme"
 
-const Template = (args) => <Divider {...args} />
+const Template = (args) => (
+  <ThemeScope>
+    <Divider {...args} />
+  </ThemeScope>
+)
 export const HorizontalSmall = Template.bind({})
 HorizontalSmall.args = {
   variant: "small",
@@ -14,9 +20,9 @@ HorizontalLarge.args = {
 }
 
 const VerticalTemplate = (args) => (
-  <div style={{ height: "100vh" }}>
+  <ThemeScope props={{ style: { height: "100vh" } }}>
     <Divider {...args} />
-  </div>
+  </ThemeScope>
 )
 export const VerticalSmall = VerticalTemplate.bind({})
 VerticalSmall.args = {
