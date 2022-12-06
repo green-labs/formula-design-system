@@ -138,7 +138,7 @@ export const textFieldSizeVariants = styleVariants({
       },
       paddingLeft: "16px",
       paddingRight: "8px",
-      height: "56px",
+      minHeight: "56px",
     },
   ],
   medium: [
@@ -150,7 +150,7 @@ export const textFieldSizeVariants = styleVariants({
       },
       paddingLeft: "12px",
       paddingRight: "4px",
-      height: "48px",
+      minHeight: "48px",
     },
   ],
   small: [
@@ -162,7 +162,7 @@ export const textFieldSizeVariants = styleVariants({
       },
       paddingLeft: "12px",
       paddingRight: "6px",
-      height: "40px",
+      minHeight: "40px",
     },
   ],
   xsmall: [
@@ -174,7 +174,7 @@ export const textFieldSizeVariants = styleVariants({
       },
       paddingLeft: "8px",
       paddingRight: "2px",
-      height: "32px",
+      minHeight: "32px",
     },
   ],
 })
@@ -240,12 +240,12 @@ export const textFieldVariants = styleVariants({
   "line.large": [
     textFieldSizeVariants.large,
     lineCommon,
-    { height: 33 + 8 + 8 },
+    { minHeight: 33 + 8 + 8 },
   ],
   "line.medium": [
     textFieldSizeVariants.medium,
     lineCommon,
-    { height: 29 + 8 + 8 },
+    { minHeight: 29 + 8 + 8 },
   ],
 })
 
@@ -259,7 +259,7 @@ export const inputStyle = style({
   display: "block",
   border: "none",
   padding: 0,
-  height: vars.inputHeight,
+  minHeight: vars.inputHeight,
   backgroundColor: vars.backgroundColor,
   fontSize: vars.inputFontSize,
   flex: "1 1 auto",
@@ -274,10 +274,10 @@ export const inputStyle = style({
   },
   selectors: {
     [`${textFieldVariants["line.large"]} &`]: {
-      height: 33,
+      minHeight: 33,
     },
     [`${textFieldVariants["line.medium"]} &`]: {
-      height: 29,
+      minHeight: 29,
     },
     [`${textFieldVariants["line.large"]} &::placeholder, ${textFieldVariants["line.large"]} &`]:
       {
@@ -299,7 +299,7 @@ export const clearButtonStyle = style([
     cursor: "pointer",
     display: "none",
     width: "28px",
-    height: "28px",
+    minHeight: "28px",
     selectors: {
       [`${inputStyle}:not(:placeholder-shown) ~ &`]: {
         display: "flex",
@@ -332,7 +332,7 @@ export const prefixIconStyle = style([
   prefixStyle,
   {
     width: "20px",
-    height: "20px",
+    minHeight: "20px",
   },
 ])
 
@@ -366,6 +366,6 @@ export const suffixIconStyle = style([
   suffixStyle,
   {
     width: "32px",
-    height: "32px",
+    minHeight: "32px",
   },
 ])

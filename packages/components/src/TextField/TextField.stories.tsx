@@ -1,5 +1,6 @@
 import * as React from "react"
 import type { ComponentMeta, ComponentStory } from "@storybook/react"
+import TextAreaAutosize from "react-textarea-autosize"
 
 import { TextField } from "./TextField"
 import { SearchLineBold, EyeLineBold } from "../Icon"
@@ -169,15 +170,24 @@ export const Textarea_and_Ref: ComponentStory<typeof TextField> = (args) => {
     <ThemeScope
       render={({ className }) => (
         <form className={className} style={{ margin: "20px 0" }}>
-          <TextField name="inputName" inputTag="textarea" {...args} />
-          <br />
-          using ref, print timestamp every 1s
-          <TextField ref={ref} {...args} />
+          <TextField
+            titleText="using <textarea />"
+            name="inputName"
+            inputTag="textarea"
+          />
           <br />
           <TextField
-            titleText="label works if id is provided"
-            id="some-id"
-            {...args}
+            titleText="using ref, print timestamp every 1s"
+            ref={ref}
+          />
+          <br />
+          <TextField titleText="label works if id is provided" id="some-id" />
+          <br />
+          <TextField
+            titleText="using `react-textarea-autosize` as `inputContainer`"
+            inputContainer={({ className }) => {
+              return <TextAreaAutosize className={className} />
+            }}
           />
         </form>
       )}
