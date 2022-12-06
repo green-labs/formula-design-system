@@ -26,6 +26,7 @@ type InputElement = HTMLInputElement | HTMLTextAreaElement
 
 type TextFieldProps = PropsWithChildren<{
   props?: {}
+  id?: string
   inputContainer?: React.ComponentType // FIXME: correct prop type
   inputTag?: "input" | "textarea"
   type?: "text" | "password"
@@ -50,6 +51,7 @@ type TextFieldProps = PropsWithChildren<{
 export const TextField = React.forwardRef<InputElement, TextFieldProps>(
   (
     {
+      id,
       className = "",
       name,
       inputContainer,
@@ -107,9 +109,10 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
     const SuffixIcon = suffixIcon
     const inaccesibleIconColor = readOnly || disabled ? "gray-40" : undefined
     const iconSize = size === "large" || size === "medium" ? "xl" : "lg"
+    const innerId = React.useId()
 
     return (
-      <div
+      <label
         className={`${COMPONENT_CLASS} ${componentClass} ${className} ${stateClass(
           {
             disabled,
@@ -118,24 +121,26 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
             variantLine: variant === "line",
           }
         )}`}
+        htmlFor={id ?? innerId}
       >
         {titleText ? (
           <TextVariant variantKey={titleVariantKey} className={titleStyle}>
             {titleText}
           </TextVariant>
         ) : null}
-        <div className={containerClass}>
+        <span className={containerClass}>
           {prefix ? (
-            <div className={prefixStyle}>{prefix}</div>
+            <span className={prefixStyle}>{prefix}</span>
           ) : PrefixIcon ? (
-            <div className={prefixIconStyle}>
+            <span className={prefixIconStyle}>
               <PrefixIcon
                 color={inaccesibleIconColor ?? "gray-50"}
                 size={iconSize}
               />
-            </div>
+            </span>
           ) : null}
           <InputContainer
+            id={id ?? innerId}
             ref={inputRef}
             name={name}
             type={type}
@@ -147,7 +152,7 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
             disabled={disabled}
             {...props}
           />
-          <div
+          <span
             className={clearButtonStyle}
             onClick={(_) => {
               const inputEl = inputRef.current
@@ -160,24 +165,24 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
               size={size === "xsmall" ? "sm" : "lg"}
               color="neutral-tertiary-contents"
             />
-          </div>
+          </span>
           {suffix ? (
-            <div className={suffixTextStyle}>{suffix}</div>
+            <span className={suffixTextStyle}>{suffix}</span>
           ) : SuffixIcon ? (
-            <div className={suffixIconStyle}>
+            <span className={suffixIconStyle}>
               <SuffixIcon
                 color={inaccesibleIconColor ?? "neutral-primary-contents"}
                 size={iconSize}
               />
-            </div>
+            </span>
           ) : null}
-        </div>
+        </span>
         {hintText ? (
           <TextVariant variantKey={hintVariantKey} className={hintStyle}>
             {hintText}
           </TextVariant>
         ) : null}
-      </div>
+      </label>
     )
   }
 )

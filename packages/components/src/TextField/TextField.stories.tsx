@@ -172,7 +172,13 @@ export const Textarea_and_Ref: ComponentStory<typeof TextField> = (args) => {
           <TextField name="inputName" inputTag="textarea" {...args} />
           <br />
           using ref, print timestamp every 1s
-          <TextField ref={ref} name="inputName" {...args} />
+          <TextField ref={ref} {...args} />
+          <br />
+          <TextField
+            titleText="label works if id is provided"
+            id="some-id"
+            {...args}
+          />
         </form>
       )}
     />
