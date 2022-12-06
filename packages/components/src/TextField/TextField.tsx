@@ -23,30 +23,36 @@ import { COMPONENT_CLASS, stateClass } from "./common"
 type sizeVariantKey = keyof typeof textFieldSizeVariants
 type variantKey = keyof typeof textFieldVariants
 type InputElement = HTMLInputElement | HTMLTextAreaElement
+type InputRefType = React.Ref<HTMLInputElement> & React.Ref<HTMLTextAreaElement>
 
-type TextFieldProps = PropsWithChildren<{
+type inputProps = {
   props?: {}
   id?: string
-  inputContainer?: React.ComponentType // FIXME: correct prop type
-  inputTag?: "input" | "textarea"
-  type?: "text" | "password"
   className?: string
   name?: string
-  placeholder?: string
-  size?: sizeVariantKey
-  variant?: "boxOutline" | "boxFill" | "line"
-  prefix?: ReactNode
-  prefixIcon?: React.ComponentType<IconProps>
-  suffix?: ReactNode
-  suffixIcon?: React.ComponentType<IconProps> // suffix element to be shown
-  titleText?: string // title text to be shown upper side
-  hintText?: string // hint text to be shown below
-  state?: "normal" | "error" // visual states (focused, readonly or disabled is separated as prop/attr)
   readOnly?: boolean
   disabled?: boolean
+  placeholder?: string
   onChange?: React.ChangeEventHandler<InputElement>
   onFocus?: React.FocusEventHandler<InputElement>
-}>
+  type?: "text" | "password"
+}
+
+type TextFieldProps = PropsWithChildren<
+  inputProps & {
+    inputContainer?: React.ComponentType<inputProps & { ref: InputRefType }> // FIXME: add correct dom props type
+    inputTag?: "input" | "textarea"
+    size?: sizeVariantKey
+    variant?: "boxOutline" | "boxFill" | "line"
+    prefix?: ReactNode
+    prefixIcon?: React.ComponentType<IconProps>
+    suffix?: ReactNode
+    suffixIcon?: React.ComponentType<IconProps> // suffix element to be shown
+    titleText?: string // title text to be shown upper side
+    hintText?: string // hint text to be shown below
+    state?: "normal" | "error" // visual states (focused, readonly or disabled is separated as prop/attr)
+  }
+>
 
 export const TextField = React.forwardRef<InputElement, TextFieldProps>(
   (
@@ -86,8 +92,7 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
     }
     const containerClass = textFieldVariants[variantKey] ?? ""
     const componentClass = componentStyle[variantKey] ?? ""
-    const inputRef: React.Ref<HTMLInputElement> &
-      React.Ref<HTMLTextAreaElement> = useRef(null)
+    const inputRef: InputRefType = useRef(null)
 
     React.useImperativeHandle(
       forwardedRef,
