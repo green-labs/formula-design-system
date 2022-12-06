@@ -154,6 +154,31 @@ Line.args = {
 }
 Line.argTypes = BoxOutline.argTypes
 
+export const Textarea_and_Ref: ComponentStory<typeof TextField> = (args) => {
+  const ref = React.useRef<HTMLInputElement>(null)
+
+  React.useLayoutEffect(() => {
+    setInterval(() => {
+      if (ref.current) {
+        ref.current.value = String(+new Date())
+      }
+    }, 1_000)
+  })
+
+  return (
+    <ThemeScope
+      render={({ className }) => (
+        <form className={className} style={{ margin: "20px 0" }}>
+          <TextField name="inputName" inputTag="textarea" {...args} />
+          <br />
+          using ref, print timestamp every 1s
+          <TextField ref={ref} name="inputName" {...args} />
+        </form>
+      )}
+    />
+  )
+}
+
 export default {
   title: "Formula/TextField",
   component: TextField,

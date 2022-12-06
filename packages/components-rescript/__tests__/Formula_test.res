@@ -1,8 +1,7 @@
 module TestTextContainer = {
   @react.component
-  let make = (~props, ~className, ~children) => {
-    props->ignore
-    <span className> {children} </span>
+  let make = (~className=?, ~children=?) => {
+    <span ?className> {children->Belt.Option.getWithDefault(React.null)} </span>
   }
 }
 
@@ -13,7 +12,9 @@ let testText = () => {
       variant=#body
       size=#lg
       weight=#bold
-      container={TestTextContainer.make}
+      container={({?className, ?children}) => {
+        <TestTextContainer ?className ?children />
+      }}
       props={{"id": "id-of-text"}}>
       {`Test string`->React.string}
     </Text>
@@ -88,6 +89,12 @@ let testTextField = () => {
       }}
     />
     <TextField prefixIcon={Icon.ArrowDownLineBold.make} suffixIcon={Icon.ArrowDownLineBold.make} />
+    <TextField tag="textarea" />
+    <TextField
+      container={({?onChange}) => {
+        <input ?onChange />
+      }}
+    />
   </>
 }
 

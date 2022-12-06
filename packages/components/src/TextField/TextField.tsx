@@ -1,4 +1,5 @@
 import type { ReactNode, PropsWithChildren } from "react"
+import * as React from "react"
 import { useRef } from "react"
 import { TextVariant } from "../Text/Text"
 import type { variantKeyType as textVariantKey } from "../Text/Text"
@@ -21,10 +22,15 @@ import { COMPONENT_CLASS, stateClass } from "./common"
 
 type sizeVariantKey = keyof typeof textFieldSizeVariants
 type variantKey = keyof typeof textFieldVariants
-interface TextFieldProps extends PropsWithChildren {
+type InputElement = HTMLInputElement | HTMLTextAreaElement
+
+type TextFieldProps = PropsWithChildren<{
   props?: {}
+  inputContainer?: React.ComponentType // FIXME: correct prop type
+  inputTag?: "input" | "textarea"
   type?: "text" | "password"
   className?: string
+  name?: string
   placeholder?: string
   size?: sizeVariantKey
   variant?: "boxOutline" | "boxFill" | "line"
@@ -37,126 +43,142 @@ interface TextFieldProps extends PropsWithChildren {
   state?: "normal" | "error" // visual states (focused, readonly or disabled is separated as prop/attr)
   readOnly?: boolean
   disabled?: boolean
-  onChange?: React.ChangeEventHandler<HTMLInputElement>
-  onFocus?: React.FocusEventHandler<HTMLInputElement>
-}
+  onChange?: React.ChangeEventHandler<InputElement>
+  onFocus?: React.FocusEventHandler<InputElement>
+}>
 
-export const TextField = ({
-  className = "",
-  props = {},
-  placeholder,
-  size = "medium",
-  prefix,
-  prefixIcon,
-  suffix,
-  suffixIcon,
-  titleText,
-  hintText,
-  variant = "boxOutline",
-  type = "text",
-  readOnly = false,
-  disabled = false,
-  state,
-  onChange,
-  onFocus,
-}: TextFieldProps) => {
-  const variantKey = `${variant}.${size}` as variantKey
+export const TextField = React.forwardRef<InputElement, TextFieldProps>(
+  (
+    {
+      className = "",
+      name,
+      inputContainer,
+      inputTag = "input",
+      props = {},
+      placeholder,
+      size = "medium",
+      prefix,
+      prefixIcon,
+      suffix,
+      suffixIcon,
+      titleText,
+      hintText,
+      variant = "boxOutline",
+      type = "text",
+      readOnly = false,
+      disabled = false,
+      state,
+      onChange,
+      onFocus,
+    },
+    forwardedRef
+  ) => {
+    const InputContainer = inputContainer ?? inputTag
+    const variantKey = `${variant}.${size}` as variantKey
 
-  if (
-    process.env.NODE_ENV !== "production" &&
-    !(variantKey in textFieldVariants)
-  ) {
-    console.error(`You have used non-exist variant key ${size}.`)
-  }
-  const containerClass = textFieldVariants[variantKey] ?? ""
-  const componentClass = componentStyle[variantKey] ?? ""
-  const inputRef = useRef<HTMLInputElement>(null)
+    if (
+      process.env.NODE_ENV !== "production" &&
+      !(variantKey in textFieldVariants)
+    ) {
+      console.error(`You have used non-exist variant key ${size}.`)
+    }
+    const containerClass = textFieldVariants[variantKey] ?? ""
+    const componentClass = componentStyle[variantKey] ?? ""
+    const inputRef: React.Ref<HTMLInputElement> &
+      React.Ref<HTMLTextAreaElement> = useRef(null)
 
-  // TODO: refactor
-  let titleVariantKey =
-    size !== "xsmall" ? "body-md-bold" : ("body-sm-bold" as textVariantKey)
-  if (variant === "line") {
-    titleVariantKey = "body-sm-medium"
-  }
-  const hintVariantKey =
-    size === "large" || size === "medium"
-      ? "body-sm-regular"
-      : "caption-xs-regular"
+    React.useImperativeHandle(
+      forwardedRef,
+      () => inputRef.current as InputElement
+    )
 
-  const PrefixIcon = prefixIcon
-  const SuffixIcon = suffixIcon
-  const inaccesibleIconColor = readOnly || disabled ? "gray-40" : undefined
-  const iconSize = size === "large" || size === "medium" ? "xl" : "lg"
+    // TODO: refactor
+    let titleVariantKey =
+      size !== "xsmall" ? "body-md-bold" : ("body-sm-bold" as textVariantKey)
+    if (variant === "line") {
+      titleVariantKey = "body-sm-medium"
+    }
+    const hintVariantKey =
+      size === "large" || size === "medium"
+        ? "body-sm-regular"
+        : "caption-xs-regular"
 
-  return (
-    <div
-      className={`${COMPONENT_CLASS} ${componentClass} ${className} ${stateClass(
-        {
-          disabled,
-          readOnly,
-          error: state === "error",
-          variantLine: variant === "line",
-        }
-      )}`}
-    >
-      {titleText ? (
-        <TextVariant variantKey={titleVariantKey} className={titleStyle}>
-          {titleText}
-        </TextVariant>
-      ) : null}
-      <div className={containerClass}>
-        {prefix ? (
-          <div className={prefixStyle}>{prefix}</div>
-        ) : PrefixIcon ? (
-          <div className={prefixIconStyle}>
-            <PrefixIcon
-              color={inaccesibleIconColor ?? "gray-50"}
-              size={iconSize}
-            />
-          </div>
+    const PrefixIcon = prefixIcon
+    const SuffixIcon = suffixIcon
+    const inaccesibleIconColor = readOnly || disabled ? "gray-40" : undefined
+    const iconSize = size === "large" || size === "medium" ? "xl" : "lg"
+
+    return (
+      <div
+        className={`${COMPONENT_CLASS} ${componentClass} ${className} ${stateClass(
+          {
+            disabled,
+            readOnly,
+            error: state === "error",
+            variantLine: variant === "line",
+          }
+        )}`}
+      >
+        {titleText ? (
+          <TextVariant variantKey={titleVariantKey} className={titleStyle}>
+            {titleText}
+          </TextVariant>
         ) : null}
-        <input
-          ref={inputRef}
-          type={type}
-          onChange={onChange}
-          onFocus={onFocus}
-          placeholder={placeholder}
-          className={inputStyle}
-          readOnly={readOnly}
-          disabled={disabled}
-          {...props}
-        />
-        <div
-          className={clearButtonStyle}
-          onClick={(_) => {
-            const inputEl = inputRef.current
-            if (inputEl) {
-              inputEl.value = ""
-            }
-          }}
-        >
-          <DeleteFill
-            size={size === "xsmall" ? "sm" : "lg"}
-            color="neutral-tertiary-contents"
+        <div className={containerClass}>
+          {prefix ? (
+            <div className={prefixStyle}>{prefix}</div>
+          ) : PrefixIcon ? (
+            <div className={prefixIconStyle}>
+              <PrefixIcon
+                color={inaccesibleIconColor ?? "gray-50"}
+                size={iconSize}
+              />
+            </div>
+          ) : null}
+          <InputContainer
+            ref={inputRef}
+            name={name}
+            type={type}
+            onChange={onChange}
+            onFocus={onFocus}
+            placeholder={placeholder}
+            className={inputStyle}
+            readOnly={readOnly}
+            disabled={disabled}
+            {...props}
           />
-        </div>
-        {suffix ? (
-          <div className={suffixTextStyle}>{suffix}</div>
-        ) : SuffixIcon ? (
-          <div className={suffixIconStyle}>
-            <SuffixIcon
-              color={inaccesibleIconColor ?? "neutral-primary-contents"}
-              size={iconSize}
+          <div
+            className={clearButtonStyle}
+            onClick={(_) => {
+              const inputEl = inputRef.current
+              if (inputEl) {
+                inputEl.value = ""
+              }
+            }}
+          >
+            <DeleteFill
+              size={size === "xsmall" ? "sm" : "lg"}
+              color="neutral-tertiary-contents"
             />
           </div>
+          {suffix ? (
+            <div className={suffixTextStyle}>{suffix}</div>
+          ) : SuffixIcon ? (
+            <div className={suffixIconStyle}>
+              <SuffixIcon
+                color={inaccesibleIconColor ?? "neutral-primary-contents"}
+                size={iconSize}
+              />
+            </div>
+          ) : null}
+        </div>
+        {hintText ? (
+          <TextVariant variantKey={hintVariantKey} className={hintStyle}>
+            {hintText}
+          </TextVariant>
         ) : null}
       </div>
-      {hintText ? (
-        <TextVariant variantKey={hintVariantKey} className={hintStyle}>
-          {hintText}
-        </TextVariant>
-      ) : null}
-    </div>
-  )
-}
+    )
+  }
+)
 TextField.displayName = "TextField"

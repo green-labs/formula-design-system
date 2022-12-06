@@ -1,6 +1,21 @@
+type textFieldComponentProps<'a> = {
+  props?: 'a,
+  _type?: [#text | #password],
+  name?: string,
+  onChange?: ReactEvent.Form.t => unit,
+  onFocus?: ReactEvent.Focus.t => unit,
+  placeholder?: string,
+  className?: string,
+  readOnly?: bool,
+  disabled?: bool,
+}
+
 @module("@greenlabs/formula-components") @react.component
 external make: (
   ~props: {..}=?,
+  ~name: string=?,
+  ~tag: string=?,
+  ~container: React.componentLike<textFieldComponentProps<{..}>, React.element>=?,
   ~className: string=?,
   ~variant: [#boxOutline | #boxFill | #line]=?,
   ~size: [#xsmall | #samll | #medium | #large]=?,
@@ -17,4 +32,5 @@ external make: (
   ~disabled: bool=?,
   ~onChange: ReactEvent.Form.t => unit=?,
   ~onFocus: ReactEvent.Focus.t => unit=?,
+  ~ref: ReactDOM.Ref.t=?,
 ) => React.element = "TextField"
