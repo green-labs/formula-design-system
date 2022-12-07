@@ -58,21 +58,10 @@ const Template: ComponentStory<typeof TextField> = (args) => {
   )
 }
 
+// common control, arg types
 const textControl = {
   defaultValue: "",
   control: { type: "text" },
-}
-
-export const Overview = Template.bind({})
-Overview.args = {
-  placeholder: "플레이스홀더 텍스트",
-  titleText: "타이틀 텍스트 입니다.",
-  hintText: "힌트 텍스트 입니다.",
-  type: "text",
-  state: "normal",
-  variant: "boxOutline",
-  readOnly: false,
-  disabled: false,
 }
 
 const commonDisabled = createDisabledArgs([
@@ -83,27 +72,6 @@ const commonDisabled = createDisabledArgs([
   "onChange",
   "onFocus",
 ])
-
-Overview.argTypes = {
-  ...commonDisabled,
-  ...createDisabledArgs(["size"]),
-  suffix: textControl,
-  prefix: textControl,
-  hintText: textControl,
-  titleText: textControl,
-}
-
-const SingleTemplate: ComponentStory<typeof TextField> = (args) => {
-  return (
-    <ThemeScope
-      render={({ className }) => (
-        <form className={className} style={{ margin: "20px 0" }}>
-          <TextField {...args} />
-        </form>
-      )}
-    />
-  )
-}
 
 const iconControlMapping = Object.entries(IconComponents).reduce(
   (p, [key, component]) => {
@@ -120,6 +88,44 @@ const iconControl = {
   mapping: iconControlMapping,
 }
 
+const controls = {
+  suffix: textControl,
+  prefix: textControl,
+  hintText: textControl,
+  titleText: textControl,
+  prefixIcon: iconControl,
+  suffixIcon: iconControl,
+}
+
+export const Overview = Template.bind({})
+Overview.args = {
+  placeholder: "플레이스홀더 텍스트",
+  titleText: "타이틀 텍스트 입니다.",
+  hintText: "힌트 텍스트 입니다.",
+  type: "text",
+  state: "normal",
+  variant: "boxOutline",
+  readOnly: false,
+  disabled: false,
+}
+Overview.argTypes = {
+  ...commonDisabled,
+  ...createDisabledArgs(["size"]),
+  ...controls,
+}
+
+const SingleTemplate: ComponentStory<typeof TextField> = (args) => {
+  return (
+    <ThemeScope
+      render={({ className }) => (
+        <form className={className} style={{ margin: "20px 0" }}>
+          <TextField {...args} />
+        </form>
+      )}
+    />
+  )
+}
+
 export const BoxOutline = SingleTemplate.bind({})
 BoxOutline.args = {
   size: "medium",
@@ -133,12 +139,6 @@ BoxOutline.args = {
 BoxOutline.argTypes = {
   ...commonDisabled,
   ...createDisabledArgs(["variant"]),
-  suffix: textControl,
-  prefix: textControl,
-  hintText: textControl,
-  titleText: textControl,
-  prefixIcon: iconControl,
-  suffixIcon: iconControl,
 }
 
 export const BoxFill = SingleTemplate.bind({})
@@ -159,11 +159,15 @@ export const Textarea_and_Ref: ComponentStory<typeof TextField> = (args) => {
   const ref = React.useRef<HTMLInputElement>(null)
 
   React.useLayoutEffect(() => {
-    setInterval(() => {
+    const id = setInterval(() => {
       if (ref.current) {
         ref.current.value = String(+new Date())
       }
     }, 1_000)
+
+    return () => {
+      clearInterval(id)
+    }
   })
 
   return (
@@ -172,7 +176,7 @@ export const Textarea_and_Ref: ComponentStory<typeof TextField> = (args) => {
         <form className={className} style={{ margin: "20px 0" }}>
           <TextField
             titleText="using <textarea />"
-            name="inputName"
+            {...args}
             inputTag="textarea"
             props={{ style: { height: "200px" } }}
           />
@@ -183,15 +187,22 @@ export const Textarea_and_Ref: ComponentStory<typeof TextField> = (args) => {
           />
           <br />
           <TextField
+            {...args}
             titleText="using `react-textarea-autosize` as `inputContainer`"
-            inputContainer={({ className, id }) => {
-              return <TextAreaAutosize id={id} className={className} />
+            inputContainer={({ ...props }) => {
+              return <TextAreaAutosize {...props} />
             }}
           />
         </form>
       )}
     />
   )
+}
+
+Textarea_and_Ref.args = Overview.args
+Textarea_and_Ref.argTypes = {
+  ...commonDisabled,
+  ...controls,
 }
 
 export default {
