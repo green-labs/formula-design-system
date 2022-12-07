@@ -22,7 +22,7 @@ import { COMPONENT_CLASS, stateClass } from "./common"
 
 type sizeVariantKey = keyof typeof textFieldSizeVariants
 type variantKey = keyof typeof textFieldVariants
-type InputElement = HTMLInputElement | HTMLTextAreaElement
+export type InputElement = HTMLInputElement | HTMLTextAreaElement
 type InputRefType = React.Ref<HTMLInputElement> & React.Ref<HTMLTextAreaElement>
 
 type inputProps = {
@@ -36,18 +36,18 @@ type inputProps = {
   type?: "text" | "password"
 }
 
+// FIXME: make input/textarea compatible
+export type inputContainerProps = inputProps & {
+  id: string
+  className: string
+  type: "text" | "password" // FIXME: fix case for <textarea />
+  inputRef: InputRefType
+}
 type TextFieldProps = PropsWithChildren<
   inputProps & {
     id?: string
     className?: string
-    inputContainer?: React.ComponentType<
-      inputProps & {
-        id: string
-        className: string
-        type: "text" | "password" // FIXME: fix case for <textarea />
-        ref: InputRefType
-      }
-    > // FIXME: add correct dom props type
+    inputContainer?: React.ComponentType<inputContainerProps>
     inputTag?: "input" | "textarea"
     size?: sizeVariantKey
     variant?: "boxOutline" | "boxFill" | "line"
@@ -154,6 +154,7 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
           <InputContainer
             id={id ?? innerId}
             ref={inputRef}
+            inputRef={inputRef}
             name={name}
             type={type}
             onChange={onChange}
