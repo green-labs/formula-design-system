@@ -1,5 +1,21 @@
 # @greenlabs/rescript-formula-components
 
+## 0.0.5-next.7
+
+### Patch Changes
+
+- c2d95bd: TextField: use alt ref prop name approach (`inputRef`)
+- b88bf7e: enhance textfield
+
+  - add container/tag
+  - fix css to have textarea as input element
+  - improve accessibility using <label />
+  - make textfield forwardRef'd
+
+- Updated dependencies [c2d95bd]
+- Updated dependencies [b88bf7e]
+  - @greenlabs/formula-components@0.0.5-next.7
+
 ## 0.0.5-next.6
 
 ### Patch Changes
