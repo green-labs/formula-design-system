@@ -174,6 +174,7 @@ export const Textarea_and_Ref: ComponentStory<typeof TextField> = (args) => {
             titleText="using <textarea />"
             name="inputName"
             inputTag="textarea"
+            props={{ style: { height: "200px" } }}
           />
           <br />
           <TextField
@@ -181,12 +182,10 @@ export const Textarea_and_Ref: ComponentStory<typeof TextField> = (args) => {
             ref={ref}
           />
           <br />
-          <TextField titleText="label works if id is provided" id="some-id" />
-          <br />
           <TextField
             titleText="using `react-textarea-autosize` as `inputContainer`"
-            inputContainer={({ className }) => {
-              return <TextAreaAutosize className={className} />
+            inputContainer={({ className, id }) => {
+              return <TextAreaAutosize id={id} className={className} />
             }}
           />
         </form>

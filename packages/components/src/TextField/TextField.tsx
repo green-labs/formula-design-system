@@ -27,8 +27,6 @@ type InputRefType = React.Ref<HTMLInputElement> & React.Ref<HTMLTextAreaElement>
 
 type inputProps = {
   props?: {}
-  id?: string
-  className?: string
   name?: string
   readOnly?: boolean
   disabled?: boolean
@@ -40,7 +38,16 @@ type inputProps = {
 
 type TextFieldProps = PropsWithChildren<
   inputProps & {
-    inputContainer?: React.ComponentType<inputProps & { ref: InputRefType }> // FIXME: add correct dom props type
+    id?: string
+    className?: string
+    inputContainer?: React.ComponentType<
+      inputProps & {
+        id: string
+        className: string
+        type: "text" | "password" // FIXME: fix case for <textarea />
+        ref: InputRefType
+      }
+    > // FIXME: add correct dom props type
     inputTag?: "input" | "textarea"
     size?: sizeVariantKey
     variant?: "boxOutline" | "boxFill" | "line"
@@ -73,8 +80,8 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
       hintText,
       variant = "boxOutline",
       type = "text",
-      readOnly = false,
-      disabled = false,
+      readOnly,
+      disabled,
       state,
       onChange,
       onFocus,

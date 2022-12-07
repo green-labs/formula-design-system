@@ -91,8 +91,8 @@ let testTextField = () => {
     <TextField prefixIcon={Icon.ArrowDownLineBold.make} suffixIcon={Icon.ArrowDownLineBold.make} />
     <TextField tag="textarea" />
     <TextField
-      container={({?onChange}) => {
-        <input ?onChange />
+      container={({?onChange, id, className}) => {
+        <input ?onChange id className />
       }}
     />
   </>

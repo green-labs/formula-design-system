@@ -1,11 +1,12 @@
 type textFieldComponentProps<'a> = {
+  id: string,
+  className: string,
+  _type: [#text | #password],
   props?: 'a,
-  _type?: [#text | #password],
   name?: string,
   onChange?: ReactEvent.Form.t => unit,
   onFocus?: ReactEvent.Focus.t => unit,
   placeholder?: string,
-  className?: string,
   readOnly?: bool,
   disabled?: bool,
 }
