@@ -2,6 +2,7 @@ import * as React from "react"
 import type { ComponentMeta, ComponentStory } from "@storybook/react"
 import TextAreaAutosize from "react-textarea-autosize"
 
+import type { inputContainerProps, InputElement } from "./TextField"
 import { TextField } from "./TextField"
 import { SearchLineBold, EyeLineBold } from "../Icon"
 import { createDisabledArgs } from "../utils/storybook"
@@ -170,6 +171,19 @@ export const Textarea_and_Ref: ComponentStory<typeof TextField> = (args) => {
     }
   })
 
+  const inputContainer = React.memo(
+    React.forwardRef<InputElement, inputContainerProps>(
+      ({ type, ...props }, ref) => {
+        return (
+          <TextAreaAutosize
+            ref={ref as React.ForwardedRef<HTMLTextAreaElement>}
+            {...props}
+          />
+        )
+      }
+    )
+  )
+
   return (
     <ThemeScope
       render={({ className }) => (
@@ -189,9 +203,7 @@ export const Textarea_and_Ref: ComponentStory<typeof TextField> = (args) => {
           <TextField
             {...args}
             titleText="using `react-textarea-autosize` as `inputContainer`"
-            inputContainer={({ ...props }) => {
-              return <TextAreaAutosize {...props} />
-            }}
+            inputContainer={inputContainer}
           />
         </form>
       )}

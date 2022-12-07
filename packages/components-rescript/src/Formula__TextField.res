@@ -1,6 +1,7 @@
 type textFieldComponentProps<'a> = {
   id: string,
   className: string,
+  inputRef: ReactDOM.domRef,
   _type: [#text | #password],
   props?: 'a,
   name?: string,
@@ -15,8 +16,8 @@ type textFieldComponentProps<'a> = {
 external make: (
   ~props: {..}=?,
   ~name: string=?,
-  ~tag: string=?,
-  ~container: React.componentLike<textFieldComponentProps<{..}>, React.element>=?,
+  ~inputTag: string=?,
+  ~inputContainer: React.componentLike<textFieldComponentProps<{..}>, React.element>=?,
   ~className: string=?,
   ~variant: [#boxOutline | #boxFill | #line]=?,
   ~size: [#xsmall | #samll | #medium | #large]=?,
