@@ -4,13 +4,15 @@ import {
   style,
   styleVariants,
 } from "@vanilla-extract/css"
-import { tokens, colorMap } from "@greenlabs/formula-design-token"
+import { calc } from "@vanilla-extract/css-utils"
+import { tokens } from "@greenlabs/formula-design-token"
 import { stateClass } from "./common"
 import { theme } from "../theme"
 // FIXME: usage of tokens object needs to be replaced with smaller object output
 
 export const vars = {
   inputHeight: createVar(),
+  inputPadding: createVar(),
   inputFontSize: createVar(),
   backgroundColor: createVar(),
   titleColor: createVar(),
@@ -134,11 +136,11 @@ export const textFieldSizeVariants = styleVariants({
     {
       vars: {
         [vars.inputHeight]: "26px",
+        [vars.inputPadding]: "15px",
         [vars.inputFontSize]: body.md.regular["font-size"].value,
       },
       paddingLeft: "16px",
       paddingRight: "8px",
-      height: "56px",
     },
   ],
   medium: [
@@ -146,11 +148,11 @@ export const textFieldSizeVariants = styleVariants({
     {
       vars: {
         [vars.inputHeight]: "26px",
+        [vars.inputPadding]: "11px",
         [vars.inputFontSize]: body.md.regular["font-size"].value,
       },
       paddingLeft: "12px",
       paddingRight: "4px",
-      height: "48px",
     },
   ],
   small: [
@@ -158,11 +160,11 @@ export const textFieldSizeVariants = styleVariants({
     {
       vars: {
         [vars.inputHeight]: "23px",
+        [vars.inputPadding]: "8.5px",
         [vars.inputFontSize]: body.sm.regular["font-size"].value,
       },
       paddingLeft: "12px",
       paddingRight: "6px",
-      height: "40px",
     },
   ],
   xsmall: [
@@ -170,11 +172,11 @@ export const textFieldSizeVariants = styleVariants({
     {
       vars: {
         [vars.inputHeight]: "19px",
+        [vars.inputPadding]: "6.5px",
         [vars.inputFontSize]: caption.xs.regular["font-size"].value,
       },
       paddingLeft: "8px",
       paddingRight: "2px",
-      height: "32px",
     },
   ],
 })
@@ -193,7 +195,7 @@ const boxCommon = style({
   },
 })
 
-const fillCommon = style([
+const boxfillCommon = style([
   boxCommon,
   {
     borderColor: fallbackVar(vars.stateColor, vars.backgroundColor),
@@ -210,6 +212,9 @@ const lineCommon = style({
   paddingLeft: 0,
   paddingRight: 0,
   borderBottomWidth: 2,
+  vars: {
+    [vars.inputPadding]: "8px",
+  },
 })
 
 export const textFieldVariants = styleVariants({
@@ -233,20 +238,12 @@ export const textFieldVariants = styleVariants({
     boxCommon,
     { borderRadius: "6px" /* FIXME: ref.radius.xsmall*/ },
   ],
-  "boxFill.large": [textFieldSizeVariants.large, fillCommon],
-  "boxFill.medium": [textFieldSizeVariants.medium, fillCommon],
-  "boxFill.small": [textFieldSizeVariants.small, fillCommon],
-  "boxFill.xsmall": [textFieldSizeVariants.xsmall, fillCommon],
-  "line.large": [
-    textFieldSizeVariants.large,
-    lineCommon,
-    { height: 33 + 8 + 8 },
-  ],
-  "line.medium": [
-    textFieldSizeVariants.medium,
-    lineCommon,
-    { height: 29 + 8 + 8 },
-  ],
+  "boxFill.large": [textFieldSizeVariants.large, boxfillCommon],
+  "boxFill.medium": [textFieldSizeVariants.medium, boxfillCommon],
+  "boxFill.small": [textFieldSizeVariants.small, boxfillCommon],
+  "boxFill.xsmall": [textFieldSizeVariants.xsmall, boxfillCommon],
+  "line.large": [textFieldSizeVariants.large, lineCommon],
+  "line.medium": [textFieldSizeVariants.medium, lineCommon],
 })
 
 export const titleStyle = style({
@@ -258,8 +255,12 @@ export const titleStyle = style({
 export const inputStyle = style({
   display: "block",
   border: "none",
-  padding: 0,
-  height: vars.inputHeight,
+  paddingLeft: "0px",
+  paddingRight: "0px",
+  paddingTop: vars.inputPadding,
+  paddingBottom: vars.inputPadding,
+  height: calc.add(vars.inputHeight, calc.multiply(vars.inputPadding, 2)),
+  lineHeight: vars.inputHeight,
   backgroundColor: vars.backgroundColor,
   fontSize: vars.inputFontSize,
   flex: "1 1 auto",
@@ -272,12 +273,17 @@ export const inputStyle = style({
   ":focus": {
     outline: "none", // FIXME
   },
+  fontFamily: theme.font.body,
   selectors: {
     [`${textFieldVariants["line.large"]} &`]: {
-      height: 33,
+      vars: {
+        [vars.inputHeight]: "33px",
+      },
     },
     [`${textFieldVariants["line.medium"]} &`]: {
-      height: 29,
+      vars: {
+        [vars.inputHeight]: "29px",
+      },
     },
     [`${textFieldVariants["line.large"]} &::placeholder, ${textFieldVariants["line.large"]} &`]:
       {

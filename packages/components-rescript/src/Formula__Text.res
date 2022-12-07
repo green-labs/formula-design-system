@@ -11,8 +11,7 @@ type align = [
   | #end
 ]
 
-// FIXME: find better way to make optionalize props.
-type textComponentProps<'a> = {"props": 'a, "className": string, "children": React.element}
+type textComponentProps<'a> = {props?: 'a, className?: string, children?: React.element}
 
 @module("@greenlabs/formula-components") @react.component
 external make: (
