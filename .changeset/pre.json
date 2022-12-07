@@ -7,10 +7,12 @@
     "@greenlabs/formula-design-token": "0.0.4"
   },
   "changesets": [
+    "clean-geese-invent",
     "clean-seas-drive",
     "clever-fireants-cough",
     "forty-cougars-dream",
     "itchy-impalas-help",
+    "mean-needles-join",
     "nasty-buckets-joke",
     "rude-wasps-listen",
     "sixty-rabbits-know",
