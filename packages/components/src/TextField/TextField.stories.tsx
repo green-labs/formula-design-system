@@ -72,6 +72,7 @@ const commonDisabled = createDisabledArgs([
   "suffixIcon",
   "onChange",
   "onFocus",
+  "options",
 ])
 
 const iconControlMapping = Object.entries(IconComponents).reduce(
@@ -156,7 +157,9 @@ Line.args = {
 }
 Line.argTypes = BoxOutline.argTypes
 
-export const Textarea_and_Ref: ComponentStory<typeof TextField> = (args) => {
+export const Textarea_and_Ref_Etc: ComponentStory<typeof TextField> = (
+  args
+) => {
   const ref = React.useRef<HTMLInputElement>(null)
 
   React.useLayoutEffect(() => {
@@ -205,14 +208,23 @@ export const Textarea_and_Ref: ComponentStory<typeof TextField> = (args) => {
             titleText="using `react-textarea-autosize` as `inputContainer`"
             inputContainer={inputContainer}
           />
+          <br />
+          <TextField
+            {...args}
+            titleText="options.showHintOnFocusOnly | options.hideClearButton"
+            options={{
+              showHintOnFocusOnly: true,
+              hideClearButton: true,
+            }}
+          />
         </form>
       )}
     />
   )
 }
 
-Textarea_and_Ref.args = Overview.args
-Textarea_and_Ref.argTypes = {
+Textarea_and_Ref_Etc.args = Overview.args
+Textarea_and_Ref_Etc.argTypes = {
   ...commonDisabled,
   ...controls,
 }
