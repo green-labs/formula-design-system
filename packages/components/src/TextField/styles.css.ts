@@ -20,6 +20,7 @@ export const vars = {
   iconOffset: createVar(),
   hintOffset: createVar(),
   titleOffset: createVar(),
+  optionalHintColor: createVar(),
 }
 
 const consts = {
@@ -109,6 +110,7 @@ export const componentStyle = styleVariants({
   ],
 })
 
+const hintStateColor = fallbackVar(vars.stateColor, theme.colors["green-70"])
 export const hintStyle = style({
   paddingTop: fallbackVar(vars.hintOffset, consts.hintOffset),
   color: fallbackVar(
@@ -124,8 +126,11 @@ export const hintStyle = style({
         fontSize: caption.xs.regular["font-size"].value,
       },
     // when focused (or if have errornous state) apply different text color
-    ":focus-within ~ &": {
-      color: fallbackVar(vars.stateColor, theme.colors["green-70"]),
+    [`${containerStyle}:focus-within ~ &`]: {
+      color: hintStateColor,
+    },
+    [`${containerStyle}:not(:focus-within) ~ &`]: {
+      color: fallbackVar(vars.optionalHintColor, hintStateColor),
     },
   },
 })

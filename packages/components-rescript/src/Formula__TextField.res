@@ -12,6 +12,11 @@ type textFieldComponentProps<'a> = {
   disabled?: bool,
 }
 
+type options = {
+  showHintOnFocusOnly?: bool,
+  hideClearButton?: bool,
+}
+
 @module("@greenlabs/formula-components") @react.component
 external make: (
   ~props: {..}=?,
@@ -24,9 +29,9 @@ external make: (
   ~_type: [#text | #password]=?,
   ~placeholder: string=?,
   ~prefix: React.element=?,
-  ~prefixIcon: React.componentLike<{..}, React.element>=?,
+  ~prefixIcon: React.componentLike<{..}, React.element>=?, // FIXME: Icon component type
   ~suffix: React.element=?,
-  ~suffixIcon: React.componentLike<{..}, React.element>=?,
+  ~suffixIcon: React.componentLike<{..}, React.element>=?, // FIXME: Icon component type
   ~titleText: string=?,
   ~hintText: string=?,
   ~state: [#normal | #error]=?,
@@ -35,4 +40,5 @@ external make: (
   ~onChange: ReactEvent.Form.t => unit=?,
   ~onFocus: ReactEvent.Focus.t => unit=?,
   ~ref: ReactDOM.Ref.t=?,
+  ~options: options=?,
 ) => React.element = "TextField"

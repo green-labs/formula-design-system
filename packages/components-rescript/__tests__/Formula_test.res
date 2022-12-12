@@ -1,3 +1,5 @@
+open Formula
+
 module TestTextContainer = {
   @react.component
   let make = (~className=?, ~children=?) => {
@@ -6,7 +8,6 @@ module TestTextContainer = {
 }
 
 let testText = () => {
-  open Formula
   <>
     <Text
       variant=#body
@@ -31,7 +32,6 @@ let testText = () => {
 }
 
 let testIcon = () => {
-  open Formula
   <>
     <Icon.CalendarLineBold />
     <Icon.CalendarLineRegular color=#"lightblue-90" />
@@ -43,7 +43,6 @@ let testIcon = () => {
 }
 
 let testDivider = () => {
-  open Formula
   <>
     <Divider />
     <Divider className="some-className" variant=#large props={{"id": "id-of-divider"}} />
@@ -51,7 +50,6 @@ let testDivider = () => {
 }
 
 let testButton = () => {
-  open Formula
   <>
     <Button.Container color=#primary size=#sm text="I'm ContainerButton" />
     <Button.Container color=#"secondary-gray" size=#sm block=true text="I'm full width button" />
@@ -69,7 +67,6 @@ let testButton = () => {
 }
 
 let testTextField = () => {
-  open Formula
   <>
     <TextField />
     <TextField _type=#password size=#large />
@@ -95,7 +92,41 @@ let testTextField = () => {
         <input ?onChange id className ref={inputRef} />
       }}
     />
+    <TextField
+      options={{
+        showHintOnFocusOnly: true,
+      }}
+    />
   </>
+}
+
+let textTextTab = () => {
+  <TextTab.List
+    rootProps={{"defaultValue": "a"}}
+    fullWidth={true}
+    onValueChange={_ => ()}
+    contents={<>
+      <TextTab.Content value="a"> {`this is a`->React.string} </TextTab.Content>
+      <TextTab.Content value="b"> {`this is b`->React.string} </TextTab.Content>
+      <TextTab.Content value="c"> {`this is c`->React.string} </TextTab.Content>
+    </>}>
+    <TextTab.Trigger title="텍스트 a" value="a" icon={Icon.ArrowDownLineBold.make} />
+    <TextTab.Trigger
+      title="텍스트 "
+      value="b"
+      badge={{
+        type_: #countSimple,
+        value: 9,
+      }}
+    />
+    <TextTab.Trigger
+      value="c"
+      badge={{
+        type_: #simple,
+      }}>
+      <Icon.ArrowDownLineBold />
+    </TextTab.Trigger>
+  </TextTab.List>
 }
 
 let testCommon = () => {

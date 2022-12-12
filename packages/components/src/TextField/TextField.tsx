@@ -4,6 +4,7 @@ import { useRef } from "react"
 import { TextVariant } from "../Text/Text"
 import type { variantKeyType as textVariantKey } from "../Text/Text"
 import type { textFieldSizeVariants } from "./styles.css"
+import { assignInlineVars } from "@vanilla-extract/dynamic"
 import {
   textFieldVariants,
   inputStyle,
@@ -15,6 +16,7 @@ import {
   hintStyle,
   clearButtonStyle,
   componentStyle,
+  vars,
 } from "./styles.css"
 import type { IconProps } from "../Icon"
 import { DeleteFill } from "../Icon"
@@ -58,6 +60,10 @@ type TextFieldProps = PropsWithChildren<
     titleText?: string // title text to be shown upper side
     hintText?: string // hint text to be shown below
     state?: "normal" | "error" // visual states (focused, readonly or disabled is separated as prop/attr)
+    options?: {
+      showHintOnFocusOnly?: boolean
+      hideClearButton?: boolean
+    }
   }
 >
 
@@ -85,6 +91,10 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
       state,
       onChange,
       onFocus,
+      options = {
+        hideClearButton: false,
+        showHintOnFocusOnly: false,
+      },
     },
     forwardedRef
   ) => {
@@ -134,6 +144,11 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
           }
         )}`}
         htmlFor={id ?? innerId}
+        style={
+          options.showHintOnFocusOnly
+            ? assignInlineVars({ [vars.optionalHintColor]: "transparent" })
+            : undefined
+        }
       >
         {titleText ? (
           <TextVariant variantKey={titleVariantKey} className={titleStyle}>
@@ -165,20 +180,22 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
             disabled={disabled}
             {...props}
           />
-          <span
-            className={clearButtonStyle}
-            onClick={(_) => {
-              const inputEl = inputRef.current
-              if (inputEl) {
-                inputEl.value = ""
-              }
-            }}
-          >
-            <DeleteFill
-              size={size === "xsmall" ? "sm" : "lg"}
-              color="neutral-tertiary-contents"
-            />
-          </span>
+          {!options.hideClearButton && (
+            <span
+              className={clearButtonStyle}
+              onClick={(_) => {
+                const inputEl = inputRef.current
+                if (inputEl) {
+                  inputEl.value = ""
+                }
+              }}
+            >
+              <DeleteFill
+                size={size === "xsmall" ? "sm" : "lg"}
+                color="neutral-tertiary-contents"
+              />
+            </span>
+          )}
           {suffix ? (
             <span className={suffixTextStyle}>{suffix}</span>
           ) : SuffixIcon ? (

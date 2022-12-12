@@ -5,3 +5,6 @@ export * from "./Icon"
 export * from "./Divider/Divider"
 export * from "./Button"
 export * from "./TextField/TextField"
+
+import * as TextTab from "./Tab/TextTab/TextTab"
+export { TextTab }
