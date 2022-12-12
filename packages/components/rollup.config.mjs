@@ -35,8 +35,8 @@ export default {
     copy({
       hook: "closeBundle",
       targets: [
-        { src: "dist/cjs/**/*.css", file: "dist/cjs/formula-all.css" },
-        { src: "dist/esm/**/*.css", file: "dist/esm/formula-all.css" },
+        { src: "dist/cjs/**/*.css", file: "dist/cjs/formula.css" },
+        { src: "dist/esm/**/*.css", file: "dist/esm/formula.css" },
       ],
     }),
     getBabelOutputPlugin({
