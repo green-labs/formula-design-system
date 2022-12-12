@@ -29,9 +29,9 @@ external make: (
   ~_type: [#text | #password]=?,
   ~placeholder: string=?,
   ~prefix: React.element=?,
-  ~prefixIcon: React.componentLike<{..}, React.element>=?,
+  ~prefixIcon: React.componentLike<{..}, React.element>=?, // FIXME: Icon component type
   ~suffix: React.element=?,
-  ~suffixIcon: React.componentLike<{..}, React.element>=?,
+  ~suffixIcon: React.componentLike<{..}, React.element>=?, // FIXME: Icon component type
   ~titleText: string=?,
   ~hintText: string=?,
   ~state: [#normal | #error]=?,

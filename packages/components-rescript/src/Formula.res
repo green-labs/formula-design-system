@@ -5,3 +5,4 @@ module TextField = Formula__TextField
 module Icon = Formula__Icon
 module Divider = Formula__Divider
 module Button = Formula__Button
+module TextTab = Formula__TextTab
