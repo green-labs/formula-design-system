@@ -67,6 +67,7 @@
     "concurrently": "^7.3.0",
     "react-textarea-autosize": "^8.4.0",
     "rollup": "^2.79.0",
+    "rollup-plugin-copy-merge": "^0.3.5",
     "rollup-plugin-node-externals": "^5.0.1",
     "typescript": "^4.8.3"
   },
@@ -74,8 +75,7 @@
     "storybook": "start-storybook -p 6006",
     "build:js": "rollup -c",
     "build:types": "tsc -b",
-    "build:css": "concurrently \"cat ./dist/cjs/assets/**/*.css > ./dist/cjs/formula.css\" \"cat ./dist/esm/assets/**/*.css > ./dist/esm/formula.css\"",
-    "build": "yarn clean && concurrently \"yarn build:js && yarn build:css\" \"yarn build:types\"",
+    "build": "yarn clean && concurrently \"yarn build:js\" \"yarn build:types\"",
     "clean": "rm -rf ./dist",
     "start": "concurrently -g -n re,storybook \"yarn re:watch\" \"yarn storybook\"",
     "build:ts-icons": "cd src/Icon && yarn dlx @svgr/cli svgs --no-index && node ./templates/export-generator.js",
