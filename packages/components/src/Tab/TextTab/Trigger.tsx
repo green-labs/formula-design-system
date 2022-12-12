@@ -74,13 +74,9 @@ export const Trigger = ({
     <RadixTrigger className={triggerStyle} value={value}>
       <div className={triggerContentWrapperStyle}>
         {Icon && <Icon className={triggerIconStyle} size="lg" />}
-        {title ? (
-          <Text.Body size="md" className={triggerTextStyle}>
-            {title}
-          </Text.Body>
-        ) : (
-          <span>{children || value}</span>
-        )}
+        <Text.Body size="md" className={triggerTextStyle}>
+          {title ?? children ?? value}
+        </Text.Body>
         {badge && <TextTabBadge spec={badge} />}
       </div>
     </RadixTrigger>
