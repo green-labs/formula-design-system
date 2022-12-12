@@ -1,5 +1,13 @@
 # @greenlabs/rescript-formula-components
 
+## 0.0.5-next.9
+
+### Patch Changes
+
+- 9838320: fix: fix TextTab binding to emit correct export
+- Updated dependencies [9838320]
+  - @greenlabs/formula-components@0.0.5-next.9
+
 ## 0.0.5-next.8
 
 ### Patch Changes
