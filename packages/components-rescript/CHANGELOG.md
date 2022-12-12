@@ -1,5 +1,13 @@
 # @greenlabs/rescript-formula-components
 
+## 0.0.5-next.10
+
+### Patch Changes
+
+- d2a5bb7: fix: prevent random cat output
+- Updated dependencies [d2a5bb7]
+  - @greenlabs/formula-components@0.0.5-next.10
+
 ## 0.0.5-next.9
 
 ### Patch Changes
