@@ -1,5 +1,5 @@
 module List = {
-  @module("@greenlabs/formula-components") @react.component
+  @module("@greenlabs/formula-components") @scope("TextTab") @react.component
   external make: (
     ~props: {..}=?,
     ~rootProps: {..}=?, // TODO: RadixUI props
@@ -8,7 +8,7 @@ module List = {
     ~onValueChange: string => unit=?,
     ~children: React.element,
     ~ref: ReactDOM.Ref.t=?,
-  ) => React.element = "TextTab"
+  ) => React.element = "List"
 }
 
 module Trigger = {
@@ -17,21 +17,21 @@ module Trigger = {
     value?: int,
   }
 
-  @module("@greenlabs/formula-components") @react.component
+  @module("@greenlabs/formula-components") @scope("TextTab") @react.component
   external make: (
     ~icon: React.componentLike<{..}, React.element>=?, // FIXME: Icon component type
     ~title: string=?,
     ~badge: badgeType=?,
     ~value: string,
     ~children: React.element=?,
-  ) => React.element = "TextTab"
+  ) => React.element = "Trigger"
 }
 
 module Content = {
-  @module("@greenlabs/formula-components") @react.component
+  @module("@greenlabs/formula-components") @scope("TextTab") @react.component
   external make: (
     ~value: string,
     ~children: React.element=?,
     ~props: ReactDOM.domProps=?,
-  ) => React.element = "TextTab"
+  ) => React.element = "Content"
 }
