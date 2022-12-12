@@ -1,5 +1,11 @@
 # @greenlabs/formula-components
 
+## 0.0.5-next.9
+
+### Patch Changes
+
+- 9838320: fix: fix TextTab binding to emit correct export
+
 ## 0.0.5-next.8
 
 ### Patch Changes
