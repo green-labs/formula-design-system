@@ -1,5 +1,13 @@
 # @greenlabs/rescript-formula-components
 
+## 0.0.5-next.11
+
+### Patch Changes
+
+- d46dd0a: fix: wrong css filename
+- Updated dependencies [d46dd0a]
+  - @greenlabs/formula-components@0.0.5-next.11
+
 ## 0.0.5-next.10
 
 ### Patch Changes
