@@ -7,6 +7,7 @@ import { babel, getBabelOutputPlugin } from "@rollup/plugin-babel"
 import commonjs from "@rollup/plugin-commonjs"
 import json from "@rollup/plugin-json"
 import { externals } from "rollup-plugin-node-externals"
+import copy from "rollup-plugin-copy-merge"
 
 const pkg = JSON.parse(
   readFileSync(new URL("./package.json", import.meta.url).pathname)
@@ -31,6 +32,13 @@ export default {
       compact: true,
     }),
     vanillaExtractPlugin(),
+    copy({
+      hook: "closeBundle",
+      targets: [
+        { src: "dist/cjs/**/*.css", file: "dist/cjs/formula-all.css" },
+        { src: "dist/esm/**/*.css", file: "dist/esm/formula-all.css" },
+      ],
+    }),
     getBabelOutputPlugin({
       plugins: [
         [
