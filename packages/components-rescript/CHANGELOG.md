@@ -1,5 +1,14 @@
 # @greenlabs/rescript-formula-components
 
+## 0.0.5-next.8
+
+### Patch Changes
+
+- 1a0ee18: - feat: add TextField options (showHintOnFocusOnly, hideClearButton)
+  - feat: TextField options ReScript bindings
+- Updated dependencies [1a0ee18]
+  - @greenlabs/formula-components@0.0.5-next.8
+
 ## 0.0.5-next.7
 
 ### Patch Changes
