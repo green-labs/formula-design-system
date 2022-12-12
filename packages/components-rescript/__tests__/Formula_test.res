@@ -95,6 +95,11 @@ let testTextField = () => {
         <input ?onChange id className ref={inputRef} />
       }}
     />
+    <TextField
+      options={{
+        showHintOnFocusOnly: true,
+      }}
+    />
   </>
 }
 
