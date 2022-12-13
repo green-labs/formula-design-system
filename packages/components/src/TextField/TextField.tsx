@@ -40,7 +40,7 @@ type inputProps = {
 }
 
 // FIXME: make input/textarea compatible
-export type inputContainerProps = inputProps & {
+export type renderInputProps = inputProps & {
   id: string
   className: string
   type: "text" | "password" // FIXME: fix case for <textarea />
@@ -50,7 +50,7 @@ type TextFieldProps = PropsWithChildren<
   inputProps & {
     id?: string
     className?: string
-    renderInput?: (props: inputContainerProps) => ReactNode
+    renderInput?: (props: renderInputProps) => ReactNode
     inputTag?: "input" | "textarea"
     size?: sizeVariantKey
     variant?: "boxOutline" | "boxFill" | "line"

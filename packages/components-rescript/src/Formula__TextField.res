@@ -1,4 +1,4 @@
-type textFieldComponentProps<'a> = {
+type renderInputProps<'a> = {
   id: string,
   className: string,
   inputRef: ReactDOM.domRef,
@@ -23,7 +23,7 @@ external make: (
   ~props: {..}=?,
   ~name: string=?,
   ~inputTag: string=?,
-  ~renderInput: textFieldComponentProps<{..}> => React.element=?,
+  ~renderInput: renderInputProps<{..}> => React.element=?,
   ~className: string=?,
   ~variant: [#boxOutline | #boxFill | #line]=?,
   ~size: [#xsmall | #samll | #medium | #large]=?,
