@@ -78,8 +78,8 @@
     "build": "yarn clean && concurrently \"yarn build:js\" \"yarn build:types\"",
     "clean": "rm -rf ./dist",
     "start": "concurrently -g -n re,storybook \"yarn re:watch\" \"yarn storybook\"",
-    "build:ts-icons": "cd src/Icon && yarn dlx @svgr/cli svgs --no-index && node ./templates/export-generator.js",
-    "build:res-icons": "cd src/Icon && node ./templates/rescript-binder.js",
+    "build:ts-icons": "cd src/Icon && yarn dlx @svgr/cli svgs --no-index && node ./templates/export-generator.cjs",
+    "build:res-icons": "cd src/Icon && node ./templates/rescript-binder.cjs",
     "svgr": "yarn build:ts-icons && yarn build:res-icons"
   }
 }

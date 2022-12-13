@@ -6,7 +6,7 @@ const template = ({ jsx, componentName, exports }, { tpl }) => {
   import type { IconProps } from "../types"
 
   const ${componentName} = (
-    { size = "xl", sizePx, color = "gray-90", ...props }: IconProps,
+    { size = "xl", sizePx, color, ...props }: IconProps,
     ref: Ref<SVGSVGElement>  
   ) => {
     const finalSize = sizePx ? sizePx : convertSizeToPx(size)
