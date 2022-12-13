@@ -3,7 +3,7 @@ import { colorMap } from "@greenlabs/formula-design-token"
 import { convertSizeToPx } from "../utils"
 import type { IconProps } from "../types"
 const SvgNewLine = (
-  { size = "xl", sizePx, color = "gray-90", ...props }: IconProps,
+  { size = "xl", sizePx, color, ...props }: IconProps,
   ref: Ref<SVGSVGElement>
 ) => {
   const finalSize = sizePx ? sizePx : convertSizeToPx(size)
