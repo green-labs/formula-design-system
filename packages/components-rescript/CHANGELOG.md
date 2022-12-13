@@ -1,5 +1,13 @@
 # @greenlabs/rescript-formula-components
 
+## 0.0.5-next.12
+
+### Patch Changes
+
+- 97234f6: fix: icon component color bug
+- Updated dependencies [97234f6]
+  - @greenlabs/formula-components@0.0.5-next.12
+
 ## 0.0.5-next.11
 
 ### Patch Changes
