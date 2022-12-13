@@ -1,4 +1,4 @@
-type textFieldComponentProps<'a> = {
+type renderInputProps<'a> = {
   id: string,
   className: string,
   inputRef: ReactDOM.domRef,
@@ -7,6 +7,7 @@ type textFieldComponentProps<'a> = {
   name?: string,
   onChange?: ReactEvent.Form.t => unit,
   onFocus?: ReactEvent.Focus.t => unit,
+  onBlur?: ReactEvent.Focus.t => unit,
   placeholder?: string,
   readOnly?: bool,
   disabled?: bool,
@@ -22,7 +23,7 @@ external make: (
   ~props: {..}=?,
   ~name: string=?,
   ~inputTag: string=?,
-  ~inputContainer: React.componentLike<textFieldComponentProps<{..}>, React.element>=?,
+  ~renderInput: renderInputProps<{..}> => React.element=?,
   ~className: string=?,
   ~variant: [#boxOutline | #boxFill | #line]=?,
   ~size: [#xsmall | #samll | #medium | #large]=?,
@@ -39,6 +40,7 @@ external make: (
   ~disabled: bool=?,
   ~onChange: ReactEvent.Form.t => unit=?,
   ~onFocus: ReactEvent.Focus.t => unit=?,
+  ~onBlur: ReactEvent.Focus.t => unit=?,
   ~ref: ReactDOM.Ref.t=?,
   ~options: options=?,
 ) => React.element = "TextField"

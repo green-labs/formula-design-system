@@ -33,13 +33,14 @@ type inputProps = {
   readOnly?: boolean
   disabled?: boolean
   placeholder?: string
+  onBlur?: React.FocusEventHandler<InputElement>
   onChange?: React.ChangeEventHandler<InputElement>
   onFocus?: React.FocusEventHandler<InputElement>
   type?: "text" | "password"
 }
 
 // FIXME: make input/textarea compatible
-export type inputContainerProps = inputProps & {
+export type renderInputProps = inputProps & {
   id: string
   className: string
   type: "text" | "password" // FIXME: fix case for <textarea />
@@ -49,7 +50,7 @@ type TextFieldProps = PropsWithChildren<
   inputProps & {
     id?: string
     className?: string
-    inputContainer?: React.ComponentType<inputContainerProps>
+    renderInput?: (props: renderInputProps) => ReactNode
     inputTag?: "input" | "textarea"
     size?: sizeVariantKey
     variant?: "boxOutline" | "boxFill" | "line"
@@ -73,8 +74,8 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
       id,
       className = "",
       name,
-      inputContainer,
-      inputTag = "input",
+      renderInput,
+      inputTag: InputTag = "input",
       props = {},
       placeholder,
       size = "medium",
@@ -89,6 +90,7 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
       readOnly,
       disabled,
       state,
+      onBlur,
       onChange,
       onFocus,
       options = {
@@ -98,7 +100,6 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
     },
     forwardedRef
   ) => {
-    const InputContainer = inputContainer ?? inputTag
     const variantKey = `${variant}.${size}` as variantKey
 
     if (
@@ -133,6 +134,20 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
     const iconSize = size === "large" || size === "medium" ? "xl" : "lg"
     const innerId = React.useId()
 
+    const inputProps = {
+      id: id ?? innerId,
+      className: inputStyle,
+      name,
+      type,
+      onBlur,
+      onChange,
+      onFocus,
+      placeholder,
+      readOnly,
+      disabled,
+      ...props,
+    }
+
     return (
       <label
         className={`${COMPONENT_CLASS} ${componentClass} ${className} ${stateClass(
@@ -166,20 +181,12 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
               />
             </span>
           ) : null}
-          <InputContainer
-            id={id ?? innerId}
-            ref={inputRef}
-            inputRef={inputRef}
-            name={name}
-            type={type}
-            onChange={onChange}
-            onFocus={onFocus}
-            placeholder={placeholder}
-            className={inputStyle}
-            readOnly={readOnly}
-            disabled={disabled}
-            {...props}
-          />
+          {renderInput ? (
+            renderInput({ ...inputProps, inputRef })
+          ) : (
+            <InputTag ref={inputRef} {...inputProps} />
+          )}
+
           {!options.hideClearButton && (
             <span
               className={clearButtonStyle}
