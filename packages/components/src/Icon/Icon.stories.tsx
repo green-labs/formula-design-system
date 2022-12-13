@@ -1,4 +1,4 @@
-import * as React from "react"
+import React from "react"
 import type { ComponentMeta, ComponentStory } from "@storybook/react"
 import { colorMap } from "@greenlabs/formula-design-token"
 import * as IconComponents from "./generated"
@@ -50,13 +50,13 @@ export const IconGallery: ComponentStory<typeof IconComponents["AppleFill"]> = (
   args
 ) => {
   return (
-    <ThemeScope>
+    <>
       {Object.entries(IconComponents).map(([name, Component]) => (
         <IconItem name={name}>
           <Component {...args} />
         </IconItem>
       ))}
-    </ThemeScope>
+    </>
   )
 }
 
@@ -79,19 +79,21 @@ export default {
   },
   decorators: [
     (Story) => (
-      <div
-        style={{
-          marginTop: "20px",
-          marginBottom: "20px",
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
-          overflow: "hidden",
-          flexFlow: "wrap",
-          gap: 30,
-        }}
-      >
-        <Story />
-      </div>
+      <ThemeScope>
+        <div
+          style={{
+            marginTop: "20px",
+            marginBottom: "20px",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
+            overflow: "hidden",
+            flexFlow: "wrap",
+            gap: 30,
+          }}
+        >
+          <Story />
+        </div>
+      </ThemeScope>
     ),
   ],
 } as ComponentMeta<typeof IconComponents["AppleFill"]>
