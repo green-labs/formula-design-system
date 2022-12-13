@@ -1,5 +1,11 @@
 # @greenlabs/formula-components
 
+## 0.0.5-next.13
+
+### Patch Changes
+
+- 19c2c93: feat: TextField > inputContainer->renderInput, add onBlur (74afef435a08ee6b5f6c061edd44b46db0d7e516)
+
 ## 0.0.5-next.12
 
 ### Patch Changes
