@@ -21,6 +21,7 @@ import {
 import type { IconProps } from "../Icon"
 import { DeleteFill } from "../Icon"
 import { COMPONENT_CLASS, stateClass } from "./common"
+import { triggerNativeEventFor } from "../utils/event"
 
 type sizeVariantKey = keyof typeof textFieldSizeVariants
 type variantKey = keyof typeof textFieldVariants
@@ -193,7 +194,7 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
               onClick={(_) => {
                 const inputEl = inputRef.current
                 if (inputEl) {
-                  inputEl.value = ""
+                  triggerNativeEventFor(inputEl, { event: "input", value: "" })
                 }
               }}
             >

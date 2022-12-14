@@ -211,6 +211,14 @@ export const Textarea_and_Ref_Etc: ComponentStory<typeof TextField> = (
               hideClearButton: true,
             }}
           />
+          <TextField
+            {...args}
+            onChange={(e) => {
+              const { value } = e.target
+              console.log(value)
+            }}
+            titleText="onChange: see console"
+          />
         </form>
       )}
     />
