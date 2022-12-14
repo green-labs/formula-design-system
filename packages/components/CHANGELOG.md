@@ -1,5 +1,13 @@
 # @greenlabs/formula-components
 
+## 0.0.5-next.14
+
+### Patch Changes
+
+- a5bcbff: fix: support radix-ui/tabs defaultValue and etcs
+
+  - fixes #103
+
 ## 0.0.5-next.13
 
 ### Patch Changes
