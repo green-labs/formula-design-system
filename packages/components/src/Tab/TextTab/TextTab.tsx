@@ -1,7 +1,7 @@
 import type { PropsWithChildren, ReactNode } from "react"
 import {
   forwardRef,
-  useLayoutEffect,
+  useEffect,
   useRef,
   useState,
   useImperativeHandle,
@@ -27,13 +27,25 @@ const extractIndicatorState = (tabEl: TriggerHTMLType) => {
 interface ListProps {
   contents?: ReactNode
   fullWidth?: boolean
-  rootProps?: TabsProps
+  defaultValue?: string
+  value?: string
+  dir?: "ltr" | "rtl"
+  rootProps?: Omit<TabsProps, "defaultValue" | "value" | "dir">
   onValueChange?: (value: string) => void
 }
 // todo: on resize
 export const List = forwardRef<HTMLDivElement, PropsWithChildren<ListProps>>(
   (
-    { children, contents = null, onValueChange, fullWidth, rootProps },
+    {
+      children,
+      contents = null,
+      onValueChange,
+      fullWidth,
+      rootProps,
+      defaultValue,
+      value,
+      dir,
+    },
     forwardedRef
   ) => {
     const ref = useRef<HTMLDivElement>(null)
@@ -41,8 +53,10 @@ export const List = forwardRef<HTMLDivElement, PropsWithChildren<ListProps>>(
 
     useImperativeHandle(forwardedRef, () => ref.current as HTMLDivElement)
 
-    useLayoutEffect(() => {
-      const tabEl = ref.current?.querySelector("button")
+    useEffect(() => {
+      const tabEl = ref.current?.querySelector(
+        '[data-state="active"]'
+      ) as HTMLButtonElement | null
       if (tabEl) {
         setState(extractIndicatorState(tabEl))
       }
@@ -64,6 +78,9 @@ export const List = forwardRef<HTMLDivElement, PropsWithChildren<ListProps>>(
       <Root
         className={rootStyle}
         onValueChange={onValueChangeWrapped}
+        defaultValue={defaultValue}
+        value={value}
+        dir={dir}
         {...rootProps}
       >
         <div className={listContainerStyle}>
