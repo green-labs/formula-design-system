@@ -15,14 +15,12 @@ interface IconItemProps {
 // Todo - support code copy(ts, res) handler
 const IconItem: React.FC<IconItemProps> = ({ name, children }) => {
   return (
-    <ThemeScope
-      props={{
-        style: {
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column",
-        },
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "column",
       }}
     >
       <div
@@ -40,7 +38,7 @@ const IconItem: React.FC<IconItemProps> = ({ name, children }) => {
         {children}
       </div>
       <div>{name}</div>
-    </ThemeScope>
+    </div>
   )
 }
 
@@ -79,9 +77,9 @@ export default {
   },
   decorators: [
     (Story) => (
-      <ThemeScope>
-        <div
-          style={{
+      <ThemeScope
+        props={{
+          style: {
             marginTop: "20px",
             marginBottom: "20px",
             display: "grid",
@@ -89,10 +87,10 @@ export default {
             overflow: "hidden",
             flexFlow: "wrap",
             gap: 30,
-          }}
-        >
-          <Story />
-        </div>
+          },
+        }}
+      >
+        <Story />
       </ThemeScope>
     ),
   ],
