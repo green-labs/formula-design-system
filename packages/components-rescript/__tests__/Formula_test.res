@@ -102,7 +102,7 @@ let testTextField = () => {
 
 let textTextTab = () => {
   <TextTab.List
-    rootProps={{"defaultValue": "a"}}
+    defaultValue="a"
     fullWidth={true}
     onValueChange={_ => ()}
     contents={<>

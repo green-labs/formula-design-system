@@ -3,6 +3,9 @@ module List = {
   external make: (
     ~props: {..}=?,
     ~rootProps: {..}=?, // TODO: RadixUI props
+    ~dir: [#ltr | #rtl]=?,
+    ~value: string=?,
+    ~defaultValue: string=?,
     ~contents: React.element=?,
     ~fullWidth: bool=?,
     ~onValueChange: string => unit=?,
