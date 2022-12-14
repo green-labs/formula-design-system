@@ -1,5 +1,11 @@
 # @greenlabs/formula-components
 
+## 0.0.5-next.15
+
+### Patch Changes
+
+- 9914a6b: fix: manually trigger native event on clear
+
 ## 0.0.5-next.14
 
 ### Patch Changes
