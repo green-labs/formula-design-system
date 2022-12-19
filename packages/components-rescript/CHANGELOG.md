@@ -1,5 +1,13 @@
 # @greenlabs/rescript-formula-components
 
+## 0.0.5-next.16
+
+### Patch Changes
+
+- fe51274: fix: xs/sm 사이즈 버튼 스타일 토큰 참조값 수정
+- Updated dependencies [fe51274]
+  - @greenlabs/formula-components@0.0.5-next.16
+
 ## 0.0.5-next.15
 
 ### Patch Changes
