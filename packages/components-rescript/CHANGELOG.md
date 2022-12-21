@@ -1,5 +1,20 @@
 # @greenlabs/rescript-formula-components
 
+## 0.0.5-next.17
+
+### Patch Changes
+
+- 62f4087: textfield bugfix
+
+  - prevent right border clipping on a certain variant
+  - polyvary name typo
+  - https://github.com/green-labs/farmmy-web/pull/159
+
+- 3bb00fa: feat: textfield - support 'search' type
+- Updated dependencies [62f4087]
+- Updated dependencies [3bb00fa]
+  - @greenlabs/formula-components@0.0.5-next.17
+
 ## 0.0.5-next.16
 
 ### Patch Changes
