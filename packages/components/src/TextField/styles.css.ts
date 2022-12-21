@@ -283,10 +283,18 @@ export const inputStyle = style({
   borderTopRightRadius: 4,
   borderBottomRightRadius: 4,
   selectors: {
-    [`&::-webkit-search-decoration, &::-webkit-search-cancel-button, &::-webkit-search-results-button, &::-ms-clear`]:
-      {
-        WebkitAppearance: "none",
-      },
+    [`&::-webkit-search-decoration,
+      &::-webkit-search-cancel-button,
+      &::-webkit-search-results-button,
+      &::-webkit-search-results-decoration`]: {
+      display: "none",
+    },
+    [`&::-ms-clear,
+      &::-ms-reveal`]: {
+      display: "none",
+      width: 0,
+      height: 0,
+    },
     [`${textFieldVariants["line.large"]} &`]: {
       vars: {
         [vars.inputHeight]: "33px",
