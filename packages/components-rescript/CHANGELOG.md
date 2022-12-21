@@ -1,5 +1,12 @@
 # @greenlabs/rescript-formula-components
 
+## 0.0.5-next.19
+
+### Patch Changes
+
+- Updated dependencies [b5d6ca0]
+  - @greenlabs/formula-components@0.0.5-next.19
+
 ## 0.0.5-next.18
 
 ### Patch Changes
