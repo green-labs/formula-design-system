@@ -114,4 +114,6 @@ export const Content = forwardRef<
     children?: React.ReactNode
     props?: React.RefAttributes<HTMLDivElement>
   }
->(({ value, props }) => <RadixTabsContent value={value} {...props} />)
+>(({ value, props }, forwardedRef) => (
+  <RadixTabsContent ref={forwardedRef} value={value} {...props} />
+))
