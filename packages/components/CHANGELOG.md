@@ -1,5 +1,11 @@
 # @greenlabs/formula-components
 
+## 0.0.5-next.19
+
+### Patch Changes
+
+- b5d6ca0: fix: forwarded ref not gets sent to children in TextTab
+
 ## 0.0.5-next.18
 
 ### Patch Changes
