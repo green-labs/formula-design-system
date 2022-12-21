@@ -1,5 +1,11 @@
 # @greenlabs/formula-components
 
+## 0.0.5-next.18
+
+### Patch Changes
+
+- 61aad5d: fix: correct styling for disabling default webkit searchfield button
+
 ## 0.0.5-next.17
 
 ### Patch Changes
