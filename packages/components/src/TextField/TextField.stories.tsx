@@ -205,6 +205,7 @@ export const Textarea_and_Ref_Etc: ComponentStory<typeof TextField> = (
           <br />
           <TextField
             {...args}
+            variant="boxFill"
             titleText="options.showHintOnFocusOnly | options.hideClearButton"
             options={{
               showHintOnFocusOnly: true,

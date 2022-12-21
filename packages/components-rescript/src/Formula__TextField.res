@@ -26,7 +26,7 @@ external make: (
   ~renderInput: renderInputProps<{..}> => React.element=?,
   ~className: string=?,
   ~variant: [#boxOutline | #boxFill | #line]=?,
-  ~size: [#xsmall | #samll | #medium | #large]=?,
+  ~size: [#xsmall | #small | #medium | #large]=?,
   ~_type: [#text | #password]=?,
   ~placeholder: string=?,
   ~prefix: React.element=?,
