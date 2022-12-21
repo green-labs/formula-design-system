@@ -27,7 +27,7 @@ external make: (
   ~className: string=?,
   ~variant: [#boxOutline | #boxFill | #line]=?,
   ~size: [#xsmall | #small | #medium | #large]=?,
-  ~_type: [#text | #password]=?,
+  ~_type: [#text | #password | #search]=?,
   ~placeholder: string=?,
   ~prefix: React.element=?,
   ~prefixIcon: React.componentLike<{..}, React.element>=?, // FIXME: Icon component type

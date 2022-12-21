@@ -220,6 +220,7 @@ export const Textarea_and_Ref_Etc: ComponentStory<typeof TextField> = (
             }}
             titleText="onChange: see console"
           />
+          <TextField {...args} type="search" titleText="type=search" />
         </form>
       )}
     />
