@@ -1,5 +1,17 @@
 # @greenlabs/rescript-formula-components
 
+## 0.0.5-next.20
+
+### Patch Changes
+
+- 06e896c: feat: Text to use neu-primary-contents by default / add TextField props
+
+  - stop using colorMap
+  - add pattern, minLength, maxLength to TextField
+
+- Updated dependencies [06e896c]
+  - @greenlabs/formula-components@0.0.5-next.20
+
 ## 0.0.5-next.19
 
 ### Patch Changes
