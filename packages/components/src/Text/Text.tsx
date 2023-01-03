@@ -1,8 +1,8 @@
-import { colorMap } from "@greenlabs/formula-design-token"
 import { assignInlineVars } from "@vanilla-extract/dynamic"
 import { variants, textColorVar, textStyle } from "./styles.css"
 import { sprinkles } from "../sprinkles.css"
 import type { Sprinkles } from "../sprinkles.css"
+import { theme } from "../theme"
 
 export type variantKeyType = keyof typeof variants
 
@@ -11,7 +11,7 @@ type TextBaseProps<T extends {} = {}> = T &
     props?: {}
     className?: string
     align?: Sprinkles["textAlign"]
-    color?: keyof typeof colorMap
+    color?: keyof typeof theme.colors
     container?: React.ComponentType
     tag?: React.ElementType
   }>
@@ -51,9 +51,11 @@ const TextBase = ({
 
   const variantClass = variants[variantKey as variantKeyType] ?? ""
   const colorCssVar =
-    color && colorMap[color]
-      ? assignInlineVars({ [textColorVar]: colorMap[color] })
-      : undefined
+    color && theme.colors[color]
+      ? assignInlineVars({ [textColorVar]: theme.colors[color] })
+      : assignInlineVars({
+          [textColorVar]: theme.colors["neutral-primary-contents"],
+        })
 
   return (
     <Container
