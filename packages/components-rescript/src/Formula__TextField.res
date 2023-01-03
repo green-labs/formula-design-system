@@ -1,8 +1,6 @@
 type renderInputProps<'a> = {
-  id: string,
-  className: string,
   inputRef: ReactDOM.domRef,
-  _type: [#text | #password],
+  // common attrs
   props?: 'a,
   name?: string,
   onChange?: ReactEvent.Form.t => unit,
@@ -11,6 +9,13 @@ type renderInputProps<'a> = {
   placeholder?: string,
   readOnly?: bool,
   disabled?: bool,
+  minLength?: int,
+  maxLength?: int,
+  pattern?: string,
+  // common attrs, but unlike TextField these are non-optional
+  id: string,
+  className: string,
+  _type: [#text | #password],
 }
 
 type options = {
@@ -20,15 +25,26 @@ type options = {
 
 @module("@greenlabs/formula-components") @react.component
 external make: (
+  // common attrs for renderInput
+  ~id: string=?,
+  ~className: string=?,
   ~props: {..}=?,
   ~name: string=?,
-  ~inputTag: string=?,
-  ~renderInput: renderInputProps<{..}> => React.element=?,
-  ~className: string=?,
-  ~variant: [#boxOutline | #boxFill | #line]=?,
-  ~size: [#xsmall | #small | #medium | #large]=?,
   ~_type: [#text | #password | #search]=?,
   ~placeholder: string=?,
+  ~readOnly: bool=?,
+  ~disabled: bool=?,
+  ~onChange: ReactEvent.Form.t => unit=?,
+  ~onFocus: ReactEvent.Focus.t => unit=?,
+  ~onBlur: ReactEvent.Focus.t => unit=?,
+  ~minLength: int=?,
+  ~maxLength: int=?,
+  ~pattern: string=?,
+  // common attrs end
+  ~inputTag: string=?,
+  ~renderInput: renderInputProps<{..}> => React.element=?,
+  ~variant: [#boxOutline | #boxFill | #line]=?,
+  ~size: [#xsmall | #small | #medium | #large]=?,
   ~prefix: React.element=?,
   ~prefixIcon: React.componentLike<{..}, React.element>=?, // FIXME: Icon component type
   ~suffix: React.element=?,
@@ -36,11 +52,6 @@ external make: (
   ~titleText: string=?,
   ~hintText: string=?,
   ~state: [#normal | #error]=?,
-  ~readOnly: bool=?,
-  ~disabled: bool=?,
-  ~onChange: ReactEvent.Form.t => unit=?,
-  ~onFocus: ReactEvent.Focus.t => unit=?,
-  ~onBlur: ReactEvent.Focus.t => unit=?,
-  ~ref: ReactDOM.Ref.t=?,
   ~options: options=?,
+  ~ref: ReactDOM.Ref.t=?,
 ) => React.element = "TextField"

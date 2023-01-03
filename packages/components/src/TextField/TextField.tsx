@@ -61,6 +61,9 @@ type TextFieldProps = PropsWithChildren<
     suffixIcon?: React.ComponentType<IconProps> // suffix element to be shown
     titleText?: string // title text to be shown upper side
     hintText?: string // hint text to be shown below
+    minLength?: number
+    maxLength?: number
+    pattern?: string
     state?: "normal" | "error" // visual states (focused, readonly or disabled is separated as prop/attr)
     options?: {
       showHintOnFocusOnly?: boolean
@@ -91,6 +94,9 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
       readOnly,
       disabled,
       state,
+      minLength,
+      maxLength,
+      pattern,
       onBlur,
       onChange,
       onFocus,
@@ -146,6 +152,9 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
       placeholder,
       readOnly,
       disabled,
+      minLength,
+      maxLength,
+      pattern,
       ...props,
     }
 
