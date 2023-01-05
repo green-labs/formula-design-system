@@ -4833,6 +4833,25 @@ module ShoppingBasketFill = {
     @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
     @props style - [ReactDOMStyle.t] 
 */
+module ShoppingBasketFillGlobalFill = {
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~className: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~color: Formula__ColorMap.t=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ShoppingBasketFillGlobalFill"
+}
+
+/**
+    @props className - [string] Class content attribute.
+    @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
+    @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
+    @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
+    @props style - [ReactDOMStyle.t] 
+*/
 module ShoppingBasketFillJp = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
@@ -4881,6 +4900,63 @@ module ShoppingBasketLineBold = {
     ~color: Formula__ColorMap.t=?,
     ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "ShoppingBasketLineBold"
+}
+
+/**
+    @props className - [string] Class content attribute.
+    @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
+    @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
+    @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
+    @props style - [ReactDOMStyle.t] 
+*/
+module ShoppingBasketLineGlobalBold = {
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~className: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~color: Formula__ColorMap.t=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ShoppingBasketLineGlobalBold"
+}
+
+/**
+    @props className - [string] Class content attribute.
+    @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
+    @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
+    @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
+    @props style - [ReactDOMStyle.t] 
+*/
+module ShoppingBasketLineGlobalRegular = {
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~className: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~color: Formula__ColorMap.t=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ShoppingBasketLineGlobalRegular"
+}
+
+/**
+    @props className - [string] Class content attribute.
+    @props fill - [key of ColorMap] "@greenlabs/formula-design-token"에서 제공하는 컬러맵의 키입니다. 기본 색상은 "gray-90(#1F2024)"입니다.
+    @props size - [#pc - (36px) | #xl - (24px) | #lg - (20px) | #sm - (16px) | #xs - (12px)] 기본 사이즈는 xl입니다.
+    @props sizePx - [int] size보다 우선적으로 적용됩니다. 엣지케이스에 대한 사이즈가 필요한 경우에만 사용하세요.
+    @props style - [ReactDOMStyle.t] 
+*/
+module ShoppingBasketLineGlobalThin = {
+  @module("@greenlabs/formula-components") @react.component
+  external make: (
+    ~style: ReactDOMStyle.t=?,
+    ~className: string=?,
+    ~size: size=?,
+    ~sizePx: int=?,
+    ~color: Formula__ColorMap.t=?,
+    ~ref: ReactDOM.Ref.t=?,
+  ) => React.element = "ShoppingBasketLineGlobalThin"
 }
 
 /**
