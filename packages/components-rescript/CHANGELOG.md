@@ -1,5 +1,13 @@
 # @greenlabs/rescript-formula-components
 
+## 0.0.5-next.21
+
+### Patch Changes
+
+- 0567446: Add new icon (ShoppingBasketGlobal)
+- Updated dependencies [0567446]
+  - @greenlabs/formula-components@0.0.5-next.21
+
 ## 0.0.5-next.20
 
 ### Patch Changes

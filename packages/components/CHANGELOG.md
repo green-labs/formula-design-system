@@ -1,5 +1,11 @@
 # @greenlabs/formula-components
 
+## 0.0.5-next.21
+
+### Patch Changes
+
+- 0567446: Add new icon (ShoppingBasketGlobal)
+
 ## 0.0.5-next.20
 
 ### Patch Changes
