@@ -101,6 +101,8 @@ let testTextField = () => {
 }
 
 let textTextTab = () => {
+  let triggerTestRef = React.useRef(Js.Nullable.null)
+
   <TextTab.List
     defaultValue="a"
     fullWidth={true}
@@ -112,6 +114,7 @@ let textTextTab = () => {
     </>}>
     <TextTab.Trigger title="텍스트 a" value="a" icon={Icon.ArrowDownLineBold.make} />
     <TextTab.Trigger
+      ref={ReactDOM.Ref.domRef(triggerTestRef)}
       title="텍스트 "
       value="b"
       badge={{

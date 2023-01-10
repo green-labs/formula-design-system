@@ -1,5 +1,10 @@
-import type { PropsWithChildren, ReactNode } from "react"
+import type { PropsWithChildren } from "react"
+import { forwardRef } from "react"
 import { Trigger as RadixTrigger } from "@radix-ui/react-tabs"
+import type {
+  Primitive,
+  ComponentPropsWithoutRef,
+} from "@radix-ui/react-primitive"
 import {
   triggerStyle,
   triggerContentWrapperStyle,
@@ -57,28 +62,46 @@ const TextTabBadge = ({ spec: badge }: { spec: BadgeSpec }) => {
   return null
 }
 
+type TabsTriggerElement = React.ElementRef<typeof Primitive.button>
+type PrimitiveButtonProps = ComponentPropsWithoutRef<typeof Primitive.button>
+interface RadixTriggerProps extends PrimitiveButtonProps {
+  value: string
+}
 interface TriggerProps {
+  value: string
   icon?: React.ComponentType<IconProps>
   title?: string
   badge?: BadgeSpec
-  value: string
+  triggerProps?: RadixTriggerProps
 }
-export const Trigger = ({
-  icon: Icon,
-  title,
-  value,
-  children,
-  badge,
-}: PropsWithChildren<TriggerProps>) => {
-  return (
-    <RadixTrigger className={triggerStyle} value={value}>
-      <div className={triggerContentWrapperStyle}>
-        {Icon && <Icon className={triggerIconStyle} size="lg" />}
-        <Text.Body size="md" className={triggerTextStyle}>
-          {title ?? children ?? value}
-        </Text.Body>
-        {badge && <TextTabBadge spec={badge} />}
-      </div>
-    </RadixTrigger>
-  )
-}
+
+export const Trigger = forwardRef<TabsTriggerElement, RadixTriggerProps>(
+  (
+    {
+      icon: Icon,
+      title,
+      value,
+      children,
+      badge,
+      triggerProps,
+    }: PropsWithChildren<TriggerProps>,
+    forwardedRef
+  ) => {
+    return (
+      <RadixTrigger
+        className={triggerStyle}
+        value={value}
+        ref={forwardedRef}
+        {...triggerProps}
+      >
+        <span className={triggerContentWrapperStyle}>
+          {Icon && <Icon className={triggerIconStyle} size="lg" />}
+          <Text.Body size="md" className={triggerTextStyle}>
+            {title ?? children ?? value}
+          </Text.Body>
+          {badge && <TextTabBadge spec={badge} />}
+        </span>
+      </RadixTrigger>
+    )
+  }
+)

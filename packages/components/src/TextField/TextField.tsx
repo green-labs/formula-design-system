@@ -28,23 +28,37 @@ type variantKey = keyof typeof textFieldVariants
 export type InputElement = HTMLInputElement | HTMLTextAreaElement
 type InputRefType = React.Ref<HTMLInputElement> & React.Ref<HTMLTextAreaElement>
 
+type InputAttributes = React.InputHTMLAttributes<InputElement>
+
 type inputProps = {
   props?: {}
-  name?: string
-  readOnly?: boolean
-  disabled?: boolean
-  placeholder?: string
-  onBlur?: React.FocusEventHandler<InputElement>
-  onChange?: React.ChangeEventHandler<InputElement>
-  onFocus?: React.FocusEventHandler<InputElement>
-  type?: "text" | "password" | "search"
+  name?: InputAttributes["name"]
+  readOnly?: InputAttributes["readOnly"]
+  disabled?: InputAttributes["disabled"]
+  placeholder?: InputAttributes["placeholder"]
+  onBlur?: InputAttributes["onBlur"]
+  onChange?: InputAttributes["onChange"]
+  onFocus?: InputAttributes["onFocus"]
+  onInput?: InputAttributes["onInput"]
+  onKeyDown?: InputAttributes["onKeyDown"]
+  onKeyUp?: InputAttributes["onKeyUp"]
+  onPaste?: InputAttributes["onPaste"]
+  defaultValue?: InputAttributes["defaultValue"]
+  value?: InputAttributes["value"]
+  inputMode?: InputAttributes["inputMode"]
+  minLength?: InputAttributes["minLength"]
+  maxLength?: InputAttributes["maxLength"]
+  pattern?: InputAttributes["pattern"]
+  required?: InputAttributes["required"]
+  form?: InputAttributes["form"]
+  type?: "text" | "password" | "search" | "tel"
 }
 
 // FIXME: make input/textarea compatible
 export type renderInputProps = inputProps & {
   id: string
   className: string
-  type: "text" | "password" | "search" // FIXME: fix case for <textarea />
+  type: "text" | "password" | "search" | "tel" // FIXME: fix case for <textarea />
   inputRef: InputRefType
 }
 type TextFieldProps = PropsWithChildren<
@@ -61,9 +75,6 @@ type TextFieldProps = PropsWithChildren<
     suffixIcon?: React.ComponentType<IconProps> // suffix element to be shown
     titleText?: string // title text to be shown upper side
     hintText?: string // hint text to be shown below
-    minLength?: number
-    maxLength?: number
-    pattern?: string
     state?: "normal" | "error" // visual states (focused, readonly or disabled is separated as prop/attr)
     options?: {
       showHintOnFocusOnly?: boolean
@@ -97,9 +108,18 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
       minLength,
       maxLength,
       pattern,
+      defaultValue,
+      value,
+      inputMode,
+      onInput,
+      onKeyDown,
+      onKeyUp,
+      onPaste,
       onBlur,
       onChange,
       onFocus,
+      required,
+      form,
       options = {
         hideClearButton: false,
         showHintOnFocusOnly: false,
@@ -155,6 +175,15 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
       minLength,
       maxLength,
       pattern,
+      defaultValue,
+      value,
+      inputMode,
+      required,
+      form,
+      onInput,
+      onKeyDown,
+      onKeyUp,
+      onPaste,
       ...props,
     }
 
