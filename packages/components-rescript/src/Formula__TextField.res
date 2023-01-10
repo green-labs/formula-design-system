@@ -15,7 +15,7 @@ type renderInputProps<'a> = {
   // common attrs, but unlike TextField these are non-optional
   id: string,
   className: string,
-  _type: [#text | #password],
+  _type: [#text | #password | #search | #tel],
 }
 
 type options = {
@@ -30,7 +30,7 @@ external make: (
   ~className: string=?,
   ~props: {..}=?,
   ~name: string=?,
-  ~_type: [#text | #password | #search]=?,
+  ~_type: [#text | #password | #search | #tel]=?,
   ~placeholder: string=?,
   ~readOnly: bool=?,
   ~disabled: bool=?,

@@ -37,14 +37,14 @@ type inputProps = {
   onBlur?: React.FocusEventHandler<InputElement>
   onChange?: React.ChangeEventHandler<InputElement>
   onFocus?: React.FocusEventHandler<InputElement>
-  type?: "text" | "password" | "search"
+  type?: "text" | "password" | "search" | "tel"
 }
 
 // FIXME: make input/textarea compatible
 export type renderInputProps = inputProps & {
   id: string
   className: string
-  type: "text" | "password" | "search" // FIXME: fix case for <textarea />
+  type: "text" | "password" | "search" | "tel" // FIXME: fix case for <textarea />
   inputRef: InputRefType
 }
 type TextFieldProps = PropsWithChildren<
