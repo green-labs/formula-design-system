@@ -27,6 +27,8 @@ module Trigger = {
     ~badge: badgeType=?,
     ~value: string,
     ~children: React.element=?,
+    ~triggerProps: ReactDOM.domProps,
+    ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "Trigger"
 }
 
