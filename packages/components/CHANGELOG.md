@@ -1,5 +1,13 @@
 # @greenlabs/formula-components
 
+## 0.0.5-next.22
+
+### Patch Changes
+
+- 94af84d: feat: add tel type to TextField
+  feat: Add triggerProps / forwardRef to TextTab.Trigger
+  feat: add `value` and `inputMode`, etc must-have html attributes to TextField
+
 ## 0.0.5-next.21
 
 ### Patch Changes

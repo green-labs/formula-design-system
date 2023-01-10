@@ -1,6 +1,6 @@
 {
   "name": "@greenlabs/rescript-formula-components",
-  "version": "0.0.5-next.21",
+  "version": "0.0.5-next.22",
   "repository": {
     "type": "git",
     "url": "git@github.com:green-labs/formula-design-system.git",
@@ -21,7 +21,7 @@
     "rescript": "^10.0.0"
   },
   "dependencies": {
-    "@greenlabs/formula-components": "0.0.5-next.21",
+    "@greenlabs/formula-components": "0.0.5-next.22",
     "@greenlabs/formula-design-token": "0.0.5-next.6"
   },
   "scripts": {

@@ -7,6 +7,7 @@
     "@greenlabs/formula-design-token": "0.0.4"
   },
   "changesets": [
+    "brave-knives-tap",
     "clean-geese-invent",
     "clean-seas-drive",
     "clever-fireants-cough",
