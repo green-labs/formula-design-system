@@ -35,7 +35,7 @@ const buttonSizes = {
   md: {
     borderRadius: 10,
     height: 48,
-    ...extract(font.body.md.regular, fontSizeKeyMaps),
+    ...extract(font.body.md.medium, fontSizeKeyMaps),
   },
   lg: {
     borderRadius: 12,
