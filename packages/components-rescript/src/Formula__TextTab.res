@@ -16,7 +16,7 @@ module List = {
 
 module Trigger = {
   type badgeType = {
-    type_: [#count | #simple | #countSimple],
+    @as("type") _type: [#count | #simple | #countSimple],
     value?: int,
   }
 

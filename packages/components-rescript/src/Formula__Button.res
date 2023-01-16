@@ -26,7 +26,7 @@ module Container = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     // React Synthetic Events
-    @as("type") ~type_: string=?,
+    ~_type: string=?,
     ~onClick: ReactEvent.Mouse.t => unit=?,
     // Formula Button Props
     ~color: color,
@@ -48,7 +48,7 @@ module Icon = {
   @module("@greenlabs/formula-components") @react.component
   external make: (
     // React Synthetic Events
-    @as("type") ~type_: string=?,
+    ~_type: string=?,
     ~onClick: ReactEvent.Mouse.t => unit=?,
     // Formula Button Props
     ~color: color,
