@@ -1,5 +1,12 @@
 # @greenlabs/formula-components
 
+## 0.0.5-next.24
+
+### Patch Changes
+
+- 53918a5: - type 바인딩 오류 수정
+  - TextField `autoFocus` prop 추가
+
 ## 0.0.5-next.23
 
 ### Patch Changes
