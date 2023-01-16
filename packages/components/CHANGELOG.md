@@ -1,5 +1,11 @@
 # @greenlabs/formula-components
 
+## 0.0.5-next.23
+
+### Patch Changes
+
+- 063bf40: fix: ContainerButton medium size weight should be md
+
 ## 0.0.5-next.22
 
 ### Patch Changes
