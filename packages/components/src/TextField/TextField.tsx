@@ -51,6 +51,7 @@ type inputProps = {
   pattern?: InputAttributes["pattern"]
   required?: InputAttributes["required"]
   form?: InputAttributes["form"]
+  autoFocus?: InputAttributes["autoFocus"]
   type?: "text" | "password" | "search" | "tel"
 }
 
@@ -120,6 +121,7 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
       onFocus,
       required,
       form,
+      autoFocus,
       options = {
         hideClearButton: false,
         showHintOnFocusOnly: false,
@@ -180,6 +182,7 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
       inputMode,
       required,
       form,
+      autoFocus,
       onInput,
       onKeyDown,
       onKeyUp,
