@@ -118,14 +118,14 @@ let textTextTab = () => {
       title="텍스트 "
       value="b"
       badge={{
-        type_: #countSimple,
+        _type: #countSimple,
         value: 9,
       }}
     />
     <TextTab.Trigger
       value="c"
       badge={{
-        type_: #simple,
+        _type: #simple,
       }}>
       <Icon.ArrowDownLineBold />
     </TextTab.Trigger>
