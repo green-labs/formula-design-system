@@ -174,19 +174,6 @@ export const Textarea_and_Ref_Etc: ComponentStory<typeof TextField> = (
     }
   })
 
-  const inputContainer = React.memo(
-    React.forwardRef<InputElement, inputContainerProps>(
-      ({ type, ...props }, ref) => {
-        return (
-          <TextAreaAutosize
-            ref={ref as React.ForwardedRef<HTMLTextAreaElement>}
-            {...props}
-          />
-        )
-      }
-    )
-  )
-
   return (
     <ThemeScope
       render={({ className }) => (
@@ -206,17 +193,34 @@ export const Textarea_and_Ref_Etc: ComponentStory<typeof TextField> = (
           <TextField
             {...args}
             titleText="using `react-textarea-autosize` as `inputContainer`"
-            inputContainer={inputContainer}
+            renderInput={({ type, inputRef, ...props }) => {
+              return (
+                <TextAreaAutosize
+                  ref={inputRef as React.ForwardedRef<HTMLTextAreaElement>}
+                  {...props}
+                />
+              )
+            }}
           />
           <br />
           <TextField
             {...args}
+            variant="boxFill"
             titleText="options.showHintOnFocusOnly | options.hideClearButton"
             options={{
               showHintOnFocusOnly: true,
               hideClearButton: true,
             }}
           />
+          <TextField
+            {...args}
+            onChange={(e) => {
+              const { value } = e.target
+              console.log(value)
+            }}
+            titleText="onChange: see console"
+          />
+          <TextField {...args} type="search" titleText="type=search" />
         </form>
       )}
     />

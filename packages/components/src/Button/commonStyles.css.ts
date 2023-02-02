@@ -25,17 +25,17 @@ const buttonSizes = {
   xs: {
     borderRadius: 6,
     height: 32,
-    ...extract(font.body.sm.regular, fontSizeKeyMaps),
+    ...extract(font.body.sm.medium, fontSizeKeyMaps),
   },
   sm: {
     borderRadius: 8,
     height: 40,
-    ...extract(font.body.sm.regular, fontSizeKeyMaps),
+    ...extract(font.body.sm.medium, fontSizeKeyMaps),
   },
   md: {
     borderRadius: 10,
     height: 48,
-    ...extract(font.body.md.regular, fontSizeKeyMaps),
+    ...extract(font.body.md.medium, fontSizeKeyMaps),
   },
   lg: {
     borderRadius: 12,

@@ -1,7 +1,7 @@
 // https://react-svgr.com/docs/options/
 
 module.exports = {
-  template: require("./templates/svgr-cli.template"),
+  template: require("./templates/svgr-cli.template.cjs"),
   // descProp:true,
   expandProps: true,
   dimensions: true,

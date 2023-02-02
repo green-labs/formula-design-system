@@ -88,7 +88,7 @@ let testTextField = () => {
     <TextField prefixIcon={Icon.ArrowDownLineBold.make} suffixIcon={Icon.ArrowDownLineBold.make} />
     <TextField inputTag="textarea" />
     <TextField
-      inputContainer={({?onChange, id, className, inputRef}) => {
+      renderInput={({?onChange, id, className, inputRef}) => {
         <input ?onChange id className ref={inputRef} />
       }}
     />
@@ -101,8 +101,10 @@ let testTextField = () => {
 }
 
 let textTextTab = () => {
+  let triggerTestRef = React.useRef(Js.Nullable.null)
+
   <TextTab.List
-    rootProps={{"defaultValue": "a"}}
+    defaultValue="a"
     fullWidth={true}
     onValueChange={_ => ()}
     contents={<>
@@ -112,17 +114,18 @@ let textTextTab = () => {
     </>}>
     <TextTab.Trigger title="텍스트 a" value="a" icon={Icon.ArrowDownLineBold.make} />
     <TextTab.Trigger
+      ref={ReactDOM.Ref.domRef(triggerTestRef)}
       title="텍스트 "
       value="b"
       badge={{
-        type_: #countSimple,
+        _type: #countSimple,
         value: 9,
       }}
     />
     <TextTab.Trigger
       value="c"
       badge={{
-        type_: #simple,
+        _type: #simple,
       }}>
       <Icon.ArrowDownLineBold />
     </TextTab.Trigger>

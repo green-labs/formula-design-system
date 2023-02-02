@@ -3,6 +3,9 @@ module List = {
   external make: (
     ~props: {..}=?,
     ~rootProps: {..}=?, // TODO: RadixUI props
+    ~dir: [#ltr | #rtl]=?,
+    ~value: string=?,
+    ~defaultValue: string=?,
     ~contents: React.element=?,
     ~fullWidth: bool=?,
     ~onValueChange: string => unit=?,
@@ -13,7 +16,7 @@ module List = {
 
 module Trigger = {
   type badgeType = {
-    type_: [#count | #simple | #countSimple],
+    @as("type") _type: [#count | #simple | #countSimple],
     value?: int,
   }
 
@@ -24,6 +27,8 @@ module Trigger = {
     ~badge: badgeType=?,
     ~value: string,
     ~children: React.element=?,
+    ~triggerProps: ReactDOM.domProps=?,
+    ~ref: ReactDOM.Ref.t=?,
   ) => React.element = "Trigger"
 }
 

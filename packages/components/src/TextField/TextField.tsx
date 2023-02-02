@@ -21,35 +21,52 @@ import {
 import type { IconProps } from "../Icon"
 import { DeleteFill } from "../Icon"
 import { COMPONENT_CLASS, stateClass } from "./common"
+import { triggerNativeEventFor } from "../utils/event"
 
 type sizeVariantKey = keyof typeof textFieldSizeVariants
 type variantKey = keyof typeof textFieldVariants
 export type InputElement = HTMLInputElement | HTMLTextAreaElement
 type InputRefType = React.Ref<HTMLInputElement> & React.Ref<HTMLTextAreaElement>
 
+type InputAttributes = React.InputHTMLAttributes<InputElement>
+
 type inputProps = {
   props?: {}
-  name?: string
-  readOnly?: boolean
-  disabled?: boolean
-  placeholder?: string
-  onChange?: React.ChangeEventHandler<InputElement>
-  onFocus?: React.FocusEventHandler<InputElement>
-  type?: "text" | "password"
+  name?: InputAttributes["name"]
+  readOnly?: InputAttributes["readOnly"]
+  disabled?: InputAttributes["disabled"]
+  placeholder?: InputAttributes["placeholder"]
+  onBlur?: InputAttributes["onBlur"]
+  onChange?: InputAttributes["onChange"]
+  onFocus?: InputAttributes["onFocus"]
+  onInput?: InputAttributes["onInput"]
+  onKeyDown?: InputAttributes["onKeyDown"]
+  onKeyUp?: InputAttributes["onKeyUp"]
+  onPaste?: InputAttributes["onPaste"]
+  defaultValue?: InputAttributes["defaultValue"]
+  value?: InputAttributes["value"]
+  inputMode?: InputAttributes["inputMode"]
+  minLength?: InputAttributes["minLength"]
+  maxLength?: InputAttributes["maxLength"]
+  pattern?: InputAttributes["pattern"]
+  required?: InputAttributes["required"]
+  form?: InputAttributes["form"]
+  autoFocus?: InputAttributes["autoFocus"]
+  type?: "text" | "password" | "search" | "tel"
 }
 
 // FIXME: make input/textarea compatible
-export type inputContainerProps = inputProps & {
+export type renderInputProps = inputProps & {
   id: string
   className: string
-  type: "text" | "password" // FIXME: fix case for <textarea />
+  type: "text" | "password" | "search" | "tel" // FIXME: fix case for <textarea />
   inputRef: InputRefType
 }
 type TextFieldProps = PropsWithChildren<
   inputProps & {
     id?: string
     className?: string
-    inputContainer?: React.ComponentType<inputContainerProps>
+    renderInput?: (props: renderInputProps) => ReactNode
     inputTag?: "input" | "textarea"
     size?: sizeVariantKey
     variant?: "boxOutline" | "boxFill" | "line"
@@ -73,8 +90,8 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
       id,
       className = "",
       name,
-      inputContainer,
-      inputTag = "input",
+      renderInput,
+      inputTag: InputTag = "input",
       props = {},
       placeholder,
       size = "medium",
@@ -89,8 +106,22 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
       readOnly,
       disabled,
       state,
+      minLength,
+      maxLength,
+      pattern,
+      defaultValue,
+      value,
+      inputMode,
+      onInput,
+      onKeyDown,
+      onKeyUp,
+      onPaste,
+      onBlur,
       onChange,
       onFocus,
+      required,
+      form,
+      autoFocus,
       options = {
         hideClearButton: false,
         showHintOnFocusOnly: false,
@@ -98,7 +129,6 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
     },
     forwardedRef
   ) => {
-    const InputContainer = inputContainer ?? inputTag
     const variantKey = `${variant}.${size}` as variantKey
 
     if (
@@ -133,6 +163,33 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
     const iconSize = size === "large" || size === "medium" ? "xl" : "lg"
     const innerId = React.useId()
 
+    const inputProps = {
+      id: id ?? innerId,
+      className: inputStyle,
+      name,
+      type,
+      onBlur,
+      onChange,
+      onFocus,
+      placeholder,
+      readOnly,
+      disabled,
+      minLength,
+      maxLength,
+      pattern,
+      defaultValue,
+      value,
+      inputMode,
+      required,
+      form,
+      autoFocus,
+      onInput,
+      onKeyDown,
+      onKeyUp,
+      onPaste,
+      ...props,
+    }
+
     return (
       <label
         className={`${COMPONENT_CLASS} ${componentClass} ${className} ${stateClass(
@@ -166,27 +223,19 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
               />
             </span>
           ) : null}
-          <InputContainer
-            id={id ?? innerId}
-            ref={inputRef}
-            inputRef={inputRef}
-            name={name}
-            type={type}
-            onChange={onChange}
-            onFocus={onFocus}
-            placeholder={placeholder}
-            className={inputStyle}
-            readOnly={readOnly}
-            disabled={disabled}
-            {...props}
-          />
+          {renderInput ? (
+            renderInput({ ...inputProps, inputRef })
+          ) : (
+            <InputTag ref={inputRef} {...inputProps} />
+          )}
+
           {!options.hideClearButton && (
             <span
               className={clearButtonStyle}
               onClick={(_) => {
                 const inputEl = inputRef.current
                 if (inputEl) {
-                  inputEl.value = ""
+                  triggerNativeEventFor(inputEl, { event: "input", value: "" })
                 }
               }}
             >

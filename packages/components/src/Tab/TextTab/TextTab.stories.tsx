@@ -32,8 +32,9 @@ const Template = (args) => {
         },
       }}
     >
+      defaultValue: b
       <Tab.List
-        rootProps={{ defaultValue: "a" }}
+        defaultValue="b"
         fullWidth
         onValueChange={(_) => {}}
         contents={

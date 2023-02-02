@@ -275,11 +275,26 @@ export const inputStyle = style({
   "::placeholder": {
     color: theme.colors["gray-40"],
   },
+  fontFamily: theme.font.body,
   ":focus": {
     outline: "none", // FIXME
   },
-  fontFamily: theme.font.body,
+  // a temporary hack to prevent input clipping outer border
+  borderTopRightRadius: 4,
+  borderBottomRightRadius: 4,
   selectors: {
+    [`&::-webkit-search-decoration,
+      &::-webkit-search-cancel-button,
+      &::-webkit-search-results-button,
+      &::-webkit-search-results-decoration`]: {
+      display: "none",
+    },
+    [`&::-ms-clear,
+      &::-ms-reveal`]: {
+      display: "none",
+      width: 0,
+      height: 0,
+    },
     [`${textFieldVariants["line.large"]} &`]: {
       vars: {
         [vars.inputHeight]: "33px",
