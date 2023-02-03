@@ -1,5 +1,5 @@
 import type { ButtonSectionProps } from "../common/ButtonSection"
-import { titleTextBase, bodyTextBase } from "../style.css"
+import { titleTextBase, bodyTextBase, dialogBase } from "../style.css"
 import { Text } from "../../Text/Text"
 import ContainerButton from "../../Button/ContainerButton"
 import {
@@ -8,12 +8,14 @@ import {
 } from "../common/style.css"
 import { sizeVariant } from "./style.css"
 import { variantChecker } from "../../utils/util"
+import { TextField } from "../../TextField/TextField"
 
 type sizeVariantKey = keyof typeof sizeVariant
 export interface TextDialogProps extends ButtonSectionProps {
   size: sizeVariantKey
   title?: string
   text: string
+  placeholder?: string
 }
 
 const TextDialog = ({
@@ -25,6 +27,7 @@ const TextDialog = ({
   primaryLabel,
   onSecondary,
   secondaryLabel,
+  placeholder,
 }: TextDialogProps) => {
   variantChecker(size, sizeVariant)
   variantChecker(buttonType, buttonSectionVariant)
@@ -35,17 +38,27 @@ const TextDialog = ({
   const buttonSectionClass = `${buttonSectionVariant[buttonType]} ${buttonSectionAuxiliaryVariant[buttonSectionAuxiliaryVariantKey]}`
 
   return (
-    <div className={sizeVariantClass}>
+    <div className={`${sizeVariantClass} ${dialogBase}`}>
       {title ? (
-        <Text.Headline className={titleTextBase}>{title}</Text.Headline>
+        <Text.Headline
+          size="lg"
+          className={titleTextBase}
+          color="neutral-primary-contents"
+        >
+          {title}
+        </Text.Headline>
       ) : null}
       <Text.Body
         className={`${bodyTextBase} ${title ? "with-title" : ""}`}
         size={title ? "md" : "lg"}
+        color={
+          title ? "neutral-secondary-contents" : "neutral-primary-contents"
+        }
         tag="span"
       >
         {text}
       </Text.Body>
+      <TextField placeholder={placeholder} size="large" />
       <div className={buttonSectionClass}>
         <ContainerButton
           text={secondaryLabel}

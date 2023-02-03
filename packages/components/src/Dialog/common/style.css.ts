@@ -17,7 +17,7 @@ export const dialogBase = style({
 
 const buttonSectionBase = style({
   display: "grid",
-  margin: "24px 20px 20px 20px",
+  marginTop: "24px",
 })
 
 const evenlyButtonSectionBase = [

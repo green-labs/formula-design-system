@@ -16,6 +16,7 @@ WithTitle.args = {
   buttonType: "evenly",
   primaryLabel: "확인",
   secondaryLabel: "취소",
+  placeholder: "플레이스홀더 텍스트",
 }
 
 export const WithoutTitle = TextDialogTemplate.bind({})
@@ -25,6 +26,7 @@ WithoutTitle.args = {
   buttonType: "evenly",
   primaryLabel: "확인",
   secondaryLabel: "취소",
+  placeholder: "플레이스홀더 텍스트",
 }
 
 export default {
