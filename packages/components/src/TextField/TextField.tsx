@@ -20,7 +20,7 @@ import {
 } from "./styles.css"
 import type { IconProps } from "../Icon"
 import { DeleteFill } from "../Icon"
-import { COMPONENT_CLASS, stateClass } from "./common"
+import { stateClass } from "./common"
 import { triggerNativeEventFor } from "../utils/event"
 
 type sizeVariantKey = keyof typeof textFieldSizeVariants
@@ -192,14 +192,12 @@ export const TextField = React.forwardRef<InputElement, TextFieldProps>(
 
     return (
       <label
-        className={`${COMPONENT_CLASS} ${componentClass} ${className} ${stateClass(
-          {
-            disabled,
-            readOnly,
-            error: state === "error",
-            variantLine: variant === "line",
-          }
-        )}`}
+        className={`${componentClass} ${className} ${stateClass({
+          disabled,
+          readOnly,
+          error: state === "error",
+          variantLine: variant === "line",
+        })}`}
         htmlFor={id ?? innerId}
         style={
           options.showHintOnFocusOnly

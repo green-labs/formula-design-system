@@ -2,7 +2,6 @@ import * as React from "react"
 import type { ComponentMeta, ComponentStory } from "@storybook/react"
 import TextAreaAutosize from "react-textarea-autosize"
 
-import type { inputContainerProps, InputElement } from "./TextField"
 import { TextField } from "./TextField"
 import { SearchLineBold, EyeLineBold } from "../Icon"
 import { createDisabledArgs } from "../utils/storybook"
