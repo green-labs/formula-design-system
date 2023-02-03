@@ -1,11 +1,14 @@
 import React from "react"
 import type { ComponentMeta, ComponentStory } from "@storybook/react"
 import TextDialog from "./TextDialog"
+import { ThemeScope } from "../../theme"
 
 const TextDialogTemplate: ComponentStory<typeof TextDialog> = (args) => (
-  <div style={{ width: "100vw", height: "100vh" }}>
-    <TextDialog {...args} />
-  </div>
+  <ThemeScope>
+    <div style={{ width: "100vw", height: "100vh" }}>
+      <TextDialog {...args} />
+    </div>
+  </ThemeScope>
 )
 export const WithTitle = TextDialogTemplate.bind({})
 WithTitle.args = {

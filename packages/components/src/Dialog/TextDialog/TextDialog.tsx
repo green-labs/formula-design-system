@@ -8,7 +8,8 @@ import {
 } from "../common/style.css"
 import { sizeVariant } from "./style.css"
 import { variantChecker } from "../../utils/util"
-import { TextField } from "../../TextField/TextField"
+import { InputElement, TextField } from "../../TextField/TextField"
+import { useState } from "react"
 
 type sizeVariantKey = keyof typeof sizeVariant
 export interface TextDialogProps extends ButtonSectionProps {
@@ -37,6 +38,8 @@ const TextDialog = ({
   const buttonSectionAuxiliaryVariantKey: keyof typeof buttonSectionAuxiliaryVariant = `${buttonType}-${size}`
   const buttonSectionClass = `${buttonSectionVariant[buttonType]} ${buttonSectionAuxiliaryVariant[buttonSectionAuxiliaryVariantKey]}`
 
+  const [state, setState] = useState("")
+
   return (
     <div className={`${sizeVariantClass} ${dialogBase}`}>
       {title ? (
@@ -58,7 +61,11 @@ const TextDialog = ({
       >
         {text}
       </Text.Body>
-      <TextField placeholder={placeholder} size="large" />
+      <TextField
+        placeholder={placeholder}
+        size="large"
+        onChange={(e) => setState((_) => e.target.value)}
+      />
       <div className={buttonSectionClass}>
         <ContainerButton
           text={secondaryLabel}
@@ -72,6 +79,7 @@ const TextDialog = ({
           block
           size="md"
           color="primary"
+          value={state}
           onClick={onPrimary}
         />
       </div>
