@@ -30,10 +30,11 @@ const evenlyButtonSectionBase = [
 
 const verticalButtonSectionBase = [
   buttonSectionBase,
-  {
-    gridTemplateRows: "1fr 1fr",
+  style({
+    display: "flex",
+    flexDirection: "column-reverse",
     gap: "8px",
-  },
+  }),
 ]
 
 export const buttonSectionVariant = styleVariants({
