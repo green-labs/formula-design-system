@@ -14,6 +14,7 @@ import {
   titleText,
 } from "./style.css"
 import { variantChecker } from "../../utils/util"
+import { Content, Close } from "@radix-ui/react-dialog"
 
 type sizeVariantKey = keyof typeof sizeVariant
 
@@ -44,43 +45,49 @@ const ContentDialog = ({
   const contentSizeClass = contentSizeVariant[size]
 
   return (
-    <div className={`${sizeVariantClass} ${dialogBase}`}>
-      <Text.Headline
-        size="lg"
-        className={`${titleTextBase} ${titleText}`}
-        color="neutral-primary-contents"
-      >
-        {title}
-      </Text.Headline>
-
-      {text ? (
-        <Text.Body
-          className={`${bodyTextBase} "with-title" ${bodyText}`}
-          size={"md"}
-          color={"neutral-secondary-contents"}
-          tag="span"
+    <Content>
+      <div className={`${sizeVariantClass} ${dialogBase}`}>
+        <Text.Headline
+          size="lg"
+          className={`${titleTextBase} ${titleText}`}
+          color="neutral-primary-contents"
         >
-          {text}
-        </Text.Body>
-      ) : null}
-      <div className={contentSizeClass}>{children} </div>
-      <div className={buttonSectionClass}>
-        <ContainerButton
-          text={secondaryLabel}
-          block
-          size="md"
-          color="tertiary-gray"
-          onClick={onSecondary}
-        />
-        <ContainerButton
-          text={primaryLabel}
-          block
-          size="md"
-          color="primary"
-          onClick={onPrimary}
-        />
+          {title}
+        </Text.Headline>
+
+        {text ? (
+          <Text.Body
+            className={`${bodyTextBase} "with-title" ${bodyText}`}
+            size={"md"}
+            color={"neutral-secondary-contents"}
+            tag="span"
+          >
+            {text}
+          </Text.Body>
+        ) : null}
+        <div className={contentSizeClass}>{children} </div>
+        <div className={buttonSectionClass}>
+          <Close asChild={true}>
+            <ContainerButton
+              text={secondaryLabel}
+              block
+              size="md"
+              color="tertiary-gray"
+              onClick={onSecondary}
+            />
+          </Close>
+          <Close asChild={true}>
+            <ContainerButton
+              text={primaryLabel}
+              block
+              size="md"
+              color="primary"
+              onClick={onPrimary}
+            />
+          </Close>
+        </div>
       </div>
-    </div>
+    </Content>
   )
 }
 

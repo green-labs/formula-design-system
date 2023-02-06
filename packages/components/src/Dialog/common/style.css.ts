@@ -77,3 +77,9 @@ export const buttonSectionAuxiliaryVariant = styleVariants({
   "vertical-medium": verticalButtonSectionBase,
   "vertical-large": verticalButtonSectionBase,
 })
+
+export const overlayBase = style({
+  inset: "0px",
+  position: "fixed",
+  background: "rgba(0, 0, 0, 0.4)",
+})

@@ -2,19 +2,36 @@ import React from "react"
 import type { ComponentMeta, ComponentStory } from "@storybook/react"
 import ContentDialog from "./ContentDialog"
 import { ThemeScope } from "../../theme"
+import * as RadixDialog from "@radix-ui/react-dialog"
+import Overlay from "../Overlay"
 
-const horizontalImage =
-  "https://images.unsplash.com/photo-1675019674011-9141ec0df347?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80"
-const verticalImage =
-  "https://images.unsplash.com/photo-1660510200089-ba3950a07493?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=654&q=80"
+const imageSrc =
+  "https://images.unsplash.com/photo-1663630487487-05d4f899da6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=726&q=80"
 
 const ContentDialogTemplate: ComponentStory<typeof ContentDialog> = (args) => (
   <ThemeScope>
     <div style={{ width: "100vw", height: "100vh" }}>
-      {/* <ContentDialog size="medium" {...args} ><img src={verticalImage} style={{width: "100%"}} alt="content"/></ContentDialog> */}
-      <ContentDialog size="large" {...args}>
-        <img src={verticalImage} style={{ width: "100%" }} alt="content" />
-      </ContentDialog>
+      <RadixDialog.Root>
+        <RadixDialog.Trigger>open medium dialog</RadixDialog.Trigger>
+        <RadixDialog.Portal>
+          <Overlay />
+
+          <ContentDialog size="medium" {...args}>
+            <img src={imageSrc} style={{ width: "100%" }} alt="content" />
+          </ContentDialog>
+        </RadixDialog.Portal>
+      </RadixDialog.Root>
+      <hr />
+      <RadixDialog.Root>
+        <RadixDialog.Trigger>open large dialog</RadixDialog.Trigger>
+        <RadixDialog.Portal>
+          <Overlay />
+
+          <ContentDialog size="large" {...args}>
+            <img src={imageSrc} style={{ width: "100%" }} alt="content" />
+          </ContentDialog>
+        </RadixDialog.Portal>
+      </RadixDialog.Root>
     </div>
   </ThemeScope>
 )

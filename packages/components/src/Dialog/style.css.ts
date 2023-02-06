@@ -4,6 +4,7 @@ import { tokens } from "@greenlabs/formula-design-token"
 export const dialogBase = style({
   padding: "24px 24px",
   borderRadius: "16px",
+  background: "white",
 })
 
 export const titleTextBase = style({

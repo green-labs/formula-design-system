@@ -10,6 +10,7 @@ import { sizeVariant } from "./style.css"
 import { variantChecker } from "../../utils/util"
 import { InputElement, TextField } from "../../TextField/TextField"
 import { useState } from "react"
+import { Content, Close } from "@radix-ui/react-dialog"
 
 type sizeVariantKey = keyof typeof sizeVariant
 export interface TextDialogProps extends ButtonSectionProps {
@@ -41,49 +42,55 @@ const TextDialog = ({
   const [state, setState] = useState("")
 
   return (
-    <div className={`${sizeVariantClass} ${dialogBase}`}>
-      {title ? (
-        <Text.Headline
-          size="lg"
-          className={titleTextBase}
-          color="neutral-primary-contents"
+    <Content>
+      <div className={`${sizeVariantClass} ${dialogBase}`}>
+        {title ? (
+          <Text.Headline
+            size="lg"
+            className={titleTextBase}
+            color="neutral-primary-contents"
+          >
+            {title}
+          </Text.Headline>
+        ) : null}
+        <Text.Body
+          className={`${bodyTextBase} ${title ? "with-title" : ""}`}
+          size={title ? "md" : "lg"}
+          color={
+            title ? "neutral-secondary-contents" : "neutral-primary-contents"
+          }
+          tag="span"
         >
-          {title}
-        </Text.Headline>
-      ) : null}
-      <Text.Body
-        className={`${bodyTextBase} ${title ? "with-title" : ""}`}
-        size={title ? "md" : "lg"}
-        color={
-          title ? "neutral-secondary-contents" : "neutral-primary-contents"
-        }
-        tag="span"
-      >
-        {text}
-      </Text.Body>
-      <TextField
-        placeholder={placeholder}
-        size="large"
-        onChange={(e) => setState((_) => e.target.value)}
-      />
-      <div className={buttonSectionClass}>
-        <ContainerButton
-          text={secondaryLabel}
-          block
-          size="md"
-          color="tertiary-gray"
-          onClick={onSecondary}
+          {text}
+        </Text.Body>
+        <TextField
+          placeholder={placeholder}
+          size="large"
+          onChange={(e) => setState((_) => e.target.value)}
         />
-        <ContainerButton
-          text={primaryLabel}
-          block
-          size="md"
-          color="primary"
-          value={state}
-          onClick={onPrimary}
-        />
+        <div className={buttonSectionClass}>
+          <Close asChild={true}>
+            <ContainerButton
+              text={secondaryLabel}
+              block
+              size="md"
+              color="tertiary-gray"
+              onClick={onSecondary}
+            />
+          </Close>
+          <Close asChild={true}>
+            <ContainerButton
+              text={primaryLabel}
+              block
+              size="md"
+              color="primary"
+              value={state}
+              onClick={onPrimary}
+            />
+          </Close>
+        </div>
       </div>
-    </div>
+    </Content>
   )
 }
 
