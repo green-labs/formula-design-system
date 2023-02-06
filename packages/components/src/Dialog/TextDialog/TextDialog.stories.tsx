@@ -3,30 +3,23 @@ import type { ComponentMeta, ComponentStory } from "@storybook/react"
 import TextDialog from "./TextDialog"
 import { ThemeScope } from "../../theme"
 import * as RadixDialog from "@radix-ui/react-dialog"
-import Overlay from "../Overlay"
 
 const TextDialogTemplate: ComponentStory<typeof TextDialog> = (args) => (
   <ThemeScope>
     <div style={{ width: "100vw", height: "100vh" }}>
       <RadixDialog.Root>
         <RadixDialog.Trigger>open dialog with title</RadixDialog.Trigger>
-        <RadixDialog.Portal>
-          <Overlay />
 
-          <TextDialog
-            title="제목은 두줄까지입니다.\n두줄까지입니다.\n세줄은 안됩니다. 제목은 두줄까지입니다.\n두줄까지입니다.\n세줄은 안됩니다"
-            {...args}
-          />
-        </RadixDialog.Portal>
+        <TextDialog
+          title="제목은 두줄까지입니다.\n두줄까지입니다.\n세줄은 안됩니다. 제목은 두줄까지입니다.\n두줄까지입니다.\n세줄은 안됩니다"
+          {...args}
+        />
       </RadixDialog.Root>
       <hr />
       <RadixDialog.Root>
         <RadixDialog.Trigger>open dialog without title</RadixDialog.Trigger>
-        <RadixDialog.Portal>
-          <Overlay />
 
-          <TextDialog {...args} />
-        </RadixDialog.Portal>
+        <TextDialog {...args} />
       </RadixDialog.Root>
     </div>
   </ThemeScope>

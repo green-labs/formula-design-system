@@ -3,7 +3,6 @@ import type { ComponentMeta, ComponentStory } from "@storybook/react"
 import ContentDialog from "./ContentDialog"
 import { ThemeScope } from "../../theme"
 import * as RadixDialog from "@radix-ui/react-dialog"
-import Overlay from "../Overlay"
 
 const imageSrc =
   "https://images.unsplash.com/photo-1663630487487-05d4f899da6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=726&q=80"
@@ -13,24 +12,18 @@ const ContentDialogTemplate: ComponentStory<typeof ContentDialog> = (args) => (
     <div style={{ width: "100vw", height: "100vh" }}>
       <RadixDialog.Root>
         <RadixDialog.Trigger>open medium dialog</RadixDialog.Trigger>
-        <RadixDialog.Portal>
-          <Overlay />
 
-          <ContentDialog size="medium" {...args}>
-            <img src={imageSrc} style={{ width: "100%" }} alt="content" />
-          </ContentDialog>
-        </RadixDialog.Portal>
+        <ContentDialog size="medium" {...args}>
+          <img src={imageSrc} style={{ width: "100%" }} alt="content" />
+        </ContentDialog>
       </RadixDialog.Root>
       <hr />
       <RadixDialog.Root>
         <RadixDialog.Trigger>open large dialog</RadixDialog.Trigger>
-        <RadixDialog.Portal>
-          <Overlay />
 
-          <ContentDialog size="large" {...args}>
-            <img src={imageSrc} style={{ width: "100%" }} alt="content" />
-          </ContentDialog>
-        </RadixDialog.Portal>
+        <ContentDialog size="large" {...args}>
+          <img src={imageSrc} style={{ width: "100%" }} alt="content" />
+        </ContentDialog>
       </RadixDialog.Root>
     </div>
   </ThemeScope>
