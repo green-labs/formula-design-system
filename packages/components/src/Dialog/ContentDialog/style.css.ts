@@ -11,14 +11,18 @@ export const sizeVariant = styleVariants({
     dialogBase,
     contentDialogBase,
     {
-      width: "488px",
+      width: "100%",
+      maxWidth: "488px",
+      margin: "0px 20px",
     },
   ],
   large: [
     dialogBase,
     contentDialogBase,
     {
-      width: "800px",
+      width: "100%",
+      maxWidth: "800px",
+      margin: "0px 20px",
     },
   ],
 })
@@ -37,22 +41,7 @@ export const bodyText = style({
   overflow: "hidden",
 })
 
-const contentBase = style({
+export const contentBase = style({
   overflow: "scroll",
   margin: "16px 0px",
-})
-
-export const contentSizeVariant = styleVariants({
-  medium: [
-    contentBase,
-    {
-      width: "440px",
-    },
-  ],
-  large: [
-    contentBase,
-    {
-      width: "752px",
-    },
-  ],
 })

@@ -7,12 +7,7 @@ import {
   buttonSectionVariant,
   buttonSectionAuxiliaryVariant,
 } from "../common/style.css"
-import {
-  bodyText,
-  contentSizeVariant,
-  sizeVariant,
-  titleText,
-} from "./style.css"
+import { bodyText, contentBase, sizeVariant, titleText } from "./style.css"
 import { variantChecker } from "../../utils/util"
 import { Content, Close, Portal } from "@radix-ui/react-dialog"
 import { forwardRef } from "react"
@@ -51,7 +46,6 @@ const ContentDialog = forwardRef<
     const sizeVariantClass = sizeVariant[size] ?? ""
     const buttonSectionAuxiliaryVariantKey: keyof typeof buttonSectionAuxiliaryVariant = `${buttonType}-${size}`
     const buttonSectionClass = `${buttonSectionVariant[buttonType]} ${buttonSectionAuxiliaryVariant[buttonSectionAuxiliaryVariantKey]}`
-    const contentSizeClass = contentSizeVariant[size]
 
     return (
       <Portal>
@@ -76,7 +70,7 @@ const ContentDialog = forwardRef<
                 {text}
               </Text.Body>
             ) : null}
-            <div className={contentSizeClass}>{children} </div>
+            <div className={contentBase}>{children} </div>
             <div className={buttonSectionClass}>
               <Close asChild={true}>
                 <ContainerButton
