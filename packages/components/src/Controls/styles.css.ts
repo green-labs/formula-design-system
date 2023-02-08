@@ -1,12 +1,7 @@
 import { style } from "@vanilla-extract/css"
 import { theme } from "../theme"
 
-export const controlStyle = style({
-  display: "flex",
-  alignItems: "center",
-})
-
-export const checkboxStyles = {
+const controlStyles = {
   container: style({
     display: "flex",
     alignItems: "center",
@@ -33,16 +28,13 @@ export const checkboxStyles = {
       },
     },
   }),
-  input: style({
-    transform: "translateX(-100%)",
-    position: "absolute",
-    pointerEvents: "none",
-    opacity: 0,
-    margin: 0,
-  }),
   label: style({
     paddingLeft: "0.5rem",
   }),
+}
+
+export const checkboxStyles = {
+  ...controlStyles,
   icon: style({
     selectors: {
       '[data-state="checked"] &': {
@@ -50,6 +42,29 @@ export const checkboxStyles = {
       },
       '[data-state="unchecked"] &': {
         fill: theme.colors["gray-30"],
+      },
+    },
+  }),
+}
+
+export const radioItemStyles = {
+  ...controlStyles,
+  button: style([
+    controlStyles.button,
+    {
+      borderRadius: "100%",
+    },
+  ]),
+  icon: style({
+    width: "0.5rem",
+    height: "0.5rem",
+    borderRadius: "100%",
+    selectors: {
+      '[data-state="checked"] &': {
+        backgroundColor: theme.colors["white"],
+      },
+      '[data-state="unchecked"] &': {
+        backgroundColor: theme.colors["gray-30"],
       },
     },
   }),
