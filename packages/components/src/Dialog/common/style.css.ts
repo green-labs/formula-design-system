@@ -7,7 +7,7 @@ export const dialogBase = style({
   boxSizing: "border-box",
   borderRadius: "16px",
   maxHeight: "calc(100vh - 140px)",
-  position: "absolute",
+  position: "fixed",
   boxShadow: shadow["1"].value,
   overflow: "hidden",
   left: "50%",
