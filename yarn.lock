@@ -1930,7 +1930,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@greenlabs/formula-components@0.0.5-next.24, @greenlabs/formula-components@workspace:packages/components":
+"@greenlabs/formula-components@0.0.5-next.25, @greenlabs/formula-components@workspace:packages/components":
   version: 0.0.0-use.local
   resolution: "@greenlabs/formula-components@workspace:packages/components"
   dependencies:
@@ -1991,7 +1991,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@greenlabs/rescript-formula-components@workspace:packages/components-rescript"
   dependencies:
-    "@greenlabs/formula-components": 0.0.5-next.24
+    "@greenlabs/formula-components": 0.0.5-next.25
     "@greenlabs/formula-design-token": 0.0.5-next.6
     "@rescript/react": ^0.10.3
     rescript: ^10.0.0

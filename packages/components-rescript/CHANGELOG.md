@@ -1,5 +1,13 @@
 # @greenlabs/rescript-formula-components
 
+## 0.0.5-next.25
+
+### Patch Changes
+
+- ee6aca6: update: add new icons
+- Updated dependencies [ee6aca6]
+  - @greenlabs/formula-components@0.0.5-next.25
+
 ## 0.0.5-next.24
 
 ### Patch Changes
