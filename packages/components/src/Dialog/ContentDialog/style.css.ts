@@ -13,7 +13,6 @@ export const sizeVariant = styleVariants({
     {
       width: "100%",
       maxWidth: "488px",
-      margin: "0px 20px",
     },
   ],
   large: [
@@ -22,7 +21,6 @@ export const sizeVariant = styleVariants({
     {
       width: "100%",
       maxWidth: "800px",
-      margin: "0px 20px",
     },
   ],
 })
