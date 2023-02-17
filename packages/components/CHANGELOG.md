@@ -1,5 +1,17 @@
 # @greenlabs/formula-components
 
+## 0.0.5-next.26
+
+### Patch Changes
+
+- d478e68: fix: button icon size
+
+## 0.0.5-next.25
+
+### Patch Changes
+
+- ee6aca6: update: add new icons
+
 ## 0.0.5-next.24
 
 ### Patch Changes

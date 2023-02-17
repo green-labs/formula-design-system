@@ -1,12 +1,12 @@
 import React from "react"
-import type { ComponentMeta, ComponentStory } from "@storybook/react"
+import type { Meta, StoryFn } from "@storybook/react"
 import { Text } from "./Text"
 import "../theme"
 
 import { createDisabledArgs } from "../utils/storybook"
 import { ThemeScope } from "../theme"
 
-const Template: ComponentStory<typeof Text> = (args) => {
+const Template: StoryFn<typeof Text> = (args) => {
   switch (args.component) {
     case "Headline":
       return (
@@ -167,4 +167,4 @@ Caption.argTypes = {
 export default {
   title: "Formula/Text",
   component: Text,
-} as ComponentMeta<typeof Text>
+} as Meta<typeof Text>
