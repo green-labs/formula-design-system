@@ -1,12 +1,12 @@
 import * as React from "react"
-import type { ComponentMeta, ComponentStory } from "@storybook/react"
+import type { Meta, StoryFn } from "@storybook/react"
 
 import { theme, ThemeScope } from "../theme"
 import { Badge as BadgeComponent } from "./Badge"
 import { createDisabledArgs } from "../utils/storybook"
 import CheckLineBold from "../Icon/generated/CheckLineBold"
 
-const Template: ComponentStory<typeof BadgeComponent> = (args) => {
+const Template: StoryFn<typeof BadgeComponent> = (args) => {
   return (
     <ThemeScope>
       <BadgeComponent size="small" />
@@ -39,4 +39,4 @@ Badge.argTypes = {
 export default {
   title: "Formula/Badge",
   component: Badge,
-} as ComponentMeta<typeof Badge>
+} as Meta<typeof Badge>
