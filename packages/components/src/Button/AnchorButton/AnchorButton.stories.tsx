@@ -1,11 +1,11 @@
 import * as React from "react"
-import type { ComponentMeta, ComponentStory } from "@storybook/react"
+import type { Meta, StoryFn } from "@storybook/react"
 
 import * as IconComponents from "../../Icon/generated"
 import AnchorButton from "."
 import { ThemeScope } from "../../theme"
 
-export const Button: ComponentStory<typeof AnchorButton> = (args) => {
+export const Button: StoryFn<typeof AnchorButton> = (args) => {
   return (
     <ThemeScope>
       <AnchorButton {...args} />
@@ -87,4 +87,4 @@ export default {
       ),
     },
   },
-} as ComponentMeta<typeof AnchorButton>
+} as Meta<typeof AnchorButton>

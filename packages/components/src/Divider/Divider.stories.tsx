@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Divider } from "./Divider"
 
-import type { ComponentMeta } from "@storybook/react"
+import type { Meta } from "@storybook/react"
 import { ThemeScope } from "../theme"
 
 const Template = (args) => (
@@ -32,4 +32,4 @@ VerticalSmall.args = {
 export default {
   title: "Formula/Divider",
   component: Divider,
-} as ComponentMeta<typeof Divider>
+} as Meta<typeof Divider>

@@ -1,5 +1,5 @@
 import * as React from "react"
-import type { ComponentMeta } from "@storybook/react"
+import type { Meta } from "@storybook/react"
 
 import { theme, ThemeScope } from "."
 import { tokens } from "@greenlabs/formula-design-token"
@@ -93,4 +93,4 @@ export const Color = (args) => {
 export default {
   title: "Formula/ThemeScope",
   component: _ThemeScope,
-} as ComponentMeta<typeof ThemeScope>
+} as Meta<typeof ThemeScope>
