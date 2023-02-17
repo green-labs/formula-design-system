@@ -78,6 +78,7 @@
   },
   "scripts": {
     "storybook": "storybook dev -p 6006",
+    "storybook-build": "storybook build",
     "build:js": "rollup -c",
     "build:types": "tsc -b",
     "build": "yarn clean && concurrently \"yarn build:js\" \"yarn build:types\"",
