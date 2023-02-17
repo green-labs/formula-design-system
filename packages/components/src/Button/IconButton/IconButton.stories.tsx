@@ -1,53 +1,53 @@
 import * as React from "react"
-import type { Meta, StoryFn } from "@storybook/react"
+import type { Meta } from "@storybook/react"
+import * as IconComponents from "../../Icon/generated"
 
 import IconButton from "."
-import * as IconComponents from "../../Icon/generated"
 import { ThemeScope } from "../../theme"
 
-export const Button: StoryFn<typeof IconButton> = (args) => {
-  return (
-    <ThemeScope>
-      <IconButton {...args} />
-    </ThemeScope>
-  )
+export const Button = {
+  args: {
+    disabled: false,
+    size: "xl",
+    color: "primary",
+    icon: "ArrowDownLineBold",
+  },
+  render: (args) => {
+    return (
+      <ThemeScope>
+        <IconButton {...args} />
+      </ThemeScope>
+    )
+  },
 }
-
-const Buttons = Button.bind({})
 
 export default {
   title: "Formula/Buttons/IconButton",
-  component: Buttons,
+  component: IconButton,
   argTypes: {
     disabled: {
-      defaultValue: false,
       control: "boolean",
       description: "버튼을 비활성화합니다.",
     },
     size: {
-      defaultValue: "xl",
       description: "버튼의 사이즈입니다.",
-      control: { type: "radio" },
+      control: "radio",
       options: ["xs", "sm", "md", "lg", "xl"],
     },
     color: {
-      defaultValue: "primary",
-      control: {
-        type: "radio",
-        options: [
-          "primary",
-          "secondary-gray",
-          "secondary-color",
-          "tertiary-gray",
-          "tertiary-color",
-          "negative-primary",
-          "negative-secondary",
-        ],
-      },
+      options: [
+        "primary",
+        "secondary-gray",
+        "secondary-color",
+        "tertiary-gray",
+        "tertiary-color",
+        "negative-primary",
+        "negative-secondary",
+      ],
+      control: "radio",
     },
     icon: {
-      defaultValue: IconComponents.ArrowDownLineBold,
-      control: { type: "select" },
+      control: "select",
       options: Object.keys(IconComponents),
       mapping: Object.entries(IconComponents).reduce(
         (p, [key, component]) => ({ ...p, [key]: component }),
