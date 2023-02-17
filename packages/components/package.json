@@ -1,6 +1,6 @@
 {
   "name": "@greenlabs/formula-components",
-  "version": "0.0.5-next.24",
+  "version": "0.0.5-next.26",
   "repository": {
     "type": "git",
     "url": "git@github.com:green-labs/formula-design-system.git",
@@ -26,6 +26,7 @@
   "dependencies": {
     "@greenlabs/formula-design-token": "0.0.5-next.6",
     "@radix-ui/react-checkbox": "^1.0.1",
+    "@radix-ui/react-dialog": "^1.0.2",
     "@radix-ui/react-radio-group": "^1.1.1",
     "@radix-ui/react-switch": "^1.0.1",
     "@radix-ui/react-tabs": "^1.0.1",
@@ -51,20 +52,20 @@
     "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^14.1.0",
-    "@storybook/addon-actions": "^6.5.10",
-    "@storybook/addon-docs": "^6.5.10",
-    "@storybook/addon-essentials": "^6.5.10",
-    "@storybook/addon-interactions": "^6.5.10",
-    "@storybook/addon-links": "^6.5.10",
-    "@storybook/builder-webpack4": "^6.5.10",
-    "@storybook/manager-webpack4": "^6.5.10",
-    "@storybook/react": "^6.5.10",
+    "@storybook/addon-docs": "7.0.0-beta.49",
+    "@storybook/addon-essentials": "7.0.0-beta.49",
+    "@storybook/addon-interactions": "7.0.0-beta.49",
+    "@storybook/addon-links": "7.0.0-beta.49",
+    "@storybook/builder-webpack5": "7.0.0-beta.49",
+    "@storybook/manager-webpack5": "7.0.0-alpha.10",
+    "@storybook/react": "7.0.0-beta.49",
+    "@storybook/react-webpack5": "^7.0.0-alpha.0",
     "@storybook/testing-library": "^0.0.13",
     "@types/chroma-js": "^2.1.4",
     "@types/react": "^18.0.20",
     "@vanilla-extract/css": "^1.9.0",
     "@vanilla-extract/rollup-plugin": "^1.1.0",
-    "@vanilla-extract/webpack-plugin": "^2.1.12",
+    "@vanilla-extract/webpack-plugin": "^2.2.0",
     "babel-loader": "^8.2.5",
     "babel-plugin-transform-remove-imports": "^1.7.0",
     "concurrently": "^7.3.0",
@@ -72,10 +73,16 @@
     "rollup": "^2.79.0",
     "rollup-plugin-copy-merge": "^0.3.5",
     "rollup-plugin-node-externals": "^5.0.1",
-    "typescript": "^4.8.3"
+    "storybook": "7.0.0-beta.49",
+    "typescript": "^4.8.3",
+    "webpack": "^5.75.0"
+  },
+  "resolutions": {
+    "@storybook/react/webpack": "^5"
   },
   "scripts": {
-    "storybook": "start-storybook -p 6006",
+    "storybook": "storybook dev -p 6006",
+    "storybook-build": "storybook build",
     "build:js": "rollup -c",
     "build:types": "tsc -b",
     "build": "yarn clean && concurrently \"yarn build:js\" \"yarn build:types\"",
@@ -84,5 +91,8 @@
     "build:ts-icons": "cd src/Icon && yarn dlx @svgr/cli svgs --no-index && node ./templates/export-generator.cjs",
     "build:res-icons": "cd src/Icon && node ./templates/rescript-binder.cjs",
     "svgr": "yarn build:ts-icons && yarn build:res-icons"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }

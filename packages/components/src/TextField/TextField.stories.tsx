@@ -1,5 +1,5 @@
 import * as React from "react"
-import type { ComponentMeta, ComponentStory } from "@storybook/react"
+import type { Meta, StoryFn } from "@storybook/react"
 import TextAreaAutosize from "react-textarea-autosize"
 
 import { TextField } from "./TextField"
@@ -8,7 +8,7 @@ import { createDisabledArgs } from "../utils/storybook"
 import * as IconComponents from "../Icon/generated"
 import { ThemeScope } from "../theme"
 
-const Template: ComponentStory<typeof TextField> = (args) => {
+const Template: StoryFn<typeof TextField> = (args) => {
   return (
     <ThemeScope>
       {args.variant !== "line" && (
@@ -115,7 +115,7 @@ Overview.argTypes = {
   ...controls,
 }
 
-const SingleTemplate: ComponentStory<typeof TextField> = (args) => {
+const SingleTemplate: StoryFn<typeof TextField> = (args) => {
   return (
     <ThemeScope
       render={({ className }) => (
@@ -156,9 +156,7 @@ Line.args = {
 }
 Line.argTypes = BoxOutline.argTypes
 
-export const Textarea_and_Ref_Etc: ComponentStory<typeof TextField> = (
-  args
-) => {
+export const Textarea_and_Ref_Etc: StoryFn<typeof TextField> = (args) => {
   const ref = React.useRef<HTMLInputElement>(null)
 
   React.useLayoutEffect(() => {
@@ -235,4 +233,4 @@ Textarea_and_Ref_Etc.argTypes = {
 export default {
   title: "Formula/TextField",
   component: TextField,
-} as ComponentMeta<typeof TextField>
+} as Meta<typeof TextField>
