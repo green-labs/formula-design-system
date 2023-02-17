@@ -7,7 +7,7 @@ export const dialogBase = style({
   boxSizing: "border-box",
   borderRadius: "16px",
   maxHeight: "calc(100vh - 140px)",
-  position: "absolute",
+  position: "fixed",
   boxShadow: shadow["1"].value,
   overflow: "hidden",
   left: "50%",
@@ -17,7 +17,7 @@ export const dialogBase = style({
 
 const buttonSectionBase = style({
   display: "grid",
-  margin: "24px 20px 20px 20px",
+  marginTop: "24px",
 })
 
 const evenlyButtonSectionBase = [
@@ -30,10 +30,11 @@ const evenlyButtonSectionBase = [
 
 const verticalButtonSectionBase = [
   buttonSectionBase,
-  {
-    gridTemplateRows: "1fr 1fr",
+  style({
+    display: "flex",
+    flexDirection: "column-reverse",
     gap: "8px",
-  },
+  }),
 ]
 
 export const buttonSectionVariant = styleVariants({
@@ -76,4 +77,10 @@ export const buttonSectionAuxiliaryVariant = styleVariants({
   "vertical-small": verticalButtonSectionBase,
   "vertical-medium": verticalButtonSectionBase,
   "vertical-large": verticalButtonSectionBase,
+})
+
+export const overlayBase = style({
+  inset: "0px",
+  position: "fixed",
+  background: "rgba(0, 0, 0, 0.4)",
 })
