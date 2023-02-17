@@ -2,7 +2,10 @@ import { imageAspectRatioVariant, imageSizeVariant } from "./style.css"
 import { ContainerButton } from "../../Button"
 import type { ButtonSectionProps } from "../common/ButtonSection"
 import { variantChecker } from "../../utils/util"
-import { buttonSectionVariant } from "../common/style.css"
+import {
+  buttonSectionVariant,
+  imageDialogButtonSection,
+} from "../common/style.css"
 
 type imageAspectRatioVariantKey = keyof typeof imageAspectRatioVariant
 export interface ImageDialogProps extends ButtonSectionProps {
@@ -29,7 +32,7 @@ export const ImageDialog = ({
   return (
     <div className={imageAspectRatioClass}>
       <img src={imageSrc} className={imageSizeClass} alt="image" />
-      <div className={buttonSectionClass}>
+      <div className={`${buttonSectionClass} ${imageDialogButtonSection}`}>
         <ContainerButton
           text={secondaryLabel}
           block

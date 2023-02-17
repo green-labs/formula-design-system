@@ -5,19 +5,22 @@ export const sizeVariant = styleVariants({
   small: [
     dialogBase,
     {
-      width: "320px",
+      maxWidth: "320px",
+      width: "100%",
     },
   ],
   medium: [
     dialogBase,
     {
-      width: "488px",
+      maxWidth: "488px",
+      width: "100%",
     },
   ],
   large: [
     dialogBase,
     {
-      width: "800px",
+      maxWidth: "800px",
+      width: "100%",
     },
   ],
 })

@@ -1,5 +1,5 @@
 import React from "react"
-import type { ComponentMeta, ComponentStory } from "@storybook/react"
+import type { Meta, StoryFn } from "@storybook/react"
 import { colorMap } from "@greenlabs/formula-design-token"
 import * as IconComponents from "./generated"
 import "../theme"
@@ -44,7 +44,7 @@ const IconItem: React.FC<IconItemProps> = ({ name, children }) => {
 
 /* ---------- 아이콘 스타일 래퍼 끝 ----------*/
 
-export const IconGallery: ComponentStory<typeof IconComponents["AppleFill"]> = (
+export const IconGallery: StoryFn<typeof IconComponents["AppleFill"]> = (
   args
 ) => {
   return (
@@ -94,4 +94,4 @@ export default {
       </ThemeScope>
     ),
   ],
-} as ComponentMeta<typeof IconComponents["AppleFill"]>
+} as Meta<typeof IconComponents["AppleFill"]>

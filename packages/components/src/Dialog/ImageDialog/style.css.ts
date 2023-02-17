@@ -7,7 +7,9 @@ export const imageAspectRatioVariant = styleVariants({
   vertical: [dialogBase],
 })
 
-export const imageBase = style({})
+export const imageBase = style({
+  display: "block",
+})
 export const imageSizeVariant = styleVariants({
   square: [
     imageBase,

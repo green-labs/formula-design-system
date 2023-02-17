@@ -20,13 +20,11 @@ export const getIconSize = (size: buttonSize) => {
     case "xs":
       return 16
     case "sm":
-      return 20
     case "md":
-      return 24
+      return 20
     case "lg":
-      return 28
     case "xl":
-      return 32
+      return 24
   }
 }
 
