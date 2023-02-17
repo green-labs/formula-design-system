@@ -79,6 +79,10 @@ export const buttonSectionAuxiliaryVariant = styleVariants({
   "vertical-large": verticalButtonSectionBase,
 })
 
+export const imageDialogButtonSection = style({
+  padding: "0 1.5rem 1.5rem 1.5rem",
+})
+
 export const overlayBase = style({
   inset: "0px",
   position: "fixed",
