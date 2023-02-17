@@ -1,5 +1,10 @@
 # Formula Design System Monorepo
 
+### Requirements
+
+- Node.js >= 16
+- Yarn
+
 ### Packages
 
 - [Formula components `@greenlabs/formula-components`](https://github.com/green-labs/formula-design-system/tree/main/packages/components-rescript)

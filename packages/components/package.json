@@ -86,5 +86,8 @@
     "build:ts-icons": "cd src/Icon && yarn dlx @svgr/cli svgs --no-index && node ./templates/export-generator.cjs",
     "build:res-icons": "cd src/Icon && node ./templates/rescript-binder.cjs",
     "svgr": "yarn build:ts-icons && yarn build:res-icons"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }
