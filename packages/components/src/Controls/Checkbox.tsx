@@ -38,6 +38,7 @@ export const Checkbox = React.forwardRef<HTMLButtonElement, CheckboxProps>(
           ref={inputRef}
           className={checkboxStyles.button}
           id={usedId}
+          disabled={disabled}
           {...additionalProps}
           {...props}
         >

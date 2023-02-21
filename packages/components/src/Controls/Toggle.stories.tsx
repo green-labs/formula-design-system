@@ -1,5 +1,6 @@
 import * as React from "react"
-import type { ComponentMeta, ComponentStory } from "@storybook/react"
+import type { ComponentStory } from "@storybook/react"
+import type { Meta } from "@storybook/react"
 
 import { Toggle } from "./Toggle"
 import { createDisabledArgs } from "../utils/storybook"
@@ -8,11 +9,18 @@ import { ThemeScope } from "../theme"
 const Template: ComponentStory<typeof Toggle> = (args) => {
   return (
     <ThemeScope>
-      <form style={{ margin: "20px 10px" }}>
-        <Toggle label="This is label" />
+      <div style={{ margin: "20px 10px" }}>
+        <Toggle defaultChecked={true} label="This is label" {...args} />
         <br />
-        <Toggle {...args} />
-      </form>
+        <Toggle label="disabled & off" disabled {...args} />
+        <br />
+        <Toggle
+          label="disabled & on"
+          defaultChecked={true}
+          disabled
+          {...args}
+        />
+      </div>
     </ThemeScope>
   )
 }
@@ -50,4 +58,4 @@ Overview.argTypes = {
 export default {
   title: "Formula/Controls/Toggle",
   component: Toggle,
-} as ComponentMeta<typeof Toggle>
+} as Meta<typeof Toggle>

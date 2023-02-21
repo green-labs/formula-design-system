@@ -37,6 +37,7 @@ export const RadioItem = React.forwardRef<HTMLButtonElement, RadioItemProps>(
           ref={inputRef}
           className={radioItemStyles.button}
           id={usedId}
+          disabled={disabled}
           {...additionalProps}
           {...props}
         >

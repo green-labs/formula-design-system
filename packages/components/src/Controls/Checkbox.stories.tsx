@@ -1,5 +1,6 @@
 import * as React from "react"
-import type { ComponentMeta, ComponentStory } from "@storybook/react"
+import type { Meta } from "@storybook/react"
+import type { ComponentStory } from "@storybook/react"
 
 import { Checkbox } from "./Checkbox"
 import { createDisabledArgs } from "../utils/storybook"
@@ -12,15 +13,10 @@ const Template: ComponentStory<typeof Checkbox> = (args) => {
         <Checkbox {...args} />
       </form>
       <form style={{ margin: "20px 10px" }}>
-        disabled=true
-        <Checkbox disabled />
+        <Checkbox label="disabled=true" disabled />
       </form>
       <form style={{ margin: "20px 10px" }}>
-        disabled=true, checked
-        <Checkbox disabled defaultChecked />
-      </form>
-      <form style={{ margin: "20px 10px" }}>
-        <Checkbox label="w/ Control label" />
+        <Checkbox label="disabled=true, checked" disabled defaultChecked />
       </form>
     </ThemeScope>
   )
@@ -59,4 +55,4 @@ Overview.argTypes = {
 export default {
   title: "Formula/Controls/Checkbox",
   component: Checkbox,
-} as ComponentMeta<typeof Checkbox>
+} as Meta<typeof Checkbox>

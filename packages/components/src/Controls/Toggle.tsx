@@ -36,6 +36,7 @@ export const Toggle = React.forwardRef<HTMLButtonElement, ToggleProps>(
         <RadixUISwitch.Root
           ref={inputRef}
           className={toggleStyles.root}
+          disabled={disabled}
           {...additionalProps}
           {...props}
           id={usedId}

@@ -110,7 +110,3 @@ export const toggleStyles = {
     },
   }),
 }
-
-// button {
-//   all: unset;
-// }
