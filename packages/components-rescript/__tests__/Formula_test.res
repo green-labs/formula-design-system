@@ -135,3 +135,21 @@ let textTextTab = () => {
 let testCommon = () => {
   <div style={ReactDOM.Style.make(~color=Formula.Theme.themeColors["blue-100"], ())} />
 }
+
+let testControls = () => {
+  let ref = React.useRef(Js.Nullable.null)
+
+  <>
+    <Checkbox ref={ReactDOM.Ref.domRef(ref)} />
+    <RadioGroup defaultValue="a" ref={ReactDOM.Ref.domRef(ref)}>
+      <RadioItem value="a" />
+      <RadioItem value="b" />
+      <RadioItem value="c" />
+    </RadioGroup>
+    <form>
+      <Toggle
+        ref={ReactDOM.Ref.domRef(ref)} defaultChecked={true} disabled={true} label="disabled & on"
+      />
+    </form>
+  </>
+}
