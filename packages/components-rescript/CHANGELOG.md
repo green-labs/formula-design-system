@@ -1,5 +1,13 @@
 # @greenlabs/rescript-formula-components
 
+## 0.0.5-next.27
+
+### Patch Changes
+
+- e1254d4: Controls (checkbox, radio, toggle)
+- Updated dependencies [e1254d4]
+  - @greenlabs/formula-components@0.0.5-next.27
+
 ## 0.0.5-next.26
 
 ### Patch Changes
