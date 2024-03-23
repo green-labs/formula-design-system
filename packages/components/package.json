@@ -75,7 +75,7 @@
     "rollup-plugin-node-externals": "^5.0.1",
     "storybook": "7.0.0-beta.49",
     "typescript": "^4.8.3",
-    "webpack": "^5.75.0"
+    "webpack": "^5.76.0"
   },
   "resolutions": {
     "@storybook/react/webpack": "^5"
